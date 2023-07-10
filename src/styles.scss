@@ -1,39 +1,80 @@
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
-// Plus imports for other components in your app.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat.core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$Manual2023-primary: mat.define-palette(mat.$indigo-palette);
-$Manual2023-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
 
-// The warn palette is optional (defaults to red).
-$Manual2023-warn: mat.define-palette(mat.$red-palette);
+//$app-typography: mat.define-typography-config($font-family: 'Noto Sans');
+$light-theme: mat.define-light-theme(
+    (
+        color:(
+            primary: mat.define-palette(mat.$blue-grey-palette, 400, 600, 800),
+            accent: mat.define-palette(mat.$amber-palette, 600),
+            warn: mat.define-palette(mat.$red-palette, 700)
+        ),
+        //typography: $app-typography
+    )
+);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$Manual2023-theme: mat.define-light-theme((
-  color: (
-    primary: $Manual2023-primary,
-    accent: $Manual2023-accent,
-    warn: $Manual2023-warn,
-  )
-));
+// $dark-theme: mat.define-dark-theme(
+//     (
+//         color:(
+//             primary: mat.define-palette(mat.$grey-palette, 700),
+//             accent: mat.define-palette(mat.$orange-palette, 600),
+//             warn: mat.define-palette(mat.$deep-orange-palette, 600)
+//         ),
+//         //typography: $app-typography
+//     )
+// );
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($Manual2023-theme);
+@include mat.all-component-themes($light-theme);
+// .dark-mode{
+//    @include mat.all-component-themes($dark-theme);
+// }
 
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* CSS */
+:root {
+    --accent: #ffb300;
+    --primary: #78909c;
+    --warn: #d32f2f;
+    --dark-accent: #fb8c00;
+    --dark-primary: #616161;
+    --dark-warn: #f4511e;
+    --blanco25: rgba(255, 255, 255, 0.25);
+    --blanco50: rgba(255, 255, 255, 0.5);
+    --blanco75: rgba(255, 255, 255, 0.75);
+    --blanco: #ffffff;
+//     --gradBlanco: linear-gradient(to bottom,#b3bead 0%,#dfe5d7 40%,#fcfff4 100%);
+//     --negro50: #8b9091;
+    --negro10: rgba(25, 28, 37, 0.05);
+    --negro25: rgba(25, 28, 37, 0.25);
+    --negro50: rgba(25, 28, 37, 0.5);
+    --negro75: rgba(25, 28, 37, 0.75);
+    --verde: #6f962b;
+//     --gradVerde: linear-gradient(to bottom, #6f962b 1%,#496618 100%);
+//     --warn: #720000;
+//     --gradRojo: linear-gradient(to bottom, #d50000 0%,#720000 100%);
+//     --azul: #004a6d;
+//     --verde50: rgba(111, 150, 43, 0.5);
+//     --rojo50: rgba(213, 0, 0, 0.5);
+//     --rojo25: rgba(213, 0, 0, 0.25);
+//     --accent: #dd9410;
+//     --naranja50: rgba(221, 148, 16, 0.5);
+//     --accent: #ffb000;
+//     --grisClaro: #b1b3c4;
+//     --gradAzul: linear-gradient(to bottom, #091d27 1%,#004a6d 100%);
+    --mdc-list-list-item-label-text-size: 14px;
+    --mdc-table-text-size: 14px;
+}
+
+body {display: flex;min-height: 100vh;flex-direction: column;margin:0;overflow-x: hidden;background-color: var(--dark-primary);}
+app-root{display: flex;min-height: 100vh;flex-direction: column;}
+main {display:flex;flex-direction: column;flex: 1 0 auto;}
+section{position:relative;}
+header{z-index: 10;}
+footer{background:var(--dark-primary);color:var(--blanco);padding:10px;box-shadow: 0 0 20px var(--negro25);position: relative;z-index:2;}
+input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
+a,img,.mat-mdc-card,button,.mat-mdc-icon, div, .mat-mdc-row{transition: all .25s ease-in-out !important;}
+
