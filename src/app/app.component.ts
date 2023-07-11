@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Manual2023';
+    public scrHeight: any;
+    @HostListener('window:resize', ['$event'])
+    getScreenSize() {
+        this.scrHeight = (window.innerHeight - 56) + "px";
+    }
+    constructor(){this.getScreenSize();}
 }
