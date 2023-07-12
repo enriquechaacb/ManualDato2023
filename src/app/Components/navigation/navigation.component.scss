@@ -1,0 +1,13 @@
+
+a{
+    color:var(--blanco50);
+    text-decoration: none;
+    padding: 8px 2em;
+    display: block;
+    width: 260px;
+    border-bottom: 1px dotted var(--blanco25);
+    &:hover{
+        color: var(--blanco);
+        transform: scale(1.1);
+    }
+}

@@ -1,7 +1,8 @@
 <div *ngFor="let item of menuItems">
-    <button mat-button routerLink="{{item.Url}}" (click)="menuToggle()">
-        <mat-icon>{{item.Icono}}</mat-icon>  {{item.Nombre}}
-    </button>
+    <a routerLink="{{item.Url}}" (click)="menuToggle()">
+        <!-- <mat-icon>{{item.Icono}}</mat-icon> -->
+        {{item.Nombre}}
+    </a>
 </div>
 
 

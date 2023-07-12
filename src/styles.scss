@@ -78,3 +78,7 @@ footer{background:var(--dark-primary);color:var(--blanco);padding:10px;box-shado
 input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
 a,img,.mat-mdc-card,button,.mat-mdc-icon, div, .mat-mdc-row{transition: all .25s ease-in-out !important;}
 
+.mat-drawer-inner-container {
+    background-color: #005072;
+    color:var(--blanco);
+}
