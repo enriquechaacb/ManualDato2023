@@ -3,12 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 // import { AuthGuard } from '../Guards/authGuard';
 
 import { HomeComponent } from '../Components/home/home.component';
+import { ManualComponent } from '../Components/manual/manual.component';
+import { TransformaciondigitalComponent } from '../Components/manual/transformaciondigital/transformaciondigital.component';
 
 // import { AccessControlComponent } from '../Components/accesscontrol/accesscontrol.component';
 
 
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
+    { path: 'manual', component: ManualComponent, data: {animation:'manual'}},
+    { path: 'manual/TransformacionDigital/:section', component: TransformaciondigitalComponent, data: {animation:'td'}},
 //     { path: 'login', component: LoginComponent, data: { animation: 'login' } },
 //     { path: 'dashboard', component: DashboardComponent, data: { animation: 'dashboard', permits: [] } },
 //     { path: 'accesscontrol/:type', component: AccessControlComponent, data: { animation: 'accesscontrol', permits: [50] }, canActivate:[AuthGuard] },

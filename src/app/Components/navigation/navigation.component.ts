@@ -19,7 +19,12 @@ export class NavigationComponent implements OnInit {
             if (event instanceof NavigationEnd) {
                 console.log(event.url)
                 this.Activeurl = event.url;
-                this.menuItems = Menu.filter((x:any)=>x.Seccion===this.Activeurl);
+                switch(this.Activeurl){
+                    default:
+                        this.menuItems = Menu.filter((x:any)=>x.Seccion==="/");
+                    break;
+                }
+                
             }
         });
     }
@@ -34,6 +39,7 @@ const Menu = [
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
     {Url:"/filosofia",Icono:"chevron_right",Nombre:"Filosofía",Seccion:"/"},
+    {Url:"/manual",Icono:"chevron_right",Nombre:"Manual",Seccion:"/"},
     // {Url:"",Icono:"chevron_right",Nombre:"Título de la dimensión",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Eje temático",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Presentación",Seccion:""},

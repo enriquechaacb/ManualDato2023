@@ -1,0 +1,10 @@
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <img src="../../../assets/images/Logo_Manual.webp" class="img-fluid" alt="Manual">
+        </div>
+        <div class="col">
+            <a *ngFor="let item of dimensiones" routerLink="{{item.Url}}">{{item.Nombre}}</a>
+        </div>
+    </div>
+</section>
