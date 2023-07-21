@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './Modules/app-routing.module';
 import { AppMaterialModule } from './Modules/app-material.module';
+
+import { GlobalService } from './Services/global.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/home/home.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 import { ManualComponent } from './Components/manual/manual.component';
 import { TransformaciondigitalComponent } from './Components/manual/transformaciondigital/transformaciondigital.component';
+import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { TransformaciondigitalComponent } from './Components/manual/transformaci
     HomeComponent,
     NavigationComponent,
     ManualComponent,
-    TransformaciondigitalComponent
+    TransformaciondigitalComponent,
+    OrganizacionypersonasComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { TransformaciondigitalComponent } from './Components/manual/transformaci
     BrowserAnimationsModule,
     AppMaterialModule
   ],
-  providers: [],
+  providers: [
+    GlobalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

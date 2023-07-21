@@ -1,4 +1,4 @@
-<mat-drawer-container autosize hasBackdrop [ngStyle]="{'min-height': scrHeight}">
+<mat-drawer-container autosize hasBackdrop [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
     <router-outlet></router-outlet>
     <button type="button" class="btntogglemenu" mat-icon-button (click)="drawer.toggle()">
         <mat-icon class="text-white" *ngIf="drawer.opened">close</mat-icon>
@@ -8,8 +8,22 @@
         <app-navigation (change)="drawer.toggle()"></app-navigation>
     </mat-drawer>
 </mat-drawer-container>
-<footer class="footer mt-auto py-0">
+<footer class="footer">
     <div class="container">
-        <img src="../assets/images/logos_pie.webp" class="img-fluid">
+        <a href="https://bidlab.org/" target="_blank" class="logo_bid"><img src="../assets/images/logos/logo_bid.webp" class="img" alt="BID" /></a>
+        <a href="https://www.iadb.org/" target="_blank" class="logo_bid_lab"><img src="../assets/images/logos/logo_bid_lab.webp" class="img" alt="BID LAB" /></a>
+        <a href="https://cambiotec.org.mx/" target="_blank" class="logo_cambiotec"><img src="../assets/images/logos/logo_cambiotec.webp" class="img" alt="Cambiotec" /></a>
+        <a href="https://www.idom.com/" target="_blank" class="logo_idom"><img src="../assets/images/logos/logo_idom.webp" class="img" alt="IDOM" /></a>
+        <a href="https://www.ccc.org.co/" target="_blank" class="logo_ccc"><img src="../assets/images/logos/logo_ccc.webp" class="img" alt="Cámara de Comercio de Cali" /></a>
+        <a href="https://www.ande.org.uy/" target="_blank" class="logo_ande"><img src="../assets/images/logos/logo_ande.webp" class="img" alt="ANDE" /></a>
+        <a href="https://snbx.sv/" target="_blank" class="logo_snbx"><img src="../assets/images/logos/logo_snbx.webp" class="img" alt="SNBX" /></a>        
+    </div>
+    <div class="sub-footer">
+        <p>
+            <a routerLink="terminos">Términos y condiciones</a>
+            <a routerLink="privacidad">Política de privacidad</a>
+            <a routerLink="creditos">Créditos</a>
+            <span>Derechos reservados &copy;2023</span>
+        </p>
     </div>
 </footer>

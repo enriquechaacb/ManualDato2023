@@ -6,4 +6,69 @@
     right:15px;
     color:var(--blanco);
 }
-footer.footer{background-color: var(--blanco);}
+footer.footer{
+    background-color: var(--blanco);
+    margin-top: -20px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin:5px 8px;
+            img{
+                width:100%;
+                height:auto;
+                display: block;
+            }
+            &:hover{transform: scale(1.05);}
+            &.logo_bid{max-width: 124px;}
+            &.logo_bid_lab{max-width: 200px;}
+            &.logo_cambiotec{max-width: 113px;}
+            &.logo_idom{max-width: 130px;}
+            &.logo_ccc{max-width: 113px;}
+            &.logo_ande{max-width: 200px;}
+            &.logo_snbx{max-width: 53px;}
+        }
+    }
+    .sub-footer{
+        background-color: var(--primary);
+        p{
+            color: var(--blanco);
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            line-height: 2em;
+            span{
+                flex:1 0 auto;
+            }
+            a{
+                flex:1 0 auto;
+                text-decoration: none;
+                color:var(--blanco75);
+                &:hover{
+                    color: var(--blanco);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px){
+    footer.footer{
+        .container{
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+}
