@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../Components/home/home.component';
 import { ManualComponent } from '../Components/manual/manual.component';
 import { TransformaciondigitalComponent } from '../Components/manual/transformaciondigital/transformaciondigital.component';
+import { OrganizacionypersonasComponent } from '../Components/manual/organizacionypersonas/organizacionypersonas.component';
 
 // import { AccessControlComponent } from '../Components/accesscontrol/accesscontrol.component';
 
@@ -12,7 +13,8 @@ import { TransformaciondigitalComponent } from '../Components/manual/transformac
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: 'manual', component: ManualComponent, data: {animation:'manual'}},
-    { path: 'manual/TransformacionDigital/:section', component: TransformaciondigitalComponent, data: {animation:'td'}},
+    { path: 'manual/transformaciondigital/:section', component: TransformaciondigitalComponent, data: {animation:'td'}},
+    { path: 'manual/organizacionypersonas/:section', component: OrganizacionypersonasComponent, data: {animation:'op'}},
 //     { path: 'login', component: LoginComponent, data: { animation: 'login' } },
 //     { path: 'dashboard', component: DashboardComponent, data: { animation: 'dashboard', permits: [] } },
 //     { path: 'accesscontrol/:type', component: AccessControlComponent, data: { animation: 'accesscontrol', permits: [50] }, canActivate:[AuthGuard] },

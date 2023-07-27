@@ -53,6 +53,13 @@ $light-theme: mat.define-light-theme(
     --negro50: rgba(25, 28, 37, 0.5);
     --negro75: rgba(25, 28, 37, 0.75);
     --verde: #6f962b;
+
+    --organizacion: #db4569;
+    --estrategia: #faad17;
+    --datos: #3d967a;
+    --tecnologias: #004e70;
+    --comunicacion: #3c3b3b;
+    --procesos: #33718d;
 //     --gradVerde: linear-gradient(to bottom, #6f962b 1%,#496618 100%);
 //     --warn: #720000;
 //     --gradRojo: linear-gradient(to bottom, #d50000 0%,#720000 100%);
@@ -74,11 +81,16 @@ app-root{display: flex;min-height: 100vh;flex-direction: column;}
 main {display:flex;flex-direction: column;flex: 1 0 auto;}
 section{position:relative;}
 header{z-index: 10;}
-footer{background:var(--dark-primary);color:var(--blanco);padding:10px;box-shadow: 0 0 20px var(--negro25);position: relative;z-index:2;}
+footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
 input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
-a,img,.mat-mdc-card,button,.mat-mdc-icon, div, .mat-mdc-row{transition: all .25s ease-in-out !important;}
+a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row{transition: all .25s ease-in-out !important;}
+
+.seccion{padding-bottom: 20px;}
 
 .mat-drawer-inner-container {
     background-color: #005072;
     color:var(--blanco);
 }
+// .mat-drawer-content{
+//     display: flex !important;
+// }

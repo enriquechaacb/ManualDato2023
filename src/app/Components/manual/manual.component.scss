@@ -1,0 +1,42 @@
+.dimension-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    .dimension{
+        display: block;
+        padding: 15px 15px 15px 85px;
+        color: var(--blanco75);
+        text-decoration: none;
+        border-radius: 0 25px;
+        position: relative;
+        .mat-icon{
+            font-size: 3em;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            filter: saturate(0.5) drop-shadow(2px 4px 3px var(--negro25));
+            top: -8px;
+            left: 0;
+            text-align: center;
+            line-height: 68px;
+            border-radius: 0 10px;
+        }
+        &:hover{
+            color: var(--blanco);
+            filter: drop-shadow(2px 4px 3px var(--negro25));
+            transform: scale(1.1);
+            .mat-icon{
+                transform: rotate(-45deg);
+                margin-left: -25px;
+                filter: saturate(1) drop-shadow(2px 4px 8px var(--negro25)) brightness(1.2);
+            }
+        }
+    }
+}
+.organizacion{background-color: var(--organizacion);}
+.estrategia{background-color: var(--estrategia);}
+.datos{background-color: var(--datos);}
+.tecnologias{background-color: var(--tecnologias);}
+.comunicacion{background-color: var(--comunicacion);}
+.procesos{background-color: var(--procesos);}

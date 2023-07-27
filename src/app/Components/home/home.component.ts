@@ -1,15 +1,13 @@
 import { Component, HostListener } from '@angular/core';
+import { GlobalService } from 'src/app/Services/global.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-    public scrHeight: any;
-    @HostListener('window:resize', ['$event'])
-    getScreenSize() {
-        this.scrHeight = (window.innerHeight) + "px";
-    }
-    constructor(){this.getScreenSize();}
+    constructor(
+        public _globalService: GlobalService
+    ){}
 }

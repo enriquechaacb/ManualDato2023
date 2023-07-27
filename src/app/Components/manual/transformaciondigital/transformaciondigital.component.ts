@@ -14,6 +14,12 @@ export class TransformaciondigitalComponent implements OnInit {
     ){
         this.linksList = [
             {Url:"../inicio",Nombre:"Presentación"},
+            {Url:"../glosario",Nombre:"Ejes temáticos"},
+            {Url:"../glosario",Nombre:"Casos de éxito"},
+            {Url:"../glosario",Nombre:"Testimonios"},
+            {Url:"../glosario",Nombre:"Caja de herramientas"},
+            {Url:"../glosario",Nombre:"FAQ"},
+            {Url:"../glosario",Nombre:"Sitios web"},
             {Url:"../glosario",Nombre:"Glosario"},
         ];
     }
