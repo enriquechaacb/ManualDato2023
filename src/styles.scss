@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
 
-//$app-typography: mat.define-typography-config($font-family: 'Noto Sans');
+$app-typography: mat.define-typography-config($font-family: 'Noto Sans');
 $light-theme: mat.define-light-theme(
     (
         color:(
@@ -12,7 +12,7 @@ $light-theme: mat.define-light-theme(
             accent: mat.define-palette(mat.$amber-palette, 600),
             warn: mat.define-palette(mat.$red-palette, 700)
         ),
-        //typography: $app-typography
+        typography: $app-typography
     )
 );
 
@@ -77,15 +77,24 @@ $light-theme: mat.define-light-theme(
 }
 
 body {display: flex;min-height: 100vh;flex-direction: column;margin:0;overflow-x: hidden;background-color: var(--dark-primary);}
-app-root{display: flex;min-height: 100vh;flex-direction: column;}
+app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Noto Sans', "Helvetica Neue", sans-serif;}
 main {display:flex;flex-direction: column;flex: 1 0 auto;}
 section{position:relative;}
 header{z-index: 10;}
 footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
 input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
-a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row{transition: all .25s ease-in-out !important;}
+a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li{transition: all .25s ease-in-out !important;}
 
 .seccion{padding-bottom: 20px;}
+h1.title{
+    padding-top: 1em;
+    filter: opacity(0.5);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: end;
+}
+
+.mat-mdc-card{padding: 15px;}
 
 .mat-drawer-inner-container {
     background-color: #005072;

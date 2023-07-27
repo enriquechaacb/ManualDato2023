@@ -14,77 +14,171 @@
     </div>
 </nav>
 
-<section class="container" *ngIf="Seccion === 'inicio'">
+<div class="container">
     <h1 class="title">Transformación digital</h1>
-    <h2>Eje temático: Modelos de Negocio</h2>
-    <h3>Autor (es): Carlos Maynor Salinas Santano</h3>
-    <h4>Objetivos</h4>
-    <p>El participante será capaz de diseñar e implementar un modelo de negocio que le permita monetizar la propuesta de valor de su empresa.</p>
-    <h4>Presentación</h4>
-    <p>Un modelo de negocio se conoce como el esquema en el que la empresa crea valor y logra monetizarlo sin embargo esto que parece tan sencillo lleva detrás el análisis de muchos elementos internos y externos de la organización, a fin de identificar la mejor manera de hacer negocio. De la definición del modelo de negocio, derivan muchas de las estrategias de la empresa, por lo que es de gran relevancia conocer todos los aspectos que se deben tener presentes al momento de generar un modelo de negocio. En este módulo, se analizará la relevancia que tiene definir un modelo de negocio, se definirá el modelo de negocio y cada uno de los elementos que hay en torno a él, y finalmente se analizarán distintos modelos de negocio en el mundo digital.</p>
-    <h4>Beneficios</h4>
-    <p>Para las pequeñas y medianas empresas, el diseñar un modelo de negocio novedoso, puede traer beneficios tales como:</p>
-    <ul>
-        <li>Tener una comprensión amplia del comportamiento del mercado y a partir de ello saber cuáles son los elementos en los que se puede innovar a fin de generar ventajas competitivas.</li>
-        <li>Tener claro cuál es la propuesta de valor que la empresa ofrece al mercado.</li>
-        <li>Permite orientar los esfuerzos de la empresa a satisfacer de mejor manera las necesidades de los clientes.</li>
-        <li>Ayuda a la empresa a innovar, no solo en el producto, sino en la manera en la que la empresa se relaciona con el cliente y sus necesidades.</li>
-        <li>Permite a la empresa tener claridad de las acciones que debe llevar a cabo, los costos involucrados y el origen de los ingresos económicos.</li>
-        <li>En la mayoría de los casos, un diseño adecuado del modelo de negocio trae consigo un aumento en las ventas y una mayor participación de mercado.</li>
-    </ul>
+</div>
+
+<section class="container" *ngIf="Seccion === 'inicio'" @SlideInOut>
+    <h2>Presentación</h2>
+    <mat-card>
+
+        <p>Un modelo de negocio se conoce como el esquema en el que la empresa crea valor y logra monetizarlo sin
+            embargo esto que parece tan sencillo lleva detrás el análisis de muchos elementos internos y externos de
+            la organización, a fin de identificar la mejor manera de hacer negocio. De la definición del modelo de
+            negocio, derivan muchas de las estrategias de la empresa, por lo que es de gran relevancia conocer todos
+            los aspectos que se deben tener presentes al momento de generar un modelo de negocio. En este módulo, se
+            analizará la relevancia que tiene definir un modelo de negocio, se definirá el modelo de negocio y cada
+            uno de los elementos que hay en torno a él, y finalmente se analizarán distintos modelos de negocio en
+            el mundo digital.</p>
+
+    </mat-card>
 </section>
 
-<section class="container" *ngIf="Seccion === 'glosario'">
-    <h1 class="title">Glosario</h1>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Modelo de negocio</h3></mat-card-title>
-            <p>La definición de negocio que describe las bases sobre las que una empresa crea, proporciona y capta valor.</p>
-            <small class="fuente">(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010).</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Propuesta de valor</h3></mat-card-title>
-            <p>Factor que hace que un cliente se decante por una u otra empresa; su finalidad es solucionar un problema o satisfacer una necesidad del cliente. Las propuestas de valor son un conjunto de productos o servicios que satisfacen los requisitos de un segmento de mercado determinado. En este sentido, la propuesta de valor constituye una serie de ventajas que una empresa ofrece a los clientes.</p>
-            <small class="fuente">(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010)</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Segmento de mercado</h3></mat-card-title>
-            <p>Es el grupo de personas o entidades a los que se dirigen los esfuerzos comerciales o de negocio de una empresa.</p>
-            <small class="fuente">(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010)</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Aliados clave</h3></mat-card-title>
-            <p>Es la red de proveedores y socios que contribuyen al funcionamiento de un modelo de negocio.</p>
-            <small class="fuente">(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010)</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Costos</h3></mat-card-title>
-            <p>El costo es un concepto esencialmente monetario; expresa y mide en dinero la gestión desarrollada por el empresario para producir una unidad de cierto bien o servicio. Se refiere al consumo de recursos utilizados para generar un producto o servicio.</p>
-            <small class="fuente">(Corporación Nacional Forestal, 2015)</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Monetización</h3></mat-card-title>
-            <p>La monetización es el proceso de convertir algo en dinero o moneda legal. Puede referirse a vender un producto por dinero en efectivo, cobrar por un artículo que previamente ha sido gratuito, aumentar la rentabilidad de un artículo o vender un bono para obtener efectivo.</p>
-            <small class="fuente">(Spiegato, 2023)</small>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="mb-3">
-        <mat-card-content>
-            <mat-card-title><h3>Canvas</h3></mat-card-title>
-            <p>Herramienta gráfica que permite incorporar todos los elementos que integran un modelo de negocio para su lectura y comprensión.</p>
-            <small class="fuente"></small>
-        </mat-card-content>
-    </mat-card>
+<section class="container" *ngIf="Seccion === 'definicion'" @SlideInOut>
+    <h2>Definición</h2>
+    <mat-card>
 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac facilisis ligula. Cras urna nulla,
+            rutrum sit amet fermentum vel, tristique eget purus. Nulla nec tempor magna, eget auctor tortor. Nullam
+            lectus sem, ornare ac tellus a, cursus porta lorem. In vel tortor massa. Aliquam tristique a velit at
+            porta. Nulla facilisi. Vestibulum id ligula tellus. Suspendisse potenti. Aenean cursus nunc ultricies,
+            semper nunc ut, imperdiet purus. Proin cursus, tortor nec malesuada imperdiet, erat lectus consectetur
+            dui, a imperdiet orci eros non orci. Nam pretium ipsum suscipit, porttitor purus nec, blandit sapien.
+            Quisque libero velit, tristique vel ligula et, suscipit fringilla nulla. Proin eleifend metus tellus,
+            hendrerit vehicula est placerat eu.</p>
+
+    </mat-card>
+</section>
+
+<section class="container" *ngIf="Seccion === 'beneficios'" @SlideInOut>
+    <h2>Beneficios</h2>
+    <mat-card>
+
+        <p>Para las pequeñas y medianas empresas, el diseñar un modelo de negocio novedoso, puede traer beneficios
+            tales como:</p>
+        <ul>
+            <li>Tener una comprensión amplia del comportamiento del mercado y a partir de ello saber cuáles son los
+                elementos en los que se puede innovar a fin de generar ventajas competitivas.</li>
+            <li>Tener claro cuál es la propuesta de valor que la empresa ofrece al mercado.</li>
+            <li>Permite orientar los esfuerzos de la empresa a satisfacer de mejor manera las necesidades de los
+                clientes.</li>
+            <li>Ayuda a la empresa a innovar, no solo en el producto, sino en la manera en la que la empresa se
+                relaciona con el cliente y sus necesidades.</li>
+            <li>Permite a la empresa tener claridad de las acciones que debe llevar a cabo, los costos involucrados
+                y el origen de los ingresos económicos.</li>
+            <li>En la mayoría de los casos, un diseño adecuado del modelo de negocio trae consigo un aumento en las
+                ventas y una mayor participación de mercado.</li>
+        </ul>
+
+    </mat-card>
+</section>
+
+<section class="container" *ngIf="Seccion === 'desarrollo'" @SlideInOut>
+    <h2>Desarrollo</h2>
+    <mat-card>
+
+        <p>Integer sit amet magna sed enim scelerisque feugiat. Proin sit amet porta lectus, et sollicitudin lectus.
+            Aenean dolor nulla, lacinia sed turpis non, tempus auctor lacus. Sed massa augue, euismod ut mauris non,
+            dictum imperdiet dui. Aliquam mattis sapien eu auctor bibendum. Sed vehicula, erat id auctor dapibus,
+            libero lorem pulvinar mauris, a consectetur dolor tellus id mauris. Nullam non lacinia dui, at facilisis
+            velit. Aliquam elementum tincidunt ullamcorper. Cras sed interdum magna. Cras vitae vehicula diam. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus placerat
+            erat sed elit suscipit, in mollis ex laoreet. Nam vestibulum sem ante, ut varius odio pretium vel. Donec
+            justo dolor, rhoncus non elit sed, molestie mattis nibh. Aenean accumsan euismod imperdiet.</p>
+
+    </mat-card>
+</section>
+
+<section class="container" *ngIf="Seccion === 'ejetematico'" @SlideInOut>
+    <h2>Eje temático</h2>
+    <mat-card>
+
+        <div class="row">
+            <div class="col d-flex align-items-stretch" *ngFor="let item of EjesTematicos">
+                <mat-card class="d-flex flex-column align-items-center text-center">
+                    <a routerLink="{{item.Url}}" class="d-flex flex-column align-items-center text-center">
+                        <mat-icon>favorite</mat-icon>
+                        {{item.Nombre}}
+                    </a>
+                </mat-card>
+            </div>
+        </div>
+
+    </mat-card>
+</section>
+
+
+<section class="container" *ngIf="Seccion === 'cultura'" @SlideInOut>
+    <h2>Cultura organizacional</h2>
+    <div class="row">
+        <div class="col col-md-3">
+            <ul class="submenu">
+                <li *ngFor="let item of Secciones" (click)="gotoSection(item.Valor,item.Temas)">
+                    {{item.Nombre}}
+                    <ul *ngIf="item.Temas">
+                        <li *ngFor="let li of item.Temas" (click)="gotoSection(item.Valor)">
+                            {{li.Nombre}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <mat-card *ngIf="SubSeccion===''" @SlideInOut>
+                <h3>Cultura organizacional</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Introduccion'" @SlideInOut>
+                <h3>Introduccion</h3>
+                <p>Integer sit amet magna sed enim scelerisque feugiat. Proin sit amet porta lectus, et sollicitudin
+                    lectus.
+                    Aenean dolor nulla, lacinia sed turpis non, tempus auctor lacus. Sed massa augue, euismod ut mauris
+                    non,
+                    dictum imperdiet dui. Aliquam mattis sapien eu auctor bibendum. Sed vehicula, erat id auctor
+                    dapibus,
+                    libero lorem pulvinar mauris, a consectetur dolor tellus id mauris. Nullam non lacinia dui, at
+                    facilisis
+                    velit. Aliquam elementum tincidunt ullamcorper. Cras sed interdum magna. Cras vitae vehicula diam.
+                    Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus
+                    placerat
+                    erat sed elit suscipit, in mollis ex laoreet. Nam vestibulum sem ante, ut varius odio pretium vel.
+                    Donec
+                    justo dolor, rhoncus non elit sed, molestie mattis nibh. Aenean accumsan euismod imperdiet.</p>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Beneficios'" @SlideInOut>
+                <h3>Beneficios</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Proceso'" @SlideInOut>
+                <h3>Proceso</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Objetivos'" @SlideInOut>
+                <h3>Objetivos</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Contenidos'" @SlideInOut>
+                <h3>Contenidos</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Herramientas'" @SlideInOut>
+                <h3>Herramientas</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Glosario'" @SlideInOut>
+                <h3>Glosario</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Expertos'" @SlideInOut>
+                <h3>Expertos</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Casos'" @SlideInOut>
+                <h3>Casos</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Instituciones'" @SlideInOut>
+                <h3>Instituciones</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Literatura'" @SlideInOut>
+                <h3>Literatura</h3>
+            </mat-card>
+            <mat-card *ngIf="SubSeccion==='Sitios'" @SlideInOut>
+                <h3>Sitios</h3>
+            </mat-card>
+        </div>
+    </div>
 
 </section>

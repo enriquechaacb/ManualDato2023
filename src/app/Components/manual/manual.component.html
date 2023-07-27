@@ -1,4 +1,4 @@
-<section class="seccion container">
+<!-- <section class="seccion container">
     <div class="row">
         <div class="col d-flex justify-content-center align-items-center"[ngStyle]="{'min-height': _globalService.ScreenHeight()}">
             <img src="../../../assets/images/Logo_Manual.webp" class="img-fluid" alt="Manual de Gestión Productiva del Dato">
@@ -10,4 +10,20 @@
             </a>
         </div>
     </div>
+</section> -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 col-xl-6 offset-md-2 offset-xl-3">
+                <img src="../../../assets/images/Logo_Manual.webp" class="img-fluid" alt="Manual de Gestión Productiva del Dato">
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <a *ngFor="let item of dimensiones" class="col dimension {{item.Clase}}" routerLink="{{item.Url}}">
+            <mat-icon class="{{item.Clase}}">{{item.Icono}}</mat-icon>
+            <span>{{item.Nombre}}</span>
+        </a>
+    </div>
+
 </section>
