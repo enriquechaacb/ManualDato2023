@@ -46,32 +46,17 @@ $light-theme: mat.define-light-theme(
     --blanco50: rgba(255, 255, 255, 0.5);
     --blanco75: rgba(255, 255, 255, 0.75);
     --blanco: #ffffff;
-//     --gradBlanco: linear-gradient(to bottom,#b3bead 0%,#dfe5d7 40%,#fcfff4 100%);
-//     --negro50: #8b9091;
     --negro10: rgba(25, 28, 37, 0.05);
     --negro25: rgba(25, 28, 37, 0.25);
     --negro50: rgba(25, 28, 37, 0.5);
     --negro75: rgba(25, 28, 37, 0.75);
-    --verde: #6f962b;
 
-    --organizacion: #db4569;
-    --estrategia: #faad17;
-    --datos: #3d967a;
-    --tecnologias: #004e70;
-    --comunicacion: #3c3b3b;
-    --procesos: #33718d;
-//     --gradVerde: linear-gradient(to bottom, #6f962b 1%,#496618 100%);
-//     --warn: #720000;
-//     --gradRojo: linear-gradient(to bottom, #d50000 0%,#720000 100%);
-//     --azul: #004a6d;
-//     --verde50: rgba(111, 150, 43, 0.5);
-//     --rojo50: rgba(213, 0, 0, 0.5);
-//     --rojo25: rgba(213, 0, 0, 0.25);
-//     --accent: #dd9410;
-//     --naranja50: rgba(221, 148, 16, 0.5);
-//     --accent: #ffb000;
-//     --grisClaro: #b1b3c4;
-//     --gradAzul: linear-gradient(to bottom, #091d27 1%,#004a6d 100%);
+    --organizacion: #004d74;
+    --estrategia: #0068b4;
+    --datos: #003d63;
+    --tecnologias: #00654f;
+    --comunicacion: #009a7a;
+    --procesos: #007190;
     --mdc-list-list-item-label-text-size: 14px;
     --mdc-table-text-size: 14px;
 }
@@ -83,7 +68,7 @@ section{position:relative;}
 header{z-index: 10;}
 footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
 input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
-a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li{transition: all .25s ease-in-out !important;}
+a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
 .seccion{padding-bottom: 20px;}
 h1.title{
@@ -95,7 +80,11 @@ h1.title{
 }
 
 .mat-mdc-card{padding: 15px;}
-
+.mat-drawer-container{
+    background-color: var(--negro10);
+    background-image: url(assets/images/bgr_manual.webp);
+    background-size: cover;
+}
 .mat-drawer-inner-container {
     background-color: #005072;
     color:var(--blanco);

@@ -1,129 +1,387 @@
-.dimension-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: flex-start;
-    .dimension{
-        display: block;
-        padding: 15px 15px 15px 85px;
-        color: var(--blanco75);
-        text-decoration: none;
-        border-radius: 0 25px;
-        position: relative;
-        .mat-icon{
-            font-size: 3em;
-            width: 70px;
-            height: 70px;
-            position: absolute;
-            filter: saturate(0.5) drop-shadow(2px 4px 3px var(--negro25));
-            top: -8px;
-            left: 0;
-            text-align: center;
-            line-height: 68px;
-            border-radius: 0 10px;
-        }
-        &:hover{
-            color: var(--blanco);
-            filter: drop-shadow(2px 4px 3px var(--negro25));
-            transform: scale(1.1);
-            .mat-icon{
-                transform: rotate(-45deg);
-                margin-left: -25px;
-                filter: saturate(1) drop-shadow(2px 4px 8px var(--negro25)) brightness(1.2);
+// .dimension-container{
+//     display: flex;
+//     justify-content: space-evenly;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     .dimension{
+//         display: block;
+//         padding: 15px 15px 15px 85px;
+//         color: var(--blanco75);
+//         text-decoration: none;
+//         border-radius: 0 25px;
+//         position: relative;
+//         .mat-icon{
+//             font-size: 3em;
+//             width: 70px;
+//             height: 70px;
+//             position: absolute;
+//             filter: saturate(0.5) drop-shadow(2px 4px 3px var(--negro25));
+//             top: -8px;
+//             left: 0;
+//             text-align: center;
+//             line-height: 68px;
+//             border-radius: 0 10px;
+//         }
+//         &:hover{
+//             color: var(--blanco);
+//             filter: drop-shadow(2px 4px 3px var(--negro25));
+//             transform: scale(1.1);
+//             .mat-icon{
+//                 transform: rotate(-45deg);
+//                 margin-left: -25px;
+//                 filter: saturate(1) drop-shadow(2px 4px 8px var(--negro25)) brightness(1.2);
+//             }
+//         }
+//     }
+// }
+// .dimension{
+//     position: relative;
+//     text-decoration: none;
+//     padding: 15px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: flex-start;
+//     text-align: center;
+//     .mat-icon{
+//         font-size: 3em;
+//         width: 70px;
+//         height: 70px;
+//     }
+//         span{
+//             width:100px;
+//         }
+//     &:hover{
+//         flex: 1 0 10%;
+//         filter: saturate(0.75);
+//         .mat-icon{
+//             margin: -80px auto 80px;
+//             font-size: 5em;
+//             width: 100px;
+//             height: 100px;
+//             border-radius: 50%;
+//             line-height: 1.3em;
+//             filter: drop-shadow(0px 7px 9px var(--negro25)) saturate(2);
+//             transform: rotate(359deg);
+//         }
+//     }
+//     &::before{
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         font-weight: bolder;
+//         font-size: 3em;
+//         overflow-wrap: break-word;
+//         line-height: 0.8em;
+//         filter: opacity(0.1);
+//         //transform: rotate(340deg) scale(1.5);
+//         margin-top: 23px;
+//         overflow: hidden;
+//     }
+// }
+
+// .organizacion {
+//     background-color: var(--organizacion);
+//     color: var(--blanco);
+//     &:not(.mat-icon):before{
+//         content: "organización y personas";
+//     }
+// }
+
+// .estrategia {
+//     background-color: var(--estrategia);
+//     color: var(--negro75);
+//     &:not(.mat-icon):before{
+//         content: "estrategia y transformación digital";
+//     }
+// }
+
+// .datos {
+//     background-color: var(--datos);
+//     color: var(--blanco);
+//     &:not(.mat-icon):before{
+//         content: "datos y analítica";
+//     }
+// }
+
+// .tecnologias {
+//     background-color: var(--tecnologias);
+//     color: var(--blanco);
+//     &:not(.mat-icon):before{
+//         content: "tecnologías digitales";
+//     }
+// }
+
+// .comunicacion {
+//     background-color: var(--comunicacion);
+//     color: var(--blanco);
+//     &:not(.mat-icon):before{
+//         content: "comunicación";
+//     }
+// }
+
+// .procesos {
+//     background-color: var(--procesos);
+//     color: var(--blanco);
+//     &:not(.mat-icon):before{
+//         content: "procesos";
+//     }
+// }
+
+.container {
+
+
+    .dimensiones {
+
+        .dimension {
+            a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
             }
         }
     }
 }
-.dimension{
+
+.container {
     position: relative;
-    text-decoration: none;
-    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    .mat-icon{
-        font-size: 3em;
-        width: 70px;
-        height: 70px;
+    justify-content: center;
+    .img-logo {
+        max-width: 100%;
+        margin-top: 3em;
+        background-color: var(--blanco75);
+        border-radius: 50px;
     }
-        span{
-            width:100px;
-        }
-    &:hover{
-        flex: 1 0 10%;
-        filter: saturate(0.75);
-        .mat-icon{
-            margin: -80px auto 80px;
-            font-size: 5em;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            line-height: 1.3em;
-            filter: drop-shadow(0px 7px 9px var(--negro25)) saturate(2);
-            transform: rotate(359deg);
-        }
-    }
-    &::before{
-        position: absolute;
+    .dimensiones {
+        position: relative;
+        z-index: 1;
         width: 100%;
-        height: 100%;
-        font-weight: bolder;
-        font-size: 3em;
-        overflow-wrap: break-word;
-        line-height: 0.8em;
-        filter: opacity(0.1);
-        //transform: rotate(340deg) scale(1.5);
-        margin-top: 23px;
-        overflow: hidden;
+        padding: 2em 0 4em;
+        overflow: auto;
+        .dimension {
+            display: block;
+            position: relative;
+            &:hover{
+                z-index:99;
+            }
+            a{
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .icon {
+                    position: relative;
+                    max-width: 80px;
+                    margin-right: 15px;
+                    border: 2px solid var(--negro25);
+                    border-radius: 50%;
+                    background-color: var(--blanco75);
+                }
+                span{
+                    position: relative;
+                    color: var(--blanco);
+                    padding: 5px;
+                    border-radius: 8px;
+                    border: solid 4px var(--blanco25);
+                    flex: 1 1 auto;
+                }
+            }
+                     
+            &.organizacion{
+                span{
+                    background-color: var(--organizacion);
+                }
+            }
+            &.estrategia{
+                span{
+                    background-color: var(--estrategia);
+                }
+            }
+            &.datos{
+                span{
+                    background-color: var(--datos);
+                }
+            }
+            &.tecnologias{
+                span{
+                    background-color: var(--tecnologias);
+                }
+            }
+            &.comunicacion{
+                span{
+                    background-color: var(--comunicacion);
+                }
+            }
+            &.procesos{
+                span{
+                    background-color: var(--procesos);
+                }
+            }
+        }
+    }
+    // &::before{
+    //     content: "";
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width:100%;
+    //     height: 100%;
+    //     filter: opacity(0.5);
+    // }
+    // &.organizacion{
+    //     &::before{background-color: var(--organizacion);}
+    // }
+    // &.estrategia{
+    //     &::before{background-color: var(--estrategia);}
+    // }
+    // &.datos{
+    //     &::before{background-color: var(--datos);}
+    // }
+    // &.tecnologias{
+    //     &::before{background-color: var(--tecnologias);}
+    // }
+    // &.comunicacion{
+    //     &::before{background-color: var(--comunicacion);}
+    // }
+    // &.procesos{
+    //     &::before{background-color: var(--procesos);}
+    // }
+}
+
+
+
+@media (min-width: 768px){
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .img-logo {
+            width: 400px;
+            z-index: 0;
+            margin-top: 0;
+        }
+        .dimensiones {
+            position: absolute;
+            height: 100%;
+            padding: 0;
+            overflow: hidden;
+            .dimension {
+                display: block;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -60px;
+                margin-top: -60px;
+                &:hover{
+                    z-index:99;
+                }
+                a{
+                    text-decoration: none;
+                    display: block;
+                    .icon {
+                        max-width: 100%;
+                        margin: 0;
+                    }
+                    span{
+                        display: flex;
+                        text-align: center;
+                        width: 160px;
+                        height: 90px;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: -20px;
+                        margin-top: -160px;
+                        transform: rotateX(90deg);
+                        transition: all 400ms cubic-bezier(.47,1.64,.41,.8) !important;
+                    }
+                    &:hover{
+                            .icon{
+                                margin-top:-50px;
+                                filter: drop-shadow(0 2px 6px var(--negro50));
+                                transform: scale(1.2) rotate(359deg);
+                            }
+                            span{
+                                margin-top: 0px;
+                                transform: rotateX(0deg);
+                                z-index: -2;
+                                position: relative;
+                            }
+                    }
+                    
+                }             
+                &.organizacion{
+                    transform: translate(-300px, 0px);
+                    &:hover{
+                        transform: translate(-300px, 0px) scale(1.5);
+                    }
+                }
+                &.estrategia{
+                    transform: translate(-130px, -170px);
+                    &:hover{
+                        transform: translate(-130px, -100px) scale(1.5);
+                    }
+                }
+                &.datos{
+                    transform: translate(130px, -170px);
+                    &:hover{
+                        transform: translate(130px, -100px) scale(1.5);
+                    }
+                }
+                &.tecnologias{
+                    transform: translate(300px, 0px);
+                    &:hover{
+                        transform: translate(300px, 0px) scale(1.5);
+                    }
+                }
+                &.comunicacion{
+                    transform: translate(130px, 170px);
+                    &:hover{
+                        transform: translate(130px, 100px) scale(1.5);
+                    }
+                }
+                &.procesos{
+                    transform: translate(-130px, 170px);
+                    &:hover{
+                        transform: translate(-130px, 100px) scale(1.5);
+                    }
+                }
+            }
+        }
+        &::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            filter: opacity(0.5);
+        }
+        &.organizacion{
+            &::before{background-color: var(--organizacion);}
+        }
+        &.estrategia{
+            &::before{background-color: var(--estrategia);}
+        }
+        &.datos{
+            &::before{background-color: var(--datos);}
+        }
+        &.tecnologias{
+            &::before{background-color: var(--tecnologias);}
+        }
+        &.comunicacion{
+            &::before{background-color: var(--comunicacion);}
+        }
+        &.procesos{
+            &::before{background-color: var(--procesos);}
+        }
     }
 }
 
-.organizacion {
-    background-color: var(--organizacion);
-    color: var(--blanco);
-    &:not(.mat-icon):before{
-        content: "organización y personas";
-    }
-}
-
-.estrategia {
-    background-color: var(--estrategia);
-    color: var(--negro75);
-    &:not(.mat-icon):before{
-        content: "estrategia y transformación digital";
-    }
-}
-
-.datos {
-    background-color: var(--datos);
-    color: var(--blanco);
-    &:not(.mat-icon):before{
-        content: "datos y analítica";
-    }
-}
-
-.tecnologias {
-    background-color: var(--tecnologias);
-    color: var(--blanco);
-    &:not(.mat-icon):before{
-        content: "tecnologías digitales";
-    }
-}
-
-.comunicacion {
-    background-color: var(--comunicacion);
-    color: var(--blanco);
-    &:not(.mat-icon):before{
-        content: "comunicación";
-    }
-}
-
-.procesos {
-    background-color: var(--procesos);
-    color: var(--blanco);
-    &:not(.mat-icon):before{
-        content: "procesos";
-    }
-}

@@ -11,7 +11,7 @@
         </div>
     </div>
 </section> -->
-<section>
+<!-- <section>
     <div class="container">
         <div class="row">
             <div class="col col-md-8 col-xl-6 offset-md-2 offset-xl-3">
@@ -26,4 +26,15 @@
         </a>
     </div>
 
-</section>
+</section> -->
+<div class="container {{bgrColor}}" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
+    <img src="../../../assets/images/Logo_Manual.webp" class="img-logo" alt="Manual de Gestión Productiva del Dato">
+    <div class="dimensiones">
+        <div *ngFor="let item of dimensiones" class="dimension {{item.Clase}}" (mouseenter)="setColorBgr(true,item.Clase)" (mouseleave)="setColorBgr(false,item.Clase)">
+            <a routerLink="{{item.Url}}">
+                <img src="../../../assets/images/icons/{{item.Icono}}.webp" class="icon" alt="{{item.Nombre}}" />
+                <span>{{item.Nombre}}</span>
+            </a>
+        </div>
+    </div>
+</div>
