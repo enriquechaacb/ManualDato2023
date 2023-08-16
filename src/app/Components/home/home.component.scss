@@ -27,3 +27,7 @@ video {
     align-items: center;
     padding: 3em;
 }
+.mat-drawer-container .mat-drawer-content {
+    display: block;
+    flex: 1 1 auto;
+}
