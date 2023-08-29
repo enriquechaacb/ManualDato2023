@@ -45,6 +45,7 @@ $light-theme: mat.define-light-theme(
     --blanco25: rgba(255, 255, 255, 0.25);
     --blanco50: rgba(255, 255, 255, 0.5);
     --blanco75: rgba(255, 255, 255, 0.75);
+    --blanco90: rgba(255, 255, 255, 0.9);
     --blanco: #ffffff;
     --negro10: rgba(25, 28, 37, 0.05);
     --negro25: rgba(25, 28, 37, 0.25);
@@ -71,6 +72,7 @@ input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled
 a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
 .seccion{padding-bottom: 20px;}
+h1,h2,h3,h4{color: var(--primary);}
 h1.title{
     padding-top: 1em;
     filter: opacity(0.5);

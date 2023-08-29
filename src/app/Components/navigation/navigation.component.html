@@ -1,3 +1,7 @@
+<div class="logo">
+    <img src="../../../assets/images/Logo_Manual_bco.webp" routerLink="/" class="img-fluid" (click)="menuToggle()" />
+</div>
+
 <div *ngFor="let item of menuItems">
     <a routerLink="{{item.Url}}" (click)="menuToggle()">
         <!-- <mat-icon>{{item.Icono}}</mat-icon> -->

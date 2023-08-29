@@ -34,11 +34,10 @@ export class NavigationComponent implements OnInit {
 }
 
 const Menu = [
-    {Url:"/acerca",Icono:"chevron_right",Nombre:"Acerca de",Seccion:"/"},
     {Url:"/presentacion",Icono:"chevron_right",Nombre:"Presentación",Seccion:"/"},
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
-    {Url:"/filosofia",Icono:"chevron_right",Nombre:"Filosofía",Seccion:"/"},
+    // {Url:"/filosofia",Icono:"chevron_right",Nombre:"Filosofía",Seccion:"/"},
     {Url:"/manual",Icono:"chevron_right",Nombre:"Manual",Seccion:"/"},
     // {Url:"",Icono:"chevron_right",Nombre:"Título de la dimensión",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Eje temático",Seccion:""},

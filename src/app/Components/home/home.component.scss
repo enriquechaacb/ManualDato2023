@@ -27,3 +27,33 @@ video {
     align-items: center;
     padding: 3em;
 }
+.secc{
+    background-color: var(--blanco90);
+    padding: 4em 6vw;
+    margin-bottom: 5em;
+}
+.title{
+    position: relative;
+    font-size: 38px;
+    color: var(--primary);
+    line-height: 32px;
+    z-index: 2;
+    &.presentacion{
+        &::before{content:"PRESENTACION";}
+    }
+    &.bienvenida{
+        &::before{content:"BIENVENIDA";}
+    }
+    &.objetivos{
+        &::before{content:"OBJETIVOS";}
+    }
+    &::before{
+        position: absolute;
+        display: block;
+        font-size: 1.75em;
+        font-weight: 900;
+        filter: opacity(0.2) blur(1px);
+        line-height: 0;
+        font-family: Arial black, 'sans-serif';
+    }
+}

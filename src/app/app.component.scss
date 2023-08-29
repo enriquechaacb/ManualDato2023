@@ -5,6 +5,11 @@
     top:5px;
     right:15px;
     color:var(--blanco);
+    background-color: var(--negro25);
+    &:hover{
+        transform: rotate(359deg);
+        background-color: var(--primary);
+    }
 }
 footer.footer{
     background-color: var(--blanco);
