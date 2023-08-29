@@ -46,6 +46,7 @@ $light-theme: mat.define-light-theme(
     --blanco50: rgba(255, 255, 255, 0.5);
     --blanco75: rgba(255, 255, 255, 0.75);
     --blanco90: rgba(255, 255, 255, 0.9);
+    --blanco90: rgba(255, 255, 255, 0.90);
     --blanco: #ffffff;
     --negro10: rgba(25, 28, 37, 0.05);
     --negro25: rgba(25, 28, 37, 0.25);
@@ -86,11 +87,21 @@ h1.title{
     background-color: var(--negro10);
     background-image: url(assets/images/bgr_manual.webp);
     background-size: cover;
+    display: flex !important;
+    flex-direction: column;
+    .mat-drawer-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
 }
 .mat-drawer-inner-container {
     background-color: #005072;
     color:var(--blanco);
 }
-// .mat-drawer-content{
-//     display: flex !important;
-// }
+
+app-transformaciondigital{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}

@@ -57,3 +57,7 @@ video {
         font-family: Arial black, 'sans-serif';
     }
 }
+.mat-drawer-container .mat-drawer-content {
+    display: block;
+    flex: 1 1 auto;
+}
