@@ -1,1 +1,460 @@
-<p>procesos works!</p>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="../../"><mat-icon>home</mat-icon></a>
+                </li>
+                <li class="nav-item" *ngFor="let item of linksList">
+                    <a class="nav-link" routerLink="{{item.Url}}">{{item.Nombre}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="title">Procesos de negocio</h1>
+
+    <section *ngIf="Seccion==='inicio'">
+        <h2>Introducción </h2>
+        <p>¿Estás listo para desbloquear el máximo potencial de tu pyme a través del desarrollo de competencias en procesos? Exploremos juntos las competencias esenciales para el éxito y crecimiento sostenible de tu negocio ¡Bienvenido!</p>
+        <p>Este programa dinámico está diseñado especialmente para pequeñas y medianas empresas (pymes), busca que puedas adquirir habilidades, capacidades, destrezas y conocimiento, a través de una serie de herramientas y estrategias que te permitirán simplificar flujos de trabajo y elevar la productividad de tu negocio.</p>
+        <p>En este apartado encontrarás una combinación de módulos interactivos, podrás profundizar en la comprensión de los procesos de negocio y fortalecerás la capacidad del uso efectivo de la tecnología y los datos, para la solución de problemas y la toma de decisiones en diversos ámbitos organizacionales.</p>
+        <p>¡Iniciamos!</p>
+        <p>Ojo: Considerar un video </p>
+        <p>Para entrar en contexto, empecemos por abordar qué son exactamente los procesos de negocio. Bueno, básicamente son una serie de pasos que se siguen para llevar a cabo una actividad o tarea en una organización. Piénsalo como una receta de cocina: tiene una lista de ingredientes y un conjunto de instrucciones que deben seguirse para obtener el plato deseado. En el mundo de los negocios, los procesos son como recetas de cocina, se tienen que seguir las indicaciones.</p>
+        <p>Ahora, ¿por qué es tan importante tener los procesos de negocio bien definidos? La respuesta es simple: eficiencia y consistencia. Cuando tienes procesos claros y bien estructurados, todos en la empresa saben qué hacer, cuándo hacerlo y cómo hacerlo ¡Una receta segura! Esto evita confusiones y malentendidos, lo que a su vez reduce los errores y los retrabajos. Además, los procesos definidos permiten ahorrar tiempo y recursos, ya que se eliminan los supuestos y se establecen las mejores prácticas para cada tarea.</p>
+        <p>Si alguna vez has querido implementar nuevas tecnologías en tu empresa, por ejemplo: una plataforma en línea, tener procesos claros es el primer paso. Imagínate que quieren automatizar el proceso de pedidos en su empresa usando un sitio web o una aplicación móvil para teléfonos. Si no tienen claro cómo se manejan los pedidos actualmente, será difícil diseñar un sistema que se ajuste a sus necesidades, pero, si tienen procesos bien definidos, podrán identificar los puntos de mejora y adaptar el sistema de manera efectiva y mucho más rápida.</p>
+        <p>Además, los procesos de negocio bien definidos son esenciales para la digitalización. En un mundo cada vez más conectado y tecnológico, es importante adaptarse y aprovechar las ventajas que ofrecen las herramientas digitales. Al definir y documentar sus procesos, están sentando las bases para una transición más suave hacia la digitalización. Esto permite aprovechar las ventajas de la automatización, los análisis de datos, la inteligencia artificial y otras tecnologías innovadoras que pueden impulsar tu negocio hacia adelante.</p>
+        <p>En resumen, los procesos de negocio bien definidos son la base para el éxito de cualquier empresa. Nos ayudan a ser más eficientes, consistentes y nos preparan para la automatización y la digitalización. Entonces, si tienes que mejorar su negocio, recuerda comenzar por los procesos. ¡Es como tener una guía clara de lo que te llevará hacia el éxito, vamos por ello!</p>
+    </section>
+    
+    <section *ngIf="Seccion==='beneficios'">
+        <h2>Beneficios potenciales de la digitalización de procesos</h2>
+        <ul>
+            <li>Trabajar de forma más eficiente y organizada. Al tener procesos claros y organizados, la empresa podrá eliminar tareas innecesarias que se traduce en menor tiempo y ahorro de recursos. Esto permite hacer más en menos tiempo y ser más productivos.</li>
+            <li>Reducción de errores. Cuando los procesos están bien definidos, evitamos confusiones y malentendidos. Esto permite a la pyme minimizar los errores en tareas y evitar tener que volver a hacer las cosas.</li>
+            <li>Automatización de procesos: Identificar procesos repetitivos o rutinarios que podrían automatizarse utilizando herramientas tecnológicas.</li>
+            <li>Calidad. Al seguir los mismos pasos en cada tarea, logramos mantener una calidad constante en nuestros productos o servicios. La pyme contará con herramientas que permitan generar lealtad y confianza en sus clientes y ayudará a construir una buena reputación.</li>
+            <li>Facilita la capacitación. Cuando tenemos procesos bien documentados, es más fácil enseñar a nuevos empleados cómo hacer su trabajo. Esto desarrollará en la empresa la capacidad de acelerar la incorporación al equipo de nuevos trabajadores y les permitirá a los trabajadores comenzar a contribuir rápidamente.</li>
+            <li>Adaptabilidad y crecimiento. Con procesos claros, podemos adaptarnos a los cambios y crecer más fácilmente. Es así como las pymes podrán ajustar los procesos para enfrentar nuevos desafíos y aprovechar oportunidades de crecimiento.</li>
+            <li>Preparación para la era digital. Con procesos bien definidos, estamos listos para adoptar tecnologías y sistemas digitales. Busca que las empresas puedan automatizar tareas y aprovechar las ventajas que ofrece la tecnología para mejorar la eficiencia, productividad y muy importante: la competitividad de su empresa.</li>
+            <li>Mejora continua e impulsar la excelencia para mejorar los ingresos. Al tener procesos bien establecidos, podemos identificar áreas de mejora y hacer ajustes. Esto permite a las empresas, mejorar constantemente y buscar la excelencia en las operaciones que se traducen en clientes que aprecian más sus productos y servicios y que reditúan en mayores ganancias.</li>
+            <li>Innovación de productos y servicios: Fortalecer los procesos permite identificar oportunidades de innovación y desarrollo de nuevos productos o servicios para satisfacer las necesidades del mercado.</li>
+        </ul>
+        <p>En conclusión, tener procesos de negocio bien definidos es esencial para el éxito de una empresa. Nos ayuda a trabajar de manera más eficiente, minimizar errores, mantener una calidad constante y prepararnos para el futuro. Así que ¡no subestimes el poder de los procesos bien establecidos!</p>
+        <p>Reflexión: En el mundo empresarial, a veces nos enfocamos en los resultados finales y nos olvidamos de los procesos que nos llevan allí. Sin embargo, los procesos son la base de nuestro éxito. Si dedicamos tiempo y esfuerzo a definirlos correctamente, nos beneficiaremos de una mayor eficiencia, calidad y adaptabilidad. Entonces, recordemos siempre la importancia de tener procesos de negocio bien definidos, ¡son el camino hacia el crecimiento y el logro de nuestras metas!</p>
+    </section>
+    
+    <section *ngIf="Seccion==='objetivos'">
+        <h2>Objetivos</h2>
+        <ul>
+            <li>Reflexionar y comprender la importancia de los procesos de negocio en las organizaciones.</li>
+            <li>Identificar posibles ineficiencias y áreas de mejora en los procesos analizados.</li>
+            <li>Analizar datos recolectados para medir el rendimiento actual de los procesos.</li>
+            <li>Establecer metas de mejora basadas en los análisis realizados.</li>
+            <li>Evaluar el impacto de las mejoras implementadas en los procesos.</li>
+            <li>Medir el cumplimiento de los indicadores de rendimiento (KPIs) establecidos para monitorear el desempeño de los procesos.</li>
+            <li>Comprender la relación entre los procesos de negocio y la transformación digital.</li>
+            <li>Reconocer cómo las tecnologías emergentes pueden impactar en la optimización de los procesos.</li>
+        </ul>
+    </section>
+    
+    <section *ngIf="Seccion==='proceso'">
+        <h2>Proceso o pasos que deberá seguir la pyme</h2>
+        <p>Evaluación inicial y análisis: Realizar una evaluación inicial de los procesos de negocio existentes en la pyme. Identificar los puntos fuertes y las áreas de mejora, así como los objetivos y metas que se desean lograr.</p>
+        <p>Establecimiento de objetivos claros: Definir los objetivos específicos que se desean alcanzar en términos de mejora de los procesos de negocio. Estos objetivos deben ser medibles y alineados con la estrategia general de la empresa.</p>
+        <p>Formación y capacitación: Es indispensable contar con programas de capacitación y actualización en diversidad de temas, entre ellos el de procesos de negocio. Se deben adquirir los conocimientos y habilidades necesarios. Aprovechar los recursos proporcionados en la capacitación, como materiales de aprendizaje, ejercicios prácticos y asesoramiento por parte de los instructores.</p>
+        <p>Análisis y rediseño de procesos: Utilizar las herramientas y metodologías aprendidas en la capacitación para analizar a fondo los procesos de negocio existentes. Identificar oportunidades de mejora, eliminar pasos innecesarios, simplificar tareas y optimizar la secuencia de actividades.</p>
+        <p>Implementación de cambios: Desarrollar un plan de implementación para introducir las mejoras identificadas en los procesos de negocio. Asignar responsabilidades claras y establecer un cronograma para asegurar una implementación efectiva y controlada.</p>
+        <p>Monitoreo y evaluación: Establecer indicadores clave de desempeño (KPIs) para medir el impacto de los cambios implementados. Realizar un seguimiento regular del rendimiento de los procesos de negocio, comparándolos con los KPIs (indicadores de éxito) establecidos. Evaluar la efectividad de las mejoras y realizar ajustes según sea necesario.</p>
+        <p>Mejora continua: Fomentar una cultura de mejora continua en la pyme. Estimular la participación y la retroalimentación de los empleados y promover la identificación e implementación constante de nuevas oportunidades de mejora en los procesos de negocio.</p>
+    </section>
+    
+    <section *ngIf="Seccion==='desarrollo'">
+        <h2>Desarrollo del contenido del eje temático</h2>
+        <div class="row">
+            <div class="col col-md-3">
+                <ul class="inner-menu">
+                    <li *ngFor="let item of EjesTematicos" (click)="SubSeccion=item.Valor" [ngClass]="{'selected': item.Valor===SubSeccion}">{{item.Nombre}}</li>
+                </ul>
+            </div>
+            <div class="col">
+                <mat-card *ngIf="SubSeccion==='tema1'" class="bgr-negro25">
+                    <h3>Introducción a los Procesos de Negocio</h3>
+                </mat-card>
+                <mat-card *ngIf="SubSeccion==='tema2'" class="bgr-negro25">
+                    <h3>Identificación y Mapeo de Procesos</h3>
+                </mat-card>
+                <mat-card *ngIf="SubSeccion==='tema3'" class="bgr-negro25">
+                    <h3>Diseño y optimización de procesos</h3>
+                </mat-card>
+                <mat-card *ngIf="SubSeccion==='tema4'" class="bgr-negro25">
+                    <h3>Gestión y Control de Procesos</h3>
+                </mat-card>
+                <mat-card *ngIf="SubSeccion==='tema5'" class="bgr-negro25">
+                    <h3>Procesos de negocio y transformación digital</h3>
+                </mat-card>
+                <mat-card *ngIf="SubSeccion==='tema6'" class="bgr-negro25">
+                    <h3>Futuras tendencias en procesos de negocio</h3>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+    
+    <section *ngIf="Seccion==='herramientas'">
+        <h2>Caja de herramientas</h2>
+
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>Recurso</th>
+                        <th>Descripci&oacute;n</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.1. Qu&eacute; son los procesos de negocio y su importancia en las organizaciones.</td>
+                        <td>Netflix</td>
+                        <td>&quot;The Founder&quot; (Hambre de Poder) - Esta pel&iacute;cula cuenta la historia de c&oacute;mo Ray Kroc adquiri&oacute; y transform&oacute; la cadena de restaurantes McDonald&apos;s en una empresa global, destacando los procesos de negocio y la expansi&oacute;n de la franquicia.</td>
+                        <td>Formato para caja de herramientas</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2.2 Mapeo y documentaci&oacute;n de los procesos: diagramas de flujo&nbsp;
+                        </td>
+                        <td>
+                            <a href="https://asana.com/es/resources/what-is-a-flowchart">&iquest;Qu&eacute; es un diagrama de flujo y c&oacute;mo hacerlo? [2022] &bull; Asana</a>
+                        </td>
+                        <td>
+                            Infograf&iacute;a de c&oacute;mo hacer un diagrama de flujo.
+                        </td>
+                        <td>
+                            Vinculado a una actividad de lectura
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2.2 Mapeo y documentaci&oacute;n de los procesos: SIPOC
+                        </td>
+                        <td>
+                            <a href="https://www.lucidchart.com/pages/es/plantillas/diagrama-sipoc">Diagrama SIPOC | Lucidchart</a>
+                        </td>
+                        <td>
+                            Herramienta para elaborar un diagrama SIPOC
+                        </td>
+                        <td>
+                            Formato para caja de herramientas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.1 Buenas pr&aacute;cticas para el dise&ntilde;o de procesos eficientes y efectivos.<br>
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/9KqpOStyV48">https://youtu.be/9KqpOStyV48</a><br>
+                        </td>
+                        <td>
+                            Video que explica la diferencia de la eficiencia y eficacia.
+                        </td>
+                        <td>
+                            Formato para caja de herramientas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.1 Buenas pr&aacute;cticas para el dise&ntilde;o de procesos eficientes y efectivos.<br>
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/dzh7faTkHCk">https://youtu.be/dzh7faTkHCk</a><br>
+                        </td>
+                        <td>
+                            Video que muestra la importancia de KPI con ejemplos
+                        </td>
+                        <td>
+                            Vinculado a una actividad de lectura
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.2 Estrategias para optimizar los procesos y reducir tiempos y costos.<br>
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/d-d19ze6V-E">https://youtu.be/d-d19ze6V-E</a><br>
+                        </td>
+                        <td>
+                            Video que desarrolla el uso del tiempo est&aacute;ndar para reducir costos
+                        </td>
+                        <td>
+                            Vinculado a una actividad de lectura
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.3 Automatizaci&oacute;n y digitalizaci&oacute;n de procesos para mejorar la productividad.<br>
+                        </td>
+                        <td>
+                            <a href="https://rockcontent.com/es/blog/kpis-de-ventas/#:~:text=Los%207%20principales%20KPIs%20de%20ventas%201%201.,concretados%20...%207%207.%20Ciclo%20de%20venta%20">KPIs de ventas: conoce los 7 principales y c&oacute;mo usarlos - Rock Content</a>
+                        </td>
+                        <td>
+                            Blog para el uso KPIS en entorno digital
+                        </td>
+                        <td>
+                            Formato para caja de herramientas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4.2 Implementaci&oacute;n de un sistema de gesti&oacute;n de procesos (BPM) en la empresa.<br>
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/0fTWBDyZ4fI">https://youtu.be/0fTWBDyZ4fI</a><br>
+                        </td>
+                        <td>
+                            Video explicativo de como implementar un BMP
+                        </td>
+                        <td>
+                            Vinculado a una actividad de lectura
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5.2 C&oacute;mo Aprovechar las Tecnolog&iacute;as Digitales para Innovar y Optimizar los Procesos
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/PLpDCK3Zy7Q">https://youtu.be/PLpDCK3Zy7Q</a><br>
+                        </td>
+                        <td>
+                            Video demostrativo del uso de la realidad virtual y aumentada.
+                        </td>
+                        <td>
+                            Vinculado a una actividad de lectura
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </section>
+    
+    <section *ngIf="Seccion==='glosario'">
+        <h2>Glosario</h2>
+        <table class="table table-dark table-striped">
+            <tbody>
+                <tr>
+                    <th>Internet de las cosas (IoT)</th>
+                    <td>IoT se refiere a la red de dispositivos físicos conectados entre sí y a internet, que pueden recopilar y compartir datos, interactuar y tomar decisiones sin intervención humana directa.</td>
+                </tr>
+                <tr>
+                    <th>Chatbot</th>
+                    <td>Un chatbot es un programa de inteligencia artificial que puede interactuar con los usuarios a través de chat, simulando una conversación humana. Se utiliza en servicios de atención al cliente, asistencia en línea y otras interacciones automatizadas.</td>
+                </tr>
+                <tr>
+                    <th>Automatización robótica de procesos (RPA)</th>
+                    <td>RPA es una tecnología que utiliza robots de software para automatizar tareas repetitivas y basadas en reglas en sistemas informáticos. Estos robots pueden emular las acciones humanas en aplicaciones y sistemas.</td>
+                </tr>
+                <tr>
+                    <th>Inteligencia Artificial</th>
+                    <td>La inteligencia artificial (IA) se refiere a la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos. La IA permite a las máquinas aprender de la experiencia y realizar tareas que normalmente requerirían habilidades humanas, como el reconocimiento de voz, el aprendizaje automático y la toma de decisiones.</td>
+                </tr>
+                <tr>
+                    <th>Big Data</th>
+                    <td>Big Data se refiere al gran volumen de datos que se generan y recopilan a gran velocidad de diferentes fuentes. Estos datos son complejos y masivos, lo que dificulta su análisis con herramientas tradicionales.</td>
+                </tr>
+                <tr>
+                    <th>Blockchain</th>
+                    <td>Blockchain es una tecnología de registro distribuido que utiliza cadenas de bloques para garantizar la seguridad, transparencia e integridad de las transacciones en línea sin necesidad de una autoridad central.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section *ngIf="Seccion==='expertos'">
+        <h2>Directorio de expertos</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Medio de contacto
+                    </th>
+                    <th>
+                        Descripci&oacute;n
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>
+                        ABPMP (Asociaci&oacute;n de Profesionales de Procesos de Negocio
+                    </td>
+                    <td>
+                        http://abpmp.org.mx/
+                    </td>
+                    <td>
+                        Es una organizaci&oacute;n que busca promover y desarrollar la disciplina de gesti&oacute;n de procesos de negocio en Am&eacute;rica Latina.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        IIBA Cap&iacute;tulo Latinoam&eacute;rica
+                    </td>
+                    <td>
+                        <a href="https://www.ddi.com.mx/IIBA/">Mexico City IIBA Chapter (ddi.com.mx)</a>
+                    </td>
+                    <td>
+                        Cap&iacute;tulo Latinoamericano del International Institute of Business Analysis (IIBA), que se enfoca en la gesti&oacute;n y mejora de procesos de negocio.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Facultad de Ingenier&iacute;a &nbsp;Universidad Panamericana&nbsp;
+                    </td>
+                    <td>
+                        Claudia Arias Portela
+                        <a href="mailto:cyarias@up.edu.mx">cyarias@up.edu.mx</a>&nbsp;
+                    </td>
+                    <td>
+                        Profesora Investigadora
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Modo digital&nbsp;
+                    </td>
+                    <td>
+                        <a href="https://mododigital.uy">https://mododigital.uy</a><br>
+                    </td>
+                    <td><br></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section *ngIf="Seccion==='instituciones'">
+        <h2>Instituciones clave</h2>
+        <table class="table table-dark table-striped">
+            <tbody>
+                <tr>
+                    <td>
+                        Ministerio de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaciones de Colombia,
+                    </td>
+                    <td>
+                        https://www.mintic.gov.co/portal/inicio/
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ministerio de Comercio, Industria y Turismo de Colombia,<br>
+                    </td>
+                    <td>
+                        https://www.mincit.gov.co
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ministerio de Econom&iacute;a y Finanzas de la Rep&uacute;blica Oriental del Uruguay<br>
+                    </td>
+                    <td>
+                        <a href="https://www.gub.uy/ministerio-economia-finanzas/">https://www.gub.uy/ministerio-economia-finanzas/</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Direcci&oacute;n Nacional de Innovaci&oacute;n, Ciencia y Tecnolog&iacute;a&nbsp;Uruguay<br>
+                    </td>
+                    <td>
+                        <a href="https://www.gub.uy/ministerio-educacion-cultura/direccion-innovacion-ciencia-tecnologia">https://www.gub.uy/ministerio-educacion-cultura/direccion-innovacion-ciencia-tecnologia</a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ministerio de Econom&iacute;a de El Salvador<br>
+                    </td>
+                    <td>
+                        <a href="https://www.economia.gob.sv">https://www.economia.gob.sv</a><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section *ngIf="Seccion==='casosdeexito'">
+        <h2>Casos de éxito o buenas prácticas</h2>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Toyota Production System</h3>
+            <p>Toyota es conocido por su enfoque en la mejora continua de procesos. Su sistema de producción, también conocido como "Lean Manufacturing", ha sido ampliamente adoptado en diversas industrias para reducir desperdicios, mejorar la eficiencia y aumentar la calidad de los productos.</p>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Amazon</h3>
+            <p>La compañía de comercio electrónico ha sido exitosa en la implementación de procesos de logística y distribución altamente eficientes, lo que le permite realizar entregas rápidas y precisas en todo el mundo.</p>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Zara</h3>
+            <p>La marca de moda española Zara ha sido reconocida por su modelo de negocio ágil y su capacidad para diseñar, producir y distribuir nuevas prendas de forma rápida, respondiendo a las tendencias actuales del mercado.</p>
+        </mat-card>
+        <h5>Referencias</h5>
+        <p>
+            <small>
+                Ramirez Leobardo (2019), Curso de ingeniería de Métodos, Moodle UP<br/>
+                Ramirez Leobardo (2023), Gestión de la Calidad, Moodle UP<br/>
+                Ramirez Leobardo (2018), Dirección de Empresas, Moodle UP
+            </small>
+        </p>
+    </section>
+    
+    <section *ngIf="Seccion==='literatura'">
+        <h2>Literatura de consulta</h2>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Gómez, J.C. P.</h3>
+            <p>([Inserta el año de publicación]). Administración de procesos. Guía para el aprendizaje. Pearson HispanoAmerica Contenido. https://up.vitalsource.com/books/9786073240086</p>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Arango, C.A.B.T.H.D. S.</h3>
+            <p>([Inserta el año de publicación]). Proceso administrativo para las organizaciones del siglo xxi  (3rd ed.). Pearson HispanoAmerica Contenido. https://up.vitalsource.com/books/9789586994057</p>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>Krajewski, L. J.</h3>
+            <p>([Inserta el año de publicación]). ADMINISTRACION DE OPERACIONES (10th ed.). Pearson HispanoAmerica Contenido. https://up.vitalsource.com/books/9786073221221</p>
+        </mat-card>
+    </section>
+    
+    <section *ngIf="Seccion==='sitios'">
+        <h2>Sitios web de consulta sugeridos</h2>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>ABPMP (Asociación de Profesionales de Procesos de Negocio)</h3>
+            <p>El sitio web de ABPMP ofrece recursos, plantillas y guías relacionadas con la gestión de procesos de negocio. También puedes encontrar información sobre estándares y mejores prácticas en la disciplina.</p>
+            <h4><a href="https://www.abpmp.org/" target="_blank">https://www.abpmp.org/</a></h4>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>APQC (American Productivity & Quality Center)</h3>
+            <p>APQC es una organización sin fines de lucro que se enfoca en la mejora del rendimiento organizacional. En su sitio web, encontrarás herramientas, investigaciones y benchmarking relacionados con la gestión de procesos de negocio.</p>
+            <h4><a href="https://www.apqc.org/" target="_blank">https://www.apqc.org/</a></h4>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>BPM-LATAM</h3>
+            <p>BPM-LATAM es una comunidad en línea que busca conectar a profesionales y expertos en gestión de procesos de negocio en América Latina. El sitio web ofrece foros de discusión, recursos y eventos relacionados con BPM.</p>
+            <h4><a href="http://www.bpm-latam.org/" target="_blank">http://www.bpm-latam.org/</a></h4>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>IIBA (International Institute of Business Analysis)</h3>
+            <p>El sitio web de IIBA ofrece recursos y herramientas relacionadas con la gestión y análisis de negocios. Puedes encontrar información relevante para el estudio de procesos de negocio y la mejora de la eficiencia.</p>
+            <h4><a href="https://www.iiba.org/" target="_blank">https://www.iiba.org/</a></h4>
+        </mat-card>
+        <mat-card class="bgr-negro25 mb-3">
+            <h3>BPM.com</h3>
+            <p>Este sitio web se enfoca en la gestión de procesos de negocio y ofrece artículos, noticias, casos de estudio y herramientas relacionadas con BPM. Puedes encontrar información útil para tu estudio de procesos.</p>
+            <h4><a href="https://www.bpm.com/" target="_blank">https://www.bpm.com/</a></h4>
+        </mat-card>
+    </section>
+
+</div>

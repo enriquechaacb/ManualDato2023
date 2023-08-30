@@ -62,7 +62,20 @@ $light-theme: mat.define-light-theme(
     --mdc-table-text-size: 14px;
 }
 
-body {display: flex;min-height: 100vh;flex-direction: column;margin:0;overflow-x: hidden;background-color: var(--dark-primary);}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+    //background-color: var(--dark-primary);
+    &.organizacion{background-color: var(--organizacion)}
+    &.estrategia{background-color: var(--estrategia)}
+    &.datos{background-color: var(--datos)}
+    &.tecnologias{background-color: var(--tecnologias)}
+    &.comunicacion{background-color: var(--comunicacion)}
+    &.procesos{background-color: var(--procesos)}
+}
 app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Noto Sans', "Helvetica Neue", sans-serif;}
 main {display:flex;flex-direction: column;flex: 1 0 auto;}
 section{position:relative;}
@@ -80,12 +93,20 @@ h1.title{
     font-size: 3em;
     text-align: end;
 }
+p{text-align: justify;}
+
+.bgr-negro10{background-color: var(--negro10) !important;}
+.bgr-negro25{background-color: var(--negro25) !important;}
+.bgr-negro50{background-color: var(--negro50) !important;}
+.bgr-negro75{background-color: var(--negro75) !important;}
+
 
 .mat-mdc-card{padding: 15px;}
 .mat-drawer-container{
-    background-color: var(--negro10);
-    background-image: url(assets/images/bgr_manual.webp);
-    background-size: cover;
+    background-color: transparent;
+    // background-color: var(--negro10);
+    // background-image: url(assets/images/bgr_manual.webp);
+    // background-size: cover;
     display: flex !important;
     flex-direction: column;
     .mat-drawer-content{

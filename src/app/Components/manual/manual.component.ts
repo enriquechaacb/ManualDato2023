@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GlobalService } from 'src/app/Services/global.service';
+import { GlobalService } from '../../Services/global.service';
 
 @Component({
     selector: 'app-manual',
