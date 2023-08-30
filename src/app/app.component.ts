@@ -19,13 +19,14 @@ export class AppComponent implements OnInit {
         this._thisroute.events.subscribe((event: Event|RouterEvent) => {
             if (event instanceof NavigationEnd) {
                 const d:string = event.url.split("/")[2];
+                this._renderer.removeClass(this._document.body, 'organizacion');
+                this._renderer.removeClass(this._document.body, 'estrategia');
+                this._renderer.removeClass(this._document.body, 'datos');
+                this._renderer.removeClass(this._document.body, 'tecnologias');
+                this._renderer.removeClass(this._document.body, 'comunicacion');
+                this._renderer.removeClass(this._document.body, 'procesos');
                 if(d){
-                    this._renderer.removeClass(this._document.body, 'organizacion');
-                    this._renderer.removeClass(this._document.body, 'organizacion');
-                    this._renderer.removeClass(this._document.body, 'datos');
-                    this._renderer.removeClass(this._document.body, 'tecnologias');
-                    this._renderer.removeClass(this._document.body, 'comunicacion');
-                    this._renderer.removeClass(this._document.body, 'procesos');
+                    this._renderer.removeClass(this._document.body, 'default');
                     switch(d){
                         case "organizacionypersonas": this._renderer.addClass(this._document.body, 'organizacion'); break;
                         case "transformaciondigital": this._renderer.addClass(this._document.body, 'estrategia'); break;
@@ -34,6 +35,8 @@ export class AppComponent implements OnInit {
                         case "comunicacion": this._renderer.addClass(this._document.body, 'comunicacion'); break;
                         case "procesos": this._renderer.addClass(this._document.body, 'procesos'); break;
                     }
+                }else{
+                    this._renderer.addClass(this._document.body, 'default');
                 }
             }
         });
