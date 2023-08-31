@@ -9,7 +9,7 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="../../"><mat-icon>home</mat-icon></a>
                 </li>
-                <li class="nav-item" *ngFor="let item of linksList">
+                <li class="nav-item" *ngFor="let item of linksList" [ngClass]="{'active': item.Url === '../'+Seccion}">
                     <a class="nav-link" routerLink="{{item.Url}}">{{item.Nombre}}</a>
                 </li>
             </ul>
@@ -18,7 +18,17 @@
 </nav>
 
 <div class="container">
-    <h1 class="title">Procesos de negocio</h1>
+    <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center">
+            <img src="../../../../assets/images/Logo_Manual_bco.webp" alt="DataSmart" class="img-fluid" />
+        </div>
+        <div class="col-8 col-md-5 col-xl-7 d-flex flex-column justify-content-center">
+            <h1 class="title">Procesos de negocio</h1>
+        </div>
+        <div class="col-4 col-md-3 col-xl-2 d-flex flex-column justify-content-center">
+            <img src="../../../../assets/images/icons/procesos.webp" alt="Procesos" class="img-fluid" />
+        </div>
+    </div>
 
     <section *ngIf="Seccion==='inicio'">
         <h2>Introducción </h2>
@@ -26,7 +36,9 @@
         <p>Este programa dinámico está diseñado especialmente para pequeñas y medianas empresas (pymes), busca que puedas adquirir habilidades, capacidades, destrezas y conocimiento, a través de una serie de herramientas y estrategias que te permitirán simplificar flujos de trabajo y elevar la productividad de tu negocio.</p>
         <p>En este apartado encontrarás una combinación de módulos interactivos, podrás profundizar en la comprensión de los procesos de negocio y fortalecerás la capacidad del uso efectivo de la tecnología y los datos, para la solución de problemas y la toma de decisiones en diversos ámbitos organizacionales.</p>
         <p>¡Iniciamos!</p>
-        <p>Ojo: Considerar un video </p>
+        <div class="ratio ratio-16x9 mb-5">
+            <iframe src="https://www.youtube.com/embed/D0UnqGm_miA?si=EaNiwXPZ7LxanaCe" title="Video test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <p>Para entrar en contexto, empecemos por abordar qué son exactamente los procesos de negocio. Bueno, básicamente son una serie de pasos que se siguen para llevar a cabo una actividad o tarea en una organización. Piénsalo como una receta de cocina: tiene una lista de ingredientes y un conjunto de instrucciones que deben seguirse para obtener el plato deseado. En el mundo de los negocios, los procesos son como recetas de cocina, se tienen que seguir las indicaciones.</p>
         <p>Ahora, ¿por qué es tan importante tener los procesos de negocio bien definidos? La respuesta es simple: eficiencia y consistencia. Cuando tienes procesos claros y bien estructurados, todos en la empresa saben qué hacer, cuándo hacerlo y cómo hacerlo ¡Una receta segura! Esto evita confusiones y malentendidos, lo que a su vez reduce los errores y los retrabajos. Además, los procesos definidos permiten ahorrar tiempo y recursos, ya que se eliminan los supuestos y se establecen las mejores prácticas para cada tarea.</p>
         <p>Si alguna vez has querido implementar nuevas tecnologías en tu empresa, por ejemplo: una plataforma en línea, tener procesos claros es el primer paso. Imagínate que quieren automatizar el proceso de pedidos en su empresa usando un sitio web o una aplicación móvil para teléfonos. Si no tienen claro cómo se manejan los pedidos actualmente, será difícil diseñar un sistema que se ajuste a sus necesidades, pero, si tienen procesos bien definidos, podrán identificar los puntos de mejora y adaptar el sistema de manera efectiva y mucho más rápida.</p>
@@ -87,21 +99,196 @@
             <div class="col">
                 <mat-card *ngIf="SubSeccion==='tema1'" class="bgr-negro25">
                     <h3>Introducción a los Procesos de Negocio</h3>
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>1.1 Qué son los procesos de negocio y su importancia en las organizaciones.</mat-expansion-panel-header>
+                            <p>Los procesos de negocio son una serie de pasos que seguimos para hacer las cosas de manera organizada en una empresa y que, permiten transformar los insumos en resultados valiosos para una empresa. Son como recetas que nos guían para lograr nuestros objetivos de manera eficiente. Imagina que tienes una panadería. Para hacer pan, necesitas seguir ciertos pasos:</p>
+                            <ul>
+                                <li>Mezclar los ingredientes.</li>
+                                <li>Amasar la masa.</li>
+                                <li>Dejarla reposar.</li>
+                                <li>Hornear el pan.</li>
+                                <li>Enfriarlo y listo, tienes pan fresco.</li>
+                            </ul>
+                            <p>Cada uno de estos pasos, hacen parte del proceso de negocio de la panadería. Ahora, ¿por qué son importantes los procesos de negocio en las empresas? Veámoslo:</p>
+                            <img src="../../../../assets/images/dimensions/procesos_1.webp" class="img-fluid my-5" />
+                            <ul>
+                                <li>Eficiencia: Los procesos bien definidos ayudan a hacer las cosas más rápido y con menos errores, lo que ahorra tiempo y dinero.</li>
+                                <li>Calidad: Cuando se siguen procesos, los productos y servicios suelen ser más consistentes y de mejor calidad, lo que satisface a los clientes.</li>
+                                <li>Organización: Los procesos mantienen a todos en la misma página y evitan el caos.</li>
+                                <li>Innovación: Al entender los procesos actuales, es más fácil encontrar formas de mejorarlos e innovar.</li>
+                                <li>Flexibilidad: Los procesos permiten adaptarse a cambios en el negocio o en el mercado más rápidamente.</li>
+                            </ul>
+                            <p>Veamos algunos casos-ejemplos:</p>
+                            <mat-card class="bgr-blanco25 mb-3">
+                                <h4>Caso 1: Proceso de Atención al Cliente en un restaurante:</h4>
+                                <ol>
+                                    <li>El cliente llega al restaurante y es recibido por el mesero.</li>
+                                    <li>El mesero toma la orden del cliente y la lleva a la cocina.</li>
+                                    <li>El chef prepara la comida y la envía al mesero.</li>
+                                    <li>El mesero entrega la comida al cliente y le pregunta si todo está bien.</li>
+                                    <li>El cliente paga la cuenta y se va satisfecho.</li>
+                                </ol>
+                            </mat-card>
+                            <mat-card class="bgr-blanco25 mb-3">
+                                <h4>Caso 2: Proceso de Compra en una tienda en línea:</h4>
+                                <ol>
+                                    <li>El cliente busca el producto en el sitio web.</li>
+                                    <li>Agrega el producto al carrito de compras.</li>
+                                    <li>Proporciona los detalles de envío y pago.</li>
+                                    <li>Realiza el pago.</li>
+                                    <li>Recibe una confirmación y número de seguimiento del pedido.</li>
+                                    <li>El producto es entregado en la dirección proporcionada.</li>
+                                </ol>
+                            </mat-card>
+                            <mat-card class="bgr-accent mb-3">
+                                <h4 class="text-dark">Reflexión. Preguntas abiertas:</h4>
+                                <ul>
+                                    <li class="text-dark">Lista de manera general los pasos que hacen parte de uno de los procesos de negocio de tu pyme, sin detalles, hazlo de manera general y desde lo mejor de tus esfuerzos. Pista: escoge sólo un producto o servicio que ofrezca tu empresa.</li>
+                                    <li class="text-dark">¿Por qué crees que es importante tener procesos definidos en tu pyme?</li>
+                                    <li class="text-dark">¿Cómo crees que los procesos de negocio podrían ayudar a mejorar la eficiencia y la mejora de utilidades en tu pyme?</li>
+                                </ul>
+                            </mat-card>
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>1.2 Elementos y características de los procesos de negocio.</mat-expansion-panel-header>
+                            <p>Los procesos de negocio son como recetas para hacer las cosas en una empresa. Imagina que tienes un negocio de cupcakes. Para hacer tus deliciosos cupcakes, necesitas seguir ciertos pasos organizados. Cada uno de esos pasos, es un elemento del proceso de negocio y los veremos a continuación:</p>
+                            <ul>
+                                <li>Objetivo: Cada proceso tiene un objetivo, como hacer cupcakes deliciosos y decorados para vender. Es el resultado que deseas lograr al final.</li>
+                                <li>Actividades: Son las acciones específicas que haces para alcanzar el objetivo. Por ejemplo, mezclar los ingredientes, hornear los cupcakes y decorarlos.</li>
+                                <li>Flujo de trabajo: Es la secuencia lógica en la que haces las actividades. Primero mezclas los ingredientes, luego los horneas y finalmente los decoras.</li>
+                                <li>Responsabilidades: En un negocio, diferentes personas tienen diferentes responsabilidades en los procesos. Por ejemplo, tú mezclas los ingredientes, alguien más hornea los cupcakes y otra persona los decora y otra persona se encarga de venderlos.</li>
+                                <li>Reglas y Políticas: Son las normas que debes seguir para hacer todo correctamente. Por ejemplo, seguir una receta específica para obtener cupcakes consistentes y deliciosos o considerar las normas de higiene que se deben seguir para asegurar la calidad del producto.</li>
+                                <li>Tecnología: Algunas veces usas herramientas o aparatos para hacer las actividades más fáciles. En el caso de los cupcakes, puede ser una batidora para mezclar los ingredientes y el horno para cocinarlos.</li>
+                            </ul>
+                            <p>Así mismo, los procesos de negocio tienen como mínimo ciertas características, distingamos cuáles son:</p>
+                            <ul>
+                                <li>Eficiencia: Un proceso bien organizado te permite hacer cupcakes más rápido y sin perder tiempo en pasos innecesarios.</li>
+                                <li>Calidad: Seguir el mismo proceso te ayuda a hacer cupcakes consistentes y deliciosos cada vez.</li>
+                                <li>Coordinación: Cuando todos conocen su rol y siguen el flujo de trabajo, el negocio funciona de manera más coordinada y efectiva.</li>
+                            </ul>
+                            <p>Observemos a modo de ejemplo, el siguiente proceso y sus elementos.</p>
+                            <mat-card class="bgr-blanco25 mb-3">
+                                <h4>Ejemplo: Proceso de atención al cliente en una tienda de ropa:</h4>
+                                <ul>
+                                    <li>Objetivo: Brindar una excelente experiencia de compra al cliente.</li>
+                                    <li>Actividades: Saludar al cliente, ayudarlo a encontrar lo que busca, mostrarle opciones, atender sus preguntas y procesar su pago.</li>
+                                    <li>Flujo de trabajo: Saludo <mat-icon class="lh36">east</mat-icon> Ayuda <mat-icon class="lh36">east</mat-icon> Mostrar opciones <mat-icon class="lh36">east</mat-icon> Preguntas <mat-icon class="lh36">east</mat-icon> Pago.</li>
+                                    <li>Responsabilidades: Un vendedor atiende al cliente, otro maneja el inventario y otro procesa el pago.</li>
+                                    <li>Reglas y Políticas: No presionar al cliente para comprar, ser amable y respetuoso.</li>
+                                    <li>Tecnología: Puede haber un sistema de punto de venta para procesar el pago rápidamente.</li>
+                                </ul>
+                            </mat-card>
+                            <mat-card class="bgr-accent mb-3">
+                                <h4 class="text-dark">Reflexión. Preguntas abiertas:</h4>
+                                <ol>
+                                    <li class="text-dark">Describe de manera general los elementos del proceso de negocio de tu pyme. Pista: escoge sólo un producto o servicio que ofrezca tu empresa. Realiza tu mejor esfuerzo.</li>
+                                    <li class="text-dark">¿Cómo crees que los procesos de negocio podrían ayudar a mejorar la calidad de los productos o servicios que ofrece tu pyme?</li>
+                                    <li class="text-dark">¿Qué papel consideras que juega la tecnología para el crecimiento sostenible del proceso de negocio de tu pyme?</li>
+                                </ol>
+                            </mat-card>
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>1.3 Tipos de procesos de negocio: operativos, de soporte y de gestión.</mat-expansion-panel-header>
+                            <p>Los procesos de negocio son como las piezas de un rompecabezas. Cada pieza tiene su lugar y función específica, y al unirse adecuadamente, forman una imagen completa y funcional. Así pues, para que seamos actores más informados y eficaces en el funcionamiento y el éxito de nuestra pyme, debemos conocer que tipos de procesos podría llegar a tener en mi organización:</p>
+                            <img src="../../../../assets/images/dimensions/procesos_2.webp" class="img-fluid my-5" />
+                            <ol>
+                                <li>Procesos Operativos: son las actividades esenciales que una empresa realiza día a día para producir bienes o brindar servicios. Estas piezas son como los colores y formas que forman las partes principales del rompecabezas. Son esenciales para la creación y entrega de los productos o servicios de la empresa. Ejemplo: En un restaurante, el proceso de preparar y servir los platillos es un proceso operativo clave.</li>
+                                <li>Procesos de Soporte: Estos procesos brindan el respaldo necesario para que los procesos operativos funcionen correctamente. Son como las piezas del borde que rodean y dan soporte a la imagen completa del rompecabezas. Ejemplo: El departamento de atención al cliente es un proceso de soporte que brinda asistencia y soluciona problemas para los clientes.</li>
+                                <li>Procesos de Gestión: Estos procesos guían y supervisan el funcionamiento general de la empresa. Representan las piezas que unen y coordinan todas las demás, asegurando que el rompecabezas se mantenga unido y se complete exitosamente. Ejemplo: El proceso de planificación es un proceso de gestión que establece la dirección y metas a largo plazo de la empresa.</li>
+                            </ol>
+                            <p>El ensamblaje adecuado de todas estas piezas es fundamental para que el rompecabezas (es decir, la empresa) funcione eficientemente y alcance sus objetivos.</p>
+                            <mat-card class="bgr-accent mb-3">
+                                <h4 class="text-dark">Reflexión. Preguntas abiertas:</h4>
+                                <ol>
+                                    <li class="text-dark">¿Por qué crees que los procesos operativos son como las piezas principales de un rompecabezas para una empresa? Identifica los procesos operativos de tu empresa.</li>
+                                    <li class="text-dark">¿Puedes mencionar un ejemplo de un proceso de soporte en tu pyme, que haya sido clave para tu éxito? ¿Cómo lo podrías mejorar con el uso de tecnologías digitales?</li>
+                                    <li class="text-dark">¿Cómo pueden los procesos de gestión asegurarse de que todas las piezas del rompecabezas se unan adecuadamente para lograr los objetivos de la empresa?</li>
+                                </ol>
+                            </mat-card>
+                        </mat-expansion-panel>
+                    </mat-accordion>
                 </mat-card>
                 <mat-card *ngIf="SubSeccion==='tema2'" class="bgr-negro25">
                     <h3>Identificación y Mapeo de Procesos</h3>
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>2.1. Técnicas para identificar y definir los procesos de negocio en una empresa</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>2.2. Mapeo y documentación de los procesos: diagramas de flujo y SIPOC</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>2.3. Identificación de ineficiencias y oportunidades de mejora en los procesos existentes</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    
+
+
+
                 </mat-card>
                 <mat-card *ngIf="SubSeccion==='tema3'" class="bgr-negro25">
                     <h3>Diseño y optimización de procesos</h3>
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>3.1. Buenas prácticas para el diseño de procesos eficientes y efectivos</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>3.2. Estrategias para optimizar los procesos y reducir tiempos y costos</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>3.3. Automatización y digitalización de procesos para mejorar la productividad</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                    </mat-accordion>
                 </mat-card>
                 <mat-card *ngIf="SubSeccion==='tema4'" class="bgr-negro25">
                     <h3>Gestión y Control de Procesos</h3>
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (KPIs), SLAs, otros</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>4.2. Implementación de un sistema de gestión de procesos (BPM) en la empresa</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>4.3. Monitoreo y mejora continua de los procesos para garantizar su eficacia</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                    </mat-accordion>
                 </mat-card>
                 <mat-card *ngIf="SubSeccion==='tema5'" class="bgr-negro25">
                     <h3>Procesos de negocio y transformación digital</h3>
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>5.1. La relación entre procesos de negocio y la transformación digital</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>5.2. Cómo aprovechar las tecnologías digitales para innovar y optimizar los procesos</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>5.3. Estudio de casos de empresas que han logrado una transformación exitosa</mat-expansion-panel-header>
+                        </mat-expansion-panel>
+                    </mat-accordion>
                 </mat-card>
                 <mat-card *ngIf="SubSeccion==='tema6'" class="bgr-negro25">
                     <h3>Futuras tendencias en procesos de negocio</h3>
+                    <h4>Exploración de tendencias emergentes en procesos de negocio</h4>
+                    <p>En el mundo empresarial en constante evolución, las tendencias emergentes en los procesos de negocio juegan un papel crucial para mantener la competitividad y la eficiencia. A continuación, exploraremos algunas de las tendencias más importantes de manera sencilla:</p>
+                    <p>Automatización Inteligente: La automatización inteligente, que combina la inteligencia artificial y la automatización robótica de procesos (RPA), está transformando la forma en que se llevan a cabo las tareas comerciales. Estos sistemas pueden aprender y mejorar a medida que interactúan con datos, permitiendo la automatización de tareas repetitivas y la toma de decisiones más precisas. Por ejemplo, chatbots inteligentes pueden responder preguntas de clientes en tiempo real, mejorando la atención al cliente.</p>
+                    <p>Procesos de negocio ágiles: Los procesos de negocio ágiles se basan en la flexibilidad y la adaptabilidad para responder rápidamente a los cambios del mercado y las necesidades de los clientes. En lugar de seguir procedimientos rígidos, las empresas adoptan enfoques más colaborativos y abiertos a la experimentación. Esto les permite ajustar sus operaciones rápidamente y mantenerse al día con las demandas cambiantes del entorno empresarial.</p>
+                    <p>Analítica avanzada de datos: La analítica avanzada de datos está revolucionando la forma en que las empresas toman decisiones informadas. Utilizando técnicas de Big data y análisis predictivo, las organizaciones pueden obtener ideas más profundas sobre sus operaciones y clientes. Esto les permite optimizar sus procesos y servicios, anticipar tendencias y tomar decisiones más estratégicas. Por ejemplo, análisis de datos puede ayudar a predecir la demanda de productos y planificar el inventario de manera más eficiente.</p>
+                    <p>Integración de Blockchain en procesos empresariales: La tecnología blockchain está siendo utilizada cada vez más en la gestión de procesos empresariales. Esta tecnología permite el registro seguro y descentralizado de transacciones, lo que mejora la transparencia y la confianza en la cadena de suministro y otros procesos. Por ejemplo, en la industria de alimentos, blockchain puede rastrear el origen de los productos y garantizar su autenticidad y seguridad.</p>
+                    <p>Enfoque en la experiencia del cliente: La experiencia del cliente se ha convertido en un enfoque central para muchas empresas. Los procesos de negocio se están diseñando con la satisfacción del cliente en mente, desde la adquisición hasta el servicio postventa. La personalización y la atención al cliente son clave para retener clientes y fomentar la lealtad.</p>
+                    <p>Conclusión: Las tendencias emergentes en procesos de negocio están revolucionando la forma en que las empresas operan y se relacionan con sus clientes. La automatización inteligente, la agilidad, el análisis de datos, la integración de blockchain y el enfoque en la experiencia del cliente son factores clave para el éxito empresarial en el futuro.</p>
+                    <mat-card class="bgr-accent mb-3">
+                        <h4 class="text-dark">Reflexión. Preguntas Abiertas:</h4>
+                        <ol>
+                            <li class="text-dark">¿Qué tendencias emergentes crees que serán más disruptivas en los próximos años y cómo podrían impactar a tu pyme?</li>
+                            <li class="text-dark">¿Qué beneficios ves en la adopción de tecnologías como blockchain en los procesos empresariales?</li>
+                            <li class="text-dark">¿Qué desafíos crees que podrían surgir al implementar estas tendencias emergentes en una empresa y cómo se podrían superar?</li>
+                        </ol>
+                    </mat-card>
                 </mat-card>
             </div>
         </div>
@@ -110,7 +297,7 @@
     <section *ngIf="Seccion==='herramientas'">
         <h2>Caja de herramientas</h2>
 
-            <table class="table table-dark table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Tema</th>
@@ -245,7 +432,7 @@
     
     <section *ngIf="Seccion==='glosario'">
         <h2>Glosario</h2>
-        <table class="table table-dark table-striped">
+        <table class="table table-striped">
             <tbody>
                 <tr>
                     <th>Internet de las cosas (IoT)</th>
@@ -277,7 +464,7 @@
     
     <section *ngIf="Seccion==='expertos'">
         <h2>Directorio de expertos</h2>
-        <table class="table table-dark table-striped">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>
@@ -342,7 +529,7 @@
     
     <section *ngIf="Seccion==='instituciones'">
         <h2>Instituciones clave</h2>
-        <table class="table table-dark table-striped">
+        <table class="table table-striped">
             <tbody>
                 <tr>
                     <td>

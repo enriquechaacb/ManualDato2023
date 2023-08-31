@@ -90,7 +90,7 @@ input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled
 a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
 .seccion{padding-bottom: 20px;}
-h1,h2,h3,h4{color: var(--primary);}
+h1,h2,h3,h4{margin-bottom:1.5em !important;filter:opacity(0.8)}
 h1.title{
     padding-top: 1em;
     filter: opacity(0.5);
@@ -99,11 +99,18 @@ h1.title{
     text-align: end;
 }
 p{text-align: justify;}
+li:not(.nav-item){margin-bottom: 1em;}
 
+.bgr-blanco25{background-color: var(--blanco25) !important;}
+.bgr-blanco50{background-color: var(--blanco50) !important;}
+.bgr-blanco75{background-color: var(--blanco75) !important;}
 .bgr-negro10{background-color: var(--negro10) !important;}
 .bgr-negro25{background-color: var(--negro25) !important;}
 .bgr-negro50{background-color: var(--negro50) !important;}
 .bgr-negro75{background-color: var(--negro75) !important;}
+.bgr-primary{background-color: var(--primary) !important;}
+.bgr-accent{background-color: var(--accent) !important;}
+.bgr-warn{background-color: var(--warn) !important;}
 
 
 .mat-mdc-card{padding: 15px;}
