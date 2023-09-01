@@ -13,6 +13,7 @@ import { ManualComponent } from './Components/manual/manual.component';
 import { TransformaciondigitalComponent } from './Components/manual/transformaciondigital/transformaciondigital.component';
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
+import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProcesosComponent } from './Components/manual/procesos/procesos.compone
     ManualComponent,
     TransformaciondigitalComponent,
     OrganizacionypersonasComponent,
-    ProcesosComponent
+    ProcesosComponent,
+    ProcesosdenegocioComponent
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,12 @@ export class ManualComponent {
         public _globalService: GlobalService
     ){}
     public dimensiones: Array<any> = [
-        { Url: "organizacionypersonas/inicio", Nombre: "Organización y personas", Icono:"organizacion", Clase:"organizacion" },
-        { Url: "transformaciondigital/inicio", Nombre: "Estrategia y transformación digital", Icono:"estrategia", Clase:"estrategia" },
-        { Url: "datosyanalitica/inicio", Nombre: "Datos y analítica", Icono:"datos_analitica", Clase:"datos" },
-        { Url: "tecnologiasyhabilidadesigitales/inicio", Nombre: "Tecnologías y habilidades digitales", Icono:"tecnologias", Clase:"tecnologias" },
-        { Url: "comunicacion/inicio", Nombre: "Comunicación y canales de venta", Icono:"comunicacion", Clase:"comunicacion" },
-        { Url: "procesos/inicio", Nombre: "Procesos", Icono:"procesos", Clase:"procesos" }
+        { Url: "organizacionypersonas/presentacion", Nombre: "Organización y personas", Icono:"organizacion", Clase:"organizacion" },
+        { Url: "transformaciondigital/presentacion", Nombre: "Estrategia y transformación digital", Icono:"estrategia", Clase:"estrategia" },
+        { Url: "datosyanalitica/presentacion", Nombre: "Datos y analítica", Icono:"datos_analitica", Clase:"datos" },
+        { Url: "tecnologiasyhabilidadesigitales/presentacion", Nombre: "Tecnologías y habilidades digitales", Icono:"tecnologias", Clase:"tecnologias" },
+        { Url: "comunicacion/presentacion", Nombre: "Comunicación y canales de venta", Icono:"comunicacion", Clase:"comunicacion" },
+        { Url: "procesos/presentacion", Nombre: "Procesos", Icono:"procesos", Clase:"procesos" }
     ];
     setColorBgr(t:boolean,color:string){
         if(t){

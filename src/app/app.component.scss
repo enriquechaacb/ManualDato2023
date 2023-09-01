@@ -6,6 +6,7 @@
     right:15px;
     color:var(--blanco);
     background-color: var(--negro25);
+    z-index:999;
     &:hover{
         transform: rotate(359deg);
         background-color: var(--primary);

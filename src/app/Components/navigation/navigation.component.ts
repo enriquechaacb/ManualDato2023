@@ -38,7 +38,7 @@ const Menu = [
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
     // {Url:"/filosofia",Icono:"chevron_right",Nombre:"Filosofía",Seccion:"/"},
-    {Url:"/manual",Icono:"chevron_right",Nombre:"Manual",Seccion:"/"},
+    {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"},
     // {Url:"",Icono:"chevron_right",Nombre:"Título de la dimensión",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Eje temático",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Presentación",Seccion:""},

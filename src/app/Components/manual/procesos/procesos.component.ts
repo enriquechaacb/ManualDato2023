@@ -17,26 +17,16 @@ export class ProcesosComponent {
         public _thisroute: ActivatedRoute
     ){
         this.linksList = [
-            { Url: "../inicio", Nombre: "Introducción" },
+            { Url: "../presentacion", Nombre: "Presentación" },
+            { Url: "../definicion", Nombre: "Definición" },
             { Url: "../beneficios", Nombre: "Beneficios" },
-            { Url: "../objetivos", Nombre: "Objetivos" },
-            { Url: "../proceso", Nombre: "Proceso" },
             { Url: "../desarrollo", Nombre: "Desarrollo" },
-            { Url: "../herramientas", Nombre: "Herramientas" },
-            { Url: "../glosario", Nombre: "Glosario" },
-            { Url: "../expertos", Nombre: "Expertos" },
-            { Url: "../instituciones", Nombre: "Instituciones" },
-            { Url: "../casosdeexito", Nombre: "Casos de éxito" },
-            { Url: "../literatura", Nombre: "Literatura" },
-            { Url: "../sitios", Nombre: "Sitios web" }
+            { Url: "../ejestematicos", Nombre: "Ejes temáticos" }
         ];
         this.EjesTematicos = [
-            { Valor: "tema1", Nombre: "Tema 1: Introducción a los Procesos de Negocio" },
-            { Valor: "tema2", Nombre: "Tema 2: Identificación y Mapeo de Procesos" },
-            { Valor: "tema3", Nombre: "Tema 3: Diseño y optimización de procesos" },
-            { Valor: "tema4", Nombre: "Tema 4: Gestión y Control de Procesos" },
-            { Valor: "tema5", Nombre: "Tema 5: Procesos de negocio y transformación digital" },
-            { Valor: "tema6", Nombre: "Tema 6: futuras tendencias en procesos de negocio" }
+            { Valor: "tema1", Nombre: "Procesos de negocio", Link: "../procesosdenegocio/introduccion" },
+            { Valor: "tema2", Nombre: "Desarrollo de ambientes digitales", Link: "../desarrollodeambientesdigitales/introduccion" },
+            { Valor: "tema3", Nombre: "Logística", Link: "../logistica/introduccion" }
         ];
         // this.Secciones = [
         //     {Nombre: "Introducción", Valor: "Introduccion"},
