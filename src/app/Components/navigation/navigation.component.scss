@@ -13,6 +13,7 @@ a{
     display: block;
     width: 260px;
     border-bottom: 1px dotted var(--blanco25);
+    cursor: pointer;
     &:hover{
         color: var(--blanco);
         transform: scale(1.1);

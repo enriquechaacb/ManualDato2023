@@ -5,7 +5,13 @@
                 <a class="nav-link" routerLink="../../"><mat-icon>home</mat-icon></a>
             </li>
             <li class="nav-item" *ngFor="let item of linksList" [ngClass]="{'active': item.Url === '../'+Seccion}">
-                <a class="nav-link" routerLink="{{item.Url}}">{{item.Nombre}}</a>
+                <a *ngIf="!item.Externo; else int" class="nav-link" routerLink="{{item.Url}}">{{item.Nombre}}</a>
+                <ng-template #int>
+                    <a class="nav-link" (click)="goToUrl(item.Url)">
+                        <!-- <mat-icon>{{item.Icono}}</mat-icon> -->
+                        {{item.Nombre}}
+                    </a>
+                </ng-template>  
             </li>
         </ul>
     </mat-drawer>

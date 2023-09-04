@@ -30,6 +30,12 @@ export class NavigationComponent implements OnInit {
     }
 
     menuToggle(){this.change.emit();}
+    goToUrl(url: string){//CAMBIAR URL POR PAIS...
+        window.open(
+            url,
+            '_blank'
+        );
+    }
 
 }
 
@@ -37,7 +43,7 @@ const Menu = [
     {Url:"/presentacion",Icono:"chevron_right",Nombre:"Presentación",Seccion:"/"},
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
-    // {Url:"/filosofia",Icono:"chevron_right",Nombre:"Filosofía",Seccion:"/"},
+    {Url:"https://www.rutadigital.cl/",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
     {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"},
     // {Url:"",Icono:"chevron_right",Nombre:"Título de la dimensión",Seccion:""},
     // {Url:"",Icono:"chevron_right",Nombre:"Eje temático",Seccion:""},

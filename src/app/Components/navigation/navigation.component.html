@@ -3,10 +3,15 @@
 </div>
 
 <div *ngFor="let item of menuItems">
-    <a routerLink="{{item.Url}}" (click)="menuToggle()">
+    <a *ngIf="!item.Externo; else int" routerLink="{{item.Url}}" (click)="menuToggle()">
         <!-- <mat-icon>{{item.Icono}}</mat-icon> -->
         {{item.Nombre}}
     </a>
+    <ng-template #int>
+        <a (click)="goToUrl(item.Url)">
+            <!-- <mat-icon>{{item.Icono}}</mat-icon> -->
+            {{item.Nombre}}
+        </a>
+    </ng-template>    
 </div>
-
 

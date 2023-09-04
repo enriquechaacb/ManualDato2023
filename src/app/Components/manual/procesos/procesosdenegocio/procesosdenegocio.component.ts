@@ -28,7 +28,8 @@ export class ProcesosdenegocioComponent {
             { Url: "../instituciones", Nombre: "Instituciones" },
             { Url: "../casosdeexito", Nombre: "Casos de éxito" },
             { Url: "../literatura", Nombre: "Literatura" },
-            { Url: "../sitios", Nombre: "Sitios web" }
+            { Url: "../sitios", Nombre: "Sitios web" },
+            { Url: "../../../../assets/downloads/Procesos-de-negocio.pdf", Nombre: "e-Book", Externo: true }
         ];
         this.EjesTematicos = [
             { Valor: "tema1", Nombre: "Tema 1: Introducción a los Procesos de Negocio" },
@@ -51,5 +52,11 @@ export class ProcesosdenegocioComponent {
         } else {
             this.SubSeccion = v;
         }
+    }
+    goToUrl(url: string){//CAMBIAR URL POR PAIS...
+        window.open(
+            url,
+            '_blank'
+        );
     }
 }
