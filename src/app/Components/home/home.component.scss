@@ -4,21 +4,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // video{
-    //     width: 100%;
-    //     height: auto;
-    //     position: inherit;
-    // }
+    .bgr-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
 }
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+
 .logo-container{
     background-color: rgb(255 255 255 / 50%);
     display: flex;
@@ -30,33 +26,39 @@ video {
 .secc{
     background-color: var(--blanco90);
     padding: 4em 6vw;
-    margin-bottom: 5em;
+    margin:3em 0  5em;
+    .title-container{
+        padding-bottom: 3em;
+        .title{
+            position: relative;
+            font-size: 38px;
+            color: var(--primary);
+            line-height: 32px;
+            z-index: 2;
+            margin-bottom: 0 !important;
+            &.presentacion{
+                &::before{content:"PRESENTACION";}
+            }
+            &.bienvenida{
+                &::before{content:"BIENVENIDA";}
+            }
+            &.objetivos{
+                &::before{content:"OBJETIVOS";}
+            }
+            &::before{
+                position: absolute;
+                display: block;
+                font-size: 1.75em;
+                font-weight: 900;
+                filter: opacity(0.2) blur(1px);
+                line-height: 0;
+                font-family: Arial black, 'sans-serif';
+            }
+        }
+    }
 }
-.title{
-    position: relative;
-    font-size: 38px;
-    color: var(--primary);
-    line-height: 32px;
-    z-index: 2;
-    &.presentacion{
-        &::before{content:"PRESENTACION";}
-    }
-    &.bienvenida{
-        &::before{content:"BIENVENIDA";}
-    }
-    &.objetivos{
-        &::before{content:"OBJETIVOS";}
-    }
-    &::before{
-        position: absolute;
-        display: block;
-        font-size: 1.75em;
-        font-weight: 900;
-        filter: opacity(0.2) blur(1px);
-        line-height: 0;
-        font-family: Arial black, 'sans-serif';
-    }
-}
+
+
 .mat-drawer-container .mat-drawer-content {
     display: block;
     flex: 1 1 auto;
