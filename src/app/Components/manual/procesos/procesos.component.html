@@ -83,8 +83,9 @@
             <section *ngIf="Seccion==='ejestematicos'">
                 <h2>Ejes temáticos</h2>
                 <div class="row">
-                    <div class="col" *ngFor="let item of EjesTematicos">
-                        <mat-card routerLink="{{item.Link}}" class="bgr-negro25">
+                    <div class="col d-flex" *ngFor="let item of EjesTematicos">
+                        <mat-card routerLink="{{item.Link}}" class="eje-tematico">
+                            <mat-icon>{{item.Icon}}</mat-icon>
                             <h5>{{item.Nombre}}</h5>
                         </mat-card>
                     </div>

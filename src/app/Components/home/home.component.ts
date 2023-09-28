@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { GlobalService } from '../../Services/global.service';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
 

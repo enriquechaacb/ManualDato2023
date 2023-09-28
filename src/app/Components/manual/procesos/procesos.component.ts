@@ -24,9 +24,9 @@ export class ProcesosComponent {
             { Url: "../ejestematicos", Nombre: "Ejes temáticos" }
         ];
         this.EjesTematicos = [
-            { Valor: "tema1", Nombre: "Procesos de negocio", Link: "../procesosdenegocio/introduccion" },
-            { Valor: "tema2", Nombre: "Desarrollo de ambientes digitales", Link: "../desarrollodeambientesdigitales/introduccion" },
-            { Valor: "tema3", Nombre: "Logística", Link: "../logistica/introduccion" }
+            { Valor: "tema1", Nombre: "Procesos de negocio", Icon: "account_tree", Link: "../procesosdenegocio/introduccion" },
+            { Valor: "tema2", Nombre: "Desarrollo de ambientes digitales", Icon: "memory", Link: "../desarrollodeambientesdigitales/introduccion" },
+            { Valor: "tema3", Nombre: "Logística", Icon: "conveyor_belt", Link: "../logistica/introduccion" }
         ];
         // this.Secciones = [
         //     {Nombre: "Introducción", Valor: "Introduccion"},
