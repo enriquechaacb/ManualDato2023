@@ -8,7 +8,7 @@ import { GlobalService } from './Services/global.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/home/home.component';
-import { NavigationComponent } from './Components/navigation/navigation.component';
+import { NavigationComponent, CountryselectorComponent } from './Components/navigation/navigation.component';
 import { ManualComponent } from './Components/manual/manual.component';
 import { TransformaciondigitalComponent } from './Components/manual/transformaciondigital/transformaciondigital.component';
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
@@ -19,7 +19,7 @@ import { ProcesosdenegocioComponent } from './Components/manual/procesos/proceso
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent,
+    NavigationComponent, CountryselectorComponent,
     ManualComponent,
     TransformaciondigitalComponent,
     OrganizacionypersonasComponent,

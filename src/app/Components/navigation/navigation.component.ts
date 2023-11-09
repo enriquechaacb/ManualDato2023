@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
+import { GlobalService } from '../../Services/global.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-navigation',
@@ -13,6 +15,7 @@ export class NavigationComponent implements OnInit {
 
     constructor(
         public _thisroute: Router,
+        private _globalService: GlobalService
     ){}
     ngOnInit(): void {
         this._thisroute.events.subscribe((event: Event|RouterEvent) => {
@@ -27,10 +30,15 @@ export class NavigationComponent implements OnInit {
                 
             }
         });
+        // this._globalService.openModal(CountryselectorComponent,0,'400px',[],0).subscribe(
+        //     y=>{
+        //         this.menuItems[3].Url = y;
+        //     }
+        // )
     }
 
     menuToggle(){this.change.emit();}
-    goToUrl(url: string){//CAMBIAR URL POR PAIS...
+    goToUrl(url: string){
         window.open(
             url,
             '_blank'
@@ -39,30 +47,44 @@ export class NavigationComponent implements OnInit {
 
 }
 
+@Component({
+    selector: 'app-countryselector',
+    template: '<mat-dialog-content><h3>¿De qué país nos visitas?</h3>'
+    +'<mat-form-field class="d-block" appearance="outline">'
+    +'<mat-select [(ngModel)]="IdPais" (selectionChange)="setCountry(IdPais)">'
+    +'<mat-option *ngFor="let item of Paises" [value]="item.IdPais">{{item.Nombre}}</mat-option>'
+    +'</mat-select>'
+    +'</mat-form-field>'
+    +'</mat-dialog-content>',
+    styleUrls: ['./navigation.component.scss']
+})
+export class CountryselectorComponent {
+    public Paises: Array<any> = [
+        {IdPais:1,Nombre:'Colombia'},
+        {IdPais:2,Nombre:'El Salvador'},
+        {IdPais:3,Nombre:'Uruguay'},
+        //{IdPais:0,Nombre:'Otro'}
+    ];
+    public IdPais: number = undefined!;
+    constructor(
+        public _dialogRef: MatDialogRef<CountryselectorComponent>,
+    ){}
+
+    setCountry(id:number){
+        var url: string = "";
+        switch(id){
+            //case 0: break;
+            case 1: url = "https://www.rutadigital.cl"; break;
+            case 2: url = "https://rutadigital.minec.gob.sv"; break;
+            case 3: url = "https://mododigital.uy"; break;
+        }
+        this._dialogRef.close(url);
+    }
+}
 const Menu = [
     {Url:"/presentacion",Icono:"chevron_right",Nombre:"Presentación",Seccion:"/"},
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
-    {Url:"https://www.rutadigital.cl/",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
-    {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"},
-    // {Url:"",Icono:"chevron_right",Nombre:"Título de la dimensión",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Eje temático",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Presentación",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Beneficios",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Metas",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Proceso",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Perfil del participante",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Desarrollo de contenidos",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Autoevaluación diagnóstica",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Contenido temático con desglose de objetivos temáticos",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Base conceptual...",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"1, 2, 3, 4...",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Referencias ",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Actividades sugeridas (autoevaluación final)",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Caja de herramientas",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Directorio de expertos",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Instituciones clave",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Casos de éxito",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Bibliografía de consulta",Seccion:""},
-    // {Url:"",Icono:"chevron_right",Nombre:"Sitios web de consulta",Seccion:""}
+    {Url:"",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
+    {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"}
 ];
