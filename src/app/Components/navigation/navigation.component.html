@@ -27,11 +27,11 @@
         <mat-nav-list>
             <ul class="menu-lat">
                 <li *ngFor="let item of menuItems">
-                    <a *ngIf="!item.Externo; else int" routerLink="{{item.Url}}" (click)="menuToggle()">
+                    <a *ngIf="!item.Externo; else int" routerLink="{{item.Url}}" [ngClass]="{'active': Activeurl === item.Url}"  (click)="menuToggle()">
                         {{item.Nombre}}
                     </a>
                     <ng-template #int>
-                        <a (click)="goToUrl(item.Url)">
+                        <a (click)="goToUrl(item.Url)" routerLink="{{Activeurl}}">
                             {{item.Nombre}}
                         </a>
                     </ng-template>   
@@ -50,11 +50,11 @@
             <span class="spacer"></span>
             <ul class="menu-sup d-none d-md-flex">
                 <li *ngFor="let item of menuItems">
-                    <a *ngIf="!item.Externo; else ints" routerLink="{{item.Url}}" (click)="menuToggle()">
+                    <a *ngIf="!item.Externo; else ints" routerLink="{{item.Url}}" [ngClass]="{'active': Activeurl === item.Url}" (click)="menuToggle()">
                         {{item.Nombre}}
                     </a>
                     <ng-template #ints>
-                        <a (click)="goToUrl(item.Url)">
+                        <a (click)="goToUrl(item.Url)" routerLink="{{Activeurl}}">
                             {{item.Nombre}}
                         </a>
                     </ng-template>  

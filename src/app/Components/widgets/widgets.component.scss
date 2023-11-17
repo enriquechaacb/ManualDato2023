@@ -1,0 +1,16 @@
+.separator{
+    width: 110px;
+    height: 38px;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+    div{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        &:nth-child(1){background-color: var(--accent);}
+        &:nth-child(2){background-color: var(--green);}
+        &:nth-child(3){background-color: var(--primary);}
+        &:nth-child(4){background-color: var(--warn);}
+    }
+}

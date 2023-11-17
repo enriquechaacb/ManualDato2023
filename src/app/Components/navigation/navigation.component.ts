@@ -34,11 +34,6 @@ export class NavigationComponent implements OnInit {
                 
             }
         });
-        // this._globalService.openModal(CountryselectorComponent,0,'400px',[],0).subscribe(
-        //     y=>{
-        //         this.menuItems[3].Url = y;
-        //     }
-        // )
     }
 
     menuToggle(){this.change.emit();}
@@ -50,7 +45,7 @@ export class NavigationComponent implements OnInit {
     }
 
 }
-
+/*
 @Component({
     selector: 'app-countryselector',
     template: '<mat-dialog-content><h3>¿De qué país nos visitas?</h3>'
@@ -85,10 +80,11 @@ export class CountryselectorComponent {
         this._dialogRef.close(url);
     }
 }
+*/
 const Menu = [
     {Url:"/presentacion",Icono:"chevron_right",Nombre:"Presentación",Seccion:"/"},
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
-    {Url:"",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
+    //{Url:"",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
     {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"}
 ];

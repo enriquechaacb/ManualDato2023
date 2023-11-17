@@ -8,23 +8,25 @@ import { GlobalService } from './Services/global.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/home/home.component';
-import { NavigationComponent, CountryselectorComponent } from './Components/navigation/navigation.component';
+import { NavigationComponent } from './Components/navigation/navigation.component';
 import { ManualComponent } from './Components/manual/manual.component';
 import { TransformaciondigitalComponent } from './Components/manual/transformaciondigital/transformaciondigital.component';
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
 import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
+import { WidgetSeparator } from './Components/widgets/widgets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent, CountryselectorComponent,
+    NavigationComponent,
     ManualComponent,
     TransformaciondigitalComponent,
     OrganizacionypersonasComponent,
     ProcesosComponent,
-    ProcesosdenegocioComponent
+    ProcesosdenegocioComponent,
+    WidgetSeparator
   ],
   imports: [
     BrowserModule,

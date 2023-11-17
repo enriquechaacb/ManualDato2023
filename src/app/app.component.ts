@@ -2,11 +2,13 @@ import { DOCUMENT } from '@angular/common';
 import { Component, HostListener, Inject, OnInit, Renderer2 } from '@angular/core';
 import { GlobalService } from './Services/global.service';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
+import { pagesAnimation } from './Services/animations.service';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
+    animations: [pagesAnimation]
 })
 export class AppComponent implements OnInit {
     public Activeurl: string = "";

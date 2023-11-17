@@ -3,29 +3,29 @@
         <source src="../../../assets/video/video_home.mp4" type="video/mp4" />
     </video>
 </section>
-<section id="home" *ngIf="Activeurl===''">
+<section id="home" class="container" *ngIf="Activeurl===''" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
     <div class="row">
-        <div class="col col-md-6 col-xl-4">
-            <div class="logo-container" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
-                <img src="../../../assets/images/Logo_EconomiadelDato.webp" class="img-fluid">
-                <!-- <img src="../../../assets/images/Logo_Manual.webp" class="img-fluid"> -->
+        <div class="col col-md-6">
+            <div class="bullet">
+                <h1>Convertimos los <span>DATOS EN OPORTUNIDADES</span> para llevar las empresas al siguiente nivel.</h1>
             </div>
         </div>
     </div>
 </section>
 
 <div class="container">
-    <mat-card class="secc" *ngIf="Activeurl!==''">
+    <div class="secc" *ngIf="Activeurl!==''">
         <div class="title-container">
-            <h2 class="title {{Activeurl}}">{{Subtitle}}</h2>
+            <h2 class="title {{Activeurl}}" @changePage>{{Subtitle}}</h2>
         </div>
+        <separator></separator>
 
-        <section id="presentacion" *ngIf="Activeurl==='presentacion'" class="container seccion">
+        <section id="presentacion" *ngIf="Activeurl==='presentacion'" class="container seccion" @changePage>
             <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube.com/embed/3cA4V8HWemA?rel=0" title="Presentación" allowfullscreen></iframe>
             </div>
         </section>
-        <section id="bienvenida" *ngIf="Activeurl==='bienvenida'" class="container seccion">
+        <section id="bienvenida" *ngIf="Activeurl==='bienvenida'" class="container seccion" @changePage>
             <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube.com/embed/KqvDrAZSuek?rel=0" title="Bienvenida" allowfullscreen></iframe>
             </div>
@@ -53,7 +53,7 @@
                 los negocios en América Latina y el Caribe.</p> -->
 
         </section>
-        <section id="objetivos" *ngIf="Activeurl==='objetivos'" class="container seccion">
+        <section id="objetivos" *ngIf="Activeurl==='objetivos'" class="container seccion" @changePage>
 
             <p>Contribuir a la mejora de los procesos de gestión productiva del dato de las pymes de Colombia, El
                 Salvador y Urubuay, a través del diseño y habilitación de una plataforma multimedia, de acceso libre,
@@ -75,5 +75,5 @@
             </ul>
 
         </section>
-    </mat-card>
+    </div>
 </div>
