@@ -17,14 +17,7 @@
 <div class="container">
     <mat-card class="secc" *ngIf="Activeurl!==''">
         <div class="title-container">
-            <div class="row">
-                <div class="col col-md-6 col-xl-8 d-flex flex-column justify-content-end">
-                    <h2 class="title {{Activeurl}}">{{Subtitle}}</h2>
-                </div>
-                <div class="col col-md-6 col-xl-4">
-                    <img src="../../../assets/images/Logo_Manual.webp" class="img-fluid">
-                </div>
-            </div>
+            <h2 class="title {{Activeurl}}">{{Subtitle}}</h2>
         </div>
 
         <section id="presentacion" *ngIf="Activeurl==='presentacion'" class="container seccion">

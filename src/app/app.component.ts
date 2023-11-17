@@ -9,6 +9,7 @@ import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+    public Activeurl: string = "";
     constructor(
         public _globalService: GlobalService,
         @Inject(DOCUMENT) private _document: Document,
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this._thisroute.events.subscribe((event: Event|RouterEvent) => {
             if (event instanceof NavigationEnd) {
+                this.Activeurl = event.url;
                 const d:string = event.url.split("/")[2];
                 this._renderer.removeClass(this._document.body, 'organizacion');
                 this._renderer.removeClass(this._document.body, 'estrategia');
@@ -39,8 +41,12 @@ export class AppComponent implements OnInit {
                     this._renderer.addClass(this._document.body, 'default');
                 }
             }
+
         });
         
         //console.log(this._router)
+    }
+    triggerAnimation(outlet:any) {
+        return outlet.activatedRouteData.animation || null;
     }
 }

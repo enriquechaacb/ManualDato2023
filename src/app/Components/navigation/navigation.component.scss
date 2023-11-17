@@ -1,4 +1,31 @@
-
+.mat-toolbar{
+    background-color: var(--grey);
+    .logo-header{width:180px;max-width:35%;height:auto;margin:auto;cursor: pointer;}
+    .menu-sup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background: var(--primary);
+        border-radius: 30px;
+        padding: 0;
+        margin: 0;
+        li{
+            list-style: none;
+            a{
+                color: var(--blanco);
+                font-size: 15px;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 8px;
+                display: block;
+                &:hover{
+                    color: var(--accent);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
 .logo{
     padding: 15px 0;
     cursor: pointer;
@@ -6,16 +33,31 @@
         width:200px;
     }
 }
-a{
-    color:var(--blanco50);
-    text-decoration: none;
-    padding: 8px 2em;
-    display: block;
-    width: 260px;
-    border-bottom: 1px dotted var(--blanco25);
-    cursor: pointer;
-    &:hover{
-        color: var(--blanco);
-        transform: scale(1.1);
+
+
+.sidenav-container {
+    height: 100%;
+    .sidenav {
+        max-width: 300px;
+    }
+}
+
+
+app-main-navigation{z-index:2;}
+app-main-navigation img{width:100px;height:auto;}
+mat-sidenav-content.mat-drawer-content{overflow: initial;}
+
+
+
+
+@media (min-width: 992px) {
+    .mat-toolbar{
+        .menu-sup {
+            li{
+                a{
+                    padding: 8px 2em;
+                }
+            }
+        }
     }
 }

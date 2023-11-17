@@ -2,46 +2,33 @@
 
 @include mat.core();
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
-$app-typography: mat.define-typography-config($font-family: 'Noto Sans');
+$app-typography: mat.define-typography-config($font-family: 'Montserrat');
 $light-theme: mat.define-light-theme(
     (
         color:(
-            primary: mat.define-palette(mat.$blue-grey-palette, 400, 600, 800),
+            primary: mat.define-palette(mat.$indigo-palette, 800),
             accent: mat.define-palette(mat.$amber-palette, 600),
-            warn: mat.define-palette(mat.$red-palette, 700)
+            warn: mat.define-palette(mat.$pink-palette, 'A400')
         ),
         typography: $app-typography
     )
 );
 
-// $dark-theme: mat.define-dark-theme(
-//     (
-//         color:(
-//             primary: mat.define-palette(mat.$grey-palette, 700),
-//             accent: mat.define-palette(mat.$orange-palette, 600),
-//             warn: mat.define-palette(mat.$deep-orange-palette, 600)
-//         ),
-//         //typography: $app-typography
-//     )
-// );
-
 @include mat.all-component-themes($light-theme);
-// .dark-mode{
-//    @include mat.all-component-themes($dark-theme);
-// }
-
 
 
 /* CSS */
 :root {
-    --accent: #ffb300;
-    --primary: #78909c;
-    --warn: #d32f2f;
-    --dark-accent: #fb8c00;
-    --dark-primary: #616161;
-    --dark-warn: #f4511e;
+    --primary: #135b7c;
+    --accent: #f8ac15;
+    --warn: #f7436b;
+    --green: #33a996;
+    --grey: #efefef;
+    // --dark-accent: #fb8c00;
+    // --dark-primary: #616161;
+    // --dark-warn: #f4511e;
     --blanco25: rgba(255, 255, 255, 0.25);
     --blanco50: rgba(255, 255, 255, 0.5);
     --blanco75: rgba(255, 255, 255, 0.75);
@@ -52,15 +39,18 @@ $light-theme: mat.define-light-theme(
     --negro50: rgba(25, 28, 37, 0.5);
     --negro75: rgba(25, 28, 37, 0.75);
 
-    --organizacion: #004d74;
-    --estrategia: #0068b4;
-    --datos: #003d63;
-    --tecnologias: #00654f;
-    --comunicacion: #009a7a;
-    --procesos: #007190;
-    --mdc-list-list-item-label-text-size: 14px;
-    --mdc-table-text-size: 14px;
+    // --organizacion: #004d74;
+    // --estrategia: #0068b4;
+    // --datos: #003d63;
+    // --tecnologias: #00654f;
+    // --comunicacion: #009a7a;
+    // --procesos: #007190;
+    // --mdc-list-list-item-label-text-size: 14px;
+    // --mdc-table-text-size: 14px;
 }
+
+
+a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
 body {
     display: flex;
@@ -68,26 +58,28 @@ body {
     flex-direction: column;
     margin: 0;
     overflow-x: hidden;
-    &.organizacion{background-color: var(--organizacion)}
-    &.estrategia{background-color: var(--estrategia)}
-    &.datos{background-color: var(--datos)}
-    &.tecnologias{background-color: var(--tecnologias)}
-    &.comunicacion{background-color: var(--comunicacion)}
-    &.procesos{background-color: var(--procesos)}
-    &.default{
-        background-color: var(--dark-primary);
-        background-image: url(assets/images/bgr_manual.webp);
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    
+    // &.organizacion{background-color: var(--organizacion)}
+    // &.estrategia{background-color: var(--estrategia)}
+    // &.datos{background-color: var(--datos)}
+    // &.tecnologias{background-color: var(--tecnologias)}
+    // &.comunicacion{background-color: var(--comunicacion)}
+    // &.procesos{background-color: var(--procesos)}
+    // &.default{
+    //     background-color: var(--dark-primary);
+    //     background-image: url(assets/images/bgr_manual.webp);
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    // }
 }
-app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Noto Sans', "Helvetica Neue", sans-serif;}
-main {display:flex;flex-direction: column;flex: 1 0 auto;}
+app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Montserrat', "Helvetica Neue", sans-serif;}
+main {display:flex;flex-direction: column;flex: 1 0 auto;padding-top: 10em;}
+p, li{font-size: 16px;line-height:28px;font-weight: 400;}
+/*
 section{position:relative;}
 header{z-index: 10;}
 footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
 input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
-a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
 .seccion{padding-bottom: 20px;}
 h1,h2,h3,h4{margin-bottom:1.5em !important;filter:opacity(0.8)}
@@ -216,5 +208,35 @@ app-transformaciondigital{
             white-space: nowrap;
             overflow: hidden;
         }
+    }
+}
+*/
+
+
+.mat-drawer-content {
+    z-index: 5 !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+    position: fixed;
+}
+
+.mat-toolbar {
+    border: solid 1px var(--gris);
+    &.mat-toolbar-single-row{height: 100px;}
+    &.hoverable{
+        height: 10px;
+        overflow: hidden;
+        filter: opacity(0);
+        &:hover{
+            height: 64px;
+            filter: opacity(1);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mat-toolbar {
+        &.mat-toolbar-single-row{height: 100px;position: fixed;}
     }
 }

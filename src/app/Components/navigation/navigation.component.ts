@@ -1,7 +1,9 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
 import { GlobalService } from '../../Services/global.service';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Observable, map } from 'rxjs';
 
 @Component({
     selector: 'app-navigation',
@@ -12,10 +14,12 @@ export class NavigationComponent implements OnInit {
     @Output() change = new EventEmitter<any>();
     public menuItems: Array<any> = [];
     public Activeurl: string = "";
+    isHandset$: Observable<boolean> = this._breakpointObserver.observe(Breakpoints.Handset).pipe(map(result => result.matches));
 
     constructor(
         public _thisroute: Router,
-        private _globalService: GlobalService
+        private _globalService: GlobalService,
+        private _breakpointObserver: BreakpointObserver,
     ){}
     ngOnInit(): void {
         this._thisroute.events.subscribe((event: Event|RouterEvent) => {
