@@ -1,5 +1,6 @@
 .mat-toolbar{
     background-color: var(--grey);
+    .spacer{flex:1 1 auto;}
     .logo-header{width:180px;max-width:35%;height:auto;margin:auto;cursor: pointer;}
     .menu-sup{
         display: flex;

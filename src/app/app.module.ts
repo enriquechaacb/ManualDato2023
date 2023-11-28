@@ -15,6 +15,8 @@ import { OrganizacionypersonasComponent } from './Components/manual/organizacion
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
 import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
 import { WidgetSeparator } from './Components/widgets/widgets.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { WidgetSeparator } from './Components/widgets/widgets.component';
     OrganizacionypersonasComponent,
     ProcesosComponent,
     ProcesosdenegocioComponent,
-    WidgetSeparator
+    WidgetSeparator,
+    DatosyanaliticaComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { WidgetSeparator } from './Components/widgets/widgets.component';
     AppMaterialModule
   ],
   providers: [
-    GlobalService
+    GlobalService,
+    [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   ],
   bootstrap: [AppComponent]
 })

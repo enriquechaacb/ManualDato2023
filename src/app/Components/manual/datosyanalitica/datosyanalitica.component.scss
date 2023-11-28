@@ -1,0 +1,9 @@
+section{
+    &.title{
+        background-color: var(--datos);
+    }
+    h2{
+        .mat-icon{color:var(--datos);}
+    }
+    color:var(--datos);
+}

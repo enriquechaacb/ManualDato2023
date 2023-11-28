@@ -2,7 +2,7 @@
 
 @include mat.core();
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Shadows+Into+Light+Two&display=swap');
 
 $app-typography: mat.define-typography-config($font-family: 'Montserrat');
 $light-theme: mat.define-light-theme(
@@ -39,16 +39,25 @@ $light-theme: mat.define-light-theme(
     --negro50: rgba(25, 28, 37, 0.5);
     --negro75: rgba(25, 28, 37, 0.75);
 
-    // --organizacion: #004d74;
-    // --estrategia: #0068b4;
-    // --datos: #003d63;
-    // --tecnologias: #00654f;
-    // --comunicacion: #009a7a;
-    // --procesos: #007190;
+    --organizacion: #004d74;
+    --estrategia: #0068b4;
+    --datos: #003d63;
+    --tecnologias: #00654f;
+    --comunicacion: #009a7a;
+    --procesos: #007190;
     // --mdc-list-list-item-label-text-size: 14px;
     // --mdc-table-text-size: 14px;
 }
-
+/* Colores */
+.bgr-negro10{background-color: var(--negro10);}
+.bgr-negro25{background-color: var(--negro25);}
+.bgr-negro50{background-color: var(--negro50);}
+.bgr-negro75{background-color: var(--negro75);}
+.bgr-blanco{background-color: var(--blanco);}
+.bgr-blanco25{background-color: var(--blanco25);}
+.bgr-blanco50{background-color: var(--blanco50);}
+.bgr-blanco75{background-color: var(--blanco75);}
+.bgr-blanco90{background-color: var(--blanco90);}
 
 a,img,.mat-mdc-card,button,.mat-icon,.mat-mdc-icon, div, .mat-mdc-row, li, span, ::before{transition: all .25s ease-in-out !important;}
 
@@ -59,12 +68,12 @@ body {
     margin: 0;
     overflow-x: hidden;
     
-    // &.organizacion{background-color: var(--organizacion)}
-    // &.estrategia{background-color: var(--estrategia)}
-    // &.datos{background-color: var(--datos)}
-    // &.tecnologias{background-color: var(--tecnologias)}
-    // &.comunicacion{background-color: var(--comunicacion)}
-    // &.procesos{background-color: var(--procesos)}
+    &.organizacion{background-color: var(--organizacion)}
+    &.estrategia{background-color: var(--estrategia)}
+    &.datos{background-color: var(--datos)}
+    &.tecnologias{background-color: var(--tecnologias)}
+    &.comunicacion{background-color: var(--comunicacion)}
+    &.procesos{background-color: var(--procesos)}
     // &.default{
     //     background-color: var(--dark-primary);
     //     background-image: url(assets/images/bgr_manual.webp);
@@ -74,59 +83,34 @@ body {
 }
 app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Montserrat', "Helvetica Neue", sans-serif;}
 main {display:flex;flex-direction: column;flex: 1 0 auto;padding-top: 100px;}
-h2,h3{font-weight: 600;}
-p, li{font-size: 16px;line-height:28px;font-weight: 400;}
-/*
-section{position:relative;}
 header{z-index: 10;}
 footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
-input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
+h2,h3{font-weight: 600;}
+p, li{font-size: 16px;line-height:28px;font-weight: 400;}
 
-.seccion{padding-bottom: 20px;}
-h1,h2,h3,h4{margin-bottom:1.5em !important;filter:opacity(0.8)}
-h1.title{
-    padding-top: 1em;
-    filter: opacity(0.5);
-    font-weight: 300;
-    font-size: 3em;
-    text-align: end;
-}
-p{text-align: justify;}
-li:not(.nav-item){margin-bottom: 1em;}
-
-.bgr-blanco25{background-color: var(--blanco25) !important;}
-.bgr-blanco50{background-color: var(--blanco50) !important;}
-.bgr-blanco75{background-color: var(--blanco75) !important;}
-.bgr-negro10{background-color: var(--negro10) !important;}
-.bgr-negro25{background-color: var(--negro25) !important;}
-.bgr-negro50{background-color: var(--negro50) !important;}
-.bgr-negro75{background-color: var(--negro75) !important;}
-.bgr-primary{background-color: var(--primary) !important;}
-.bgr-accent{background-color: var(--accent) !important;}
-.bgr-warn{background-color: var(--warn) !important;}
-
-
-.mat-mdc-card{padding: 15px;}
-.mat-drawer-container{
-    background-color: transparent;
-    display: flex !important;
-    flex-direction: column;
-    .mat-drawer-content{
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
+section{
+    position:relative;
+    &.title{
+        padding: 20px 0;
+        h1{font-weight: 900;color: var(--blanco);}
+        h3{font-family: 'Shadows Into Light Two', cursive;color: var(--blanco);}
+    }
+    &.seccion{
+        padding: 2em 0;
+        h2{
+            .mat-icon{
+                font-size: 2.5rem;
+                width: 38px;
+                height: 38px;
+                translate: 0px 8px;
+            }
+            text-decoration: underline;
+        }
+        p{text-align: justify;}
     }
 }
-.mat-drawer-inner-container {
-    background-color: #005072;
-    color:var(--blanco);
-}
 
-app-transformaciondigital{
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-}
+
 
 .breadcrumbs {
     display: flex;
@@ -211,12 +195,65 @@ app-transformaciondigital{
         }
     }
 }
+
+.mat-drawer-container{
+    background-color: transparent;
+    display: flex !important;
+    flex-direction: column;
+    .mat-drawer-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        z-index: 5 !important;
+    }
+}
+.mat-drawer-inner-container {
+    background-color: #005072;
+    color:var(--blanco);
+}
+/*
+
+input:disabled, input:disabled~label, input:disabled~span, .mat-mdc-row.disabled, .mat-card.disabled, .fila.disabled, .disabled {filter: grayscale(1);opacity: 0.5;}
+
+.seccion{padding-bottom: 20px;}
+h1,h2,h3,h4{margin-bottom:1.5em !important;filter:opacity(0.8)}
+h1.title{
+    padding-top: 1em;
+    filter: opacity(0.5);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: end;
+}
+p{text-align: justify;}
+li:not(.nav-item){margin-bottom: 1em;}
+
+.bgr-blanco25{background-color: var(--blanco25) !important;}
+.bgr-blanco50{background-color: var(--blanco50) !important;}
+.bgr-blanco75{background-color: var(--blanco75) !important;}
+.bgr-negro10{background-color: var(--negro10) !important;}
+.bgr-negro25{background-color: var(--negro25) !important;}
+.bgr-negro50{background-color: var(--negro50) !important;}
+.bgr-negro75{background-color: var(--negro75) !important;}
+.bgr-primary{background-color: var(--primary) !important;}
+.bgr-accent{background-color: var(--accent) !important;}
+.bgr-warn{background-color: var(--warn) !important;}
+
+
+.mat-mdc-card{padding: 15px;}
+
+
+app-transformaciondigital{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
 */
 
 
-.mat-drawer-content {
-    z-index: 5 !important;
-}
+// .mat-drawer-content {
+//     z-index: 5 !important;
+// }
 
 .mat-drawer-backdrop.mat-drawer-shown {
     position: fixed;

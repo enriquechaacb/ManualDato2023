@@ -86,5 +86,5 @@ const Menu = [
     {Url:"/bienvenida",Icono:"chevron_right",Nombre:"Bienvenida",Seccion:"/"},
     {Url:"/objetivos",Icono:"chevron_right",Nombre:"Objetivos",Seccion:"/"},
     //{Url:"",Icono:"chevron_right",Nombre:"Chequeo Digital",Seccion:"/", Externo:true},
-    {Url:"/datasmart",Icono:"chevron_right",Nombre:"DataSmart",Seccion:"/"}
+    {Url:"/manual",Icono:"chevron_right",Nombre:"Manual",Seccion:"/"}
 ];
