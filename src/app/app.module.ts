@@ -17,6 +17,8 @@ import { ProcesosdenegocioComponent } from './Components/manual/procesos/proceso
 import { WidgetSeparator } from './Components/widgets/widgets.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
+import { SistemasespecializadosComponent } from './Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
+import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/analiticadedatos/analiticadedatos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/da
     ProcesosComponent,
     ProcesosdenegocioComponent,
     WidgetSeparator,
-    DatosyanaliticaComponent
+    DatosyanaliticaComponent,
+    SistemasespecializadosComponent,
+    AnaliticadedatosComponent
   ],
   imports: [
     BrowserModule,
