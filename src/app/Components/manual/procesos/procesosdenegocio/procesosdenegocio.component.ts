@@ -29,7 +29,7 @@ export class ProcesosdenegocioComponent {
             { Url: "../casosdeexito", Nombre: "Casos de éxito" },
             { Url: "../literatura", Nombre: "Literatura" },
             { Url: "../sitios", Nombre: "Sitios web" },
-            { Url: "../../../../assets/downloads/Procesos-de-negocio.pdf", Nombre: "e-Book", Externo: true }
+            { Url: "../../../../assets/downloads/Procesos_de_negocio.pdf", Nombre: "e-Book", Externo: true }
         ];
         this.EjesTematicos = [
             { Valor: "tema1", Nombre: "Tema 1: Introducción a los Procesos de Negocio" },
