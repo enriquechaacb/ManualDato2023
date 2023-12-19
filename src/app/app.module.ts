@@ -19,6 +19,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
 import { SistemasespecializadosComponent } from './Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
 import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/analiticadedatos/analiticadedatos.component';
+import { HerramientasdeanaliticaComponent } from './Components/manual/datosyanalitica/herramientasdeanalitica/herramientasdeanalitica.component';
+import { PresentacionesComponent } from './Components/manual/datosyanalitica/presentaciones/presentaciones.component';
+import { ModelosmatematicosComponent } from './Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/a
     WidgetSeparator,
     DatosyanaliticaComponent,
     SistemasespecializadosComponent,
-    AnaliticadedatosComponent
+    AnaliticadedatosComponent,
+    HerramientasdeanaliticaComponent,
+    PresentacionesComponent,
+    ModelosmatematicosComponent
   ],
   imports: [
     BrowserModule,
