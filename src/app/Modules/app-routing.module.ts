@@ -21,7 +21,7 @@ import { ModelosmatematicosComponent } from '../Components/manual/datosyanalitic
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: 'manual', component: ManualComponent, data: {animation:'manual'}},
-    { path: 'manual/datosyanalitica/:section', component: DatosyanaliticaComponent, data: {animation:'da'}},
+    { path: 'manual/datosyanalitica', component: DatosyanaliticaComponent, data: {animation:'da'}},
     { path: 'manual/datosyanalitica/sistemasespecializados/:section', component: SistemasespecializadosComponent, data: {animation:'se'}},
     { path: 'manual/datosyanalitica/analiticadedatos/:section', component: AnaliticadedatosComponent, data: {animation:'ad'}},
     { path: 'manual/datosyanalitica/herramientasanalitica/:section', component: HerramientasdeanaliticaComponent, data: {animation:'ha'}},

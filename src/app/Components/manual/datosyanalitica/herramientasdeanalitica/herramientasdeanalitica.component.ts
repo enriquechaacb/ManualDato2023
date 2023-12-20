@@ -17,6 +17,7 @@ export class HerramientasdeanaliticaComponent {
     public Words: any = words;
     public Books: any = books;
     public Websites: any = websites;
+    public Breadcrumbs: any = breadcrumbs;
 
     constructor(
         public _thisroute: ActivatedRoute
@@ -49,7 +50,11 @@ export class HerramientasdeanaliticaComponent {
         window.open(d,'_blank');
     }
 }
-
+const breadcrumbs = [
+    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"Datos y Analítica",Url:"../../"},
+    {Nombre:"Sistemas y herramientas de analítica",Url:"../Introduccion"}
+]
 
 const tools = [
     {Tema:"Excel",Descripcion:"Lista de reproducción para aprender a usar Excel para análisis de datos.",Url:"https://www.youtube.com/watch?v=AKhPo4ronKI&list=PLEy6Omomtm3ED2ZMs6zqW_xO3uV13Iziu",Observaciones:"18 videos de 15 minutos cada uno."},
