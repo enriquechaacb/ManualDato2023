@@ -14,6 +14,7 @@ export class AnaliticadedatosComponent {
     public Tools: any = tools;
     public Experts: any = experts;
     public Institutions: any = institutions;
+    public Words: any = words;
     public Breadcrumbs: any = breadcrumbs;
 
     constructor(
@@ -35,7 +36,8 @@ export class AnaliticadedatosComponent {
             { Nombre: "Glosario", Valor: "Glosario" },
             { Nombre: "Directorio de expertos", Valor: "Expertos" },
             { Nombre: "Instituciones clave", Valor: "Instituciones" },
-            { Nombre: "Literatura sugerida", Valor: "Literatura" }
+            { Nombre: "Literatura sugerida", Valor: "Literatura" },
+            { Nombre: "E-book", Valor: "analitica_de_datos", EsExterno: true}
         ];
         this.Seccion = "Introduccion";
     }
@@ -54,6 +56,15 @@ const breadcrumbs = [
     {Nombre:"Manual",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Analítica de datos",Url:"../Introduccion"}
+]
+
+const words = [
+    {Palabra:"Dato", Significado:"Es la representación de una variable que puede ser cuantitativa o cualitativa que indica un valor que se le asigna a un objeto y se representa a través de una secuencia de símbolos, números o letras. Los datos describen hechos empíricos, sucesos y entidades", Fuente:"(Dato - Qué es, concepto, ejemplos y tipos de datos, 2023)."},
+    {Palabra:"Ciencia de datos", Significado:"Es un campo interdisciplinario que combina técnicas, métodos y enfoques de estadísticas, matemáticas, informática y dominios específicos para analizar, comprender y extraer conocimiento significativo a partir de conjuntos de datos. El objetivo principal de la ciencia de datos es revelar patrones, tendencias, relaciones y conocimientos ocultos en los datos con el fin de tomar decisiones informadas y mejorar la toma de decisiones", Fuente:"(¿Qué es la ciencia de datos? | IBM, 2023)."},
+    {Palabra:"Clasificación", Significado:"Se refiere al entrenamiento de un modelo en un conjunto de datos etiquetados para asignar puntos de datos a clases o para clasificar nuevos puntos de datos. La clasificación es un método de modelado predictivo que se utiliza para predecir la clase a la que pertenece un punto de datos", Fuente:"(The Black Box Lab, 2022)."},
+    {Palabra:"Analítica de datos", Significado:"Es una disciplina que estudia de dónde proviene una determinada base de información. Asimismo, analiza cómo pueden interpretarse y representarse dichos recursos para darles un uso productivo", Fuente:"(Pozas, 2022)."},
+    {Palabra:"Predicción", Significado:"Es una parte importante de la analítica de datos. La predicción se refiere a la capacidad de predecir eventos futuros basados en patrones históricos y tendencias actuales. La predicción se utiliza en muchos campos, como la meteorología, la economía, la medicina y el marketing. En el campo del marketing, la predicción se utiliza para predecir el comportamiento del consumidor y para identificar oportunidades de venta cruzada y venta adicional", Fuente:"(What is predictive Analytics?, IBM, 2022)."},
+    {Palabra:"Clustering", Significado:"Es una técnica de análisis de datos que agrupa objetos similares en grupos, llamados clústeres, basándose en la similitud entre ellos. El objetivo principal del clustering es identificar patrones y estructuras en los datos que no son evidentes a simple vista", Fuente:"(«¿Qué es el agrupamiento en clústeres?», 2023)."}
 ]
 const tools = [
     { Tema: "Implementación de herramientas de analítica de datos.", Recurso: "Casos exitosos de Empresas que usaron Analítica de Datos - DataKnow", Url: "https://www.dataknow.io/casos-exitosos-analitica-datos/", Descripcion: "Solución al problema de procesos y sistemas rudimentarios para el análisis de incidentes o siniestros, duplicidad de registros, elevados tiempos de procesamiento.", Observaciones: "Analítica de datos en una empresa aseguradora en Perú." },

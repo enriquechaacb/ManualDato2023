@@ -95,6 +95,7 @@ section{
     .subtitle{font-family: 'Shadows Into Light Two', cursive;}
     &.title{
         padding: 20px 0;
+        z-index: 9;
         h1{font-weight: 900;color: var(--blanco);}
         h3{color: var(--blanco);}
     }
