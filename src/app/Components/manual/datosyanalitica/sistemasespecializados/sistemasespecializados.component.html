@@ -6,20 +6,17 @@
                 <h3 class="subtitle">{{subtitle}}</h3>
             </div>
             <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
-                
                 <mat-drawer-container autosize hasBackdrop="true" class="inner">
                     <mat-drawer #drawer position="end" mode="over">
                         <ul class="submenu">
                             <li *ngFor="let item of Secciones">
-                                <span routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
+                                <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">{{item.Nombre}}</span>
+                                <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
                                 <ul *ngIf="item.Temas">
                                     <li *ngFor="let li of item.Temas">
                                         <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <span (click)="downloadEbook('analitica_de_datos')">E-book</span>
                             </li>
                         </ul>
                     </mat-drawer>
@@ -27,8 +24,7 @@
                     <div>
                         <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
                     </div>
-                  
-                  </mat-drawer-container>
+                </mat-drawer-container>
             </div>
         </div>
     </div>
@@ -50,6 +46,7 @@
                 </ul>
             </div>
             <div class="col col-sm-9 col-xl-10">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
@@ -58,9 +55,12 @@
                         <p>La transformación digital tiene como fin primordial proporcionar una buena experiencia al cliente y los sistemas especializados juegan un papel clave en esto por medio de los sistemas CRM (Customer Relationship Management- gestión de relaciones con clientes), permite a las empresas rastrear y gestionar interacciones con sus clientes, lo que facilita una atención personalizada y la resolución expedita de problemas.</p>
                         <p>Dichos sistemas pueden facilitar la creación y el desarrollo de nuevos productos y servicios digitales que satisfagan las necesidades cambiantes del mercado.  Entre otras bondades, los sistemas especializados, como plataformas de comercio electrónico, permiten a las organizaciones ampliar su alcance y llegar a nuevos clientes en diferentes partes del mundo. Esto proporciona oportunidades de crecimiento y expansión para empresas de todos los tamaños.</p>
                         <article class="hint">
-                            <p>Un <a href="https://www.pipedrive.com/es/blog/que-es-crm">CRM</a> es una herramienta informática que se utiliza para la organización y administración de los contactos de una empresa. Tiene como función principal ayudar a sus usuarios a centralizar toda la información de sus clientes. También a organizar las actividades que deben cumplircon los mismos y recopilar información estadística sobre su desempeño. Del mismo modo, los CRMs son una herramienta excelente para fomentar el trabajo en equipo y la transparencia informativa. Esto se debe a que crea un ecosistema de trabajo para el área comercial.</p>
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/iHYPIpUF95o?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                            <div>
+                                <p>Un <a href="https://www.pipedrive.com/es/blog/que-es-crm">CRM</a> es una herramienta informática que se utiliza para la organización y administración de los contactos de una empresa. Tiene como función principal ayudar a sus usuarios a centralizar toda la información de sus clientes. También a organizar las actividades que deben cumplircon los mismos y recopilar información estadística sobre su desempeño. Del mismo modo, los CRMs son una herramienta excelente para fomentar el trabajo en equipo y la transparencia informativa. Esto se debe a que crea un ecosistema de trabajo para el área comercial.</p>
+                                <br/>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/iHYPIpUF95o?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </article>
                         <separator></separator>

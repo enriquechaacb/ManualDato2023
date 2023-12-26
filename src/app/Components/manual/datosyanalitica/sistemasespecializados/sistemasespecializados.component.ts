@@ -17,6 +17,7 @@ export class SistemasespecializadosComponent {
     public Words: any = words;
     public Books: any = books;
     public Websites: any = websites;
+    public Breadcrumbs: any = breadcrumbs;
 
     constructor(
         public _thisroute: ActivatedRoute
@@ -54,7 +55,11 @@ export class SistemasespecializadosComponent {
         window.open(d,'_blank');
     }
 }
-
+const breadcrumbs = [
+    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"Datos y Analítica",Url:"../../"},
+    {Nombre:"Sistemas especializados",Url:"../Introduccion"}
+]
 
 const tools = [
     {Tema:"Technology Evaluation Center",Recurso:"",Url:"https://landing.technologyevaluation.com/sistemas-erp/?TecReferer=ppc_google_latam_search_erp-general_erp-caracteristicas_v7a&gad=1&gclid=CjwKCAjwu4WoBhBkEiwAojNdXpwP4px7dRMU-lRSGQqDvREEspbeKD4UpS3ZV61joYElcaYf4xuVtBoCg74QAvD_BwE",Descripcion:"Permite comparar diversos proveedores de sistemas ERP",Observaciones:"Ofrece un informe gratuito sobre diversas soluciones ERP disponibles en el mercado"},

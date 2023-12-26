@@ -11,15 +11,13 @@
                     <mat-drawer #drawer position="end" mode="over">
                         <ul class="submenu">
                             <li *ngFor="let item of Secciones">
-                                <span routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
+                                <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
+                                <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">E-book</span>
                                 <ul *ngIf="item.Temas">
                                     <li *ngFor="let li of item.Temas">
                                         <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <span (click)="downloadEbook('analitica_de_datos')">E-book</span>
                             </li>
                         </ul>
                     </mat-drawer>
@@ -39,19 +37,18 @@
             <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
                 <ul class="submenu">
                     <li *ngFor="let item of Secciones">
-                        <span routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}">{{item.Nombre}}</span>
+                        <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}">{{item.Nombre}}</span>
+                        <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">E-book</span>
                         <ul *ngIf="item.Temas">
                             <li *ngFor="let li of item.Temas">
                                 <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}">{{li.Nombre}}</span>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <span (click)="downloadEbook('analitica_de_datos')">E-book</span>
-                    </li>
                 </ul>
             </div>
             <div class="col">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
@@ -122,7 +119,7 @@
                         <p>El ciclo de vida de los datos consta de cinco fases, que están relacionados entre sí. Esto no
                             sucede
                             necesariamente de forma lineal y ocasionalmente se traslapan entre ellas.</p>
-                        <img src="https://static.wixstatic.com/media/e4ec8e_9783471410ed4844ab0554df0ec3ac1a~mv2.jpg/v1/fill/w_1936,h_1362,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Customer%20journey%20(1)-01.jpg" class="img-fluid"/>
+                            <img src="../../../../../assets/images/dimensions/datos/5_Sistemas.webp" class="img-fluid" alt="Ciclo de vida de los datos" />
                         <small>Fig. 1 Ciclo de vida de los datos</small>
                         <h5>Creación o generación de datos</h5>
                         <p>La generación de los datos puede darse a partir de los procesos inherentes a las pymes. De esta
@@ -267,8 +264,11 @@
                             diferencias.
                         </p>
 
-                        <p><strong>Ojo: título sólo para video </strong></p>
-                        <p><strong>Análisis de datos y analítica de datos </strong></p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/---?rel=0" title="Beneficios" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <h4>Análisis de datos y analítica de datos </h4>
 
                         <p>El análisis de datos es un proceso que se centra en la limpieza, inspección, transformación y
                             modelado de
@@ -303,7 +303,11 @@
                             entonces se puede tener seguridad de que las decisiones que se toman serán las más acertadas.
                         </p>
 
-                        <p><strong>Otro video Calidad de los datos</strong></p>
+                        
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/---?rel=0" title="Beneficios" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
 
                         <p>La <strong>calidad de los datos</strong> se determina con base en sus cualidades. Estas son
                             exactitud,
@@ -357,7 +361,11 @@
                             patrones y
                             la compresión de imágenes.</p>
 
-                        <p><strong>OJO entra otro video: Técnicas para predicciones</strong></p>
+                        
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/---?rel=0" title="Beneficios" allowfullscreen></iframe>
+                            </div>
+                            <separator></separator>
 
                         <p>Una vez realizado el análisis exploratorio de los datos, se realiza el modelado y análisis
                             predictivo, en
@@ -386,7 +394,11 @@
                     <div class="container" *ngIf="Seccion==='Conclusion'">
 
                         <h3><i class="num">4</i> <span>En conclusión</span></h3>
-                        <p><strong>Ojo video: Aplicación de la analítica de datos </strong></p>
+                        
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/---?rel=0" title="Beneficios" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
 
                         <p>La analítica de datos se puede aplicar en diferentes áreas de las pymes, incluyendo ventas,
                             marketing,
@@ -420,8 +432,8 @@
                 <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-
-                        <p><strong>Toma de decisiones informadas</strong>. Al proporcionar información precisa y
+                        <img src="../../../../../assets/images/dimensions/datos/5_Beneficios.webp" class="img-fluid" alt="Beneficios" />
+                        <!-- <p><strong>Toma de decisiones informadas</strong>. Al proporcionar información precisa y
                             actualizada, las pymes
                             pueden identificar y mitigar riesgos potenciales y tomar decisiones informadas.</p>
                         <p><strong>Mejora la eficiencia operativa </strong>a través del uso de datos para la identificación
@@ -437,7 +449,7 @@
                             anticiparse a cambios para mantenerse competitivas.</p>
                         <p>Innovación. El análisis de datos permite identificar oportunidades de innovación, descubrir
                             nuevas
-                            oportunidades de productos y servicios.</p>
+                            oportunidades de productos y servicios.</p> -->
 
                     </div>
                 </section>
@@ -445,7 +457,7 @@
                 <section class="seccion bgr-blanco" *ngIf="Seccion==='Proceso'">
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        <ol>
+                        <!-- <ol>
                             <li>Evaluación de necesidades y objetivos</li>
                             <li>Formación del equipo de trabajo</li>
                             <li>Recopilación de datos</li>
@@ -458,8 +470,8 @@
                             <li>Seguridad de los datos</li>
                             <li>Medición de resultados</li>
                             <li>Mejora continua</li>
-                        </ol>
-                        <img src="https://static.wixstatic.com/media/e4ec8e_9783471410ed4844ab0554df0ec3ac1a~mv2.jpg/v1/fill/w_1936,h_1362,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Customer%20journey%20(1)-01.jpg" class="img-fluid"/>
+                        </ol> -->
+                        <img src="../../../../../assets/images/dimensions/datos/5_Proceso.webp" class="img-fluid" alt="Proceso" />
                     </div>
                 </section>
 
@@ -477,67 +489,20 @@
                     </div>
                 </section>
 
+
                 <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-
-                        <p><strong>Dato</strong></p>
-                        <p>Es la representación de una variable que puede ser cuantitativa o cualitativa que indica un valor
-                            que se le
-                            asigna a un objeto y se representa a través de una secuencia de símbolos, números o letras. Los
-                            datos
-                            describen hechos empíricos, sucesos y entidades (<em>Dato - Qué es, concepto, ejemplos y tipos
-                                de
-                                datos</em>, 2023).</p>
-
-                        <p><strong>Ciencia de datos</strong></p>
-
-                        <p>Es un campo interdisciplinario que combina técnicas, métodos y enfoques de estadísticas,
-                            matemáticas,
-                            informática y dominios específicos para analizar, comprender y extraer conocimiento
-                            significativo a partir
-                            de conjuntos de datos. El objetivo principal de la ciencia de datos es revelar patrones,
-                            tendencias,
-                            relaciones y conocimientos ocultos en los datos con el fin de tomar decisiones informadas y
-                            mejorar la toma
-                            de decisiones (¿Qué es la ciencia de datos? | IBM, 2023).</p>
-
-                        <p><strong>Clasificación</strong></p>
-                        <p>Se refiere al entrenamiento de un modelo en un conjunto de datos etiquetados para asignar puntos
-                            de datos a
-                            clases o para clasificar nuevos puntos de datos. La clasificación es un método de modelado
-                            predictivo que se
-                            utiliza para predecir la clase a la que pertenece un punto de datos (The Black Box Lab, 2022).
-                        </p>
-
-                        <p><strong>Analítica de datos</strong></p>
-                        <p>Es una disciplina que estudia de dónde proviene una determinada base de información. Asimismo,
-                            analiza cómo
-                            pueden interpretarse y representarse dichos recursos para darles un uso productivo (Pozas,
-                            2022).</p>
-
-                        <p><strong>Predicción</strong></p>
-                        <p>es una parte importante de la analítica de datos. La predicción se refiere a la capacidad de
-                            predecir eventos
-                            futuros basados en patrones históricos y tendencias actuales. La predicción se utiliza en muchos
-                            campos,
-                            como la meteorología, la economía, la medicina y el marketing. En el campo del marketing, la
-                            predicción se
-                            utiliza para predecir el comportamiento del consumidor y para identificar oportunidades de venta
-                            cruzada y
-                            venta adicional (<em>What is predictive Analytics?, IBM</em>, 2022).</p>
-
-                        <p><strong>Clustering</strong></p>
-
-                        <p>Es una técnica de análisis de datos que agrupa objetos similares en grupos, llamados clústeres,
-                            basándose en
-                            la similitud entre ellos. El objetivo principal del clustering es identificar patrones y
-                            estructuras en los
-                            datos que no son evidentes a simple vista («¿Qué es el agrupamiento en clústeres?», 2023).</p>
-
+                        <div class="tool" *ngFor="let item of Words">
+                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
+                            <p>
+                                {{item.Significado}}
+                                <small>{{item.Fuente}}</small>
+                            </p>
+                        </div>
                     </div>
                 </section>
-
+                
                 <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>

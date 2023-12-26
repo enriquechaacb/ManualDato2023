@@ -1,0 +1,229 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <ul class="submenu">
+                            <li *ngFor="let item of Secciones">
+                                <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">{{item.Nombre}}</span>
+                                <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
+                                <ul *ngIf="item.Temas">
+                                    <li *ngFor="let li of item.Temas">
+                                        <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+                <ul class="submenu">
+                    <li *ngFor="let item of Secciones">
+                        <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">{{item.Nombre}}</span>
+                        <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}">{{item.Nombre}}</span>
+                        <ul *ngIf="item.Temas">
+                            <li *ngFor="let li of item.Temas">
+                                <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}">{{li.Nombre}}</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-sm-9 col-xl-10">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <p>La realidad se puede modelar a través de gráficos, físicos, conceptuales y matemáticos. Los modelos matemáticos pueden clasificarse como determinísticos, que es el que no contiene consideraciones probabilísticas; cualitativos, modelo en el que se representan cualidades no numéricas, por ejemplo con la teoría de conjuntos; modelos descriptivos, en donde se refiere a la descripción del sistema real en términos matemáticos; modelo cuantitativo, se enfoca en análisis estadístico o numérico de los datos; de optimización, el cual permite seleccionar entre varias alternativas para elegir la mejor de acuerdo con los criterios establecidos; y probabilísticos, que son los que toman en cuenta la incertidumbre.</p>
+                        <separator></separator>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de los modelos matemáticos</span></h2>
+                        <img src="../../../../../assets/images/dimensions/datos/4_Beneficios.webp" class="img-fluid" alt="Beneficios" />
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Proceso'">
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso para realizar modelos matemáticos</span></h2>
+                        <img src="../../../../../assets/images/dimensions/datos/4_Proceso.webp" class="img-fluid" alt="Proceso para realizar modelos matemáticos" />
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Desarrollo'">
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Desarrollo</span></h2>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <h3>1.1. Modelos Matemáticos</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <h3>1.2. Modelos de Simulación</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <p>Para profundizar en los modelos de simulación recomendamos visitar la siguiente página de ANIA que muestra una aplicación en la industria alimenticia, replicable a diversos sectores.</p>
+                        <p><a href="https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas/#:~:text=La%20simulación%20de%20procesos%20con,un%20procedimiento%20útil%20y%20económico">https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas/#:~:text=La%20simulación%20de%20procesos%20con,un%20procedimiento%20útil%20y%20económico</a></p>
+                        <separator></separator>
+                        <h3>1.3. Modelos de Proyección</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <p>El siguiente video muestra la importancia de los modelos matemáticos para predecir o proyectar procesos. <a href="https://www.youtube.com/watch?v=5L3wJymM5NE">https://www.youtube.com/watch?v=5L3wJymM5NE</a></p>
+                        <separator></separator>
+                        <h3>1.4. Modelos de Optimización</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <p>El video que se muestra a continuación describe la aplicación de modelos de optimización con ejemplos. <a href="https://www.youtube.com/watch?v=lxln4J-GIGY">https://www.youtube.com/watch?v=lxln4J-GIGY</a></p>
+                        <separator></separator>
+                        <h3>1.5. Modelos de Redes y Grafos</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                        </div>
+                        <p>En el siguiente video introductorio a la Teoría de grafos podrás observar cómo se aplica este modelo de redes y grafos a problemas y medios concretos como redes sociales digitales <a href="https://www.youtube.com/watch?v=F5Xjpg0-NhM">https://www.youtube.com/watch?v=F5Xjpg0-NhM</a></p>
+                        <separator></separator>
+                        <h3>Referencias</h3>
+                        <p>Álvarez, A. B., Cribeiro, Y. M., Iznaga, T. B., &amp; Domínguez, M. F. (2010). Aplicación de los modelos matemáticos microbianos en la industria alimentaria.</p>
+                        <p>Cid, G., López, T., González, F., Herrera, J., &amp; Elena Ruiz, M. (2011). Propiedades físicas de algunos suelos de Cuba y su uso en modelos de simulación. <em>Revista Ciencias Técnicas Agropecuarias</em>, <em>20</em>(2), 42-46.</p>
+                        <p>Curiel, J. R. H. (2020, 21 mayo). Modelos matemáticos aplicados a la economía - Canal UTEL - Conocimiento compartido. Canal UTEL - Conocimiento Compartido. <a href="https://canal.utel.edu.mx/2017/08/17/modelos-matematicos-aplicados-a-la-economia/">https://canal.utel.edu.mx/2017/08/17/modelos-matematicos-aplicados-a-la-economia/</a></p>
+                        <p>¿Cómo ayudan las matemáticas y la inteligencia artificial a la gestión del agua? (2023). iAgua. <a href="https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua">https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua</a></p>
+                        <p>González, M. M., García, M. L. S., &amp; Limón, M. L. S. (2021). Modelo de proyección financiera para el sector construcción. <em>Lúmina, 2</em>(1), 6.</p>
+                        <p>Gross, J. L., &amp; Yellen, J. (2003). Handbook of Graph Theory. CRC Press.</p>
+                        <p>Hall, S. H. (2021). Cómo dar presentaciones a ejecutivos de alto nivel y a los altos directivos. Business Envato Tuts+. <a href="https://business.tutsplus.com/es/tutorials/presentations-to-senior-management--cms-34148">https://business.tutsplus.com/es/tutorials/presentations-to-senior-management--cms-34148</a></p>
+                        <p>Josefina, C. C. F. (2001). El modelado matemático: una herramienta útil para la industria alimenticia. http://sedici.unlp.edu.ar/handle/10915/105741</p>
+                        <p>Menéndez Velázquez, A. (1998). Una breve introducción a la teoría de grafos. <em>Suma</em>.</p>
+                        <p>Pérez Peña, R. (2019).<em>Introducción a los modelos de optimización</em>. Sello Editorial UniPiloto.</p>
+                        <p>Pérez Porto, J., Gardey, A. (13 de noviembre de 2008).<em>Modelo matemático - Qué es, definición, utilidad y clasificación</em>, definición. de. Última actualización el 9 de agosto de 2022. Recuperado el 4 de agosto de 2023 de https://definicion.de/modelo-matematico/</p>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'">
+                    <div class="container">
+                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
+                        <p>A continuación, se enlistan algunos recursos útiles para comprender los modelos matemáticos, de acuerdo con su clasificación.</p>
+                        <div class="tool" *ngFor="let item of Tools">
+                            <h5><mat-icon>construction</mat-icon> <a href="{{item.Url}}" target="_blank">{{item.Tema}}</a></h5>
+                            <p>
+                                {{item.Descripcion}}
+                                <small>{{item.Observaciones}}</small>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
+                    <div class="container">
+                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
+                        <div class="tool" *ngFor="let item of Words">
+                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
+                            <p>
+                                {{item.Significado}}
+                                <small>{{item.Fuente}}</small>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'">
+                    <div class="container">
+                        <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
+                        <article class="tool">
+                            <h4>¿Cómo ayudan las matemáticas y la inteligencia artificial a la gestión del agua?</h4>
+                            <p>Las matemáticas desempeñan un papel fundamental en la gestión del agua, ya que permiten modelar, analizar y optimizar diversos procesos relacionados con el abastecimiento, el tratamiento y la distribución del agua. Al aplicar técnicas matemáticas, los profesionales del sector del agua pueden mejorar la eficiencia, la sostenibilidad y la calidad del agua en todo el ciclo del agua (<em>¿Cómo ayudan las matemáticas y la inteligencia artificial a la gestión del agua?</em>, 2023, ver <a href="https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua">https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua</a> )</p>
+                        </article>
+                        <article class="tool">
+                            <h4>Modelos Matemáticos Aplicados a la Economía. </h4>
+                            <p>Aplicar modelos matemáticos a la economía ayuda a los profesionistas a tener mejores perspectivas en la toma de decisiones y generar estrategias para aumentar los ingresos en una empresa. La mayor parte de la econometría se basa en la estadística para formular y probar hipótesis acerca de procesos económicos o estimar parámetros para estos (Curiel, 2020).</p>
+                        </article>
+                        <article class="tool">
+                            <h4>El modelado matemático: una herramienta útil para la industria alimenticia. </h4>
+                            <p>Los modelos matemáticos permiten predecir la velocidad de crecimiento de los microorganismos en función de determinadas condiciones ambientales tales como la temperatura y el pH. A partir del modelado matemático se logra predecir la duración y seguridad de los alimentos así también como determinar la estabilidad microbiana de nuevos productos alimenticios y ayudar en la evaluación de posibles riesgos para la salud pudiendo tener como principal desventaja que las predicciones no fueran del todo precisas, indicando sólo una tendencia o la imposibilidad de predecir fuera del rango de las condiciones consideradas (Josefina, 2001, ver <a href="http://sedici.unlp.edu.ar/handle/10915/105741">http://sedici.unlp.edu.ar/handle/10915/105741</a> ).</p>
+                        </article>
+                        <article class="tool">
+                            <h4>Aplicación de los modelos matemáticos microbianos en la industria alimentaria. </h4>
+                            <p>El empleo de esta ciencia en el desarrollo de la evaluación de riesgos microbiológicos, así como en estudios de durabilidad, en investigación y desarrollo de productos, en análisis de peligros y puntos críticos de control, y en evaluación de riesgos, entre otras aplicaciones, ofrece grandes ventajas para la seguridad e inocuidad de los alimentos (Álvarez, 2010).</p>
+                        </article>
+                        <article class="tool">
+                            <h4>Propuesta de un modelo matemático de programación por metas.</h4>
+                            <p>Este modelo busca definir un curso de acción óptimo para la selección de alternativas de inversión en pymes. El modelo utiliza la programación por metas, que es una técnica que permite incorporar múltiples objetivos y restricciones en un problema de optimización. El modelo se aplica a un caso práctico de una pyme que quiere invertir en maquinaria, equipo o capacitación (Hall, 2021).</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
+                    <div class="container">
+                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
+                        <div class="expert" *ngFor="let item of Experts">
+                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
+                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
+                            <p>{{item.Descripcion}}</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'">
+                    <div class="container">
+                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
+                        <div class="institution" *ngFor="let item of Institutions">
+                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
+                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'">
+                    <div class="container">
+                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
+                        <div class="tool" *ngFor="let item of Books">
+                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
+                            <p>{{item.Subtitulo}}</p>
+                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'">
+                    <div class="container">
+                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
+                        <div class="tool" *ngFor="let item of Websites">
+                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
+                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

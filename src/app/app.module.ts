@@ -14,11 +14,14 @@ import { TransformaciondigitalComponent } from './Components/manual/transformaci
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
 import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
-import { WidgetSeparator } from './Components/widgets/widgets.component';
+import { WidgetSeparator, BreadcrumbComponent } from './Components/widgets/widgets.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
 import { SistemasespecializadosComponent } from './Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
 import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/analiticadedatos/analiticadedatos.component';
+import { HerramientasdeanaliticaComponent } from './Components/manual/datosyanalitica/herramientasdeanalitica/herramientasdeanalitica.component';
+import { PresentacionesComponent } from './Components/manual/datosyanalitica/presentaciones/presentaciones.component';
+import { ModelosmatematicosComponent } from './Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,13 @@ import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/a
     OrganizacionypersonasComponent,
     ProcesosComponent,
     ProcesosdenegocioComponent,
-    WidgetSeparator,
+    WidgetSeparator, BreadcrumbComponent,
     DatosyanaliticaComponent,
     SistemasespecializadosComponent,
-    AnaliticadedatosComponent
+    AnaliticadedatosComponent,
+    HerramientasdeanaliticaComponent,
+    PresentacionesComponent,
+    ModelosmatematicosComponent
   ],
   imports: [
     BrowserModule,
