@@ -8,17 +8,7 @@
             <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
                 <mat-drawer-container autosize hasBackdrop="true" class="inner">
                     <mat-drawer #drawer position="end" mode="over">
-                        <ul class="submenu">
-                            <li *ngFor="let item of Secciones">
-                                <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">{{item.Nombre}}</span>
-                                <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
-                                <ul *ngIf="item.Temas">
-                                    <li *ngFor="let li of item.Temas">
-                                        <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
                     </mat-drawer>
                   
                     <div>
@@ -34,17 +24,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
-                <ul class="submenu">
-                    <li *ngFor="let item of Secciones">
-                        <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">{{item.Nombre}}</span>
-                        <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}">{{item.Nombre}}</span>
-                        <ul *ngIf="item.Temas">
-                            <li *ngFor="let li of item.Temas">
-                                <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}">{{li.Nombre}}</span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
             <div class="col col-sm-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>

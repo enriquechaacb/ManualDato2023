@@ -14,16 +14,9 @@ export class DatosyanaliticaComponent {
         { Url: "herramientasanalitica/Introduccion", Nombre: "Sistemas y herramientas de analítica", Icono:"", Clase:"" },
         { Url: "presentaciones/Introduccion", Nombre: "Presentaciones para la toma de decisiones", Icono:"", Clase:"" },
         { Url: "modelosmatematicos/Introduccion", Nombre: "Modelos matemáticos", Icono:"", Clase:"" },
-    ]
+    ];
     constructor(
-        public _globalService: GlobalService,
-        public _thisroute: ActivatedRoute
+        public _globalService: GlobalService
     ) {}
-    ngOnInit(): void {console.warn('Asasad dafdsf')
-        // this._thisroute.params.subscribe((params: Params) => {
-        //     console.log(params)
-        //     this.Seccion = params['section'];
-        // });
-    }
 }
 

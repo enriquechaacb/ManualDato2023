@@ -1,56 +1,8 @@
-<!-- <section class="title">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>{{title}}</h1>
-                <h3 class="subtitle">{{subtitle}}</h3>
-            </div>
-            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
-                
-                <mat-drawer-container autosize hasBackdrop="true" class="inner">
-                    <mat-drawer #drawer position="end" mode="over">
-                        <ul class="submenu">
-                            <li *ngFor="let item of Secciones">
-                                <span routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
-                                <ul *ngIf="item.Temas">
-                                    <li *ngFor="let li of item.Temas">
-                                        <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span (click)="downloadEbook('analitica_de_datos')">E-book</span>
-                            </li>
-                        </ul>
-                    </mat-drawer>
-                  
-                    <div>
-                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
-                    </div>
-                  
-                  </mat-drawer-container>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="contenedor">
-    <div class="container-fluid">
-        <div class="row ejes">
-            <div class="col"><span routerLink="analiticadedatos/Introduccion">Analítica de datos</span></div>
-            <div class="col"><span routerLink="sistemasespecializados/Introduccion">Sistemas especializados</span></div>
-            <div class="col"><span routerLink="herramientasanalitica/Introduccion">Sistemas y herramientas de analítica</span></div>
-            <div class="col"><span routerLink="presentaciones/Introduccion">Presentaciones para la toma de decisiones</span></div>
-            <div class="col"><span routerLink="modelosmatematicos/Introduccion">Modelos matemáticos</span></div>
-        </div>
-    </div>
-</div> -->
-
 <div class="container links-container" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
     <h1>Datos y analítica</h1>
     <div class="ejes">
         <div *ngFor="let item of links" class="eje {{item.Clase}}">
             <a routerLink="{{item.Url}}">
-                <!-- <img src="../../../assets/images/icons/{{item.Icono}}.webp" class="icon" alt="{{item.Nombre}}" /> -->
                 <span>{{item.Nombre}}</span>
             </a>
         </div>

@@ -9,17 +9,7 @@
                 
                 <mat-drawer-container autosize hasBackdrop="true" class="inner">
                     <mat-drawer #drawer position="end" mode="over">
-                        <ul class="submenu">
-                            <li *ngFor="let item of Secciones">
-                                <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}" (click)="drawer.close()">{{item.Nombre}}</span>
-                                <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">E-book</span>
-                                <ul *ngIf="item.Temas">
-                                    <li *ngFor="let li of item.Temas">
-                                        <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}" (click)="drawer.close()">{{li.Nombre}}</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
                     </mat-drawer>
                   
                     <div>
@@ -35,21 +25,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
-                <ul class="submenu">
-                    <li *ngFor="let item of Secciones">
-                        <span *ngIf="!item.EsExterno" routerLink="../{{item.Valor}}" [ngClass]="{'active': Seccion === item.Valor}">{{item.Nombre}}</span>
-                        <span *ngIf="item.EsExterno" (click)="downloadEbook(item.Valor)">E-book</span>
-                        <ul *ngIf="item.Temas">
-                            <li *ngFor="let li of item.Temas">
-                                <span routerLink="../{{li.Valor}}" [ngClass]="{'active': Seccion === li.Valor}">{{li.Nombre}}</span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
             <div class="col">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion" *ngIf="Seccion==='Introduccion'">
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <p>El actual contexto económico mundial exige a las pequeñas y medianas empresas una transformación
@@ -75,12 +55,12 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Definicion' || Seccion==='Ciclodevida' || Seccion==='Analitica' || Seccion==='Conclusion'">
+                <section class="seccion" *ngIf="Seccion==='Definicion'">
                     <div class="container">
-                        <h2><mat-icon>troubleshoot</mat-icon> <span>Qué es la analítica de datos</span></h2>
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la analítica de datos?</span></h2>
                     </div>
 
-                    <div class="container" *ngIf="Seccion==='Definicion'">
+                    <div class="container">
                         <h3><i class="num">1</i> <span>Definición</span></h3>
                         <p>Analítica de datos es el proceso de extraer, transformar, analizar y comunicar información a
                             partir de
@@ -93,7 +73,7 @@
                             decisiones basada en evidencias.</p>
                     </div>
 
-                    <div class="container" *ngIf="Seccion==='Ciclodevida'">
+                    <div class="container">
                         <h3><i class="num">2</i> <span>El ciclo de vida de los datos</span></h3>
                         <h4>2.1. ¿Qué son los datos?</h4>
                         <p>Los datos representan un fragmento de una cantidad, medida, descripción o palabra, que son
@@ -252,7 +232,7 @@
 
                     </div>
 
-                    <div class="container" *ngIf="Seccion==='Analitica'">
+                    <div class="container">
 
                         <h3><i class="num">3</i> <span>Analítica de los datos</span></h3>
 
@@ -391,7 +371,7 @@
 
                     </div>
 
-                    <div class="container" *ngIf="Seccion==='Conclusion'">
+                    <div class="container">
 
                         <h3><i class="num">4</i> <span>En conclusión</span></h3>
                         
@@ -425,11 +405,32 @@
                             de medidas de seguridad física y lógica, así como políticas y procedimientos para garantizar que
                             los datos
                             estén protegidos.</p>
-
+                            <separator></separator>
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        <p>Alvarado Caviedes, L. J. (2021). Aplicación de aprendizaje no supervisado al estudio de vigilancia tecnológica sobre los centros de investigación y desarrollo tecnológico de analítica de datos. Trabajo de grado presentado para optar el título de Ingeniero en Sistemas. Universidad Autónoma de Bucaramanga, Facultad de Ingeniería. Ingeniería en Sistemas. 111 p. Recuperado de <a href="https://repository.unab.edu.co/bitstream/handle/20.500.12749/16263/2022_Tesis_Liceth_johama_Alvarado.pdf?sequence=1" target="_blank">repository.unab.edu.co</a></p>
+                        <p>Andrade Peralta, H. (2022). Plan de negocios para la creación de una empresa de servicios de consultoría en analítica de datos para emprendimientos en la ciudad de Quito. [Tesis de Pregrado]. Quito: Universidad Tecnològica Indoamèrica. 130 p. <a href="https://repositorio.uti.edu.ec//handle/123456789/4703" target="_blank">https://repositorio.uti.edu.ec//handle/123456789/4703</a></p>
+                        <p>Anzola Perez, B. V. E., &amp; Atehortua Murillo, W. N. (2023). Relación de la analítica de datos en la productividad y crecimiento de las organizaciones. Universidad Libre. Seccional Cúcuta, Colombia. Recuperado de <a href="https://hdl.handle.net/10901/25270" target="_blank">https://hdl.handle.net/10901/25270</a></p>
+                        <p>Ariza Calderón, A. F., Castillo Talero, L. M., &amp; Ore Aldana, K. H. (2020). Desarrollo de un prototipo funcional de una aplicación web, para la gestión de inventario en un conjunto de restaurantes de Bogotá, empleando técnicas de analítica de datos. Caso de estudio: restaurante" Mantiss". Trabajo de grado para optar el título de Ingeniero en Sistemas. Universidad Piloto de Colombia, Facultad de Ingeniería, Ingeniería en Sistemas. 188 p.</p>
+                        <p>Barón, M. S., Cristancho, C. T., &amp; Sanabria, J. G. (2020). Analítica de datos aplicada al estudio de deserción estudiantil en la Universidad Pedagógica y Tecnológica de Colombia-UPTC<em>.</em> Aglala, 11(1), 284-301.</p>
+                        <p>Concepto.de (2023). Dato - Qué es, concepto, ejemplos y tipos de datos. (2023). Concepto. <a href="https://concepto.de/dato/" target="_blank">https://concepto.de/dato/</a></p>
+                        <p>Gómez Ayala, A. D. (2020). Plan de negocios para la creación de una empresa de BI y analítica de datos dirigida a las pyme del sector Ecommerce en Colombia (Master's thesis, Universidad EAN).</p>
+                        <p>González, G. A. A., Vásquez, M. G., Uribe, J. P. V., &amp; Hernández, A. H. S. (2021). Big Data y las implicaciones en la cuarta revolución industrial-Retos, oportunidades y tendencias futuras. Revista Venezolana de Gerencia: RVG, 26(93), 33-47.</p>
+                        <p>Google for Developers (2023). ¿Qué es el agrupamiento en clústeres? Recuperado de https://developers.google.com/machine-learning/clustering/overview?hl=es-419</p>
+                        <p>IBM. (2023) ¿Qué es la ciencia de datos? <a href="https://www.ibm.com/es-es/topics/data-science" target="_blank">https://www.ibm.com/es-es/topics/data-science</a></p>
+                        <p>IBM. (2022). What is predictive Analytics?. <a href="https://www.ibm.com/topics/predictive-analytics" target="_blank">https://www.ibm.com/topics/predictive-analytics</a></p>
+                        <p>Pardo Carrillo, O. S., &amp; Navarro Jaimes, D. M. (2020). Analítica de datos para toma de decisiones en las pymes y los micro establecimientos del sector turístico de Colombia 2015–2019.</p>
+                        <p>Pozas, J. L. B. (2022). ¿Qué es la analítica de datos? Analizar y gestionar datos para tomar decisiones. Recuperado de <a href="https://cio.com.mx/que-es-la-analitica-de-datos-analizar-y-gestionar-datos-para-tomar-decisiones/" target="_blank">cio.com.mx/que-es-la-analitica-de-datos-analizar-y-gestionar-datos-para-tomar-decisiones</a></p>
+                        <p>Prada Orjuela, H. A. (2020). Diseño del proceso operacional de analítica de datos basado en el sistema de información de Academusoft. Universidad de Pamplona, Ingeniería de Sistemas. Electrónica, Eléctrica, Sistemas y Telecomunicaciones, Ingenierías y Arquitectura. Pamplona. Recuperado de <a href="https://repositoriodspace.unipamplona.edu.co/jspui/bitstream/20.500.12744/5611/1/PRADA_2019_TG.pdf" target="_blank">repositoriodspace.unipamplona.edu.co</a></p>
+                        <p>Rivera Jaimes, P. E. (2023). Diseño de plan de negocios para el desarrollo de un emprendimiento de negocio digital de consultoría en analítica de datos para Pymes en Colombia mediante la metodología Lean Startup Proyecto de grado para obtener el título de Magíster en Negocios Digitales en la modalidad Plan de Negocio. Universidad Autónoma de Bucaramanga, Facultad de Ciencias Económicas, Administrativas y Contables. Bucaramanga, Colombia. Recuperado de <a href="https://repository.unab.edu.co/bitstream/handle/20.500.12749/20242/2023_Tesis_Pedro_Elkin_Rivera.pdf?sequence=1&amp;isAllowed=y" target="_blank">repository.unab.edu.co</a></p>
+                        <p>The Black Box Lab. (2023). Machine Learning: Diferencias entre algoritmos de clasificación y regresión. Recuperado de <a href="https://theblackboxlab.com/2022/05/06/machine-learning-diferencias-entre-algoritmos-clasificacion-regresion/" target="_blank">theblackboxlab.com/2022/05/06/machine-learning-diferencias-entre-algoritmos-clasificacion-regresion/</a></p>
+                        <p>Torres, K. (2017). Tendencia en la transformación digital para retailers: Omnicanalidad soportada por" Big data analytics" para mejorar la experiencia del cliente durante su recorrido: Análisis de adopción en Argentina. Tesis de Master in Business &amp; Technology. Universidad de San Andrés. Escuela de Administración y Negocios. Recuperado de <a href="http://hdl.handle.net/10908/15475" target="_blank">http://hdl.handle.net/10908/15475</a></p>
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion" *ngIf="Seccion==='Beneficios'">
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/5_Beneficios.webp" class="img-fluid" alt="Beneficios" />
@@ -454,7 +455,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Proceso'">
+                <section class="seccion" *ngIf="Seccion==='Proceso'">
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
                         <!-- <ol>
@@ -475,7 +476,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion" *ngIf="Seccion==='Herramientas'">
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
@@ -489,8 +490,7 @@
                     </div>
                 </section>
 
-
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
+                <section class="seccion" *ngIf="Seccion==='Glosario'">
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -503,7 +503,7 @@
                     </div>
                 </section>
                 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
+                <section class="seccion" *ngIf="Seccion==='Expertos'">
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -514,7 +514,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion" *ngIf="Seccion==='Instituciones'">
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -524,67 +524,26 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'">
+                <section class="seccion" *ngIf="Seccion==='Literatura'">
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-
-                        <p>Anzola Perez, B. V. E., &amp; Atehortua Murillo, W. N. (2023). <em>Relación de la analítica de
-                                datos en la
-                                productividad y crecimiento de las organizaciones.</em></p>
-
-                        <p>Ariza Calderón, A. F., Castillo Talero, L. M., &amp; Ore Aldana, K. H. (2020). <em>Desarrollo de
-                                un prototipo
-                                funcional de una aplicación web, para la gestión de inventario en un conjunto de
-                                restaurantes de Bogotá,
-                                empleando técnicas de analítica de datos. Caso de estudio: restaurante" Mantiss"</em>.</p>
-
-                        <p>Barón, M. S., Cristancho, C. T., &amp; Sanabria, J. G. (2020). <em>Analítica de datos aplicada al
-                                estudio de
-                                deserción estudiantil en la Universidad Pedagógica y Tecnológica de Colombia-UPTC.</em>
-                            Aglala, 11(1),
-                            284-301.</p>
-
-                        <p>Concepto.de (2023). <em>Dato - Qué es, concepto, ejemplos y tipos de datos</em>. (2023).
-                            Concepto. <a href="https://concepto.de/dato/">https://concepto.de/dato/</a></p>
-
-                        <p>Gómez Ayala, A. D. (2020). <em>Plan de negocios para la creación de una empresa de bi y analítica
-                                de datos
-                                dirigida a las pyme del sector Ecommerce en Colombia</em> (Master's thesis, Universidad
-                            EAN).</p>
-
-                        <p>González, G. A. A., Vásquez, M. G., Uribe, J. P. V., &amp; Hernández, A. H. S. (2021). <em>Big
-                                Data y las
-                                implicaciones en la cuarta revolución industrial-Retos, oportunidades y tendencias
-                                futuras</em>. Revista
-                            Venezolana de Gerencia: RVG, 26(93), 33-47.</p>
-
-                        <p>Pardo Carrillo, O. S., &amp; Navarro Jaimes, D. M. (2020). <em>Analítica de datos para toma de
-                                decisiones en
-                                las pymes y los micro establecimientos del sector turístico de Colombia 2015–2019.</em></p>
-
-                        <p>Pozas, J. L. B. (2022). <em>¿Qué es la analítica de datos? Analizar y gestionar datos para tomar
-                                decisiones</em>.
-                            https://cio.com.mx/que-es-la-analitica-de-datos-analizar-y-gestionar-datos-para-tomar-decisiones/
-                        </p>
-
-                        <p>Prada Orjuela, H. A. (2020). <em>Diseño del proceso operacional de analítica de datos basado en
-                                el sistema de
-                                información de academusoft</em>.</p>
-
-                        <p>IBM. (2023) <em>¿Qué es la ciencia de datos?</em><a
-                                href="https://www.ibm.com/es-es/topics/data-science">https://www.ibm.com/es-es/topics/data-science</a>
-                        </p>
-
-                        <p>Rivera Jaimes, P. E. (2023). <em>Diseño de plan de negocios para el desarrollo de un
-                                emprendimiento de
-                                negocio digital de consultoría en analítica de datos para Pymes en Colombia mediante la
-                                metodología Lean
-                                Startup</em> (Doctoral dissertation, Universidad Autónoma de Bucaramanga UNAB).</p>
-
-                        <p>IBM. (2022). What is predictive Analytics?. https://www.ibm.com/topics/predictive-analytics</p>
+                        <div class="tool" *ngFor="let item of Books">
+                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
+                            <p>{{item.Subtitulo}}</p>
+                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+                        </div>
                     </div>
                 </section>
 
+                <section class="seccion" *ngIf="Seccion==='WebSites'">
+                    <div class="container">
+                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
+                        <div class="tool" *ngFor="let item of Websites">
+                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
+                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         </div>

@@ -15,6 +15,36 @@
     }
 }
 
+.submenu{
+    li{
+        span{
+            &.organizacion{
+                color: var(--organizacion);
+                &:hover,&.active{ background-color: var(--organizacion); }
+            }
+            &.estrategia{
+                color: var(--estrategia);
+                &:hover,&.active{ background-color: var(--estrategia); }
+            }
+            &.datos{
+                color: var(--datos);
+                &:hover,&.active{ background-color: var(--datos); }
+            }
+            &.tecnologias{
+                color: var(--tecnologias);
+                &:hover,&.active{ background-color: var(--tecnologias); }
+            }
+            &.comunicacion{
+                color: var(--comunicacion);
+                &:hover,&.active{ background-color: var(--comunicacion); }
+            }
+            &.procesos{
+                color: var(--procesos);
+                &:hover,&.active{ background-color: var(--procesos); }
+            }
+        }
+    }
+}
 
 $blanco1:rgba(255,255,255,0.1);
 $blanco2:rgba(255,255,255,0.15);

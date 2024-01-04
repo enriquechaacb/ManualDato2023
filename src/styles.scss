@@ -130,6 +130,18 @@ section{
             }
         }
         p{text-align: justify;}
+        .references{
+            border: 1px solid var(--negro25);
+            margin: 15px;
+            width: auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: var(--negro10);
+            p{
+                font-size: 0.75rem;
+                line-height: 1rem;
+            }
+        }
     }
 }
 .submenu{

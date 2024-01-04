@@ -22,26 +22,7 @@ export class SistemasespecializadosComponent {
     constructor(
         public _thisroute: ActivatedRoute
     ) {
-        this.Secciones = [
-            {Nombre: "Introducción", Valor: "Introduccion"},
-            // {Nombre: "Qué es la analítica de datos", Valor: "Definicion", Temas: [
-            //     {Nombre: "Definición", Valor: "Definicion"},
-            //     {Nombre: "El ciclo de vida de los datos", Valor: "Ciclodevida"},
-            //     {Nombre: "Analítica de los datos", Valor: "Analitica"},
-            //     {Nombre: "Conclusión", Valor: "Conclusion"}
-            // ]},
-            {Nombre: "Beneficios", Valor: "Beneficios"},
-            {Nombre: "Proceso", Valor: "Proceso"},
-            {Nombre: "Desarrollo", Valor: "Desarrollo"},
-            {Nombre: "Herramientas", Valor: "Herramientas"},
-            {Nombre: "Glosario", Valor: "Glosario"},
-            // {Nombre: "Directorio de expertos", Valor: "Expertos"},
-            // {Nombre: "Instituciones clave", Valor: "Instituciones"},
-            {Nombre: "Casos de éxito",Valor:"Casos"},
-            {Nombre: "Literatura sugerida", Valor: "Literatura"},
-            {Nombre: "Sitios web", Valor: "WebSites"},
-            {Nombre: "E-book", Valor: "analitica_de_datos", EsExterno: true}
-        ];
+        this.Secciones = sections;
         this.Seccion = "Introduccion";
     }
     ngOnInit(): void {
@@ -55,6 +36,22 @@ export class SistemasespecializadosComponent {
         window.open(d,'_blank');
     }
 }
+
+const sections = [
+    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
+    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
+    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
+    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
+    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
+    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
+    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
+    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
+    { Nombre: "Literatura sugerida", Valor: "Literatura", Activo: true },
+    { Nombre: "Sitios web", Valor: "WebSites", Activo: true },
+    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
+    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
+]
+
 const breadcrumbs = [
     {Nombre:"Manual",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},

@@ -15,30 +15,14 @@ export class AnaliticadedatosComponent {
     public Experts: any = experts;
     public Institutions: any = institutions;
     public Words: any = words;
+    public Books: any = books;
+    public Websites: any = websites;
     public Breadcrumbs: any = breadcrumbs;
 
     constructor(
         public _thisroute: ActivatedRoute
     ) {
-        this.Secciones = [
-            { Nombre: "Introducción", Valor: "Introduccion" },
-            {
-                Nombre: "Qué es la analítica de datos", Valor: "Definicion", Temas: [
-                    { Nombre: "Definición", Valor: "Definicion" },
-                    { Nombre: "El ciclo de vida de los datos", Valor: "Ciclodevida" },
-                    { Nombre: "Analítica de los datos", Valor: "Analitica" },
-                    { Nombre: "Conclusión", Valor: "Conclusion" }
-                ]
-            },
-            { Nombre: "Beneficios", Valor: "Beneficios" },
-            { Nombre: "Proceso", Valor: "Proceso" },
-            { Nombre: "Herramientas", Valor: "Herramientas" },
-            { Nombre: "Glosario", Valor: "Glosario" },
-            { Nombre: "Directorio de expertos", Valor: "Expertos" },
-            { Nombre: "Instituciones clave", Valor: "Instituciones" },
-            { Nombre: "Literatura sugerida", Valor: "Literatura" },
-            { Nombre: "E-book", Valor: "analitica_de_datos", EsExterno: true}
-        ];
+        this.Secciones = sections;
         this.Seccion = "Introduccion";
     }
     ngOnInit(): void {
@@ -47,11 +31,24 @@ export class AnaliticadedatosComponent {
             this.Seccion = params['section'];
         });
     }
-    downloadEbook(url: string) {
-        const d = '../../../assets/downloads/' + url + '.pdf';
-        window.open(d, '_blank');
-    }
+
 }
+
+const sections = [
+    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
+    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
+    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
+    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
+    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
+    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
+    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
+    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
+    { Nombre: "Literatura sugerida", Valor: "Literatura", Activo: true },
+    { Nombre: "Sitios web", Valor: "WebSites", Activo: true },
+    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
+    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
+]
+
 const breadcrumbs = [
     {Nombre:"Manual",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
@@ -89,4 +86,19 @@ const institutions = [
     { Nombre: "Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia", Url: "https://www.mintic.gov.co/portal/inicio/" },
     { Nombre: "Ministerio de Economía de El Salvador ", Url: "https://www.economia.gob.sv/" },
     { Nombre: "ANDE – Agencia Nacional de Desarrollo ", Url: "https://www.ande.org.uy" },
+]
+
+const books = [
+    {Autor:"Díaz González, H. H., López García, A. C., & Escobedo Portillo, A. (2023).",Titulo:"The competitiveness of SMEs in the environmental industry in the State of Chihuahua.",Subtitulo:"Human Review. International Humanities Review / Revista Internacional de Humanidades, 17(3), 1–8.",Url:"https://doi.org/10.37467/revhuman.v12.4731 "},
+    {Autor:"Del Carmen Romero, M., Álvarez, M. B., & Álvarez, L.",Titulo:"Análisis Exploratorio de la Literatura sobre el Uso de Datos en las pymes.",Subtitulo:"27º Reunión Anual Red pymes Mercosur, 683. ",Url:"https://redpymes.org.ar/wp-content/uploads/2022/11/Libro-Resumen-27%C2%B0-Reuni%C3%B3n-Anual-Red-Pymes-Mercosur-3.pdf#page=683"},
+    {Autor:"Vásquez Erazo, Edwin Joselito, Álvarez Gavilanes, Juan Edmundo, Murillo Párraga, Dayana Yasmin, & Erazo Álvarez, Juan Carlos. (2023).",Titulo:"Educación e identidad social del emprendimiento: factores de sostenibilidad de las Pymes en Ecuador.",Subtitulo:"Conrado, 19(91), 280-285. Epub 30 de abril de 2023. Recuperado",Url:"https://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1990-86442023000200280&lng=es&tlng=es"},
+    {Autor:"Zambrano Silva, D. H., Navas Espín, W. R., & Pincay Bohórquez, F. S. (2023).",Titulo:"Aplicación de redes WSN en la transformación digital de fábricas Pymes tradicionales.",Subtitulo:"RECIAMUC, 7(2), 266-272.",Url:"https://doi.org/10.26820/reciamuc/7.(2).abril.2023.266-272"}
+]
+
+const websites = [
+    {Nombre:"BID (2023). Blog del BID. 6 pasos para el buen análisis de datos.",Url:"https://blogs.iadb.org/conocimiento-abierto/es/6-pasos-para-el-buen-analisis-de-datos/"},
+    {Nombre:"Data Analytics: Qué es y cómo aplicarla en tu StartUP, Data Analytics: Qué es y Cómo Aplicarla en tu Startup | Startupeable",Url:"https://startupeable.com/data-analytics-startup/"},
+    {Nombre:"Lagos de datos y análisis gratuitos en AWs, Servicios de análisis gratuitos - Lagos de datos gratuitos - AWS (amazon.com)",Url:"https://aws.amazon.com/es/free/analytics/?trk=982a3924-2a74-43f6-8dbb-6a8788e28236&sc_channel=ps&s_kwcid=AL!4422!10!71674645527208!71675170523172&ef_id=53f9e53a05d51e6cf37780b6aa894f26:G:s"},
+    {Nombre:"20 aplicaciones de Data Analytics para transformar el mundo de los negocios",Url:"https://ieec.edu.ar/20-aplicaciones-de-data-analytics-para-transformar-el-mundo-de-los-negocios/"},
+    {Nombre:"3 ideas para crear un emprendimiento vinculado a Data Analytics o Data Science",Url:"https://www.digitalhouse.com/blog/3-ideas-para-crear-un-emprendimiento-vinculado-a-data-analytics-o-data-science/"},
 ]
