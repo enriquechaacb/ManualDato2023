@@ -74,11 +74,17 @@ const words = [
 ]
 
 const experts = [
-    {Nombre:"",Contacto:"",Url:"",Descripcion:""},
+    {Nombre:"ABPMP (Asociación de Profesionales de Procesos de Negocio)",Contacto:"abpmp.org.mx",Url:"http://abpmp.org.mx/",Descripcion:"Es una organización que busca promover y desarrollar la disciplina de gestión de procesos de negocio en América Latina."},
+    {Nombre:"DATA, UC",Contacto:"Alexis Alvear Leyton",Url:"mailto:aalvearl@uc.cl",Descripcion:"Director ejecutivo de DATA UC, la unidad de estudios estadísticos y del Diplomado en Data Science de la Pontificia Universidad Católica de Chile"},
+    {Nombre:"DATA IQ Ciudad de México",Contacto:"Empresa consultora",Url:"https://dataiq.mx/",Descripcion:"DATA IQ es una empresa consultora que reúne expertos en analítica de datos"},
+    {Nombre:"Universidad Panamericana Ciudad de México, México",Contacto:"Antonieta Martínez-Velasco",Url:"mailto:amarvel.am@gmail.com",Descripcion:"Profesora investigadora "},
 ]
 
 const institutions = [
-    {Nombre:"",Url:""},
+    {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
+    {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
+    {Nombre:"Ministerio de Economía de El Salvador ",Url:"https://www.economia.gob.sv/"},
+    {Nombre:"ANDE – Agencia Nacional de Desarrollo ",Url:"https://www.ande.org.uy"},
 ]
 
 const books = [
