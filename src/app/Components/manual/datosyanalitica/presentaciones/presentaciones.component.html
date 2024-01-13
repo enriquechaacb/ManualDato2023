@@ -27,41 +27,47 @@
             </div>
             <div class="col col-sm-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/EQDKSxWyAFo?rel=0" title="Introducción" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Definicion'">
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son las presentaciones para la toma de decisiones?</span></h2>
                         <p>Las presentaciones para la toma de decisiones son herramientas importantes para comunicar información relevante y fundamentada que facilite la comprensión y evaluación de opciones, y promueva una toma de decisiones informada y efectiva. Estas presentaciones deben estar diseñadas de manera clara, estructurada y convincente para guiar a los tomadores de decisiones hacia una elección bien fundamentada.</p>
+                        <h4>Power Point</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/vJNoB4bVF5s?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
+                        <h4>Prezi</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/LHMITFMwUCA?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
+                        <h4>Canva</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/zFnQHiOPNy8?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
+                        <h4>Tableau</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/RUl_A8nZl0s?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
+                        <h4>Powtoon</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/6V8WEFtouUY?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
+                        <h4>Emaze</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Definición" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/PDd9CKoB9pc?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
                         <h3>Recomendaciones para hacer presentaciones efectivas</h3>
@@ -69,10 +75,10 @@
                         <img src="../../../../../assets/images/dimensions/datos/3_Insights" class="img-fluid" alt="Insights" />
                         <caption class="d-block">Fuente: Imagen recuperada de la presentación de la Presentación 3º Estudio de Madurez AI &amp; Data Driven de las Empresas (INCIPY, 2023).</caption>
                         
-                        <separator></separator>
                         <div class="ratio ratio-16x9">
                             <iframe src="https://www.youtube.com/embed/3ylOv3kUR9c?rel=0" title="Definición" allowfullscreen></iframe>
                         </div>
+                        <separator></separator>
                         <p>Entre las buenas prácticas para hacer presentaciones ejecutivas recomendadas por los expertos, están: utilizar tecnología, criterios de diseño de las diapositivas, elegir un diseño simple, limpio y profesional, con colores que contrasten y que reflejen la identidad de la marca o la empresa, usar fuentes legibles, títulos claros y subtítulos descriptivos, usar gráficos, tablas, diagramas o infografías para mostrar los datos de forma clara y comprensible. Asegurarse de que los datos sean relevantes, precisos y actualizados, empezar la presentación con un resumen ejecutivo que sintetice el objetivo, el problema, la solución, los beneficios y la recomendación del proyecto, organizar la información en un orden coherente y secuencial, que responda a las preguntas e inquietudes de los directivos o clientes, cuidar el lenguaje corporal, el tono de voz, el contacto visual y la expresión facial, transmitir confianza, seguridad y entusiasmo por el proyecto. Adaptarse al público y al contexto (Hall, 2021).</p>
 
                     </div>
@@ -88,25 +94,24 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de las presentaciones para la toma de decisiones</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/3_Beneficios.webp" class="img-fluid" alt="Beneficios" />
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Proceso'">
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso para realizar presentaciones efectivas</span></h2>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Proceso para realizar presentaciones efectivas" allowfullscreen></iframe>
-                        </div>
-                        <separator></separator>
+                        <p>Hacer una presentación efectiva para la toma de decisiones implica seguir un proceso
+                            estructurado que garantice la claridad y comprensión de la información relevante. Entre
+                            los pasos a seguir para realizar una presentación exitosa están:</p>
                         <img src="../../../../../assets/images/dimensions/datos/3_Proceso.webp" class="img-fluid" alt="Proceso" />
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
@@ -119,7 +124,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -132,7 +137,7 @@
                     </div>
                 </section>
 
-                <!-- <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'">
+                <!-- <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
                         <article class="tool">
@@ -150,7 +155,7 @@
                     </div>
                 </section> -->
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
+                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -161,7 +166,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -171,7 +176,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'">
+                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
@@ -182,7 +187,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'">
+                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">

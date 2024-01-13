@@ -28,7 +28,7 @@
             </div>
             <div class="col col-sm-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <div class="ratio ratio-16x9">
@@ -43,21 +43,21 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de los modelos matemáticos</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/4_Beneficios.webp" class="img-fluid" alt="Beneficios" />
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Proceso'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso para realizar modelos matemáticos</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/4_Proceso.webp" class="img-fluid" alt="Proceso para realizar modelos matemáticos" />
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Desarrollo'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Desarrollo'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Desarrollo</span></h2>
                         <div class="ratio ratio-16x9">
@@ -109,7 +109,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <p>A continuación, se enlistan algunos recursos útiles para comprender los modelos matemáticos, de acuerdo con su clasificación.</p>
@@ -123,7 +123,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -136,7 +136,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
                         <article class="tool">
@@ -162,7 +162,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -173,7 +173,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -183,7 +183,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
@@ -194,7 +194,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'">
+                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">

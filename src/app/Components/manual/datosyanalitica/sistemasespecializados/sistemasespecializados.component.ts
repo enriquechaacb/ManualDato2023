@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
     selector: 'app-sistemasespecializados',
     templateUrl: './sistemasespecializados.component.html',
-    styleUrls: ['../datosyanalitica.component.scss']
+    styleUrls: ['../datosyanalitica.component.scss'],
+    animations: [sectionsAnimation]
 })
 export class SistemasespecializadosComponent {
     public title: string = 'Sistemas especializados';
@@ -53,7 +55,7 @@ const sections = [
 ]
 
 const breadcrumbs = [
-    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Sistemas especializados",Url:"../Introduccion"}
 ]

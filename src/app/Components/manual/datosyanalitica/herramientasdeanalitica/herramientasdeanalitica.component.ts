@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
     selector: 'app-herramientasdeanalitica',
     templateUrl: './herramientasdeanalitica.component.html',
-    styleUrls: ['../datosyanalitica.component.scss']
+    styleUrls: ['../datosyanalitica.component.scss'],
+    animations: [sectionsAnimation]
 })
 export class HerramientasdeanaliticaComponent {
     public title: string = 'Sistemas y herramientas de analítica';
@@ -49,7 +51,7 @@ const sections = [
 ]
 
 const breadcrumbs = [
-    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Sistemas y herramientas de analítica",Url:"../Introduccion"}
 ]

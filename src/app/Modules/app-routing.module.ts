@@ -10,27 +10,27 @@ import { SistemasespecializadosComponent } from '../Components/manual/datosyanal
 import { HerramientasdeanaliticaComponent } from '../Components/manual/datosyanalitica/herramientasdeanalitica/herramientasdeanalitica.component';
 import { PresentacionesComponent } from '../Components/manual/datosyanalitica/presentaciones/presentaciones.component';
 import { ModelosmatematicosComponent } from '../Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
-// import { TransformaciondigitalComponent } from '../Components/manual/transformaciondigital/transformaciondigital.component';
-// import { OrganizacionypersonasComponent } from '../Components/manual/organizacionypersonas/organizacionypersonas.component';
-// import { ProcesosComponent } from '../Components/manual/procesos/procesos.component';
-// import { ProcesosdenegocioComponent } from '../Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
+// import { TransformaciondigitalComponent } from '../Components/bibliosmart/transformaciondigital/transformaciondigital.component';
+// import { OrganizacionypersonasComponent } from '../Components/bibliosmart/organizacionypersonas/organizacionypersonas.component';
+// import { ProcesosComponent } from '../Components/bibliosmart/procesos/procesos.component';
+// import { ProcesosdenegocioComponent } from '../Components/bibliosmart/procesos/procesosdenegocio/procesosdenegocio.component';
 
 // import { AccessControlComponent } from '../Components/accesscontrol/accesscontrol.component';
 
 
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
-    { path: 'manual', component: ManualComponent, data: {animation:'manual'}},
-    { path: 'manual/datosyanalitica', component: DatosyanaliticaComponent, data: {animation:'da'}},
-    { path: 'manual/datosyanalitica/sistemasespecializados/:section', component: SistemasespecializadosComponent, data: {animation:'se'}},
-    { path: 'manual/datosyanalitica/analiticadedatos/:section', component: AnaliticadedatosComponent, data: {animation:'ad'}},
-    { path: 'manual/datosyanalitica/herramientasanalitica/:section', component: HerramientasdeanaliticaComponent, data: {animation:'ha'}},
-    { path: 'manual/datosyanalitica/presentaciones/:section', component: PresentacionesComponent, data: {animation:'pr'}},
-    { path: 'manual/datosyanalitica/modelosmatematicos/:section', component: ModelosmatematicosComponent, data: {animation:'mm'}},
-    // { path: 'manual/transformaciondigital/:section', component: TransformaciondigitalComponent, data: {animation:'td'}},
-    // { path: 'manual/organizacionypersonas/:section', component: OrganizacionypersonasComponent, data: {animation:'op'}},
-    // { path: 'manual/procesos/:section', component: ProcesosComponent, data: {animation:'pr'}},
-    // { path: 'manual/procesos/procesosdenegocio/:section', component: ProcesosdenegocioComponent, data: {animation:'pn'}},
+    { path: 'bibliosmart', component: ManualComponent, data: {animation:'bibliosmart'}},
+    { path: 'bibliosmart/datosyanalitica', component: DatosyanaliticaComponent, data: {animation:'da'}},
+    { path: 'bibliosmart/datosyanalitica/sistemasespecializados/:section', component: SistemasespecializadosComponent, data: {animation:'se'}},
+    { path: 'bibliosmart/datosyanalitica/analiticadedatos/:section', component: AnaliticadedatosComponent, data: {animation:'ad'}},
+    { path: 'bibliosmart/datosyanalitica/herramientasanalitica/:section', component: HerramientasdeanaliticaComponent, data: {animation:'ha'}},
+    { path: 'bibliosmart/datosyanalitica/presentaciones/:section', component: PresentacionesComponent, data: {animation:'pr'}},
+    { path: 'bibliosmart/datosyanalitica/modelosmatematicos/:section', component: ModelosmatematicosComponent, data: {animation:'mm'}},
+    // { path: 'bibliosmart/transformaciondigital/:section', component: TransformaciondigitalComponent, data: {animation:'td'}},
+    // { path: 'bibliosmart/organizacionypersonas/:section', component: OrganizacionypersonasComponent, data: {animation:'op'}},
+    // { path: 'bibliosmart/procesos/:section', component: ProcesosComponent, data: {animation:'pr'}},
+    // { path: 'bibliosmart/procesos/procesosdenegocio/:section', component: ProcesosdenegocioComponent, data: {animation:'pn'}},
     { path: '**', component: HomeComponent }
 ];
 

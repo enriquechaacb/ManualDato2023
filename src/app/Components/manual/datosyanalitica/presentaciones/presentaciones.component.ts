@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
     selector: 'app-presentaciones',
     templateUrl: './presentaciones.component.html',
-    styleUrls: ['../datosyanalitica.component.scss']
+    styleUrls: ['../datosyanalitica.component.scss'],
+    animations: [sectionsAnimation]
 })
 export class PresentacionesComponent {
     public title: string = 'Presentaciones para la toma de decisiones';
@@ -54,7 +56,7 @@ const sections = [
 ]
 
 const breadcrumbs = [
-    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Presentaciones para la toma de decisiones",Url:"../Introduccion"}
 ]

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
     selector: 'app-analiticadedatos',
     templateUrl: './analiticadedatos.component.html',
-    styleUrls: ['../datosyanalitica.component.scss']
+    styleUrls: ['../datosyanalitica.component.scss'],
+    animations: [sectionsAnimation]
 })
 export class AnaliticadedatosComponent {
     public title: string = 'Analítica de datos';
@@ -50,7 +52,7 @@ const sections = [
 ]
 
 const breadcrumbs = [
-    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Analítica de datos",Url:"../Introduccion"}
 ]

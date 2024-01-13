@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
     selector: 'app-modelosmatematicos',
     templateUrl: './modelosmatematicos.component.html',
-    styleUrls: ['../datosyanalitica.component.scss']
+    styleUrls: ['../datosyanalitica.component.scss'],
+    animations: [sectionsAnimation]
 })
 export class ModelosmatematicosComponent {
     public title: string = 'Modelos matemáticos';
@@ -53,7 +55,7 @@ const sections = [
 ]
 
 const breadcrumbs = [
-    {Nombre:"Manual",Url:"../../../"},
+    {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Modelos matemáticos",Url:"../Introduccion"}
 ]

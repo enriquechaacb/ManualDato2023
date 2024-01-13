@@ -29,7 +29,7 @@
             </div>
             <div class="col">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <div class="ratio ratio-16x9">
@@ -59,7 +59,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Definicion'">
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la analítica de datos?</span></h2>
                     </div>
@@ -110,7 +110,7 @@
                             sucede
                             necesariamente de forma lineal y ocasionalmente se traslapan entre ellas.</p> -->
                             <img src="../../../../../assets/images/dimensions/datos/5_Sistemas.webp" class="img-fluid" alt="Ciclo de vida de los datos" />
-                        <small>Fig. 1 Ciclo de vida de los datos</small>
+                        <separator></separator>
                         <h5>Creación o generación de datos</h5>
                         <p>La generación de los datos puede darse a partir de los procesos inherentes a las pymes. De esta
                             forma, los
@@ -440,7 +440,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/5_Beneficios.webp" class="img-fluid" alt="Beneficios" />
@@ -465,7 +465,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Proceso'">
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
                         <!-- <ol>
@@ -486,7 +486,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
@@ -500,7 +500,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'">
+                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -513,7 +513,7 @@
                     </div>
                 </section>
                 
-                <section class="seccion" *ngIf="Seccion==='Expertos'">
+                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -524,7 +524,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -534,7 +534,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Literatura'">
+                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
@@ -545,7 +545,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='WebSites'">
+                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">

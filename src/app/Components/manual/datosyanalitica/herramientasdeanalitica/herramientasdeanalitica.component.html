@@ -27,7 +27,7 @@
             </div>
             <div class="col col-sm-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <p>Los sistemas y herramientas de analítica de datos son plataformas, software y recursos tecnológicos diseñados para recopilar, almacenar, procesar, analizar y visualizar conjuntos de datos con el objetivo de obtener información de valor, identificar patrones y tendencias, y tomar decisiones informadas. Estas herramientas son esenciales para la analítica de datos.</p>
@@ -67,7 +67,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Definicion'">
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son las herramientas de analítica de datos?</span></h2>
                         <p>Los sistemas y herramientas de analítica de datos son plataformas, software y recursos tecnológicos diseñados para recopilar, almacenar, procesar, analizar y visualizar conjuntos de datos con el objetivo de obtener información de valor, identificar patrones y tendencias, y tomar decisiones informadas. Estas herramientas son esenciales para la analítica de datos.</p>
@@ -104,7 +104,7 @@
                     </div>
                 </section>
                 
-                <section class="seccion" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios de los sistemas y herramientas de analítica</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/2_Beneficios.webp" class="img-fluid" alt="Beneficios" />
@@ -115,7 +115,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Proceso'">
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso para seleccionar sistemas y herramientas de analítica</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/2_Proceso.webp" class="img-fluid" alt="Beneficios" />
@@ -123,7 +123,7 @@
                     </div>
                 </section>
                 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
@@ -136,7 +136,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'">
+                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -149,7 +149,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Casos'">
+                <section class="seccion" *ngIf="Seccion==='Casos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
                         <p>Buenas prácticas para el modelado de datos usando Clikview, describe las distintas maneras de cargar datos en el documento QlikView, dependiendo de cómo estén estructurados los datos y del modelo de datos que queramos palicar (<em>Mejores prácticas de modelado de datos | QlikView ayuda</em>, 2021).</p>
@@ -173,7 +173,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Actividades'">
+                <section class="seccion" *ngIf="Seccion==='Actividades'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Actividades sugeridas al participante para desarrollar</span></h2>
                         <p>Se sugiere que el participante realice un análisis exploratorio de datos en donde se identifiquen las tendencias, patrones y características de interés. A continuación, con base en problemas empresariales reales que requieren análisis de datos para resolverse utilice las herramientas informáticas para encontrar soluciones y presentar recomendaciones. También es recomendable que comunique los resultados de su análisis de datos frente a un grupo de interés.</p>
@@ -192,7 +192,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Expertos'">
+                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -203,7 +203,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -213,7 +213,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Literatura'">
+                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
@@ -224,7 +224,7 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='WebSites'">
+                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">

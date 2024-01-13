@@ -55,6 +55,31 @@ export const pagesAnimation =
         ])
     ]);
 
+export const sectionsAnimation =
+    trigger('changeSection', [
+        transition(':enter', [
+            style({
+                opacity: 0,
+                //position: 'absolute',
+                //transform: 'translateX(-100px)'
+            }),
+            animate('700ms 700ms ease-in-out',
+                style({
+                    opacity: 1,
+                    //transform: 'translateX(30px)'
+                })
+            )
+        ]),
+        transition(':leave', [
+            animate('700ms ease-in-out',
+                style({
+                    opacity: 0,
+                    //transform: 'translateX(100px)'
+                })
+            )
+        ])
+    ]);
+
 // export const elemAnimation = 
 //   trigger('flyInOut', [
 //     transition(':enter', [

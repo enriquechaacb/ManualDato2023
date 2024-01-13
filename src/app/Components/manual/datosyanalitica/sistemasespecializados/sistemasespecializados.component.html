@@ -27,13 +27,17 @@
             </div>
             <div class="col col-sm-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Introduccion'">
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        <p>Los sistemas especializados para la transformación digital son herramientas fundamentales para que las pymes se adapten y prosperen en un mundo cada vez más digitalizado. Proporcionan una amplia gama de utilidades y beneficios, que abarcan desde la optimización de procesos internos hasta la mejora de la experiencia del cliente y la toma de decisiones estratégicas.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/HZdlp9YVK38?rel=0" title="Clasificación de los sistemas especializados" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <!-- <p>Los sistemas especializados para la transformación digital son herramientas fundamentales para que las pymes se adapten y prosperen en un mundo cada vez más digitalizado. Proporcionan una amplia gama de utilidades y beneficios, que abarcan desde la optimización de procesos internos hasta la mejora de la experiencia del cliente y la toma de decisiones estratégicas.</p>
                         <p>Los sistemas especializados automatizan y agilizan una variedad de tareas y procesos, lo que permite a las organizaciones optimizar sus operaciones y utilizar recursos de manera más eficiente. Esto incluye la automatización de tareas repetitivas, la digitalización de flujos de trabajo, la gestión de documentos en línea y la integración de sistemas internos para una mayor eficiencia y sincronización. También permiten recopilar, almacenar y analizar grandes cantidades de datos de manera más efectiva, lo que ayuda a las organizaciones a obtener información valiosa sobre sus operaciones, clientes y mercado, lo que facilita la toma de decisiones informadas y estratégicas.</p>
                         <p>La transformación digital tiene como fin primordial proporcionar una buena experiencia al cliente y los sistemas especializados juegan un papel clave en esto por medio de los sistemas CRM (Customer Relationship Management- gestión de relaciones con clientes), permite a las empresas rastrear y gestionar interacciones con sus clientes, lo que facilita una atención personalizada y la resolución expedita de problemas.</p>
-                        <p>Dichos sistemas pueden facilitar la creación y el desarrollo de nuevos productos y servicios digitales que satisfagan las necesidades cambiantes del mercado.  Entre otras bondades, los sistemas especializados, como plataformas de comercio electrónico, permiten a las organizaciones ampliar su alcance y llegar a nuevos clientes en diferentes partes del mundo. Esto proporciona oportunidades de crecimiento y expansión para empresas de todos los tamaños.</p>
+                        <p>Dichos sistemas pueden facilitar la creación y el desarrollo de nuevos productos y servicios digitales que satisfagan las necesidades cambiantes del mercado.  Entre otras bondades, los sistemas especializados, como plataformas de comercio electrónico, permiten a las organizaciones ampliar su alcance y llegar a nuevos clientes en diferentes partes del mundo. Esto proporciona oportunidades de crecimiento y expansión para empresas de todos los tamaños.</p> -->
                         <article class="hint">
                             <div>
                                 <p>Un <a href="https://www.pipedrive.com/es/blog/que-es-crm">CRM</a> es una herramienta informática que se utiliza para la organización y administración de los contactos de una empresa. Tiene como función principal ayudar a sus usuarios a centralizar toda la información de sus clientes. También a organizar las actividades que deben cumplircon los mismos y recopilar información estadística sobre su desempeño. Del mismo modo, los CRMs son una herramienta excelente para fomentar el trabajo en equipo y la transparencia informativa. Esto se debe a que crea un ecosistema de trabajo para el área comercial.</p>
@@ -48,22 +52,27 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Definicion'">
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los sistemas especializados?</span></h2>
                         <p>Los sistemas especializados automatizan y agilizan una variedad de tareas y procesos, lo que permite a las organizaciones optimizar sus operaciones y utilizar recursos de manera más eficiente. Esto incluye la automatización de tareas repetitivas, la digitalización de flujos de trabajo, la gestión de documentos en línea y la integración de sistemas internos para una mayor eficiencia y sincronización. También permiten recopilar, almacenar y analizar grandes cantidades de datos de manera más efectiva, lo que ayuda a las organizaciones a obtener información valiosa sobre sus operaciones, clientes y mercado, lo que facilita la toma de decisiones informadas y estratégicas.</p>
                         <h4>1.1. Clasificación de los sistemas especializados</h4>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/nOyXLZL_h9U?rel=0" title="Clasificación de los sistemas especializados" allowfullscreen></iframe>
                         </div>
                         <separator></separator>
                         <p>Si se les cataloga según su alcance y tamaño de la organización, es posible nombrar a los sistemas para pequeñas y medianas empresas (Pymes), que son sistemas adaptados a las necesidades y capacidades de las pymes y suelen ser más accesibles en cuanto a costo y complejidad.</p>
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/--?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/-rfGfJho9mg?rel=0" title="Sistemas especializados de uso generalizado" allowfullscreen></iframe>
                         </div>
                         <caption class="d-block">Sistemas especializados de uso generalizado</caption>
                         <separator></separator>
                         <img src="../../../../../assets/images/dimensions/datos/1_Sistemas.webp" class="img-fluid" alt="Sistemas especializados de uso generalizado" />
+                        <h4>Sistemas de automatización de procesos de uso más común</h4>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/Vi7CMyc-Rv0?rel=0" title="Sistemas de automatización de procesos de uso más común" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
                     </div>
                     <div class="references">
                         <h4>Referencias</h4>
@@ -81,7 +90,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Beneficios'">
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de los sistemas especializados</span></h2>
                         <img src="../../../../../assets/images/dimensions/datos/1_beneficios.webp" class="img-fluid" alt="Beneficios" />
@@ -92,10 +101,14 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Proceso'">
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso para adoptar un sistema especializado </span></h2>
-                        <p>La adopción de un sistema especializado puede ser un proceso significativo para una organización, por lo que se debe estructurar un proceso que permita realizar una implementación exitosa.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/kFLGylSl0QU?rel=0" title="Proceso para adoptar un sistema especializado" allowfullscreen></iframe>
+                        </div>
+                        <separator></separator>
+                        <!-- <p>La adopción de un sistema especializado puede ser un proceso significativo para una organización, por lo que se debe estructurar un proceso que permita realizar una implementación exitosa.</p>
                         <p>Los pasos para adoptar un sistema especializado son:</p>
                         <ol>
                             <li>Evaluación de las necesidades de la organización, para identificar los desafíos específicos que el sistema debe abordar y los objetivos esperados con su implementación</li>
@@ -109,12 +122,12 @@
                             <li>Hacer ajustes si es necesario y, asegurarse de que el sistema esté funcionando según lo esperado</li>
                         </ol>
                         <p>La adopción de un sistema especializado es un proceso continuo, por lo que la organización deberá mantenerse al tanto de las últimas actualizaciones y mejoras del sistema y estar dispuesta a realizar cambios y mejoras en función de las necesidades cambiantes del negocio.</p>
-                        <separator></separator>
+                        <separator></separator> -->
                         <img src="../../../../../assets/images/dimensions/datos/1_Proceso.webp" class="img-fluid" alt="Proceso para adoptar un sistema especializado" />
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'">
+                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
@@ -127,7 +140,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
@@ -140,7 +153,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'">
+                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
@@ -151,7 +164,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
@@ -161,7 +174,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'">
+                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
                         <article class="tool">
@@ -179,7 +192,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'">
+                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
@@ -190,7 +203,7 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'">
+                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">
