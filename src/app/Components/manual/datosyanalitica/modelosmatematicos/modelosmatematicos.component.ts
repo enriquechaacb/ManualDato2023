@@ -84,15 +84,15 @@ const experts = [
 const institutions = [
     {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
     {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
-    {Nombre:"Ministerio de Economía de El Salvador ",Url:"https://www.economia.gob.sv/"},
-    {Nombre:"ANDE - Agencia Nacional de Desarrollo ",Url:"https://www.ande.org.uy"}
+    {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
+    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
 ]
 
 const books = [
     {Autor:"González V., María G., Torres-Ovalle, S., Moreno H, V. y Hernández J., E. (2018).",Titulo:"Modelación matemática para la gestión de pymes. Compendio de Investigación Academia Journals Chetumal, Quintana Roo, México.",Subtitulo:"Recuperado de ",Url:"https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/6009dd45775971664c31f52b/1611259227313/Compendio+de+Investigación+Academia+Journals+Chetumal+2018+-+Tomo+17.pdf"},
     {Autor:"López, R. F., Alonso, J. A. V., Silverio, A. Q., & González, L. D. (2018).",Titulo:"La demanda turística en una cadena hotelera. series temporales para un modelo de predicción.",Subtitulo:"Visión de Futuro, 25(1), 109–134.",Url:"https://visiondefuturo.fce.unam.edu.ar/index.php/visiondefuturo/index"},
-    {Autor:"Marulanda, C., López, M., & Mejía, M. (2017).",Titulo:"Minería de datos en gestión del conocimiento de pymes de Colombia.",Subtitulo:"Revista Virtual Universidad Católica Del Norte, 50, 224–237.",Url:"https://revistavirtual.ucn.edu.co/index.php/RevistaUCN/article/view/821/1339"},
-    {Autor:"Quiroga Parra, D. (2003).",Titulo:"MODELO MATEMÁTICO PARA DETERMINAR LA COMPETITIVIDAD DE LAS PYME’S. ",Subtitulo:"Revista Docencia Universitaria, 4(1). Recuperado a partir de",Url:"https://revistas.uis.edu.co/index.php/revistadocencia/article/view/1364"},
+    {Autor:"Marulanda, C., López, M., & Mejía, M. (2017).",Titulo:"Minería de datos en gestión del conocimiento de pymes de Colombia.",Subtitulo:"Revista Virtual Universidad Católica Del Norte, 50, 224-237.",Url:"https://revistavirtual.ucn.edu.co/index.php/RevistaUCN/article/view/821/1339"},
+    {Autor:"Quiroga Parra, D. (2003).",Titulo:"Modelo matemático para determinar la competitividad de las pyme’s.",Subtitulo:"Revista Docencia Universitaria, 4(1). Recuperado de",Url:"https://revistas.uis.edu.co/index.php/revistadocencia/article/view/1364"},
     {Autor:"Predicción o pronósticos en la administración de empresas. (2017).",Titulo:"Deguate.com",Subtitulo:"",Url:"https://www.deguate.com/gestion-administracion/prediccion-pronosticos-administracion-empresas.shtml"}
 ]
 

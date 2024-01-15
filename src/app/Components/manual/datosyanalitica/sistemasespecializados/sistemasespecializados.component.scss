@@ -1,0 +1,71 @@
+
+.beneficios{
+    .beneficio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 60px;
+        h5{
+            font-weight: 600;
+        }
+        .texto{
+            border: solid 3px;
+            border-radius: 60px;
+            padding: 40px;
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100px;
+                height: 105px;
+                background-image: url('../../../../../assets/images/icons/datosyanalitica.webp');
+            }
+    
+        }
+
+        &:nth-child(1){
+            .texto{
+                border-color: var(--warn);
+                &::before{
+                    left: -30px;top: -45px;
+                    background-position: -26px -49px;
+                }
+            }
+        }
+        &:nth-child(2){
+            .texto{
+                border-color: var(--primary);
+                &::before{
+                    right: -30px;bottom: -45px;
+                    background-position: -160px -49px;
+                }
+            }
+        }
+        &:nth-child(3){
+            .texto{
+                border-color: var(--accent);
+                &::before{
+                    left: -30px;top: -45px;
+                    background-position: -289px -49px;
+                }
+            }
+        }
+        &:nth-child(4){
+            .texto{
+                border-color: var(--green);
+                &::before{
+                    right: -30px;bottom: -45px;
+                    background-position: -426px -49px;
+                }
+            }
+        }
+    }
+}

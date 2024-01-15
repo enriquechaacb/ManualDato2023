@@ -12,6 +12,7 @@ import { pagesAnimation } from './Services/animations.service';
 })
 export class AppComponent implements OnInit {
     public Activeurl: string = "";
+	public navIsFixed: boolean = false;
     constructor(
         public _globalService: GlobalService,
         @Inject(DOCUMENT) private _document: Document,
@@ -51,4 +52,19 @@ export class AppComponent implements OnInit {
     triggerAnimation(outlet:any) {
         return outlet.activatedRouteData.animation || null;
     }
+
+    @HostListener("window:scroll", [])
+    onWindowScroll() {
+		if (document.documentElement.scrollTop > 400) {
+			this.navIsFixed = true;
+		} else { 
+            this.navIsFixed = false; 
+        }
+	}
+	scrollToTop() {
+        var currentScroll = document.documentElement.scrollTop;
+        if(currentScroll > 0){
+				window.scrollTo(0, 0);
+        }
+	}
 }

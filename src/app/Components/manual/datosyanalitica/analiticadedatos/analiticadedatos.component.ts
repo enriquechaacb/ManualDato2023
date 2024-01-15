@@ -79,15 +79,17 @@ const tools = [
 ]
 
 const experts = [
-    { Nombre: "ABPMP (Asociación de Profesionales de Procesos de Negocio", Contacto: "http://abpmp.org.mx/", Url: "http://abpmp.org.mx/", Descripcion: "Es una organización que busca promover y desarrollar la disciplina de gestión de procesos de negocio en América Latina." },
-    { Nombre: "Universidad Panamericana ", Contacto: "Antonieta Martínez-Velasco", Url: "mailto:amarvel.am@gmail.com ", Descripcion: "Profesora investigadora " },
+    {Nombre:"ABPMP (Asociación de Profesionales de Procesos de Negocio)",Contacto:"abpmp.org.mx",Url:"http://abpmp.org.mx/",Descripcion:"Es una organización que busca promover y desarrollar la disciplina de gestión de procesos de negocio en América Latina."},
+    {Nombre:"DATA, UC",Contacto:"Alexis Alvear Leyton",Url:"mailto:aalvearl@uc.cl",Descripcion:"Director ejecutivo de DATA UC, la unidad de estudios estadísticos y del Diplomado en Data Science de la Pontificia Universidad Católica de Chile"},
+    {Nombre:"DATA IQ Ciudad de México",Contacto:"Empresa consultora",Url:"https://dataiq.mx/",Descripcion:"DATA IQ es una empresa consultora que reúne expertos en analítica de datos"},
+    {Nombre:"Universidad Panamericana Ciudad de México, México",Contacto:"Antonieta Martínez-Velasco",Url:"mailto:amarvel.am@gmail.com",Descripcion:"Profesora investigadora "},
 ]
 
 const institutions = [
-    { Nombre: "Consejo Nacional de Política Económica y Social, CONPES", Url: "https://2022.dnp.gov.co/CONPES" },
-    { Nombre: "Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia", Url: "https://www.mintic.gov.co/portal/inicio/" },
-    { Nombre: "Ministerio de Economía de El Salvador ", Url: "https://www.economia.gob.sv/" },
-    { Nombre: "ANDE – Agencia Nacional de Desarrollo ", Url: "https://www.ande.org.uy" },
+    {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
+    {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
+    {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
+    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
 ]
 
 const books = [
@@ -100,7 +102,7 @@ const books = [
 const websites = [
     {Nombre:"BID (2023). Blog del BID. 6 pasos para el buen análisis de datos.",Url:"https://blogs.iadb.org/conocimiento-abierto/es/6-pasos-para-el-buen-analisis-de-datos/"},
     {Nombre:"Data Analytics: Qué es y cómo aplicarla en tu StartUP, Data Analytics: Qué es y Cómo Aplicarla en tu Startup | Startupeable",Url:"https://startupeable.com/data-analytics-startup/"},
-    {Nombre:"Lagos de datos y análisis gratuitos en AWs, Servicios de análisis gratuitos - Lagos de datos gratuitos - AWS (amazon.com)",Url:"https://aws.amazon.com/es/free/analytics/?trk=982a3924-2a74-43f6-8dbb-6a8788e28236&sc_channel=ps&s_kwcid=AL!4422!10!71674645527208!71675170523172&ef_id=53f9e53a05d51e6cf37780b6aa894f26:G:s"},
+    {Nombre:"Lagos de datos y análisis gratuitos en AWs, Servicios de análisis gratuitos - Lagos de datos gratuitos - AWS (amazon.com)",Url:"https://aws.amazon.com/es/free/analytics/"},
     {Nombre:"20 aplicaciones de Data Analytics para transformar el mundo de los negocios",Url:"https://ieec.edu.ar/20-aplicaciones-de-data-analytics-para-transformar-el-mundo-de-los-negocios/"},
     {Nombre:"3 ideas para crear un emprendimiento vinculado a Data Analytics o Data Science",Url:"https://www.digitalhouse.com/blog/3-ideas-para-crear-un-emprendimiento-vinculado-a-data-analytics-o-data-science/"},
 ]

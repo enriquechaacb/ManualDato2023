@@ -93,7 +93,12 @@
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de los sistemas especializados</span></h2>
-                        <img src="../../../../../assets/images/dimensions/datos/1_beneficios.webp" class="img-fluid" alt="Beneficios" />
+                        <div class="row beneficios">
+                            <div class="col col-md-6 beneficio" *ngFor="let item of Beneficios">
+                                <h5>{{item.titulo}}</h5>
+                                <div class="texto">{{item.texto}}</div>
+                            </div>
+                        </div>
                         <separator></separator>
                         <div class="ratio ratio-16x9">
                             <iframe src="https://www.youtube.com/embed/PVRgIXLWDHs?rel=0" title="Bienvenida" allowfullscreen></iframe>

@@ -92,8 +92,8 @@ const experts = [
 const institutions = [
     {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
     {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
-    {Nombre:"Ministerio de Economía de El Salvador ",Url:"https://www.economia.gob.sv/"},
-    {Nombre:"ANDE – Agencia Nacional de Desarrollo ",Url:"https://www.ande.org.uy"},
+    {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
+    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
 ]
 
 // const references = [

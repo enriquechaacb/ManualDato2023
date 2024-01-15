@@ -5,7 +5,7 @@ import { sectionsAnimation } from '../../../../Services/animations.service';
 @Component({
     selector: 'app-sistemasespecializados',
     templateUrl: './sistemasespecializados.component.html',
-    styleUrls: ['../datosyanalitica.component.scss'],
+    styleUrls: ['./sistemasespecializados.component.scss','../datosyanalitica.component.scss'],
     animations: [sectionsAnimation]
 })
 export class SistemasespecializadosComponent {
@@ -20,6 +20,7 @@ export class SistemasespecializadosComponent {
     public Books: any = books;
     public Websites: any = websites;
     public Breadcrumbs: any = breadcrumbs;
+    public Beneficios: any = beneficios;
 
     constructor(
         public _thisroute: ActivatedRoute
@@ -53,13 +54,11 @@ const sections = [
     { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
     { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
 ]
-
 const breadcrumbs = [
     {Nombre:"BiblioSmart",Url:"../../../"},
     {Nombre:"Datos y Analítica",Url:"../../"},
     {Nombre:"Sistemas especializados",Url:"../Introduccion"}
 ]
-
 const tools = [
     {Tema:"Technology Evaluation Center",Recurso:"",Url:"https://landing.technologyevaluation.com/sistemas-erp/?TecReferer=ppc_google_latam_search_erp-general_erp-caracteristicas_v7a&gad=1&gclid=CjwKCAjwu4WoBhBkEiwAojNdXpwP4px7dRMU-lRSGQqDvREEspbeKD4UpS3ZV61joYElcaYf4xuVtBoCg74QAvD_BwE",Descripcion:"Permite comparar diversos proveedores de sistemas ERP",Observaciones:"Ofrece un informe gratuito sobre diversas soluciones ERP disponibles en el mercado"},
     {Tema:"Sistema de gestión empresarial (ERP)",Recurso:"",Url:"https://www.ticportal.es/temas/enterprise-resource-planning/que-es-sistema-erp",Descripcion:"Artículo descriptivo acerca de los ERP",Observaciones:"El artículo agrega programas de ERP y un video explicativo"},
@@ -84,21 +83,18 @@ const words = [
     {Palabra:"Sistema de gestión de contenidos", Significado:"A menudo abreviado como CMS, es un software que ayuda a los usuarios a crear, administrar y modificar contenido en un sitio web sin la necesidad de conocimientos técnicos especializados.", Fuente:"Kinsta, 2020"},
     {Palabra:"Sistema de gestión de recursos empresariales", Significado:"Conocido también por las siglas ERP es un sistema de administración que integra todas las partes del negocio, como planificación, manufactura, ventas y finanzas. El sistema ERP tiene la meta de integrar información de toda la empresa y eliminar procesos que no son necesarios y que además resultan costosos.", Fuente:"Sánchez, 2013"}
 ]
-
 const experts = [
     {Nombre:"ABPMP (Asociación de Profesionales de Procesos de Negocio)",Contacto:"abpmp.org.mx",Url:"http://abpmp.org.mx/",Descripcion:"Es una organización que busca promover y desarrollar la disciplina de gestión de procesos de negocio en América Latina."},
     {Nombre:"DATA, UC",Contacto:"Alexis Alvear Leyton",Url:"mailto:aalvearl@uc.cl",Descripcion:"Director ejecutivo de DATA UC, la unidad de estudios estadísticos y del Diplomado en Data Science de la Pontificia Universidad Católica de Chile"},
     {Nombre:"DATA IQ Ciudad de México",Contacto:"Empresa consultora",Url:"https://dataiq.mx/",Descripcion:"DATA IQ es una empresa consultora que reúne expertos en analítica de datos"},
     {Nombre:"Universidad Panamericana Ciudad de México, México",Contacto:"Antonieta Martínez-Velasco",Url:"mailto:amarvel.am@gmail.com",Descripcion:"Profesora investigadora "},
 ]
-
 const institutions = [
     {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
     {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
     {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
-    {Nombre:"ANDE – Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
+    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
 ]
-
 const books = [
     {Autor:"Corvo, H. S. (2020)",Titulo:"Ciclo de vida de un sistema de información (Fases).",Subtitulo:"Lifeder.",Url:"https://www.lifeder.com/ciclo-vida-sistema-informacion/"},
     {Autor:"García, Laura (s.f.)",Titulo:"Kushki evoluciona el negocio paytech con la integración de data estratégica y la digitalización de las ventas.",Subtitulo:"Caso de éxito publicado en Salesforce.",Url:"https://www.salesforce.com/mx/customer-success-stories/kushki/"},
@@ -110,7 +106,6 @@ const books = [
     {Autor:"Terreros, D. (2022)",Titulo:"Guía completa: cómo crear casos de éxito que atraigan clientes.",Subtitulo:"Publicado en el blog de Hubspot.es y recuperado de",Url:"https://blog.hubspot.es/service/crear-casos-de-exito"},
     {Autor:"Useche Mahecha, Edwin y David Vega, Cristian (2018)",Titulo:"Propuesta de Plan de transición del sistema de gestión de calidad bajo la norma ISO 9001:2008 a ISO 9001:2015 en Dispetrocom Ltda.",Subtitulo:"Proyecto de titulación para el título de Ingeniero de Producción de la Universidad Distrital Francisco José de Caldas, Bogotá D.C. documento publicado en Library, recuperado de",Url:"https://1library.co/document/4yrrexpy-propuesta-transicion-sistema-gestion-calidad-norma-dispetrocom-ltda.html#google_vignette"}
 ]
-
 const websites = [
     {Nombre:"HubSpot",Url:"https://www.hubspot.es/"},
     {Nombre:"Microsoft",Url:"https://www.microsoft.com/es-mx"},
@@ -120,4 +115,11 @@ const websites = [
     {Nombre:"Salesforce",Url:"https://www.salesforce.com/mx"},
     {Nombre:"SAP",Url:"https://www.sap.com/latinamerica/index.html"},
     {Nombre:"Zendesk",Url:"https://www.zendesk.com.mx/"}
+]
+
+const beneficios = [
+    {titulo:'Beneficio 1', texto:'La empresa mejorará la eficiencia operativa al optimizar sus recursos y procesos, aumentar la productividad y reducir costos.'},
+    {titulo:'Beneficio 2', texto:'La pyme contará con elementos para dar seguimiento efectivo de las interacciones con los clientes para mejorar su experiencia.'},
+    {titulo:'Beneficio 3', texto:'Mediante la automatización inteligente y sistemas basados en datos, las empresas pueden ofrecer experiencias personalizadas a los clientes, basadas en la recopilación de la información sobre sus preferencias y comportamientos.'},
+    {titulo:'Beneficio 4', texto:'Los sistemas de automatización pueden manejar grandes volúmenes de consultas y solicitudes simultáneamente, lo que permite una mayor velocidad de respuesta evitando retrasos.'}
 ]

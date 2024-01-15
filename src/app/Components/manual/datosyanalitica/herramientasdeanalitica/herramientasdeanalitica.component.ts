@@ -85,28 +85,39 @@ const experts = [
 const institutions = [
     {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
     {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
-    {Nombre:"Ministerio de Economía de El Salvador ",Url:"https://www.economia.gob.sv/"},
-    {Nombre:"ANDE – Agencia Nacional de Desarrollo ",Url:"https://www.ande.org.uy"},
+    {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
+    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
 ]
 
 const books = [
-    {Autor:"Aitana Soluciones. (2022).",Titulo:"Caso de éxito de La Corberana con Microsoft Power BI.",Subtitulo:"",Url:"https://blog.aitana.es/2022/05/31/caso-de-exito-la-corberana-con-microsoft-power-bi-business-central/"},
-    {Autor:"",Titulo:"Caso de éxito Grupo Libertad",Subtitulo:"Estrategia HyperIntelligence. (s. f.). MicroStrategy. ",Url:"https://www.microstrategy.com/es/resources/video/caso-de-exito-grupo-libertad---estrategia-hyperintelligence"},
-    {Autor:"Codeacademy Team. (2023).",Titulo:"What is a programming language? ",Subtitulo:"Codecademy Blog.",Url:"https://www.codecademy.com/resources/blog/programming-languages/"},
-    {Autor:"Krypton Solid. (2021).",Titulo:"¿Qué es el preprocesamiento de datos? ",Subtitulo:"",Url:"https://kryptonsolid.com/que-es-el-preprocesamiento-de-datos/"},
-    {Autor:"",Titulo:"Mejores prácticas de modelado de datos",Subtitulo:"QlikView ayuda. (2021).",Url:"https://help.qlik.com/es-ES/qlikview/May2023/Subsystems/Client/Content/QV_QlikView/LoadData/best-practices-data-modeling.htm"},
-    {Autor:"Pablog, & Pablog. (2022).",Titulo:"Caso de éxito Skechers: integrando Google Analytics y medición de ROAS.",Subtitulo:"Mentalidad Web.",Url:"https://www.mentalidadweb.com/blog-marketing-digital/caso-de-exito-skechers-integrando-google-analytics-y-medicion-de-roas/"},
-    {Autor:"AWS. (s. f.).",Titulo:"¿Qué es el análisis de datos? - Explicación del análisis de datos",Subtitulo:"Amazon Web Services, Inc.",Url:"https://aws.amazon.com/es/what-is/data-analytics/"},
-    {Autor:"Sanjuán, F. J. M. (2022).",Titulo:"Outlier.",Subtitulo:"Economipedia.",Url:"https://economipedia.com/definiciones/outlier.html"},
-    {Autor:"Tableau from Salesforce. (2023).",Titulo:"PepsiCo reduce el tiempo de análisis hasta en un 90 % con Tableau + Trifacta.",Subtitulo:"Tableau.",Url:"https://www.tableau.com/es-es/solutions/customer/pepsico-cuts-analysis-time-90-tableau-trifacta"},
-    {Autor:"Tokio School. (2023).",Titulo:"¿Quiénes usan Python? descubre las empresas que utilizan este lenguaje.",Subtitulo:"",Url:"https://www.tokioschool.com/noticias/quienes-usan-python-empresas/"}
+    {Autor:"Cruz, J. (2022).",Titulo:"EXPOSICIONES CREATIVAS.",Subtitulo:"prezi.com.",Url:"https://prezi.com/p1hziyawkyqn/exposiciones-creativas/"},
+    {Autor:"Moreno, J. (2023, 20 enero).",Titulo:"Exposiciones creativas: 10 ideas asombrosamente eficaces. CRM Hubspot.",Subtitulo:"Recuperado 6 de agosto de 2023, de ",Url:"https://blog.hubspot.es/marketing/paginas-de-equipos-creativas"},
+    {Autor:"Núñez, V. (2020, 14 octubre).",Titulo:"Guía: Cómo hacer una buena presentación de resultados y no morir en el intento.",Subtitulo:"Vilma Núñez - Consultora Estratégica de Marketing",Url:"https://vilmanunez.com/como-hacer-una-presentacion-de-resultados/"},
+    {Autor:"Torres, D. (2023, 20 enero).",Titulo:"Presentación de un proyecto empresarial: Cómo atraer a tus inversores. ",Subtitulo:"Hubspot. Recuperado 6 de agosto de 2023, de ",Url:"https://blog.hubspot.es/sales/presentacion-proyecto-inversores"},
+    {Autor:"Vozalia. (2023).",Titulo:"Mejorar la dicción y vocalización.",Subtitulo:"Ejercicios y consejos para tener mejor dicción. Vozalia.",Url:"https://www.vozalia.com/entrenamiento-de-voz/clases-de-diccion-mejorar-la-diccion-y-vocalizacion-ejercicios-y-consejos-para-tener-mejor-diccion/"}
 ]
+
+// const books = [
+//     {Autor:"Aitana Soluciones. (2022).",Titulo:"Caso de éxito de La Corberana con Microsoft Power BI.",Subtitulo:"",Url:"https://blog.aitana.es/2022/05/31/caso-de-exito-la-corberana-con-microsoft-power-bi-business-central/"},
+//     {Autor:"",Titulo:"Caso de éxito Grupo Libertad",Subtitulo:"Estrategia HyperIntelligence. (s. f.). MicroStrategy. ",Url:"https://www.microstrategy.com/es/resources/video/caso-de-exito-grupo-libertad---estrategia-hyperintelligence"},
+//     {Autor:"Codeacademy Team. (2023).",Titulo:"What is a programming language? ",Subtitulo:"Codecademy Blog.",Url:"https://www.codecademy.com/resources/blog/programming-languages/"},
+//     {Autor:"Krypton Solid. (2021).",Titulo:"¿Qué es el preprocesamiento de datos? ",Subtitulo:"",Url:"https://kryptonsolid.com/que-es-el-preprocesamiento-de-datos/"},
+//     {Autor:"",Titulo:"Mejores prácticas de modelado de datos",Subtitulo:"QlikView ayuda. (2021).",Url:"https://help.qlik.com/es-ES/qlikview/May2023/Subsystems/Client/Content/QV_QlikView/LoadData/best-practices-data-modeling.htm"},
+//     {Autor:"Pablog, & Pablog. (2022).",Titulo:"Caso de éxito Skechers: integrando Google Analytics y medición de ROAS.",Subtitulo:"Mentalidad Web.",Url:"https://www.mentalidadweb.com/blog-marketing-digital/caso-de-exito-skechers-integrando-google-analytics-y-medicion-de-roas/"},
+//     {Autor:"AWS. (s. f.).",Titulo:"¿Qué es el análisis de datos? - Explicación del análisis de datos",Subtitulo:"Amazon Web Services, Inc.",Url:"https://aws.amazon.com/es/what-is/data-analytics/"},
+//     {Autor:"Sanjuán, F. J. M. (2022).",Titulo:"Outlier.",Subtitulo:"Economipedia.",Url:"https://economipedia.com/definiciones/outlier.html"},
+//     {Autor:"Tableau from Salesforce. (2023).",Titulo:"PepsiCo reduce el tiempo de análisis hasta en un 90 % con Tableau + Trifacta.",Subtitulo:"Tableau.",Url:"https://www.tableau.com/es-es/solutions/customer/pepsico-cuts-analysis-time-90-tableau-trifacta"},
+//     {Autor:"Tokio School. (2023).",Titulo:"¿Quiénes usan Python? descubre las empresas que utilizan este lenguaje.",Subtitulo:"",Url:"https://www.tokioschool.com/noticias/quienes-usan-python-empresas/"}
+// ]
 
 const websites = [
     {Nombre:"HubSpot",Url:"https://www.hubspot.es/"},
     {Nombre:"Microsoft",Url:"https://www.microsoft.com/es-mx"},
+    {Nombre:"IEBS Digital School",Url:"https://www.iebschool.com/blog/analista-datos-big-data/"},
+    {Nombre:"Microsoft Dynamics, Historias de casos de éxito globales con Dynamics 365 | Microsoft Dynamics 365",Url:"https://dynamics.microsoft.com/es-es/customer-stories/"},
     {Nombre:"Oracle",Url:"https://www.oracle.com/cr/"},
     {Nombre:"Salesforce",Url:"https://www.salesforce.com/mx"},
     {Nombre:"SAP",Url:"https://www.sap.com/latinamerica/index.html"},
+    {Nombre:"SkillLab",Url:"https://skilllab.io/en-us "},
     {Nombre:"Zendesk",Url:"https://www.zendesk.com.mx/"}
 ]
