@@ -21,6 +21,7 @@ export class SistemasespecializadosComponent {
     public Websites: any = websites;
     public Breadcrumbs: any = breadcrumbs;
     public Beneficios: any = beneficios;
+    public Sistemas: any = sistemas;
 
     constructor(
         public _thisroute: ActivatedRoute
@@ -122,4 +123,15 @@ const beneficios = [
     {titulo:'Beneficio 2', texto:'La pyme contará con elementos para dar seguimiento efectivo de las interacciones con los clientes para mejorar su experiencia.'},
     {titulo:'Beneficio 3', texto:'Mediante la automatización inteligente y sistemas basados en datos, las empresas pueden ofrecer experiencias personalizadas a los clientes, basadas en la recopilación de la información sobre sus preferencias y comportamientos.'},
     {titulo:'Beneficio 4', texto:'Los sistemas de automatización pueden manejar grandes volúmenes de consultas y solicitudes simultáneamente, lo que permite una mayor velocidad de respuesta evitando retrasos.'}
+]
+
+const sistemas = [
+    {titulo:'Sistemas de gestión empresarial (ERP)', texto:'Integración de múltiples procesos y datos en una sola plataforma para facilitar la planificación, la gestión de recursos, la contabilidad y la toma de decisiones en toda la organización.'},
+    {titulo:'Sistemas de gestión de relaciones con clientes (CRM)', texto:'Herramientas para gestionar y analizar la información de los clientes, mejorar las relaciones con ellos y optimizar la estrategia de ventas y marketing.'},
+    {titulo:'Sistemas de gestión de recursos humanos (HRM)', texto:'Plataformas que automatizan procesos de recursos humanos, como la contratación, la nómina, la gestión del desempeño y la capacitación del personal.'},
+    {titulo:'Sistemas de comercio electrónico', texto:'Plataformas diseñadas para facilitar la venta y compra de bienes y servicios en línea, ofreciendo una experiencia de compra más fluida y segura para los clientes.'},
+    {titulo:'Sistemas de automatización de procesos (BPM)', texto:'Herramientas para automatizar flujos de trabajo, tareas repetitivas y procesos empresariales, lo que aumenta la eficiencia y reduce los errores humanos.'},
+    {titulo:'Sistemas de análisis de datos y Business Intelligence (BI)', texto:'Plataformas que recopilan, procesan y analizan grandes cantidades de datos para obtener información valiosa y tomar decisiones informadas.'},
+    {titulo:'Sistemas de gestión de la cadena de suministro (SCM)', texto:'Herramientas que optimizan la logística, el inventario, la producción y la distribución para mejorar la eficiencia en la cadena de suministro.'},
+    {titulo:'Sistemas de gestión de proyectos y colaboración', texto:'Plataformas que facilitan la planificación, el seguimiento y la colaboración en proyectos internos y externos.'}
 ]

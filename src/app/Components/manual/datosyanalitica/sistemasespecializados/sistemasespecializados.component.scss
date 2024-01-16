@@ -7,6 +7,8 @@
         margin: 0 0 60px;
         h5{
             font-weight: 600;
+            padding: 0 80px;
+            text-align: center;
         }
         .texto{
             border: solid 3px;
@@ -25,18 +27,27 @@
                 display: block;
                 position: absolute;
                 width: 100px;
-                height: 105px;
+                height: 100px;
                 background-image: url('../../../../../assets/images/icons/datosyanalitica.webp');
             }
     
         }
 
+        &:nth-child(even){
+            .texto{
+                &::before{right: -30px;bottom: -45px;}
+            }
+        }
+        &:nth-child(odd){
+            .texto{
+                &::before{left: -30px;top: -45px;}
+            }
+        }
         &:nth-child(1){
             .texto{
                 border-color: var(--warn);
                 &::before{
-                    left: -30px;top: -45px;
-                    background-position: -26px -49px;
+                    background-position: 0px 0;
                 }
             }
         }
@@ -44,8 +55,7 @@
             .texto{
                 border-color: var(--primary);
                 &::before{
-                    right: -30px;bottom: -45px;
-                    background-position: -160px -49px;
+                    background-position: -100px 0;
                 }
             }
         }
@@ -53,8 +63,7 @@
             .texto{
                 border-color: var(--accent);
                 &::before{
-                    left: -30px;top: -45px;
-                    background-position: -289px -49px;
+                    background-position: -200px 0;
                 }
             }
         }
@@ -62,8 +71,119 @@
             .texto{
                 border-color: var(--green);
                 &::before{
-                    right: -30px;bottom: -45px;
-                    background-position: -426px -49px;
+                    background-position: -300px 0;
+                }
+            }
+        }
+    }
+}
+
+.sistemas{
+    .sistema{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 60px;
+        h5{
+            font-weight: 600;
+            padding: 0 80px;
+            text-align: center;
+        }
+        .texto{
+            border: solid 3px;
+            border-radius: 60px;
+            padding: 40px;
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: var(--blanco);
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-image: url('../../../../../assets/images/icons/datosyanalitica.webp');
+            }
+    
+        }
+
+        &:nth-child(even){
+            .texto{
+                &::before{right: -30px;bottom: -45px;}
+            }
+        }
+        &:nth-child(odd){
+            .texto{
+                &::before{left: -30px;top: -45px;}
+            }
+        }
+        &:nth-child(1){
+            .texto{
+                background-color: var(--primary);
+                &::before{
+                    background-position: 0px -100px;
+                }
+            }
+        }
+        &:nth-child(2){
+            .texto{
+                background-color: var(--accent);
+                &::before{
+                    background-position: -400px -100px;
+                }
+            }
+        }
+        &:nth-child(3){
+            .texto{
+                background-color: var(--warn);
+                &::before{
+                    background-position: -100px -100px;
+                }
+            }
+        }
+        &:nth-child(4){
+            .texto{
+                background-color: var(--green);
+                &::before{
+                    background-position: -500px -100px;
+                }
+            }
+        }
+        &:nth-child(5){
+            .texto{
+                background-color: var(--accent);
+                &::before{
+                    background-position: -200px -100px;
+                }
+            }
+        }
+        &:nth-child(6){
+            .texto{
+                background-color: var(--primary);
+                &::before{
+                    background-position: -700px -100px;
+                }
+            }
+        }
+        &:nth-child(7){
+            .texto{
+                background-color: var(--green);
+                &::before{
+                    background-position: -300px -100px;
+                }
+            }
+        }
+        &:nth-child(8){
+            .texto{
+                background-color: var(--warn);
+                &::before{
+                    background-position: -600px -100px;
                 }
             }
         }

@@ -65,9 +65,15 @@
                         <div class="ratio ratio-16x9">
                             <iframe src="https://www.youtube.com/embed/-rfGfJho9mg?rel=0" title="Sistemas especializados de uso generalizado" allowfullscreen></iframe>
                         </div>
-                        <caption class="d-block">Sistemas especializados de uso generalizado</caption>
                         <separator></separator>
-                        <img src="../../../../../assets/images/dimensions/datos/1_Sistemas.webp" class="img-fluid" alt="Sistemas especializados de uso generalizado" />
+                        <h3>Sistemas especializados de uso generalizado</h3>
+                        <p>Las clasificaciones son sólo una forma de agrupar los sistemas especializados con el fin de describirlos. La elección del sistema especializado adecuado para una organización dependerá de sus necesidades y objetivos. De esta manera, es necesario describir los de uso más generalizado entre las pymes.</p>
+                        <div class="row sistemas">
+                            <div class="col col-md-6 sistema" *ngFor="let item of Sistemas">
+                                <h5>{{item.titulo}}</h5>
+                                <div class="texto">{{item.texto}}</div>
+                            </div>
+                        </div>
                         <h4>Sistemas de automatización de procesos de uso más común</h4>
                         <div class="ratio ratio-16x9">
                             <iframe src="https://www.youtube.com/embed/Vi7CMyc-Rv0?rel=0" title="Sistemas de automatización de procesos de uso más común" allowfullscreen></iframe>
