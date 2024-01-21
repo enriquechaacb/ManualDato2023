@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
-    selector: 'app-procesosdenegocio',
-    templateUrl: './procesosdenegocio.component.html',
+    selector: 'app-logistica',
+    templateUrl: './logistica.component.html',
     styleUrls: ['./../procesos.component.scss'],
     animations: [sectionsAnimation]
 })
-export class ProcesosdenegocioComponent {
-    public title: string = 'Procesos de negocio';
+export class LogisticaComponent {
+    public title: string = 'Logística';
     public subtitle: string = 'Procesos';
     public Seccion: string;
     public Secciones: Array<any>;
@@ -54,6 +54,8 @@ const sections = [
     { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
     { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
 ]
+
+
 
 const words = [
     {Palabra:"Dato", Significado:"Es la representación de una variable que puede ser cuantitativa o cualitativa que indica un valor que se le asigna a un objeto y se representa a través de una secuencia de símbolos, números o letras. Los datos describen hechos empíricos, sucesos y entidades", Fuente:"(Dato - Qué es, concepto, ejemplos y tipos de datos, 2023)."},

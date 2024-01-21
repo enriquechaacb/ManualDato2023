@@ -34,10 +34,10 @@ export class AppComponent implements OnInit {
                     this._renderer.removeClass(this._document.body, 'default');
                     switch(d){
                         case "organizacionypersonas": this._renderer.addClass(this._document.body, 'organizacion'); break;
-                        case "transformaciondigital": this._renderer.addClass(this._document.body, 'estrategia'); break;
+                        case "estrategiaytransformaciondigital": this._renderer.addClass(this._document.body, 'estrategia'); break;
                         case "datosyanalitica": this._renderer.addClass(this._document.body, 'datos'); break;
-                        case "tecnologiasyhabilidadesigitales": this._renderer.addClass(this._document.body, 'tecnologias'); break;
-                        case "comunicacion": this._renderer.addClass(this._document.body, 'comunicacion'); break;
+                        case "tecnologiasyhabilidadesdigitales": this._renderer.addClass(this._document.body, 'tecnologias'); break;
+                        case "comunicacionycanalesdeventa": this._renderer.addClass(this._document.body, 'comunicacion'); break;
                         case "procesos": this._renderer.addClass(this._document.body, 'procesos'); break;
                     }
                 }else{

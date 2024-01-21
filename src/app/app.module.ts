@@ -22,6 +22,16 @@ import { AnaliticadedatosComponent } from './Components/manual/datosyanalitica/a
 import { HerramientasdeanaliticaComponent } from './Components/manual/datosyanalitica/herramientasdeanalitica/herramientasdeanalitica.component';
 import { PresentacionesComponent } from './Components/manual/datosyanalitica/presentaciones/presentaciones.component';
 import { ModelosmatematicosComponent } from './Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
+import { AmbientesdigitalesComponent } from './Components/manual/procesos/ambientesdigitales/ambientesdigitales.component';
+import { LogisticaComponent } from './Components/manual/procesos/logistica/logistica.component';
+import { InteligencianegocioComponent } from './Components/manual/transformaciondigital/inteligencianegocio/inteligencianegocio.component';
+import { IntroduccionComponent } from './Components/manual/transformaciondigital/introduccion/introduccion.component';
+import { MediosdepagoComponent } from './Components/manual/transformaciondigital/mediosdepago/mediosdepago.component';
+import { ModelosdenegocioComponent } from './Components/manual/transformaciondigital/modelosdenegocio/modelosdenegocio.component';
+import { PlaneacionComponent } from './Components/manual/transformaciondigital/planeacion/planeacion.component';
+import { CulturaorganizacionalComponent } from './Components/manual/organizacionypersonas/culturaorganizacional/culturaorganizacional.component';
+import { HabilidadesdigitalesComponent } from './Components/manual/habilidadesdigitales/habilidadesdigitales.component';
+import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/canalesdeventa.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +49,17 @@ import { ModelosmatematicosComponent } from './Components/manual/datosyanalitica
     AnaliticadedatosComponent,
     HerramientasdeanaliticaComponent,
     PresentacionesComponent,
-    ModelosmatematicosComponent
+    ModelosmatematicosComponent,
+    AmbientesdigitalesComponent,
+    LogisticaComponent,
+    InteligencianegocioComponent,
+    IntroduccionComponent,
+    MediosdepagoComponent,
+    ModelosdenegocioComponent,
+    PlaneacionComponent,
+    CulturaorganizacionalComponent,
+    HabilidadesdigitalesComponent,
+    CanalesdeventaComponent
   ],
   imports: [
     BrowserModule,

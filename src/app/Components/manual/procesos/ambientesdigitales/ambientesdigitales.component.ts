@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { sectionsAnimation } from '../../../../Services/animations.service';
 
 @Component({
-    selector: 'app-procesosdenegocio',
-    templateUrl: './procesosdenegocio.component.html',
+    selector: 'app-ambientesdigitales',
+    templateUrl: './ambientesdigitales.component.html',
     styleUrls: ['./../procesos.component.scss'],
     animations: [sectionsAnimation]
 })
-export class ProcesosdenegocioComponent {
-    public title: string = 'Procesos de negocio';
+export class AmbientesdigitalesComponent {
+    public title: string = 'Desarrollo de ambientes digitales';
     public subtitle: string = 'Procesos';
     public Seccion: string;
     public Secciones: Array<any>;
@@ -104,5 +104,4 @@ const websites = [
     {Nombre:"20 aplicaciones de Data Analytics para transformar el mundo de los negocios",Url:"https://ieec.edu.ar/20-aplicaciones-de-data-analytics-para-transformar-el-mundo-de-los-negocios/"},
     {Nombre:"3 ideas para crear un emprendimiento vinculado a Data Analytics o Data Science",Url:"https://www.digitalhouse.com/blog/3-ideas-para-crear-un-emprendimiento-vinculado-a-data-analytics-o-data-science/"},
 ]
-
 

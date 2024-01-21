@@ -2,22 +2,22 @@
     background-color: var(--blanco75);
     section {
         &.title {
-            background-color: var(--procesos);
+            background-color: var(--tecnologias);
         }
         &.seccion{
             background-color: var(--blanco);
         }
         h2{
             .mat-icon {
-                background-color: var(--procesos);
+                background-color: var(--tecnologias);
             }
         }
         h3 {
             .num {
-                background-color: var(--procesos);
+                background-color: var(--tecnologias);
             }
         }
-        color:var(--procesos);
+        color:var(--tecnologias);
         .hint{
             background-color: var(--grey);
             padding: 30px;
@@ -62,9 +62,9 @@
 .submenu{
     li{
         span{
-            color: var(--procesos);
+            color: var(--tecnologias);
             &:hover,&.active{
-                background-color: var(--procesos);
+                background-color: var(--tecnologias);
             }
         }
     }
@@ -86,7 +86,7 @@
             border-radius: 15px;
             background-color: var(--grey);
             &:hover{
-                background-color: var(--procesos);
+                background-color: var(--tecnologias);
                 color: var(--blanco75);
             }
         }
@@ -134,7 +134,7 @@
                 }
                 &:hover{
                     span{
-                        background-color: var(--procesos);
+                        background-color: var(--tecnologias);
                     }
                 }
             }    
@@ -153,18 +153,18 @@
                     background-color: var(--warn);
                 }
             }
-            // &:nth-child(4){
-            //     span{
-            //         background-color: var(--grey);
-            //         color: var(--negro75) !important;
-            //         &:hover{color: var(--blanco) !important;}
-            //     }
-            // }
-            // &:nth-child(5){
-            //     span{
-            //         background-color: var(--green);
-            //     }
-            // }
+            &:nth-child(4){
+                span{
+                    background-color: var(--grey);
+                    color: var(--negro75) !important;
+                    &:hover{color: var(--blanco) !important;}
+                }
+            }
+            &:nth-child(5){
+                span{
+                    background-color: var(--green);
+                }
+            }
             // &:nth-child(6){
             //     span{
             //         background-color: var(--procesos);
@@ -201,7 +201,7 @@
             mask-image: url(../../../../assets/images/circulo.svg);
             background-size: cover;
             padding: 40px;
-            color: var(--procesos);
+            color: var(--tecnologias);
         }
         .ejes {
             position: absolute;
@@ -251,29 +251,29 @@
                     }
                 }
                 &:nth-child(2){
-                    transform: translate(-193px, 82px);
+                    transform: translate(254px, -80px);
                     &:hover{
-                        transform: translate(-193px, 82px) scale(1.5) rotate(360deg);
+                        transform: translate(254px, -80px) scale(1.5) rotate(360deg);
                     }
                 }
                 &:nth-child(3){
-                    transform: translate(141px, 82px);
+                    transform: translate(122px, 170px);
                     &:hover{
-                        transform: translate(141px, 82px) scale(1.5) rotate(360deg);
+                        transform: translate(122px, 170px) scale(1.5) rotate(360deg);
                     }
                 }
-                // &:nth-child(4){
-                //     transform: translate(-183px, 170px);
-                //     &:hover{
-                //         transform: translate(-183px, 170px) scale(1.5) rotate(360deg);
-                //     }
-                // }
-                // &:nth-child(5){
-                //     transform: translate(-314px, -80px);
-                //     &:hover{
-                //         transform: translate(-314px, -80px) scale(1.5) rotate(360deg);
-                //     }
-                // }
+                &:nth-child(4){
+                    transform: translate(-183px, 170px);
+                    &:hover{
+                        transform: translate(-183px, 170px) scale(1.5) rotate(360deg);
+                    }
+                }
+                &:nth-child(5){
+                    transform: translate(-314px, -80px);
+                    &:hover{
+                        transform: translate(-314px, -80px) scale(1.5) rotate(360deg);
+                    }
+                }
                 // &:nth-child(6){
                 //     transform: translate(-130px, 170px);
                 //     &:hover{

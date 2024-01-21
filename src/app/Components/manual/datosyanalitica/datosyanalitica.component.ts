@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 import { GlobalService } from '../../../Services/global.service';
 
 @Component({

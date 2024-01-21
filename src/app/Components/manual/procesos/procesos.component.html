@@ -1,99 +1,11 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="" mode="side">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="../../"><mat-icon>home</mat-icon></a>
-            </li>
-            <li class="nav-item" *ngFor="let item of linksList" [ngClass]="{'active': item.Url === '../'+Seccion}">
-                <a class="nav-link" routerLink="{{item.Url}}">{{item.Nombre}}</a>
-            </li>
-        </ul>
-    </mat-drawer>
-
-    <div>
-        <button type="button" class="menu-btn" mat-icon-button (click)="drawer.toggle()">
-            <mat-icon class="text-white" *ngIf="drawer.opened">close</mat-icon>
-            <mat-icon *ngIf="!drawer.opened">menu</mat-icon>
-        </button>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-center">
-                    <img src="../../../../assets/images/Logo_Manual_bco.webp" alt="Economía del Dato para pymes" class="img-fluid" />
-                </div>
-                <div class="col-8 col-md-5 col-xl-7 d-flex flex-column justify-content-center">
-                    <h1 class="title">Procesos de negocio</h1>
-                </div>
-                <div class="col-4 col-md-3 col-xl-2 d-flex flex-column justify-content-center">
-                    <img src="../../../../assets/images/icons/procesos.webp" alt="Procesos" class="img-fluid" />
-                </div>
-            </div>
-
-            <ul class="breadcrumbs d-none d-md-flex">
-                <li class="first"><a routerLink="../../"><mat-icon>home</mat-icon></a></li>
-                <li><a routerLink="../presentacion">Procesos</a></li>
-                <li class="last active"><a routerLink="../{{Seccion}}">{{Seccion}}</a></li>
-            </ul>
-
-            <section *ngIf="Seccion==='presentacion'">
-                <h2>Presentación </h2>
-                <p>La dimensión procesos está centrada en la gestión y uso de datos para mejorar la eficiencia operativa y los procesos de un negocio de cualquier tamaño o sector. Pretende contribuir a optimizar diferentes aspectos de la empresa a través de la identificación y uso de datos ligados a los procesos de planificación y coordinación (fechas, tareas, responsables, materiales y similares), procesos financieros y de control de gestión (datos financieros / control de gestión: activos, pasivos, flujo de caja, presupuesto, balances y similares) y procesos relacionados a venta y resultados (estado de procesos de venta, facturación, entrega, producción, almacenes -stock y similares-), junto con las herramientas que usa la empresa para almacenar estos datos y la importancia de uso de dichas herramientas.</p>
-                
-                <div class="ratio ratio-16x9 mb-5">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/xk6YSsa4E2A?rel=0" title="Bienvenida" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <p>Comprende tres ejes temáticos:</p>
-                <ul>
-                    <li *ngFor="let item of EjesTematicos">
-                        <a routerLink="{{item.Link}}">{{item.Nombre}}</a>
-                    </li>
-                </ul>
-                <p>Los contenidos que se desglosan en los tres ejes temáticos de esta dimensión, buscan sentar las bases para para utilizar las herramientas digitales y aprovechar las ventajas que ofrece un mundo intercontectado.</p>
-                <p>Tener procesos bien definidos es esencial para el éxito de una empresa. Ayuda a trabajar de manera más eficiente, minimizar errores, mantener una calidad constante y prepararnos para el futuro.</p>
-            </section>
-
-            <section *ngIf="Seccion==='definicion'">
-                <h2>Definición </h2>
-                <p>La economía del dato impulsa a las pymes a adoptar un enfoque más estratégico basado en datos en todas sus operaciones. Esto implica utilizar tecnologías y herramientas digitales para recopilar, analizar y utilizar eficazmente la información generada por cada proceso del negocio.</p>
-                <p>La digitalización de los procesos permite mejorar la eficiencia y la productividad y, agilizar la toma de decisiones mejor informadas. Fomenta la innovación al proporcionar elementos de juicio para utilizar en la mejora de la calidad de los productos o servicios y así, responder a las necesidades del mercado.</p>
-            </section>
-
-            <section *ngIf="Seccion==='beneficios'">
-                <h2>Beneficios</h2>
-                <p>Eficiencia operativa: La digitalización permite automatizar tareas manuales y repetitivas, lo que conduce a una mayor eficiencia en los procesos empresariales. Esto libera tiempo y recursos que pueden ser redirigidos hacia actividades estratégicas y de valor agregado.</p>
-                <p>Recopilación y almacenamiento de datos: Establecer sistemas para recopilar, almacenar y organizar datos relevantes para su negocio. Esto podría incluir datos de ventas, operaciones, clientes, proveedores y más.</p>
-                <p>Análisis de datos: Implementar herramientas y técnicas de análisis de datos para obtener insights valiosos. Esto podría abarcar desde análisis descriptivos básicos hasta análisis predictivos y prescriptivos más avanzados.</p>
-                <p>Toma de decisiones basada en datos: Fomentar una cultura organizacional en la que las decisiones se tomen con base en datos y evidencias, en lugar de la intuición. </p>
-                <p>Automatización de procesos: Identificar procesos repetitivos o rutinarios que podrían automatizarse utilizando herramientas tecnológicas. Esto puede ahorrar tiempo y recursos, permitiendo que los empleados se centren en tareas más estratégicas.</p>
-                <p>Personalización y segmentación de clientes: Utilizar datos para comprender mejor a los clientes y sus necesidades individuales. Esto puede ayudar a las pymes a ofrecer productos y servicios más personalizados y relevantes.</p>
-                <p>Optimización de la cadena de suministro: Utilizar datos para mejorar la eficiencia de la cadena de suministro, gestionando mejor la demanda, el inventario y la distribución.</p>
-                <p>Marketing digital: Utilizar datos para optimizar las estrategias de marketing, identificando qué tácticas y canales son más efectivos para llegar a su público objetivo.</p>
-                <p>Gestión de relaciones con los clientes (CRM): Implementar sistemas de CRM para recopilar y analizar datos sobre las interacciones con los clientes, lo que puede mejorar la retención y satisfacción del cliente.</p>
-                <p>Innovación de productos y servicios: Utilizar datos para identificar oportunidades de innovación y desarrollo de nuevos productos o servicios que satisfagan las necesidades cambiantes del mercado.</p>
-                <p>Medición de resultados: Establecer indicadores claves de rendimiento (KPIs) basados en datos para evaluar el éxito de los procesos transformados y realizar ajustes según sea necesario.</p>
-            </section>
-
-            <section *ngIf="Seccion==='desarrollo'">
-                <h2>Desarrollo</h2>
-                
-            </section>
-
-            <section *ngIf="Seccion==='ejestematicos'">
-                <h2>Ejes temáticos</h2>
-                <div class="row">
-                    <div class="col d-flex" *ngFor="let item of EjesTematicos">
-                        <mat-card routerLink="{{item.Link}}" class="eje-tematico">
-                            <mat-icon>{{item.Icon}}</mat-icon>
-                            <h5>{{item.Nombre}}</h5>
-                        </mat-card>
-                    </div>
-                </div>
-            </section>
-
+<div class="container links-container" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
+    <h1>Datos y analítica</h1>
+    <div class="ejes">
+        <div *ngFor="let item of links" class="eje {{item.Clase}}">
+            <a routerLink="{{item.Url}}">
+                <span>{{item.Nombre}}</span>
+            </a>
         </div>
-
     </div>
-
-</mat-drawer-container>
+    <button mat-icon-button routerLink="../" class="goback"><mat-icon>home</mat-icon></button>
+</div>
