@@ -285,3 +285,15 @@
     }
 }
 
+.conceptoclave{
+    border: 1px solid var(--negro25);
+    padding: 30px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    h6{font-weight: 900;}
+    .ejemplo{
+        font-size: 0.8rem;
+        font-style: italic;
+        line-height: 1.2rem;
+    }
+}

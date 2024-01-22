@@ -24,7 +24,7 @@
         </p>
     </div>
 </footer>
-<button type="button" [ngClass]="{'show-scroll': navIsFixed}" (click)="scrollToTop()" mat-mini-fab color="primary" class="scroll-to-top">
+<button type="button" [ngClass]="{'show-scroll': navIsFixed}" (click)="_globalService.scrollToTop()" mat-mini-fab color="primary" class="scroll-to-top">
     <mat-icon>arrow_upward</mat-icon>
 </button>
 

@@ -248,5 +248,32 @@
             &::before{background-color: var(--procesos);}
         }
     }
+    #video{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::after{
+            content: "";
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: var(--negro50);
+            top: 0;
+            left: 0;
+        }
+        .bgr-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
 }
 

@@ -32,33 +32,105 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>La logística es un tema crucial para las pymes al desempeñar un papel protagónico en la eficiencia y la productividad, es fundamental para reducir costos y mejorar la satisfacción del cliente, esto tiene como núcleo a la cadena de suministro. </p>
+                            <p>La cadena de suministro es el engranaje que asegura que los productos y servicios lleguen de manera eficiente y oportuna a los clientes, maximizando la satisfacción y minimizando los costos. En la actualidad, optimizar la cadena de suministro y la logística no solo potencia la competitividad de las empresas, sino que también garantiza la resiliencia ante desafíos como interrupciones globales, fluctuaciones en la demanda y cambios en la regulación. Es el diferenciador clave entre quedarse rezagado o liderar en un mercado en constante evolución.</p>
+                        </div>
+                        <separator></separator>
+                        <p>En este eje temático abordaremos el proceso de logística donde encontrarás un desarrollo conceptual del tema y el detalle de herramientas para la toma de decisiones basadas en conocimiento, todo ello encaminado a generar las competencias que te permitan maximizar los resultados de tu empresa. Podríamos por tanto empezar por responder, ¿qué es exactamente la cadena de suministro? Vamos a verlo de manera sencilla.</p>
+                        <div class="texto-video">    
+                            <p>La cadena de suministro es como un gran equipo que trabaja para llevar un producto o servicio desde su creación hasta las manos del cliente. Es seguir el viaje que hace el producto o servicio, pasando por diferentes etapas y manos antes de que pueda llegar al destinatario final. Una definición más formal, podría ser, que la cadena de suministro es el conjunto de actividades y procesos interconectados que permiten la producción, distribución y entrega de bienes o servicios desde su origen hasta el consumidor. Esto implica la coordinación de proveedores, fabricantes, distribuidores y minoristas para garantizar que los productos lleguen de manera eficiente y oportuna al mercado (Fontalvo-Herrera et al., 2019).</p>
+                        </div>
+                        <separator></separator>
+                        <p>Ahora bien, ¿qué tiene que ver esto con la era digital? ¡Mucho! La tecnología ha revolucionado la forma en que operamos la cadena de suministro. Antes, todo el proceso era más lento y se basaba en documentos físicos y llamadas telefónicas. Pero hoy en día, la era digital ha llegado para cambiarlo todo.</p>
+                        <p>En esta era podemos usar sistemas y software inteligentes para llevar un mejor control de la cadena de suministro. Por ejemplo, podemos utilizar sensores para rastrear y monitorear nuestros productos en tiempo real. Esto nos ayuda a saber dónde están en cada momento y si están en buen estado.</p>
+                        <div class="texto-video">
+                            <p>También, la era digital nos permite conectar a todos los miembros de la cadena de suministro en una misma red. Así, podemos compartir información de forma más rápida y eficiente. Por ejemplo, si una tienda necesita más productos, puede enviar una señal a la fábrica para que produzcan más, ¡todo en cuestión de segundos!</p>
+                            <p>Estos tiempos digitales nos han dado herramientas para analizar datos y tomar decisiones más inteligentes. Podemos ver patrones y tendencias en la demanda de productos, lo que nos ayuda a estar preparados y evitar escasez o exceso de inventario.</p>
+                        </div>
+                        <separator></separator>
+                        <p>Pero esto no es todo. La era digital también ha revolucionado la forma en que compramos y recibimos productos. Ahora podemos hacer compras en línea desde la comodidad de nuestro hogar y recibir los productos en la puerta de nuestra casa en cuestión de días.</p>
+                        <p>La próxima vez que compres un producto, recuerda que detrás de él hay una cadena de suministro soportada por el trabajo desarrollado por personas que se apoyan en sistemas digitales. ¡Es un gran equipo que trabaja en conjunto para llevar lo que necesitamos hasta nuestras manos!</p>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la logística?</span></h2>
-                    
+                        <p>La logística alude al proceso de planificar, implementar y controlar eficientemente el movimiento y almacenamiento de bienes, servicios e información desde el punto de origen hasta el punto de consumo. “Es llevar el producto justo al lugar justo, en el momento justo, con las condiciones justas y al precio justo” Solleiro (2023).</p>
+                        <p>En la era digital, la logística se define como la gestión estratégica y eficiencia de la cadena de suministro, integrando tecnologías digitales y sistemas de información para optimizar el movimiento de bienes, servicios y datos desde que se generan hasta el consumidor, asegurando una entrega, precisa y oportuna. </p>
+                        <p>Tiene el propósito de satisfacer las necesidades del cliente y permite que una empresa opere de manera eficiente y pueda obtener mejores resultados empresariales. En esencia, la logística implica la gestión efectiva de todos los aspectos relacionados con la cadena de suministro.</p>
+                        
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Introducción a la cadena de suministro">
+                                <h3 class="mt-3"><i class="num">1</i> Introducción a la cadena de suministro</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.1 </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="">1.1 </h4>
+                                        
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.2 </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="">1.2 </h4>
+                                        
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.3 </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="">1.3 </h4>
+                                        
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                        </mat-tab-group>
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <ul>
+                            <li>Aguilar Rascón, O. C., Posada Vázquez, R., &amp; Soto Sevilla, M. S.  (2012). El otro lado de la logística, una visión estratégica: tendencias del aprovisionamiento en las cadenas de valor para el desarrollo sostenible. Revista del Centro de Investigación. Universidad La Salle, 10(38), 221-232.</li>
+                            <li>John, C., John, L., Robert, N., &amp; Brian, G. (2017). Administración de la Cadena de Suministro (10th ed.). Cengage Learning Editores SA de CV. <a href="https://up.vitalsource.com/books/9786075265254">https://up.vitalsource.com/books/9786075265254</a> </li>
+                            <li>KNAPP, (2023). Cadena de valor vs. cadena de suministro: ¿cuál es la diferencia? Recuperado de <a href="https://www.knapp.com/es/saber/blog/diferencia-cadena-de-valor-vs-cadena-de-suministro/">https://www.knapp.com/es/saber/blog/diferencia-cadena-de-valor-vs-cadena-de-suministro/</a></li>
+                            <li>Barno, S. y. (2014). Canvas para arquitectos. Obtenido de https://stepienybarno.es/blog/2014/03/02/canvas-para-arquitectos/</li>
+                            <li>Dosdoce.com. (2014). Nuevos modelos de negocio en la era digital. España: CEDRO. Obtenido de http://www.dosdoce.com/upload/ficheros/noticias/201409/modelos_de_negocio_pdf.pdf </li>
+                            <li>Evans, P. (2014). De la deconstrucción a los big data: cómo la tecnología está transformando las empresas. En BBVA, Reinventar la empresa en la era digital. Obtenido de https://www.bbvaopenmind.com/wp-content/uploads/2015/01/BBVA-OpenMind-libro-Reinventar-la-Empresa-en-la-Era-Digital-empresa-innovacion1-1.pdf</li>
+                            <li>EVPA Knowledge Centre. (2018). A Practical Guide to Venture Philanthropy and Social Impact Investment (4a ed.). EVPA.</li>
+                            <li>Maslow, A. (1943). A Theory of Human Motivation. Psychological Review, 370-396.</li>
+                            <li>Maslow, A. (1954). Motivación y personalidad. Madrid: Ediciones Díaz de Santos, S. A. Obtenido de https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf</li>
+                            <li>OIT. (2020). Resumen ejecutivo: Modelos de negocio para un trabajo decente. The Lab: Market systems for decent work. Obtenido de https://www.ilo.org/wcmsp5/groups/public/---ed_emp/documents/publication/wcms_738589.pdf</li>
+                            <li>Osterwalder, A., &amp; Pigneur, Y. (2010). Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores. Barcelona: Deusto.</li>
+                            <li>Osterwalder, A., Pigneur, Y., Bernarda, G., &amp; Smith, A. (2014). Diseñando la propuesta de valor: Cómo crear los productos y servicios que tus clientes están esperando. Deusto.</li>
+                            <li>Saez H., J. (2021). ¿Cuáles son los modelos de negocios digitales más utilizados? Obtenido de IEBS Business School: https://www.iebschool.com/blog/modelos-negocios-digitales-mas-utilizados-digital-business/</li>
+                            <li>Shum, Y. (2020). Pirámide de Maslow ¿Qué es? necesidades de los usuarios. Obtenido de https://yiminshum.com/piramide-maslow-que-es/</li>
+                            <li>The Body Shop International Limited. (2023). Natura &amp; Co. Obtenido de https://www.thebodyshop.com/es-es/nosotros/nuestra-historia/natura-and-co/a/a00005</li>
+                            <li>Von Hippel, E. (1986). Lead Users: A Source of Novel Product Concepts. Management Science, 32(7), 791-805. Obtenido de http://www.jstor.org/stable/2631761</li>
+                        </ul>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
-                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de la logística</span></h2>
+                        <p>La implementación de la Cadena de Suministro en la era digital ofrece una serie de beneficios potenciales significativos para las pequeñas y medianas empresas (pymes). Estos beneficios les permiten mejorar su eficiencia, su competitividad y la satisfacción del cliente. Algunos de los beneficios clave son:</p>
+                        <img src="../../../../../assets/images/dimensions/procesos/1_Beneficios_potenciales_digitalizacion_procesos.webp" class="img-fluid"/>
+                        <separator></separator>
+                        <div class="hint">
+                            <p>En resumen, la implementación de la cadena de suministro en la era digital ofrece una amplia gama de beneficios para las pymes. Desde una mayor eficiencia y reducción de costos hasta una mejora en la satisfacción del cliente y la resiliencia empresarial, la digitalización de la cadena de suministro se convierte en un elemento crucial para el crecimiento y éxito a largo plazo de las pequeñas y medianas empresas.</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/procesos/2_Proceso_logistica.webp" class="img-fluid"/>
+                        <separator></separator>
                     </div>
                 </section>
 
@@ -125,7 +197,8 @@
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">
-                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
+                            <h6><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h6>
+                            <p>{{item.Resumen}}</p>
                             <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
                         </div>
                     </div>

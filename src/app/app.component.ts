@@ -61,10 +61,4 @@ export class AppComponent implements OnInit {
             this.navIsFixed = false; 
         }
 	}
-	scrollToTop() {
-        var currentScroll = document.documentElement.scrollTop;
-        if(currentScroll > 0){
-				window.scrollTo(0, 0);
-        }
-	}
 }

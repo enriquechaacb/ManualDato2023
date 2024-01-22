@@ -23,4 +23,20 @@ export class GlobalService {
         });
         return dialog.afterClosed();
     }
+    public scrollToTop(id?:string) {
+        var currentScroll = document.documentElement.scrollTop;
+        if(currentScroll > 0){
+            // var n = 0;
+            // if(px && px > 0){n = px}
+            if(id){
+                let el = document.getElementById(id);
+                console.log(`scrolling to ${id}`);
+                if(el){
+                    el.scrollIntoView()
+                }
+            }else{
+                window.scrollTo(0, 0);
+            }
+        }
+	}
 }

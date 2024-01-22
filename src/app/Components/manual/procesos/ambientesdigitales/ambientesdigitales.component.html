@@ -32,33 +32,648 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <p>En este apartado vamos a adentrarnos en el interesante y muy actual tema del Desarrollo de Ambientes Digitales. No se preocupen si no son expertos en tecnología, porque se explicará de manera dinámica, sencilla y coloquial.</p>
+                        <p>Imaginen que el mundo digital es como un enorme parque de diversiones lleno de oportunidades para nuestros negocios. El Desarrollo de Ambientes Digitales es como el proceso de construir las atracciones y los caminos que nos llevarán a disfrutar de todas esas oportunidades.</p>
+                        <p>Entonces, ¿qué significa el Desarrollo de Ambientes Digitales? Pues bien, es el conjunto de acciones que realizamos para aprovechar la tecnología en nuestras empresas. Desde tener una presencia en línea hasta utilizar herramientas digitales para mejorar nuestras operaciones. Todo esto nos permite alcanzar nuestros objetivos de manera más rápida y efectiva.</p>
+                        <p>Ahora, ¿por qué es tan importante este desarrollo digital? Porque vivimos en un mundo cada vez más conectado y digitalizado. Nuestros clientes están en línea y esperan que podamos interactuar con ellos en este espacio. Además, la tecnología nos brinda la oportunidad de hacer las cosas de manera más eficiente y llegar a un público mucho más amplio.</p>
+                        <p>Así que, ¿cómo comenzamos este viaje hacia el Desarrollo de Ambientes Digitales? ¡La clave está en entender a nuestro negocio y a nuestros clientes! Debemos conocer bien lo que hacemos y quiénes son nuestros clientes para saber qué herramientas digitales nos serán útiles.</p>
+                        <p>Primero, es importante tener una presencia en línea. Esto puede ser a través de un sitio web donde nuestros clientes puedan encontrarnos y conocer nuestros productos o servicios. También podemos utilizar las redes sociales para interactuar con ellos y mantenernos en contacto.</p>
+                        <p>Luego, podemos utilizar herramientas digitales para mejorar nuestras operaciones internas. Esto puede incluir sistemas de gestión empresarial, que nos ayuden a mantener todo organizado y optimizar nuestros recursos. También podemos implementar automatizaciones para agilizar tareas repetitivas y ahorrar tiempo.</p>
+                        <p>La seguridad también es un aspecto clave del Desarrollo de Ambientes Digitales. Debemos proteger nuestra información y la de nuestros clientes. Para ello, podemos utilizar medidas de seguridad informática, como contraseñas fuertes y sistemas de protección de datos.</p>
+                        <p>El Desarrollo de Ambientes Digitales es un proceso constante y en evolución. Siempre habrá nuevas tecnologías y tendencias que podamos aprovechar para mejorar nuestro negocio. Por eso, es importante mantenernos actualizados y abiertos a la innovación.</p>
+                        <p>Paremos a realizar una reflexión: el Desarrollo de Ambientes Digitales es como un paseo emocionante que nos lleva a un mundo lleno de oportunidades. Nos permite aprovechar la tecnología para llegar a más clientes, mejorar nuestras operaciones y crecer como empresa. Así que, ¡prepárense para disfrutar de este viaje digital y saquen el máximo provecho de todas las maravillas que el mundo digital tiene para ofrecernos!</p>
+                        <div class="texto-video">
+                            <p>En este apartado vamos a adentrarnos en el interesante y muy actual tema del Desarrollo de Ambientes Digitales. Iniciemos por imaginar que el mundo digital es como un enorme parque de diversiones lleno de oportunidades para nuestros negocios.</p>
+                            <p>El Desarrollo de Ambientes Digitales es el conjunto de acciones que realizamos para aprovechar la tecnología en nuestras empresas. Desde tener una presencia en línea hasta utilizar herramientas digitales para mejorar nuestras operaciones. Todo esto nos permite alcanzar nuestros objetivos de manera más rápida y efectiva.</p>
+                            <p>¡La clave está en entender a nuestro negocio y a nuestros clientes! Debemos conocer bien lo que hacemos y quiénes son nuestros clientes para saber qué herramientas digitales nos serán útiles.</p>
+                            <p>Primero, es importante tener una presencia en línea. Esto puede ser a través de un sitio web donde nuestros clientes puedan encontrarnos y conocer nuestros productos o servicios. También podemos utilizar las redes sociales para interactuar con ellos y mantenernos en contacto.</p>
+                            <p>Luego, podemos utilizar herramientas digitales para mejorar nuestras operaciones internas. Esto puede incluir sistemas de gestión empresarial que nos ayuden a mantener todo organizado y optimizar nuestros recursos. También podemos implementar automatizaciones para agilizar tareas repetitivas y ahorrar tiempo.</p>
+                            <p>La seguridad también es un aspecto clave porque debemos proteger nuestra información y la de nuestros clientes. Para ello, podemos utilizar medidas de seguridad informática, como contraseñas fuertes y sistemas de protección de datos.</p>
+                            <p>El Desarrollo de Ambientes Digitales es un proceso constante y en evolución es como un paseo emocionante que nos lleva a un mundo lleno de oportunidades. Nos permite aprovechar la tecnología para llegar a más clientes, mejorar nuestras operaciones y crecer como empresa.</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es el desarrollo de ambientes digitales?</span></h2>
-                    
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Introducción a la Transformación Digital">
+                                <h3 class="mt-3"><i class="num">1</i> Introducción a la Transformación Digital</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.1 Conceptos básicos: Transformación digital, ambientes digitales, eficiencia y automatización de procesos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="conceptos">1.1 Conceptos básicos: Transformación digital, ambientes digitales, eficiencia y automatización de procesos</h4>
+                                        <p>La transformación digital es un proceso en el que las empresas adoptan tecnologías digitales para mejorar sus operaciones y procesos, optimizando su rendimiento y adaptándose a los cambios del entorno empresarial actual. En este contexto, los ambientes digitales juegan un papel fundamental, proporcionando herramientas y plataformas para facilitar la gestión de datos y la automatización de tareas, lo que conduce a una mayor eficiencia en las operaciones.</p>
+                                        <h5>Conceptos clave:</h5>
+                                        <div class="conceptoclave">
+                                            <h6>Transformación Digital</h6>
+                                            <p>La transformación digital implica el uso de tecnologías digitales como la inteligencia artificial, el internet de las cosas, la nube y el análisis de datos para mejorar la forma en que las empresas operan y entregan valor a sus clientes. Esta transición abarca cambios en la cultura, procesos y modelos de negocio para adaptarse a la era digital.</p>
+                                            <p class="ejemplo">Ejemplo: Una tienda minorista que implementa un sistema de gestión de inventario basado en la nube para optimizar el control de existencias y la reposición de productos, lo que le permite reducir costos y ofrecer una experiencia de compra más eficiente.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Ambientes Digitales</h6>
+                                            <p>Los ambientes digitales son entornos en línea donde las empresas pueden realizar operaciones y transacciones utilizando tecnologías digitales. Estos ambientes pueden incluir plataformas de comercio electrónico, sistemas de gestión empresarial y aplicaciones móviles.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de servicios que brinda a sus clientes una plataforma en línea donde pueden acceder a sus cuentas, solicitar servicios, realizar pagos y recibir notificaciones, todo desde la comodidad de sus dispositivos móviles.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Eficiencia</h6>
+                                            <p>La eficiencia se refiere a la capacidad de una empresa para lograr sus objetivos de manera rápida y con el uso óptimo de los recursos disponibles. En el contexto de la transformación digital, la eficiencia se mejora mediante la automatización de procesos y la reducción de tareas manuales repetitivas.</p>
+                                            <p class="ejemplo">Ejemplo: Una compañía de logística que utiliza sistemas automatizados para rastrear y gestionar el inventario, lo que agiliza los procesos de recepción, almacenamiento y envío de mercancías.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Automatización de Procesos</h6>
+                                            <p>La automatización de procesos implica el uso de tecnología para realizar tareas de manera automática, sin intervención humana. Esto permite ahorrar tiempo, reducir errores y aumentar la productividad.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de recursos humanos que utiliza un software de gestión para automatizar el proceso de contratación de personal, desde la publicación de ofertas de trabajo hasta la selección de candidatos.</p>
+                                        </div>
+                                        <p>Te recomendamos ver el siguiente enlace para profundizar en el tema:</p>
+                                        <p>Transformación Digital en la Empresa: Ventajas y Desafíos:</p>
+                                        <p><a href="https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html">https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html</a></p>
+                                        
+                                    </mat-expansion-panel>
+
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('beneficios')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.2. Beneficios y desafíos de la implementación de ambientes digitales en los negocios</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="beneficios">1.2. Beneficios y desafíos de la implementación de ambientes digitales en los negocios</h4>
+                                        <p>Los ambientes digitales son entornos en línea donde las empresas pueden llevar a cabo diversas operaciones y transacciones utilizando tecnologías digitales. Estos ambientes han cobrado una importancia significativa en el mundo empresarial moderno, ya que permiten mejorar la eficiencia, aumentar la productividad y ofrecer una experiencia más satisfactoria a los clientes.</p>
+                                        <h5>Beneficios de la implementación de ambientes digitales:</h5>
+                                        <p>La implementación de ambientes digitales ofrece una serie de beneficios significativos que pueden transformar la forma en que se realizan tareas, se comunican y se gestionan operaciones en nuestras pymes. Veamos algunos beneficios clave de la implementación de ambientes digitales:</p>
+                                        <div class="conceptoclave">
+                                            <h6>Mayor accesibilidad y disponibilidad</h6>
+                                            <p>Los ambientes digitales proporcionan a las empresas la capacidad de estar disponibles para sus clientes las 24 horas del día, los 7 días de la semana. Esto permite a los clientes acceder a información y realizar transacciones en cualquier momento y desde cualquier lugar.</p>
+                                            <p class="ejemplo">Ejemplo: Una tienda en línea que permite a los clientes realizar compras en cualquier momento, sin importar la ubicación geográfica.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Mejora de la experiencia del cliente</h6>
+                                            <p>Los ambientes digitales brindan una experiencia más conveniente y personalizada a los clientes. Las empresas pueden utilizar datos y análisis para entender mejor las necesidades y preferencias de sus clientes, lo que les permite ofrecer productos y servicios más relevantes y atractivos.</p>
+                                            <p class="ejemplo">Ejemplo: Un banco que utiliza un sitio web y una aplicación móvil para permitir a los clientes realizar transacciones bancarias, consultar saldos y recibir notificaciones personalizadas.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Eficiencia operativa</h6>
+                                            <p>La implementación de ambientes digitales permite a las empresas automatizar procesos y reducir la dependencia de tareas manuales, lo que conduce a una mayor eficiencia en las operaciones.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de logística que utiliza un sistema de gestión de almacenes automatizado para agilizar el proceso de almacenamiento y envío de productos.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Ampliación del alcance del mercado</h6>
+                                            <p>Los ambientes digitales eliminan barreras geográficas y permiten a las empresas llegar a clientes en diferentes regiones y países, lo que facilita la expansión del mercado.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de turismo que ofrece servicios en línea y atrae clientes de todo el mundo.</p>
+                                        </div>
+                                        <h5>Desafíos de la Implementación de Ambientes Digitales:</h5>
+                                        <p>La implementación de ambientes digitales conlleva varios desafíos que deben abordarse para garantizar una transición exitosa y beneficiosa. Aquí hay algunos desafíos comunes en la implementación de ambientes digitales, junto con una sugerencia de implementación de cada uno: </p>
+                                        <div class="conceptoclave">
+                                            <h6>Seguridad de datos</h6>
+                                            <p>La seguridad de los datos es una preocupación importante en los ambientes digitales. Las empresas deben implementar medidas de seguridad sólidas para proteger la información confidencial de sus clientes y empleados.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Capacitación y adopción</h6>
+                                            <p>La implementación de ambientes digitales puede requerir capacitación para el personal y los clientes. Algunas personas pueden sentirse reacias o inseguras al utilizar nuevas tecnologías.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Costos de implementación</h6>
+                                            <p>La implementación de ambientes digitales puede implicar costos significativos, como la adquisición de software y hardware, así como el desarrollo de plataformas y aplicaciones personalizadas.</p>
+                                        </div>
+                                        <p>Para profundizar, aquí un enlace de interés:</p>
+                                        <p>Ventajas y desventajas de los ambientes digitales en los negocios</p>
+                                        <p><a href="https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html">https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html</a></p>
+                                    </mat-expansion-panel>
+                                    
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tendencias')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.3 Tendencias actuales en el ámbito digital y su impacto en las organizaciones</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="tendencias">1.3 Tendencias actuales en el ámbito digital y su impacto en las organizaciones</h4>
+                                    <p>En el mundo empresarial actual, la tecnología y el entorno digital están experimentando un rápido avance que impacta significativamente en las organizaciones. Estas tendencias digitales están transformando la forma en que las empresas operan, interactúan con los clientes y gestionan sus procesos internos. A continuación, exploraremos algunas de las tendencias más relevantes y su impacto en las pymes:</p>
+                                    <div class="conceptoclave">
+                                        <h6>Transformación digital</h6>
+                                        <p>La transformación digital se refiere a la integración de tecnologías digitales en todos los aspectos de una organización, desde la estrategia hasta las operaciones. Esta tendencia busca mejorar la eficiencia, aumentar la productividad y ofrecer una experiencia excepcional al cliente.</p>
+                                        <p class="ejemplo">Ejemplo: Una empresa minorista implementa un sistema de ventas en línea, optimiza sus procesos de logística y utiliza analítica de datos para personalizar las ofertas a sus clientes.</p>
+                                    </div>
+                                    <div class="conceptoclave">
+                                        <h6>Inteligencia artificial (IA) y automatización</h6>
+                                        <p>La IA y la automatización están revolucionando la forma en que las empresas realizan tareas y toman decisiones. Estas tecnologías permiten el procesamiento rápido de grandes cantidades de datos y la automatización de procesos repetitivos.</p>
+                                        <p class="ejemplo">Ejemplo: Un centro de atención al cliente utiliza chatbots basados en IA para resolver consultas de manera instantánea y reducir la carga de trabajo del personal humano.</p>
+                                    </div>
+                                    <div class="conceptoclave">
+                                        <h6>Internet de las cosas (IoT)</h6>
+                                        <p>El IoT conecta objetos cotidianos a internet, permitiéndoles recopilar y compartir datos. Esto abre la puerta a nuevas oportunidades para mejorar la eficiencia y crear productos y servicios más inteligentes y conectados.</p>
+                                        <p class="ejemplo">Ejemplo: Una empresa de fabricación utiliza sensores IoT en su maquinaria para monitorear el rendimiento y predecir posibles fallas antes de que ocurran.</p>
+                                    </div>
+                                    <div class="conceptoclave">
+                                        <h6>Big data y análisis de datos</h6>
+                                        <p>El Big Data se refiere al procesamiento y análisis de grandes volúmenes de datos para obtener información valiosa y patrones ocultos. Esto permite a las organizaciones tomar decisiones más informadas y estratégicas.</p>
+                                        <p class="ejemplo">Ejemplo: Una empresa de comercio electrónico analiza los datos de compra de sus clientes para ofrecer recomendaciones de productos personalizadas.</p>
+                                    </div>
+                                    <div class="conceptoclave">
+                                        <h6>Realidad aumentada (RA) y Realidad virtual (RV)</h6>
+                                        <p>La AR y la VR están transformando la forma en que las empresas interactúan con sus clientes y empleados. Estas tecnologías ofrecen experiencias inmersivas y enriquecidas. La realidad aumentada es una tecnología que superpone información digital al mundo real, regularmente a través de gafas, teléfonos inteligentes o tabletas. En tanto, la realidad virtual es una tecnología que permite crear mundos virtuales completamente inmersivos. La VR regularmente se utiliza para crear experiencias de juego y entretenimiento.</p>
+                                        <p class="ejemplo">Ejemplo: Una empresa de muebles utiliza la AR para permitir a los clientes visualizar cómo quedaría un mueble en su hogar antes de comprarlo. Una tienda de ropa podría utilizarla para que los clientes puedan probarse ropa virtualmente para ver cómo se ven o cómo les queda.</p>
+                                    </div>
+                                    <h5>1.3.1 Impacto en las organizaciones:</h5>
+                                    <p>Estas tendencias digitales están impactando en las pymes de diversas formas, veamos algunas de las más importantes:</p>
+                                    <ul>
+                                        <li>Mejora de la eficiencia operativa y reducción de costos.</li>
+                                        <li>Mayor personalización y satisfacción del cliente.</li>
+                                        <li>Mayor agilidad y capacidad de adaptación al cambio.</li>
+                                        <li>Desarrollo de nuevos modelos de negocio y oportunidades de crecimiento.</li>
+                                        <li>Mejora de la toma de decisiones basada en datos y análisis.</li>
+                                    </ul>
+                                    <h6>Enlaces para profundizar:</h6>
+                                    <p>Forbes - 10 Tendencias tecnológicas que transformarán las empresas:</p>
+                                    <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
+                                    <div class="hint">
+                                        <div>
+                                            <h5>Preguntas abiertas para reflexionar:</h5>
+                                            <ol>
+                                                <li>¿Cómo puede tu pyme prepararse para abrazar la transformación digital y aprovechar sus beneficios?</li>
+                                                <li>¿Cuál es el impacto de la inteligencia artificial en la toma de decisiones en tu organización?</li>
+                                                <li>¿Qué ventajas ofrece el Internet de las cosas en la optimización de procesos y la mejora de la experiencia de tus clientes?</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+
+                            <mat-tab label="Análisis de Necesidades y Objetivos">
+                                <h3 class="mt-3"><i class="num">2</i> Análisis de Necesidades y Objetivos</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.1. Identificación y comprensión de las necesidades del negocio para el diseño de soluciones adecuadas</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="identificacion">2.1. Identificación y comprensión de las necesidades del negocio para el diseño de soluciones adecuadas</h4>
+                                        <p>La identificación y comprensión de las necesidades del negocio es un proceso esencial para el diseño e implementación de soluciones efectivas que impulsen el éxito y crecimiento de una empresa. Esto implica analizar y entender las demandas y desafíos específicos que enfrenta la organización, así como las metas y objetivos que busca alcanzar. A continuación, exploraremos ampliamente este tema:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/3_Metodologia_FODA.webp" class="img-fluid">
+                                        <p>Figura 1. Matriz FODA. (Rosas, R., 2023).</p>
+                                        <separator></separator>
+
+                                        <div class="texto-video">
+                                            <p>El primer paso para diseñar soluciones adecuadas es realizar un análisis profundo de las necesidades del negocio. Esto implica recopilar información relevante sobre los procesos internos, el mercado en el que opera la empresa, las expectativas de los clientes y las áreas que requieren mejoras.</p>
+                                            <p>El análisis FODA (Fortalezas, Oportunidades, Debilidades y Amenazas) es una herramienta de gestión estratégica que permite evaluar la situación actual de una empresa u organización. Se enfoca en identificar los factores internos y externos que pueden influir en su desempeño y competitividad  A continuación, desarrollaremos cada uno de los componentes del análisis FODA:</p>
+                                            <div class="conceptoclave">
+                                                <h6>Fortalezas (Strengths)</h6>
+                                                <p>Las fortalezas son los atributos internos positivos que la empresa posee y que la distinguen de la competencia. Estos aspectos pueden estar relacionados con recursos, capacidades, ventajas competitivas o activos tangibles e intangibles.</p>
+                                                <p class="ejemplo">Ejemplo: Una empresa de tecnología tiene un equipo altamente capacitado y experimentado, lo que le permite desarrollar productos innovadores.</p>
+                                            </div>
+                                            <div class="conceptoclave">
+                                                <h6>Oportunidades (Opportunities)</h6>
+                                                <p>Las oportunidades son factores externos positivos que la empresa puede aprovechar para su beneficio. Estas pueden ser tendencias del mercado, cambios en la demanda, avances tecnológicos o cambios regulatorios.</p>
+                                                <p class="ejemplo">Ejemplo: Una empresa de alimentos identifica un crecimiento significativo en la demanda de productos orgánicos y sin gluten, lo que representa una oportunidad de expansión para su línea de productos saludables.</p>
+                                            </div>
+                                            <div class="conceptoclave">
+                                                <h6>Debilidades (Weaknesses)</h6>
+                                                <p>Las debilidades son factores internos negativos que pueden afectar la eficiencia y competitividad de la empresa. Estos pueden incluir limitaciones en recursos, carencias en capacidades o problemas en procesos internos.</p>
+                                                <p class="ejemplo">Ejemplo: Una empresa de logística identifica que tiene problemas de eficiencia en su cadena de suministro debido a la falta de coordinación entre diferentes departamentos.</p>
+                                            </div>
+                                            <div class="conceptoclave">
+                                                <h6>Amenazas (Threats)</h6>
+                                                <p>Las amenazas son factores externos negativos que pueden afectar negativamente el desempeño de la empresa. Estos pueden ser competidores fuertes, cambios en las preferencias de los clientes, fluctuaciones en los precios de los insumos o crisis económicas.</p>
+                                                <p class="ejemplo">Ejemplo: Una empresa de turismo enfrenta una amenaza potencial debido a un aumento en la competencia y a una disminución en el turismo debido a una crisis sanitaria. </p>
+                                            </div>
+                                        </div>
+
+                                        <p>En conclusión: El análisis FODA se utiliza para evaluar la posición actual de la empresa y tomar decisiones estratégicas informadas. Al identificar las fortalezas y debilidades internas, la empresa puede enfocar sus esfuerzos en mejorar áreas clave. Al mismo tiempo, al identificar oportunidades y amenazas externas, la pyme puede adaptar su enfoque para capitalizar oportunidades o mitigar posibles riesgos.</p>
+                                        <h6>Enlaces para profundizar:</h6>
+                                        <p><a href="https://asana.com/es/resources/swot-analysis">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
+                                        
+                                        <h5>2.1.2 Comunicación con las Partes Interesadas</h5>
+                                        <p>Es crucial involucrar a todas las partes interesadas en el proceso de identificación de necesidades. Esto incluye a los líderes y empleados de la empresa, así como a los clientes y proveedores. Escuchar sus opiniones y retroalimentación ayuda a obtener una visión completa y precisa de las necesidades del negocio.</p>
+                                        <p>Ejemplo: Una empresa de software organiza reuniones con sus clientes para conocer sus opiniones sobre la usabilidad y funcionalidad del producto.</p>
+                                        
+                                        <h5>2.1.3 Establecimiento de objetivos claros</h5>
+                                        <p>Una vez que se identifican las necesidades del negocio, es importante establecer objetivos claros y medibles. Estos objetivos deben estar alineados con la visión y misión de la empresa y ser alcanzables en un plazo determinado.</p>
+                                        <p>Fuente: Foro de economía digital, 2023.</p>
+                                        <p>Los objetivos SMART son una metodología para establecer metas claras, específicas y alcanzables. La palabra SMART es un acrónimo en inglés que representa cinco características clave que deben tener los objetivos:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/4_Objetivos_SMART.webp" class="img-fluid">
+                                        <separator></separator>
+                                        <!-- <ul>
+                                            <li>Específicos (Specific): Los objetivos deben ser detallados y precisos, evitando ambigüedades. Deben responder a las preguntas qué, quién, dónde, cuándo, por qué y cómo.</li>
+                                            <li>Medibles (Measurable): Los objetivos deben poder ser cuantificados y medidos para evaluar su progreso y logro. Deben incluir indicadores o métricas claras.</li>
+                                            <li>Alcanzables (Achievable): Los objetivos deben ser realistas y factibles de lograr. Deben estar dentro de las capacidades y recursos disponibles.</li>
+                                            <li>Relevantes (Relevant): Los objetivos deben estar alineados con los propósitos y metas generales de la empresa u organización. Deben ser relevantes y contribuir al éxito general.</li>
+                                            <li>Con plazo de tiempo (Time-bound): Los objetivos deben tener un plazo o fecha límite para su cumplimiento. Deben ser establecidos con un marco temporal claro.</li>
+                                        </ul> -->
+                                        <p><strong>Ejemplo de objetivo SMART:</strong></p>
+                                        <p>Objetivo: Aumentar las ventas de nuestro producto X en un 10% durante el próximo trimestre (de julio a septiembre) en comparación con el trimestre anterior, utilizando estrategias de marketing digital para llegar a nuevos clientes.</p>
+                                        <ul>
+                                            <li>Específico: Aumentar las ventas del producto X.</li>
+                                            <li>Medible: Un incremento del 10% en las ventas.</li>
+                                            <li>Alcanzable: Basado en el historial de ventas y las tendencias del mercado, un aumento del 10% es factible.</li>
+                                            <li>Relevante: Alineado con el objetivo general de mejorar las ventas de la empresa.</li>
+                                            <li>Con plazo de tiempo: Durante el próximo trimestre, de julio a septiembre.</li>
+                                        </ul>
+                                        <p>Este objetivo SMART proporciona una meta clara y cuantificable, establece un plazo específico y está enfocado en un resultado relevante para el éxito del negocio.</p>
+                                        <h5>2.1.4 Diseño de Soluciones Personalizadas:</h5>
+                                        <p>Cada negocio tiene necesidades únicas, por lo que es fundamental diseñar soluciones personalizadas que se adapten a las particularidades de la empresa. Estas soluciones pueden incluir la implementación de tecnología, mejoras en los procesos o cambios en la estrategia de negocio.</p>
+                                        <p>Ejemplo: Una empresa de manufactura adopta un sistema de gestión de la cadena de suministro para optimizar el flujo de materiales y reducir costos de almacenamiento.</p>
+                                        <h5>2.1.5 Evaluación y Seguimiento Continuo:</h5>
+                                        <p>La identificación de necesidades y la implementación de soluciones es un proceso continuo. Es importante evaluar regularmente la efectividad de las soluciones implementadas y realizar ajustes según sea necesario. </p>
+                                        <div class="texto-video">
+                                            <p>Las técnicas ágiles son enfoques colaborativos y flexibles para la gestión y seguimiento de proyectos que se utilizan para adaptarse a los cambios en los requisitos y entregar valor de manera incremental. Estas técnicas se centran en la entrega rápida y continua de resultados tangibles, lo que permite una mayor satisfacción del cliente y una mayor eficiencia en la ejecución de proyectos. A continuación, se describen algunas de las principales técnicas ágiles para el seguimiento de proyectos: </p>
+                                            <p><strong>Scrum</strong>: es uno de los marcos de trabajo ágiles más populares. Se basa en ciclos de trabajo llamados "sprints" que generalmente tienen una duración de 2 a 4 semanas. Durante cada sprint, el equipo se enfoca en entregar un conjunto de funcionalidades específicas. Al final de cada sprint, se realiza una revisión para demostrar los resultados y una retrospectiva para mejorar continuamente el proceso.</p>
+                                            <p><small>Fuente: Scrum ORG, 2023</small></p>
+                                            <h6>Enlaces para profundizar:</h6>
+                                            <p><a href="https://youtu.be/a33xOe9d_Dk">https://youtu.be/a33xOe9d_Dk</a></p>
+                                            <p><a href="https://www.scrum.org/">https://www.scrum.org/</a></p>
+                                            <ol>
+                                                <li><strong>Kanban: </strong>es una técnica que utiliza tableros visuales para representar el flujo detrabajo y las tareas pendientes, en progreso y completadas. Es especialmente útil para proyectos con múltiples flujos de trabajo y prioridades cambiantes. El equipo puede ajustar la cantidad de trabajo en curso según la capacidad disponible y las prioridades cambiantes.</li>
+                                                <li><strong>Historias de usuario: </strong>son descripciones breves de funcionalidades desde la perspectiva del usuario. Se utilizan para comunicar y comprender los requisitos del proyecto. Cada historia de usuario tiene una prioridad y un valor de negocio asociados, lo que permite al equipo enfocarse en las tareas más valiosas para el cliente. Para ver un ejemplo, revisa el artículo: <a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
+                                                <li><strong>Daily Stand-up (reunión diaria): </strong>Esta reunión corta y diaria es una práctica común en Scrum. El equipo se reúne para sincronizar el progreso, compartir actualizaciones y discutir posibles bloqueos. Esto ayuda a identificar problemas rápidamente y mantener a todos alineados con los objetivos del proyecto.</li>
+                                                <li><strong>Burn-down charts (gráficos de avance):</strong> Estos gráficos muestran la cantidad de trabajo restante frente al tiempo. Son útiles para visualizar el progreso del proyecto y detectar desviaciones tempranas.</li>
+                                                <li><strong>Retrospectivas: </strong>Al final de cada iteración o sprint, el equipo se reúne para realizar una retrospectiva. En esta sesión, se analiza lo que funcionó bien, qué se puede mejorar y se proponen acciones para la siguiente iteración.</li>
+                                            </ol>
+                                            <h6>Enlaces para profundizar:</h6>
+                                            <ul>
+                                                <li>Harvard Business Review - The Art of Framing Problems</li>
+                                                <li>MIT Sloan Management Review - Closing the Gap Between Strategy and Execution</li>
+                                                <li><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="hint">
+                                            <div>
+                                                <h5>Preguntas abiertas para reflexionar:</h5>
+                                                <ol>
+                                                <li>¿Por qué es importante involucrar a todas las partes interesadas en el proceso de identificación de necesidades del negocio?</li>
+                                                <li>¿Cómo puede tu pyme asegurarse de que los objetivos establecidos sean alcanzables y medibles?</li>
+                                                <li>¿Cuál es el impacto de la evaluación y seguimiento continuo, en la mejora de la eficiencia y efectividad de las soluciones implementadas en una pyme?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </mat-expansion-panel>
+
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('alinear')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.2 Cómo alinear los procesos digitales con los objetivos estratégicos de la organización</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h3 id="alinear">2.2 Cómo alinear los procesos digitales con los objetivos estratégicos de la organización</h3>
+                                    <img src="../../../../../assets/images/dimensions/procesos/5_Procesos_digitales_objetivos_estrategicos.webp" class="img-fluid">
+                                    <separator></separator>
+                                    <!-- <p>Para alinear los procesos digitales con los objetivos estratégicos de la organización, es necesario seguir un enfoque sistemático que garantice la integración efectiva de la tecnología en todas las áreas y niveles de la empresa. Aquí hay una guía para lograrlo:</p>
+                                    <ul>
+                                    <li><strong>Comprender los objetivos estratégicos:</strong> El primer paso es tener una comprensión clara de los objetivos estratégicos de la organización. Esto implica identificar las metas a largo plazo, las prioridades comerciales y las áreas clave de enfoque.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Identificar procesos clave:</strong> Identificar los procesos críticos para el éxito de la organización. Estos pueden incluir la adquisición de clientes, el desarrollo de productos, la gestión de la cadena de suministro, la atención al cliente, entre otros.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Evaluar la tecnología existente: </strong>Evaluar la tecnología y sistemas actuales para determinar si están alineados con los objetivos estratégicos y si son adecuados para respaldar los procesos clave de la organización.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Establecer un equipo de transformación digital:</strong> Formar un equipo interdisciplinario que incluya a líderes y expertos de diferentes áreas de la organización. Este equipo será responsable de liderar la transformación digital y asegurar la alineación de los procesos digitales con los objetivos estratégicos.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Definir las necesidades de tecnología:</strong> Identificar las tecnologías y soluciones digitales necesarias para respaldar los procesos clave y alcanzar los objetivos estratégicos. Esto puede incluir sistemas ERP, CRM, plataformas de análisis de datos, herramientas de automatización, entre otros.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Priorizar iniciativas:</strong> Priorizar las iniciativas digitales en función de su impacto en los objetivos estratégicos y su viabilidad de implementación. Es importante tener en cuenta el costo, el tiempo de implementación y los recursos requeridos para cada iniciativa.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Establecer métricas de rendimiento:</strong> Definir indicadores clave de rendimiento (KPI) que permitan medir el progreso hacia los objetivos estratégicos. Estos KPI deben estar vinculados a los procesos digitales y a los resultados comerciales.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Capacitar al personal: </strong>Proporcionar capacitación y desarrollo profesional a los empleados para asegurar que estén familiarizados y puedan aprovechar al máximo las nuevas tecnologías.</li>
+                                    </ul>
+                                    <ul>
+                                    <li><strong>Monitorear y ajustar:</strong> Monitorear de cerca la implementación de los procesos digitales y realizar ajustes según sea necesario. La transformación digital es un proceso continuo y requiere flexibilidad para adaptarse a cambios en el entorno empresarial.</li>
+                                    </ul> -->
+                                    <h6>Enlaces para profundizar:</h6>
+                                    <p><a href="https://asana.com/es/resources/gap-analysis">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
+                                    <div class="hint">
+                                        <div>
+                                            <h5>Preguntas abiertas para reflexionar:</h5>
+                                            <ol>
+                                                <li>¿Cuál es la importancia de alinear los procesos digitales con los objetivos estratégicos de tu pyme?</li>
+                                                <li>¿Cómo pueden las tecnologías emergentes como inteligencia artificial o internet de las cosas, contribuir a la alineación de procesos digitales?</li>
+                                                <li>¿Qué desafíos podrían surgir al intentar alinear la tecnología con los objetivos estratégicos y cómo se pueden superar?</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+
+                            <mat-tab label="Tecnologías y Herramientas Digitales">
+                                <h3 class="mt-3"><i class="num">3</i> Tecnologías y Herramientas Digitales</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('exploracion')">
+                                            <mat-expansion-panel-header>
+                                                <mat-panel-title>3.1 Exploración y selección de tecnologías digitales adecuadas para cada tipo de negocio.</mat-panel-title>
+                                            </mat-expansion-panel-header>
+                                            <h4 id="exploracion">3.1 Exploración y selección de tecnologías digitales adecuadas para cada tipo de negocio.</h4>
+                                                
+                                                <div class="texto-video">
+                                                    <p>Las tecnologías digitales adecuadas para cada tipo de negocio dependerán de sus necesidades específicas y su modelo de operación. A continuación, mencionaremos algunas tecnologías digitales comunes y, ejemplos de cómo se aplican en diferentes tipos de negocios:</p>
+                                                    <div class="conceptoclave">
+                                                        <h6>Comercio electrónico</h6>
+                                                        <p>Para negocios de venta en línea, plataformas de comercio electrónico como Shopify, WooCommerce o Magento son adecuadas. Estas herramientas permiten crear tiendas virtuales, gestionar inventarios, procesar pagos y ofrecer una experiencia de compra en línea fluida.</p>
+                                                        <p class="ejemplo">Ejemplo: Una tienda de moda puede utilizar Shopify para vender sus productos en línea.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Automatización de marketing</h6>
+                                                        <p>Para empresas enfocadas en el marketing digital, el uso de herramientas de automatización como HubSpot o Mailchimp puede resultar beneficioso. Estas plataformas permiten crear campañas de email marketing, segmentar audiencias, rastrear el comportamiento del cliente y analizar resultados.</p>
+                                                        <p class="ejemplo">Ejemplo: Una agencia de marketing digital puede usar HubSpot para automatizar el envío de correos electrónicos personalizados a sus clientes.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Gestión de proyectos</h6>
+                                                        <p>Para empresas que requieren una gestión eficiente de proyectos, herramientas como Asana, Trello o Jira son adecuadas. Estas plataformas permiten crear tareas, asignar responsabilidades, hacer seguimiento del progreso y colaborar en equipo. Ejemplo: Una agencia de desarrollo de software puede utilizar Jira para gestionar el desarrollo de múltiples proyectos.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Analítica de datos</h6>
+                                                        <p>En el ámbito del análisis de datos, herramientas como Google Analytics, Tableau o Power BI son útiles para recopilar, visualizar y analizar datos importantes del negocio.</p>
+                                                        <p class="ejemplo">Ejemplo: Una empresa de comercio electrónico puede utilizar Google Analytics para evaluar el rendimiento de su sitio web y entender el comportamiento de sus clientes.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Inteligencia Artificial (IA) y Machine Learning</h6>
+                                                        <p>La IA puede ser aplicada en diferentes sectores, desde la gestión, atención al cliente hasta la logística. Por sí misma, la Inteligencia Artificial Generativa que ahora existe con Chat GPT, Bard o Bing, ofrece respuesta a infinidad de preguntas, que van desde cuestiones administrativas, de proceso, logística, diseño y gestión. Basta con preguntar, solo es importante tener en cuenta que la IAG puede ofrecer datos inexactos o inventados, siempre hay que verificar las propuestas o respuestas que ofrece.</p>
+                                                        <p>Existe una gran diversidad de usos relacionados con la IA generativa como la generación de contenido creativo, encaminado a mejorar acciones de marketing, publicidad y redes sociales; automatización de tareas repetitivas como la gestión de citas y atención al cliente; personalización, de acuerdo con el conocimiento del cliente la IAG puede proponer experiencias personalizadas; asistencia al cliente con el uso de chatbots y sistemas de respuesta automática; análisis de datos, desarrollo de prototipos rápidos, traducción de textos y localización, entre otros muchos.</p>
+                                                        <p class="ejemplo">Ejemplo: Una empresa de atención al cliente puede implementar chatbots basados en IA para brindar respuestas rápidas y precisas a las preguntas de los clientes. Otro ejemplo puede verse cuando una pyme utiliza la IAG para recomendar productos a los clientes basándose en su historial de compras.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Internet de las Cosas (IoT)</h6>
+                                                        <p>El IoT permite a las pymes monitorear y controlar dispositivos, equipos y procesos en tiempo real. Esto permite mejorar la eficiencia operativa al reducir tiempos de inactividad y los errores. Para negocios enfocados en la industria manufacturera o logística, el IoT puede ser valioso al permitir monitorear en tiempo real máquinas y equipos de producción, lo que facilita la detección temprana de posibles problemas y planificar el mantenimiento.</p>
+                                                        <p class="ejemplo">Ejemplo: Una empresa de logística puede utilizar sensores IoT en sus camiones para monitorear la ubicación, la temperatura y las condiciones del transporte de carga en tiempo real.</p>
+                                                        <p class="ejemplo">Otro ejemplo relacionado con la experiencia del cliente. Las tiendas minoristas pueden utilizar sensores para rastrear el comportamiento de los clientes y brindarles ofertas personalizadas.</p>
+                                                    </div>
+                                                    <div class="conceptoclave">
+                                                        <h6>Realidad Aumentada (AR)</h6>
+                                                        <p>Para negocios de venta al por menor o en línea, la AR puede mejorar la experiencia del cliente.</p>
+                                                        <p class="ejemplo">Ejemplo: Una tienda de muebles puede ofrecer a sus clientes la opción de ver cómo se verían los muebles en su hogar a través de una aplicación de AR.</p>
+                                                    </div>
+                                                    <p>Es importante destacar que la elección de tecnologías digitales adecuadas debe basarse en las necesidades, objetivos y recursos de cada negocio. Además, es fundamental mantenerse actualizado con las últimas tendencias tecnológicas y adaptarse a los cambios del mercado para seguir siendo competitivo.</p>
+                                                </div>
+
+                                                <p>Aquí lo importante es conocer las tecnologías y sus características, definir las áreas de atención, estructurar un plan, se puede iniciar con un proyecto piloto para probar cómo va funcionando y luego, quizá de algunos ajustes, escalar poco a poco, según sea necesario. </p>
+                                                <h6>Enlaces para profundizar:</h6>
+                                                <ul>
+                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">The Next Normal: Business Trends for 2021 | McKinsey</a> </li>
+                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></li>
+                                                </ul>
+                                                <div class="hint">
+                                                    <div>
+                                                        <h5>Preguntas abiertas para reflexionar</h5>
+                                                        <ol>
+                                                            <li>¿Cuál es el proceso que una empresa debe seguir para identificar y seleccionar las tecnologías digitales adecuadas para su negocio?</li>
+                                                            <li>¿Cómo puede una empresa evaluar el retorno de inversión (ROI) al implementar nuevas tecnologías digitales?</li>
+                                                            <li>¿Qué factores deben considerarse al elegir entre soluciones de software desarrolladas internamente (on premise) o servicios basados en la nube (SaaS) para el negocio?</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                    </mat-expansion-panel>
+
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('evaluacion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.2 Evaluación de herramientas de automatización y eficiencia de procesos.</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="evaluacion">3.2 Evaluación de herramientas de automatización y eficiencia de procesos.</h4>
+                                        <div class="texto-video">
+                                            <p>La evaluación de herramientas de automatización y eficiencia de procesos es crucial para asegurarse de que las soluciones implementadas realmente cumplan con los objetivos de mejorar la productividad y reducir los costos en una organización. Veamos un enfoque para llevar a cabo esta evaluación:</p>
+                                            <ul>
+                                            <li><strong>Identificar necesidades y objetivos:</strong> Antes de evaluar herramientas, es necesario definir claramente las necesidades y objetivos de automatización y la eficiencia de procesos de la organización. Esto incluye identificar áreas problemáticas y procesos que pueden ser automatizados o mejorados y, establecer metas claras para la mejora de la eficiencia.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Investigación de opciones:</strong> Realizar una investigación exhaustiva de las diferentes herramientas disponibles en el mercado que se alineen con las necesidades y objetivos definidos. Es importante evaluar tanto herramientas de software específicas como soluciones de automatización en hardware (por ejemplo, robótica).</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Demostraciones y pruebas:</strong> Solicitar demostraciones de las herramientas de automatización que se están considerando. Esto permitirá evaluar su funcionalidad y usabilidad en tiempo real. Además, se pueden realizar pruebas piloto para evaluar cómo funcionarían las herramientas en el contexto de la organización.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Compatibilidad y escalabilidad:</strong> Es importante asegurarse de que las herramientas seleccionadas sean compatibles con los sistemas existentes de la organización y que sean escalables para adaptarse al crecimiento futuro.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Costo y retorno de inversión (ROI):</strong> Evaluar el costo total de propiedad de las herramientas, incluyendo los costos de implementación, capacitación y mantenimiento. Comparar estos costos con los beneficios esperados para determinar el ROI de cada herramienta.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Facilidad de implementación y adopción:</strong> Considerar la facilidad con la que las herramientas pueden ser implementadas en la organización y cómo serán adoptadas por los empleados. La adopción exitosa es clave para el éxito de la automatización y eficiencia de procesos.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Seguridad y cumplimiento:</strong> Asegurarse de que las herramientas cumplan con los estándares de seguridad y cumplimiento de la organización, especialmente si se manejan datos confidenciales o se aplican en áreas críticas del negocio.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Soporte y servicio al cliente:</strong> Evaluar la calidad y disponibilidad del soporte y servicio al cliente ofrecido por los proveedores de las herramientas. Un buen soporte es esencial para resolver problemas y mantener la eficiencia en el tiempo.</li>
+                                            </ul>
+                                            <ul>
+                                            <li><strong>Retroalimentación de otros usuarios:</strong> Buscar reseñas y testimonios de otros usuarios que hayan utilizado las herramientas para obtener una perspectiva realista de su desempeño y beneficios.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="hint">
+                                            <div>
+                                                <h5>Preguntas abiertas para reflexionar:</h5>
+                                                <ol>
+                                                <li>¿Cuál es el impacto potencial de la automatización en la eficiencia de procesos de una pyme? ¿Qué métricas se pueden utilizar para medir este impacto?</li>
+                                                <li>¿Qué desafíos podrían surgir al implementar herramientas de automatización en una pyme y cómo se podrían superar?</li>
+                                                <li>¿Cómo se puede asegurar que los empleados adopten y utilicen efectivamente las herramientas de automatización en su trabajo diario?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+
+                            <mat-tab label="Identificación de Áreas y Procesos Digitales">
+                                <h3 class="mt-3"><i class="num">4</i> Identificación de Áreas y Procesos Digitales</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('metodos')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.1 Métodos para identificar qué áreas del negocio podrían beneficiarse de la digitalización</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="metodos">4.1 Métodos para identificar qué áreas del negocio podrían beneficiarse de la digitalización</h4>
+                                        <div class="texto-video">
+                                            <p>Identificar qué áreas del negocio podrían beneficiarse de la digitalización es fundamental para aprovechar al máximo las oportunidades que brindan las tecnologías digitales. Dentro de los métodos para llevar a cabo esta identificación están:</p>
+                                            <ol>
+                                                <li><strong>Análisis de procesos existentes:</strong> Realizar un análisis exhaustivo de los procesos actuales en todas las áreas del negocio. Identificar los procesos que son manuales, repetitivos, propensos a errores o que requieren mucho tiempo y recursos. Estos son candidatos ideales para la digitalización.</li>
+                                                <li><strong>Encuestas y entrevistas:</strong> Obtener la retroalimentación de los empleados en todas las áreas del negocio mediante encuestas y entrevistas. Preguntarles acerca de los desafíos que enfrentan en su trabajo diario y si consideran que la digitalización podría ayudar a superar esos desafíos.</li>
+                                                <li><strong>Benchmarking con la competencia</strong>: Realizar un benchmarking con otras empresas del mismo sector para identificar las áreas en las que están implementando tecnologías digitales con éxito. Esto puede proporcionar ideas y perspectivas sobre qué áreas pueden ser más beneficiosas para la digitalización.</li>
+                                                <li><strong>Análisis de datos y métricas</strong>: Utilizar datos y métricas para identificar áreas de bajo rendimiento o ineficiencias en el negocio. Estos datos pueden proporcionar una visión objetiva de dónde se pueden aplicar soluciones digitales para mejorar el rendimiento.</li>
+                                                <li><strong>Consultoría y asesoramiento externo</strong>: Buscar el asesoramiento de expertos en tecnología y transformación digital. Estos consultores pueden realizar una evaluación detallada del negocio y ofrecer recomendaciones sobre las áreas que pueden beneficiarse más de la digitalización.</li>
+                                                <li><strong>Seguir las tendencias de la industria:</strong> Mantenerse informado sobre las últimas tendencias tecnológicas en la industria. Identificar cómo estas tendencias podrían aplicarse en el negocio para mejorar la eficiencia y la competitividad.</li>
+                                                <li><strong>Involucrar a los empleados</strong>: Fomentar la participación de los empleados en el proceso de identificación. Alentarlos a que compartan sus ideas sobre cómo la digitalización podría mejorar su trabajo y el rendimiento general del negocio.</li>
+                                                <li><strong>Priorización de áreas clave</strong>: Una vez que se han identificado varias áreas que podrían beneficiarse de la digitalización, es importante priorizarlas en función del impacto potencial y la viabilidad de la implementación. </li>
+                                            </ol>
+                                        </div>
+                                        <div class="hint">
+                                            <div>
+                                                <h5>Preguntas abiertas para reflexionar:</h5>
+                                                <ol>
+                                                    <li>¿Cuáles son los principales obstáculos que podrían enfrentar las pymes al identificar áreas para la digitalización?</li>
+                                                    <li>¿Cómo se puede medir el éxito de la digitalización en un área específica del negocio?</li>
+                                                    <li>¿Cuáles son algunos ejemplos concretos de empresas que han identificado áreas para la digitalización y han obtenido beneficios significativos?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </mat-expansion-panel>
+
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('analisis')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.2 Análisis de los procesos de negocio actuales y su potencial para ser digitalizados</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="analisis">4.2 Análisis de los procesos de negocio actuales y su potencial para ser digitalizados</h4>
+                                        <p>El análisis de los procesos de negocio actuales y su potencial para ser digitalizados es un paso crucial en el proceso de transformación digital de una pyme. Para generar competencias y conocimiento que te apoyen en esta visualización de tu negocio, detallaremos los pasos para llevar a cabo este análisis: </p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/6_Pasos_analisis_procesos_negocio.webp" class="img-fluid">
+                                        <separator></separator>
+                                        <!-- <ol>
+                                        <li><strong>Mapeo de procesos:</strong> Comience por mapear todos los procesos de negocio existentes en la organización. Esto implica documentar paso a paso cómo se realizan las tareas en cada proceso, quiénes son los responsables y qué recursos se utilizan.</li>
+                                        <li><strong>Identificación de ineficiencias:</strong> Analice los procesos mapeados para identificar cualquier ineficiencia, cuello de botella o desperdicio de recursos. Estos puntos débiles son oportunidades para la digitalización.</li>
+                                        <li><strong>Evaluación de la complejidad: </strong>Evalúe la complejidad de cada proceso y determine si la digitalización podría simplificarlo y hacerlo más ágil.</li>
+                                        <li><strong>Análisis de datos y métricas:</strong> Utilice datos y métricas para medir el rendimiento de los procesos actuales. Identifique aquellos procesos que tienen un bajo rendimiento o que consumen muchos recursos en relación con los resultados obtenidos.</li>
+                                        <li><strong>Búsqueda de soluciones tecnológicas:</strong> Investigue las soluciones tecnológicas disponibles en el mercado que podrían mejorar los procesos identificados. Estas soluciones podrían incluir software de gestión empresarial (ERP), sistemas de gestión de almacenes (WMS), herramientas de automatización de marketing, entre otras.</li>
+                                        <li><strong>Viabilidad de la digitalización:</strong> Evalúe la viabilidad de la digitalización para cada proceso en términos de costos, tiempo de implementación y capacidad de integración con los sistemas existentes.</li>
+                                        <li><strong>Priorización de procesos:</strong> Una vez que haya analizado todos los procesos, priorícelos en función del potencial de mejora y el impacto en el negocio. Comience por aquellos que pueden generar un mayor beneficio con la digitalización.</li>
+                                        <li><strong>Diseño de soluciones digitales:</strong> Desarrolle un plan para implementar las soluciones digitales en los procesos seleccionados. Esto puede incluir la adquisición de software, la capacitación del personal y la creación de nuevos flujos de trabajo.</li>
+                                        <li><strong>Monitoreo y mejora continua:</strong> Una vez que las soluciones digitales estén implementadas, monitoree su rendimiento y realice ajustes según sea necesario. La mejora continua es fundamental para garantizar que la digitalización sea efectiva a largo plazo.</li>
+                                        </ol> -->
+                                        <div class="hint">
+                                            <div>
+                                                <h5>Preguntas abiertas para reflexionar:</h5>
+                                                <ol>
+                                                <li>¿Qué beneficios podría aportar la digitalización a un proceso de negocio específico?</li>
+                                                <li>¿Cuáles son los desafíos comunes que las pymes enfrentan al digitalizar sus procesos?</li>
+                                                <li>¿Cómo puede la digitalización mejorar la eficiencia y la satisfacción del cliente en nuestras pymes?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+
+                            <mat-tab label="Diseño de Soluciones Digitales">
+                                <article>
+                                    <h3 class="mt-3"><i class="num">5</i> Diseño de Soluciones Digitales</h3>
+                                    <h4>5.1 Desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio</h4>
+                                    <p>El desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio es un proceso que implica identificar los desafíos y oportunidades específicas de una empresa y, diseñar soluciones tecnológicas personalizadas para abordarlos. Para ello, a continuación, encontrarás los pasos a seguir para abordar este proceso:</p>
+                                    <ol>
+                                    <li><strong>Entender las necesidades del negocio:</strong> Comience por reunirse con los líderes y <em>stakeholders</em> (partes interesadas del negocio) de su empresa para comprender a fondo sus necesidades y desafíos. Escuche sus objetivos comerciales, las áreas que necesitan mejoras y cualquier obstáculo que estén enfrentando.</li>
+                                    <li><strong>Realizar un análisis de brechas:</strong> Compare las necesidades y desafíos identificados con los recursos y capacidades actuales de su empresa. Identifique las brechas entre lo que se necesita y lo que se tiene.</li>
+                                    <li><strong>Investigar soluciones existentes:</strong> Antes de desarrollar nuevas soluciones, investigue si existen herramientas o plataformas ya disponibles en el mercado que puedan abordar las necesidades del negocio. Esto puede incluir software empresarial, aplicaciones móviles, sistemas de análisis de datos, entre otros.</li>
+                                    <li><strong>Desarrollar un plan de solución digital:</strong> Basado en el análisis realizado, diseñe un plan para desarrollar soluciones digitales personalizadas. Esto puede implicar el desarrollo de nuevas aplicaciones, la integración de sistemas existentes, la implementación de tecnologías emergentes como la inteligencia artificial o el Internet de las cosas (IoT), entre otros.</li>
+                                    <li><strong>Considerar la escalabilidad y la flexibilidad:</strong> Asegúrese de que las soluciones digitales propuestas sean escalables y flexibles para adaptarse al crecimiento y los cambios futuros en la organización.</li>
+                                    <li><strong>Evaluar el presupuesto y los recursos:</strong> Determine el presupuesto y los recursos necesarios para desarrollar e implementar las soluciones digitales propuestas. Esto incluye costos de desarrollo, hardware, software y capacitación del personal.</li>
+                                    <li><strong>Desarrollar un cronograma:</strong> Establezca un cronograma realista para el desarrollo e implementación de las soluciones digitales. Tenga en cuenta los plazos y las prioridades comerciales.</li>
+                                    <li><strong>Prototipado y pruebas:</strong> Antes de implementar completamente las soluciones digitales, realice prototipos y pruebas para asegurarse de que funcionen de acuerdo con las expectativas y necesidades del negocio.</li>
+                                    <li><strong>Implementación y capacitación:</strong> Lleve a cabo la implementación de las soluciones digitales y brinde capacitación a los empleados para asegurarse de que puedan utilizar eficazmente las nuevas herramientas.</li>
+                                    <li><strong>Monitoreo y mejora continua:</strong> Después de la implementación, monitoree el rendimiento de las soluciones digitales y realice mejoras según sea necesario. La mejora continua es esencial para mantenerse alineado con las necesidades cambiantes del negocio.</li>
+                                    </ol>
+                                    <div class="hint">
+                                        <div>
+                                            <h5>Preguntas abiertas para reflexionar:</h5>
+                                            <ol>
+                                            <li>¿Qué beneficios podría aportar el desarrollo de soluciones digitales personalizadas a una pyme?</li>
+                                            <li>¿Cómo se pueden abordar las necesidades específicas de una empresa mediante soluciones digitales?</li>
+                                            <li>¿Qué desafíos podrían surgir al desarrollar e implementar soluciones digitales a medida y cómo se pueden superar?</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </article>
+                            </mat-tab>
+
+                            <mat-tab label="Implementación y Gestión del Cambio">
+                                <article>
+                                    <h3 class="mt-3"><i class="num">6</i> Implementación y Gestión del Cambio</h3>
+                                    <h4>6.1 Gestión del cambio y capacitación de los colaboradores en la adopción de las nuevas soluciones</h4>
+                                    <p>En el tema de gestión del cambio la lectura del libro <em>La Meta</em> de Eliyahu M. Goldratt es un clásico indiscutible, cuya síntesis presentamos a continuación, para adentrarnos en el tema.</p>
+                                    <p><em>La Meta</em> sigue la historia de Alex Rogo, un gerente de una fábrica que se enfrenta a una crisis inminente debido a la baja eficiencia y la inminente amenaza de cierre. A través de encuentros con un antiguo profesor y mentor llamado Jonah, Alex descubre la Teoría de Restricciones (TOC), un enfoque de gestión que identifica y aborda los cuellos de botella que limitan la productividad y el rendimiento.</p>
+                                    <p>La historia se centra en cómo Alex aplica gradualmente la TOC en su fábrica, aprendiendo a identificar las restricciones y a gestionarlas de manera efectiva. A medida que implementa las ideas de Jonah, enfrenta desafíos personales y profesionales que amenazan su éxito. A través de sus luchas y aprendizajes, se revelan valiosas lecciones sobre la gestión eficiente de las operaciones y la importancia de centrarse en lo que realmente importa para alcanzar los objetivos organizacionales.</p>
+                                    <p><em>La Meta</em> va más allá de ser un libro sobre gestión, es una narrativa convincente que desafía las convenciones y fomenta un pensamiento más profundo sobre la mejora continua y la <em>superación de</em><em>obstáculos</em>. La Teoría de Restricciones se presenta de una manera accesible, mostrando cómo puede aplicarse no solo a la producción industrial sino también a situaciones más amplias en la vida personal y profesional. Te sugerimos ver este video que habla sobre los obstáculos de hacer cambios en las personas:<a href="https://youtu.be/x0iRj8_9KhA">https://youtu.be/x0iRj8_9KhA</a>. </p>
+                                    <p>Es así como después de leer esta perspectiva desde el fascinante libro de Goldratt, podemos comentar que la gestión del cambio y la capacitación de los colaboradores son aspectos fundamentales para asegurar una exitosa adopción de las nuevas soluciones digitales en una empresa. </p>
+                                    <div class="texto-video">
+                                        <p>Veamos algunas consideraciones y pasos clave para tomar decisiones dentro de una empresa y cómo abordar este proceso:</p>
+                                        <ol>
+                                        <li><strong>Comunicación clara y constante:</strong> Desde el inicio del proceso de transformación digital, es esencial comunicar de manera clara y constante a los colaboradores los objetivos, beneficios y la importancia del cambio. La comunicación debe ser transparente y responder a las preguntas y preocupaciones del personal.</li>
+                                        <li><strong>Creación de un equipo de cambio:</strong> Es útil establecer un equipo dedicado a la gestión del cambio, liderado por un líder comprometido con la transformación digital. Este equipo puede ser responsable de identificar posibles desafíos, desarrollar estrategias de capacitación y comunicación, y medir el progreso del cambio.</li>
+                                        <li><strong>Identificación de resistencias y preocupaciones:</strong> Es probable que algunos colaboradores muestren resistencia al cambio debido al temor a lo desconocido o la creencia de que las nuevas soluciones digitales pueden amenazar su trabajo. Identificar estas resistencias y preocupaciones antes de iniciar el proceso, permitirá abordarlas de manera proactiva.</li>
+                                        <li><strong>Plan de capacitación</strong>: Desarrolle un plan de capacitación integral y personalizado que brinde a los colaboradores las habilidades y conocimientos necesarios para utilizar eficazmente las nuevas soluciones digitales. La capacitación debe adaptarse a las necesidades individuales de los empleados y proporcionarles el apoyo necesario durante el proceso de aprendizaje.</li>
+                                        <li><strong>Capacitación en el lugar de trabajo</strong>: Además de la capacitación formal, fomentar la capacitación en el lugar de trabajo es fundamental para permitir que los colaboradores practiquen y se familiaricen con las nuevas soluciones en situaciones reales.</li>
+                                        <li><strong>Reconocimiento y recompensas</strong>: Reconocer y recompensar los logros y esfuerzos de los colaboradores durante el proceso de adopción es una forma efectiva de fomentar la motivación y el compromiso.</li>
+                                        <li><strong>Monitoreo y ajustes</strong>: Realice un seguimiento continuo del progreso y la aceptación de las nuevas soluciones digitales. Esté dispuesto a realizar ajustes en el plan de capacitación y enfoques de acuerdo con las necesidades y retroalimentación de los colaboradores.</li>
+                                        <li><strong>Liderazgo ejemplar</strong>: Los líderes de la organización deben ser modelos a seguir en la adopción de las nuevas soluciones digitales. Su compromiso y entusiasmo pueden inspirar a otros colaboradores a seguir su ejemplo.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="hint">
+                                        <div>
+                                            <h5>Preguntas abiertas para reflexionar:</h5>
+                                            <ol>
+                                            <li>¿Qué estrategias consideras más efectivas para abordar la resistencia al cambio por parte de los colaboradores?</li>
+                                            <li>¿Cómo puede una empresa medir el éxito de la capacitación y adopción de nuevas soluciones digitales?</li>
+                                            <li>¿Qué rol desempeña el liderazgo en la gestión del cambio y la adopción de tecnologías digitales en una organización? </li>
+                                            <li>¿Cuál o cuáles de los pasos clave podrías adoptar en un futuro cercano en tu empresa, con los recursos disponibles?</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </article>
+                            </mat-tab>
+                        </mat-tab-group>
                     </div>
                     
                     <div class="references">
-                        <h4>Referencias</h4>
-                        
+                        <h5>Referencias</h5>
+                        <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
+                        <p><a href="https://asana.com/es/resources/swot-analysis">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
+                        <p><a href="https://youtu.be/a33xOe9d_Dk">https://youtu.be/a33xOe9d_Dk</a></p>
+                        <p><a href="https://www.scrum.org/">https://www.scrum.org/</a></p>
+                        <p>Harvard Business Review - The Art of Framing Problems</p>
+                        <p>MIT Sloan Management Review - Closing the Gap Between Strategy and Execution</p>
+                        <p><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></p>
+                        <p><a href="https://asana.com/es/resources/gap-analysis">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
+                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">The Next Normal: Business Trends for 2021 | McKinsey</a></p>
+                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></p>
+
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <p>Para las pequeñas y medianas empresas (pymes), el Desarrollo de Ambientes Digitales ofrece una amplia gama de beneficios potenciales. Algunos de los más destacados son:</p>
+                        <img src="../../../../../assets/images/dimensions/procesos/1_Beneficios_potenciales_desarrollo_ambientes_digitales.webp" class="img-fluid">
+                        <separator></separator>
+                        <!-- <ul>
+                            <li><strong>Alcance global:</strong> A través de una presencia en línea, las pymes pueden llegar a un público más amplio, incluso a nivel internacional. Internet elimina las barreras geográficas.</li>
+                            <li><strong>Reducción de costos:</strong> La digitalización puede ayudar a reducir algunos costos operativos. Se pueden automatizar tareas repetitivas, ahorra tiempo y recursos. </li>
+                            <li><strong>Facilidad para adaptarse al mercado: </strong>En un mundo digital en constante cambio, las pymes pueden adaptarse rápidamente a las tendencias y necesidades del mercado. Pueden probar diferentes estrategias y medir su impacto para ajustar su enfoque.</li>
+                            <li><strong>Expansión del modelo de negocio:</strong> La digitalización abre oportunidades para que las pymes exploren nuevos modelos de negocio. </li>
+                            <li><strong>Mayor competitividad:</strong> Las pymes pueden competir en igualdad de condiciones con empresas más grandes. La digitalización les permite ofrecer una experiencia de cliente más personalizada y servicios más eficientes.</li>
+                        </ul> -->
+                        <article class="hint">
+                            <p>El Desarrollo de Ambientes Digitales proporciona una serie de beneficios significativos para las pequeñas y medianas empresas. Les permite crecer, competir en el mercado y mejorar la relación con sus clientes. Adoptar tecnologías digitales es una inversión valiosa ¡familiaricémonos nos ella!, pues puede marcar la diferencia en el éxito y la sostenibilidad del negocio en la era digital.</p>
+                        </article>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
-                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/procesos/2_Proceso_desarrollo_ambientes_digitales.webp" class="img-fluid">
+                        <separator></separator>
+                        <!-- <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        <h5>Análisis y Planificación</h5>
+                        <ul>
+                        <li>Evaluar las necesidades y objetivos de la empresa para la digitalización.</li>
+                        <li>Identificar el público objetivo y su comportamiento en línea.</li>
+                        <li>Definir los recursos y presupuesto disponibles para el desarrollo digital.</li>
+                        </ul>
+                        <h5>Implementación de herramientas digitales</h5>
+                        <ul>
+                        <li>Integrar sistemas de gestión empresarial para optimizar procesos internos.</li>
+                        <li>Utilizar herramientas de análisis para medir el rendimiento de los ambientes digitales.</li>
+                        </ul>
+                        <h5>Capacitación y actualización</h5>
+                        <ul>
+                        <li>Capacitar al personal en el uso de las herramientas digitales y la comprensión de la estrategia digital.</li>
+                        <li>Mantenerse actualizado sobre las últimas tendencias y avances en tecnología digital.</li>
+                        </ul>
+                        <h5>Seguridad y privacidad</h5>
+                        <ul>
+                        <li>Implementar medidas de seguridad informática para proteger la información de la empresa y de los clientes.</li>
+                        <li>Cumplir con regulaciones de protección de datos y privacidad.</li>
+                        </ul>
+                        <h5>Evaluación y mejora continua</h5>
+                        <ul>
+                        <li>Monitorear y analizar las métricas de desempeño para evaluar el éxito de los ambientes digitales.</li>
+                        <li>Realizar ajustes y mejoras en la estrategia digital según los resultados obtenidos.</li>
+                        </ul> -->
                     </div>
                 </section>
 
@@ -66,7 +681,7 @@
                     <div class="container">
                         <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
                         <div class="tool" *ngFor="let item of Tools">
-                            <h5><mat-icon>construction</mat-icon> {{item.Tema}}</h5>
+                            <h6><mat-icon>construction</mat-icon> {{item.Tema}}</h6>
                             <a href="{{item.Url}}" target="_blank">{{item.Recurso}}</a>
                             <p>
                                 {{item.Descripcion}}
@@ -80,7 +695,7 @@
                     <div class="container">
                         <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
                         <div class="tool" *ngFor="let item of Words">
-                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
+                            <h6><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h6>
                             <p>
                                 {{item.Significado}}
                                 <small>{{item.Fuente}}</small>
@@ -93,7 +708,7 @@
                     <div class="container">
                         <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
                         <div class="expert" *ngFor="let item of Experts">
-                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
+                            <h6><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h6>
                             <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
                             <p>{{item.Descripcion}}</p>
                         </div>
@@ -104,7 +719,7 @@
                     <div class="container">
                         <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
                         <div class="institution" *ngFor="let item of Institutions">
-                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
+                            <h6><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h6>
                             <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
                         </div>
                     </div>
@@ -114,7 +729,7 @@
                     <div class="container">
                         <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
                         <div class="tool" *ngFor="let item of Books">
-                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
+                            <h6><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h6>
                             <p>{{item.Subtitulo}}</p>
                             <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
                         </div>
@@ -125,7 +740,8 @@
                     <div class="container">
                         <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
                         <div class="tool" *ngFor="let item of Websites">
-                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
+                            <h6><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h6>
+                            <p>{{item.Resumen}}</p>
                             <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
                         </div>
                     </div>
