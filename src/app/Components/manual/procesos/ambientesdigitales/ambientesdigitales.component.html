@@ -677,75 +677,23 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
-                        <div class="tool" *ngFor="let item of Tools">
-                            <h6><mat-icon>construction</mat-icon> {{item.Tema}}</h6>
-                            <a href="{{item.Url}}" target="_blank">{{item.Recurso}}</a>
-                            <p>
-                                {{item.Descripcion}}
-                                <small>{{item.Observaciones}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-                        <div class="tool" *ngFor="let item of Words">
-                            <h6><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h6>
-                            <p>
-                                {{item.Significado}}
-                                <small>{{item.Fuente}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
-                        <div class="expert" *ngFor="let item of Experts">
-                            <h6><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h6>
-                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
-                            <p>{{item.Descripcion}}</p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
-                        <div class="institution" *ngFor="let item of Institutions">
-                            <h6><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h6>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-                        <div class="tool" *ngFor="let item of Books">
-                            <h6><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h6>
-                            <p>{{item.Subtitulo}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
-                        <div class="tool" *ngFor="let item of Websites">
-                            <h6><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h6>
-                            <p>{{item.Resumen}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="Seccion" [Tools]="Books" @changeSection>
+                </app-herramientas> 
+
+                <app-herramientas *ngIf="Seccion==='WebSites'" [Title]="Seccion" [Tools]="Websites" @changeSection>
+                </app-herramientas> 
 
             </div>
         </div>

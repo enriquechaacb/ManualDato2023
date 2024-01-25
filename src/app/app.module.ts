@@ -14,7 +14,7 @@ import { TransformaciondigitalComponent } from './Components/manual/transformaci
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
 import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
-import { WidgetSeparator, BreadcrumbComponent, AxisMenu } from './Components/widgets/widgets.component';
+import { WidgetSeparator, BreadcrumbComponent, AxisMenu, HerramientasComponent } from './Components/widgets/widgets.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
 import { SistemasespecializadosComponent } from './Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
@@ -43,7 +43,7 @@ import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/cana
     OrganizacionypersonasComponent,
     ProcesosComponent,
     ProcesosdenegocioComponent,
-    WidgetSeparator, BreadcrumbComponent, AxisMenu,
+    WidgetSeparator, BreadcrumbComponent, AxisMenu, HerramientasComponent,
     DatosyanaliticaComponent,
     SistemasespecializadosComponent,
     AnaliticadedatosComponent,

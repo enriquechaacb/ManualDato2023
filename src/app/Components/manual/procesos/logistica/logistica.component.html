@@ -33,7 +33,7 @@
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
                         <div class="texto-video">
-                            <p>La logística es un tema crucial para las pymes al desempeñar un papel protagónico en la eficiencia y la productividad, es fundamental para reducir costos y mejorar la satisfacción del cliente, esto tiene como núcleo a la cadena de suministro. </p>
+                            <p>La logística es un tema crucial para las pymes al desempeñar un papel protagónico en la eficiencia y la productividad, es fundamental para reducir costos y mejorar la satisfacción del cliente, esto tiene como núcleo a la cadena de suministro.</p>
                             <p>La cadena de suministro es el engranaje que asegura que los productos y servicios lleguen de manera eficiente y oportuna a los clientes, maximizando la satisfacción y minimizando los costos. En la actualidad, optimizar la cadena de suministro y la logística no solo potencia la competitividad de las empresas, sino que también garantiza la resiliencia ante desafíos como interrupciones globales, fluctuaciones en la demanda y cambios en la regulación. Es el diferenciador clave entre quedarse rezagado o liderar en un mercado en constante evolución.</p>
                         </div>
                         <separator></separator>
@@ -58,33 +58,474 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la logística?</span></h2>
                         <p>La logística alude al proceso de planificar, implementar y controlar eficientemente el movimiento y almacenamiento de bienes, servicios e información desde el punto de origen hasta el punto de consumo. “Es llevar el producto justo al lugar justo, en el momento justo, con las condiciones justas y al precio justo” Solleiro (2023).</p>
-                        <p>En la era digital, la logística se define como la gestión estratégica y eficiencia de la cadena de suministro, integrando tecnologías digitales y sistemas de información para optimizar el movimiento de bienes, servicios y datos desde que se generan hasta el consumidor, asegurando una entrega, precisa y oportuna. </p>
+                        <p>En la era digital, la logística se define como la gestión estratégica y eficiencia de la cadena de suministro, integrando tecnologías digitales y sistemas de información para optimizar el movimiento de bienes, servicios y datos desde que se generan hasta el consumidor, asegurando una entrega, precisa y oportuna.</p>
                         <p>Tiene el propósito de satisfacer las necesidades del cliente y permite que una empresa opere de manera eficiente y pueda obtener mejores resultados empresariales. En esencia, la logística implica la gestión efectiva de todos los aspectos relacionados con la cadena de suministro.</p>
                         
                         <mat-tab-group class="vertical-tab-group">
                             <mat-tab label="Introducción a la cadena de suministro">
                                 <h3 class="mt-3"><i class="num">1</i> Introducción a la cadena de suministro</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.1 </mat-panel-title>
+                                            <mat-panel-title>1.1 Definición de la cadena de suministro y su importancia en el comercio electrónico</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="">1.1 </h4>
-                                        
+                                        <h4 id="definicion">1.1 Definición de la cadena de suministro y su importancia en el comercio electrónico</h4>
+                                        <div class="texto-video">
+                                            <p>La cadena de suministro es un proceso integral que involucra la coordinación de actividades y flujos de materiales, información y dinero, desde la obtención de materias primas hasta la entrega del producto final al cliente. “Una cadena de suministro consta de dos o más organizaciones legalmente separadas que están conectadas por flujos de materiales, de información y financieros” (Cannella, 2010). Es, además, una red compleja que conecta a proveedores, fabricantes, distribuidores, minoristas y clientes, en pro de satisfacer la demanda del mercado de manera eficiente y efectiva.</p>
+                                            <p>Un punto crucial por considerar es el cliente, quien forma parte integral de cualquier cadena de suministro. De hecho, el propósito principal de cualquier cadena de suministro es satisfacer las necesidades del cliente y, en el proceso, generar utilidades para la pyme.</p>
+                                        </div>
+                                        <img src="../../../../../assets/images/dimensions/procesos/3_Cadena_suministro.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <div class="texto-video">
+                                            <p>El objetivo de toda cadena de suministro debe ser maximizar el valor total generado. El valor neto que genera una cadena de suministro es la diferencia entre lo que el cliente paga por el producto final y los costos en que incurre la cadena para cumplir con el pedido del cliente. Aquí hacemos referencia a esta diferencia como el valor agregado de la cadena de suministro.</p>
+                                        </div>
+                                        <h5>Y, ¿Qué importancia tiene el comercio electrónico en la cadena de suministro?</h5>
+                                        <p>El comercio electrónico (anglicismo: e-commerce) en la cadena de suministro es fundamental para garantizar que los productos sean entregados correctamente y, a tiempo a los clientes que realizan compras en línea, además, presenta una opción diferente para el tratamiento de las ventas de una empresa (Murillo, 2009). Una cadena de suministro bien gestionada en el comercio electrónico, puede ofrecer diversas ventajas:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/4_Ventajas_cadena_suministro_E-commerce.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo destacado de aplicación efectiva de la cadena de suministro en el comercio electrónico es Amazon. La compañía ha logrado desarrollar una cadena de suministro altamente eficiente, que le permite entregar productos a sus clientes en tiempos récord. Gracias a su sistema de gestión de almacenes, rutas de entrega optimizadas y un robusto sistema de seguimiento, Amazon ha logrado establecer altos estándares en la entrega de productos en el comercio electrónico.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('componentes')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.2 Componentes y etapas clave de la cadena de suministro en el comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="componentes">1.2 Componentes y etapas clave de la cadena de suministro en el comercio electrónico</h4>
+                                        <div class="texto-video">
+                                            <p>En el entorno dinámico del comercio electrónico, la eficiente gestión de la cadena de suministro desempeña un papel fundamental. Desde la selección de proveedores y la optimización de inventarios hasta la entrega final al cliente, cada etapa y componente de esta cadena cobra una importancia vital para garantizar la satisfacción del cliente y el éxito empresarial. Exploraremos a continuación, los elementos esenciales y las etapas clave que conforman esta cadena en el contexto del comercio electrónico.</p>
+                                        </div>
+                                        <img src="../../../../../assets/images/dimensions/procesos/5_Componentes_cadena_suministro.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <div class="texto-video">
+                                            <ul>
+                                                <li><strong>Proveedores: </strong>Son las empresas o individuos que suministran las materias primas o productos necesarios para la fabricación de los productos finales. Los proveedores son un eslabón fundamental en la cadena, ya que su eficiencia y calidad impactan directamente en el resultado final.</li>
+                                                <li><strong>Fabricantes:</strong> Son aquellos que transforman las materias primas en productos terminados. Los fabricantes deben asegurarse de producir con eficiencia y mantener altos estándares de calidad para satisfacer la demanda del mercado.</li>
+                                                <li><strong>Distribuidores:</strong> Son intermediarios que se encargan de almacenar y transportar los productos desde los fabricantes hasta los minoristas o directamente a los clientes. Contribuyen a la distribución eficiente de los productos y pueden abarcar desde mayoristas hasta empresas de transporte.</li>
+                                                <li><strong>Minoristas:</strong> Pueden ser tiendas, plataformas en línea o negocios que venden directamente a los consumidores finales. Los minoristas son clave para llegar al público objetivo y brindar una experiencia de compra satisfactoria.</li>
+                                                <li><strong>Clientes:</strong> Son el eslabón final de la cadena de suministro. Representan la demanda y, por tanto, el motor que impulsa todo el proceso. La satisfacción del cliente es crucial para mantener un flujo continuo de ventas y garantizar la rentabilidad.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="texto-video">
+                                            <p><strong>Etapas clave de la cadena de suministro:</strong></p>
+                                            <p>Dadas las cinco etapas de una cadena de suministro como se muestra en la figura 1, todos los procesos en una cadena de suministro pueden dividirse en los siguientes cuatro ciclos de proceso, como se muestra en la figura 2.</p>
+                                            <ul>
+                                                <li>Ciclo de pedido del cliente </li>
+                                                <li>Ciclo de reabastecimiento </li>
+                                                <li>Ciclo de fabricación </li>
+                                                <li>Ciclo de adquisición</li>
+                                            </ul>
+                                            <p>Cada ciclo ocurre en la interfaz entre dos etapas sucesivas de la cadena de suministro. No todas las cadenas de suministro muestran una clara separación entre los cuatro ciclos. Por ejemplo, es probable que una cadena de suministro de supermercado, en la que un detallista almacena inventarios de productos terminados y coloca pedidos de reabastecimiento con un distribuidor, tenga los cuatro ciclos separados. Por ejemplo, Dell, reconocida empresa que desarrolla y vende productos informáticos, en contraste, pasa por alto al detallista y al distribuidor al vender directamente a sus clientes.</p>
+                                        </div>
+                                        <img src="../../../../../assets/images/dimensions/procesos/6_Ciclos_proceso_cadena_suministro.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <div class="texto-video">
+                                            <ul>
+                                                <li><strong>Venta y comercialización</strong> (ciclo de pedido del cliente): Se refiere a la promoción y venta de los productos a través de canales de venta, como tiendas físicas o en línea, para llegar al público objetivo.</li>
+                                                <li><strong>Almacenamiento y distribución</strong> (ciclo de reabastecimiento): Involucra la gestión y el traslado de los productos a través de la red de distribución para llevarlos desde los fabricantes hasta los minoristas o directamente a los clientes.</li>
+                                                <li><strong>Producción o fabricación</strong> (ciclo de fabricación): Es la etapa en la que se transforman las materias primas en productos terminados mediante procesos de fabricación eficientes y de calidad.</li>
+                                                <li><strong>Adquisición y abastecimiento</strong> (ciclo de adquisición): Implica identificar, seleccionar y negociar con proveedores para obtener las materias primas y productos necesarios para la producción.</li>
+                                            </ul>
+                                        </div>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo de éxito en la cadena de suministro en el comercio electrónico es <a href="https://www.zappos.com/mexico">Zappos</a>, una tienda en línea de calzado y ropa. Esta empresa ha desarrollado una cadena de suministro altamente eficiente, lo que les permite ofrecer entregas rápidas y gratuitas a sus clientes. Han logrado mantener un amplio inventario en sus almacenes y han implementado un sistema de gestión logística muy efectivo. Página web de <a href="https://www.zappos.com/">Zappos</a>.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.3 Relación entre la cadena de suministro y la satisfacción del cliente en el comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="relacion">1.3. Relación entre la cadena de suministro y la satisfacción del cliente en el comercio electrónico</h4>
+                                        <div class="texto-video">
+                                            <p>La relación entre la cadena de suministro y la satisfacción del cliente en el comercio electrónico es crucial para el éxito de cualquier empresa que venda productos en línea. La cadena de suministro tiene un impacto directo en la experiencia del cliente y su nivel de satisfacción. Veamos cómo estas dos áreas están estrechamente relacionadas:</p>
+                                            <ul>
+                                                <li><strong>Entrega oportuna y eficiente:</strong> Una cadena de suministro bien gestionada permite que los productos sean entregados a tiempo. Los clientes esperan recibir sus pedidos en el plazo prometido, y una entrega puntual aumenta la satisfacción del cliente. Por el contrario, los retrasos en la entrega pueden generar insatisfacción y afectar la reputación de la empresa.</li>
+                                                <li><strong>Calidad del producto:</strong> La cadena de suministro también influye en la calidad del producto final. Si los proveedores y fabricantes cumplen con altos estándares de calidad, los productos entregados a los clientes serán de mejor calidad, lo que generará una mayor satisfacción del cliente. Por el contrario, si hay problemas en la cadena de suministro que afectan la calidad del producto, los clientes estarán descontentos.</li>
+                                                <li><strong>Servicio postventa y atención al cliente:</strong> Una cadena de suministro eficiente no solo se enfoca en la entrega del producto, sino también en brindar un buen servicio postventa. La atención al cliente y la capacidad de resolver problemas de manera rápida y efectiva influyen en la satisfacción del cliente. Si la cadena de suministro no es ágil en responder a solicitudes o resolver incidencias, los clientes pueden sentirse frustrados y desatendidos.</li>
+                                            </ul>
+                                        </div>
+                                        <p>Aquí podrás ver diferentes elementos clave para determinar el éxito en los procesos de logística. El tiempo de respuesta es la cantidad de tiempo que trascurre hasta que un cliente recibe un pedido. La variedad del producto es la cantidad de diferentes productos y su configuración, que ha ofrecido una red de distribución. La disponibilidad del producto es la probabilidad de tener un producto en existencia cuando llega el pedido de un cliente. La experiencia del cliente incluye la facilidad con que los clientes pueden colocar y recibir pedidos y el grado al cual se personaliza esta experiencia. También incluye aspectos puramente de experiencia, como la posibilidad de saborear una taza de café́ y el valor que el personal de ventas proporciona (Chopra, S., 2013).</p>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo destacado de cómo una cadena de suministro eficiente influye en la satisfacción del cliente es el gigante del comercio electrónico <a href="https://www.alibaba.com/">Alibaba</a>. La empresa ha establecido una cadena de suministro muy sólida que permite a los vendedores y compradores de su plataforma llevar a cabo transacciones de manera rápida y segura. <a href="https://www.alibaba.com/">Alibaba</a> ha invertido en logística y sistemas de entrega ágiles, lo que ha mejorado significativamente la experiencia de compra para sus clientes.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Introducción a la logística en el comercio electrónico">
+                                <h3 class="mt-3"><i class="num">2</i> Introducción a la logística en el comercio electrónico</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('importancia')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.1 Logística y su importancia en el comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="importancia">2.1 Logística y su importancia en el comercio electrónico</h4>
+                                        <div class="hint">
+                                            <p>La logística es un proceso integral que se encarga de planificar, implementar y controlar el flujo eficiente de bienes, servicios e información, desde el punto de origen hasta el punto de consumo, con el objetivo de satisfacer las necesidades del cliente. En otras palabras, es el arte de organizar y coordinar todos los aspectos relacionados con el transporte, almacenamiento y distribución de productos para que lleguen a su destino final de manera oportuna y en óptimas condiciones.</p>
+                                        </div>
+                                        <div class="texto-video">
+                                            <p>La logística es un proceso integral que se encarga de planificar, implementar y controlar el flujo eficiente de bienes, servicios e información, desde el punto de origen hasta el punto de consumo, con el objetivo de satisfacer las necesidades del cliente. En otras palabras, es el arte de organizar y coordinar todos los aspectos relacionados con el transporte, almacenamiento y distribución de productos para que lleguen a su destino final de manera oportuna y en óptimas condiciones.</p>
+                                            <p>Es un error muy común confundir la cadena de suministro con la cadena logística, parecen sinónimos, pero son dos conceptos muy diferentes y al mismo tiempo, complementarios. A pesar de ser tan distintos se sirven el uno del otro para realizar su función. Más adelante detallaremos cuáles son las diferencias entre la cadena logística y la cadena de suministro.</p>
+                                            <p>La cadena logística se basa en la planificación y control de los bienes que se envían a los clientes, en la cantidad adecuada, con la calidad requerida y el tiempo concretado.</p>
+                                            <p>Dentro de la cadena logística se organiza el transporte necesario para realizar los envíos, el mantenimiento y control de la flota, el almacenamiento y la organización de la mercancía que está vendida, así como los inventarios; se estudia la forma en que la oferta y la demanda actuarán en un futuro a medio/largo plazos. Su objetivo es la entrega eficiente de los productos, desde la fabricación hasta el cliente final.</p>
+                                            <p>El profesional de la cadena logística es el encargado de supervisar y gestionar el producto desde que entra al almacén hasta que se le realiza la entrega a los distribuidores o clientes finales.</p>
+                                            <p>En cambio, la cadena de suministro engloba todas las tareas que se llevan a cabo en la cadena logística más otras. En la cadena de suministro se controla toda la corriente de trabajo en la fabricación de los productos, desde la adquisición de las materias primas hasta la entrega al cliente, pasando por la producción de bienes y el almacenamiento de éstos. Es decir, la cadena logística es una parte de la cadena de suministro.</p>
+                                        </div>
+                                        <p>El responsable de la cadena de suministro es un profesional que se compromete a gestionar las materias primas, de forma que se provea a la producción de forma eficiente. Debe asegurarse de que las necesidades de la demanda queden cubiertas y estar en continua mejora y adaptación al entorno tan cambiante que viven hoy en día las empresas.</p>
+                                        <p>Respecto a los servicios, la cadena logística intenta minimizar los costos, pero ofreciendo un servicio impecable, para que la entrega a los clientes sea de calidad. En cambio, la cadena de suministro se preocupa por la adquisición de materias primas, que no sean muy caras para que los costos de producción sean menores.</p>
+                                        <p>La organización es fundamental, tanto para la cadena logística como para la cadena de suministro, pero para la primera lo es porque así logrará la entrega de los productos en el menor tiempo posible. En el caso de la segunda, se encarga de organizar muy bien cada parte del proceso desde la adquisición de las materias primas, la fabricación hasta llegar a la última parte, que es la cadena logística, y no fallar en la entrega al usuario final.</p>
+                                        <p>La cadena logística se encarga de entregar a tiempo el producto, ya que la cadena de suministro intenta que el tiempo de servicio sea cada vez menor para que la cadena global sea más ágil y eficiente.</p>
+                                        <p>Cuando se habla de la optimización de la cadena logística es porque ésta ha mejorado gracias a nuevos métodos de distribución de mercancías. La cadena de suministro tiene que buscar y establecer nuevos procesos para que dicha cadena sea dinámica, ágil y eficiente y no llegue a la obsolescencia.</p>
+                                        <h5>Y ¿Por qué es importante la logística en el comercio electrónico?</h5>
+                                        <div class="texto-video">
+                                            <p>En el comercio electrónico, la logística juega un papel crucial para brindar una experiencia de compra satisfactoria a los clientes. A continuación, exploraremos algunas de las razones por las que la logística es importante en el comercio electrónico y, cómo nos ayuda el entender su importancia en nuestra toma de decisiones empresariales.</p>
+                                            <ul>
+                                                <li><strong>Entrega rápida y confiable:</strong> Los clientes en línea esperan recibir sus productos lo más rápido posible. Una logística bien planificada y eficiente permite que los productos sean entregados en tiempos reducidos, lo que mejora la satisfacción del cliente y aumenta la probabilidad de que vuelvan a comprar en el mismo sitio.</li>
+                                                <li><strong>Gestión de inventario:</strong> El comercio electrónico implica mantener inventarios en almacenes para responder a la demanda de los clientes. Una logística adecuada permite una gestión eficiente del inventario, evitando problemas de escasez o exceso de productos.</li>
+                                                <li><strong>Experiencia del cliente:</strong> Una logística eficiente contribuye a una experiencia de cliente positiva. La entrega puntual, el seguimiento del pedido y la resolución de problemas de manera rápida y efectiva son aspectos cruciales para generar confianza y fidelidad en el cliente.</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Ejemplo de caso de éxito:</strong></p>
+                                        <p>Un caso de éxito en la aplicación de la logística en el comercio electrónico es el de la empresa estadounidense <a href="https://www.amazon.com">Amazon</a>. La compañía ha invertido en tecnologías y sistemas logísticos avanzados que le permiten entregar productos en tiempos récord. Su estrategia de almacenamiento y distribución en centros logísticos permite que los productos estén más cerca de los clientes, agilizando las entregas y mejorando la satisfacción del cliente.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('desafios')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.2 Desafíos y oportunidades en la gestión logística en línea</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="desafios">2.2 Desafíos y oportunidades en la gestión logística en línea</h4>
+                                        <img src="../../../../../assets/images/dimensions/procesos/7_Desafios_oportunidades_gestion_logistica.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <img src="../../../../../assets/images/dimensions/procesos/8_Top5_productos_tasa_devolucion.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un caso de éxito en la gestión logística en línea es el de la empresa de comercio electrónico <a href="https://www.asos.com">ASOS</a>. La compañía ha logrado implementar una logística ágil y efectiva que le permite entregar productos de moda en tiempos cortos a clientes en todo el mundo. <a href="https://www.asos.com">ASOS</a> ha invertido en tecnología y sistemas avanzados para gestionar sus almacenes y optimizar las rutas de entrega.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tendencias')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.3. Tendencias actuales en la logística del comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="tendencias">2.3. Tendencias actuales en la logística del comercio electrónico</h4>
+                                        <p>Sin duda, la logística del comercio electrónico es un componente esencial para asegurar que los productos sean entregados a los clientes de manera rápida y eficiente, ¡es lo que toda empresa desea! En este tema, exploraremos algunas de las tendencias más relevantes en la logística del comercio electrónico, cómo están impactando la industria y cómo las empresas pueden aprovechar estas tendencias para mejorar sus operaciones logísticas.</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/9_Tendencias_actuales_logistica_comercio_electronico.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Ejemplo 1: Seguimiento en tiempo real</p>
+                                        <p>Imagina que una empresa vende productos en línea y utiliza la logística 4.0 para mejorar la entrega de sus pedidos. Al utilizar sensores de IoT en sus paquetes, pueden rastrear en tiempo real la ubicación y el estado del envío. Esto permite a los clientes seguir el progreso de sus pedidos desde el almacén hasta su destino final, brindando una mayor transparencia y confianza en el proceso de entrega.</p>
+                                        <p>Ejemplo 2: Optimización de rutas y almacenes</p>
+                                        <p>Una empresa de logística que opera múltiples almacenes puede utilizar la logística 4.0 para optimizar la gestión de su inventario y las rutas de entrega. Mediante el uso de algoritmos de aprendizaje automático y análisis de datos, pueden predecir la demanda y planificar el movimiento de sus productos de manera más eficiente. Esto les permite reducir los tiempos de espera y los costos de transporte, mejorando la satisfacción del cliente y la rentabilidad de la empresa.</p>
+                                        <p>Ejemplo 3: Robótica en la preparación de pedidos</p>
+                                        <p>En un centro de distribución, los robots pueden ser utilizados en la logística 4.0 para automatizar la preparación de pedidos. Los robots pueden moverse de manera autónoma y rápida por los estantes, recogiendo y empacando los productos requeridos en los pedidos. Esto acelera el proceso de preparación y reduce la posibilidad de errores humanos, lo que mejora la eficiencia general del centro de distribución.</p>
+                                        <p>Hagamos un alto para una reflexión: la logística 4.0 es un enfoque innovador que incorpora tecnologías avanzadas para mejorar la gestión de la cadena de suministro en el comercio electrónico y otros sectores. Al aprovechar el poder de la IoT, la IA y la robótica, las empresas pueden optimizar sus operaciones, ofrecer entregas más rápidas y personalizadas y, mejorar la satisfacción del cliente.</p>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo exitoso de cómo las tendencias en la logística del comercio electrónico pueden impactar positivamente a una empresa es el caso de <a href="https://www.shopify.com/mx">Shopify</a>. Esta plataforma de comercio electrónico ha integrado tecnologías avanzadas en su logística, permitiendo a los vendedores gestionar fácilmente sus inventarios, rastrear pedidos en tiempo real y ofrecer opciones de envío flexibles. Gracias a estas estrategias, Shopify ha ganado popularidad entre los vendedores y ha mejorado la experiencia de compra para los clientes.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Cadena de valor y cadena de suministro">
+                                <h3 class="mt-3"><i class="num">3</i> Cadena de valor y cadena de suministro</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('analisis')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.1 Concepto y análisis de la cadena de valor en el comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="analisis">3.1 Concepto y análisis de la cadena de valor en el comercio electrónico</h4>
+                                        <p>La cadena de valor es una herramienta primordial para entender cómo se crean y entregan los productos y servicios de una empresa desde su concepción hasta que llegan al cliente final, representa de manera sistémica las actividades de una organización (Quintero, J., &amp; Sánchez, J., 2006).</p>
+                                        <p>En el contexto del comercio electrónico, la cadena de valor juega un papel clave para identificar las actividades y procesos que agregan valor a la experiencia del cliente y mejorar la eficiencia operativa. Veamos en qué consiste la cadena de valor en el comercio electrónico y cómo se analiza, de tal manera que, con el conocimiento, podamos generar competencias que nos permitan abordar desafíos en nuestra gestión empresarial. Así mismo, no puede verse como actividades independientes, estas se relacionan por medio de puntos comunes de conexión (Canto, J. V., 2013).</p>
+                                        <p>La cadena de valor es una representación visual de todas las actividades que una empresa realiza para crear, producir, comercializar y entregar un producto o servicio al cliente. En el comercio electrónico, la cadena de valor abarca desde la obtención de materias primas hasta el proceso de venta en línea, la gestión de inventarios, el empaquetado, la entrega y el servicio postventa. Cada etapa de la cadena de valor es una pieza esencial para que el producto llegue al cliente de manera satisfactoria.</p>
+                                        <h5>Análisis de la cadena de valor en el comercio electrónico</h5>
+                                        <p>El análisis de la cadena de valor en el comercio electrónico implica identificar y evaluar cada actividad y proceso involucrado en la creación y entrega del producto o servicio. Se busca comprender cómo cada eslabón de la cadena afecta el costo y el valor agregado al producto final. Además, el análisis permite detectar áreas de mejora, eliminar ineficiencias y optimizar recursos para mejorar la competitividad de la empresa en el mercado.</p>
+                                        <h5>Cadena de valor vs. cadena de suministro</h5>
+                                        <p>La cadena de suministro se enfoca en llevar productos de los proveedores a los clientes, mientras que la cadena de valor incluye todas las etapas internas y externas de la empresa para crear, vender y entregar un producto o servicio. Ambas son esenciales para mejorar la eficiencia y el valor en una organización, pero abordan aspectos diferentes del proceso empresarial. En resumen, la cadena de suministro se centra en la logística, mientras que la cadena de valor abarca todo el ciclo de creación de valor para el cliente. Como lo muestra la figura 3.</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/10_Cadena_valor_suministro.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo exitoso de aplicación del análisis de la cadena de valor en el comercio electrónico es el de la empresa de moda Zara. La compañía ha diseñado su cadena de valor de manera que sus productos puedan pasar rápidamente de la fase de diseño a la producción y luego a las tiendas en línea y físicas. Zara ha invertido en tecnologías y logística que le permiten tener una cadena de suministro ágil, lo que le da una ventaja competitiva al ofrecer productos de moda actuales y con entregas rápidas. A continuación, el sitio web de <a href="https://www.zara.com/mx/">Zara</a>.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('optimizacion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.2. Optimización de la cadena de suministro para mejorar la eficiencia y reducir costos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="optimizacion">3.2. Optimización de la cadena de suministro para mejorar la eficiencia y reducir costos</h4>
+                                        <p>Hemos venido abordando, cómo la cadena de suministro en el comercio electrónico es un componente crítico, para asegurar que los productos lleguen a los clientes de manera oportuna y eficiente. Sin duda, la optimización de esta cadena implica identificar áreas de mejora y aplicar estrategias para aumentar la eficiencia y reducir costos. En este tema, exploraremos cómo optimizar la cadena de suministro en el comercio electrónico y su impacto en la empresa.</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/11_Optimizacion_cadena_suministro.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo exitoso de optimización de la cadena de suministro es el de la empresa de comercio electrónico Amazon. La compañía ha invertido en tecnologías avanzadas y sistemas de automatización en sus centros de distribución. Además, ha establecido alianzas con proveedores logísticos para mejorar la eficiencia en la entrega de sus productos. Gracias a estas estrategias, Amazon ha logrado reducir los tiempos de entrega y mejorar la satisfacción de sus clientes.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('colaboracion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.3 Estrategias de colaboración con proveedores y socios logísticos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="colaboracion">3.3 Estrategias de colaboración con proveedores y socios logísticos</h4>
+                                        <p>Las estrategias de colaboración con proveedores y socios logísticos son contundentes, pues hacen parte de nuestra cadena de suministro de excelencia, se vuelven compañeros de nuestro negocio, y para ti como responsable de contribuir a la mejora de la pyme, te dará ventajas prácticas en tu negocio como:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/12_Estrategias_colaboracion_proveedores_socios.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Asimismo, la colaboración efectiva con proveedores y socios logísticos es fundamental para optimizar la cadena de suministro en el comercio electrónico.</p>
+                                        <div class="texto-video">
+                                            <p>En este tema, exploraremos tres estrategias que las empresas pueden implementar para fortalecer la colaboración con sus socios logísticos y proveedores y, veremos cómo esto puede beneficiar la eficiencia de la cadena de suministro y la satisfacción del cliente.</p>
+                                            <ol>
+                                                <li><strong>Comunicación abierta y transparente:</strong> Una de las estrategias clave para una colaboración exitosa es mantener una comunicación abierta y transparente con los proveedores y socios logísticos. Compartir información relevante, objetivos comerciales y desafíos permite a todas las partes involucradas trabajar de manera coordinada y tomar decisiones informadas.</li>
+                                                <li><strong>Establecimiento de metas y objetivos compartidos:</strong> Alinearse en torno a metas y objetivos comunes es esencial para fortalecer la colaboración. Esto implica establecer indicadores clave de rendimiento (KPI) compartidos y trabajar juntos para mejorar el rendimiento de la cadena de suministro en áreas clave, como la eficiencia en la entrega y la reducción de costos.</li>
+                                                <li><strong>Uso de tecnología colaborativa:</strong> La tecnología juega un papel crucial en la colaboración con proveedores y socios logísticos. Utilizar plataformas y sistemas compartidos que permitan el intercambio de datos en tiempo real, seguimiento de inventarios y planificación conjunta puede mejorar la visibilidad y la coordinación en toda la cadena de suministro.</li>
+                                            </ol>
+                                        </div>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un ejemplo de éxito en la colaboración con proveedores y socios logísticos es el de la cadena de supermercados Walmart. Walmart ha establecido una red de colaboración con sus proveedores para compartir información sobre la demanda y los niveles de inventario en tiempo real. Esto permite a los proveedores adaptar su producción y envío según las necesidades de Walmart, lo que resulta en una cadena de suministro más ágil y eficiente.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Modelos de logística push y pull">
+                                <h3 class="mt-3"><i class="num">4</i> Modelos de logística push y pull</h3>
+                                <img src="../../../../../assets/images/dimensions/procesos/13_Modelo_Push-Pull.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>Para profundizar en estos conceptos, sugerimos la lectura “El otro lado de la logística, una visión estratégica: tendencias del aprovisionamiento en las cadenas de valor para el desarrollo sostenible” de (Aguilar Rascón, O. C., Posada Vázquez, R., &amp; Soto Sevilla, M. S., 2012).</p>
+
+                                <h5>Ejemplo de caso de éxito:</h5>
+                                <p>El modelo pull es especialmente adecuado para productos con demanda variable y difícil de predecir. En el comercio electrónico, muchas empresas utilizan este modelo para ofrecer productos personalizados o productos que tienen una demanda más incierta, como artículos de lujo y productos especializados.</p>
+                            </mat-tab>
+                            <mat-tab label="Sistemas de gestión de almacenes">
+                                <h3 class="mt-3"><i class="num">5</i> Sistemas de gestión de almacenes</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('WMS')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.1. Funciones y características de los sistemas de gestión de almacenes (WMS)</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="WMS">5.1. Funciones y características de los sistemas de gestión de almacenes (WMS)</h4>
+                                        <p>Los sistemas de gestión de almacenes Warehouse Management System (WMS, por sus siglas en inglés), son herramientas tecnológicas fundamentales para optimizar el manejo de inventarios y las operaciones en los almacenes de una empresa (Ramaa, A., Subramanya, K., &amp; Rangaswamy, T. M. (2012).</p>
+                                        <p>En este tema, exploraremos las funciones y características de los WMS, su importancia en la logística del comercio electrónico, y cómo su aplicación puede mejorar la eficiencia y la satisfacción del cliente. Empecemos por abordar a través de un listado, cuáles son las funciones de los sistemas de gestión de almacenes:</p>
+                                        <ol>
+                                            <li><strong>Gestión de inventarios:</strong> Los WMS registran y rastrean la ubicación y cantidad de cada producto en el almacén. Esto permite una gestión precisa y actualizada del inventario, evitando la sobreventa o falta de productos.</li>
+                                            <li><strong>Recepción y despacho de productos:</strong> Los WMS ayudan a registrar y controlar la entrada y salida de productos del almacén, asegurando que los envíos se realicen de manera correcta y oportuna.</li>
+                                            <li><strong>Optimización de almacenamiento:</strong> Los WMS utilizan algoritmos para determinar la ubicación óptima de los productos dentro del almacén, facilitando el acceso y reduciendo los tiempos de búsqueda.</li>
+                                            <li><strong>Seguimiento de pedidos: </strong>Los WMS permiten rastrear el estado de los pedidos en tiempo real, desde su recepción hasta la entrega final, brindando mayor visibilidad tanto para la empresa como para el cliente.</li>
+                                            <li><strong>Control de calidad:</strong> Los WMS pueden incluir funciones para verificar y registrar la calidad de los productos almacenados, lo que garantiza que solo los productos en buen estado sean enviados a los clientes.</li>
+                                        </ol>
+                                        <p>Adicionalmente, es necesario conocer las características de los sistemas de gestión de almacenes, de tal manera, que nos permita identificar en nuestros negocios los componentes y tomar decisiones basados en el conocimiento. Veamos cuáles son estas características:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/14_Caracteristicas_sistemas_gestion_almacenes.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>A continuación, un ejemplo de software de WMS: <a href="https://youtu.be/nZCWz3Dzx2U">https://youtu.be/nZCWz3Dzx2U</a></p>
+                                        <p>Video creación de inventarios Oracle (2019) <a href="https://www.youtube.com/watch?v=qyvqVdkCg2M">https://www.youtube.com/watch?v=qyvqVdkCg2M</a></p>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un caso exitoso de la aplicación de un sistema de gestión de almacenes es el de la empresa de comercio electrónico eBay. Al implementar un WMS en sus almacenes, eBay pudo mejorar la precisión del inventario, acelerar la preparación de pedidos y optimizar sus operaciones de logística, lo que resultó en entregas más rápidas y una mejor experiencia para sus clientes.</p>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.2 </mat-panel-title>
+                                            <mat-panel-title>5.2 Automatización y tecnologías aplicadas en la gestión de almacenes</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="">1.2 </h4>
-                                        
+                                        <h4 id="">5.2 Automatización y tecnologías aplicadas en la gestión de almacenes</h4>
+                                        <img src="../../../../../assets/images/dimensions/procesos/15.4_Automatizacion_robotica_almacen.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Ejemplo de caso de éxito:</h5>
+                                        <p>Un caso de éxito en la aplicación de la automatización y tecnologías en la gestión de almacenes es el de la empresa de comercio electrónico Alibaba. Utilizan robots autónomos para el almacenamiento y la preparación de pedidos en sus almacenes. Estos robots pueden moverse por el almacén de manera eficiente y preparar los pedidos con una precisión sorprendente, lo que ha permitido a Alibaba procesar una gran cantidad de pedidos diariamente.</p>
+                                        <p>Sugerimos ver el siguiente video</p>
+                                        <p>5 exoesqueletos para trabajar <a href="https://www.youtube.com/watch?v=u8gOl9xounA">https://www.youtube.com/watch?v=u8gOl9xounA</a></p>
                                     </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Gestión de inventarios">
+                                <h3 class="mt-3"><i class="num">6</i> Gestión de inventarios</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('optimizar')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.1 Métodos para controlar y optimizar los niveles de inventario</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="optimizar">6.1 Métodos para controlar y optimizar los niveles de inventario</h4>
+                                        <div class="texto-video">
+                                            <p>Mantener un inventario adecuado, permite satisfacer la demanda de los clientes sin incurrir en costos excesivos de almacenamiento. En este tema, exploraremos métodos para controlar y optimizar los niveles de inventario, así como ejemplos de su aplicación y su impacto en el comercio electrónico.</p>
+                                            <p>Métodos para controlar y optimizar los niveles de inventario:</p>
+                                            <p><strong>Análisis de la demanda:</strong> El análisis histórico y el pronóstico de la demanda son fundamentales para determinar los niveles de inventario necesarios. Conocer los patrones de compra de los clientes y las estacionalidades permite ajustar el inventario en consecuencia.</p>
+                                            <p>Los pronósticos son herramientas importantes para prever la demanda futura y tomar decisiones informadas en la gestión de inventarios. Hay tres tipos principales de modelos de pronóstico que vale la pena conocer:</p>
+                                            <p><strong>Pronósticos de juicio:</strong></p>
+                                            <p>Estos se basan en el criterio o la intuición. Son útiles cuando no hay datos históricos o son limitados, como al introducir nuevos productos. Métodos incluyen encuestas y la técnica análoga.</p>
+                                            <p>Pronósticos de Series de Tiempo:</p>
+                                            <p>Suponen que la demanda futura depende solo de la demanda pasada. Por ejemplo, si las ventas de este año fueron un 7% más altas, el pronóstico para el próximo año sería el 7% más que las ventas actuales. Las técnicas incluyen promedios móviles simples y ponderados.</p>
+                                            <p><strong>Pronósticos de causa y efecto:</strong></p>
+                                            <p>Relacionan la demanda con variables específicas, como el lanzamiento de una campaña publicitaria. Este enfoque requiere datos detallados y comprensión de las relaciones causales. Cada tipo tiene sus ventajas y desafíos.</p>
+                                            <p>Los pronósticos de juicio son útiles cuando se carece de datos históricos, pero deben manejarse con cuidado. Los de series de tiempo dependen del pasado y pueden no captar cambios repentinos en el contexto del mercado. Los de causa y efecto son más complejos, pero pueden ser más precisos con datos adecuados. La elección del método depende del contexto y de la disponibilidad de datos.</p>
+                                        </div>
+                                        <p>A continuación, una tabla ejemplo.</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/16_Tabla_pronosticos.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Fuente: Libro: Murphy, Jr., and A. Michael Knemeyer.<em>Logística Contemporánea</em>. 11 a ed. México: Pearson, 2015.</p>
+                                        <div class="texto-video">
+                                            <p><strong>Gestión de inventario ABC:</strong></p>
+                                            <p>La gestión de inventario ABC es una estrategia clasificatoria que categoriza los productos en función de su importancia relativa para el negocio. Esta metodología, también conocida como análisis ABC, se basa en el principio de Pareto, que establece que un pequeño porcentaje de elementos contribuye significativamente a la mayoría de los resultados. Aquí se explica cómo funciona:</p>
+                                            <p>Clasificación por importancia:</p>
+                                            <p>Clase A (20% de los productos): Representa los productos de mayor importancia, ya que generan aproximadamente el 80% de los ingresos o utilidades. Estos artículos requieren una atención y control detallados debido a su impacto significativo en la rentabilidad.</p>
+                                            <p>Clase B (30% de los productos): Este grupo abarca productos de importancia moderada, que contribuyen alrededor del 15% al 20% de los ingresos. Se les presta atención, aunque no tanto como a la Clase A.</p>
+                                            <p>Clase C (50% de los productos): Incluye productos de menor importancia, que contribuyen a aproximadamente el 5% de los ingresos. Aunque son numerosos, su contribución individual es relativamente baja.</p>
+                                            <p>Aplicación de políticas diferenciadas:</p>
+                                            <p>Clase A: Debido a su importancia, los productos de Clase A pueden estar sujetos a políticas de inventario más estrictas, como recuentos frecuentes, sistemas de reabastecimiento automáticos y una mayor precisión en las previsiones de demanda.</p>
+                                            <p>Clase B: Se aplican políticas intermedias en comparación con la Clase A y la Clase C. El control del inventario es menos riguroso, pero aún se presta atención a las tendencias de demanda y al reabastecimiento oportuno.</p>
+                                            <p>Clase C: Dado que estos productos contribuyen en menor medida a los ingresos, las políticas de inventario pueden ser menos intensivas. Se pueden utilizar estrategias más flexibles, como reabastecimientos menos frecuentes y niveles de inventario más amplios.</p>
+                                            <p>Optimización de recursos:</p>
+                                            <p>La gestión de inventario ABC permite asignar recursos de manera eficiente. Al concentrar los esfuerzos en los productos de mayor impacto económico, las empresas pueden maximizar la rentabilidad y minimizar el riesgo de pérdida.</p>
+                                            <p>Análisis continuo:</p>
+                                            <p>La clasificación de productos en las categorías A, B y C no es estática. Se debe realizar un análisis continuo para ajustar las clasificaciones según cambios en la demanda, tendencias del mercado y otros factores que puedan afectar la importancia relativa de los productos.</p>
+                                        </div>
+                                        <h5>Una herramienta práctica: ¿cuándo hacer un pedido?</h5>
+                                        <p>Un tema importante sobre la gestión de inventarios se relaciona con cuándo debemos pedir productos. Hay dos formas comunes de hacerlo: ordenar una cantidad fija cada vez que se necesita reponer (sistema con cantidad de pedido fija) o realizar pedidos en momentos específicos, independientemente de cuánto se haya vendido (sistema con intervalo de pedido fijo).</p>
+                                        <p>En el sistema con cantidad de pedido fija, se puede cambiar de acuerdo con cuánto tiempo pasa entre pedidos, pero la cantidad que se pide se mantiene constante. Imagina una tienda que siempre pide 200 cajas de refrescos. Pueden hacer un pedido el 3 de enero, otro el 6 de enero (tres días después), y otro el 11 de enero (cinco días después).</p>
+                                        <p>Respecto al sistema con intervalo de pedido fijo, el tiempo entre pedidos es constante, pero la cantidad que se pide puede cambiar. Por ejemplo, piensa en alguien que va de compras todos los domingos. Aunque siempre va de compras cada siete días, la lista de compras (es decir, lo que necesita del inventario) puede variar de una semana a otra.</p>
+                                        <p>Es necesario que haya un punto de reorden o disparador (es decir, el nivel del inventario en el que se realiza un pedido de reposición) para que exista un eficiente sistema, con cantidad de pedido fija (Murphy, Jr., et al., 2015).</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/17_Esquema_ROP.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Fuente: Lifeder. Recuperado 2023 de <a href="https://www.lifeder.com/punto-reorden/">https://www.lifeder.com/punto-reorden/</a></p>
+                                        <p>El punto de reorden, conocido como ROP, por sus siglas en inglés, es un concepto importante para la optimización de los inventarios, es relativamente fácil de calcular, especialmente bajo condiciones de certidumbre; un punto de reorden es igual a la demanda diaria (DD) media en unidades por la duración del ciclo de reposición (RC), (Murphy, Jr., et al., 2015).</p>
+                                        <p class="text-center h3">ROP = DD x RC</p>
+                                        <p>Por ejemplo, si la demanda diaria media es de 40 unidades y el ciclo de reposición es de 4 días, el punto de reorden es 40 × 4, o 160 unidades; en otras palabras, cuando el nivel del inventario llega a 160 unidades, se realiza un nuevo pedido. Bajo condiciones de incertidumbre, el punto de reorden puede calcularse de manera similar; la única modificación consiste en que se incluye un factor para el inventario de seguridad (SS):</p>
+                                        <p class="text-center h3">ROP = (DD x RC) + SS</p>
+                                        <h5>Una herramienta práctica ¿Cuánto pedir?</h5>
+                                        <p>Un tema que ha sido una inquietud constante en la gestión de inventarios es determinar cuánto inventario se debe pedir en un momento dado. El concepto clave aquí es la Cantidad Económica de Pedido (EOQ, por sus siglas en inglés), que se trata de calcular la cantidad adecuada de pedido considerando dos costos: el costo de mantener el inventario y el costo de hacer el pedido.</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/18_Esquema_EOQ.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Matemáticamente, la EOQ se puede calcular; una presenta la respuesta en dinero y la otra en unidades. En términos monetarios, podemos suponer que se usan $1000 de un artículo en particular cada año, los costos del pedido son de $25 por pedido enviado y los costos de mantenimiento de inventario son de 20 por ciento (Murphy, Jr., et al., 2015).</p>
+                                        
+                                        <p>Debe tenerse en cuenta que rara vez, o nunca, las organizaciones gestionan inventarios en un entorno caracterizado por la certeza de los ocho supuestos presentados anteriormente para la cantidad económica de pedido. Por ejemplo, habría que pensar cómo un evento inesperado podría afectar el supuesto del ritmo continuo, constante y conocido de la demanda. Una ilustración notable implica la muerte del músico David Bowie ocurrida en 2016; hubo un tremendo aumento en las ventas de la música grabada por su grupo en las semanas inmediatas posteriores a su deceso.</p>
+                                        <p>Dado que el mundo empresarial contemporáneo está marcado por un alto grado de incertidumbre, el modelo básico de la EOQ puede ajustarse para tener en cuenta una o más condiciones de incertidumbre. Por ejemplo, una cantidad económica de pedido se puede calcular en condiciones de incertidumbre en el tiempo de entrega o en condiciones de incertidumbre en la demanda y el tiempo de entrega. Estas y otras modificaciones aumentan la complejidad matemática en el cálculo de una cantidad económica de pedido, por lo que dichos cálculos están más allá del alcance de este texto.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('software')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.2 Herramientas y software para gestionar inventarios en línea</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="software">6.2 Herramientas y software para gestionar inventarios en línea</h4>
+                                        <p>Existen varias herramientas y software en español que pueden ayudar a gestionar inventarios en línea de manera eficiente, en este apartado proveemos algunas de las opciones más populares y prácticas:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/19_Herramientas_software_gestionar_inventarios_enlinea.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Existen herramientas gratuitas para gestionar inventarios en línea en español. Aunque algunas de ellas pueden tener limitaciones en cuanto a funcionalidades avanzadas o el número de productos que se pueden administrar, son una excelente opción para pequeñas empresas y emprendedores que buscan una solución económica para controlar su inventario en línea. Aquí hay algunas opciones de herramientas gratuitas:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/19.2_Herramientas_gestionar_inventarios.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Es importante mencionar que, si bien estas herramientas son gratuitas, algunas pueden ofrecer planes pagos con funcionalidades adicionales o limitaciones levantadas para usuarios que requieran mayores capacidades de gestión de inventario. Es recomendable evaluar las necesidades específicas del negocio antes de elegir una herramienta, ya que cada empresa tiene requisitos diferentes en cuanto a su gestión de inventario.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Gestión de órdenes de compra, recepción y despacho de productos">
+                                <h3 class="mt-3"><i class="num">7</i> Gestión de órdenes de compra, recepción y despacho de productos</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('gestion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>7.1 Proceso de gestión de órdenes desde la recepción hasta la entrega al cliente</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="gestion">7.1 Proceso de gestión de órdenes desde la recepción hasta la entrega al cliente</h4>
+                                        <div class="texto-video">
+                                            <p>El proceso de gestión de órdenes es primordial para asegurar que los productos sean entregados de manera eficiente y satisfactoria a los clientes. A continuación, presentamos el proceso, paso a paso, desde la recepción de la orden hasta la entrega final al cliente:</p>
+                                            <ol>
+                                                <li><strong>Recepción de la orden: </strong>El proceso comienza cuando el cliente realiza una compra en línea a través del sitio web o plataforma de comercio electrónico. La orden se recibe automáticamente en el sistema de gestión de pedidos.</li>
+                                                <li><strong>Validación de la orden:</strong> Antes de procesar la orden, se realiza una validación para asegurarse de que los datos proporcionados por el cliente sean correctos y que los productos estén disponibles en el inventario.</li>
+                                                <li><strong>Preparación y empaquetado:</strong> Una vez validada la orden, se procede a preparar los productos para su envío. Se seleccionan los artículos del inventario y se empaquetan de manera segura y adecuada para su transporte.</li>
+                                                <li><strong>Asignación de la compañía de transporte:</strong> Se selecciona la compañía de transporte encargada de realizar la entrega de la orden. Esto puede ser una empresa de mensajería local, un servicio de paquetería o una empresa de transporte especializada.</li>
+                                                <li><strong>Generación de etiquetas y rastreo:</strong> Se generan las etiquetas de envío y se realiza el rastreo de los paquetes para que tanto el vendedor como el cliente puedan seguir el estado de la entrega en tiempo real.</li>
+                                                <li><strong>Entrega al transportista:</strong> Los paquetes se entregan al transportista para que comiencen su ruta de entrega hacia el cliente.</li>
+                                                <li><strong>Entrega al cliente:</strong> Finalmente, el transportista realiza la entrega de los productos al cliente en la dirección indicada durante el proceso de compra.</li>
+                                            </ol>
+                                        </div>
+                                        <p>Ejemplo: Un cliente realiza una compra de una computadora portátil en un sitio web de comercio electrónico. La orden es recibida por el sistema y validada para verificar la disponibilidad del producto y los datos del cliente. Luego, el equipo encargado selecciona la computadora portátil del inventario, la empaqueta cuidadosamente y genera la etiqueta de envío. La compañía de transporte recoge el paquete y lo entrega al cliente en su domicilio.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('agilizar')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>7.2 Cómo agilizar y mejorar la precisión en la gestión de órdenes </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="agilizar">7.2 Cómo agilizar y mejorar la precisión en la gestión de órdenes </h4>
+                                        <div class="texto-video">
+                                            <p>En el punto anterior vimos el proceso de gestión de órdenes desde la recepción hasta la entrega al cliente, ahora lo conectaremos con el cómo agilizarlo. En el mundo empresarial, tanto en pequeñas como grandes empresas de servicios, la pregunta recurrente es cómo ahorrar tiempo y mejorar constantemente la calidad del servicio. La digitalización ha demostrado ser la clave para responder a esta interrogante. Todo comienza con la transformación de la gestión de órdenes de trabajo.</p>
+                                            <p>Antes de profundizar es importante recordar la función esencial de una orden de trabajo. Este documento permite controlar y programar las actividades, siendo el corazón de la gestión de mantenimiento, instalación y/o reparación.</p>
+                                            <p>Para el cliente, una orden de trabajo representa un aval del servicio que se le proporciona. Para el supervisor, se convierte en una herramienta para registrar los avances de la empresa y el tiempo trabajado por el personal. Mientras que, para el técnico, es una asignación clara de las tareas a realizar y la base para crear un informe posterior.</p>
+                                            <p>La digitalización de las órdenes de trabajo es una solución efectiva para mejorar la eficiencia y calidad del servicio. Al adoptar herramientas digitales, se pueden lograr varios beneficios:</p>
+                                            <ul>
+                                                <li>Ahorro de tiempo: Los procesos manuales y papeleos suelen ser lentos y propensos a errores. Con la digitalización, se agiliza la creación, asignación y seguimiento de órdenes de trabajo, lo que permite un uso más eficiente del tiempo del personal y una respuesta más rápida a las necesidades del cliente.</li>
+                                                <li>Mejora de la comunicación: Las herramientas digitales permiten una comunicación fluida entre el personal, los supervisores y los clientes. Los técnicos pueden recibir órdenes directamente en sus dispositivos móviles y enviar actualizaciones en tiempo real. Esto reduce la posibilidad de malentendidos y mejora la coordinación del equipo.</li>
+                                                <li>Mayor precisión y calidad del servicio: La digitalización permite incluir detalles específicos, imágenes y documentación relevante en las órdenes de trabajo. Esto asegura que los técnicos tengan toda la información necesaria para realizar el trabajo de manera precisa y eficiente, lo que conduce a una mayor satisfacción del cliente.</li>
+                                            </ul>
+                                        </div>
+                                        <p>Ejemplo: Una empresa de instalación y reparación de equipos electrónicos implementa una plataforma digital para la gestión de órdenes de trabajo. Los técnicos reciben notificaciones en sus dispositivos móviles con la información detallada de cada trabajo, incluyendo ubicación, lista de tareas y documentación técnica. Los clientes pueden dar su aprobación digitalmente y recibir actualizaciones en tiempo real sobre el estado del trabajo. Esta digitalización mejora la comunicación, aumenta la eficiencia y garantiza una mayor precisión en la prestación del servicio.</p>
+                                        <p>El proceso de surtido de órdenes es un punto neurálgico en todas las operaciones de almacén y es crucial para mantener altos niveles de competitividad y desempeño en la organización. Para lograr la satisfacción del cliente final, es esencial revisar y optimizar continuamente este proceso. En nuestra serie de contenidos "Pasos para Optimizar su Control de Almacén", compartimos algunas prácticas recomendadas para alcanzar la máxima efectividad en el surtido de órdenes:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/21_Pasos_optimizar _control_almacen.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Con estas prácticas, logrará agilizar el picking de su almacén, reducir errores y aumentar la satisfacción de sus clientes. Además, optimizará el control del almacén al determinar existencias reales de sus productos con mayor precisión. </p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Estrategias')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>7.3 Estrategias para reducir tiempos de entrega y costos logísticos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Estrategias">7.3 Estrategias para reducir tiempos de entrega y costos logísticos</h4>
+                                        <img src="../../../../../assets/images/dimensions/procesos/22_Estrategias_reducir_tiempos_entrega_costos_logisticos.webp" class="img-fluid" />
+                                        <separator></separator>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Optimización de rutas">
+                                <h3 class="mt-3"><i class="num">8</i> Optimización de rutas</h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('rutas')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>8.1. Importancia de la optimización de rutas en la logística del comercio electrónico</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="rutas">8.1. Importancia de la optimización de rutas en la logística del comercio electrónico</h4>
+                                        <div class="texto-video">
+                                            <p>La optimización de rutas en la logística del comercio electrónico es un proceso esencial para garantizar una entrega eficiente y puntual de los productos a los clientes. Consiste en encontrar las rutas más eficaces y económicas para transportar los productos desde los almacenes o centros de distribución hasta los destinos finales, minimizando los costos de transporte y el tiempo de entrega.</p>
+                                            <p>El objetivo principal de la optimización de rutas es maximizar la eficiencia en la distribución de productos, asegurando que se cumplan los plazos de entrega y reduciendo los gastos asociados al transporte. Al mejorar la planificación y la gestión de las rutas, se obtienen diversos beneficios:</p>
+                                            <ul>
+                                                <li><strong>Reducción de costos:</strong> Al minimizar la distancia y el tiempo de viaje, se disminuyen los gastos de transporte y se optimiza el uso de recursos como combustible y vehículos.</li>
+                                                <li><strong>Mayor puntualidad:</strong> La optimización de rutas permite entregar los productos en tiempo y forma, lo que mejora la satisfacción del cliente y fortalece la reputación de la empresa.</li>
+                                                <li><strong>Aumento de la productividad:</strong> Con rutas más eficientes, se aprovecha mejor el tiempo de los conductores y se reduce el tiempo de espera en los puntos de entrega.</li>
+                                                <li><strong>Menor impacto ambiental:</strong> Al reducir la distancia recorrida y la emisión de gases contaminantes, se contribuye a la preservación del medio ambiente.</li>
+                                            </ul>
+                                        </div>
+                                        <p>Ejemplo:</p>
+                                        <p>Una empresa de comercio electrónico vende productos a nivel nacional y cuenta con almacenes en diferentes ciudades. Antes de implementar la optimización de rutas, realizaban entregas de manera poco planificada, lo que resultaba en trayectos largos y costosos, además de retrasos en las entregas.</p>
+                                        <p>Luego de aplicar la optimización de rutas con ayuda de un software especializado, la empresa logró reducir la distancia total recorrida por sus vehículos y el tiempo de viaje. Esto se logró agrupando las entregas por zonas y buscando la secuencia óptima para cada ruta. Como resultado, se disminuyeron los costos de transporte y se mejoró la puntualidad en las entregas. Los clientes notaron la diferencia y la empresa fortaleció su reputación, lo que llevó a un aumento en las ventas y a una mayor fidelidad de los clientes.</p>
+                                        <p>En conclusión, la optimización de rutas es un aspecto clave en la logística del comercio electrónico, ya que permite reducir costos, mejorar la eficiencia y aumentar la satisfacción de los clientes. Mediante una planificación cuidadosa y el uso de tecnología especializada, las empresas pueden alcanzar mayores niveles de competitividad y éxito en el mercado.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('algoritmos')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>8.2 Métodos y algoritmos para encontrar rutas eficientes de entrega</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="algoritmos">8.2 Métodos y algoritmos para encontrar rutas eficientes de entrega</h4>
+                                        <p>Existen varios métodos y algoritmos utilizados para encontrar rutas eficientes de entrega en la logística del comercio electrónico. Estos métodos buscan optimizar la planificación de las rutas para minimizar costos y tiempos de entrega. A continuación, se presentan algunos de los enfoques más comunes:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/23_Algoritmos_rutas_eficientes.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Cabe destacar que la elección del método o algoritmo depende del tamaño y complejidad del problema, así como de los recursos computacionales disponibles. En la práctica, a menudo se combinan varios métodos para encontrar soluciones óptimas o cercanas a ellas en la planificación de rutas de entrega en el comercio electrónico.</p>
+                                        <div class="texto-video">
+                                            <p>Existen varios software y herramientas especializadas en la optimización de rutas de entrega en la logística del comercio electrónico. Estas herramientas utilizan algoritmos avanzados y técnicas de optimización para encontrar las mejores rutas posibles, considerando factores como distancia, tiempo de viaje, restricciones de entrega y costos. Algunos de los softwares más populares incluyen:</p>
+                                            <ul>
+                                                <li><strong>Route4Me: </strong>Es una plataforma de optimización de rutas que permite planificar y optimizar rutas para múltiples destinos en tiempo real. Ofrece características como geo codificación, seguimiento de vehículos y análisis de datos.</li>
+                                                <li><strong>OptimoRoute:</strong> Esta herramienta ofrece una solución basada en la nube para la optimización de rutas de entrega y planificación de flotas. Permite programar rutas, calcular el tiempo estimado de llegada y realizar seguimiento en tiempo real.</li>
+                                                <li><strong>MyRouteOnline:</strong> Es un software en línea que ofrece planificación de rutas optimizadas para entregas, recolecciones y servicios de campo. Permite importar direcciones desde hojas de cálculo y exportar rutas a dispositivos GPS.</li>
+                                                <li><strong>LogiNext Mile</strong>: Esta plataforma de optimización de última milla ofrece una variedad de herramientas para planificar, optimizar y rastrear entregas en tiempo real. Utiliza algoritmos avanzados para encontrar las rutas más eficientes.</li>
+                                                <li><strong>Descartes Route Planner:</strong> Esta herramienta ofrece una solución integral para la planificación de rutas y entregas. Incluye características como geo codificación, programación de entregas y análisis de eficiencia.</li>
+                                                <li><strong>Locus Dispatcher:</strong> Es una plataforma de optimización de rutas que utiliza algoritmos avanzados para planificar y optimizar rutas de entrega en tiempo real. También ofrece seguimiento en vivo y análisis de datos.</li>
+                                            </ul>
+                                        </div>
+                                        <p>Estos son solo algunos ejemplos de software disponibles en el mercado. Es importante evaluar las necesidades específicas de cada empresa y las características que ofrece cada herramienta antes de tomar una decisión. Algunos softwares pueden ser más adecuados para empresas pymes con necesidades básicas, mientras que otros pueden ser más apropiados para empresas más grandes con operaciones complejas.</p>
+                                        <p>Aunque muchos de los softwares especializados en optimización de rutas tienen costos asociados, también existen algunas opciones de software gratuito que ofrecen funcionalidades básicas para la planificación de rutas. Aquí encontrarás algunas alternativas gratuitas:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/24_Aplicaciones_gratuitas_ruta.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>s importante tener en cuenta que, si bien estas opciones son gratuitas, es posible que tengan ciertas limitaciones en términos de la cantidad de puntos de entrega o características avanzadas disponibles. Para empresas con operaciones más complejas o que requieran funciones adicionales, es posible que sea necesario considerar opciones de software de pago con capacidades más completas.</p>
+                                        <p>Software de logística y distribución para optimizar cadena de suministro. </p>
+                                        <p>Sugerimos ver el siguiente video <a href="https://www.youtube.com/watch?v=C9KxSq33J64">https://www.youtube.com/watch?v=C9KxSq33J64</a></p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+
+                            <mat-tab label="Herramientas de logística y envío en el comercio electrónico">
+                                <h3 class="mt-3"><i class="num">9</i> Herramientas de logística y envío en el comercio electrónico</h3>
+                                <mat-accordion>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.3 </mat-panel-title>
+                                            <mat-panel-title>9.1 </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="">1.3 </h4>
+                                        <h4 id="">9.1 </h4>
                                         
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('comparativa')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>9.2 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="comparativa">9.2 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</h4>
+                                        <p>Las herramientas Sendcloud, Easy Envío, Shipit y Paack son soluciones de logística y envío que se utilizan en el comercio electrónico para gestionar pedidos, inventarios, empaque, envío de productos a los clientes, seguimiento y atención postventa. A continuación, te proporciono una descripción de cada una de ellas y una comparativa para que puedas evaluar cuál se adapta mejor a tus necesidades de negocio:</p>
+                                        <img src="../../../../../assets/images/dimensions/procesos/24.2_Herramientas_logistica_envio.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <div class="texto-video">
+                                            <h5>Comparativa:</h5>
+                                            <p><strong>Sendcloud, Easy Envío </strong>y<strong> Shipit</strong> son plataformas de logística que se enfocan en facilitar la gestión de envíos y devoluciones para tiendas en línea. Ofrecen funcionalidades similares, como la automatización de etiquetas de envío y seguimiento en tiempo real. En tanto que <strong>Paack</strong> se diferencia al enfocarse en entregas en el mismo día o en franjas horarias específicas, utilizando algoritmos avanzados para predecir el momento exacto de la entrega.</p>
+                                            <p><strong>Sendcloud y Shipit</strong> ofrecen integraciones con múltiples proveedores logísticos, lo que brinda a los usuarios opciones para seleccionar la compañía de envío más conveniente. Easy Envío, por su parte, se destaca por su enfoque en simplificar el proceso de cotización y selección de tarifas de envío.</p>
+                                            <p><strong>Paack</strong> ofrece entregas flexibles y personalizadas, lo que puede ser especialmente atractivo para empresas que buscan brindar un alto nivel de servicio al cliente. Al momento de elegir entre estas herramientas, es importante considerar las necesidades específicas de tu negocio, el tamaño de tu tienda en línea y las características que más se ajusten a tus requerimientos logísticos. Cada plataforma tiene sus ventajas y desventajas, por lo que es recomendable probarlas y evaluar cuál se adapta mejor a tus operaciones.</p>
+                                        </div>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -94,8 +535,8 @@
                     <div class="references">
                         <h4>Referencias</h4>
                         <ul>
-                            <li>Aguilar Rascón, O. C., Posada Vázquez, R., &amp; Soto Sevilla, M. S.  (2012). El otro lado de la logística, una visión estratégica: tendencias del aprovisionamiento en las cadenas de valor para el desarrollo sostenible. Revista del Centro de Investigación. Universidad La Salle, 10(38), 221-232.</li>
-                            <li>John, C., John, L., Robert, N., &amp; Brian, G. (2017). Administración de la Cadena de Suministro (10th ed.). Cengage Learning Editores SA de CV. <a href="https://up.vitalsource.com/books/9786075265254">https://up.vitalsource.com/books/9786075265254</a> </li>
+                            <li>Aguilar Rascón, O. C., Posada Vázquez, R., &amp; Soto Sevilla, M. S. (2012). El otro lado de la logística, una visión estratégica: tendencias del aprovisionamiento en las cadenas de valor para el desarrollo sostenible. Revista del Centro de Investigación. Universidad La Salle, 10(38), 221-232.</li>
+                            <li>John, C., John, L., Robert, N., &amp; Brian, G. (2017). Administración de la Cadena de Suministro (10th ed.). Cengage Learning Editores SA de CV. <a href="https://up.vitalsource.com/books/9786075265254">https://up.vitalsource.com/books/9786075265254</a></li>
                             <li>KNAPP, (2023). Cadena de valor vs. cadena de suministro: ¿cuál es la diferencia? Recuperado de <a href="https://www.knapp.com/es/saber/blog/diferencia-cadena-de-valor-vs-cadena-de-suministro/">https://www.knapp.com/es/saber/blog/diferencia-cadena-de-valor-vs-cadena-de-suministro/</a></li>
                             <li>Barno, S. y. (2014). Canvas para arquitectos. Obtenido de https://stepienybarno.es/blog/2014/03/02/canvas-para-arquitectos/</li>
                             <li>Dosdoce.com. (2014). Nuevos modelos de negocio en la era digital. España: CEDRO. Obtenido de http://www.dosdoce.com/upload/ficheros/noticias/201409/modelos_de_negocio_pdf.pdf </li>
@@ -134,75 +575,23 @@
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
-                        <div class="tool" *ngFor="let item of Tools">
-                            <h5><mat-icon>construction</mat-icon> {{item.Tema}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Recurso}}</a>
-                            <p>
-                                {{item.Descripcion}}
-                                <small>{{item.Observaciones}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-                        <div class="tool" *ngFor="let item of Words">
-                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
-                            <p>
-                                {{item.Significado}}
-                                <small>{{item.Fuente}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
-                        <div class="expert" *ngFor="let item of Experts">
-                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
-                            <p>{{item.Descripcion}}</p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
-                        <div class="institution" *ngFor="let item of Institutions">
-                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-                        <div class="tool" *ngFor="let item of Books">
-                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
-                            <p>{{item.Subtitulo}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
-                        <div class="tool" *ngFor="let item of Websites">
-                            <h6><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h6>
-                            <p>{{item.Resumen}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="Seccion" [Tools]="Books" @changeSection>
+                </app-herramientas> 
+
+                <app-herramientas *ngIf="Seccion==='WebSites'" [Title]="Seccion" [Tools]="Websites" @changeSection>
+                </app-herramientas> 
 
             </div>
         </div>

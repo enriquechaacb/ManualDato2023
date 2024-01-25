@@ -220,100 +220,23 @@
                     </div>
                 </section>
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Herramientas'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
-                        <p>A continuación, se enlistan algunos recursos útiles para comprender los modelos matemáticos, de acuerdo con su clasificación.</p>
-                        <div class="tool" *ngFor="let item of Tools">
-                            <h5><mat-icon>construction</mat-icon> <a href="{{item.Url}}" target="_blank">{{item.Tema}}</a></h5>
-                            <p>
-                                {{item.Descripcion}}
-                                <small>{{item.Observaciones}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Glosario'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-                        <div class="tool" *ngFor="let item of Words">
-                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
-                            <p>
-                                {{item.Significado}}
-                                <small>{{item.Fuente}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Casos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
-                        <article class="tool">
-                            <h4>¿Cómo ayudan las matemáticas y la inteligencia artificial a la gestión del agua?</h4>
-                            <p>Las matemáticas desempeñan un papel fundamental en la gestión del agua, ya que permiten modelar, analizar y optimizar diversos procesos relacionados con el abastecimiento, el tratamiento y la distribución del agua. Al aplicar técnicas matemáticas, los profesionales del sector del agua pueden mejorar la eficiencia, la sostenibilidad y la calidad del agua en todo el ciclo del agua (<em>¿Cómo ayudan las matemáticas y la inteligencia artificial a la gestión del agua?</em>, 2023, ver <a href="https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua">https://www.iagua.es/respuestas/como-ayudan-matematicas-y-inteligencia-artificial-gestion-agua</a> )</p>
-                        </article>
-                        <article class="tool">
-                            <h4>Modelos Matemáticos Aplicados a la Economía. </h4>
-                            <p>Aplicar modelos matemáticos a la economía ayuda a los profesionistas a tener mejores perspectivas en la toma de decisiones y generar estrategias para aumentar los ingresos en una empresa. La mayor parte de la econometría se basa en la estadística para formular y probar hipótesis acerca de procesos económicos o estimar parámetros para estos (Curiel, 2020).</p>
-                        </article>
-                        <article class="tool">
-                            <h4>El modelado matemático: una herramienta útil para la industria alimenticia. </h4>
-                            <p>Los modelos matemáticos permiten predecir la velocidad de crecimiento de los microorganismos en función de determinadas condiciones ambientales tales como la temperatura y el pH. A partir del modelado matemático se logra predecir la duración y seguridad de los alimentos así también como determinar la estabilidad microbiana de nuevos productos alimenticios y ayudar en la evaluación de posibles riesgos para la salud pudiendo tener como principal desventaja que las predicciones no fueran del todo precisas, indicando sólo una tendencia o la imposibilidad de predecir fuera del rango de las condiciones consideradas (Josefina, 2001, ver <a href="http://sedici.unlp.edu.ar/handle/10915/105741">http://sedici.unlp.edu.ar/handle/10915/105741</a> ).</p>
-                        </article>
-                        <article class="tool">
-                            <h4>Aplicación de los modelos matemáticos microbianos en la industria alimentaria. </h4>
-                            <p>El empleo de esta ciencia en el desarrollo de la evaluación de riesgos microbiológicos, así como en estudios de durabilidad, en investigación y desarrollo de productos, en análisis de peligros y puntos críticos de control, y en evaluación de riesgos, entre otras aplicaciones, ofrece grandes ventajas para la seguridad e inocuidad de los alimentos (Álvarez, 2010).</p>
-                        </article>
-                        <article class="tool">
-                            <h4>Propuesta de un modelo matemático de programación por metas.</h4>
-                            <p>Este modelo busca definir un curso de acción óptimo para la selección de alternativas de inversión en pymes. El modelo utiliza la programación por metas, que es una técnica que permite incorporar múltiples objetivos y restricciones en un problema de optimización. El modelo se aplica a un caso práctico de una pyme que quiere invertir en maquinaria, equipo o capacitación (Hall, 2021).</p>
-                        </article>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Expertos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
-                        <div class="expert" *ngFor="let item of Experts">
-                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
-                            <p>{{item.Descripcion}}</p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion bgr-blanco" *ngIf="Seccion==='Instituciones'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
-                        <div class="institution" *ngFor="let item of Institutions">
-                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="Seccion" [Tools]="Books" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='Literatura'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-                        <div class="tool" *ngFor="let item of Books">
-                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
-                            <p>{{item.Subtitulo}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="seccion bgr-blanco75" *ngIf="Seccion==='WebSites'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
-                        <div class="tool" *ngFor="let item of Websites">
-                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='WebSites'" [Title]="Seccion" [Tools]="Websites" @changeSection>
+                </app-herramientas> 
             </div>
         </div>
     </div>

@@ -185,116 +185,23 @@
                     </div>
                 </section>
                 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
-                        <div class="tool" *ngFor="let item of Tools">
-                            <h5><mat-icon>construction</mat-icon> <a href="{{item.Url}}" target="_blank">{{item.Tema}}</a></h5>
-                            <p>
-                                {{item.Descripcion}}
-                                <small>{{item.Observaciones}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-                        <div class="tool" *ngFor="let item of Words">
-                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
-                            <p>
-                                {{item.Significado}}
-                                <small>{{item.Fuente}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Casos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>emoji_events</mat-icon> <span>Casos de éxito</span></h2>
-                        <p>Buenas prácticas para el modelado de datos usando Clikview, describe las distintas maneras de cargar datos en el documento QlikView, dependiendo de cómo estén estructurados los datos y del modelo de datos que queramos palicar (<em>Mejores prácticas de modelado de datos | QlikView ayuda</em>, 2021).</p>
-                        <p>Caso de éxito de La Corberana con Microsoft Power BI, con el objetivo de contar con una solución que, integrada con su software de gestión, extrajera de manera automática y visual toda la información financiera para una mejor toma de decisiones, La Coberana se decantó por Power BI obteniendo como resultado una estructura navegable, entendible para el departamento financiero (Aitana Soluciones, 2022).</p>
-                        <p>Caso de Éxito Grupo Libertad - Estrategia HyperIntelligence. Sesión de cliente presentada durante MicroStrategy World Latin America en septiembre de 2021 (<em>Caso de éxito Grupo Libertad - Estrategia HyperIntelligence</em>, 2021).</p>
-                        <p>Caso de éxito Skechers: Integrando Google Analytics y medición de ROAS. Para integrar toda la información en una sola herramienta, utilizaron la aplicación Supermetrics, que puede vincular automáticamente los costos desde las campañas de Facebook con Google Analytics. Así, se obtuvo un análisis en tiempo real de las campañas, anuncios y segmentaciones. Esto ayudó a que también nuestros clientes pudieran ver y analizar todos los días, los resultados de las campañas (Pablog &amp; Pablog, 2022).</p>
-                        <p>PepsiCo reduce el tiempo de análisis hasta en un 90 % con Tableau + Trifacta. PepsiCo adoptó Trifacta, socio de Tableau, con el objetivo de convertir datos dispares e incorporarlos en Tableau para el pronóstico y el análisis. Gracias a Trifacta, el equipo de CPFR redujo el tiempo de ejecución integral del análisis de PepsiCo hasta en un 70 %. Y, con Tableau, PepsiCo redujo el tiempo de producción de informes hasta en un 90 %. Hoy en día, PepsiCo cuenta antes con datos más precisos, lo cual le da una ventaja competitiva en el espacio minorista (Tableau from Salesforce, 2023).</p>
-                        <p>Python tienen una amplia gama de usos. Desde procesamiento de datos, al aprendizaje de máquina. Por ello, Python es elegido el lenguaje de programación de muchas empresas y organizaciones (Tokio School, 2023).</p>
-                        <!-- <article class="tool">
-                            <h4>Kushki evoluciona el negocio paytech con la integración de data estratégica y la digitalización de las ventas.</h4>
-                            <p>Kushki es una empresa de soluciones de pagos digitales en América Latina que integró Salesforce con su plataforma POS para ofrecer una mejor atención al cliente, acelerar su ciclo de venta y expandir su mercado. Caso de éxito: Kushki evoluciona el negocio Paytech con la integración de data estratégica y la digitalización de las ventas, 2023, recuperado de <a href="https://www.salesforce.com/mx/customer-success-stories/kushki/">https://www.salesforce.com/mx/customer-success-stories/kushki/</a></p>
-                        </article>
-                        <article class="tool">
-                            <h4>Propuesta de plan de transición</h4>
-                            <p>En las conclusiones del documento abordan los pasos para poner en marcha un sistema digitalizado, considerando la experiencia del Sistema de Gestión de Calidad bajo la Norma ISO 9001:2008 a ISO 9001:2015 en Dispetrocom Ltda. Propuesta de Plan de transición del sistema de gestión de calidad bajo la norma ISO 9001:2008 a ISO 9001:2015 en Dispetrocom Ltda, 2015, recuperado de <a href="https://repository.udistrital.edu.co/bitstream/handle/11349/13362/UsecheMahechaEdwinErnesto2018.pdf;jsessionid=E8D094D639E082C8062FECC42AD55D95?sequence=1">https://repository.udistrital.edu.co/bitstream/handle/11349/13362/UsecheMahechaEdwinErnesto2018.pdf</a></p>
-                        </article>
-                        <article class="tool">
-                            <h4>Vivirse</h4>
-                            <p>Vivirse es una agencia de estudios en el exterior que ofrece servicios a quienes desean ir a estudiar al extranjero. Dicha agencia se encuentra en Canadá y tiene otras oficinas en otros países, pero gracias al uso del CRM de HubSpot incrementó más del 1000 por ciento en su facturación. Ver En tan solo tres años Vivirse incrementa más del 1000% en facturación usando la plataforma de CRM de HubSpot, recuperado de <a href="http://www.hubspot.es/case-studies/vivirse">www.hubspot.es/case-studies/vivirse</a></p>
-                        </article> -->
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Actividades'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Actividades sugeridas al participante para desarrollar</span></h2>
-                        <p>Se sugiere que el participante realice un análisis exploratorio de datos en donde se identifiquen las tendencias, patrones y características de interés. A continuación, con base en problemas empresariales reales que requieren análisis de datos para resolverse utilice las herramientas informáticas para encontrar soluciones y presentar recomendaciones. También es recomendable que comunique los resultados de su análisis de datos frente a un grupo de interés.</p>
-                        <article class="hint">
-                            <div>
-                                <h3>Preguntas para reflexionar </h3>
-                                <p>Es recomendable que el participante reflexione sobre tus habilidades y conocimientos en herramientas informáticas para la analítica de datos contestando las siguientes preguntas:</p>
-                                <p>¿Qué habilidades específicas tiene en el uso de lenguajes de programación?</p>
-                                <p>¿Cómo aborda los datos con valores atípicos o faltantes?</p>
-                                <p>¿Por qué es crucial el preprocesamiento de datos?</p>
-                                <p>¿Qué tipo de modelos ha aplicado y en qué contextos?</p>
-                                <p>¿Qué experiencias tienes trabajando en equipo en proyectos de datos?</p>
-                                <p>¿Cómo comunica sus hallazgos de manera efectiva?</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
-                        <div class="expert" *ngFor="let item of Experts">
-                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
-                            <p>{{item.Descripcion}}</p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="Seccion" [Tools]="Books" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
-                        <div class="institution" *ngFor="let item of Institutions">
-                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-                        <div class="tool" *ngFor="let item of Books">
-                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
-                            <p>{{item.Subtitulo}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
-                        <div class="tool" *ngFor="let item of Websites">
-                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='WebSites'" [Title]="Seccion" [Tools]="Websites" @changeSection>
+                </app-herramientas> 
             </div>
         </div>
     </div>

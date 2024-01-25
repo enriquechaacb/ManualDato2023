@@ -32,104 +32,114 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>El uso de medios digitales de pago en las pequeñas y medianas empresas es una tendencia en constante crecimiento en los últimos años. Conforme la tecnología avanza, crece la importancia y los beneficios de utilizar medios digitales de pago, así como los desafíos y consideraciones clave para su implementación.</p>
+                            <p>La tecnología ha revolucionado la forma en que las empresas operan. La adopción de medios digitales de pago es esencial para que las empresas puedan transformarse en pro de su competitividad. Estos medios de pago incluyen tarjetas de crédito, débito, transferencias electrónicas, billeteras digitales y criptomonedas, entre otros. </p>
+                            <p>Al utilizar estos métodos, las pymes pueden simplificar sus procesos de pago, aumentar la eficiencia y brindar una experiencia más conveniente a sus clientes, además, uno de los beneficios más destacados es la agilidad en las transacciones. Los pagos en efectivo y los cheques pueden ser lentos y engorrosos, requiriendo un seguimiento y una mayor gestión. </p>
+                            <p>Los medios digitales de pago permiten transacciones instantáneas y facilitan la gestión de registros financieros. Esto no solo ahorra tiempo, sino que también reduce el riesgo de errores humanos en el proceso.</p>
+                            <p>Además, el uso de medios digitales de pago brinda una mayor seguridad. Las transacciones electrónicas suelen estar respaldadas por medidas de seguridad robustas, como la autenticación de dos factores, lo que protege a las pymes y a sus clientes de fraudes y robos. La eliminación del manejo de efectivo y cheques también reduce el riesgo de pérdida o robo de fondos en las instalaciones de la empresa.</p>
+                            <p>La aceptación de medios digitales de pago puede ayudar a las pymes a expandir su base de clientes. Cada vez más consumidores prefieren realizar transacciones electrónicas, ya que son más convenientes y seguras. Al ofrecer una variedad de opciones de pago, es posible atraer a un público más amplio y satisfacer las necesidades de diferentes segmentos de mercado.</p>
+                            <p>Los sistemas de medios digitales de pago generan registros electrónicos que facilitan la contabilidad y la presentación de informes financieros. </p>
+                            <p>Sin embargo, la implementación de medios digitales de pago en las pymes no está exenta de desafíos. Uno de los principales desafíos es la inversión inicial requerida para adquirir y configurar los sistemas de pago electrónicos. Esto puede incluir la compra de equipos, software y capacitación del personal. </p>
+                            <p>Además, la seguridad cibernética es una preocupación constante en el mundo de los medios digitales de pago. Es importante que las empresas garanticen que sus sistemas estén actualizados y protegidos contra amenazas cibernéticas. </p>
+                            <p>La introducción de medios digitales de pago en las pymes es una tendencia crucial en la actualidad, a pesar de los desafíos iniciales, la inversión en estos sistemas se convierte en un retorno significativo a largo plazo. Las pymes que adoptan medios digitales de pago están mejor posicionadas para competir en un mercado en constante evolución y satisfacer las expectativas de sus clientes.</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los medios de pago digitales?</span></h2>
-                    
+                        <h3 class="mt-3"><i class="num">1</i> Definición </h3>
+                        <p>Los medios de pago digitales hacen referencia a los distintos métodos que una empresa adopta para recibir pagos por la prestación de productos y servicios. Esos medios digitales evitan o reducen el uso de dinero en efectivo y pagos a través de cheques, lo cual contribuye al incremento en la demanda de productos y servicios y mejora la experiencia del cliente.</p>
+                        <p>Concretamente, los medios digitales de pago aluden a las transacciones económicas que se realizan por Internet a través de aplicaciones o plataformas web diseñadas para ofrecer estos servicios mediante dispositivos con conexión a Internet.</p>
+                                
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Ecosistema')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.1. Ecosistema digital de pagos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Ecosistema">1.1. Ecosistema digital de pagos</h4>
+
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('transacciones')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.2. Tipos de transacciones</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="transacciones">1.2. Tipos de transacciones</h4>
+
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Seguridad')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.3. Seguridad en las operaciones</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Seguridad">1.3. Seguridad en las operaciones</h4>
+
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('recomendaciones')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>1.4. Pasos y recomendaciones para implementar medios digitales de pago</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="recomendaciones">1.4. Pasos y recomendaciones para implementar medios digitales de pago</h4>
+
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>Acevedo, E. (2023). Guía práctica sobre los pagos digitales: qué son, tipos y beneficios. Tiendanube. Recuperado de https://www.tiendanube.com/mx/blog/pagos-digitales/</p>
+                        <p>Agencia de Gobierno Electrónico y Sociedad de la Informacion y Conocimiento. (2021). Medios de pago. Recuperado de https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/medios-pago</p>
+                        <p>Anilu-Platzi. (2020). 7 plataformas de comercio electrónico para tu negocio en 2021. Recuperado de https://platzi.com/blog/plataformas-comercio-electronico/?gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWQtcOS4TCZjWuGdc1lRNrjDA45ulWLlDsHrokDVfpp4rtvsu7KMhhwaAnOqEALw_wcB&amp;gclsrc=aw.ds</p>
+                        <p>AWS. (2023). ¿Qué es la ciberseguridad? Recuperado de https://aws.amazon.com/es/what-is/cybersecurity/</p>
+                        <p>Bello, E. (2022). ¿Qué es ecommerce y como crear tu propio comercio electrónico? Recuperado de https://www.iebschool.com/blog/comercio-online-ecommerce/</p>
+                        <p>Mendoza Castro, R. (2023). Shopify para ecommerce: Qué es y ventajas de Shopify en Blog de Semrush. Recuperado de https://es.semrush.com/blog/shopify-ecommerce-que-es/</p>
+                        <p>Kuo Chuen, D. L. y Deng, R. (2017). Handbook of Blockchain, Digital Finance, and Inclusion<em>, </em>Volume 1: Cryptocurrency, FinTech, InsurTech, and Regulation. Academic Press. DOI https://doi.org/10.1016/C2015-0-04334-9</p>
+                        <p>Colaborador de TechTarget. (2023). Autenticación multifactor o MFA. ComputerWeekly.es  Recuperado de https://www.computerweekly.com/es/definicion/Autenticacion-multifactor-o-MFA</p>
+                        <p>De Gracia, Oswaldo. (2022). El papel del Machine Learning en la detección de fraude. Recuperado de https://www.featurespace.com/es/newsroom/el-papel-del-machine-learning-en-la-deteccion-de-fraude/</p>
+                        <p>Gil, T. - Embat. (2023). Cómo la Inteligencia artificial permite evitar fraudes financieros. Blog Embat. Recuperado de https://www.embat.io/blog/como-la-inteligencia-artificial-permite-evitar-fraudes-financieros</p>
+                        <p>Jackson, B. (2023). WooCommerce vs Shopify: ¿Cuál Es Mejor para Su Tienda? Blog Kinsta. Recuperado de https://kinsta.com/es/blog/woocommerce-vs-shopify/</p>
+                        <p>El-Abed, M., Lacharme, P. y Rosenberg, C. (2015). Privacy and Security Assessment of Biometric Systems. Cambridge scholar publishing. Recuperado de https://www.researchgate.net/publication/280852762_Privacy_and_Security_Assessment_of_Biometric_Systems</p>
+                        <p>Molina, J. A. (2023). El 92% de las pymes en Latinoamérica acepta algún tipo de pago digital. El economista. Recuperado de https://www.eleconomista.com.mx/el-empresario/El-92-de-las-pymes-en-Latinoamerica-acepta-algun-tipo-de-pago-digital-20230612-0127.html</p>
+                        <p>Rodriguez, J. (2023). Qué es un marketplace: ejemplos, tipos y cómo funcionan. Blog de Hubspot. Recuperado de <a href="https://blog.hubspot.es/sales/que-es-marketplace">https://blog.hubspot.es/sales/que-es-marketplace</a> </p>
+                        <p>Santader. (2021). Pagos digitales: ¿qué son y cuáles son los más usados?: Santander. Recuperado de https://www.santander.com/es/stories/pagos-digitales-que-son-y-cuales-son-los-mas-usados</p> 
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/transformacion/1_Beneficios_potenciales_implementar_metodos_pago_digital.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/transformacion/2_Proceso_implementar_metodos_pago_digitales.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
-                <section class="seccion" *ngIf="Seccion==='Herramientas'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>settings</mat-icon> <span>Herramientas</span></h2>
-                        <div class="tool" *ngFor="let item of Tools">
-                            <h5><mat-icon>construction</mat-icon> {{item.Tema}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Recurso}}</a>
-                            <p>
-                                {{item.Descripcion}}
-                                <small>{{item.Observaciones}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Glosario'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>speaker_notes</mat-icon> <span>Glosario</span></h2>
-                        <div class="tool" *ngFor="let item of Words">
-                            <h5><mat-icon>speaker_notes</mat-icon> {{item.Palabra}}</h5>
-                            <p>
-                                {{item.Significado}}
-                                <small>{{item.Fuente}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="seccion" *ngIf="Seccion==='Expertos'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>psychology</mat-icon> <span>Expertos</span></h2>
-                        <div class="expert" *ngFor="let item of Experts">
-                            <h5><mat-icon>contact_emergency</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Contacto}}</a>
-                            <p>{{item.Descripcion}}</p>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Instituciones'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>account_balance</mat-icon> <span>Instituciones clave</span></h2>
-                        <div class="institution" *ngFor="let item of Institutions">
-                            <h5><mat-icon>account_balance</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='Literatura'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>auto_stories</mat-icon> <span>Literatura sugerida</span></h2>
-                        <div class="tool" *ngFor="let item of Books">
-                            <h5><mat-icon>auto_stories</mat-icon> {{item.Autor}} {{item.Titulo}}</h5>
-                            <p>{{item.Subtitulo}}</p>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-herramientas> 
 
-                <section class="seccion" *ngIf="Seccion==='WebSites'" @changeSection>
-                    <div class="container">
-                        <h2><mat-icon>travel_explore</mat-icon> <span>Sitios web</span></h2>
-                        <div class="tool" *ngFor="let item of Websites">
-                            <h5><mat-icon>travel_explore</mat-icon> {{item.Nombre}}</h5>
-                            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
-                        </div>
-                    </div>
-                </section>
+                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="Seccion" [Tools]="Books" @changeSection>
+                </app-herramientas> 
+
+                <app-herramientas *ngIf="Seccion==='WebSites'" [Title]="Seccion" [Tools]="Websites" @changeSection>
+                </app-herramientas> 
 
             </div>
         </div>

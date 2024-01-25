@@ -111,3 +111,25 @@ $blanco6:rgba(255,255,255,0.35);
         }
     }
 }
+
+.tools{
+    &.seccion{
+        background-color: var(--blanco);
+        color: var(--primary);
+        h2{
+            .mat-icon {
+                background-color: var(--primary);
+            }
+        }
+        .tool{
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid;
+            margin-bottom: 10px;
+            small{
+                display: block;
+            }
+            a{display: block;}
+        }
+    }
+}
