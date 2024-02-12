@@ -9,10 +9,12 @@ import { GlobalService } from '../../../Services/global.service';
 export class OrganizacionypersonasComponent {
     public links = [
         { Url: "culturaorganizacional/Introduccion", Nombre: "Cultura organizacional", Icono:"", Clase:"" },
-        // { Url: "logistica/Introduccion", Nombre: "Logística", Icono:"", Clase:"" },
-        // { Url: "procesosdenegocio/Introduccion", Nombre: "Procesos de negocio", Icono:"", Clase:"" },
+        { Url: "gestiontalentohumano/Introduccion", Nombre: "Gestión del talento humano en la era digital", Icono:"", Clase:"" },
+        { Url: "metricasentornosdigitales/Introduccion", Nombre: "Indicadores y métricas en entornos digitales", Icono:"", Clase:"" },
+        { Url: "estrategiasdenegocio/Introduccion", Nombre: "Estrategia de negocios en la era digital", Icono:"", Clase:"" },
     ];
     constructor(
         public _globalService: GlobalService
     ) {}
 }
+		

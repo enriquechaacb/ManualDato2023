@@ -8,13 +8,15 @@ import { GlobalService } from '../../../Services/global.service';
 })
 export class CanalesdeventaComponent {
   public links = [
-    { Url: "introduccion/Introduccion", Nombre: "_", Icono:"", Clase:"" },
-    // { Url: "planeacionyestretagiadigital/Introduccion", Nombre: "Planeación y estrategia digital", Icono:"", Clase:"" },
-    // { Url: "inteligenciadenegocio/Introduccion", Nombre: "Inteligencia de negocio", Icono:"", Clase:"" },
-    // { Url: "modelosdenegocio/Introduccion", Nombre: "Modelos de negocio", Icono:"", Clase:"" },
-    // { Url: "mediosdepago/Introduccion", Nombre: "Medios de pago digitales", Icono:"", Clase:"" },
+    { Url: "canalesdigitalesdecomunicacion/Introduccion", Nombre: "Canales digitales de comunicación", Icono:"", Clase:"" },
+    { Url: "canalesdeventa/Introduccion", Nombre: "Canales de venta", Icono:"", Clase:"" },
+    { Url: "ecommerce/Introduccion", Nombre: "Comercio electrónico", Icono:"", Clase:"" },
+    { Url: "digtalmarketing/Introduccion", Nombre: "Marketing digital", Icono:"", Clase:"" },
+    { Url: "gestiondeclientes/Introduccion", Nombre: "Gestión de clientes", Icono:"", Clase:"" },
+    { Url: "arquetiposdeclientes/Introduccion", Nombre: "Arquetipos de clientes", Icono:"", Clase:"" },
 ];
 constructor(
     public _globalService: GlobalService
 ) {}
 }
+					

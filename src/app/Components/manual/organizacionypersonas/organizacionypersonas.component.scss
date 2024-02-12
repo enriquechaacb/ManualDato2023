@@ -153,23 +153,11 @@
                     background-color: var(--warn);
                 }
             }
-            // &:nth-child(4){
-            //     span{
-            //         background-color: var(--grey);
-            //         color: var(--negro75) !important;
-            //         &:hover{color: var(--blanco) !important;}
-            //     }
-            // }
-            // &:nth-child(5){
-            //     span{
-            //         background-color: var(--green);
-            //     }
-            // }
-            // &:nth-child(6){
-            //     span{
-            //         background-color: var(--organizacion);
-            //     }
-            // }
+            &:nth-child(4){
+                span{
+                    background-color: var(--green);
+                }
+            }
         }
     }
     .goback{
@@ -245,41 +233,29 @@
                     }
                 }             
                 &:nth-child(1){
-                    transform: translate(-30px, -210px);
+                    transform: translate(-193px, -180px);
                     &:hover{
-                        transform: translate(-30px, -210px) scale(1.5) rotate(360deg);
+                        transform: translate(-193px, -180px) scale(1.5) rotate(360deg);
                     }
                 }
                 &:nth-child(2){
+                    transform: translate(141px, -180px);
+                    &:hover{
+                        transform: translate(141px, -180px) scale(1.5) rotate(360deg);
+                    }
+                }
+                &:nth-child(3){
                     transform: translate(-193px, 82px);
                     &:hover{
                         transform: translate(-193px, 82px) scale(1.5) rotate(360deg);
                     }
                 }
-                &:nth-child(3){
+                &:nth-child(4){
                     transform: translate(141px, 82px);
                     &:hover{
                         transform: translate(141px, 82px) scale(1.5) rotate(360deg);
                     }
                 }
-                // &:nth-child(4){
-                //     transform: translate(-183px, 170px);
-                //     &:hover{
-                //         transform: translate(-183px, 170px) scale(1.5) rotate(360deg);
-                //     }
-                // }
-                // &:nth-child(5){
-                //     transform: translate(-314px, -80px);
-                //     &:hover{
-                //         transform: translate(-314px, -80px) scale(1.5) rotate(360deg);
-                //     }
-                // }
-                // &:nth-child(6){
-                //     transform: translate(-130px, 170px);
-                //     &:hover{
-                //         transform: translate(-130px, 100px) scale(1.5);
-                //     }
-                // }
             }
         }
     }

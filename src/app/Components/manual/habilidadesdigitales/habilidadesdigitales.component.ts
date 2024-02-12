@@ -8,13 +8,14 @@ import { GlobalService } from '../../../Services/global.service';
 })
 export class HabilidadesdigitalesComponent {
   public links = [
-    { Url: "introduccion/Introduccion", Nombre: "_", Icono:"", Clase:"" },
-    // { Url: "planeacionyestretagiadigital/Introduccion", Nombre: "Planeación y estrategia digital", Icono:"", Clase:"" },
-    // { Url: "inteligenciadenegocio/Introduccion", Nombre: "Inteligencia de negocio", Icono:"", Clase:"" },
-    // { Url: "modelosdenegocio/Introduccion", Nombre: "Modelos de negocio", Icono:"", Clase:"" },
-    // { Url: "mediosdepago/Introduccion", Nombre: "Medios de pago digitales", Icono:"", Clase:"" },
+    { Url: "infraestructura/Introduccion", Nombre: "Infraestructura", Icono:"", Clase:"" },
+    { Url: "competenciasyhabilidadesdigitales/Introduccion", Nombre: "Competencias y habilidades digitales", Icono:"", Clase:"" },
+    { Url: "tecnologiashabilitantes/Introduccion", Nombre: "Tecnologías habilitantes", Icono:"", Clase:"" },
+    { Url: "herramientas/Introduccion", Nombre: "Herramientas", Icono:"", Clase:"" },
+    { Url: "ciberseguridad/Introduccion", Nombre: "Ciberseguridad", Icono:"", Clase:"" },
 ];
 constructor(
     public _globalService: GlobalService
 ) {}
 }
+				
