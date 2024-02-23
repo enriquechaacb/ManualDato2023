@@ -94,8 +94,8 @@ export class HerramientasComponent implements OnInit {
             case 'Glosario': this.Icon = 'speaker_notes'; this.IconList = 'speaker_notes'; break;
             case 'Expertos': this.Icon = 'psychology'; this.IconList = 'contact_emergency'; break;
             case 'Instituciones': this.Icon = 'account_balance'; this.IconList = 'account_balance'; break;
-            case 'Literatura': this.Icon = 'auto_stories'; this.IconList = 'auto_stories'; break;
-            case 'WebSites': this.Icon = 'travel_explore'; this.IconList = 'travel_explore'; break;
+            case 'Literatura sugerida': this.Icon = 'auto_stories'; this.IconList = 'auto_stories'; break;
+            case 'Sitios web': this.Icon = 'travel_explore'; this.IconList = 'travel_explore'; break;
         }
     }
 }

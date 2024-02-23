@@ -2,9 +2,10 @@
 
 @include mat.core();
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Shadows+Into+Light+Two&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-$app-typography: mat.define-typography-config($font-family: 'Montserrat');
+$app-typography: mat.define-typography-config($font-family: 'Open Sans');
 $light-theme: mat.define-light-theme(
     (
         color:(
@@ -83,7 +84,7 @@ body {
     //     background-attachment: fixed;
     // }
 }
-app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: 'Montserrat', "Helvetica Neue", sans-serif;}
+app-root{display: flex;min-height: 100vh;flex-direction: column;font-family: "Open Sans", "Helvetica Neue", sans-serif;}
 main {display:flex;flex-direction: column;flex: 1 0 auto;}
 header{z-index: 10;}
 footer{padding-top:10px;box-shadow: 0 0 20px var(--negro50);position: relative;z-index:2;}
@@ -93,12 +94,12 @@ p, li{font-size: 16px;line-height:28px;font-weight: 400;}
 
 section{
     position:relative;
-    .subtitle{font-family: 'Shadows Into Light Two', cursive;}
+    .subtitle{font-family: 'Open Sans', sans-serif;font-weight: 100;}
     &.title{
         padding: 20px 0;
         z-index: 9;
         h1{font-weight: 900;color: var(--blanco);}
-        h3{color: var(--blanco);}
+        h3{color: var(--blanco50);}
     }
     &.seccion{
         padding: 2em 0;
