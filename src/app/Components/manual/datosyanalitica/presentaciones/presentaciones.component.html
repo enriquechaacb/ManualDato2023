@@ -111,23 +111,23 @@
                     </div>
                 </section>
 
-                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
             </div>
         </div>
     </div>

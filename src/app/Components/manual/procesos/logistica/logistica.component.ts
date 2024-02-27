@@ -30,7 +30,7 @@ export class LogisticaComponent {
         public _thisroute: ActivatedRoute,
         public _globalService: GlobalService
     ) {
-        this.Secciones = sections;
+        this.Secciones = this._globalService.Secciones;
         this.Seccion = "Introduccion";
     }
     ngOnInit(): void {
@@ -41,22 +41,6 @@ export class LogisticaComponent {
     }
 
 }
-
-const sections = [
-    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
-    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
-    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
-    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
-    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
-    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
-    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
-    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
-    { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
-    { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
-    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
-    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
-]
-
 
 const words = [
     {Palabra:"WMS (Warehouse Management System)", Significado:"Es un Sistema de Gestión de Almacenes, el software permite administrar y controlar de manera eficiente las operaciones dentro de un almacén o centro de distribución. Facilita el seguimiento y la optimización de los flujos de inventario, los pedidos, la recepción y el despacho de mercancías.", Fuente:""},

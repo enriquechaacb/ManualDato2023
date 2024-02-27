@@ -1,0 +1,1029 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                  
+                  </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+            </div>
+            <div class="col">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        <div class="texto-video">
+                            <p>El desarrollo de las tecnologías de información y comunicación ha cambiado significativamente el acceso a los medios de comunicación en la función de promocionar productos y servicios.</p>
+                            <p>La transformación ha sido muy radical, el crecimiento sostenido de acceso a Internet y a dispositivos móviles ha transformado todo el entorno productivo y los medios de comunicación tradicionales (radio, televisión, cine, prensa), no han sido la excepción, han tenido que enfrentar el reto de la digitalización y ahora tienen dos vertientes, la tradicional y la digital.</p>
+                            <p>Esta evolución ha impulsado la creación de nuevos medios, los denominados digitales como las redes sociales y los sitios web, que actualmente marcan la tendencia de la comunicación y reconfiguran todo el proceso de comunicación e información.</p>
+                            <p>Vivimos en una sociedad en red que ha cambiado la forma de relacionarnos a través de diversas herramientas digitales, generando nuevas relaciones entre quienes emiten los mensajes, los intermediarios y el consumidor final, a quien se dirigen los mensajes.</p>
+                            <p>En este espacio, profundizaremos en los medios digitales de comunicación, sus características, sus alcances y posibilidades para aprovecharlos en este nuevo entorno productivo y, dar paso al diseño de estrategias que permitan responder a las demandas que impone la sociedad actual.</p>
+                            <p>Veremos qué son los canales digitales de comunicación y cómo las empresas pueden utilizarlos y contribuir a sus objetivos de negocio.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los canales digitales de comunicación?</span></h2>
+                        
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Definición de canales digitales de comunicación">
+                                <h3 class="mt-3"><i class="num">1</i> Definición de canales digitales de comunicación</h3>
+                                <div class="texto-video">
+                                    <p>Los canales digitales de comunicación hacen referencia a plataformas y medios en línea que las empresas utilizan para interactuar con su audiencia, promocionar sus productos o servicios y, construir relaciones activas con los clientes. </p>
+                                    <p>Es importante reforzar que los canales digitales de comunicación no son los mismos que los canales tradicionales, considerando que ambos poseen tiempos de respuesta y distribución diferentes. </p>
+                                    <p>Los canales tradicionales son aquellos que han utilizado los negocios a partir del siglo XX, como periódicos impresos, carteles, radio y televisión. Los canales digitales son aquellos que se utilizan principalmente a través de Internet éstos incluyen sitios web, redes sociales, correo electrónico, aplicaciones móviles y blogs, entre otros.</p>
+                                </div>
+                                <p>Da Silva (2021) define los medios digitales como “herramientas de visibilidad y posicionamiento en línea, con las que puedes optimizar tus relaciones con tus clientes actuales y potenciales, comunicándote con ellos a través del canal más efectivo”.</p>
+                                <p>Por su parte, Hotmart (2023) define los medios digitales como “cualquier comunicación realizada a través de internet. Algunos ejemplos de ello son las publicaciones en Instagram o Meta, antes Facebook, los banners en sitios webs, los ebooks, los videos, etc.”.</p>
+                            </mat-tab>
+                            <mat-tab label="Tipos de canales digitales">
+                                <h3 class="mt-3"><i class="num">2</i> Tipos de canales digitales </h3>
+                                <div class="texto-video">
+                                    <p>Por su alcance, los canales digitales se pueden dividir en categorías, los propios, los externos o de paga y los ganados. </p>
+                                    <h5>Medios propios.</h5>
+                                    <p>Son aquéllos que las empresas crean para presentar información relacionada con lo que ofrecen, es decir, tienen una puerta de acceso digital donde hablan de sí mismas y brindan información más detallada de sus productos y servicios. Su característica principal es que los mensajes de comunicación son totalmente controlados por la marca o negocio. Los medios propios pueden ser una página web, blogs y redes sociales o aplicaciones móviles, entre otros. </p>
+                                    <h5>Medios externos o pagados</h5>
+                                    <p>Los medios externos o de paga, son canales de comunicación creados y administrados por terceros, como redes sociales, plataformas de publicidad en línea, sitios web informativos, de reseñas, y desde luego, buscadores como Facebook Ads o Google Ads, donde la marca o negocio también controla el mensaje que transmite, pero que tiene que pagar por dicho servicio. </p>
+                                    <p>Estos medios digitales externos se caracterizan precisamente por ser de paga; los que la empresa elige para alcanzar nuevos públicos o permanecer en la mente de las personas que ya los conocen. </p>
+                                    <h5>Medios ganados.</h5>
+                                    <p>Los medios digitales ganados son aquellos en los que un tercero decide mencionar o hablar de la marca, el o los productos o servicios que ofrece una empresa, por su propia voluntad; son reacciones sinceras y espontáneas. Esto sucede cuando los consumidores, influencers u otro medio recomiendan a la empresa, sus productos o servicios y comparten sus publicaciones o los mencionan en redes sociales de forma positiva. Su principal característica es que la empresa no controla estos medios y dependen 100% de un tercero.</p>
+                                </div>
+                                <p>En el siguiente cuadro se observan las características, ventajas y ejemplos de los tres tipos de medios. </p>
+                                <p>Características, ventajas y ejemplos de tipos de medios.</p>
+                                <img src="../../../../../assets/images/dimensions/canales/3_Características_ventajas_ejemplos_medios.webp" class="img-fluid" />
+                                <separator></separator>
+                            </mat-tab>
+                            <mat-tab label="Canales digitales de comunicación">
+                                <h3 class="mt-3"><i class="num">3</i> Canales digitales de comunicación </h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('hosting')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.1. Sitio web administrador de contenidos hosting</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="hosting">3.1. Sitio web administrador de contenidos hosting</h4>
+                                        <p>En los inicios de Internet crear un sitio web suponía realizar tareas complicadas que pocas personas podían llevar a cabo. Con el tiempo, han surgido opciones más sencillas que prácticamente todo el mundo puede realizar. </p>
+                                        <p>De acuerdo con De Souza (2022), “un sitio web es el conjunto de páginas ordenadas en un servidor de Internet al que se accede desde un dominio”.</p>
+                                        <p>Para contar con un sitio web es necesario entender que éste se compone de un dominio para asignar su dirección web, un servidor para almacenar los archivos y la información que se presenta y, un sistema de gestión de contenidos (CMS por sus siglas en inglés) para administrar la producción de contenidos (De Souza, 2022).</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Proceso')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.2. Proceso de creación de un sitio web</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Proceso">3.2. Proceso de creación de un sitio web</h4>
+                                        <p>El proceso de creación de un sitio web lo podemos dividir en varias etapas:</p>
+                                        <h5>Etapa 1. Planeación de una idea para un sitio web</h5>
+                                        <p>Un sitio web puede tener diferentes funciones como informar, vender, ganar presencia en Internet o brindar atención a clientes. </p>
+                                        <p>Primero hay que definir los objetivos y preguntarse ¿qué se quiere lograr con el sitio web de la empresa? puede ser aumentar las ventas, generar leads, mejorar la visibilidad de la marca, etc. </p>
+                                        <p>Es importante identificar al público objetivo, para ello sugerimos ver el apartado de arquetipos de clientes. Comprender quiénes son los clientes, qué medios consultan, qué necesitan, permitirá seleccionar los medios más adecuados para el negocio.</p>
+                                        <p>Investigar a la competencia también es una buena práctica para analizar qué hacen los competidores, ello permitirá tener ideas y conocer las tendencias de la industria. </p>
+                                        <p>Según los objetivos de la empresa se hace una planeación del tipo y características del sitio web. A continuación, se describen los diferentes tipos: </p>
+                                        <ul>
+                                        <li>Una tienda <em>online </em>se utiliza para vender productos de todo tipo en línea. </li>
+                                        <li>Un blog se utiliza para compartir periódicamente información sobre un tema específico. </li>
+                                        <li>Un portafolio digital se utiliza para mostrar visualmente información sobre proyectos particulares como fotografía, arte y música, entre otros.  </li>
+                                        <li>Una página web informativa se utiliza para informar sobre un negocio. </li>
+                                        <li>Una <em>landing page</em> se utiliza para promocionar una campaña de <em>marketing</em>.</li>
+                                        </ul>
+                                        <p>Estos tipos de sitios web pueden combinarse entre sí, por ejemplo, una tienda en línea con un blog. Lo indispensable es que cumpla con los objetivos que la empresa está buscando alcanzar.</p>
+                                        <h5>Etapa 2. Elección, nombre y registro de dominio</h5>
+                                        <p>Una vez que se tiene claro el objetivo del sitio web, se continúa con la elección del dominio y el alojamiento.</p>
+                                        <p>Se debe empezar por seleccionar el nombre del dominio, que sea relevante para la empresa y fácil de recordar, con dicha definición se procede a hacer el registro del dominio, hay que asegurarse que pueda ser utilizado por la empresa. En ocasiones los dominios ya están adquiridos por otras personas o empresas por lo que no es posible comprarlos. </p>
+                                        <p>El dominio también es conocido como Localizador de Recursos Uniforme (URL por sus siglas en inglés). Para entrar al sitio web, los visitantes deben escribir en la barra del navegador el nombre y con ello, acceder a la información del negocio.</p>
+                                        <p>La compra del dominio se debe registrar, llevándose a cabo a través de proveedores locales de cada país o bien internacionales, como Godaddy. </p>
+                                        <h5>Etapa 3. Hospedaje web </h5>
+                                        <p>Los servicios de hospedaje web aseguran que el sitio web tenga un lugar para vivir en línea, haciéndolo accesible para cualquier persona en Internet. En él estarán guardadas todas las páginas, imágenes y archivos del sitio.</p>
+                                        <p><br />Para seleccionar el hospedaje web ideal es necesario evaluar el tamaño del sitio (es conveniente adquirir uno grande cuantos más archivos se tenga), la proyección de accesos al día y, por último, el presupuesto disponible. <br /><br />Éste puede ser adquirido a través de la misma empresa a la que se le compró el dominio o bien a través de otra. Lo ideal es que se compren al mismo tiempo. </p>
+                                        <h5>Etapa 4. Plataforma para construir el sitio web</h5>
+                                        <p>Hoy en día existen sistemas de administración de contenido (CMS por sus siglas en inglés) que ayudan a crear, administrar y modificar contenido en un sitio web sin la necesidad de conocimientos técnicos especializados, haciendo que la creación de un sitio web sea más sencilla.</p>
+                                        <p>Los sistemas ofrecen diversidad de temas listos para usar de manera gratuita, que se pueden combinar y personalizar para mostrar la marca o el negocio. Asimismo, tienen características adicionales que puedes adquirir por un pago, optimización SEO, entre otras.</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/4_Opciones_disenar_sitio_web.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Los CMS permiten a los usuarios crear y editar contenido de manera colaborativa, administrar usuarios y roles, y gestionar la estructura y la apariencia del sitio web. Estas plataformas suelen ofrecer características como la gestión de SEO, la integración de medios, la programación de publicaciones y la gestión de comentarios, entre otras.</p>
+                                        <h5>Etapa 5. Estructura del sitio web</h5>
+                                        <p>Una vez seleccionada la plataforma, el tipo de sitio web, el dominio y el hospedaje web es momento de planificar la estructura del sitio. Se deben elegir las páginas que se quieren agregar al sitio web. Esto dependerá del tipo de sitio web, de la información que se desea compartir con los visitantes y el objetivo que se busca con el sitio. De acuerdo con De Souza (2022) algunas de las páginas más comunes son: </p>
+                                        <ul>
+                                            <li>Página de inicio, con imágenes de inicio o una imagen y frases destacadas. </li>
+                                            <li>Quiénes somos, contando la historia de la empresa y, en ocasiones, del equipo de trabajo. </li>
+                                            <li>Productos o servicios, con una lista de lo que ofrece la empresa. </li>
+                                            <li>Clientes, destacando habitualmente los más importantes y conocidos. </li>
+                                            <li>Cartera o casos de éxito principales, como una forma de demostrar que la empresa es confiable y cumple lo que promete. </li>
+                                            <li>Contacto vía formulario, además de direcciones, email y teléfonos.</li>
+                                        </ul>
+                                        <p>Éstas son las más comunes, si bien se deben considerar las necesidades y los objetivos de la empresa. Una forma de visualizar las páginas es hacer un mapa tal como se muestra en el diagrama de estructura que se presenta a continuación y que permitirá tener mayor claridad sobre el contenido a colocar en el sitio web.</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/5_Estructura_sitio_web.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Etapa 6. Diseño y contenido para el sitio web</h5>
+                                        <p>El aspecto del sitio web juega un papel crucial para causar una primera y buena impresión a quien visite el sitio y para el éxito de éste. Una vez que se tiene el mapa del sitio, se debe pasar a seleccionar la plantilla ideal. De acuerdo con el CMS seleccionado, habrá una gran variedad para escoger. En algunos casos será gratuita y en otros casos puede tener un costo.</p>
+                                        <p>Una vez seleccionada la plantilla es momento de personalizarla con los colores de la marca o del negocio, el logotipo, así como los contenidos y las imágenes que representen lo que se busca transmitir.</p>
+                                        <p>El contenido visual y escrito del sitio web determina cómo interactúan los visitantes con él y, en última instancia, si están interesados en los servicios o productos que ofrece el negocio.</p>
+                                        <p>Por otro lado, la creación de contenido es una parte clave del sitio web. La mayoría utiliza una combinación de contenido diferente, es decir, texto, imágenes, gráficos y videos para transmitir la información de una manera más interesante, atraer clientes y retener visitantes. Es importante tomarse el tiempo para escribir lo que se busca comunicar a través del sitio web e investigar qué tipo de contenido lo complementa mejor. Al final, el contenido debe alinearse con los objetivos del sitio web. Por ejemplo, si el objetivo es presentar un nuevo producto, un video promocional podría ser la mejor manera de hacerlo. </p>
+                                        <h5>Etapa 7. Herramientas profesionales</h5>
+                                        <p>Esta etapa dependerá del objetivo que se busca con el sitio web. Los CMS tienen opciones de gestión empresarial para profesionalizar el sitio, tales como reservas y pagos en línea. </p>
+                                        <p>Entre las herramientas complementarias para pagos en línea se encuentra Shopify, Squarespace, WooCommerce, Square, entre las más conocidas. </p>
+                                        <p>Para la gestión de reservas en línea, citas o mostrar disponibilidad de espacios se encuentran las plataformas de Open Table, Eventbrite, Stripe y Booker. </p>
+                                        <p>Para profundizar en los servicios que ofrecen estas plataformas, sugerimos consultar el espacio de canales de venta en esta misma dimensión temática o el espacio de medios de pago digitales que se encuentra en la dimensión de Estrategia y transformación digital.</p>
+                                        <h5>Etapa 8. Revisar y publicar el sitio web</h5>
+                                        <img src="../../../../../assets/images/dimensions/canales/6_Elementos_revisar_funcionamiento_sitio_web.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Una vez completada la revisión y verificar que todo funcione correctamente, es momento de publicar el sitio web.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Blogs')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.3. Blogs</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Blogs">3.3. Blogs</h4>
+                                        <p><strong>3.3.1. Definición de blogs</strong></p>
+                                        <div class="texto-video">
+                                            <p>Un blog brinda la oportunidad de presentar a una empresa como un referente en su sector y así ganar la confianza de las personas, además de que es una fuente de tráfico hasta que genera oportunidades de negocio de manera efectiva.</p>
+                                            <p>De acuerdo con Londoño (2023): Los blogs son un conjunto de páginas web que consisten en la publicación de contenidos; se actualizan con regularidad y pueden tener fines personales o empresariales. Comunican por medio de entradas o artículos sobre un tema o grupo de temas relacionados con información de valor, novedosa o atractiva para una audiencia específica.</p>
+                                            <p>Los blogs se conforman de artículos tipo bitácora que son contenidos que se publican cada cierto tiempo. Éstos pueden ser textos, imágenes o videos, lo necesario para comunicar lo que la empresa o marca quiere promocionar, dar a conocer o comunicar. </p>
+                                        </div>
+                                        <p><strong>3.3.2. Cómo funcionan los blogs</strong></p>
+                                        <p>Los blogs operan como los sitios webs, sin embargo, éstos tienen un compendio de publicaciones en donde se dan a conocer temas de valor para los visitantes.<br /><br />Un blog se administra y se ordena según los criterios de clasificación que mejor convengan para facilitar la navegación del visitante y la búsqueda de contenidos. Algunos se organizan cronológicamente, es decir, los artículos más recientes son los primeros en visualizarse. También se pueden clasificar según los temas de lo que se escribe, por ejemplo, si tenemos un blog sobre cómo crear sitios web, las etiquetas podrían ser: sitios web, herramientas y CMS, entre otros.</p>
+                                        <p><strong>3.3.3. Proceso de creación de un blog empresarial</strong></p>
+                                        <h5>Etapa 1. Definición de objetivos</h5>
+                                        <p>Para crear un blog empresarial es importante definir los objetivos que persigue. Es indispensable entender por qué se desea implementar un blog. Se pueden tener diferentes objetivos, como la generación de tráfico a sitios web, la obtención de prospectos o convertirse en un referente en una cierta industria. Esto ayudará a definir la estrategia a implementar y seleccionar los temas que se escribirán en el blog.</p>
+                                        <p>Además, se debe reconocer el tiempo que se busca para generar resultados. Si se busca que sean a corto plazo, se deberá invertir en publicidad. Si son a mediano plazo, se pueden utilizar técnicas de posicionamiento orgánico en buscadores.  </p>
+                                        <h5>Etapa 2. Definición de área de especialización</h5>
+                                        <p>El área de especialización constituye el tema principal que tendrá el blog. Si se está planeando desde una empresa ya establecida pudiera ser más sencillo definirlo porque puede utilizar sus productos, servicios o conocimiento para hacerlo.</p>
+                                        <p>Por ejemplo, si una marca de ropa crea su blog, su especialización podría ser la moda. <br /><br />Ahora bien, si todavía no se tiene un negocio, se está construyendo la empresa o es una marca personal y se desea incursionar en Internet utilizando un blog, es necesario tener en cuenta lo siguiente: </p>
+                                        <ul>
+                                        <li>Elegir un área donde se sea un especialista o se tenga mucho interés. </li>
+                                        <li>Buscar áreas que tengan alta demanda, es decir, que haya una gran cantidad de personas buscando esos temas.</li>
+                                        <li>Preferir áreas con poca competencia y ofrecer algo diferente de lo que ya está disponible en Internet. </li>
+                                        </ul>
+                                        <p>En cualquiera de los casos, es importante conocer la demanda que tiene el tema principal para desarrollar el blog. Una herramienta que permite entender qué están buscando las personas en un lugar específico es Google Trends. Es una base de datos registrada en el motor de búsqueda de Google que muestra los resultados de una manera dinámica y gráfica, la frecuencia de temas y los términos de búsqueda en un determinado lapso.</p>
+                                        <p>Dicha herramienta permitirá conocer la cantidad de búsquedas sobre la especialización del blog que han sido de interés, facilitando con ello la selección. </p>
+                                        <h5>Etapa 3. Definición de arquetipos</h5>
+                                        <p>En un mundo digital tan competitivo como el de hoy, tener un blog enfocado y dirigido a personas específicas es esencial para el éxito de cualquier empresa que crea contenido. Una de las bases fundamentales para lograr esta efectividad es la creación de un arquetipo.</p>
+                                        <p>Al identificar y definir claramente los arquetipos de clientes, se puede orientar el contenido del blog hacia los intereses y necesidades específicas de dicho cliente. Esto asegura que cada publicación sea relevante y atractiva para los lectores, lo que aumenta la probabilidad de que permanezcan en el sitio y regresen en el futuro.</p>
+                                        <p>Para ampliar la información del tema, sugerimos revisar el tema de Arquetipos de clientes que se encuentra en la presente dimensión temática.</p>
+                                        <h5>Etapa 4. Definir el nombre del blog</h5>
+                                        <p>El nombre del blog debe ser fácil de recordar y que explique al lector qué información encontrará al ingresar en él. De esta manera será más sencillo atraer al público objetivo. Si ya se cuenta con un negocio, se puede utilizar el mismo nombre, pero si se está empezando, una buena idea es pensar nombres simples y directos. </p>
+                                        <h5>Etapa 5. Selección de una plataforma para el blog</h5>
+                                        <p>Una vez que se tiene el nombre del blog, el arquetipo de cliente que se desea alcanzar y la especialización del blog, es momento de seleccionar la plataforma donde se habilitará.</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/7_Plataformas_ideales_blog.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Una vez que hayas seleccionado la plataforma ideal para realizar tu blog, crea tu cuenta y selecciona una de las plantillas que tienen para empezar con el diseño. Es importante que se seleccione una plantilla o diseño acorde con la imagen de la empresa, negocio o marca.</p>
+                                        <h5>Etapa 6. Adquirir el dominio y hospedaje web</h5>
+                                        <p>Una vez seleccionada la plataforma donde se habilitará el blog, el siguiente paso es determinar el dominio y el hospedaje web. El primero es la dirección que los visitantes deben escribir en la barra del navegador para llegar al blog y el segundo es el lugar en línea para que esté disponible para cualquier persona en Internet.</p>
+                                        <p><strong>3.3.4. Creación de contenidos para un blog</strong></p>
+                                        <p>Después de tener el blog listo, llega el momento más importante: crear los contenidos que se publicarán en el blog.</p><img src="../../../../../assets/images/dimensions/canales/7_Plataformas_ideales_blog.webp" class="img-fluid" />
+                                        <img src="../../../../../assets/images/dimensions/canales/8_Pasos_crear_blog.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Por otro lado, es importante asignar una periodicidad de publicación, habrá que definir cuándo se publicarán los contenidos y, sobre todo, cuándo se escribirán. Para esto, se sugiere utilizar un calendario editorial. Los principales elementos que debe llevar son: </p>
+                                        <ul>
+                                            <li>Título del post. </li>
+                                            <li>Palabra clave. </li>
+                                            <li>Volumen de búsqueda mensual de la palabra. </li>
+                                            <li>Redactor. </li>
+                                            <li>Fecha de publicación. </li>
+                                            <li>Estatus. </li>
+                                            <li>Observaciones. </li>
+                                        </ul>
+                                        <p>En la sección de Caja de herramientas se presenta una plantilla útil para aplicarla al blog del negocio o empresa.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Redes')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.4. Redes sociales</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Redes">3.4. Redes sociales</h4>
+                                        <p><strong>3.4.1. Definición de redes sociales</strong></p>
+                                        <div class="texto-video">
+                                            <p>Las redes sociales digitales son plataformas en línea que permiten a las personas y a las organizaciones crear perfiles, compartir contenido, interactuar y conectarse con otros usuarios en la red.</p>
+                                            <p>Las redes sociales tal como las conocemos hoy se han logrado conformar gracias a la unión de un conjunto de personas con intereses en común que se han encontrado en un entorno virtual, convirtiéndose en grupos o comunidades.</p>
+                                            <p>La principal función de las redes sociales es conectar personas dentro del mundo virtual (Rockcontent, 2019). Esto ha permitido que los usuarios de éstas y las comunidades sean los protagonistas.</p>
+                                            <p>Estas plataformas facilitan la comunicación y la interacción en línea, lo que permite a los usuarios establecer relaciones, compartir información y participar en comunidades virtuales.</p>
+                                            <p>Estas plataformas han transformado la manera en que las personas se conectan, comparten información y se mantienen informadas en la era digital.</p>
+                                        </div>
+                                        <p><strong>3.4.2. Definición de estrategia para redes sociales</strong></p>
+                                        <div class="texto-video">
+                                            <p>Derivado de esas nuevas formas de comunicación e interacción en la red, utilizar y aprovechar las redes sociales digitales es una excelente estrategia para mejorar la visibilidad de la empresa, negocio o marca. Permite interactuar con los clientes y generar ventas, además de contribuir a mejorar la reputación de la marca.</p>
+                                            <p>Para optimizar al máximo el uso de las redes sociales, Newberry y Wood (2022) sugiere definir todo por escrito, es decir, hacer una planeación del uso y consiste en elaborar “un documento que describa los objetivos en redes sociales, las estrategias y tácticas que se emplearán y las métricas que permitirán medir el progreso”.</p>
+                                            <p>La implementación y seguimiento de este documento hará que las personas involucradas tengan una guía de hacia dónde se dirigen y evitar errores, como publicar contenido “sólo por publicar”.</p>
+                                            <p>Es de vital importancia generar contenido con un objetivo y pensando en quién estará visualizando.</p>
+                                            <p>Para implementar una estrategia de redes sociales, a continuación, se describen las etapas para llevarlo a cabo. </p>
+                                        </div>
+                                        <h5>Etapa 1. Establecer objetivos de redes sociales con base en los objetivos comerciales</h5>
+                                        <p>El primer paso para crear una estrategia es definir qué se espera lograr con la presencia en las redes sociales. Es crucial que dichas estrategias aporten a los objetivos comerciales que la empresa tenga definidos.</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/9_Metricas_redes_sociales.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Las métricas de redes sociales permiten evaluar si la estrategia está funcionando, además de que mostrarán cómo se puede mejorar. Sin métricas, no hay forma de entender qué está pasando con el negocio y una forma de estar al tanto es a través de las redes sociales. </p>
+                                        <p>Según Núñez (2018) los objetivos más comunes de uso de redes sociales son: </p>
+                                        <ul>
+                                            <li>Aumentar la comunidad online en una o más redes sociales.</li>
+                                            <li>Aumentar la reputación online, es decir dar a conocer tu marca en las redes sociales.</li>
+                                            <li>Conseguir prospectos y clientes.</li>
+                                            <li>Mejorar la satisfacción de los clientes y seguidores.</li>
+                                            <li>Fidelizar a tus seguidores.</li>
+                                            <li>Generar interacción con los seguidores.</li>
+                                            <li>Promocionar a la empresa y sus respectivos productos o servicios.</li>
+                                            <li>Vender productos o servicios en Internet. </li>
+                                        </ul>
+                                        <img src="../../../../../assets/images/dimensions/canales/10_Ejemplo_objetivos_redes_sociales.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <h5>Etapa 2. Aprender y definir el arquetipo de cliente </h5>
+                                        <p>Se debe tener en cuenta que en las redes sociales existen diversos tipos de usuarios, por lo que es importante segmentar a quiénes se dirige la empresa para determinar elementos importantes de la estrategia como son: definir cómo se va a dirigir a éstos, cuándo y a qué hora publicar, y en qué red social se debe tener presencia, entre otros elementos.</p>
+                                        <p>La creación del arquetipo de clientes será el gran paso para conocer a la audiencia a la que la empresa se dirige. Como se ha explicado, es un personaje semificticio que representa al cliente ideal. Para crearlo es necesario investigar y analizar patrones de comportamiento, así como características demográficas e intereses.</p>
+                                        <p>Para crear un arquetipo, sugerimos consultar la sección “arquetipos de cliente” de esta dimensión temática.</p>
+                                        <h5>Etapa 3. Conocer a la competencia</h5>
+                                        <p>Si una marca está en redes sociales significa que también lo está su competencia, por lo que será importante hacer un análisis de la competencia para entender qué es lo que están haciendo bien y lo que no con la intención de encontrar áreas de oportunidad. </p>
+                                        <p>Los elementos más importantes que se deben considerar al momento de hacer un análisis de la competencia son: </p>
+                                        <ul>
+                                            <li>Redes sociales donde se tiene presencia y la cantidad de seguidores en cada una. </li>
+                                            <li>Días y horarios de publicación. </li>
+                                            <li>Qué tipos de contenidos suben y cuáles tienen mejores resultados. </li>
+                                            <li>Qué dicen de ellos en redes sociales, por ejemplo, en menciones o recomendaciones de Facebook.  </li>
+                                        </ul>
+                                        <p>Con esta información se podrán evaluar cuáles son las oportunidades que la empresa tiene frente a su competencia y hacer una estrategia acorde con los objetivos de la organización y enfocados a lo que se quiere lograr.  </p>
+                                        <h5>Etapa 4. Realizar auditoría de redes sociales</h5>
+                                        <p>Si la empresa ya está utilizando las redes sociales, es conveniente hacer una pausa para hacer un recuento de los esfuerzos realizados. Se puede hacer con las siguientes preguntas: </p>
+                                        <ul>
+                                            <li>¿Qué ha funcionado bien y qué no?</li>
+                                            <li>¿Quién está interactuando con la empresa?</li>
+                                            <li>¿Cuáles son las publicaciones con más interacciones? ¿de qué temas hablan? </li>
+                                            <li>¿Qué redes utiliza la segmentación de mercados de la marca?</li>
+                                            <li>¿Cómo se compara la presencia de la empresa en redes sociales con la de la competencia?</li>
+                                            <li>¿Se puede usar esta cuenta para cumplir mis objetivos?  (identificar dónde se tiene presencia por cada red social) </li>
+                                        </ul>
+                                        <p>Una vez que se tenga esta información, se podrá continuar con el resto de las etapas, además de que se estará más informado sobre la situación actual de la empresa. </p>
+                                        <h5>Etapa 5. Selección de redes sociales</h5>
+                                        <p>Conocer en qué redes sociales está presente el arquetipo de cliente identificado por la empresa, es fundamental para que la inversión de los recursos se realice de manera eficiente. Es preferible tener pocos perfiles sociales bien trabajados a tenerlos todos descuidados por falta de recursos o tiempo.</p>
+                                        <p>Cada una de las redes sociales son diferentes entre sí, aunque algunas se parecen. Por tanto, se tendrá que adaptar el contenido a cada una de ellas, es decir, se deberá definir una estrategia que tenga en cuenta las particularidades de cada red social y no publicar lo mismo sin ajustarlo.</p>
+                                        <p>Hoy en día hay una gran cantidad y variedad de redes sociales. En la siguiente imagen se puede observar la clasificación de redes sociales de acuerdo con el número de usuarios a nivel global; en las primeras tres posiciones se encuentran Facebook (Meta), Youtube e Instagram.</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/11_Numero_usuarios_red_social_nivel_mundial.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Durante el 2022, las redes sociales más populares en Latinoamérica fueron Facebook, Instagram, TikTok y Twitter (X), considerando un sostenido incremento para los próximos años (Sarmiento, 2022).</p>
+                                        <p>En el siguiente cuadro se describen brevemente características importantes a considerar por cada una de las redes sociales mencionadas y que son de utilidad para aplicar de acuerdo con la empresa que desee utilizarla dentro de su estrategia. <br /><br />INFOGRAFIA Descripción de las redes sociales más utilizadas en Latinoamérica</p>
+                                        <img src="../../../../../assets/images/dimensions/canales/12_Descripcion_redes_sociales_utilizadas_Latinoamerica.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Es importante destacar que la descripción del cuadro precedente se elaboró durante los cambios internos de Twitter a X. </p>
+                                        <p>Una vez que se conocen las redes sociales más importantes a nivel global y en Latinoamérica es momento de seleccionar aquéllas que se utilizarán en la estrategia. Hay cuatro elementos para tener en cuenta:</p>
+                                        <ul>
+                                            <li>Número total de usuarios registrados en la plataforma. Si cuenta con una gran cantidad de usuarios es posible que los resultados tanto orgánicos como pagados tengan buen rendimiento. </li>
+                                            <li>Porcentaje de adopción del arquetipo de cliente. De acuerdo el arquetipo de cliente definido por la marca entender en qué red social se encuentra y sus actividades dentro de ésta. </li>
+                                            <li>Objetivos. La posibilidad de medición de las métricas que se definan de acuerdo con los objetivos buscados en la estrategia de redes sociales. </li>
+                                            <li>Variedad de tipos de contenidos. La posibilidad de implementar diversos contenidos como en directos, imágenes y videos, entre otros. </li>
+                                        </ul>
+                                        <p>Con estos elementos se pueden elegir las redes sociales en las que la marca tendrá presencia. Por ejemplo, si es un dentista que tiene como público a adultos desde los 18 años y padres de familia con hijos adolescentes, y busca generar citas, una buena opción es Meta antes Facebook por la publicidad y las edades de la audiencia a la que intenta llegar. </p>
+                                        <h5>Etapa 6. Plan de contenidos y calendario editorial</h5>
+                                        <img src="../../../../../assets/images/dimensions/canales/13_Proceso_implementar_estrategia_redes_sociales.webp" class="img-fluid" />
+                                        <separator></separator>
+                                        <p>Un reto importante de la definición del plan de contenido es la combinación adecuada de los contenidos. Del mismo modo que a nadie le gusta que una persona se la pase hablando de sí misma, lo mismo ocurre con las marcas. Esto se puede solucionar de dos formas: </p>
+                                        <h5>Regla 80/20</h5>
+                                        <p>80% de las publicaciones deberán informar, educar o entretener a la audiencia que siguen a la empresa en su red social. <br /><br />20% de las publicaciones pueden promocionar directamente a la empresa, sus productos o servicios. </p>
+                                        <h5>Regla de tercios</h5>
+                                        <p>Un tercio del contenido promociona el negocio.</p>
+                                        <p>Un tercio del contenido comparte contenido de valor que ayude a resolver problemas o necesidades del cliente.</p>
+                                        <p>Un tercio del contenido genera interacciones con la audiencia que sigue a la empresa en su red social. </p>
+                                        <p>Cualquiera de estas opciones es bueno. Sólo nos debemos asegurar que la selección ayude a alcanzar los objetivos definidos previamente.</p>
+                                        <p>Por otro lado, una vez que se haya elaborado el calendario de contenidos de redes sociales, se recomienda utilizar herramientas de programación con la finalidad de que los contenidos se publiquen de forma automática, sin la necesidad de estar actualizando las publicaciones varias veces al día. Se pueden usar herramientas de pago que tienen un periodo gratuito como Hootsuite o Sprout, o hacerlo de forma gratuita. </p>
+                                        <h5>Etapa 7. Creación de contenido</h5>
+                                        <p>Los contenidos hacen referencia a lo que una empresa define para compartir con su audiencia, el objetivo es generar interés, confianza, engagement y conversión; los formatos pueden ser variados y se deben diseñar de acuerdo con la estrategia de marketing de la empresa y responder a las necesidades, preferencias e intereses del público objetivo o arquetipo de cliente. Los contenidos a publicar en las redes sociales deben elaborarse de una manera estratégica y atractiva. </p>
+                                        <div class="texto-infografia">
+                                            <p>La anatomía de una publicación debe tener los siguientes elementos:</p>
+                                            <ul>
+                                                <li>Contenido relevante y de valor para la audiencia, basada en fuentes confiables y actuales. </li>
+                                                <li>Título llamativo y conciso, que capte la atención de los usuarios.</li>
+                                                <li>Una imagen o multimedia de alta calidad, que sea coherente con el contenido y el título; que aporte información o emoción adicional.</li>
+                                                <li>Pie de foto: Describe el contenido o atrae la atención con una declaración, pregunta o título. </li>
+                                                <li>Emojis. Incluir emojis relevantes al contenido añade interés visual </li>
+                                                <li>Llamada a la acción (Call-to-action) persuasivo que motive a los usuarios a realizar una acción específica. Se busca que las personas que vieron la publicación realicen una actividad en concreto, que puede ser un comentario, compartirlo, que visiten un sitio web, entre otros.  </li>
+                                                <li>Menciones. Se pueden mencionar otras cuentas para aumentar la visibilidad y alcance de la publicación. </li>
+                                                <li>Hashtags. Son etiquetas que se usan para clasificar y agrupar los contenidos que se comparten en redes sociales, según el tema, la categoría, o el propósito. Añadir hashtags ayuda a llegar a más personas y se escriben con el símbolo # seguido de una o más palabras clave, sin espacios ni signos de puntuación. Por ejemplo #marketing, #salud. Es importante no abusar de los hashtags, usar demasiados puede resultar confuso o derivarse en Spam. Se aconseja usar de 1 a 5 por publicación y dependerá siempre de la red social. </li>
+                                                <li>Imágenes o videos. Incluir uno o más, el objetivo es utilizar las necesarias para comunicar lo que se desea transmitir. </li>
+                                            </ul>
+                                        </div>
+                                        <p>Una vez conocida la anatomía de una publicación es momento de crearla. Para ello, hay que tener en cuenta:</p>
+                                        <ul>
+                                        <li>Idea: se debe tener claro qué es lo que se desea transmitir. </li>
+                                        <li>Contenido: seleccionar el mejor tipo de contenido para transmitir la idea, como imágenes, memes, infografías o videos, entre otros. </li>
+                                        <li>Herramientas: seleccionar la herramienta adecuada para realizar el contenido. La herramienta por excelencia, sencilla y fácil de usar es Canva (en la sección de Caja de herramientas la podrás encontrar). Con ella se pueden realizar todo tipo de imágenes y videos. Si se hace un Reel o Tiktok lo ideal es hacerlo dentro de la plataforma. </li>
+                                        <li>Pie de foto: texto que describa o aporte valor adicional al contenido, pudiendo incluir emojis, una llamada a la acción y hashtags. </li>
+                                        <li>Calendario editorial: se puede colocar en el calendario la próxima publicación o bien publicarla directamente en la red social.</li>
+                                        </ul>
+                                        <p>Ejemplo: En este video se muestra la creación de contenido para redes sociales. </p>
+                                        <p><a href="https://www.youtube.com/watch?v=T1zvo2q3igo">7 consejos para crear contenidos para redes sociales</a></p>
+                                        <h5>Etapa 8. Análisis de resultados</h5>
+                                        <div class="texto-infografia">
+                                            <p>En el momento de implementar el plan en redes sociales, podría ocurrirque no funcionen los contenidos como se anticipa o que otros estén marchando mejor de lo que se esperaba.</p>
+                                            <p>Cada red social tiene un apartado donde se pueden encontrar las estadísticas de la página, o bien se pueden utilizar herramientas externas de pago como Hootsuite o Sprout. Éstas deberán ser comparadas en función de los objetivos previamente creados.<br /><br />En el siguiente cuadro se muestra un ejemplo en el que no se alcanzó el objetivo. Por esta razón se tendrían que cambiar las estrategias y contenidos para que en el siguiente análisis se muestre una mejoría o superación del objetivo. <br /><br />INFOGRAFIA Ejemplo de análisis de objetivo</p>
+                                        </div>
+                                        <p>El análisis de resultados se recomienda hacerlo una vez al mes, de esa manera se podrán evaluar y decidir si se continua con la estrategia o hay que hacer cambios en las publicaciones. </p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Mensajería instantánea y chatbots">
+                                <h3 class="mt-3"><i class="num">4</i> Mensajería instantánea y chatbots </h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.1. Definición de mensajería instantánea y chatbots </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="definicion">4.1. Definición de mensajería instantánea y chatbots </h4>
+                                        <div class="texto-video">
+                                            <p>Según la empresa de atención al cliente Zendesk, el 32% de las organizaciones latinoamericanas utilizan la mensajería instantánea como parte de su estrategia de comunicación. Esto es debido a que el tiempo de resolución es más rápido y tiene la posibilidad de brindar soporte las 24 horas del día y los siete días de la semana. </p>
+                                            <p>La mensajería instantánea se define como una forma de comunicación en tiempo real entre dos o más personas. Ésta se hace a través de dispositivos conectados a una red como Internet o datos móviles sin importar la distancia que exista entre los participantes (Da Silva, 2022). </p>
+                                            <p>Por otro lado, Santos (2023) define a los chatbots como un “software que simula una conversación real con una persona gracias a una interfaz que se construye con palabras clave y se basa en interacciones que se repiten entre usuarios y marcas en sitios web”.</p>
+                                            <p>La inteligencia artificial ha permitido un avance considerable en el desarrollo de los chatbots, estas aplicaciones informáticas tienen el propósito de simular una conversación humana para establecer una comunicación con los clientes en un entorno comercial, esta se puede dar de forma textual o de voz. Al chatbot se le puede configurar para aprender cuáles son las peticiones frecuentes de los clientes y automatizar la interacción con ellos a nombre del negocio. </p>
+                                            <p>Hoy en día, ambos son indispensables para comunicarse con los clientes y prospectos con mayor rapidez. De acuerdo con Maram (2019) el 38% de las personas, tras escribir a las marcas, esperan respuesta en el intervalo de una hora.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.2. Diferencia entre mensajería instantánea y chatbots</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Diferencia">4.2. Diferencia entre mensajería instantánea y chatbots</h4>
+                                        <div class="texto-video">
+                                            <p>La diferencia sustancial entre la mensajería instantánea y los chatbots es quién contesta durante la conversación. Para el primer caso, principalmente es una persona la que brinda la respuesta al usuario o cliente, y en el segundo, se debe contemplar que es una aplicación que ofrece respuestas programadas y predeterminadas. </p>
+                                            <p>Es esencial identificar cuándo utilizar cada una de estas opciones. En el caso de la mensajería instantánea, todas las redes sociales tienen una integración que permite la comunicación entre la empresa y las personas. Es de utilidad en momentos particulares en los que se desea resolver diversas consultas y que no sean repetitivas.  </p>
+                                            <p>Por otro lado, se sugiere que se utilicen los chatbots cuando se tiene poca capacidad de gestionar y dar seguimiento a un alto nivel de mensajes. Las consultas suelen repetirse y pueden resolverse con respuestas estandarizadas. </p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Tipos')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.3. Tipos de mensajería instantánea.</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Tipos">4.3. Tipos de mensajería instantánea.</h4>
+                                        <p>De acuerdo con Statista (2023) las principales mensajerías instantáneas que se utilizan a nivel global son: WhatsApp, WeChat, Facebook Messenger y Telegram, por orden de importancia. Sin embargo, en Latinoamérica la principal mensajería instantánea es WhatsApp (Da Silva, 2022). </p>
+                                        <div class="texto-infografia">
+                                            <p><strong>Mensajerías instantáneas más utilizadas a nivel mundial</strong></p>
+                                            <p>Fuente: Statista (2023)</p>
+                                        </div>
+                                        <h5>WhatsApp Business</h5>
+                                        <p>De acuerdo con Pursell (2023), WhatsApp Business es una “aplicación de descarga gratuita, diseñada para ayudar a las empresas a establecer una comunicación efectiva con sus clientes a través de la plataforma WhatsApp”.</p>
+                                        <div class="texto-infografia">
+                                            <p>Dentro de sus características se encuentran: </p>
+                                            <ul>
+                                                <li>Perfil de empresa, donde se puede añadir la dirección, horario comercial, categoría, descripción, dirección de correo electrónico y sitio web de la empresa. </li>
+                                                <li>Respuestas automatizadas, las cuales permiten crear mensajes automatizados de hasta 200 caracteres que se enviarán cuando se reciba un mensaje o no se esté disponible. También se puede hacer con mensajes de bienvenida. </li>
+                                                <li>Identificación de chats, se pueden etiquetar y separarlos en categorías para tener una organización de los mensajes que se reciban. </li>
+                                                <li>Catálogo, el cual funciona como un escaparate de los productos o servicios de la empresa sin la necesidad de tener un sitio web. Además, se pueden compartir a través de un enlace y hacer un pedido a través del carrito sin salir de la aplicación. </li>
+                                            </ul>
+                                            <p>Sin duda, es una excelente opción para generar una conexión y seguimiento con los clientes desde una aplicación que es utilizada en los países de Latinoamérica.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Implementacion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.4. Implementación de chatbots en empresas</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Implementacion">4.4. Implementación de chatbots en empresas</h4>
+                                        <p>Si la empresa ha detectado que tiene la capacidad de implementar un chatbot, además de que encontró preguntas o consultas comunes que la aplicación informática puede responder, se sugiere seguir el siguiente proceso de implementación: </p>
+                                        <p><strong>4.4.1. Determinar el propósito del chatbot</strong></p>
+                                        <p>El objetivo principal de diseñar el uso de un chatbot es brindar un servicio que las personas puedan utilizar en repetidas ocasiones. Si bien el chatbot no lo puede resolver todo, lo ideal es tener claro para qué se usará. Por ejemplo, el chatbot de una empresa que vende a través de una tienda en línea puede responder preguntas frecuentes, como métodos de pago, rastreo de pedidos y devoluciones, entre otros.</p>
+                                        <p><strong>4.4.2. Seleccionar la plataforma de mensajería donde se colocará </strong></p>
+                                        <p>La selección de la plataforma de mensajería instantánea donde se colocará el chatbot dependerá de dónde se tenga una mayor cantidad de consultas. Dentro de las disponibles están Facebook Messenger, Instagram o WhatsApp. </p>
+                                        <p><strong>4.4.3. Selección de la plataforma de creación de chatbot</strong></p>
+                                        <p>Entre las plataformas donde las empresas pueden crear sus chatbot, podemos destacar: </p>
+                                        <div class="texto-infografia">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>1</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Manychat</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://manychat.com/es">https://manychat.com/es</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>2</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Hubspot</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.hubspot.es/">https://www.hubspot.es/</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>3</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Chatfuel</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://chatfuel.com/es">https://chatfuel.com/es</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>4</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Tidio</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.tidio.com/es-mx/">https://www.tidio.com/es-mx/</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Es importante destacar que todas las opciones tienen un periodo de prueba y, al superarlo, se hará un cobro. El precio depende de la plataforma.</p>
+                                        <p>Una vez creada la cuenta, se deberá unir el chatbot con la plataforma de mensajería instantánea para que se pueda implementar. Son pasos sencillos que cada plataforma comunicará dentro de la cuenta. </p>
+                                        <p><strong>4.4.4. Desarrollar flujo del chatbot </strong></p>
+                                        <p>Una vez que se haya creado una cuenta dentro de la plataforma seleccionada para desarrollar el chatbot, se debe iniciar con el flujo de preguntas y respuestas.</p>
+                                        <p>Siguiendo con el ejemplo de la tienda en línea y las preguntas frecuentes, cuando la persona escriba en la mensajería instantánea “método de pago”, el chatbot le dará las opciones disponibles como Paypal, tarjetas de crédito o débito, entre otros. <br /><br />De acuerdo con el propósito, se deben crear los flujos necesarios con las palabras clave que las personas escriban.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Optimización para motores de búsqueda (SEO)">
+                                <h3 class="mt-3"><i class="num">5</i> Optimización para motores de búsqueda (SEO) </h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('SEO')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.1. Definición de SEO </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="SEO">5.1. Definición de SEO </h4>
+                                        <div class="texto-video">
+                                            <p>Search Engine Optimization (SEO por sus siglas en inglés) significa optimización para motores de búsqueda y es la práctica recomendada y utilizada para posicionar la marca, un producto o servicio, o la empresa misma, de manera que aparezca en las primeras posiciones de búsqueda y Google, Yahoo o Bing, por citar algunos.</p>
+                                            <p>El SEO se reconoce como un posicionamiento orgánico y tiene que ver con todas las acciones que ejecutan en un sitio web y que están encaminadas a optimizar el posicionamiento en los buscadores de una forma orgánica, es decir, no pagadas.</p>
+                                            <p>Las búsquedas relacionadas con el sitio lo irán colocando entre los primeros resultados. Para ello, esta práctica emplea diversas estrategias, las cuales requieren de la atención del administrador del sitio web, ya que están basadas en la constancia, es decir, el sitio debe estar en revisión y mantenimiento constante del contenido y elementos que lo componen.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.2. Diferencia entre SEO y Marketing en Buscadores (SEM). </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Diferencia">5.2. Diferencia entre SEO y Marketing en Buscadores (SEM). </h4>
+                                        <div class="texto-video">
+                                            <p>Para las estrategias SEO, se requiere un trabajo permanente de mucho tiempo y esfuerzo por parte de las personas involucradas en el sitio web. No obstante, a veces el tiempo no está a favor de la empresa hay momentos en los que la empresa desea posicionar rápidamente el sitio web para realizar ventas de productos o servicios, o dar a conocer información y ganar audiencia.</p>
+                                            <p>Para cuando esto ocurre, existe el SEM (Search Engine Marketing), que es también un conjunto de estrategias y buenas prácticas de posicionamiento web, pero a diferencia de las estrategias SEO, se tiene que invertir dinero. Y cuanto más dinero se invierta, se obtendrán mejores resultados.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('SEO')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.3. Definición de SEO </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="SEO">5.3. Definición de SEO </h4>
+                                        <p>Esta estrategia SEM comprende desde el análisis de los clientes para generar una correcta segmentación hasta la
+                                            contratación de anuncios en sitios como Google Ads o en redes sociales como Meta, que comprende Facebook, Instagram
+                                            y WhatsApp.</p>
+                                        <p>La inversión en anuncios o campañas de marketing dependerá de los criterios de cada sitio web, estableciendo mínimos
+                                            de inversión, cuánto tiempo estará activo el anuncio o campaña y los lugares donde podrán visualizarse los anuncios
+                                            pagados.</p>
+                                        <div class="texto-infografia">
+                                            <p>Principales diferencias entre SEM y SEO</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            <p>SEM</p>
+                                                        </th>
+                                                        <th>
+                                                            <p>SEO</p>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Emplea técnicas de posicionamiento pagadas.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Emplea técnicas de posicionamiento orgánico.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Se obtienen resultados de manera inmediata.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Se obtienen resultados a mediano y largo plazo.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Se debe destinar un presupuesto específico.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Se debe realizar una inversión de tiempo.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>El análisis de resultados se puede realizar en tiempo real a partir de las estrategias pagadas.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>El análisis de resultados se puede realizar después de un rango de tiempo mayor.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: elaboración propia.</p>
+                                        </div>
+                                        <p>Los buscadores determinan qué resultados mostrar primero con base en una clasificación determinada por sus propios
+                                            algoritmos. Google, el buscador más importante del mundo, revisa minuciosamente el contenido de los sitios web: esto
+                                            implica, además, que todo enlace externo e interno también sea revisado.</p>
+                                        <p>Si el sitio tiene contenido que se dirige hacia otros sitios web mediante un enlace, Google revisará esos enlaces y
+                                            visitará esos sitios. De la misma forma, si un sitio se dirige al propio mediante un enlace, el algoritmo de Google
+                                            visita el sitio y lo revisa.</p>
+                                        <p>Esto implica una división de la estrategia SEO en dos partes, dentro de nuestro sitio web (on-page) y fuera de
+                                            nuestro sitio web (off-page).</p>
+                                        <p><strong>5.2.1. Estrategias on-page</strong></p>
+                                        <p>De acuerdo con Toonen (2023), la posición del sitio web en los resultados de búsqueda está determinada por diversos
+                                            factores sobre los cuales, en algunos casos, el personal a cargo del sitio web tiene influencia directa, pues son
+                                            factores técnicos. Se sugiere revisar las partes técnicas con un experto en el área de programación. A continuación,
+                                            se describen de forma general:</p>
+                                        <ul>
+                                            <li>Calidad en el código del sitio web, es decir, el sitio web fue desarrollado con las mejores prácticas de
+                                                programación dentro de las cuales destacan la ciberseguridad del sitio.</li>
+                                            <li>Velocidad con la que carga el sitio web. En este caso, el encargado del sitio web deberá optimizar, entre otras
+                                                cosas:</li>
+                                            <li>Códigos o librerías en lenguaje Java Script u Hojas de estilo en cascada (CSS por sus siglas en inglés). Existen
+                                                herramientas que minimizan la extensión de código (Minifiers o Minificadores). También se recomienda que los
+                                                códigos no esenciales sean llamados sobre demanda, de este modo el sitio web cargará primero antes que los
+                                                códigos secundarios no esenciales. </li>
+                                            <li>Imágenes. Formatos comprimidos como jpeg (Joint Photographic Experts Group), png (Portable Network Graphic) y
+                                                gif (Graphics Interchange Format) se han utilizado con distintos propósitos para web pues brindan imágenes
+                                                comprimidas que agilizan la carga del sitio. Desde el 2020 el formato AVIF (Audio Video Interleaved) ha ganado
+                                                popularidad gracias al ahorro de espacio y calidad.</li>
+                                            <li>Videos. Formatos comprimidos como mp4 (Moving Picture Experts) conservan la calidad de los videos. Su tamaño es
+                                                pequeño y, por lo tanto, su carga será rápida.</li>
+                                            <li>Audios. Formatos comprimidos como mp3 (MPEG Audio Layer III) brindan una calidad óptima para audios disminuyendo
+                                                su tamaño y agilizando la reproducción del archivo.</li>
+                                            <li>Detalles técnicos de la configuración del servidor que se recomienda revisar con un experto en programación.
+                                                Algunos recomendados son: </li>
+                                            <ul>
+                                                <li>Configurar el almacenamiento en caché del sitio permite que a cada visita el sitio cargue de manera más
+                                                    rápida. </li>
+                                                <li>Comprimir en Gzip el sitio web para que el navegador lo abra más rápido.</li>
+                                            </ul>
+                                            <li>Optimizar los recursos del servidor web, como la memoria, el procesador, el almacenamiento y el ancho de banda.
+                                            </li>
+                                            <li>Estructura de la página. La organización correcta de los archivos es crucial para que los buscadores puedan
+                                                “leer” correctamente el sitio y catalogarlo de manera correcta. </li>
+                                            <li>Uso del archivo “sitemap.xml”, el cual contiene un mapa del sitio identificando las páginas web y su fecha de
+                                                elaboración y actualización, entre otras cosas. El administrador web deberá “realizar ping” desde Google hacia
+                                                el sitio web para que el buscador tenga la versión más reciente de la estructura del sitio.</li>
+                                            <li>Uso del archivo “robots.txt”, que contiene indicaciones hacia los buscadores sobre qué contenidos pueden ser
+                                                indexados por las herramientas de los buscadores. En este archivo se puede especificar, por ejemplo, si queremos
+                                                que nuestra carpeta de imágenes no sea indexada por el buscador de imágenes de Google Images.</li>
+                                            <li>Metadata o Metainformación. Esta información del sitio web se encuentra en forma de código HTML en el encabezado
+                                                de todas las páginas que componen un sitio web. Contienen información adicional que ayuda a los buscadores a
+                                                clasificar el sitio web de manera correcta. Algunas etiquetas son: </li>
+                                        </ul>
+                                        <ul>
+                                            <li>Meta etiqueta de título. Define el título de la página que se muestra en los resultados de la búsqueda.</li>
+                                            <li>Meta etiqueta de descripción. Proporciona una breve descripción del contenido de la página. Aparece en los
+                                                resultados de búsqueda.</li>
+                                            <li>Meta etiqueta de palabras clave. Se utiliza para indicar palabras clave relevantes para la página. Sin embargo,
+                                                con el paso del tiempo tiene cada vez menos importancia.</li>
+                                            <li>Meta etiqueta de autor. Indica el nombre del autor del contenido de la página.</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Diseño responsivo. Los buscadores revisan el sitio web en primera instancia como si estuviese siendo accedido
+                                                desde un dispositivo móvil, por lo que el diseño del sitio web debe considerar a los dispositivos móviles. Aquí
+                                                hay que considerar que los elementos del sitio deben tener el menor tamaño de archivo posible, es decir,
+                                                elementos multimedia optimizados para web. Pero, además, el diseño deberá responder a cualquier dispositivo que
+                                                consulte el sitio web pudiendo adaptarse a distintos tamaños y resoluciones de pantallas. El diseñador web
+                                                deberá considerar marcos de trabajo basados en Grid o en Flex para lograr que el sitio web sea responsivo.</li>
+                                        </ul>
+                                        <p><strong>5.2.2. Estrategias off-page</strong></p>
+                                        <p>Adicionalmente a los factores anteriormente descritos, la clasificación de un sitio web para los buscadores también
+                                            depende de factores externos al sitio web. Por ejemplo, si otros sitios web contienen enlaces que dirigen hacia el
+                                            sitio de la empresa o si en redes sociales se ha compartido el sitio web.</p>
+                                        <p>Si bien en ocasiones no se puede controlar que otros mencionen el sitio web de la empresa, sí podemos influenciar que
+                                            nuestro sitio sea referencia en otros sitios o redes sociales creando contenido de relevancia o interés.</p>
+                                        <p>El sitio web puede ganar relevancia adicional si el contenido que hay en él se comparte desde sitios que ya estén clasificados como relevantes para los buscadores.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('como')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.3. Cómo funciona el SEO </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="como">5.3. Cómo funciona el SEO </h4>
+                                        <div class="texto-video">
+                                            <p>Rakt (2022) explica que los motores de búsqueda “leen” el contenido del sitio web a nivel de archivos y a nivel de contenido de archivos. En el caso particular de Google, se sabe que el motor de búsqueda realiza una copia del sitio web en sus servidores para realizar un índice (a esto se le conoce como indexación) para comparar los criterios de búsqueda del usuario con estos sitios.</p>
+                                            <p>Durante la indexación, los buscadores web evalúan cada aspecto del sitio web, parte de la estrategia SEO mencionada con anterioridad, y otorgan una clasificación. Dependiendo de esta clasificación será la relevancia que tenga durante las búsquedas de los usuarios (Rakt, 2022).</p>
+                                            <p>Para conseguir este índice de sitios web, Google necesita un rastreador, el índice y un algoritmo, los cuales trabajan 24/7 siguiendo enlaces en todos los sitios web. El rastreador es el que sigue los enlaces en los sitios web, y si éste de alguna manera regresa al sitio web y encuentra novedades, da instrucción de almacenar una nueva versión del sitio web.</p>
+                                            <p>Que el rastreador regrese o visite el sitio web con mayor o menor frecuencia dependerá de las estrategias on-page u off-page implementadas. Esto añade importancia al uso de enlaces tanto internos como externos al sitio web, pues agrega valor de confianza al sitio por tener referencias a otros sitios web que ya están clasificados como de confianza, y viceversa.</p>
+                                        </div>
+                                        <p>Cabe destacar que el algoritmo implementado por los buscadores web recibe actualizaciones constantemente, por lo que se debe estar siempre actualizado en las estrategias SEO y estar al día en los nuevos criterios que consideren los buscadores.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('impl')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.6. Implementación de SEO en negocios </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="impl">5.6. Implementación de SEO en negocios </h4>
+                                        <p>La implementación de una estrategia SEO se debe definir dentro de una empresa que busca enfocarse en el cliente para mejorar la visibilidad y el posicionamiento del sitio web en los motores de búsqueda. Consta de las siguientes etapas:</p>
+                                        <h5>Etapa 1. Definición</h5>
+                                        <p>Se debe comprender el negocio, su segmentación de mercados y los objetivos específicos que se desean lograr con el SEO. </p>
+                                        <h5>Etapa 2. Palabras clave</h5>
+                                        <p>Se deben definir las palabras clave relevantes relacionadas con los productos o servicios que ofrece el negocio considerando tanto aquéllas que hablen en términos muy generales, como muy específicos</p>
+                                        <p>Estas palabras clave pueden ser cotejadas con las tendencias de búsqueda de los usuarios. Se recomiendan herramientas como Google trends y UberSuggest para revisar si los usuarios realizan búsquedas con las palabras clave seleccionadas.</p>
+                                        <h5>Etapa 3. Creación de un blog</h5>
+                                        <p>La creación de un blog referido a los productos o servicios de una empresa es muy recomendable y sobre todo que añada enlaces a sitios que los buscadores consideren con buena clasificación, sumando palabras clave en los títulos de las entradas del blog y generando contenido actualizado, así como conectándolo con redes sociales. Esto hará que Google recomiende a la empresa. Para desarrollar un blog, sugerimos consultar el apartado correspondiente a un blog. </p>
+                                        <h5>Etapa 4. Análisis de la visita al sitio web</h5>
+                                        <p>Realizar un análisis del comportamiento de los visitantes en el sitio web con herramientas como Google Analytics, ayudará a observar el comportamiento de los visitantes y permitirá tomar decisiones que ayuden a mejorar el producto. También ayudará a mejorar el sitio web, ya sea a nivel técnico (mejora del servidor) o a nivel de contenido para mejorar la experiencia del usuario</p>
+                                        <p>Esto, a su vez, promoverá que los clientes compartan el contenido de la empresa en otros sitios como redes sociales y los rastreadores regresarán con frecuencia al sitio web. Gracias a esto, se generará un valor de confianza en la marca a nivel de usuario que se verá reflejado en una mejoría del posicionamiento orgánico del sitio web.</p>
+                                        <p>Hoy en día es necesario tener presencia en redes sociales para promocionar el contenido del sitio web y aumentar su visibilidad. Compartir contenido atractivo y relevante puede aumentar el tráfico y mejorar el posicionamiento orgánico.</p>
+                                        <p>Finalmente, implementar SEO en un negocio requiere invertir tiempo y esfuerzo. Una estrategia bien planificada y ejecutada, puede resultar en un aumento significativo en la visibilidad en línea y, con ello, captación de clientes y oportunidades comerciales.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Email marketing">
+                                <h3 class="mt-3"><i class="num">6</i> Email marketing </h3>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emkt')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.1. Definición de email marketing </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="emkt">6.1. Definición de email marketing </h4>
+                                        <p>De acuerdo con la empresa Inbound marketing, el email marketing es el envío de correos electrónicos a una base de datos de clientes y contactos con un objetivo de fidelización y promoción de productos.</p>
+                                        <p>El comportamiento de las personas es revisar con cuidado sus correos todos los días. Si las personas han aceptado recibir el contenido de la empresa y saben que será relevante para sí mismo, hay una alta probabilidad de que ese correo sea abierto y leído.</p>
+                                        <p>Por esta razón, usar correctamente el email marketing es un arma muy eficiente para mantener una relación con las personas, sean clientes actuales o interesados potencialmente.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('temkt')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.2. Tipos de email marketing </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="temkt">6.2. Tipos de email marketing </h4>
+                                        <p>El email marketing es un canal de comunicación y de marketing que ofrece diversas opciones de estrategias con la posibilidad de utilizar diferentes formatos de comunicación.</p>
+                                        <p>Los formatos deben ser utilizados para diferentes ocasiones en función de los objetivos de la empresa. Algunos de éstos están orientados a las ventas, a notificaciones sobre contenidos, a promociones de ventas y a contenidos de descargas gratuitas, entre otros.</p>
+                                        <div class="texto-infografia">
+                                            <p>La empresa RD Station (2023) sugiere los siguientes tipos de email marketing: </p>
+                                            <ol>
+                                                <li>Newsletter. Es una forma ligera y cercana de comunicarse con la base de datos de la empresa para comunicar información relevante y de productos o servicios. </li>
+                                                <li>Email promocional. Se centran únicamente en la conversión de productos gratuitos o de pago. </li>
+                                                <li>Email estacional. Se pueden utilizar en fechas especiales de cada persona para enviar un mensaje personalizado, como pueden ser mensajes de cumpleaños y fechas conmemorativas, entre otros. </li>
+                                                <li>Email de bienvenida. Se envía cuando el prospecto ha compartido sus datos, pudiendo ser por un formulario o landing page. </li>
+                                                <li>Email para clientes inactivos. A aquellas personas que no han realizado un movimiento dentro de la empresa, cómo comprar, se les envía un correo con una oferta interesante. </li>
+                                                <li>Email para comercio electrónico. Para lograr que las personas consuman el producto o servicio, se les puede enviar promociones y contenidos, entre otros. </li>
+                                            </ol>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emmkt')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.3. Campañas de email marketing para empresas</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="emmkt">6.3. Campañas de email marketing para empresas </h4>
+
+                                        <p>Diseñar y enviar una campaña de email marketing a una gran cantidad de suscriptores es muy rentable. A continuación, se describe cómo crear una campaña: </p>
+                                        <h5>Etapa 1. Definir objetivos</h5>
+                                        <p>La clave para establecer objetivos correctos es alinearlos con los objetivos comerciales de la empresa. Entender qué es lo que se está buscando, como se ha mencionado anteriormente. Es importante que estos objetivos sean medibles para posteriormente hacer un análisis sobre su desempeño.</p>
+                                        <p>Para alcanzar objetivos medibles es importante conocer las principales métricas del email marketing como se puede observar en el siguiente cuadro.</p>
+                                        <div class="texto-infografia">
+                                            <p><strong>Principales métricas del email marketing</strong></p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Métrica</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Definición</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Emails entregados </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Es la cantidad de destinatarios que recibieron el email y el porcentaje en relación con el total de
+                                                                emails enviados</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Tasa de apertura</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Porcentaje de contactos que abrieron el email teniendo en cuenta el número de contactos que lo
+                                                                recibieron</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Tas de clics</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Porcentaje de contactos que hicieron clic en el email en relación con el total de emails entregados
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Conversiones</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Personas que pagaron por lo que se les ofreció</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Tasa de rechazo </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Porcentaje de emails que fueron rechazados por el servidor del destinatario en comparación con el
+                                                                total de los mensajes de email enviados</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Marcación de spam</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Es realizada por el usuario que recibió el email, indicando manualmente que el email recibido es un
+                                                                spam. Esta es una métrica que puede perjudicar mucho la reputación de la empresa </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Bajas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Representa a las personas que recibieron el email y que hicieron clic en el enlace de baja para no
+                                                                recibir nuevos mensajes de email del remitente</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: elaboración propia con base en RD Station (2023) </p>
+                                        </div>
+                                        <p>Ahora bien, una vez que se conocen las principales métricas, se pueden alcanzar objetivos específicos para el email marketing. En el siguiente cuadro se presenta un ejemplo. </p>
+                                        <div class="texto-infografia">
+                                            <p>Ejemplo de objetivo de email marketing</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Objetivo comercial </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Objetivo de email marketing </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Aumentar las ventas en un 5% durante el segundo semestre del 2023. </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Aumentar un 8% la conversión de la base de datos de la empresa. </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: elaboración propia.</p>
+                                        </div>
+                                        <h5>Etapa 2. Definir el arquetipo de cliente</h5>
+                                        <p>Se debe tener en cuenta que en el email marketing existen diversos tipos de suscriptores, por lo que es importante segmentar a quiénes la empresa va a dirigirse para determinar elementos importantes de la campaña, como definir la forma en que va a dirigirse a ellos, cuándo y a qué hora enviar los correos electrónicos, así como qué contenido ofrecer, entre otros elementos.</p>
+                                        <p>La creación del arquetipo de clientes será el gran paso para conocer a la audiencia a la que la empresa se dirigirá a través del email marketing.</p>
+                                        <p>Para crear uno, dirígete a la sección de arquetipos de clientes de esta dimensión temática. Allí se presenta una guía detallada sobre cómo identificar y definir a los suscriptores ideales, lo que permie personalizar y mejorar las campañas de email marketing para obtener mejores resultados y una mayor interacción con la audiencia.</p>
+                                        <h5>Etapa 3. Selecciona la plataforma de email marketing</h5>
+                                        <p>Antes de elegir una plataforma, la empresa debe plantearse dos preguntas: ¿cuál es el objetivo de implementar el email marketing en la empresa?, y ¿cuáles son las funciones que la empresa necesita para alcanzar los objetivos planteados?</p>
+                                        <p>Estas preguntas ayudarán a la empresa a seleccionar la plataforma ideal, contemplando los siguientes puntos:</p>
+                                        <p>Que permita segmentar los contactos de la base de datos con el objetivo de tener control de quién recibirá los correos. </p>
+                                        <ol>
+                                            <li>Que permita crear diseños para que los correos sean atractivos. </li>
+                                            <li>Que permita automatizar el lanzamiento de las campañas para ganar productividad y eficiencia en los envíos. </li>
+                                            <li>Que permita obtener métricas para el análisis de los resultados después de los envíos.</li>
+                                        </ol>
+                                        <div class="texto-infografia">
+                                            <p>Las plataformas que cumplen con estas características son:</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>1</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>ActiveCampaign</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.activecampaign.com/es">https://www.activecampaign.com/es</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>2</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Mailchimp</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://mailchimp.com/es/">https://mailchimp.com/es/</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>3</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Aweber</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.aweber.com/">https://www.aweber.com/</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>4</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Marketing Hub by HubSpot</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.hubspot.es/products/marketing">https://www.hubspot.es/products/marketing</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>MailerLite</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.mailerlite.com/es">https://www.mailerlite.com/es</a></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>6</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Doppler</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><a href="https://www.fromdoppler.com/es/">https://www.fromdoppler.com/es/</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5>Etapa 4. Creación de una lista de emails</h5>
+                                        <p>Una vez que se han establecido los objetivos y la plataforma para hacer los envíos, se debe realizar una lista de correos electrónicos para enviar los mensajes programados en la campaña.</p>
+                                        <p>Si la empresa ya tiene una base de datos previamente autorizada por los clientes, ésta se debe subir a la plataforma seleccionada.</p>
+                                        <p>Ahora bien, si no se tiene una base de datos, se puede crear una ofreciendo un valioso incentivo y oportunidades de suscripción para obtener una lista de correos. Algunas opciones son: webinars y descarga de materiales gratuitos, entre otros. </p>
+                                        <h5>Etapa 5. Diseño de email marketing</h5>
+                                        <p>Una vez que se tiene la base de datos dentro de la plataforma, es momento de diseñar el email que les llegará. Hay tres espacios importantes: </p>
+                                        <ol>
+                                            <li>Encabezado: Es la parte inicial del email. Usualmente se encuentra un título del email y el logo de la marca.</li>
+                                            <li>Cuerpo: Se coloca el contenido que se ha decidido enviar. </li>
+                                            <li>Cierre: Es la parte final. Usualmente se encuentran los datos de contacto, el botón de baja y las políticas de privacidad.</li>
+                                        </ol>
+                                        <p>Si bien estos son los elementos esenciales, se puede completar con otra información tal como se muestra en la siguiente imagen. </p>
+                                        <div class="texto-infografia">
+                                            <p>Estructura de un email</p>
+                                            <p>Fuente: Com (2017)</p>
+                                        </div>
+                                        <h5>Etapa 6. Medición de resultados</h5>
+                                        <p>Así como se analizó en la sección de definición de objetivos, hay diversas métricas que se pueden seleccionar para hacer una medición de los resultados del email marketing. Asimismo, existen diferentes factores que pueden afectar los indicadores de medición, por lo que es importante medir los resultados cada 15 días o una vez al mes para entender cómo se están alcanzando los objetivos planteados desde un inicio, ver el ejemplo en el siguiente cuadro.</p>
+                                        <div class="texto-infografia">
+                                            <p>Ejemplo de análisis de objetivo</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Objetivo para email marketing</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Análisis de resultados </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Aumentar un 8% la conversión de la base de datos de la empresa.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Se aumentó un 9% la conversión.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: elaboración propia.</p>
+                                        </div>
+                                        <p>Si no se obtienen los resultados que se desean, se sugiere intentar probar con diferentes conceptos y diseños. </p>
+                                        <p>Ejemplo: En este video se muestran las principales métricas de redes sociales. </p>
+                                        <p><a href="https://youtu.be/u_BmGi4RxRQ" target="_blank"><em>Qué KPIs Analizar en Redes Sociales l Métricas Clave</em></a></p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        <p>Amazon. (s. f.). Qué es el almacenamiento en caché y cómo funciona | AWS. Amazon Web Services, Inc. <a href="https://aws.amazon.com/es/caching/">https://aws.amazon.com/es/caching/</a></p>
+                        <p>Blanco, E. (2023a,). Qué son las métricas de marketing y cuáles miden el éxito. Blog de Inbound Marketing y Ventas | RD Station. <a href="https://www.rdstation.com/blog/es/metricas-de-marketing/">https://www.rdstation.com/blog/es/metricas-de-marketing/</a></p>
+                        <p>Belcic, I. (2023). Qué es el spam: guía esencial para detectar y prevenir el spam. <a href="https://www.avast.com/es-es/c-spam">https://www.avast.com/es-es/c-spam</a></p>
+                        <p>Botey, P. (2022). ¿Qué es la indexación web o indexar un contenido y cómo hacerlo? Inboundcycle. Recuperado de</p>
+                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido">https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido</a></p>
+                        <p>Cardona, L. (2021). Motores de búsqueda: qué son, cómo funcionan y cuáles son los principales. Cyberclick. Recuperado de</p>
+                        <p><a href="https://www.cyberclick.es/que-es/motores-de-busqueda">https://www.cyberclick.es/que-es/motores-de-busqueda</a></p>
+                        <p>Alójate Com (2017). Cómo hacer una estrategia de email marketing efectiva. Medium. <a href="https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d">https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d</a></p>
+                        <p>Cultura SEO. (2020). Enlace: Qué es y cuántos tipos existen • Cultura SEO. <a href="https://culturaseo.com/jergario/enlace/">https://culturaseo.com/jergario/enlace/</a></p>
+                        <p>Da Silva, D. (2022). Mensajería instantánea para empresas: 3 usos prácticos. Zendesk MX. <a href="https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/">https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/</a></p>
+                        <p>Da Silva, F. G. (2021). Medios digitales: Descubre qué son y cómo gestionarlos para generar resultados en una estrategia de mercadotecnia. Rock Content. <a href="https://rockcontent.com/es/blog/medios-digitales/">https://rockcontent.com/es/blog/medios-digitales/</a></p>
+                        <p>DesarrolloWeb.com. (s. f.). Qué es HTML</p>
+                        <p><a href="https://desarrolloweb.com/articulos/que-es-html.html">https://desarrolloweb.com/articulos/que-es-html.html</a></p>
+                        <p>De Souza, I. (2022). Cómo crear un sitio web: Echa un vistazo al paso a paso para hacer el tuyo desde cero. Rock Content.</p>
+                        <p><a href="https://rockcontent.com/es/blog/como-crear-un-sitio-web/">https://rockcontent.com/es/blog/como-crear-un-sitio-web/</a></p>
+                        <p>De Souza, I. (2022a). Aprende a abrir el código fuente de una página web y comprende su importancia para el SEO. Rock Content. <a href="https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/">https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/</a></p>
+                        <p>Del Pino, C. Y. (2016). ¿Qué es y cómo funciona la compresión GZip? Experto SEO. <a href="https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/">https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/</a></p>
+                        <p>Educaweb. (s. f.). Administrador de sitios web. educaweb.com.</p>
+                        <p><a href="https://www.educaweb.com/profesion/administrador-sitios-web-122/">https://www.educaweb.com/profesion/administrador-sitios-web-122/</a></p>
+                        <p>Google for Developers. (s. f.). Descripción general de los rastreadores de Google (user-agents) | Centro de la búsqueda de Google.</p>
+                        <p><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=">https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=</a></p>
+                        <p>Harsel, L. (2023). ¿Qué son las palabras clave?: guía completa. Semrush Blog. <a href="https://es.semrush.com/blog/que-son-las-palabras-clave/">https://es.semrush.com/blog/que-son-las-palabras-clave/</a></p>
+                        <p>Hootsuite. (2023). Global Digital Report 2023. En We are social. <a href="https://wearesocial.com/es/blog/2023/01/digital-2023/">https://wearesocial.com/es/blog/2023/01/digital-2023/</a></p>
+                        <p>Hootsuite. (2023a). Crear contenido de redes sociales atractivo y eficaz. Hootsuite.</p>
+                        <p><a href="https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0">https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0</a></p>
+                        <p>Hotmart. (2023). Medios digitales: qué son, principales tipos y cómo usarlos. Blog Hotmart. <a href="https://hotmart.com/es/blog/medio-digital">https://hotmart.com/es/blog/medio-digital</a></p>
+                        <p>Islas, D. S. (2023,). Cómo crear una página web: guía paso a paso. Blog de Wix | Diseño Web, Fotografía y Tips de Negocios.</p>
+                        <p><a href="https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju">https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju</a></p>
+                        <p>Llamas, J. (2022). Algoritmo. Economipedia.</p>
+                        <p><a href="https://economipedia.com/definiciones/algoritmo.html">https://economipedia.com/definiciones/algoritmo.html</a></p>
+                        <p>Londoño, P. (2023). Qué es un blog: Para qué sirve y herramientas útiles para crearlo. Hubspot. <a href="https://blog.hubspot.es/website/que-es-un-blog">https://blog.hubspot.es/website/que-es-un-blog</a></p>
+                        <p>Londoño, P. (2023a). 19 plataformas para crear un blog en 2023 (y cómo elegir). Hubspot. <a href="https://blog.hubspot.es/website/paginas-para-crear-un-blog">https://blog.hubspot.es/website/paginas-para-crear-un-blog</a></p>
+                        <p>Maram, L. (2019). Qué tan rápido debes responder en redes sociales para ser una marca amada. Luis Maram. <a href="https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/">https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/</a></p>
+                        <p>MarketingDirecto. (2022). Audiencia - marketing directo.</p>
+                        <p><a href="https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2">https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2</a></p>
+                        <p>Marieke van de Rakt, (2022), SEO Basics Yoast. </p>
+                        <p><a href="https://yoast.com/tag/seo-basics/">https://yoast.com/tag/seo-basics/</a></p>
+                        <p>Meijomil, S. (2017).  Webinar · Qué es y cómo utilizarlo en tu estrategia de contenidos - InboundCycle.</p>
+                        <p><a href="https://www.inboundcycle.com/diccionario-marketing-online/webinar">https://www.inboundcycle.com/diccionario-marketing-online/webinar</a></p>
+                        <p>Muxach, C. (2022). Cómo crear una estrategia de marketing en redes sociales en 7 pasos. </p>
+                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales">https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales</a></p>
+                        <p>Newberry, C. (2023). 16 métricas de redes sociales que realmente importan y cómo darles seguimiento. Social Media Marketing &amp; Management Dashboard. <a href="https://blog.hootsuite.com/es/metricas-de-redes-sociales/">https://blog.hootsuite.com/es/metricas-de-redes-sociales/</a></p>
+                        <p>Núñez, V. (2018). Cómo crear una estrategia en redes sociales efectivamente. Vilma Núñez - Consultora Estratégica de Marketing.</p>
+                        <p><a href="https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/">https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/</a></p>
+                        <p>Quiroa, M. (2022b). Tipos de demanda en marketing. Economipedia. <a href="https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html">https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html</a></p>
+                        <p>RAE. (s. f.). Emoji | Diccionario de la Lengua Española. «Diccionario de la lengua española» - Edición del Tricentenario. <a href="https://dle.rae.es/emoji">https://dle.rae.es/emoji</a></p>
+                        <p>RD Station. (s. f.). Email Marketing: la guía completa para campañas de email exitosas. <a href="https://www.rdstation.com/mx/email-marketing/#topic0">https://www.rdstation.com/mx/email-marketing/#topic0</a></p>
+                        <p>Rock Content. (2019). Redes sociales: qué son, cómo funcionan, qué tipos existen y cómo influyen en las estrategias de marketing. Rock Content.</p>
+                        <p><a href="https://rockcontent.com/es/blog/que-son-las-redes-sociales/">https://rockcontent.com/es/blog/que-son-las-redes-sociales/</a></p>
+                        <p>Sarmiento, A. (2022). Así se prevé que crecerán los usuarios de redes sociales en Latinoamérica. Business Insider México | Noticias pensadas para ti.</p>
+                        <p><a href="https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/">https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/</a></p>
+                        <p>Santos, D. (2023). Qué es un chatbot: Para qué sirve y cómo usarlo para atraer clientes. Hubspot. </p>
+                        <p><a href="https://blog.hubspot.es/marketing/chatbot">https://blog.hubspot.es/marketing/chatbot</a></p>
+                        <p>Edwin Toonen, (2023), What is on-page SEO? Yoast. <a href="https://yoast.com/what-is-onpage-seo/">https://yoast.com/what-is-onpage-seo/</a></p>
+                        <p>Statista (2023). Aplicaciones de mensajería: ranking según usuarios mensuales activos 2023 | Recuperado de</p>
+                        <p><a href="https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/">https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/</a></p>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales/1_Beneficios_potenciales_uso_canales_digitales_pymes.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales/2_Proceso_implementar_canales_digitales.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
+
+            </div>
+        </div>
+    </div>
+</div>

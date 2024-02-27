@@ -30,7 +30,7 @@ export class InteligencianegocioComponent {
         public _thisroute: ActivatedRoute,
         public _globalService: GlobalService
     ) {
-        this.Secciones = sections;
+        this.Secciones = this._globalService.Secciones;
         this.Seccion = "Introduccion";
     }
     ngOnInit(): void {
@@ -42,20 +42,6 @@ export class InteligencianegocioComponent {
 
 }
 
-const sections = [
-    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
-    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
-    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
-    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
-    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
-    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
-    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
-    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
-    { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
-    { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
-    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
-    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
-]
 const tools = [
     { Tema: "Diseñar paneles y reportes", Recurso: "YouTube", Url: "https://www.youtube.com/watch?v=Pfi1kE2tYBs", Descripcion: "Tutorial de ayuda para construir un cuadro de control utilizando Excel", Observaciones: "Caso práctico para creación de dashboard" },
     { Tema: "Diseñar paneles y reportes", Recurso: "YouTube", Url: "https://www.youtube.com/watch?v=7UgU4Y_TWAU&t=612s", Descripcion: "Tutorial de ayuda para construir un cuadro de control utilizando Tableau", Observaciones: "Caso práctico para creación de dashboard" },

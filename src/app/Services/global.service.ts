@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class GlobalService {
+    public Secciones: any = sections;
     constructor(
         private _dialog: MatDialog
     ){}
@@ -40,3 +41,18 @@ export class GlobalService {
         }
 	}
 }
+
+const sections = [
+    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
+    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
+    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
+    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
+    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
+    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
+    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
+    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
+    { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
+    { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
+    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
+    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
+]

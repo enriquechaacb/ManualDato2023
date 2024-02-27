@@ -66,7 +66,7 @@ export class AxisMenu {
 
 //#region HERRAMIENTAS ---------------------------------------------------------------------
 @Component({
-    selector: 'app-herramientas',
+    selector: 'app-tools',
     template: `<section class="seccion tools">
     <div class="container">
         <h2 class="tooltitle"><mat-icon>{{Icon}}</mat-icon> <span>{{Title}}</span></h2>
@@ -82,7 +82,7 @@ export class AxisMenu {
 </section>`,
     styleUrls: ['./widgets.component.scss'],
 })
-export class HerramientasComponent implements OnInit {
+export class ToolsComponent implements OnInit {
     @Input() Tools: any[] = [];
     @Input() Title: string = '';
     public Icon: string = '';

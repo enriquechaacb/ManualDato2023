@@ -5,12 +5,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../Components/home/home.component';
 import { ManualComponent } from '../Components/manual/manual.component';
 
+import { ComunicacionycanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa.component';
+import { CanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa/canalesdeventa.component';
+import { ArquetiposdeclientesComponent } from '../Components/manual/canalesdeventa/arquetiposdeclientes/arquetiposdeclientes.component';
+import { CanalesdigitalesComponent } from '../Components/manual/canalesdeventa/canalesdigitales/canalesdigitales.component';
+import { ComercioelectronicoComponent } from '../Components/manual/canalesdeventa/comercioelectronico/comercioelectronico.component';
+import { MarketingdigitalComponent } from '../Components/manual/canalesdeventa/marketingdigital/marketingdigital.component';
+import { GestiondeclientesComponent } from '../Components/manual/canalesdeventa/gestiondeclientes/gestiondeclientes.component';
+
 import { DatosyanaliticaComponent } from '../Components/manual/datosyanalitica/datosyanalitica.component';
 import { AnaliticadedatosComponent } from '../Components/manual/datosyanalitica/analiticadedatos/analiticadedatos.component';
 import { SistemasespecializadosComponent } from '../Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
 import { HerramientasdeanaliticaComponent } from '../Components/manual/datosyanalitica/herramientasdeanalitica/herramientasdeanalitica.component';
 import { PresentacionesComponent } from '../Components/manual/datosyanalitica/presentaciones/presentaciones.component';
 import { ModelosmatematicosComponent } from '../Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
+
+import { HabilidadesdigitalesComponent } from '../Components/manual/habilidadesdigitales/habilidadesdigitales.component';
+import { InfraestructuraComponent } from '../Components/manual/habilidadesdigitales/infraestructura/infraestructura.component';
+import { CiberseguridadComponent } from '../Components/manual/habilidadesdigitales/ciberseguridad/ciberseguridad.component';
+import { CompetenciasComponent } from '../Components/manual/habilidadesdigitales/competencias/competencias.component';
+import { HerramientasComponent } from '../Components/manual/habilidadesdigitales/herramientas/herramientas.component';
+import { TecnologiasComponent } from '../Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
+
+import { OrganizacionypersonasComponent } from '../Components/manual/organizacionypersonas/organizacionypersonas.component';
+import { CulturaorganizacionalComponent } from '../Components/manual/organizacionypersonas/culturaorganizacional/culturaorganizacional.component';
+import { GestiondetalentohumanoComponent } from '../Components/manual/organizacionypersonas/gestiondetalentohumano/gestiondetalentohumano.component';
+import { IndicadoresComponent } from '../Components/manual/organizacionypersonas/indicadores/indicadores.component';
+import { EstrategiadenegociosComponent } from '../Components/manual/organizacionypersonas/estrategiadenegocios/estrategiadenegocios.component';
 
 import { ProcesosComponent } from '../Components/manual/procesos/procesos.component';
 import { AmbientesdigitalesComponent } from '../Components/manual/procesos/ambientesdigitales/ambientesdigitales.component';
@@ -24,16 +45,18 @@ import { MediosdepagoComponent } from '../Components/manual/transformaciondigita
 import { ModelosdenegocioComponent } from '../Components/manual/transformaciondigital/modelosdenegocio/modelosdenegocio.component';
 import { PlaneacionComponent } from '../Components/manual/transformaciondigital/planeacion/planeacion.component';
 
-import { OrganizacionypersonasComponent } from '../Components/manual/organizacionypersonas/organizacionypersonas.component';
-import { CulturaorganizacionalComponent } from '../Components/manual/organizacionypersonas/culturaorganizacional/culturaorganizacional.component';
-
-import { HabilidadesdigitalesComponent } from '../Components/manual/habilidadesdigitales/habilidadesdigitales.component';
-
-import { CanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: 'bibliosmart', component: ManualComponent, data: {animation:'bibliosmart'}},
+
+    { path: 'bibliosmart/comunicacionycanalesdeventa', component: ComunicacionycanalesdeventaComponent, data: {animation:'ccv'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/arquetiposdeclientes/:section', component: ArquetiposdeclientesComponent, data: {animation:'ac'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/canalesdeventa/:section', component: CanalesdeventaComponent, data: {animation:'cv'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/canalesdigitalesdecomunicacion/:section', component: CanalesdigitalesComponent, data: {animation:'cd'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/ecommerce/:section', component: ComercioelectronicoComponent, data: {animation:'ce'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/gestiondeclientes/:section', component: GestiondeclientesComponent, data: {animation:'gc'}},
+    { path: 'bibliosmart/comunicacionycanalesdeventa/digitalmarketing/:section', component: MarketingdigitalComponent, data: {animation:'dm'}},
 
     { path: 'bibliosmart/datosyanalitica', component: DatosyanaliticaComponent, data: {animation:'da'}},
     { path: 'bibliosmart/datosyanalitica/sistemasespecializados/:section', component: SistemasespecializadosComponent, data: {animation:'se'}},
@@ -42,6 +65,19 @@ const routes: Routes = [
     { path: 'bibliosmart/datosyanalitica/presentaciones/:section', component: PresentacionesComponent, data: {animation:'pr'}},
     { path: 'bibliosmart/datosyanalitica/modelosmatematicos/:section', component: ModelosmatematicosComponent, data: {animation:'mm'}},
     
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales', component: HabilidadesdigitalesComponent, data: {animation:'hd'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/ciberseguridad/:section', component: CiberseguridadComponent, data: {animation:'cs'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/competenciasyhabilidadesdigitales/:section', component: CompetenciasComponent, data: {animation:'cc'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/herramientas/:section', component: HerramientasComponent, data: {animation:'ch'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/infraestructura/:section', component: InfraestructuraComponent, data: {animation:'ic'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/tecnologiashabilitantes/:section', component: TecnologiasComponent, data: {animation:'tc'}},
+
+    { path: 'bibliosmart/organizacionypersonas', component: OrganizacionypersonasComponent, data: {animation:'op'}},
+    { path: 'bibliosmart/organizacionypersonas/culturaorganizacional/:section', component: CulturaorganizacionalComponent, data: {animation:'co'}},
+    { path: 'bibliosmart/organizacionypersonas/estrategiasdenegocio/:section', component: EstrategiadenegociosComponent, data: {animation:'co'}},
+    { path: 'bibliosmart/organizacionypersonas/gestiontalentohumano/:section', component: GestiondetalentohumanoComponent, data: {animation:'co'}},
+    { path: 'bibliosmart/organizacionypersonas/metricasentornosdigitales/:section', component: IndicadoresComponent, data: {animation:'co'}},
+
     { path: 'bibliosmart/procesos', component: ProcesosComponent, data: {animation:'pr'}},
     { path: 'bibliosmart/procesos/ambientesdigitales/:section', component: AmbientesdigitalesComponent, data: {animation:'al'}},
     { path: 'bibliosmart/procesos/logistica/:section', component: LogisticaComponent, data: {animation:'l'}},
@@ -53,15 +89,6 @@ const routes: Routes = [
     { path: 'bibliosmart/estrategiaytransformaciondigital/mediosdepago/:section', component: MediosdepagoComponent, data: {animation:'mp'}},
     { path: 'bibliosmart/estrategiaytransformaciondigital/modelosdenegocio/:section', component: ModelosdenegocioComponent, data: {animation:'mn'}},
     { path: 'bibliosmart/estrategiaytransformaciondigital/planeacionyestretagiadigital/:section', component: PlaneacionComponent, data: {animation:'pp'}},
-
-    { path: 'bibliosmart/organizacionypersonas', component: OrganizacionypersonasComponent, data: {animation:'op'}},
-    { path: 'bibliosmart/organizacionypersonas/culturaorganizacional/:section', component: CulturaorganizacionalComponent, data: {animation:'co'}},
-
-    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales', component: HabilidadesdigitalesComponent, data: {animation:'hd'}},
-    // { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/_/:section', component: _, data: {animation:'co'}},
-
-    { path: 'bibliosmart/comunicacionycanalesdeventa', component: CanalesdeventaComponent, data: {animation:'cv'}},
-    // { path: 'bibliosmart/comunicacionycanalesdeventa/_/:section', component: _, data: {animation:'co'}},
 
     { path: '**', component: HomeComponent }
 ];

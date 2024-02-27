@@ -1,0 +1,270 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                  
+                  </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+            </div>
+            <div class="col">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        <div class="texto-video">
+                            <p>El panorama comercial ha experimentado una transformación significativa, ofreciendo una amplia variedad de medios y opciones para que los consumidores puedan adquirir productos y servicios. </p>
+                            <p>Gracias a Internet, hoy los canales de ventas son cada vez más variados de ahí la necesidad de tener cuenta que no todos son adecuados para ciertas empresas o modelos de negocios. Para hacer una adecuada selección es fundamental conocer las cualidades de cada canal y diferenciarlos entre sí. </p>
+                            <p>En el contexto de la transformación digital de una pequeña o mediana empresa, los canales digitales se convierten en aliados útiles para la interacción con los clientes, permitiendo a la empresa promover sus productos o servicios, mejorar la experiencia del cliente y potenciar sus ventas. Estos canales no solo permiten llegar a un público más amplio de manera más eficiente y a menor costo en comparación con los medios tradicionales, sino que también ofrecen la posibilidad de personalizar las comunicaciones y obtener retroalimentación inmediata.</p>
+                            <p>Así, los canales digitales se han convertido en plataformas que las empresas utilizan para acercarse a sus clientes actuales o futuros, permitiéndoles mejorar la experiencia del cliente y, además, promocionar productos o servicios. </p>
+                            <p>En el presente eje temático se explorarán diferentes medios y canales para vender, desde las ventas directas hasta las indirectas, que permiten a los negocios llegar a sus consumidores y generar ingresos de forma exitosa. </p>
+                            <p>La presencia digital de un negocio puede darse a través de sitios web, tema que será abordado como una herramienta para el comercio electrónico. Un sitio web bien diseñado y optimizado puede ser un canal de venta eficaz, brindando a los consumidores una experiencia de compra fácil y segura.</p>
+                            <p>Las redes sociales digitales son plataformas que permiten la interacción con clientes. Las redes sociales que iniciaron como medios útiles a la comunicación se han convertido en canales de venta digitales que están ofreciendo nuevas opciones para la comercialización de productos y servicios, entre ellas abordaremos Instagram Shopping. </p>
+                            <p>Otro medio de gran impacto en la comercialización de productos y servicios es lo que se conoce como <em>marketplaces</em>, plataformas digitales que conectan a vendedores y compradores, entre los más reconocidos están Amazon y Mercado Libre. Estas plataformas proporcionan una amplia exposición y la oportunidad de alcanzar nuevos mercados y clientes.</p>
+                            <p>También se detalla la importancia de programas de afiliación y revendedores estratégicos. Estas alianzas pueden abrir nuevas oportunidades de venta y ampliar el alcance del negocio.</p>
+                            <p>Por último, se analizará el uso de aplicaciones móviles como una opción para el comercio electrónico. Con el crecimiento constante del uso de dispositivos móviles, las aplicaciones móviles ofrecen una forma conveniente y efectiva de llegar a los clientes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los canales de ventas?</span></h2>
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Definición de canales de ventas">
+                                <h3 class="mt-3"><i class="num">1</i> Definición de canales de ventas </h3>
+                                <p>Los canales de ventas son “las opciones que tiene una empresa para llegar a sus clientes finales, con el objetivo de comercializar sus productos o servicios”. </p>
+                                <p>En la mercadotecnia se tiene el concepto de canales de distribución, que dan a los productos los beneficios del lugar y el tiempo del consumidor buscando que estén en los lugares y momentos indicados cuando el consumidor los busque (Fischer y Espejo, 2011: 160).  </p>
+                                <p>El propósito principal de los canales de distribución es asegurar que los productos lleguen al mercado adecuado, en el momento oportuno y en las cantidades requeridas. </p>
+                                <p>En resumen, los canales de venta son los medios a través de los cuales una empresa vende sus productos o servicios a sus clientes.</p>
+                            </mat-tab>
+                            <mat-tab label="Ventas directas e indirectas. ">
+                                <h3 class="mt-3"><i class="num">2</i> Ventas directas e indirectas. </h3>
+                                <div class="texto-video">
+                                    <p>Se consideran principalmente dos tipos de ventas, las directas y las indirectas. Las ventas directas se refieren a que la empresa vende por sí misma sus productos de forma directa al consumidor, es decir, puede ser a través de su sitio web o redes sociales. </p>
+                                    <p>Por otro lado, las ventas indirectas se realizan a través de intermediarios. La RAE define intermediario como “proveedor o quien media entre productor y consumidor”. </p>
+                                    <p>Estos canales de distribución se dividen en cuatro tipos (Fischer y Espejo, 2011: 161-162) (Figura 2):</p>
+                                    <ul>
+                                        <li>Empresa-consumidores. Es la vía más corta y rápida que se utiliza, porque es directa con el consumidor. Ejemplo: comercio electrónico.</li>
+                                        <li>Empresa-minorista-consumidores. Gran número de compras que efectúa el público en general se realiza a través de este sistema. Ejemplo: venta por Marketplace como Amazon o Mercado Libre. </li>
+                                        <li>Empresa-mayoristas-minoristas. Se utiliza con productos de gran demanda, ya que los fabricantes no tienen la capacidad de llevar sus productos a todo el mercado. Ejemplo: farmacéuticas. </li>
+                                        <li>Empresa-agentes-mayoristas-minoristas-consumidores. Éste es el canal más largo. Se utiliza para distribuir productos perecederos y proporciona una amplia red de contactos. </li>
+                                    </ul>
+                                </div>
+                                <img src="../../../../../assets/images/dimensions/canales/3_Division_canales_distribucion.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>De acuerdo con el tipo de industria a la que pertenecen las empresas, éstas pueden elegir el canal que sea más conveniente para su negocio. Hay que considerar que cuanto más largo sea el proceso, esto puede suponer costos adicionales.</p>
+                            </mat-tab>
+                            <mat-tab label="Canales de venta digitales">
+                                <h3 class="mt-3"><i class="num">3</i> Canales de venta digitales</h3>
+                                <p>Los canales de venta son los medios que la empresa utiliza para vender sus productos o servicios a sus clientes, en el ámbito digital, basados en Internet, presentamos a detalle los siguientes:</p>
+                                    <ul>
+                                        <li>Tiendas en línea propias a través de sitios web</li>
+                                        <li>Marketplaces</li>
+                                        <li>Redes sociales</li>
+                                        <li>Aplicaciones móviles</li>
+                                    </ul>
+                                <div class="texto-video">
+                                    <p><strong>3.1. Sitio web</strong></p>
+                                    <p>Los sitios web juegan un papel fundamental en el contexto de los canales de distribución para aquellas empresas que desean hacerlo a través de los medios digitales, ya que se han convertido en un punto central para conectar con los consumidores y facilitar la adquisición de productos o servicios de manera conveniente.</p>
+                                    <p>Un sitio web bien diseñado y optimizado actúa como una vitrina virtual que permite a las empresas exhibir sus productos de manera atractiva y brindar la información detallada sobre ellos para brindar confianza a los clientes potenciales.</p>
+                                    <p>Tener un sitio web permite a la empresa tener relaciones cercanas con los consumidores mediante la implementación de herramientas de comunicación, atención al cliente y retroalimentación, creando una conexión sólida y duradera que contribuye al crecimiento del negocio.</p>
+                                    <p>En la sección de canales digitales de comunicación, se puede profundizar en la implementación de un sitio web. Se encontrarán diversos hospedadores de sitios web para que la empresa pueda seleccionar uno que vaya en función de sus objetivos. Adicionalmente, se proporcionará una guía detallada sobre cómo crear un sitio web efectivo.</p>
+                                    <p><strong>3.2</strong><strong>Redes sociales (</strong><strong><em>Social commerce</em></strong><strong>)</strong></p>
+                                    <p>El <em>social commerce</em> (comercio social) se ha convertido en una tendencia importante en el mundo del <em>marketing</em> y de los negocios. Las redes sociales ofrecen una gran oportunidad para que las empresas se conecten con sus clientes, compartan información sobre sus productos y servicios y generen clientes potenciales.</p>
+                                    <p>Limia (2021) define al <em>social commerce</em> como la “forma de comercio online que utiliza las redes sociales como un canal más de ventas, tanto de productos como de servicios”.</p>
+                                    <p>No obstante, si bien en el comercio electrónico tradicional se busca llevar a los clientes potenciales a través de publicidad al sitio web, en el <em>social commerce</em> se busca que, gracias a las relaciones que tienen la marca y sus seguidores, éstos y los nuevos compren directamente en la red social.</p>
+                                    <p>Hay redes sociales que se están renovando constantemente y han logrado adaptar sus plataformas al social commerce, como Meta (Facebook), Instagram, Pinterest y TikTok.</p>
+                                    <p><strong>3.2.1 Meta (Facebook)</strong></p>
+                                    <p>Meta-Facebook es una plataforma que ofrece a las empresas dos formas de <em>social commerce</em>: Tiendas y <em>Marketplace.</em></p>
+                                    <p>Una tienda en Meta-Facebook es un espacio dentro de la red social donde las personas pueden navegar, explorar y comprar los productos directamente en dicha plataforma desde un formato personalizado destacando productos o servicios.</p>
+                                    <p>Tiene un formato familiar a <em>Landing Page</em>, que es una página web diseñada específicamente con el propósito de convertir a los visitantes en clientes potenciales, pero con un diseño más práctico.</p>
+                                    <p>Por otro lado, el Facebook <em>Marketplace</em> es una plataforma en línea que permite a las personas comprar y vender productos locales. Fue lanzado en 2016 y está disponible en más de 70 países.</p>
+                                    <p>Al ingresar a la página principal, los usuarios pueden comenzar a crear anuncios con artículos a la venta especificando el precio, la condición y la ubicación del producto, así como fotos descriptivas del mismo.</p>
+                                    <p>Una vez publicado, otros usuarios de la red social que coincidan con los criterios de ubicación podrán visualizarlo. Para adquirir el producto, se notifica al propietario del artículo.</p>
+                                    <p><strong>3.2.2. Instagram</strong></p>
+                                    <p>De acuerdo con el Blog oficial de Instagram, esta plataforma ofrece a las marcas la creación de una tienda.</p>
+                                    <p>La tienda de Instagram (en inglés Instagram Shopping) es una función que permite a las marcas que tienen tiendas en línea crear un catálogo digital y compartir sus productos directamente en Instagram. </p>
+                                    <p>Una vez creada, los usuarios pueden obtener más información sobre los productos y comprar sin salir de la plataforma. Esto se hace con <em>Checkout </em>o haciendo clic para finalizar la transacción en el sitio web de la empresa.</p>
+                                    <p>Es fundamental tener un sitio de comercio electrónico para iniciar una tienda en Instagram. Para ello, hay que tener en cuenta las siguientes definiciones claves:</p>
+                                    <ul>
+                                        <li>Páginas de detalles. Muestra toda la información clave del producto, como la descripción del artículo, precio y fotografías. La página de detalles también mostrará cualquier imagen o etiqueta con el producto en Instagram. </li>
+                                        <li>Colecciones. Son categorías de artículos organizados dentro de la tienda. Ayudan a que los visitantes naveguen más fácilmente entre los productos. Adicionalmente, permiten personalizar la tienda con imágenes de portada y colores acordes a la marca.</li>
+                                        <li>Etiqueta de compra. Funciona para etiquetar productos del catálogo en las historias, Reels o publicaciones. De esta manera, las personas pueden hacer clic para obtener más información o comprar. </li>
+                                        <li>Checkout. En algunos países está disponible la opción para comprar directamente dentro de la tienda en Instagram. En las regiones donde no se tiene esa disponibilidad se redirige al sitio web de la empresa para que puedan pagar. </li>
+                                        <li>Pestaña de descubrir. Permite que personas que no son seguidores de la página puedan encontrar nuevos productos, funcionando como una vitrina de un centro comercial. </li>
+                                    </ul>
+                                    <p><strong>3.2.3. Shopify para redes sociales (Tiktok y Pinterest).</strong></p>
+                                    <p>Shopify es una plataforma de comercio electrónico con la que empresas y personas pueden crear una tienda en línea para vender sus productos. Es un sistema de gestión de contenido que en unos sencillos pasos facilita la creación de un sitio web.</p>
+                                    <p>Algunas de las características de la plataforma son, entre otras: </p>
+                                    <ul>
+                                        <li>No tiene límite de productos visibles dentro de la tienda en línea.</li>
+                                        <li>Permite configurar precios diferentes en función de la cantidad pedida y diferentes gastos de envío, así como generar códigos de descuento.</li>
+                                        <li>Incluye funciones de recuperación de carritos abandonados y gestión de devoluciones, entre otras.</li>
+                                        <li>Crea informes sobre el comportamiento de los clientes en función de la ubicación, el dinero invertido, etc.</li>
+                                    </ul>
+                                    <p>Permite ver el estado de la tienda en línea y de los pedidos en tiempo real a través de la aplicación de Shopify.</p>
+                                    <p>Una de las características que interesan en esta sección es la integración de redes sociales, como Pinterest y TikTok. Esta unión logra que no sólo se venda en la tienda creada dentro de Shopify, sino también dentro de las redes sociales mencionadas anteriormente, donde se puede comprar directamente.</p>
+                                    <p>La integración con Pinterest y TikTok permite que los productos de la tienda en línea de Shopify se muestren automáticamente dentro de la red social, lo que facilita la promoción de los productos, así como realizar campañas de publicidad, sincronizar catálogos y analizar la información de tendencias de compra de los clientes.</p>
+                                    <p>Para utilizar esta integración es necesario tener una tienda en línea en Shopify y una cuenta de negocio en Pinterest y Tiktok.</p>
+                                    <p><strong>3.3. Marketplaces</strong></p>
+                                    <p>Los <em>Marketplaces</em> son plataformas que “funcionan como plazas comerciales digitales, en donde el consumidor encuentra cientos o miles de comerciales en un solo espacio, generando una de cada dos ventas del comercio minorista en línea”.</p>
+                                    <p>En otras palabras, un <em>Marketplace</em> es un canal de venta en línea donde comerciantes o vendedores de diferentes empresas ofrecen sus productos a los consumidores finales.</p>
+                                    <p>Según Rodríguez (2023) para que un marketplace pueda funcionar debe presentar tres entidades fundamentales:</p>
+                                    <ul>
+                                        <li>La plataforma: una empresa desarrolla una plataforma o espacio virtual en la que recibirá a marcas y productos para mostrarlos a los usuarios. Para quien la desarrolla, el negocio está en que recibe una comisión por cada una de las ventas que se realizan en su plataforma.  </li>
+                                        <li>Los que venden: las marcas y negocios se unen a la plataforma para mostrar los productos que venden como si lo hicieran en un espacio físico, es decir, con un precio, características, a veces con descuentos, etc. </li>
+                                        <li>Los que compran: los usuarios que navegan en Internet y están buscando ciertos productos llegan a la plataforma, ven la mercancía y eligen lo que quieren comprar. </li>
+                                    </ul>
+                                    <p>Dentro de los beneficios que ofrece tener los productos dentro de un<em>marketplace </em>se pueden encontrar: </p>
+                                    <ul>
+                                        <li>Mejor inversión, por la creación de una tienda en línea.</li>
+                                        <li>Gestión de pagos totalmente segura, pues no depende de un tercero para realizar la transacción, sino que se realiza dentro de la plataforma.</li>
+                                        <li>Ahorro en tiempo y dinero, ya que una empresa tardaría más en darse a conocer y en ganarse la confianza del posible cliente, y que éste decida comprar la marca.</li>
+                                        <li>Y, lo más importante, el alcance, a través de estas plataformas se puede llegar a otras regiones geográficas y vender productos independientemente de la ubicación. </li>
+                                    </ul>
+                                    <p>No obstante, también tiene desventajas formar parte de estos <em>marketplaces</em>:</p>
+                                    <ul>
+                                        <li>No se tiene acceso a los datos de las personas que han comprado el producto, por lo que se limita la posibilidad de hacer campañas, como las de email marketing.</li>
+                                        <li>Puede que los ingresos no sean inmediatos, ya que algunas plataformas limitan el pago hasta que el producto se haya entregado y sin reclamaciones. </li>
+                                    </ul>
+                                    <p>Como se ha visto anteriormente, tener presencia en un<em> marketplace</em> presenta ventajas y desventajas, por lo que se sugiere que no sea el único medio de venta. </p>
+                                    <p>Si se ha decidido ingresar a un marketplace, los principales en Latinoamérica son: </p>
+                                    <p>Mercado libre</p>
+                                    <p>Amazon</p>
+                                    <p>Linio</p>
+                                    <p>e-bay</p>
+                                    <p><strong>3.4. Aplicaciones móviles</strong></p>
+                                    <p>Una aplicación móvil es un programa informático destinado a ser ejecutado en teléfonos inteligentes, tabletas u otros dispositivos móviles. El propósito de estas aplicaciones depende de las necesidades a resolver, existiendo desde profesionales, de ocio, educativas, de servicios y de pagos, entre otros.</p>
+                                    <p>En el caso de los canales de distribución, las que interesan son aquéllas que están diseñadas para el comercio electrónico, las cuales permiten compras dentro de las mismas sin necesidad de salir de ellas.</p>
+                                    <p>Anteriormente, se habló del <em>social commerce</em> y los <em>marketplaces. E</em>stas plataformas ofrecen aplicaciones para que los usuarios y los vendedores puedan utilizar sus servicios de forma fácil y sencilla a través de teléfonos móviles.</p>
+                                    <p>Las empresas también pueden desarrollar alguna aplicación. Generalmente, estás se llevan a cabo con especialistas en desarrollo de aplicaciones móviles. De acuerdo con el Portal de noticias de Microsoft, “el proceso de creación y lanzamiento de aplicaciones móviles suele dividirse en una serie de pasos o fases. Estas fases del proceso de desarrollo de aplicaciones móviles involucran a muchas personas y disciplinas diferentes dentro de una organización”. El proceso de diseño y desarrollo puede tener una duración que oscila entre seis y nueve meses.</p>
+                                    <p>Por otro lado, se deben considerar los beneficios que puede traer a la empresa, como, por ejemplo:</p>
+                                    <ul>
+                                        <li>Más visibilidad y presencia del negocio.</li>
+                                        <li>Más información sobre los clientes, lo que se traduce en que se puedan ofrecer mejores productos y servicios.</li>
+                                        <li>Canal directo y rápido. </li>
+                                    </ul>
+                                    <p>Ahora bien, si la empresa ha decidido emprender en el desarrollo de una aplicación móvil como canal de distribución de sus productos y servicios, se sugiere que se haga tres preguntas esenciales: </p>
+                                    <ol>
+                                        <li>¿Tiene los recursos para construir y mantener la aplicación?</li>
+                                        <li>¿Realmente sus usuarios actuales o potenciales la utilizarán?</li>
+                                        <li>¿Contribuirá a la mejora de su cuenta de resultados financieros? </li>
+                                    </ol>
+                                    <p>En caso de ser afirmativas estas preguntas, lo ideal es acercarse con empresas capacitadas para realizar esta labor. </p>
+                                    <p><strong>3.5. Programas de afiliados</strong></p>
+                                    <p>Los programas de afiliación son “una práctica en la que participa un productor o empresa y un afiliado”, es decir, por un lado, está la empresa o persona que ha creado un producto o servicio y lo vende en el mercado, y, por el otro, se encuentra una empresa o persona que recomienda ese producto o servicio a través de sus canales de comunicación para llevar tráfico hacia el sitio web o <em>landing page. </em>Esto lo hace a cambio de una comisión por cada nuevo cliente generado. <br /><br />El proceso de implementación es: </p>
+                                    <ul>
+                                        <li>Etapa 1. Una empresa desarrolla y coloca en el mercado un producto o servicio. Ejemplo: zapatos. </li>
+                                        <li>Etapa 2. Otra empresa o persona se convierte en afiliado y empieza a recomendar el producto o servicio a su audiencia. Ejemplo: Un<em> influencer </em>recomienda los zapatos a las personas que lo siguen en sus redes sociales.</li>
+                                        <li>Etapa 3. La audiencia decide comprar el producto o servicio promovido. Ejemplo: Una persona ingresa al sitio web de los zapatos y al comprarlo añade un código que compartió el <em>influencer</em>. </li>
+                                        <li>Etapa 4. Al realizarse la venta, la empresa dueña del producto o servicio ganó un nuevo cliente y la empresa afiliada se llevó una comisión previamente pactada. Ejemplo: Por cada venta generada a través del programa de afiliación la empresa dueña del producto dará un 5% del valor total del producto. </li>
+                                    </ul>
+                                    <p>Para que dé buenos resultados, es preciso que se implemente un programa de afiliados en el que se especifiquen las acciones permitidas y las condiciones de la afiliación.</p>
+                                    <p><strong>3.6. Revendedores</strong></p>
+                                    <p>Un negocio de reventa implica que una empresa o persona, conocida como revendedor, adquiera productos o servicios con la intención de venderlos a terceros en lugar de utilizarlos para consumo propio. El propósito principal de esta actividad es generar una ganancia al venderlos a un precio mayor al que fueron adquiridos inicialmente. De esta manera, se busca obtener un beneficio económico mediante la diferencia entre el costo de adquisición y el valor de venta.</p>
+                                    <p>Para las personas y empresas que son revendedores, las redes sociales y las plataformas de venta en línea han sido grandes aliados para estos negocios, permitiéndoles que puedan realizar sus ventas sin importar donde se encuentren.</p>
+                                    <p>Un claro ejemplo de revendedoras son las personas que venden a través de catálogos o aquéllos que venden en <em>Marketplaces </em>como Mercado Libre o el de Meta-Facebook.</p>
+                                    <p>De acuerdo con la empresa de lectores de tarjetas Ualá Bis (2022), entre los beneficios para las personas que son revendedoras se encuentran: </p>
+                                    <ul>
+                                        <li>Les permite tener autonomía.</li>
+                                        <li>Les permite tener variedad de productos.</li>
+                                        <li>No tienen límites de ganancia y los costos de comercialización son más bajos.</li>
+                                    </ul>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Criterios para la selección de los canales de distribución">
+                                <h3 class="mt-3"><i class="num">4</i> Criterios para la selección de los canales de distribución</h3>
+                                <img src="../../../../../assets/images/dimensions/canales/4_Criterios_seleccion_canales_distribucion.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>Considerando estos criterios, en el Cuadro 1 se muestra un ejemplo de una zapatería. </p>
+                                <img src="../../../../../assets/images/dimensions/canales/5_Canales_distribucion_zapateria.webp" class="img-fluid" />
+                                <separator></separator>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        <p>Blanco, E. (2023). Landing Page: Qué son y cómo crea una que cumpla objetivos. Blog de Inbound Marketing y Ventas | RD Station. <a href="https://www.rdstation.com/blog/es/landing-page/">https://www.rdstation.com/blog/es/landing-page/</a></p>
+                        <p>Domínguez, S. (2021). Guía práctica para implementar el marketing de afiliados en tu negocio. ENN. <a href="https://www.escuelanuevosnegocios.com/marketing-de-afiliados/">https://www.escuelanuevosnegocios.com/marketing-de-afiliados/</a></p>
+                        <p>Clavijo, C. (2023). ¿Qué es un modelo de negocios? Definición, tipos y cómo crearlo. Hubspot. <a href="https://blog.hubspot.es/sales/modelo-negocio">https://blog.hubspot.es/sales/modelo-negocio</a></p>
+                        <p>Fischer, L., &amp; Espejo, J. (2011). Mercadotecnia (4.a ed.). McGraw-Hill/Interamericana Editores, S.A. de C.V.</p>
+                        <p>Forbes México. (2023). Así los marketplaces se han convertido en la puerta de entrada al eCommerce | Business Class Magazine. <a href="https://www.forbes.com.mx/ad-marketplaces-puerta-de-entrada-al-ecommerce-business-class-magazine/">https://www.forbes.com.mx/ad-marketplaces-puerta-de-entrada-al-ecommerce-business-class-magazine/</a></p>
+                        <p>Galán, J. S. (2022). Mayorista. Economipedia. <a href="https://economipedia.com/definiciones/mayorista.html">https://economipedia.com/definiciones/mayorista.html</a></p>
+                        <p>Juárez, C. (2023). ¿Cuáles son los principales marketplaces de México y Latinoamérica? The Logistics World | Conéctate e inspírate. <a href="https://thelogisticsworld.com/tecnologia/cuales-son-los-principales-marketplaces-de-mexico-y-latinoamerica/">https://thelogisticsworld.com/tecnologia/cuales-son-los-principales-marketplaces-de-mexico-y-latinoamerica/</a></p>
+                        <p>Limia, S. D. (2021). ¿Qué es el social commerce y cómo se aplica en las redes sociales? www.inboundcycle.com. <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/social-commerce">https://www.inboundcycle.com/blog-de-inbound-marketing/social-commerce</a></p>
+                        <p>Mailchimp. (s. f.). Definición de carrito abandonado | Mailchimp. <a href="https://mailchimp.com/es/marketing-glossary/abandoned-cart/">https://mailchimp.com/es/marketing-glossary/abandoned-cart/</a></p>
+                        <p>Meta. (s. f.). Instagram Shopping. Blog Oficial de Instagram. <a href="https://business.instagram.com/shopping">https://business.instagram.com/shopping</a></p>
+                        <p>Meta. (s. f.). Tiendas en Facebook e Instagram. Blog Oficial de Facebook. <a href="https://www.facebook.com/business/shops">https://www.facebook.com/business/shops</a></p>
+                        <p>Microsoft. (s. f.). ¿Qué es el desarrollo de aplicaciones móviles? | Microsoft Azure. Microsoft Azure. <a href="https://azure.microsoft.com/es-mx/resources/cloud-computing-dictionary/what-is-mobile-app-development/#development-process">https://azure.microsoft.com/es-mx/resources/cloud-computing-dictionary/what-is-mobile-app-development/#development-process</a></p>
+                        <p>Morales, F. C. (2022). Minorista. Economipedia. <a href="https://economipedia.com/definiciones/minorista.html">https://economipedia.com/definiciones/minorista.html</a></p>
+                        <p>Pursell, S. (2023). Canales de distribución y su importancia en tu estrategia empresarial. Hubspot. <a href="https://blog.hubspot.es/marketing/canales-distribucion">https://blog.hubspot.es/marketing/canales-distribucion</a></p>
+                        <p>RAE (s. f.). Aplicación móvil. Diccionario panhispánico del español jurídico - Real Academia Española. <a href="https://dpej.rae.es/lema/aplicaci%C3%B3n-m%C3%B3vil">https://dpej.rae.es/lema/aplicaci%C3%B3n-m%C3%B3vil</a></p>
+                        <p>RAE (s. f.-b). Intermediario, intermediaria | Diccionario de la Lengua Española. «Diccionario de la lengua española» - Edición del Tricentenario. <a href="https://dle.rae.es/intermediario">https://dle.rae.es/intermediario</a></p>
+                        <p>Roldán, P. N. (2022). Intermediario. Economipedia. <a href="https://economipedia.com/definiciones/intermediario.html">https://economipedia.com/definiciones/intermediario.html</a></p>
+                        <p>Roberts, S. (2023). Shopify: Qué es, funcionamiento y ventajas para tu ecommerce. <a href="https://www.cyberclick.es/numerical-blog/shopify-que-es-funcionamiento-y-ventajas-para-tu-ecommerce">https://www.cyberclick.es/numerical-blog/shopify-que-es-funcionamiento-y-ventajas-para-tu-ecommerce</a></p>
+                        <p>Rodriguez, J. (2023). Qué es un marketplace, para qué sirve, cómo funciona y ejemplos. Hubspot. <a href="https://blog.hubspot.es/sales/que-es-marketplace">https://blog.hubspot.es/sales/que-es-marketplace</a>#</p>
+                        <p>Torres, D. (2023). Canales de venta: Qué son, sus tipos, cómo gestionarlos y ejemplos. Hubspot. <a href="https://blog.hubspot.es/sales/canales-de-venta">https://blog.hubspot.es/sales/canales-de-venta</a></p>
+                        <p>Ualá, B. (2022). Programa de revendedores: el primer paso para emprender. El Blog de Ualá. <a href="https://blog.uala.com.ar/emprendo-mi-negocio/programa-de-revendedores/">https://blog.uala.com.ar/emprendo-mi-negocio/programa-de-revendedores/</a></p>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales/1_Beneficios_potenciales_uso_canales_ventas.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales/2_Proceso_implementar_canales_ventas.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
+
+            </div>
+        </div>
+    </div>
+</div>

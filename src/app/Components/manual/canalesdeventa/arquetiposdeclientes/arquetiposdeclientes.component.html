@@ -1,0 +1,496 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                  
+                  </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+            </div>
+            <div class="col">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        <div class="texto-video">
+                            <p>En un mundo tan competitivo en el que nos desarrollamos, caracterizado por el uso intensivo de medios digitales, conocer a fondo a los clientes actuales y potenciales es fundamental para el éxito de cualquier empresa. Una herramienta poderosa para lograr esta comprensión profunda es la creación de los arquetipos de clientes. </p>
+                            <p>En este espacio exploraremos detalladamente el proceso de elaboración de arquetipos para ayudar a las empresas a construir una visión clara y detallada de sus clientes ideales y potenciales.</p>
+                            <p>La primera etapa en este proceso está constituida por la investigación y el análisis. Es en esta etapa donde la empresa se sumergirá en la búsqueda de <em>insights</em>, información valiosa que permita comprender quién o quiénes son los individuos que realmente tienen la necesidad o el problema que su producto o servicio busca resolver. A través del análisis, se obtendrá una perspectiva más precisa sobre las motivaciones, deseos y desafíos que enfrentan los clientes potenciales.</p>
+                            <p>Encontrar <em>insights</em> es todo un reto, es resultado de la investigación, observación, escucha, y empatía para con los consumidores. Uno de los retos más importantes a descifrar es decodificar la mente de los consumidores, tratar de entender qué les mueve a realizar algunas acciones.</p>
+                            <p>La segunda etapa se centra en la definición de la segmentación de mercado. Este paso permitirá a la empresa reducir un mercado general y amplio a un grupo más específico y homogéneo de individuos con características y comportamientos similares. Al segmentar el mercado, la empresa podrá centrar sus esfuerzos en aquellos grupos que representan un mayor potencial y oportunidad de éxito. </p>
+                            <p>La tercera etapa se centra en la creación de los arquetipos de clientes apoyándose en la información de la investigación y el análisis, así como en la segmentación de mercados.</p>
+                            <p>Para concluir, se presentan recomendaciones de diseño y uso de los arquetipos de clientes que permitan guiar las estrategias de marketing, personalización de contenido, desarrollo de productos y mejorar la experiencia de los clientes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los arquetipos de clientes?</span></h2>
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="definición">
+                                <h3 class="mt-3"><i class="num">1</i> Definición</h3>
+                                <p>Los arquetipos de clientes son descripciones generales de personas que representan segmentos típicos de clientes (actuales o potenciales) dentro de un mercado. Pueden incluir características psicográficas y demográficas generales y se basa en patrones de comportamiento comunes y así como de <em>insights</em> sobre motivaciones profundas y puntos de dolor de los clientes. Los arquetipos son útiles para entender las necesidades y comportamientos de grupos más grandes de clientes.</p>
+                                <p>A diferencia de los segmentos de mercado tradicionales que pueden basarse principalmente en datos demográficos y observaciones superficiales, los arquetipos de clientes buscan capturar la esencia de diferentes tipos de usuarios o consumidores en términos de personalidad, valores, actitudes y de cómo estos aspectos influyen en su interacción con los productos y servicios.</p>
+                                <p>Estos perfiles de clientes ayudan a las empresas a visualizar a sus clientes como personajes “vivos” y reales, facilitando la creación de estrategias de marketing, desarrollo de productos y experiencias de usuario más empáticas y enfocadas.</p>
+                                <p>Al utilizar los arquetipos de clientes, las empresas pueden personalizar sus ofertas y mensajes de manera que lleguen con eficiencia y oportunidad a grupos de consumidores específicos, mejorando la eficacia del marketing, la lealtad del cliente y el éxito del negocio.</p>
+                                <p>Ver video de ¿qué es un arquetipo de cliente?</p>
+                                <p><a href="https://www.youtube.com/watch?v=I2KpjR3xxKc">https://www.youtube.com/watch?v=I2KpjR3xxKc</a></p>
+                                <p>En el marketing digital también se utiliza el <em>buyer person</em>,término de la mercadotecnia que ayuda a comprender a los clientes potenciales y con ello adaptar las estrategias de mercadotecnia y de comunicación. </p>
+                                <p>De acuerdo con Mora (2019), el <em>buyer persona</em> es “un personaje ficticio que se construye a partir de la etnografía de una población (edad, sexo, costumbres, creencias, necesidades y puntos de dolor, entre otras muchas), con perfil psicológico, cualidades y comportamientos similares”.</p>
+                                <p>Para Vercheval (2015) es “una representación semificticia del cliente ideal de un negocio. Se define usando datos sociodemográficos concretos e información sobre aspectos como su conducta <em>online</em>, personal, profesional y de la relación con la empresa que ofrece este producto o servicio”.</p>
+                                <p>Aunque los términos “arquetipo de cliente” y “buyer persona” se utilizan frecuentemente en el ámbito del marketing, representan conceptos ligeramente diferentes por sus propias aplicaciones y propósitos únicos.</p>
+                                <p>El arquetipo de cliente se caracteriza por representar modelos generalizados de grupos de clientes basados en características y comportamientos comunes, se centran en aspectos psicológicos y emocionales, motivacionales, deseos y valores, más que en detalles específicos individuales.</p>
+                                <p>En tanto que el “buyer persona” representa el perfil del cliente ideal, es decir, describe un personaje semi-ficticio, que se construye a partir de investigaciones de mercado y datos reales sobre clientes existentes. Incluyen datos demográficos comportamientos de compra, historias personales, motivaciones y desafíos específicos.</p>
+                                <p>En ambas definiciones, se entiende que los arquetipos de clientes son una construcción de un modelo de cliente idóneo de un producto o servicio, que se realiza teniendo información precisa sobre sus características y comportamientos. Para efectos de este eje temático, se tomará la definición del <em>buyer persona </em>de Vercheval (2015) debido a que se realizará desde la segmentación de mercado.</p>
+                            </mat-tab>
+                            <mat-tab label="Diferencia entre segmentación de mercado y arquetipo">
+                                <h3 class="mt-3"><i class="num">2</i> Diferencia entre segmentación de mercado y arquetipo</h3>
+                                <div class="texto-video">
+                                    <p>La segmentación de mercado es un proceso que identifica grupos de compradores con características similares, los cuales provocan que los mercados se dividan. Las empresas, en lugar de llegar a un mercado general, lo segmentan para que sea más sencillo atender las necesidades de estos clientes. Por otra parte, los arquetipos de clientes representan a un único individuo con datos concretos y particulares.  El objetivo es alcanzar un conocimiento profundo de las motivaciones y retos de esa persona que es el ideal al que nos dirigimos. </p>
+                                    <p>Para elaborar un arquetipo de cliente, parte de los datos se extraen de la segmentación de mercado y otros son suposiciones, dando como resultado un personaje semi-ficticio como se puede observar en la siguiente figura.</p>
+                                </div>
+                                <img src="../../../../../assets/images/dimensions/canales/3_Figura_Mercado_general.webp" class="img-fluid" />
+                                <separator></separator>
+                                <h4>Proceso de elaboración del arquetipo de cliente</h4>
+                                <h5>2.1. Investigación de mercado </h5>
+                                <div class="texto-video">
+                                    <p>Kotler y Keller (2012:98) definen a la investigación de mercados como “el diseño sistemático, la recolección, el análisis y la presentación de datos y conclusiones relativos a una situación específica que enfrenta una empresa”.</p>
+                                    <p>Tener conocimiento del mercado es fundamental para el éxito de una empresa, no requiriéndose contratar a una empresa para efectuar esta labor. Las pequeñas empresas también pueden realizar estos estudios de formas creativas y asequibles de la siguiente manera: </p>
+                                    <ul>
+                                        <li>Reclutando estudiantes o profesores universitarios</li>
+                                        <li>Utilizando Internet</li>
+                                        <li>Vigilando a la competencia</li>
+                                        <li>Realizándola ellos mismos</li>
+                                    </ul>
+                                </div>
+                                <h4>Proceso de investigación de mercado</h4>
+                                <p>La Investigación de Mercados (IM) se concibe como un proceso que se sigue para recopilar, recabar, registrar, analizar e interpretar hechos e información relevante respecto del mercado, tener un mayor conocimiento del cliente y su comportamiento de compra. Se puede referir a un determinado caso relacionado con las actividades de personas, empresas e instituciones en general.</p>
+                                <p>Con el advenimiento de Internet, la IM se ha convertido en una herramienta esencial para la toma de decisiones en cuanto al marketing y la publicidad. Permite profundizar en el conocimiento del consumidor para poder desarrollar, diversificar o introducir productos o servicios dirigidos a satisfacer sus necesidades, intereses, deseos, sueños y emociones. </p>
+                                <div class="texto-infografia">
+                                    <img src="../../../../../assets/images/dimensions/canales/4_Objetivos_investigacion_mercado.webp" class="img-fluid" />
+                                    <separator></separator>
+                                </div>
+                                <p>El proceso eficaz de la investigación de mercados consta de cinco etapas.</p>
+                                <p><strong>Etapa 1: Definir el problema y los objetivos de la investigación</strong></p>
+                                <p>En el momento de realizar una investigación de mercado lo más importante es entender el problema que se intenta resolver: ¿quién es mi cliente?, ¿qué necesita este cliente de nuestro producto o servicio?, ¿nuestro producto se venderá? Lo ideal es que sea específico con base en lo que se está buscando. Una vez definido el problema, se procede a establecer los objetivos de la investigación, es decir, lo que buscamos lograr con dicha investigación, como entender el comportamiento de los clientes o identificar y elaborar el segmento de mercado de la empresa. </p>
+                                <p><strong>Etapa 2. Plan de investigación</strong></p>
+                                <p>Para diseñar un plan de investigación es necesario tomar decisiones sobre las fuentes de información, los métodos e instrumentos de investigación y los métodos de contacto. Respecto a las fuentes de información, podemos diferenciar la información primaria que es aquella que se obtiene con un objetivo específico o para un proyecto de investigación concreto y la información secundaria que es la que se ha recopilado para cualquier otro propósito y que ya existe. Los métodos e instrumentos de investigación suelen recopilar la información primaria a través de encuestas, entrevistas y observaciones, entre otros. Si es la primera vez que se implementa un instrumento, se sugiere que se hagan encuestas en lugares donde se encuentren personas que consideren podrían adquirir cierto producto o servicio. Con los métodos de contacto se decide cómo ponerse en contacto con los participantes. Estos métodos pueden ser: correo electrónico, teléfono, entrevistas personales o encuestas a través de las redes sociales digitales.</p>
+                                <p><strong>Etapa 3: Recopilación de información</strong></p>
+                                <p>Esta etapa se compone de la aplicación de los instrumentos de investigación a las personas indicadas, bien en línea o de forma presencial. Hay dos técnicas de recopilación de información:</p>
+                                <p><strong>Cuantitativa</strong>: cuando se pretende buscar datos o medir algo, por ejemplo, para saber si la persona está dispuesta a pagar determinada cantidad por un producto o servicio.</p>
+                                <p><strong>Cualitativa:</strong> Medir una cualidad, una percepción, un aspecto que no se puede medir. Aquí el ejemplo podría ser ¿cómo la atendieron? Es un aspecto intangible, cuyo resultado permite medir la satisfacción del cliente para saber qué ofrecer y cómo ofrecerlo.</p>
+                                <p>Estas técnicas de investigación permiten enlazar y profundizar en el conocimiento del público, cliente potencial o target al que se desea “conquistar”.</p>
+                                <p><strong>Etapa 4: Análisis de la información</strong></p>
+                                <p>Esta etapa consiste en analizar la información encaminada a formular conclusiones a partir de la información recabada. Se representa la información en tablas o gráficas que permitan una mejor comprensión de ésta con la finalidad de observar los resultados encaminado a la toma de decisiones informadas.</p>
+                                <p><strong>Etapa 5: Toma de decisiones</strong>Los encargados de la toma de decisiones dentro de la empresa deben reflexionar sobre las conclusiones de la investigación, pudiendo optar por estudiar más la situación y ampliar la investigación en caso de que los resultados obtenidos no fueran del todo concluyentes. La información obtenida a lo largo del estudio les ayudará a ver los problemas con mayor claridad.</p>
+                                <div class="texto-infografia">
+                                    <img src="../../../../../assets/images/dimensions/canales/4_Proceso_investigacion_mercado.webp" class="img-fluid" />
+                                    <separator></separator>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Segmentación de mercados">
+                                <h3 class="mt-3"><i class="num">3</i> Segmentación de mercados</h3>
+                                <div class="texto-video">
+                                    <p>Segmentar los mercados es una actividad que tiene el propósito de dividir un mercado heterogéneo en subgrupos más pequeños y homogéneos de consumidores que tienen necesidades, características o comportamientos similares, los cuales pueden requerir productos o mezclas de marketing distintos. </p>
+                                    <p>La importancia de delimitar un mercado general se debe a que dentro de él se presentan distintos tipos de consumidores con diferentes necesidades y deseos. Esta amplitud ocasiona que no sea posible que una sola organización cuente con los recursos para proporcionar todos los productos y servicios que satisfagan las necesidades de los consumidores. Por esta razón, es importante delimitar el mercado. </p>
+                                    <p>Fischer y Espejo (2011:61) definen la segmentación de mercados como “un proceso mediante el cual se identifica o se toma a un grupo de compradores homogéneos, es decir, se divide el mercado en varios submercados o segmentos de acuerdo con los diferentes deseos de compra y requerimientos de los consumidores”.</p>
+                                    <p>La segmentación de mercados se constituye por cuatro perfiles: demográfico, geográfico, comportamiento y psicográfico. En el siguiente apartado, se explicarán cada uno de ellos.</p>
+                                </div>
+                                <div class="texto-infografia">
+                                    <h4>Criterios para segmentar un mercado</h4>
+                                    <p>Existe un gran número de factores que influyen en la segmentación de mercados (Cuadro 1), los cuales se combinan para obtener un conocimiento profundo del mercado y así obtener un perfil más exacto.<br /><br />Cuadro 1. Factores de segmentación de mercados </p>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Demográfico</p>
+                                                </td>
+                                                <td>
+                                                    <p>Geográfico </p>
+                                                </td>
+                                                <td>
+                                                    <p>Comportamiento </p>
+                                                </td>
+                                                <td>
+                                                    <p>Psicográfico</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Edad </p>
+                                                </td>
+                                                <td>
+                                                    <p>Región</p>
+                                                </td>
+                                                <td>
+                                                    <p>Intención de compra </p>
+                                                </td>
+                                                <td>
+                                                    <p>Personalidad</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Sexo</p>
+                                                </td>
+                                                <td>
+                                                    <p>Urbana o rural</p>
+                                                </td>
+                                                <td>
+                                                    <p>Uso del producto </p>
+                                                </td>
+                                                <td>
+                                                    <p>Beneficio del producto</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Ocupación</p>
+                                                </td>
+                                                <td>
+                                                    <p>Clima </p>
+                                                </td>
+                                                <td>
+                                                    <p>Hábitos de compra </p>
+                                                </td>
+                                                <td>
+                                                    <p>Motivos de compra</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Educación</p>
+                                                </td>
+                                                <td>
+                                                    <p>Nacionalidad </p>
+                                                </td>
+                                                <td>
+                                                    <p>Etapas de disposición, que se dividen en:</p>
+                                                    <p>• Sin noticias del producto</p>
+                                                    <p>• Conocimiento bueno</p>
+                                                    <p>• Conocimiento regular</p>
+                                                    <p>• Conocimiento nulo</p>
+                                                    <p>• Deseoso y con intención de compra</p>
+                                                </td>
+                                                <td>
+                                                    <p>Intereses </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Estado civil</p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p>Tipo de cliente</p>
+                                                </td>
+                                                <td>
+                                                    <p>Valores </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Tamaño de la familia</p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Ingresos</p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Clase social</p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Religión</p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                                <td>
+                                                    <p> </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Fuente: elaboración propia con base en Fischer y Espejo (2011) </p>
+                                    <p>La elaboración de los perfiles demográficos, geográficos, comportamiento y psicográficos permiten la elaboración del segmento de mercado de una empresa. Es importante decir que hay empresas que tienen más de un mercado, sin embargo, al inicio del proyecto se recomienda enfocarse sólo en uno. </p>
+                                    <p>Ejemplo de segmentación. </p>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Ejemplo de segmento mal definido:</p>
+                                                </td>
+                                                <td>
+                                                    <p>Ejemplo de segmento bien definido</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Mujeres y hombres de 30 a 55 años.  </p>
+                                                </td>
+                                                <td>
+                                                    <p>Mujeres y hombres de 30 a 55 años que son padres de familia y trabajan en la ciudad de Puebla, con
+                                                        hijos de entre 6 y 11 años que acuden a escuelas privadas. NSE A/B y, C, interesados en la
+                                                        alimentación saludable y cuidado del medio ambiente.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Fuente: elaboración propia. </p>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Determinación de arquetipos de clientes">
+                                <h3 class="mt-3"><i class="num">4</i> Determinación de arquetipos de clientes</h3>
+                                <p>Para elaborar un arquetipo de cliente se debe entender que hay diversos tipos de perfiles que también participan en la toma de decisiones de las empresas. A continuación, se definirá cada uno: </p>
+                                <p>Decisor: Persona que puede tomar la decisión final de la compra.</p>
+                                <p>Prescriptor: Persona que recomienda el producto. Tiene cierta influencia en la decisión de compra, aunque no es quien toma la decisión final ni tampoco quien usará o consumirá el producto.</p>
+                                <p>Influenciador: Persona que, con su opinión, puede condicionar positiva o negativamente la decisión de compra.</p>
+                                <p>Ejemplo: Un restaurante realiza una encuesta y con los datos obtenidos descubre que su arquetipo de cliente es una persona ocupada y consciente de su salud, que busca una solución conveniente para mantener una dieta equilibrada y saludable, pero no tiene tiempo para cocinar o buscar opciones nutritivas.</p>
+                                <p>Con este conocimiento, dicho restaurante desarrolla una propuesta de valor enfocada y efectiva brindando menús personalizados y con entregas a domicilio.</p>
+                                <p>Dependiendo del arquetipo que se desea elaborar, la directora de Marketing de InboundCycle, recomienda los siguientes pasos (Vercheval, 2023):</p>
+                                <h5>Etapa 1. Identificar qué información necesitamos para desarrollar los arquetipos</h5>
+                                <p>Se deben elaborar las preguntas que se requieren para obtener la información necesaria. En la sección de Caja de herramientas encontrará plantillas con preguntas de sugerencia, las cuales pueden cambiar de acuerdo con la industria.</p>
+                                <h5>Etapa 2. Determinar cómo se investigará a los posibles arquetipos y cómo se obtendrán las respuestas a las preguntas que se han formulado</h5>
+                                <p>El proceso de investigación de mercados analizado anteriormente será un gran aliado para realizar esta parte. Acorde con la etapa de desarrollo del plan de investigación de mercados, algunos de los métodos e instrumentos de investigación se hacen a través de encuestas o entrevistas profundas. Si ya cuenta con clientes dentro de un negocio, se les pueden aplicar las preguntas estos clientes, en caso de que no se pueda acudir a los lugares donde se puedan encontrar.</p>
+                                <p>También es buena idea analizar redes sociales como X, antes Twitter o Meta, antes Facebook o Instagram para buscar información. Los usuarios, a menudo, comparten sus gustos, sus quejas o sus intereses en sus perfiles. Otra alternativa es solicitar a expertos y personas influyentes que recomienden a alguien a quien entrevistar. Esto es especialmente útil si queremos introducirnos en nuevos mercados de los que no tenemos bases de datos.</p>
+                                <h5>Etapa 3. Realizar la investigación recopilando información y respuestas</h5>
+                                <p>Cuando hemos definido los métodos de investigación es momento de recopilar la información para la elaboración del arquetipo. Para que sea sencillo hacer el análisis posterior, se sugiere que la información se concentre en un solo lugar para detectar patrones dentro de las respuestas. </p>
+                                <p><em>Etapa 4. Utilizar una hoja de desarrollo de arquetipo para cada perfil encontrado</em></p>
+                                <p>La finalidad de estas hojas es establecer la base del perfil. Si la información no se encuentra en un mismo lugar será difícil utilizarla para realizar el arquetipo del cliente. Las secciones más comunes que tiene una hoja de desarrollo son: </p>
+                                <ul>
+                                    <li>Información demográfica</li>
+                                    <li>Trabajo y nivel de experiencia profesional</li>
+                                    <li>Cómo es un día de su vida</li>
+                                    <li>Cuáles son sus puntos de dolor y cómo podemos ayudarle a solucionarlos</li>
+                                    <li>Qué es lo que valora más</li>
+                                    <li>Cuáles son sus objetivos</li>
+                                    <li>Dónde busca información</li>
+                                    <li>Qué tipo de experiencia busca cuando investiga nuestros productos o servicios</li>
+                                    <li>Objeciones más frecuentes a nuestro producto o servicio</li>
+                                </ul>
+                                <h5>Etapa 5. Contar la historia del arquetipo</h5>
+                                <p>Con la información recolectada en la hoja de desarrollo se debe relatar una historia del arquetipo con la intención de no presentar una lista de características, sino contar con detalle quién es la representación como persona. </p>
+                                <h5>Ejemplos</h5>
+                                <p>Para ilustrar mejor los conceptos citados conceptos, a continuación, se presenta un ejemplo en el contexto de una empresa que vende bicicletas eléctricas, ofreciendo un ejemplo de arquetipo de cliente, público objetivo y buyer persona.</p>
+                                <div class="texto-infografia">
+                                    <h5>Arquetipo de Cliente: El entusiasta del aire libre</h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Descripción</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>Este arquetipo representa a personas que aman estar al aire libre y buscan la aventura. Prefieren
+                                                        actividades que les permitan explorar la naturaleza y mantener activos. Valoran la sostenibilidad y
+                                                        están interesados en tecnologías que respeten el medio ambiente.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Motivaciones</p>
+                                                </td>
+                                                <td>
+                                                    <p>Buscan bicicletas eléctricas por su capacidad de permitirles explorar más terreno con menos esfuerzo,
+                                                        ideal para aventuras al aire libre. La sostenibilidad y el impacto ambiental de sus compras son
+                                                        consideraciones importantes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Comportamiento de compra</p>
+                                                </td>
+                                                <td>
+                                                    <p>Este grupo investiga exhaustivamente antes de comprar, buscando productos duraderos, de alta calidad
+                                                        y eco-amigables. Prefieren marcas que demuestren un compromiso genuino con el medio ambiente.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h5>Ejemplo de Público objetivo: adultos jóvenes urbanos</h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Demografía</p>
+                                                </td>
+                                                <td>
+                                                    <p>Adultos de 25 a 35 años, residentes en áreas urbanas, con ingresos medios a altos</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Características</p>
+                                                </td>
+                                                <td>
+                                                    <p>Este grupo busca soluciones de transporte eficientes para la ciudad, están muy interesados en la
+                                                        tecnología y prefieren opciones de transporte sostenibles. Valoran tanto la funcionalidad como el
+                                                        estilo en sus compras.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Necesidades</p>
+                                                </td>
+                                                <td>
+                                                    <p>Necesitan una forma confiable y conveniente de moverse por la ciudad, evitando el tráfico y
+                                                        reduciendo su huella de carbono.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h5>Ejemplo de Buyer persona: Laura, la profesional urbana</h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Demografía</p>
+                                                </td>
+                                                <td>
+                                                    <p>Laura tiene 30 años, vive en el centro de una ciudad grande, y trabaja como diseñadora gráfica en una
+                                                        agencia de publicidad. Tiene un ingreso anual de 120 mil pesos y no posee un automóvil.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Comportamientos y Preferencias</p>
+                                                </td>
+                                                <td>
+                                                    <p>Laura se preocupa por el medio ambiente y prefiere utilizar medios de transporte sostenibles. Es
+                                                        tecnológicamente hábil y valora los productos que combinan estilo con funcionalidad. Suele comprar
+                                                        marcas que reflejen su identidad personal y profesional.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Objetivos y desafíos</p>
+                                                </td>
+                                                <td>
+                                                    <p>Quiere evitar el tráfico y reducir su tiempo de desplazamiento, buscando una opción de transporte que
+                                                        sea tanto práctica como estilizada. Le preocupa la seguridad al viajar por la ciudad y busca una
+                                                        bicicleta eléctrica que sea fácil de manejar y almacenar en su apartamento.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>¿Por qué compraría tu producto?</p>
+                                                </td>
+                                                <td>
+                                                    <p>Laura está interesada en una bicicleta eléctrica que no solo le permita desplazarse eficientemente,
+                                                        sino que también sea un reflejo de su estilo personal y compromiso con la sostenibilidad.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>Estos ejemplos muestran cómo el arquetipo de cliente ofrece una vista general de un tipo de cliente basado en motivaciones y valores, el público objetivo define un grupo demográfico más amplio con necesidades comunes, y el “buyer persona” detalla un perfil específico que representa a un cliente ideal, detalla sus necesidades personales, desafíos y motivaciones para comprar.</p>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        <p>Ficher, L., &amp; Espejo, J. (2011). Mercadotecnia (4.a ed.). McGraw-Hill/Interamericana Editores, S.A. de C.V.</p>
+                        <p>Kotler, P., &amp; Keller, K. (2012). Dirección de marketing (14.a ed.). Pearson Educación.</p>
+                        <p>Mora, M. N. B., Carvajal, V. M. P., &amp; Álvarez, G. D. L. (2019). El Buyer Persona como factor clave entre las tendencias en Gestión Empresarial. Recimundo, 3 (3 Esp.), 659-681.</p>
+                        <p>Moreno, J. (2023). Cliente ideal: qué es, cómo definirlo y ejemplos. Hubspot. <a href="https://blog.hubspot.es/marketing/crear-perfil-cliente-ideal">https://blog.hubspot.es/marketing/crear-perfil-cliente-ideal</a></p>
+                        <p>Vercheval, S. (2015). Buyer persona: qué es, tipos y cómo definirlo + plantilla. <a href="https://www.inboundcycle.com/buyer-persona">https://www.inboundcycle.com/buyer-persona</a></p>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales//1_Beneficios_potenciales_identificacion_arquetipo_cliente.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        <img src="../../../../../assets/images/dimensions/canales//2_Proceso_creacion_arquetipo_cliente.webp" class="img-fluid" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
+
+            </div>
+        </div>
+    </div>
+</div>

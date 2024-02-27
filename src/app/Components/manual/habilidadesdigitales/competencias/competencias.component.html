@@ -1,0 +1,86 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                  
+                  </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+            </div>
+            <div class="col">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la cultura organizacional?</span></h2>
+                    
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
+                        
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        
+                    </div>
+                </section>
+
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -14,7 +14,7 @@ import { TransformaciondigitalComponent } from './Components/manual/transformaci
 import { OrganizacionypersonasComponent } from './Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { ProcesosComponent } from './Components/manual/procesos/procesos.component';
 import { ProcesosdenegocioComponent } from './Components/manual/procesos/procesosdenegocio/procesosdenegocio.component';
-import { WidgetSeparator, BreadcrumbComponent, AxisMenu, HerramientasComponent } from './Components/widgets/widgets.component';
+import { WidgetSeparator, BreadcrumbComponent, AxisMenu, ToolsComponent } from './Components/widgets/widgets.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DatosyanaliticaComponent } from './Components/manual/datosyanalitica/datosyanalitica.component';
 import { SistemasespecializadosComponent } from './Components/manual/datosyanalitica/sistemasespecializados/sistemasespecializados.component';
@@ -31,7 +31,21 @@ import { ModelosdenegocioComponent } from './Components/manual/transformaciondig
 import { PlaneacionComponent } from './Components/manual/transformaciondigital/planeacion/planeacion.component';
 import { CulturaorganizacionalComponent } from './Components/manual/organizacionypersonas/culturaorganizacional/culturaorganizacional.component';
 import { HabilidadesdigitalesComponent } from './Components/manual/habilidadesdigitales/habilidadesdigitales.component';
-import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/canalesdeventa.component';
+import { ComunicacionycanalesdeventaComponent } from './Components/manual/canalesdeventa/canalesdeventa.component';
+import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/canalesdeventa/canalesdeventa.component';
+import { ArquetiposdeclientesComponent } from './Components/manual/canalesdeventa/arquetiposdeclientes/arquetiposdeclientes.component';
+import { CanalesdigitalesComponent } from './Components/manual/canalesdeventa/canalesdigitales/canalesdigitales.component';
+import { ComercioelectronicoComponent } from './Components/manual/canalesdeventa/comercioelectronico/comercioelectronico.component';
+import { MarketingdigitalComponent } from './Components/manual/canalesdeventa/marketingdigital/marketingdigital.component';
+import { GestiondeclientesComponent } from './Components/manual/canalesdeventa/gestiondeclientes/gestiondeclientes.component';
+import { InfraestructuraComponent } from './Components/manual/habilidadesdigitales/infraestructura/infraestructura.component';
+import { CiberseguridadComponent } from './Components/manual/habilidadesdigitales/ciberseguridad/ciberseguridad.component';
+import { CompetenciasComponent } from './Components/manual/habilidadesdigitales/competencias/competencias.component';
+import { HerramientasComponent } from './Components/manual/habilidadesdigitales/herramientas/herramientas.component';
+import { TecnologiasComponent } from './Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
+import { GestiondetalentohumanoComponent } from './Components/manual/organizacionypersonas/gestiondetalentohumano/gestiondetalentohumano.component';
+import { IndicadoresComponent } from './Components/manual/organizacionypersonas/indicadores/indicadores.component';
+import { EstrategiadenegociosComponent } from './Components/manual/organizacionypersonas/estrategiadenegocios/estrategiadenegocios.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +57,7 @@ import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/cana
     OrganizacionypersonasComponent,
     ProcesosComponent,
     ProcesosdenegocioComponent,
-    WidgetSeparator, BreadcrumbComponent, AxisMenu, HerramientasComponent,
+    WidgetSeparator, BreadcrumbComponent, AxisMenu, ToolsComponent,
     DatosyanaliticaComponent,
     SistemasespecializadosComponent,
     AnaliticadedatosComponent,
@@ -59,7 +73,21 @@ import { CanalesdeventaComponent } from './Components/manual/canalesdeventa/cana
     PlaneacionComponent,
     CulturaorganizacionalComponent,
     HabilidadesdigitalesComponent,
-    CanalesdeventaComponent
+    ComunicacionycanalesdeventaComponent,
+    CanalesdeventaComponent,
+    ArquetiposdeclientesComponent,
+    CanalesdigitalesComponent,
+    ComercioelectronicoComponent,
+    MarketingdigitalComponent,
+    GestiondeclientesComponent,
+    InfraestructuraComponent,
+    CiberseguridadComponent,
+    CompetenciasComponent,
+    HerramientasComponent,
+    TecnologiasComponent,
+    GestiondetalentohumanoComponent,
+    IndicadoresComponent,
+    EstrategiadenegociosComponent
   ],
   imports: [
     BrowserModule,

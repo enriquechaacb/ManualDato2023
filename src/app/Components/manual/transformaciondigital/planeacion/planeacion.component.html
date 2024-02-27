@@ -32,53 +32,188 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>La planeación es el punto de partida para el diseño de una estrategia digital. En este eje temático podrás identificar ¿Qué es una estrategia de datos? y sus principales componentes, así como la importancia de los datos para la toma de decisiones estratégicas como incrementar la eficiencia de los procesos administrativos, aumentar las ventas y rentabilidad de la empresa, anticiparse a las tendencias de comportamiento de los clientes para acercarse a nuevos mercados o incrementar su portafolio de servicios o cumplir con regulaciones.</p>
+                            <p>Para ello se necesita una adecuada identificación de la información de que se dispone y aquella que se puede obtener públicamente (datos abiertos), recolección y análisis de datos, selección de la herramienta más adecuada para la pyme, definir indicadores y resultados clave para su análisis, de la mano de un proceso de adopción de esta cultura hacia adentro de la empresa.</p>
+                            <p>La estrategia digital permite a las empresas adaptarse más rápidamente al entorno en el que se encuentran, a través del uso de una mayor cantidad de datos e información para la toma de decisiones estratégicas. </p>
+                            <p>Así, la planeación es un proceso sistemático indispensable en toda organización que en la era digital exige la incorporación de tecnologías digitales encaminadas a una trasformación que brinde mayor peso a los datos que generen información relevante que a la pyme le permita desarrollar mejoras al negocio y generar valor.</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la planeación y estrategia digital?</span></h2>
-                    
+                        <h3 class="mt-3"><i class="num">1</i> Planeación y Estrategia digital</h3>
+                        <p>En la era digital, la planeación y la estrategia digital deben estar debidamente articuladas para mejorar la competitividad del negocio, la eficiencia y la productividad, así como optimizar la experiencia del cliente. </p>
+                        <p>Planear es proyectar un futuro deseado y los medios efectivos para conseguirlo” (Russel Ackoff).</p>
+                        <p>De acuerdo con esta premisa, la planeación es un proceso sistemático y fundamental para lograr el éxito del negocio. Tiene como base la definición de objetivos y requiere, precisar las acciones y estrategias para alcanzarlos, así como asignar los recursos para conseguirlos. </p>
+                        <p>La estrategia digital tiene que ver con un plan de acción específico que se enfoca en el uso de la tecnología y medios digitales para crear valor para la empresa.</p>
+                        <p>Por tanto, la planeación y la estrategia digital se convierten en los puntos medulares para lograr el éxito de cualquier negocio.</p>
+                        <mat-accordion>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Alineacion')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.1. Alineación entre la estrategia de negocio y la estrategia digital</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Alineacion">1.1. Alineación entre la estrategia de negocio y la estrategia digital</h4>
+                                <div class="texto-video">
+                                    <p>De acuerdo con Héctor Pérez (2021), una estrategia digital es el uso de las tecnologías, a las que tiene acceso una empresa para el comercio, la publicidad, la promoción de productos o servicios, así como la comunicación y gestión de clientes y prospectos, automatización de procesos, y la explotación de datos a través de la implementación y gestión de herramientas digitales.</p>
+                                    <p>La estrategia digital utiliza la tecnología y los medios digitales para generar valor dentro de las empresas, se enfocan en maximizar los beneficios comerciales, a través del análisis de los datos que reciben y generan en su operación utilizando la tecnología que tienen disponible.</p>
+                                    <p>Para concretar los beneficios de la transformación digital, hay que planificarla ordenadamente y esto también supone una serie de retos y dificultades para las pymes, entre los que destaca:</p>
+                                    <ul>
+                                        <li>Enfrentar una mayor competencia, pues otras empresas están invirtiendo en su digitalización y se volverán más poderosas.</li>
+                                        <li>Los cambios constantes del entorno digital y las tecnologías, lo que obliga a estar al día sobre innovaciones en equipos, software y actualizaciones.</li>
+                                        <li>Contar con recursos limitados, tanto humanos como económicos, para implementar la estrategia, lo cual significa que hay que ser juiciosos y dar tiros de precisión.</li>
+                                        <li>Cumplir con la normativa que regula el uso de los datos personales, la propiedad intelectual y la ciberseguridad.</li>
+                                    </ul>
+                                    <p>Hay que avanzar siguiendo un plan que, para ser exitoso, debe conectar con el negocio y convertirse en la herramienta para que las empresas alcancen su mayor potencial y se consoliden de mejor forma en el mercado. Por ejemplo, si uno de los objetivos estratégicos de la empresa es la retención de clientes, a través de las herramientas y fuentes adecuadas de explotación de datos, es posible identificar a los clientes que sería más fácil retener, las razones por las que un cliente quiere quedarse con la empresa, las características de los clientes que a la empresa le conviene retener, por citar algunos. A partir del análisis de esta información la empresa puede tomar decisiones y crear estrategias comerciales acordes con sus objetivos.</p>
+                                    <p>La alineación estratégica del negocio y de la transformación digital permite potencializar los resultados, elevando la productividad de los recursos tecnológicos. </p>
+                                    <p>El primer paso para una crear una estrategia digital exitosa es alinearla a los objetivos estratégicos e identificar cómo es que éstos se pueden potenciar a partir de las herramientas digitales, algunos ejemplos de objetivos son:  aumentar las ventas, fidelizar a los clientes, llegar a nuevos mercados y mejorar la posición de la marca, por mencionar algunos. En otras palabras, lo primero es saber qué se busca con la transformación digital. Hay que recordar que la tecnología es un medio, no un fin en sí misma. Entonces hay que definir objetivos claros con una perspectiva temporal bien definida.</p>
+                                    <p>De igual forma, es necesario conformar equipos multidisciplinarios para hacer un análisis diagnóstico, identificar dónde se encuentran y hacia dónde se quiere llegar; para ello existen diversas herramientas, como el análisis FODA, la lluvia de ideas, consulta con especialistas, por citar algunas. Es fundamental conocer el mercado, la competencia y el público objetivo al que se dirige la empresa, así como las capacidades digitales existentes internamente, lo cual es básico para identificar las oportunidades, las amenazas, las fortalezas y las debilidades.</p>
+                                    <p>El resultado de este ejercicio debe ser un diagnóstico del contexto digital en el que se sitúa la empresa, sus clientes, competidores, etcétera, así como de la situación interna de la empresa en términos de sus habilidades digitales.</p>
+                                    <p>El resultado del diagnóstico permitirá ubicar dónde se encuentra la empresa y en conjunto con la alta dirección se deberá realizar la planeación y la estrategia digital; definir el alcance que tendrá la implementación de la estrategia digital, es decir fijar a dónde se quiere llegar para, una vez puesta en operación, se midan los resultados, para su posterior implementación y ponerla en operación y tras un tiempo pertinente, volver a empezar el ciclo para incorporar mejoras y nuevas herramientas.</p>
+                                </div>
+                                <img src="../../../../../assets/images/dimensions/transformacion/3_Proceso_implementacion_estrategia_digital.webp" class="img-fluid" />
+                                <separator></separator>
+                                <img src="../../../../../assets/images/dimensions/transformacion/4_Beneficios_explotacion_datos.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>De acuerdo con el documento Economía de los datos Riqueza 4.0 (Emilio Ontiveros, 2017)se entiende por este concepto a “… el conjunto de iniciativas, actividades y/o proyectos cuyo modelo de negocio se basa en la exploración y explotación de las estructuras de bases de datos existentes (tradicionales y procedentes de nuevas fuentes) para identificar oportunidades de generación de productos y servicios”.</p>
+                                <h5>1.1.1 Transformación de datos en <em>insights</em></h5>
+                                <p>A partir de los datos, se pueden identificar <em>insights</em>. En términos de negocio los <em>insights</em> son aquellos hallazgos relacionados con la comprensión de cómo funciona el negocio, es decir el conocimiento que aporta valor a las empresas, en sus diferentes ámbitos: clientes, procesos, mercados, etc. A partir de este conocimiento, las empresas lograrán crear, modificar y replantear sus objetivos y estrategias para ser más competitivas y eficientes, así como innovadoras en términos de mercados, productos y procesos. </p>
+                                <p>Para poder crear <em>insights</em>, es necesario observar el comportamiento de las personas ante ciertas situaciones relacionadas con el negocio; por ejemplo, una empresa de <em>streaming</em> podría llevar el registro de cada cuánto tiempo los usuarios detienen la reproducción de los contenidos, lo que podría traducirse en identificar un patrón de comportamiento para colocar los anuncios previo a que se den los cortes promedio y, de esta forma, garantizar a los anunciantes una mayor audiencia, que permita cierto nivel de precio de los espacios publicitarios.</p>
+                                <p>Conforme es posible explotar mayor cantidad de datos y correlacionarlos, es más sencillo encontrar patrones de conducta de los diferentes actores para facilitar la toma de decisiones en beneficio de la empresa.</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacionan')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.2. Cómo se relacionan los objetivos y los datos</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="relacionan">1.2. Cómo se relacionan los objetivos y los datos</h4>
+                                <p>Se entiende como dato a la representación simbólica de los hechos que están ocurriendo en el mundo; estos hechos individuales pueden ser agregados, para su análisis y utilización para la toma de decisiones estratégicas, tanto por las empresas como por los gobiernos. (DAMA International, 2020). En la actualidad, la mayoría de los datos se recolectan y almacenan electrónicamente, por lo que contar con herramientas que permitan su adecuada explotación se está convirtiendo, cada vez más, en una necesidad para las empresas de cualquier tamaño.</p>
+                                <p>En la actualidad, los datos están considerados como un activo de las organizaciones, cuya correcta explotación y transformación permite a las pymes competir contra empresas de mayor tamaño de forma más equitativa. Por ello se considera relevante que las empresas incorporen la cultura del uso de los datos de manera paulatina, hasta convertirse en empresas <em>data-driven</em>, es decir guiadas por los resultados de la explotación de los datos.</p>
+                                <img src="../../../../../assets/images/dimensions/transformacion/5_Estrategia_explotacion_datos.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>A partir de la explotación de los datos, la empresa obtiene la información que le permite plantear nuevos objetivos o replantear los existentes, enfocándose a los puntos clave que han sido mencionados en la sección anterior.</p>
+                                <p>La identificación de los datos contribuye a alinear los datos, procesarlos y transformarlos en información, de acuerdo con las necesidades estratégicas del negocio, para ello se sugiere tomar en cuenta lo siguiente: (Steenbeek, 2018)</p>
+                                <ol>
+                                    <li>Identificar a los principales interesados en los productos de información, normalmente la alta dirección, las áreas de ventas y financieras.</li>
+                                    <li>Revisar con ellos sus necesidades y requerimientos de información (es muy posible que se presenten muchas diferencias).</li>
+                                    <li>A partir de lo anterior, en alineación con los objetivos y estrategias de la pyme, identificar los datos a recolectar.</li>
+                                    <li>Recolectar los datos identificados y procesarlos para responder preguntas de cada usuario.</li>
+                                    <li>Regresar al paso 1 conforme se avanza en la estrategia digital de la pyme.</li>
+                                </ol>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('medirnos')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.3. Vamos a medirnos</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="medirnos">1.3. Vamos a medirnos</h4>
+                                <p>Lo que no se mide no puede mejorar o corregir, es por eso que una parte importante para todas las empresas es establecer indicadores e identificar métricas, las métricas son los valores numéricos que se desprenden de la operación del negocio, por ejemplo el costo de los insumos, el costo por <em>click</em> cuando se hace publicidad en medios digitales, saber cuántas personas visitan las redes sociales del negocio, qué contenidos, cuantas de ellas compran, cuánto cuesta traer un nuevo cliente, por mencionar algunos. </p>
+                                <p>Los indicadores más comúnmente usados por las empresas son los conocidos como Indicadores clave de desempeño mejor conocidos como KPI (<em>Key Performance Indicator</em>, por sus siglas en inglés). Los indicadores permiten identificar el avance o desviación respecto de los objetivos de la empresa y el correcto funcionamiento de la organización, de acuerdo con su estrategia, a fin de que se puedan hacer ajustes de forma ágil y oportuna. Algunos ejemplos de indicadores son: retorno sobre la inversión (ROI), tasa de ganancia, tasa de <em>clicks</em> (CTR) que es la cantidad de <em>clicks</em> que un anuncio recibe dividida entre la cantidad de veces que se muestra. Los indicadores dependen de qué se haya trazado como objetivo.</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('datos')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.4. Características de los datos</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="datos">1.4. Características de los datos</h4>
+                                <img src="../../../../../assets/images/dimensions/transformacion/6_Tipos_datos.webp" class="img-fluid" />
+                                <separator></separator>
+                                <p>En el caso de los datos biométricos y personales, estos deben de ser salvaguardados y protegidos conforme las normativas aplicables en cada país, para lo cual las empresas deben generar políticas de acceso y consulta a los datos personales, que impidan vulnerar la intimidad de las personas o el mal uso de la información, ya que, en caso contrario, podrían constituir violaciones consideradas como delito.</p>
+                                <p>Las fuentes de datos tienen también diferente naturaleza, de acuerdo con las siguientes categorías (Aguilar, 2019):</p>
+                                <ul>
+                                    <li>Datos estructurados: Datos que, como su nombre lo dice, tienen un formato bien determinado, son generados de una forma previamente definida, los ejemplos más claros son las bases de datos, hojas de cálculo, o sistemas de almacenamiento. </li>
+                                    <li>Datos semiestructurados: Datos que, sin considerar un formato fijo, se identifican a través de etiquetas que permiten agruparlos durante el procesamiento de estos, corresponden principalmente a archivos de texto XML, HTML.</li>
+                                    <li>Datos no estructurados: Son aquellos datos que, como su nombre lo dice, no tienen una estructura fija o identificable, por lo que requieren herramientas que permitan su análisis e interpretación, por ejemplo, los ingresos a las redes sociales, videos, fotografías, etc.</li>
+                                </ul>
+                                <p>Una vez que se tienen identificadas las fuentes de datos, y su naturaleza, es importante decidir las herramientas que se utilizarán para transformarlos en información, tales como:</p>
+                                <ul>
+                                    <li>Hojas de cálculo como Excel o <em>Smartsheet</em> (datos estructurados)</li>
+                                    <li>Software para la explotación y visualización de datos, por ejemplo: Tableau, Hadoop, Power BI, Analítica de datos, etc. (datos estructurados, datos semiestructurados o no estructurados).</li>
+                                </ul>
+                                <p>Es importante seleccionar correctamente los datos e identificar la herramienta a utilizar, para obtener resultados más acertados. Idealmente los datos deben cumplir las siguientes características: </p>
+                                <ul>
+                                    <li>Volumen: Es la cantidad de datos que diariamente almacena una empresa y que pueden ser transformados en información.</li>
+                                    <li>Velocidad: Considera la rapidez con la que los datos pueden ser transformados.</li>
+                                    <li>Variedad: Se refiere a la forma en la que se encuentran los datos, por ejemplo, imágenes, entradas de redes sociales, documentos de texto, videos, etc.</li>
+                                    <li>Veracidad: Alude a la fiabilidad de los datos.</li>
+                                    <li>Viabilidad de obtención y procesamiento: Se relaciona con los recursos necesarios para colectar y transformar los datos en información oportuna.</li>
+                                    <li>Visualización: La forma en que se puede presentar los datos y su análisis para que puedan generar valor a la empresa (Dashboards, KPIs, etc.)</li>
+                                    <li>Valor de los datos: El resultado final de la transformación de los datos en información, permite a la empresa tomar decisiones estratégicas.</li>
+                                </ul>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Procesar')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.5. Procesar y entender los datos</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Procesar">1.5. Procesar y entender los datos</h4>
+                                <img src="../../../../../assets/images/dimensions/transformacion/7_Procesar_entender_datos.webp" class="img-fluid" />
+                                <separator></separator>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Modelos')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.6. Modelos de procesamiento de datos</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Modelos">1.6. Modelos de procesamiento de datos</h4>
+                                <p>Los modelos de datos son recursos que le permiten a una compañía identificar y documentar los datos que posee, describir la forma en estos se emplean, sus características para poder ordenarlos, analizarlos, explotarlos y transformarlos en información útil.</p>
+                                <p>Los modelos de datos se clasifican como:</p>
+                                <h5>Modelos conceptuales</h5>
+                                <p>En estos se define la estructura general del negocio y sus datos, es el primer paso para identificar las fuentes de datos y cómo estos interactúan en los diferentes procesos de la empresa. Permiten mostrar la perspectiva de la empresa.</p>
+                                <h5>Modelos lógicos de datos</h5>
+                                <p>Permiten identificar los atributos de los datos, y su relación, utilizan herramientas visuales para la ejecución de procesos específicos.</p>
+                                <h5>Modelos físicos de datos</h5>
+                                <p>Permiten visualizar la estructura de las bases de datos antes de su construcción, facilitan la identificación de relaciones primarias entre los datos y detallan el modelo lógico. Representan las tablas, las columnas, los tipos de datos, las vistas, las restricciones, los índices y los procedimientos dentro de la base de datos o la información comunicada durante los procesos informáticos.</p>
+                            </mat-expansion-panel>
+                        </mat-accordion>
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>Aguilar, L. J. (2019). La inteligencia de negocio y analíticia de datos. (págs. 20-22). Alfaomega Gurpo Editor México.</p>
+                        <p>DAMA International. (2020). La guía del conocimiento para la gestión de datos (DAMA-DMBOK2). Technics Publications.</p>
+                        <p>Emilio Ontiveros, V. G. (2017). Economía de los datos Riqueza 4.0. Madrid: Ariel.</p>
+                        <p>RAE (2023). Diccionario. Recuperado  de <a href="https://dle.rae.es/algoritmo">https://dle.rae.es/algoritmo</a></p>
+                        <p>IBM. (2023).  ¿Qué es machine learning? Recuperado de <a href="https://www.ibm.com/mx-es/analytics/machine-learning">https://www.ibm.com/mx-es/analytics/machine-learning</a></p>
+                        <p>Joyanes A., L. (2015). Sistemas de información en la empresa. Editorial AlfaOmega (págs. 189-209), 590 p. </p>
+                        <p>Marqués, F. (2018). Selección, Exploración, Limpieza y Transformación en Minería de Datos a Través de IBM SPSS Statistics. Independently Published.</p>
+                        <p>Perez, H. (2021). ¿Cómo construir una estrategia digital para tu empresa? Recuperado de LinkedIn. Recuperado de <a href="https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es">https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es</a></p>
+                        <p>Steenbeek, I. (2018). DATA MANAGEMENT. Data Crossroads.</p>
+                        <p>Westreicher. (2021). <em>Economipedia</em>. Definiciones Recuperado de <a href="https://economipedia.com/definiciones/estrategia.html">https://economipedia.com/definiciones/estrategia.html</a></p>
+                        <p>Colaboradores de Wikipedia. (2023). Definiciones. <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">https://es.wikipedia.org/wiki/Wikipedia:Portada</a></p>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/transformacion/1_Beneficios_potenciales_estrategia_digital.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/transformacion/2_Proceso_planear_estrategia_digital.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
-                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
 
             </div>
         </div>

@@ -30,7 +30,7 @@ export class MediosdepagoComponent {
         public _thisroute: ActivatedRoute,
         public _globalService: GlobalService
     ) {
-        this.Secciones = sections;
+        this.Secciones = this._globalService.Secciones;
         this.Seccion = "Introduccion";
     }
     ngOnInit(): void {
@@ -41,21 +41,6 @@ export class MediosdepagoComponent {
     }
 
 }
-
-const sections = [
-    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
-    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
-    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
-    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
-    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
-    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
-    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
-    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
-    { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
-    { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
-    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
-    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
-]
 
 const tools = [
     { Tema: "Plataformas de comercio digital", Recurso: "", Url: "https://platzi.com/clases/1986-fundamentos-ecommerce/30773-bienvenida-y-presentacion-del-proyecto/", Descripcion: "Clase introductoria al comercio digital", Observaciones: "Conocer elementos clave para una tienda de e-comerce" },

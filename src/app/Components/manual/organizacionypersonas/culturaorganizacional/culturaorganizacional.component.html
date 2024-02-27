@@ -32,19 +32,78 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>La cultura organizacional permite estructurar de forma clara y eficaz, los valores y filosofía que respaldan los objetivos y acciones detrás de una organización; estos constituyen las bases que determinan el desarrollo de la empresa dentro del mercado, sus acciones sobre el producto o servicio y la manera para direccionar sus decisiones fundamentales sobre la comunicación al interior con sus colaboradores y al exterior con sus clientes. Los clientes pueden inclinarse en su decisión de compra al conocer el tipo de compromiso que busca divulgar la empresa dentro de su actividad comercial.</p>
+                            <p>En la era digital, la cultura organizacional implica una transformación digital fundamentada en las personas que se ve fortalecida con el uso de tecnologías digitales, va más allá de la conformación y potencialización del talento humano, es conformar un entorno favorable de filosofía de trabajo que permite combinar las necesidades y demandas de consumidores y empleados.</p>
+                            <p>En este eje temático se analizará la relevancia que tiene definir la cultura organizacional para una empresa y cada uno de los elementos asociados a ella. Se presentarán propuestas para su implementación en la pequeña y mediana empresa (pyme).</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la cultura organizacional?</span></h2>
-                    
+                        <p>La cultura organizacional se refiere al sistema de creencias y valores compartidos a lo largo y ancho de una organización, en todos los niveles, desde la gerencia hasta el personal administrativo, incluyendo su relación con proveedores, clientes e incluso procesos de reclutamiento. Este sistema orienta los comportamientos diarios y, principalmente, define la visión que tiene de sí misma y del entorno (Raffaele, 2021).</p>
+                        <p>La cultura organizacional representa los pilares que sustentan la actividad propia de la empresa; otorga un sentido de pertenencia y de identidad a los colaboradores y los procesos que se desarrollan al interior; asimismo, brinda un soporte al exterior en cuanto las acciones que se visualizan en el mercado sobre el producto o servicio que se oferta y su valor para los clientes.</p>
+                        <p>En síntesis, la cultura en una organización se refiere al conjunto de comportamientos y hábitos de los directivos y empleados que permean al exterior hacia clientes y proveedores donde se promueve un buen ambiente de trabajo y atiende al cumplimiento de los objetivos del negocio sin descuidar al ser humano.</p>
+                        <mat-accordion>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('diagnostico')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.1. La cultura organizacional y diagnóstico en la pyme</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="diagnostico">1.1. La cultura organizacional y diagnóstico en la pyme</h4>
+                                <div class="texto-video">
+                                    <p>Cuando las organizaciones construyen una cultura sólida, centrada en la experiencia de sus colaboradores, con valores y competencias claras, convierten a su comunidad en un gran equipo, con objetivos comunes y un crecimiento profesional continuo que los motiva a dar lo mejor de sí todos los días (Raffaele, 2021). Por lo anterior, se considera que la cultura organizacional representa la personalidad de una empresa, que marca las pautas del desarrollo de las diferentes actividades tanto al interior como al exterior de la organización. Esta personalidad, por lo tanto, será única para cada empresa y representará el momento que está viviendo dentro del mercado y con las características propias de su producto o servicio, lo que implica que no necesariamente será siempre la misma, puede sufrir cambios en el trayecto de su crecimiento; también quiere decir que no hay una cultura organizacional correcta o incorrecta, lo importante es que sea coherente con las decisiones que se tomen y con los procesos que se implementen para dar fuerza a la imagen que se proyectará hacia el mercado.</p>
+                                </div>   
+                                <p>Aunque existen muchos conceptos destacados en la literatura, se presentarán algunos como referencia para iniciar con la determinación del significado de la cultura organizacional.</p>
+                                <div class="texto-video">
+                                    <p>En el libro <em>Desarrollo organizacional</em>, se define como “un esfuerzo: planeado, que cubre a la organización, administrado de desde la alta dirección que incrementa la efectividad y la salud de la organización, mediante la intervención deliberada en los procesos de la organización utilizando el conocimiento de las ciencias de la conducta” (Beckhard, 1973).</p>
+                                    <p>Por su parte, el autor Chiavenato, define la cultura organizacional como: “El conjunto de hábitos, creencias, valores y tradiciones, interacciones y relaciones sociales, que representan las normas informales y no escritas. Estos hábitos orientan la conducta de los miembros día a día. Le dan sentido a sus acciones para la realización de los objetivos empresariales” (Chiavenato, 2007).</p>
+                                    <p>Mientras que para James O’Toole, la cultura organizacional es: “El conjunto complejo y relacionado entre sí, de un comportamiento estandarizado, institucionalizado y habitual que caracteriza a la empresa y sólo a ella” (O’toole, 1995).</p>
+                                    <p>En la era digital la cultura organizacional tiene como enfoque central la optimización de recursos y busca aprovechar las potencialidades de las tecnologías digitales para transformar el modelo de negocio y crear valor para los socios, accionistas, trabajadores, colaboradores y clientes.</p>
+                                </div>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Importancia')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.2. Importancia de la cultura organizacional en la pyme</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Importancia">1.2. Importancia de la cultura organizacional en la pyme</h4>
+
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Elementos')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.3. Elementos principales en la cultura organizacional</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Elementos">1.3. Elementos principales en la cultura organizacional</h4>
+
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diseno')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.4. Diseño de una cultura organizacional para tu pyme enfocada en los beneficios</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Diseno">1.4. Diseño de una cultura organizacional para tu pyme enfocada en los beneficios</h4>
+
+                            </mat-expansion-panel>
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Pasos')">
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>1.5. Pasos para implementar un proceso de transformación de la cultura organizacional</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <h4 id="Pasos">1.5. Pasos para implementar un proceso de transformación de la cultura organizacional</h4>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>Beckhard, R. (1973). Desarrollo organizacional: estrategias y modelos. Buenos Aires, Argentina: Fondo Educativo Interamericano.</p>
+                        <p>Chiavenato, I. (2007). Introduccion a la Teoria General de la Administración. México: McGraw Hill.</p>
+                        <p>EOI. (2012). El Desarrollo de la Cultura Organizacional. EOI Escuela de Organización Industrial,<em> España.</em> Recuperado de <a href="https://www.eoi.es/blogs/awildacarolinaberiguete/2012/02/27/el-desarrollo-de-la-cultura-organizacional/">https://www.eoi.es/blogs/awildacarolinaberiguete/2012/02/27/el-desarrollo-de-la-cultura-organizacional/</a></p>
+                        <p>López, P. (2018). 30 preguntas poderosas para evaluar la cultura empresarial: LinkedIn<em>.</em> Recuperado de  <a href="https://www.linkedin.com/pulse/30-preguntas-poderosas-para-evaluar-la-cultura-patricia-l%C3%B3pez/?originalSubdomain=es">https://www.linkedin.com/pulse/30-preguntas-poderosas-para-evaluar-la-cultura-patricia-l%C3%B3pez/?originalSubdomain=es</a></p>
+                        <p>O’toole, J. (1995). El Liderazgo del Cambio, como superar la ideología de la comodidad y la tiranía de la costumbre. México: Prentice Hall Hispanoamérica.</p>
+                        <p>Pursell, S. (2023). Cultura organizacional: qué es, tipos, elementos y ejemplos<em>. </em>Hubspot. Recuperado de: <a href="https://blog.hubspot.es/marketing/cultura-organizacional">https://blog.hubspot.es/marketing/cultura-organizacional</a></p>
+                        <p>Raffaele, M. E. (2021). ¿Qué es la cultura organizacional? Construye la identidad que tu empresa necesita. StarMe Up. Recuperado de  <a href="https://os.starmeup.com/es/blog/cultura-organizacional/cultura-organizacional.html">https://os.starmeup.com/es/blog/cultura-organizacional/cultura-organizacional.html</a></p>
+                        <p>Ramírez, J. M., &amp; Mondragón, S. M. (2019). La importancia de la cultura organizacional en las empresas. VII Congreso Virtual Internacional Transformación e Innovación en las Organizaciones (pág. 10). México: Eumed.</p>
                     </div>
                 </section>
 
@@ -62,23 +121,23 @@
                     </div>
                 </section>
 
-                <app-herramientas *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
 
-                <app-herramientas *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
-                </app-herramientas> 
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
 
             </div>
         </div>
