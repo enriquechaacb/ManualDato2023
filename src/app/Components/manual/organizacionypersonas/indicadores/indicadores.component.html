@@ -32,33 +32,236 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>“Lo que no se mide, no se puede mejorar”, una máxima que se conoce en el medio empresarial que habla de la importancia de medir de forma constante y sistemática todo lo que involucra el seguimiento de objetivos, con la finalidad de encontrar los ajustes que sea necesario aplicar, o bien cambiar la dirección de las decisiones previas para conseguir las metas previamente determinadas.</p>
+                            <p>Los indicadores, también conocidos por sus siglas en inglés KPI por <em>key performance indicator,</em> son relevantes para la comunidad de negocios y emprendimiento porque ayudan a impulsar mejoras y a enfocar los esfuerzos y recursos en lo que es importante, ya que se basan en los objetivos y metas que tienen trazadas las organizaciones, lo cual para la pyme representa una oportunidad para establecer estos puntos que frecuentemente no están bien definidos.</p>
+                            <p>En el caso de las pymes, conocer los indicadores y dónde aplicarlos resulta esencial para evaluar las estrategias aplicadas en las diferentes áreas de una organización y, principalmente, para identificar parámetros de cambio entre las características iniciales de un proceso y los resultados alcanzados. </p>
+                            <p>En este sentido, es importante conocer los indicadores para aplicar en una pyme y, de igual forma, identificar cuáles son los más útiles para la empresa en específico, de acuerdo con el tipo de producto o servicio, modelo de negocio, canal de venta y clientes potenciales, ya que hay que tomar en cuenta que no todos los indicadores son útiles, en cualquier caso.</p>
+                            <p>Los indicadores o métricas permitirán conocer mejor el desarrollo de la pyme, al dar herramientas confiables de análisis de los procesos principales tales como: ventas, inventario, gestión de talento, tráfico de página web, crédito y cobranza, tiempos de entrega, satisfacción del cliente, garantías o reembolsos, entre otros que, al medirse, permitirán entender si se están alcanzando los objetivos planteados en los tiempos previstos, o si es necesario realizar cambios, acordes con las metas trazadas.</p>
+                            <p>En resumen, implementar sistemas de indicadores y métricas en el ámbito empresarial otorga a las organizaciones la ventaja competitiva de generar información confiable sobre el comportamiento de los procesos y el logro de los objetivos estratégicos formulados a corto, mediano y largo plazos. (Rueda Galvis, Garavito Hernández, &amp; Calderón Campos, 2020).</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
-                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la cultura organizacional?</span></h2>
-                    
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los indicadores y métricas?</span></h2>
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Definición">
+                                <h3 class="mt-3"><i class="num">1</i> Definición</h3>
+                                <p>La Asociación Española de Normalización y Certificación (AENOR) en su norma UNE66175, define el término (3.6) Indicador como: datos o conjunto de datos que ayudan a medir objetivamente la evolución de un proceso o de una actividad. (AENOR Asociación española de Normalización y Certificación, 2003). Otra definición dice que un indicador es “instrumento administrativo que puede diagnosticar problemas, identificar oportunidades, medir comportamientos, definir estrategias y asignar responsabilidades, a través de datos cuantitativos que ofrecen una visión global y real de la competitividad de la empresa.” (Rincón B., 2012)</p>
+                                <p>Así un indicador es un elemento de información que contribuye a la evaluación de una situación por parte del responsable de la toma de decisiones. Ahora bien, un indicador de desempeño o KPI (<em>Key Performance Indicator</em>) se utiliza para designar puntos de referencia importantes para que una empresa cumpla sus objetivos comerciales. Es decir, se establece un KPI posterior a un análisis donde el producto o servicio de la empresa se alinea con los objetivos trazados y se determinan las áreas clave para el cumplimiento de estos.</p>
+                                <p>Es importante distinguir entre indicador y métrica, con la finalidad de articular adecuadamente su uso e implementación en la estrategia empresarial. </p>
+                                <p>Se considera que el indicador es una forma de medir que utiliza métricas junto con criterios de decisión preestablecidos. Por otro lado, todo lo que se rastrea o mide es una métrica. La métrica es el parámetro de medida, que utilizará el indicador para mostrar el análisis al inicio y final del plazo determinado. Son medidas cuantificables que se utilizan para medir el rendimiento o el progreso (Herrera , 2018).</p>
+                                <img src="../../../../../assets/images/dimensions/personas/3_Diferencias_KPI_metricas.webp" class="img-fluid" />
+                                <separator></separator>
+                            </mat-tab>
+                            <mat-tab label="Características de los indicadores claves de desempeño">
+                                <h3 class="mt-3"><i class="num">2</i> Características de los indicadores claves de desempeño</h3>
+                                <div class="texto-infografia">
+                                    <p>Se trata de indicadores claves de desempeño cuando muestran la información relevante para la empresa, y cumplen con el rango de Específico, Mesurable, Alcanzable, Relevante y ligado al Tiempo, esta metodología de identificación de requisitos también se conoce como SMART por sus siglas en inglés (<em>Specific, Measurable, Achievable, Realistic, Time bound</em>) y se encuentra generalmente ligada a los objetivos, pero al tratarse de las herramientas que medirán los resultados buscados, se consideran por tanto características indispensables para su aplicación en los indicadores. (Marco, 2022)</p>
+                                    <p><strong>Específico</strong></p>
+                                    <p>Un indicador debe ser específico para analizar un tipo de elemento determinado. Puede ser una meta, actividad, área o proyecto que se desee alcanzar, mejorar o mantener. </p>
+                                    <p>Debes preguntarte: ¿Hace referencia a un área o actividad determinada?</p>
+                                    <p><strong>Medible</strong></p>
+                                    <p>Un indicador debe representar algo cuantificable, que ofrezca cifras precisas y objetivas. De esta manera podrás determinar el progreso de un proyecto, tarea, o actividad. </p>
+                                    <p>Debes preguntarte: ¿Qué elemento me dictará y determinará la eficacia de este proyecto?</p>
+                                    <p><strong>Alcanzable</strong></p>
+                                    <p>Un indicador debe ser alcanzable, es decir, viable. Esto se determinará por los recursos existentes dentro de la pyme (económicos, técnicos, humanos, etc.) y la certeza que se tenga de que se recibirán más o se mantendrá en ese sentido.</p>
+                                    <p>Debes preguntarte: ¿Lo que voy a medir se puede alcanzar con los recursos actuales en el tiempo contemplado?</p>
+                                    <p><strong>Relevante</strong></p>
+                                    <p>El indicador debe ser relevante, es decir que debe tratarse de un indicador que mida algo de valor crucial para la pyme, que refleje la operación vital de acuerdo con el producto o servicio.</p>
+                                    <p>Debes preguntarte: ¿Lo que voy a medir es indispensable para la operación de la empresa?</p>
+                                    <p><strong>Temporal</strong></p>
+                                    <p>Todo indicador debe tomar en cuenta, el tiempo en el que se estará trabajando o midiendo la actividad, área o proyecto correspondiente y conocer también las cifras o valores que se tienen al inicio.</p>
+                                    <p>En este punto se debe establecer el planteamiento de escenarios precisos, con los cuales poder determinar una fecha o periodo a precisar.</p>
+                                    <p>Debes preguntarte: ¿Cada cuánto se evaluará?</p>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Tipos de indicadores">
+                                <h3 class="mt-3"><i class="num">3</i> Tipos de indicadores</h3>
+                                <div class="texto-infografia">
+                                    <p>Ahora que tienes claridad sobre el concepto y la utilidad de los indicadores de rendimiento, se presentarán los más conocidos y apropiados para el tipo de gestión que realizan la pyme. Podrás conocerlos e identificar cuáles suponen mayor utilizad para el momento que está atravesando tu empresa, y también deberás tomar en cuenta el entorno de mercado y los canales de promoción que utilizas para comunicarte con tus clientes potenciales y directos, así como los canales de distribución que utilizas para entregar o llevar tu producto o servicio hasta el destino final. (Rincón B., 2012)</p>
+                                    <ul>
+                                        <li><strong>Indicadores Financieros:</strong> Sirven para conocer el estado económico de tu negocio durante un
+                                            periodo tiempo determinado.Esto permite asegurar una gestión eficiente de las actividades, además de generar
+                                            beneficios para tu empresa. Los más utilizados son:</li>
+                                        <ul>
+                                            <li>Ventas registradas.</li>
+                                            <li>Gastos de operación-mes. </li>
+                                            <li>Relación ingresos/ costos.</li>
+                                        </ul>
+                                        <li><strong>Indicadores Operativos:</strong> son mediciones de datos a corto plazo. Se encuentran estrechamente
+                                            relacionados con los procesos y la operación de la empresa en su conjunto. Se suelen asignar a los equipos de
+                                            trabajo o colaboradores para que participen activamente en el alcance de los objetivos estratégicos.</li>
+                                        <ul>
+                                            <li>Eficiencia de la producción y utilización de recursos. </li>
+                                            <li>Tiempo de ciclo de producción y tasa de cumplimiento de tiempos de entrega. </li>
+                                            <li>Mermas, excedentes y producto defectuoso.</li>
+                                            <li>Cumplimiento de especificaciones de calidad de productos y servicios</li>
+                                        </ul>
+                                        <li><strong>Indicadores de Clientes:</strong> Son aquellos que nos ayudan a medir y dar seguimiento de la calidad de
+                                            nuestro servicio.</li>
+                                        <ul>
+                                            <li>Clientes atendidos por día, mes, etc.</li>
+                                            <li>Tiempo de servicio hasta la venta.</li>
+                                            <li>Número de reclamos solucionados/reclamos totales.</li>
+                                            <li>Índice de satisfacción</li>
+                                            <li>Lealtad: proporción de clientes reincidentes en adquisición de nuestros productos o servicios</li>
+                                        </ul>
+                                        <li><strong>Indicadores de Procesos:</strong> Son la medida de la condición de un proceso o evento en un momento
+                                            determinado. Los indicadores en conjunto pueden proporcionar un panorama de la situación de un proceso, de un
+                                            negocio, de las ventas de una compañía y también de la satisfacción del cliente. (Rodrigues, 2022)</li>
+                                        <ul>
+                                            <li>Gestión en la creación de orden de compra.</li>
+                                            <li>Gestión en la cobranza exitosa de los pedidos.</li>
+                                            <li>Gestión de selección de proveedores.</li>
+                                        </ul>
+                                    </ul>
+                                    <p>Los indicadores o las herramientas de diagnóstico organizacional son un elemento vital que debe ser utilizado oportunamente para identificar las condiciones internas y externas que afectan a la compañía, a fin de diseñar estrategias de mejoramiento continuo y desarrollo empresarial. (Janićijević, 2010)</p>
+                                    <p>Por lo tanto, los indicadores representan una herramienta valiosa para la pyme, en la medida que permiten evaluar objetivamente tanto los avances y logros como el desempeño en tiempo real de todos los procesos de la empresa (Rueda Galvis, Garavito Hernández, &amp; Calderón Campos, 2020). Con eso se busca que el modelo administrativo genere información permanente para valorar correctamente la eficiencia y eficacia de cada acción tomada dentro de las principales áreas de gestión como: producción, finanzas, recursos humanos, sistemas, y se implemente un modelo estratégico de mejoramiento continuo. (Porter, 2010)</p>
+                                    <p>Como se ha visto entonces, los indicadores permiten el seguimiento y evaluación periódica de las variables clave de una organización, por lo que se consideran elementos descriptivos y valorativos; primero descriptivos porque aportan información sobre el estado real de una acción o programa aplicado y valorativo ya que añaden a dicha información un juicio de valor en la forma más objetiva posible que permite determinar si el desempeño en dicha acción o programa es adecuado o no. (Guinart i Solà , 2003)</p>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Selección e implementación de indicadores apropiados">
+                                <h3 class="mt-3"><i class="num">4</i> Selección e implementación de indicadores apropiados</h3>
+                                <p>Ahora que tienes más información sobre los tipos de indicadores, es importante elegir los más adecuados para la gestión de la pyme que ayuden a medir su desempeño, y determinar un plan de acción para implementarlos dentro de la operación y comenzar al seguimiento de los resultados que permitan tomar decisiones informadas.</p>
+                                <p>Es importante resaltar que la elección e implementación de estos indicadores deben concebirse como herramientas con aplicación más amplia que la medición de los resultados planteados. Se trata de articularlos con la estrategia del negocio. Por eso se deben comunicar entre los directivos o socios, así como hacia el personal, lo cual permitirá que la organización en su conjunto camine en una meta en común. (Rincón B., 2012)</p>
+                                <h5>Identificación de los objetivos y metas de la empresa.</h5>
+                                <p>Dentro de toda organización es importante establecer una visión que acompañe la dirección que tomará la empresa, una misión que establezca lo que representa la empresa en tiempo presente, su razón de ser y alineado con esto los objetivos o metas que desea alcanzar, acorde al producto o servicio de la pyme, así como al momento que enfrenta. </p>
+                                <p>En este sentido, para establecer los indicadores que se buscan utilizar, se debe realizar una revisión de estos puntos mencionados, y agregar el desarrollo de un breve análisis FODA, que de acuerdo con sus siglas defina claramente las Fortalezas, Oportunidades, Debilidades y Amenazas que enfrenta la pyme en el momento de la revisión, esto ayudará a identificar las áreas en las que la empresa necesita mejorar y aquellas en las que ya destaca, considerando que existen factores internos propios de la organización como la capacidad del equipo, los recursos disponibles, la eficiencia operativa y otros aspectos clave del negocio, así como factores externos como las tendencias del mercado, la competencia y factores económicos, políticos y sociales relevantes del medio donde se desarrollan las operaciones de la pyme.</p>
+                                <p>Con esta revisión, la pyme será capaz de priorizar cuáles son los objetivos y metas en los que se centrarán los indicadores, ya que no todo es relevante para la operación, y aplicar una medición a todos los elementos de la empresa solo entorpecería la toma de decisiones.  (Santos Pascualena, 2023.</p>
+                                <h5>Cómo elegir los KPIs más relevantes para medir el éxito</h5>
+                                <p>En el apartado anterior, se realizó un ejercicio de revisión de análisis de las bases de gestión de la pyme, con lo cual será posible identificar las áreas clave del negocio que son fundamentales para alcanzar esos objetivos y metas, y estableces los indicadores apropiados. </p>
+                                <p>Estas áreas clave del negocio serán diferentes entre cada caso y pueden incluir ventas, marketing, operaciones, recursos humanos, finanzas, servicio al cliente, entre otras, en este punto el análisis FODA apoyará sustancialmente en la determinación.</p>
+                                <h5>Evitar la sobrecarga de indicadores y elaborar el plan de implementación</h5>
+                                <p>En relación con lo abordado en el punto anterior, como pyme es posible que se considere a todas las áreas como clave, pero el ejercicio puede promover una saturación de información.</p>
+                                <p>Por eso, se recomienda iniciar el plan de implementación con pocas áreas, y en este sentido, se plantea un listado que puede atenderse para otorgar mayor claridad y pericia al momento de elegir las áreas clave y, por lo tanto, los indicadores correspondientes para aplicar.</p>
+                                <ul>
+                                    <li>Reconocer cuál es el motor económico de la empresa y los retos que está enfrentando de acuerdo con el FODA realizado y alineado con los objetivos planteados.</li>
+                                    <li>Analizar de forma estadística los datos y las métricas, dentro de documentos como: estados financieros, reportes de inventarios, de ventas, de costos, entre otros.</li>
+                                    <li>Elaborar un mapa de procesos, que ofrezca un mapa visual de los procesos de la empresa para identificar las áreas funcionales y los flujos de trabajo involucrados en la operación.</li>
+                                    <li>Realizar un análisis de la cadena de valor, donde se determine cómo se crea valor en cada etapa del proceso de la empresa y determina qué áreas son fundamentales para la entrega de productos o servicios.</li>
+                                    <li>Identificar asuntos de atención inmediata por su significado como amenaza a la marcha del negocio.</li>
+                                </ul>
+                            </mat-tab>
+                            <mat-tab label="Procedimiento para implantar el sistema de indicadores en la pyme">
+                                <h3 class="mt-3"><i class="num">5</i> Procedimiento para implantar el sistema de indicadores en la pyme</h3>
+                                <div class="texto-infografia">
+                                    <p>Para cada área relevante, será necesario elegir indicadores que estén directamente relacionados con los objetivos y que proporcionen información útil para tomar decisiones. Considerar las variables críticas identificadas, que reflejen el rendimiento y los resultados de cada área clave. Estos indicadores deben ser medibles, relevantes y alineados con los objetivos establecidos (revisa la metodología SMART planteada en el tema anterior). (Rincón B., 2012)</p>
+                                    <ol>
+                                        <li><strong>Grupo de trabajo. </strong>Inicialmente debe crearse un grupo de trabajo de indicadores de gestión de la operación. Es suficiente dedicar 3-5 personas para medir y ofrecer retroalimentación sobre los retos a enfrentar. El número de integrantes podrá cambiar dependiendo del tamaño de la operación, incluso al principio puede ser una sola persona monitoreando lo más esencial. Cada indicador debe tener un área responsable de su seguimiento y de las acciones que deriven del mismo.</li>
+                                        <li><strong>Establecer actividades a medir y metas:</strong> Elegir entre una a tres actividades por área y establecer métricas específicas que permitan medir y evaluar su rendimiento. Esto implica definir qué será considerado un resultado exitoso y establecer metas realistas para cada indicador. Hay que considerar las cifras actuales que fueron revisadas y las cifras deseadas, y tomar en cuenta los recursos existentes, referencias históricas, requerimiento del cliente, o de la competencia.</li>
+                                        <li><strong>Implementar sistemas de seguimiento:</strong> La pyme debe considerar procesos y sistemas de seguimiento que le permitan recopilar datos relevantes para cada indicador de gestión. Esto puede incluir la implementación de herramientas de software, el establecimiento de procedimientos de recolección de datos y la capacitación del personal relevante, igualmente debe establecerse responsables para cada recopilación de datos y tiempos de seguimiento.</li>
+                                        <li><strong>Analizar y evaluar:</strong> En los tiempos establecidos previamente, la pyme debe analizar los datos recopilados, compararlos con las metas establecidas y evaluar el desempeño en función de los indicadores seleccionados, cada indicador puede tener tiempos de revisión diferentes, acordes a las características del área y las particularidades de la operación. Esto permitirá identificar áreas de mejora, tomar decisiones informadas y realizar ajustes en la estrategia u operaciones según sea necesario, por lo que será importante determinar los plazos de presentación de los avances en resultados contemplando fechas prioritarias como: lanzamientos, estacionalidad de ventas, cierres de mes, etc.</li>
+                                        <li><strong>Comunicar y actuar:</strong> Los resultados obtenidos a través de los indicadores de gestión deben ser comunicados a todos los niveles de la organización y especificar si las mediciones analizadas se dieron al inicio, en una etapa intermedia o al final del proceso. Esto fomentará la responsabilidad y permitirá tomar medidas correctivas o implementar mejoras cuando sea necesario. Debe permitirse la retroalimentación entre el grupo de trabajo, y presentarse la información de forma clara y objetiva.</li>
+                                    </ol>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Métricas en un entorno digital y su importancia para la pyme">
+                                <h3 class="mt-3"><i class="num">6</i> Métricas en un entorno digital y su importancia para la pyme</h3>
+                                <div class="texto-video">
+                                    <p>Para hablar de métricas en un entorno digital, primero se debe definir a qué se entiende por entorno digital; aunque no hay una sola definición, para propósitos del presente eje temático se entenderá como una serie de elementos interconectados o vinculados todos a internet, que implica la presencia web de las empresas, en todas o algunas de sus actividades principales, como por ejemplo: ventas en línea, catálogo en línea, distribución en línea, servicios proporcionados en preventa o post venta vía web, promoción y comunicación con los clientes o usuarios potenciales o directos a través de página web o de redes sociales. (Kohavi &amp; Thomke, 2017)</p>
+                                    <p>Estos elementos que involucran el entorno digital, pueden ser actividades que definen la presencia y operación de las empresas en línea. Sin duda el primer elemento sería contar con un sitio Web y/o Plataformas en Línea donde tengan establecidas secciones como: tienda en línea, o un blog referente al producto/servicio con testimoniales de clientes, una plataforma de comercio electrónico, o bien, plataformas correspondientes a redes sociales que se utilicen para promoción, comunicación y cierre de venta, así como la utilización de aplicaciones móviles, referentes con el producto o servicio. En la actualidad todas estas actividades pueden desarrollarse a través de proveedores externos, que han desarrollado este tipo de plataformas con un entorno amigable para que el emprendedor por sí solo pueda crear el espacio virtual a su gusto y ajustándose a un presupuesto ajustado que no suponga un costo elevado de creación y mantenimiento para la pyme. (Huayllas Iriarte &amp; Reinaltt Higa, 2019).</p>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Estrategia para el entorno digital en la pyme">
+                                <h3 class="mt-3"><i class="num">7</i> Estrategia para el entorno digital en la pyme</h3>
+                                <p>La incorporación de procesos dentro de la operación y la creación de sistemas de control, administrativos, a través de elementos digitales como software específico para estos fines, también se considera como un entorno digital para las empresas, ya que involucra el trazado de una nueva estrategia de control, mantenimiento y una inversión monetaria que generalmente busca agilizar los tiempos como parte de la construcción de la ventaja competitiva ante el mercado.</p>
+                                <p>Estos procesos mantienen a la pyme en vigilancia constante sobre el entorno, detectando si existen tecnologías emergentes que se usen por competidores, o que son sugeridas por los clientes como una medida para mejorar la experiencia del cliente o la eficiencia operativa.</p>
+                                <p>Además de la vigilancia en el entorno, esta incorporación de la empresa al entorno digital contempla la responsabilidad de mantener en capacitación y formación constante al personal involucrado en el uso y mantenimiento de cada elemento, actividad o proceso, para obtener el mayor rendimiento operativo y financiero. </p>
+                                <p>Otra responsabilidad derivada del entorno digital es diseñar e implementar una estrategia de contenidos, que refleje de forma positiva y redituable la propuesta de valor del negocio. La estrategia debe contemplar un plan con objetivos, resultados esperados y fechas de publicación de contenidos para los clientes-usuarios potenciales y actuales, que puede incluir: planificación de promociones, producción de blogs, videos, infografías, podcasts, etc.</p>
+                            </mat-tab>
+                            <mat-tab label="Indicadores de transformación digital en las pymes">
+                                <h3 class="mt-3"><i class="num">8</i> Indicadores de transformación digital en las pymes</h3>
+                                <div class="texto-infografia">
+                                    <p>En el contexto de las pymes, los indicadores de transformación digital pueden variar según la naturaleza de la empresa, su industria y sus objetivos específicos. Sin embargo, algunos indicadores comunes que se utilizan para evaluar el grado de transformación digital incluyen:</p>
+                                    <ol>
+                                        <li><strong>Presencia en línea:</strong> Este indicador evalúa la presencia de la empresa en el entorno digital, incluyendo la existencia de un sitio web optimizado y actualizado, perfiles en redes sociales relevantes para su industria, y la capacidad de realizar transacciones en línea, como ventas electrónicas o reservas de servicios.</li>
+                                        <li><strong>Tecnologías de la nube:</strong> La adopción de tecnologías de computación en la nube es un indicador importante. Esto incluye el uso de servicios de almacenamiento en la nube, aplicaciones basadas en la nube y plataformas de colaboración en línea para mejorar la eficiencia operativa y la flexibilidad.</li>
+                                        <li><strong>Automatización de procesos:</strong> La implementación de sistemas y herramientas de automatización de procesos es otro indicador clave de transformación digital en las pymes. Esto puede incluir la automatización de tareas administrativas, procesos de ventas y marketing, gestión de inventario y logística, entre otros.</li>
+                                        <li><strong>Análisis de datos y </strong><strong><em>Business Intelligence</em></strong><strong>:</strong> El uso de herramientas de análisis de datos y business intelligence para recopilar, analizar y utilizar datos de manera efectiva es un indicador importante de transformación digital en las pymes. Esto incluye la capacidad de generar informes y análisis en tiempo real para la toma de decisiones informadas.</li>
+                                        <li><strong>Capacidades de comunicación digital:</strong> La capacidad de comunicarse de manera efectiva a través de canales digitales, tanto internos como externos, es un indicador crucial de transformación digital en las pymes. Esto incluye el uso de correo electrónico, mensajería instantánea, videoconferencia y otras herramientas de comunicación digital para colaborar con empleados, clientes y socios comerciales.</li>
+                                        <li><strong>Ciberseguridad:</strong> La implementación de medidas de ciberseguridad para proteger los activos digitales de la empresa es un aspecto fundamental de la transformación digital en las pymes. Esto incluye la protección contra amenazas como malware, phishing, ataques de denegación de servicio (DDoS) y vulnerabilidades de seguridad en sistemas y redes.</li>
+                                    </ol>
+                                    <p><strong>Cultura y capacidades digitales:</strong> El desarrollo de una cultura organizacional que fomente la innovación, la adaptabilidad y el aprendizaje continuo en el ámbito digital es un indicador crítico de transformación digital en las pymes. Esto incluye la capacitación y el desarrollo de habilidades digitales entre los empleados, así como la promoción de una mentalidad abierta al cambio y la experimentación con nuevas tecnologías y prácticas digitales.</p>
+                                </div>
+
+                                <h5>Definición de métricas digitales y su importancia para la pyme</h5>
+                                <div class="texto-video">
+                                    <p>Las métricas digitales son medidas cuantitativas y cualitativas utilizadas para evaluar y analizar el desempeño de las actividades en entornos digitales. Estas métricas se obtienen a través del seguimiento y análisis de los datos generados por las interacciones y transacciones en línea, como el tráfico web, las redes sociales, las conversiones, entre otros. (Chaffey &amp; Ellis-Chadwick, 2019)</p>
+                                    <p>En el contexto de la pyme, las métricas digitales desempeñan un papel fundamental en el éxito y la eficacia de su presencia en línea. Al analizar y medir estas métricas, las empresas pueden obtener información valiosa sobre el comportamiento de sus clientes, la efectividad de sus estrategias digitales y el retorno de la inversión (ROI) que han logrado.</p>
+                                    <p>El análisis de métricas digitales proporciona información objetiva y cuantificable sobre el rendimiento de sus actividades en línea. Esto permite tomar decisiones informadas en cuanto a las estrategias de marketing, los canales de promoción, el diseño del sitio web, entre otros.</p>
+                                    <p>También brinda identificación de áreas de mejora, porque al medir y analizar las métricas digitales, es posible identificar fácilmente las áreas en las que no están obteniendo los resultados deseados, tal cual se observó en los indicadores anteriores. Esto brinda la oportunidad de mejorar sus estrategias o realizar ajustes para maximizar la eficacia de sus tácticas digitales.</p>
+                                    <p>Las métricas digitales también permiten a la pyme evaluar el rendimiento de sus inversiones en marketing y publicidad en línea, como parte de los indicadores financieros en lo que se conoce como retorno de la inversión (ROI), al medir el impacto real de las estrategias digitales y a justificar los recursos destinados a esas actividades. (Kaushik , 2007)</p>
+                                    <p>Al comprender las métricas digitales se puede adaptar la estrategia de marketing y ventas en línea para alcanzar los objetivos, pues estas métricas proporcionan información clave sobre el perfil y el comportamiento de los clientes, lo que permite una segmentación más precisa y un enfoque más efectivo en la comunicación y promoción.</p>
+                                </div>
+                                <h5>Principales métricas digitales</h5>
+                                <p>Las métricas más importantes pueden variar según la industria y los objetivos específicos de cada pyme en el entorno digital, y también dependerá del grado de involucramiento que tenga en su operación hacia el mundo digital, puede ser que solo parte de sus procesos o actividades están ligadas a la web, mientras que otras funcionen en el ámbito físico. </p>
+                                <p>A continuación, se presentarán las métricas más conocidas en el entorno digital, para que la pyme pueda elegir de acuerdo con el contexto de los objetivos y el sector del mercado cual representa mayor utilidad para su aplicación. Como en los ejemplos de indicadores anteriores, se sugiere un seguimiento constante y realizar un ejercicio de adaptación a medida que evolucionan los objetivos y las estrategias digitales se consideran esenciales para aprovechar al máximo estas métricas clave. (Kaushik , 2007)</p>
+                                <ul>
+                                    <li>
+                                        <strong>Tasa de Conversión:</strong> La tasa de conversión mide el porcentaje de visitantes de un sitio web o plataforma digital que realiza una acción deseada, como realizar una compra, llenar un formulario de contacto o suscribirse a una lista de correo. Esta métrica es crucial para medir la efectividad de su sitio web o página de destino en convertir visitantes en clientes.
+                                        <br/>La fórmula es:
+                                        <br><em class="d-block text-center my-3">(Número de Conversiones / Número de Visitantes) * 100.</em>
+                                        <br/>Al monitorear y mejorar la tasa de conversión, se puede ajustar su diseño, contenido y llamados a la acción para maximizar el retorno de inversión.
+                                    </li>
+                                    <li><strong>Tasa de Rebote:</strong> La tasa de rebote se refiere al porcentaje de visitantes que abandonan un sitio web o una página después de ver solo una página. Una alta tasa de rebote generalmente indica que los visitantes no están encontrando lo que buscaban o no están interactuando con el contenido. Esta métrica es determinante para evaluar la calidad y relevancia del contenido de la empresa, ya que una tasa de rebote alta puede indicar que la página no cumple con las expectativas de los visitantes. En caso de que se identifique un problema, se puede sugerir optimizar el contenido, mejorar la navegación y proporcionar una experiencia más atractiva.</li>
+                                    <li><strong><em>Engagement</em></strong>: por su acepción en inglés referente al compromiso entre comprador y vendedor, se refiere a la medida en que los usuarios interactúan y se involucran con el contenido y las acciones en línea de la empresa. Puede medirse a través de <em>likes</em>, comentarios, publicaciones compartidas, tiempo de permanencia en el sitio, entre otros. El<em> engagement</em> ayuda a comprender si el contenido y las interacciones están captando el interés del público. Un alto <em>engagement </em>indica que los usuarios encuentran valioso y relevante el contenido, lo que puede aumentar la lealtad y la retención.</li>
+                                    <li><strong>Conversión y embudo de ventas: </strong>La conversión se refiere a la acción deseada que un visitante realiza, como hacer una compra, registrarse en un boletín informativo o llenar un formulario. El embudo de ventas representa el proceso de conversión desde el primer contacto hasta la acción final. Medir las conversiones y analizar el embudo de ventas es fundamental para evaluar la eficacia del proceso de conversión en línea. Ayuda a identificar dónde los visitantes pueden abandonar el proceso y permite ajustar estrategias para optimizar las tasas de conversión.</li>
+                                    <li><strong>Retención: </strong>La retención mide la cantidad de usuarios que regresan a una plataforma o sitio web después de su primera visita. Puede ser medido a través de la tasa de retención o la frecuencia de visitas repetidas. Es importante para evaluar la satisfacción y el valor a largo plazo que el sitio o plataforma brinda a los usuarios. Una alta retención indica que los visitantes encuentran contenido útil y atractivo, lo que puede llevar a un mayor <em>engagement </em>y conversiones.</li>
+                                    <li><strong>Medición de experiencia del usuario (UX): </strong>La medición de UX (por sus siglas en inglés <em>User Experience</em>) se enfoca en evaluar la facilidad de uso, la eficiencia y la satisfacción general de los usuarios al interactuar con una plataforma digital. Su medición es crucial para asegurar que los usuarios tengan una experiencia positiva en línea. Evalúa aspectos como la navegación, la velocidad de carga y la accesibilidad, lo que puede influir en el <em>engagement</em>, la retención y las conversiones.</li>
+                                </ul>
+                                <h5>Selección de métricas digitales apropiadas para la pyme</h5>
+                                <div class="texto-infografia">
+                                    <p>Como se mencionó anteriormente, la elección de indicadores o en este caso, de métricas digitales, dependerá de la actividad en línea que tenga actualmente la pyme, así como de los objetivos planteados dentro de la estrategia digital.</p>
+                                    <p>Se establecerá un proceso general para abarcar los elementos más importantes en el plan de uso de métricas digitales, y deberá adaptar a cada caso y realizar una revisión continua para ajustarse a la realidad que enfrente la pyme en cada etapa de su desarrollo.</p>
+                                    <ol>
+                                        <li>Establecer Objetivos Claros: Define los objetivos comerciales específicos que deseas lograr con tu presencia en línea. Por ejemplo, aumentar las ventas en línea, mejorar el <em>engagement</em> de los usuarios, aumentar la visibilidad de la marca, etc.</li>
+                                        <li>Identificar Indicadores Clave de Rendimiento (KPIs): Para cada objetivo, identifica los KPIs que te ayudarán a medir el progreso y el éxito. Estos KPIs serán las métricas clave que debes seguir de cerca. Por ejemplo, si el objetivo es aumentar las ventas en línea, el KPI podría ser la tasa de conversión en la tienda en línea.</li>
+                                        <li>Considerar la Industria y el Nicho: Analiza las métricas que son especialmente relevantes para tu industria y nicho. Algunas métricas pueden ser más importantes en ciertos sectores. Por ejemplo, para una tienda en línea, las métricas de conversión y retención pueden ser cruciales.</li>
+                                        <li>Evaluar la Efectividad de las Estrategias Actuales: Revisa las estrategias digitales actuales y evalúa qué métricas te ayudarán a determinar si esas estrategias están funcionando. Si estás enfocado en el marketing de contenidos, por ejemplo, el <em>engagement </em>en las publicaciones y la tasa de clics podrían ser métricas clave.</li>
+                                        <li>Limitar las Métricas a unas Pocas Clave: No es necesario rastrear todas las métricas disponibles. Selecciona unas pocas (generalmente de 3 a 5) que sean las más relevantes para tus objetivos y estrategias.</li>
+                                        <li>Ser Realista y Medible: Asegúrate de que las métricas que elijas sean realistas y medibles. Deben ser cuantificables y tener un impacto directo en tus objetivos.</li>
+                                        <li>Evolución Continua: Las métricas pueden cambiar con el tiempo a medida que evolucionan tus objetivos y estrategias. Está dispuesto a ajustar y adaptar las métricas según sea necesario.</li>
+                                    </ol>
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>AENOR Asociación española de Normalización y Certificación. (2003). UNE 66175 Guía para la implantación de sistemas de indicadores. Madrid: AENOR.</p>
+                        <p>Chaffey, D., &amp; Ellis-Chadwick, F. (2019). Digital Marketing: Strategy, Implementation and Practice. . USA: Pearson Education Limited.</p>
+                        <p>Guinart i Solà , J. (2003). Indicadores de gestión para las entidades públicas . VIII Congreso Internacional del CLAD sobre la Reforma del Estado y de la Administración Pública (págs. 28-31). Panamá: CLAD.</p>
+                        <p>Herrera , R. (2018). Tu Dashborad. Diferencia entre métrica e indicador ¿Qué quieres medir?: <a href="https://tudashboard.com/diferencia-entre-metrica-e-indicador/">https://tudashboard.com/diferencia-entre-metrica-e-indicador/</a></p>
+                        <p>Huayllas Iriarte, A. A., &amp; Reinaltt Higa, B. A. (2019). Estrategia digital en pyme del sector retail que permita el incremento de ventas. Lima: Universidad Peruana de Ciencias Aplicadas (UPC). Recuperado de <a href="http://hdl.handle.net/10757/648671">http://hdl.handle.net/10757/648671</a></p>
+                        <p>Janićijević, N. (2010). Business Processes in Organizational Diagnosis. Management, 15(2), 85–106.</p>
+                        <p>Kaushik , A. (2007). Web Analytics: An Hour a Day. Washington: John Wiley &amp; Sons.</p>
+                        <p>Kohavi, R., &amp; Thomke, S. (2017). The Surprising Power of Online Experiments: Evidence from A/B Testing. Harvard Business Review, 23-34.</p>
+                        <p>Marco, N. (26 de MARZO de 2022). Tipos de indicadores. Recuperado de Indicadores SMART: <a href="https://tiposdeindicadores.com/indicadores-smart/">https://tiposdeindicadores.com/indicadores-smart/</a></p>
+                        <p>Porter, M. (2010). Ventaja competitiva: creación y sostenibilidad de un rendimiento superior. Pirámide.</p>
+                        <p>Rincón B., R. D. (2012). Los indicadores de gestión organizacional: una guía para su definición. Revista Universidad Eafit, 34(111), 43-59.</p>
+                        <p>Rodrigues, N. (2022). Grandes pymes. Recuperado de Los 5 indicadores de procesos más relevantes para las empresas: <a href="https://www.grandespymes.com.ar/2022/11/16/los-5-indicadores-de-procesos-mas-relevantes-para-las-empresas/">https://www.grandespymes.com.ar/2022/11/16/los-5-indicadores-de-procesos-mas-relevantes-para-las-empresas/</a></p>
+                        <p>Rueda Galvis, J. F., Garavito Hernández, Y., &amp; Calderón Campos, J. A. (2020). Indicadores de gestión como herramienta de diagnóstico para pymes. I+D Revista de Investigaciones Volumen 15 Número 2, 119-134. doi:https://doi.org/10.33304/revinv.v15n2-2020011</p>
+                        <p>Santos Pascualena, J. (2023). Mentoring Negocios. Recuperado de Indicadores de desempeño para la pequeña empresa. Haz crecer tu negocio con datos: <a href="https://mentoringnegocios.com/indicadores-desempeno-empresa/">https://mentoringnegocios.com/indicadores-desempeno-empresa/</a></p>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/personas/1_Beneficios_potenciales_uso_indicadores_metricas.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <img src="../../../../../assets/images/dimensions/personas/2_Proceso_implementacion_indicadores_gestion_pyme.webp" class="img-fluid" />
+                        <separator></separator>
                     </div>
                 </section>
 
