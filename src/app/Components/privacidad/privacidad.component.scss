@@ -1,0 +1,31 @@
+section{
+    &.titlecont{
+        background-color: var(--primary);
+        padding-top: 4em;
+        .title-container{
+            padding-bottom: 3em;
+            .title{
+                position: relative;
+                font-size: 38px;
+                color: var(--blanco);
+                line-height: 32px;
+                z-index: 2;
+                margin-bottom: 0 !important;
+                &.privacidad{
+                    &::before{content:"POLITICA DE PRIVACIDAD";}
+                }
+                &::before{
+                    position: absolute;
+                    color: var(--blanco90);
+                    display: block;
+                    font-size: 1.75em;
+                    font-weight: 900;
+                    filter: opacity(0.2) blur(1px);
+                    line-height: 0;
+                    font-family: Arial black, 'sans-serif';
+                }
+            }
+        }
+    }
+    
+}

@@ -46,6 +46,8 @@ import { TecnologiasComponent } from './Components/manual/habilidadesdigitales/t
 import { GestiondetalentohumanoComponent } from './Components/manual/organizacionypersonas/gestiondetalentohumano/gestiondetalentohumano.component';
 import { IndicadoresComponent } from './Components/manual/organizacionypersonas/indicadores/indicadores.component';
 import { EstrategiadenegociosComponent } from './Components/manual/organizacionypersonas/estrategiadenegocios/estrategiadenegocios.component';
+import { TerminosComponent } from './Components/terminos/terminos.component';
+import { PrivacidadComponent } from './Components/privacidad/privacidad.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +89,9 @@ import { EstrategiadenegociosComponent } from './Components/manual/organizaciony
     TecnologiasComponent,
     GestiondetalentohumanoComponent,
     IndicadoresComponent,
-    EstrategiadenegociosComponent
+    EstrategiadenegociosComponent,
+    TerminosComponent,
+    PrivacidadComponent
   ],
   imports: [
     BrowserModule,

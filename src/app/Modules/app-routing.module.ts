@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 // import { AuthGuard } from '../Guards/authGuard';
 
 import { HomeComponent } from '../Components/home/home.component';
+import { TerminosComponent } from '../Components/terminos/terminos.component';
+import { PrivacidadComponent } from '../Components/privacidad/privacidad.component';
 import { ManualComponent } from '../Components/manual/manual.component';
 
 import { ComunicacionycanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa.component';
@@ -48,6 +50,8 @@ import { PlaneacionComponent } from '../Components/manual/transformaciondigital/
 
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
+    { path: 'terminos', component: TerminosComponent, data: {animation:'terminos'}},
+    { path: 'privacidad', component: PrivacidadComponent, data: {animation:'privacidad'}},
     { path: 'bibliosmart', component: ManualComponent, data: {animation:'bibliosmart'}},
 
     { path: 'bibliosmart/comunicacionycanalesdeventa', component: ComunicacionycanalesdeventaComponent, data: {animation:'ccv'}},

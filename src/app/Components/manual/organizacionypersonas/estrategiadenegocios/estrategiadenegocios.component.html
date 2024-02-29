@@ -32,33 +32,1010 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        
+                        <div class="texto-video">
+                            <p>Hoy en día, el mundo de los negocios se encuentra en constante cambio y evolución, un mundo digital, donde la tecnología y las herramientas en línea han revolucionado la forma en que las empresas operan, se comunican y compiten. En este escenario, las pequeñas y medianas empresas (pymes) tienen una oportunidad sin precedentes para alcanzar nuevos mercados, mejorar la eficiencia operativa y fortalecer su posición en el competitivo mundo empresarial. Pero poder aprovechar las oportunidades que el mundo de los negocios digitales ofrece a las empresas exige la definición de una estrategia clara.</p>
+                            <p>Las pequeñas y medianas empresas enfrentan desafíos únicos en su búsqueda por adaptarse a la era digital. A menudo, carecen de los recursos y la experiencia que poseen las grandes corporaciones para invertir en tecnología y marketing digital. En este contexto, se ha preparado este material que engloba una serie de herramientas prácticas y soluciones asequibles para que las pymes puedan prosperar en el mundo digital.</p>
+                            <p>Estrategia de negocios en la era digital para pymes, pretende brindar las herramientas necesarias y útiles a las pymes para diseñar una estrategia y empoderar a los emprendedores y empresarios con los conocimientos necesarios para incursionar con éxito en este entorno digital en constante cambio. Explicaremos las claves para desarrollar e implementar estrategias efectivas que permitan a las pymes capitalizar las oportunidades digitales y superar los desafíos que puedan surgir en el tránsito del mundo analógico al digital.</p>
+                            <p>El foco está en sembrar la semilla de la transformación digital de las pymes. Comenzaremos con el análisis del mercado en línea, donde aprenderemos cómo identificar oportunidades y nichos de mercado para posicionar a la empresa de manera efectiva. Y en la segunda sección, nos centraremos en el diseño de diferentes estrategias de marketing digital.</p>
+                            <p>Uno de los aspectos cruciales para cualquier pyme en la era digital es el comercio electrónico, por lo que dedicaremos un apartado a entender este elemento y considerar la optimización de la experiencia del cliente en línea, ya que la satisfacción del cliente es fundamental para el éxito a largo plazo.</p>
+                            <p>El presente eje temático denominado Estrategia de Negocios en la era digital para pymes será una interesante exploración por el diseño de estrategias, donde las pequeñas y medianas empresas pueden adquirir las herramientas y habilidades necesarias para contar con una visión más clara y una estrategia bien fundamentada para llevar a sus empresas al siguiente nivel en la era digital.</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
-                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la cultura organizacional?</span></h2>
-                    
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es estrategia de negocios en la era digital?</span></h2>
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="Definición">
+                                <h3 class="mt-3"><i class="num">1</i> Definición</h3>
+                                <p>Estrategia de negocios en la era digital alude al diseño de un plan que define cómo una pyme aprovecha las oportunidades y resuelve los desafíos que se le presentan en el entorno digital, todo ello dirigido al logro de sus objetivos de crecimiento, competitividad y rentabilidad.</p>
+                            </mat-tab>
+                            <mat-tab label="Análisis e investigación de mercado">
+                                <h3 class="mt-3"><i class="num">2</i> Análisis e investigación de mercado</h3>
+                                <div class="texto-video">
+                                    <p>Para poder llevar a cabo el diseño de estrategias de negocio en el ámbito digital, es necesario conocer muy bien el mercado en el que se está participando. No basta con tener buenas ideas, si estas no son coherentes y no están alineadas a una estrategia integral.</p>
+                                    <p>El diseño de una estrategia debe obedecer al conocimiento preciso del mercado en el que se está participando. Una pregunta que es muy común entre los emprendedores y empresarios es ¿por qué debo conocer el mercado para hacer una estrategia? </p>
+                                    <p>Por cada empresa exitosa que ha trabajado sin una planeación previa, hay cuatro que fracasan. Existen datos que señalan que un alto porcentaje de las empresas muere en un lapso de dos años, así que los primeros años en el emprendimiento son cruciales. El 37% de los emprendedores carece de una planeación financiera y 36% no sabe cómo hacerla, en tanto el 17% no tiene tiempo para realizarla, pero hay estudios que indican que la educación en temas de emprendimiento disminuye, de manera importante las probabilidades de fracaso de la empresa (Molina, 2023) y (Porras, Oliveras, &amp; Vigier, 2013).</p>
+                                    <p>Por ello es de suma importancia conocer el mercado, y a partir de ello diseñar una estrategia clara y definida que permita competir de manera adecuada en el mercado.</p>
+                                    <p>Pero, qué es lo que debemos conocer del mercado para poder diseñar una estrategia. La respuesta en realidad es que se deberían estudiar muchos elementos, los clientes, los competidores, los proveedores, las leyes, la dinámica del mercado, en fin, un sinnúmero de aspectos que pueden hacer ver la dificultad de entender y analizar el mercado.</p>
+                                    <p>Para facilitar la comprensión del mercado, aquí encontrarás tres elementos indispensables para profundizar en él, nos centraremos en los clientes, competidores y sustitutos.</p>
+                                </div>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Clientes')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.1. Clientes </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Clientes">2.1. Clientes </h4>
+                                        <p>Comencemos por entender y analizar a los clientes. En el año 1943 y luego en 1954 el psicólogo estadounidense Abraham Maslow escribió un artículo y un libro en el que señala que los seres humanos nos comportamos con base en distintas necesidades. Él hablaba de:</p>
+                                        <ul>
+                                            <li><strong>Necesidades fisiológicas,</strong> como comer, respirar o tomar agua.</li>
+                                            <li><strong>Necesidades de seguridad,</strong> como tener una casa donde dormir o sentirse seguro de peligros.</li>
+                                            <li><strong>Necesidades sociales, </strong>como sentirse parte de una familia o de un grupo de amigos.</li>
+                                            <li><strong>Necesidades de estima,</strong> como sentirse apreciado por las personas o reconocido.</li>
+                                            <li><strong>Necesidades de autorrealización,</strong> que es contar con el aprecio propio y de las demás personas.</li>
+                                        </ul>
+                                        <p>¿Pero esto qué tiene que ver con los clientes? La respuesta a esta pregunta es fácil, cada una de las personas consumen productos y servicios de acuerdo con el nivel de satisfacción de sus necesidades, es decir que las personas compran para resolver las necesidades, pero Maslow en sus textos decía que una persona que no tiene resueltas las primeras necesidades no puede pensar en las siguientes.</p>
+                                        <p>Por ejemplo, si usted tiene hambre y no ha comido, no va a poder pensar en los siguientes niveles de necesidades, no puede pensar en seguridad o autorrealización. Así que, si los clientes compran nuestros productos por necesidad, entonces tenemos que saber qué necesidades tiene el cliente y qué necesidad está buscando satisfacer. Es decir, debemos preguntarnos ¿cuál es la necesidad que mi cliente está buscando satisfacer? Por ejemplo, al comprar un teléfono celular, ¿cuál es la verdadera necesidad que está buscando satisfacer mi cliente? ¿Está buscando comunicarse? O más bien ¿está buscando ser aceptado en un grupo social? </p>
+                                        <p>Puede ser que al comprar el teléfono celular la necesidad básica es comunicarse, pero de fondo puede estar la necesidad real de ser aceptado en cierto grupo social que cuentan con este tipo de teléfonos y así sentirse parte de ese estatus social. Lo mismo ocurre por ejemplo con una taza de café, tal vez el cliente desea tomar un café en una cafetería de cierto nivel y prestigio, pero tal vez de fondo está su necesidad de realización o pertenencia a un grupo social. Si el cliente solo quiere un café podría comprar una taza a un valor de 50 centavos de dólar en cualquier sitio, pero ¿por qué una persona decide pagar 5 dólares por una taza? Pues la respuesta es que esa taza no satisface la necesidad de un café, sino una necesidad más arriba de la pirámide, como es el estatus o la pertenencia a un grupo social.</p>
+                                        <p>Eso es lo que debemos comprender. Al diseñar una estrategia debemos tener presente qué tipo de necesidades satisface nuestro producto o servicio, pueden ser necesidades que van más allá de las más evidentes.</p>
+                                        <p>Ahora bien, analizar a los clientes uno por uno puede ser muy difícil. Cuando nuestra empresa es pequeña, podríamos darnos el lujo de analizar cliente por cliente, sin embargo, conforme van aumentando los clientes y creciendo la empresa, eso puede resultar prácticamente imposible, para ello se recomienda analizar a los clientes por grupos. </p>
+                                        <p>Un médico que pone un consultorio y tiene un número limitado de clientes, podría analizar sus necesidades uno por uno, pero un hospital que tiene cientos o miles de clientes no podría hacer eso, así que la manera de entender las necesidades de los clientes es agrupándolos por características similares entre ellos.</p>
+                                        <p>A los clientes se les puede agrupar por edad, por nivel socioeconómico, por gustos y preferencias que puede tener etcétera. A estos grupos se les conoce como “Nicho de mercado”. Un nicho de mercado es un grupo de clientes que comparten características comunes y que podemos decir que tienen gustos similares y en consecuencia tendrán necesidades similares por satisfacer.</p>
+                                        <p>Recomendamos ver el video <a href="https://www.youtube.com/watch?v=kZPPoPMwrIE">https://www.youtube.com/watch?v=kZPPoPMwrIE</a> permite comprender de manera más ágil, lo que es un nicho de mercado.</p>
+                                        <p>Para definir un nicho de mercado necesitamos identificar a un grupo de personas que tengan necesidades similares y potencial de compra, es decir que tengan dinero. Para identificar el nicho de mercado se debe segmentar el mercado, es decir hacer pequeños grupos de clientes con características comunes, como por ejemplo por rangos de edad, y ubicadas en una zona geográfica común, y que tengan gustos y preferencias comunes. Por ejemplo, un segmento de mercado puede ser jóvenes de 18 a 25 años en la ciudad de Bogotá. Incluso se puede segmentar por los gustos o preferencias de las personas. </p>
+                                        <p>¿Para qué sirve segmentar? porque no a todos los clientes les interesa lo mismo. Por ejemplo, imagina que vendes hamburguesas, tú podrías decir que los clientes son todas las personas desde los 5 años hasta 99 años. Y si bien todos ellos pueden ir y comprar una hamburguesa, tú tienes que diseñar una estrategia para dirigirte a uno o varios grupos específicos de personas que te van a comprar con mayor probabilidad. Por ejemplo, jóvenes de 18 a 25 años, de la ciudad de Bogotá que sean de un nivel socioeconómico medio alto, y que estén estudiando la universidad o sean recién egresados.</p>
+                                        <p>Identificar este segmento tan específico te va a permitir hacer estrategias precisas, por ejemplo, si estos son tus clientes entonces deberías anunciarte en Tiktok, porque es la red más indicada para este segmento. Pero si tu segmento al que vas a vender está en un rango de edad de entre 45 y 60 años, de la Ciudad de Bogotá, de nivel socioeconómico medio, entonces deberías anunciarte en Facebook o utilizando afiches o anuncios de papel en la zona cercana a donde venderás las hamburguesas, ya que podría ser la forma más indicada de llegar al segmento de clientes que tienes.</p>
+                                        <div class="texto-infografia">
+                                            <p><em>Ilustración 1. Ejemplo de segmentos y nichos de mercado</em></p>
+                                            <p>Fuente: elaboración propia.</p>
+                                        </div>
+                                        <p>En la Ilustración 1. Podemos ver gráficamente nuestro ejemplo de las hamburguesas. Tenemos todo el mercado que es la gente de Bogotá, pero el nicho de mercado al que deseamos llegar con esas hamburguesas está compuesto por dos segmentos, uno el de jóvenes de 18 a 25 años de nivel socioeconómico medio alto y otro de personas de 45 a 60 años de nivel socioeconómico medio. Identificarlos es muy importante porque a la hora de hacer estrategias de mercadotecnia para esos segmentos, será más fácil. </p>
+                                        <p>Para profundizar en el tema de segmento de mercado, es bueno ver el siguiente video</p>
+                                        <p><a href="https://www.youtube.com/watch?v=MAbo2baFGhs">https://www.youtube.com/watch?v=MAbo2baFGhs</a> </p>
+                                        <p>Entonces, varios segmentos de mercado juntos integran el nicho de mercado, es decir dos o tres segmentos puede que sean tu nicho, en otras palabras, esos grupos de personas que comparten necesidades e interés por tu producto o servicio son tu nicho de mercado.</p>
+                                        <p>Así que es importante conocer bien ¿qué tipo de clientes son tus consumidores? Y ¿cuáles son sus características comunes? En la medida en la que se haga una segmentación más específica, más asertiva será la estrategia. </p>
+                                        <p>Un error muy común es hacer segmentos muy amplios, diciendo, “es que todos me comprarían, todos podrían ser mis clientes”, y si bien eso podría ser verdad, la realidad es que los segmentos se hacen para que se puedan diseñar estrategias adecuadas. Regresando al ejemplo de las hamburguesas, cualquiera entre 5 años y 99 puede comer hamburguesas, pero tenemos que hacer un segmento de 18 a 25 años para diseñar una estrategia específica a ese grupo, que no tiene nada en común con el grupo de 45 a 60 años. Entonces a cada grupo le haremos su estrategia.</p>
+                                        <p>Ejemplo:</p>
+                                        <div class="texto-infografia">
+                                            <p><em>Cuadro 1. Ejemplo de estrategia por segmento de mercado</em></p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <p>Nicho de mercado de consumidores que buscan opciones de alimentación rápida y saludable. Hamburguesas
+                                                                bajas en grasa, saludables y veganas</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p><strong>Segmento 1: </strong></p>
+                                                            <p>Jóvenes de 18 a 25 años</p>
+                                                            <p>Habitantes de Bogotá</p>
+                                                            <p>Estudiantes universitarios de la universidad de los Andes</p>
+                                                            <p>Nivel socioeconómico medio alto</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Estrategia:</strong> Anunciarse en TikTok mediante videos breves con jóvenes que tengan mayor
+                                                                número de seguidores y que se muestren consumiendo las hamburguesas veganas.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p><strong>Segmento 2: </strong></p>
+                                                            <p>Adultos de 45 a 60 años</p>
+                                                            <p>Habitantes de Bogotá</p>
+                                                            <p>Trabajadores y oficinistas de la zona de La Candelaria</p>
+                                                            <p>Nivel socioeconómico medio</p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Estrategia:</strong> anuncios en Facebook, y con afiches o anuncios de papel que se repartan
+                                                                en la zona cercana indicando que las hamburguesas pueden ser una opción saludable de comida rápida.
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: Elaboración propia.</p>
+                                        </div>
+                                        <div class="texto-video">
+                                            <p>Como se puede apreciar el nicho de mercado está conformado de personas que tienen la necesidad de comida rápida, saludable y de buen sabor, y para ese nicho hay dos segmentos, y para cada segmento se deben diseñar diferentes estrategias. Cualquiera podría decir, pero puede venir una persona de 80 años a comprar o un niño de 10, y no está en los segmentos. Efectivamente pueden venir a comprar de nuestras hamburguesas, pero los segmentos son para hacer estrategias específicas y dirigidas al segmento que conforma la mayoría de nuestros clientes.</p>
+                                            <p>Como podrás ver hemos hecho segmentos de mercado usando varias características comunes de los clientes:</p>
+                                            <ul>
+                                                <li>Características geográficas: Ubicados en Bogotá</li>
+                                                <li>Características demográficas: personas de 18 a 25 años y de 45 a 60 años.</li>
+                                                <li>Características socioeconómicas: jóvenes de nivel medio alto y adultos de nivel medio.</li>
+                                                <li>Características psicográficas: interesados por alimentos rápidos y saludables.</li>
+                                            </ul>
+                                            <p>Finalmente, ya que hemos segmentado el mercado, tendremos mucho más claras cuáles son las necesidades que debemos resolver en nuestro cliente y entonces con ello podremos diseñar de mejor manera la estrategia. Para segmentar el mercado te proponemos usar el formato para definir segmento y nicho de mercado, así como escuchar el podcast acerca de un caso de definición de nicho de mercado.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('sustitutos')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.2. Competidores y sustitutos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="sustitutos">2.2. Competidores y sustitutos </h4>
+                                        <p>Otro de los elementos que debemos conocer en el mercado, además de los clientes, es a nuestros competidores y los productos sustitutos. Lo primero que haremos es definir un competidor y un producto sustituto.</p>
+                                        <div class="texto-video">
+                                            <p>Un competidor es aquel negocio o persona que participa en el mismo mercado ofreciendo similares productos o servicios al mismo segmento de mercado. Reconocer a estos actores y comprender sus estrategias es esencial para el éxito sostenible de nuestro negocio. Ahora bien, identificar a los competidores no solo implica conocer sus nombres y en dónde están, por el contrario, es indispensable tener muy claro todo acerca de ellos, su modelo de negocio, sus estrategias, sus fortalezas y sus debilidades. </p>
+                                            <p>Conocerlos a profundidad permite diseñar estrategias adecuadas, tanto defensivas como ofensivas a fin de lograr una mejor participación de nuestros productos o servicios en el mercado. </p>
+                                            <p>Ahora bien, además de los competidores, existen otros actores en el mercado a los que hay que prestarles especial atención y son los sustitutos. Los productos o servicios sustitutos son aquellos que se ofrecen en el mercado y que satisfacen la misma necesidad, pero de manera totalmente diferente. No son iguales a lo que nosotros ofrecemos, pero si resuelven la misma necesidad. </p>
+                                            <p>Veamos las diferencias entre competidores y sustitutos. Los competidores son otras empresas u organizaciones que ofrecen productos o servicios similares o directamente comparables a los tuyos y que compiten por el mismo grupo de clientes. Estas empresas operan en el mismo mercado y luchan por captar la atención y la preferencia de los consumidores. Los competidores pueden ser empresas que se dirigen al mismo segmento de mercado, tienen un producto similar o compiten por el mismo conjunto de necesidades y deseos del cliente.</p>
+                                            <p>Por ejemplo, si tienes una tienda de ropa que vende ropa deportiva, tus competidores serían otras tiendas de ropa deportiva en la misma área geográfica.</p>
+                                            <p>Por su parte los productos sustitutos, son bienes o servicios que no son idénticos, pero que cumplen una función similar o satisfacen una necesidad similar a la de tu producto. Los productos sustitutos pueden no ser del mismo tipo ni provenir de la misma industria, pero pueden ser considerados como alternativas por parte de los consumidores.</p>
+                                            <p>Siguiendo el ejemplo de la tienda de ropa deportiva, un producto sustituto podría ser la ropa cómoda y casual que no está específicamente diseñada para actividades deportivas, pero que las personas podrían optar por usar en lugar de ropa deportiva para actividades informales.</p>
+                                        </div>
+                                        <p>Imagina que eres médico y tienes un consultorio de salud, los médicos de la zona en la que estás, son tus competidores directos, sin embargo tal vez en la zona hay también curanderos, o personas que ofrecen homeopatía sin conocimientos reales de medicina, entonces estos son los productos sustitutos, ya que en realidad no compiten de manera directa, pero si inciden en el desempeño de tu consultorio, ya que los pacientes podría ser que se atiendan con los curanderos en lugar de ir a una consulta médica. </p>
+                                        <p>En resumen, la diferencia principal radica en que los competidores son empresas que ofrecen productos similares o comparables y operan en el mismo mercado, mientras que los productos sustitutos son alternativas que satisfacen necesidades similares, pero pueden no provenir de la misma industria o categoría de productos. Ambos aspectos son importantes de considerar en la estrategia de una empresa para comprender cómo se posiciona en su mercado y cómo puede enfrentar diversas fuentes de competencia y demanda.</p>
+                                        <p>Y ¿qué es lo que debemos conocer de los competidores y los sustitutos? La respuesta es todo lo más que se pueda, por ejemplo:</p>
+                                        <ul>
+                                            <li>Las características de su producto o servicio.</li>
+                                            <li>El precio que brindan.</li>
+                                            <li>Cómo hacen publicidad</li>
+                                            <li>Dónde se anuncian.</li>
+                                            <li>Cómo entregan su producto o servicio.</li>
+                                            <li>Cuál es su segmento de mercado.</li>
+                                            <li>Cuáles son las condiciones que brindan en el mercado.</li>
+                                        </ul>
+                                        <p>En fin, es indispensable hacer una investigación detallada y a profundidad de ellos. Una manera de hacer esa investigación es solicitar buscar información en internet, hacer entrevistas y encuestas a sus clientes, llamar para pedirles informes como si fuéramos un cliente más, incluso hasta comprar el producto o servicio. Y con toda esa información realizar un análisis profundo que nos permita tomar decisiones al respecto.</p>
+                                        <p>Analicemos un caso, la escuela ESTRELLA, es una escuela preescolar o kínder, que busca analizar a sus competidores, para ello la directora de la escuela se dio a la tarea de visitar todas las escuelas de la zona pidiendo informes como si fuera una cliente más, con la información que recolectó, elaboró un informe de precios y características, el cual se puede consultar en el documento Análisis de competidores.pdf </p>
+                                        <p>Con la información que se muestra, reflexiona y trata de responder las siguientes preguntas:</p>
+                                        <ul>
+                                            <li>¿Qué elementos se pueden ver de la estrategia que llevan a cabo los competidores de la escuela Estrella?</li>
+                                            <li>¿La escuela Estrella debería subir o bajar el precio de alguno de sus servicios?</li>
+                                            <li>¿Consideras que hay acciones o estrategias que debería implementar a partir de la información de la que dispone?</li>
+                                            <li>¿Crees que, en tu empresa, podrían hacer un informe parecido al que elaboró la directora de la escuela Estrella? ¿Sería de utilidad?</li>
+                                        </ul>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Análisis de la situación de la empresa, análisis FODA">
+                                <h3 class="mt-3"><i class="num">3</i> Análisis de la situación de la empresa, análisis FODA</h3>
+                                <p>Una vez que se cuenta con información detallada de los clientes y los competidores, viene el momento de realizar un proceso de reflexión para identificar cómo se encuentra la empresa en términos generales. Para ello existe una herramienta muy conocida que se llama Análisis FODA. La palabra FODA es el acrónimo de Fortalezas, Oportunidades, Debilidades y Amenazas. También lo encontrarás en inglés como análisis SWOT.</p>
+                                <p>Esta herramienta lo que busca es ayudar al empresario o emprendedor a comprender de manera sencilla cuál es la condición que guarda una empresa respecto al mercado en el que se participa. El análisis FODA permite realizar una reflexión en torno a las ventajas que la empresa tiene para competir y las desventajas que debe afrontar. Veamos cada uno de los elementos que componen el análisis FODA:</p>
+                                <div class="texto-infografia">
+                                    <p><strong>FORTALEZAS.</strong> Las fortalezas de una empresa son aquellos atributos, capacidades, recursos y ventajas internas que le permiten a una empresa destacar, sobresalir y tener una ventaja competitiva en su industria o mercado. Estas fortalezas son aspectos positivos o elementos a favor que la empresa posee y que pueden ser utilizados para alcanzar sus objetivos, superar desafíos y lograr un rendimiento superior. Algunos ejemplos de fortalezas pueden ser:</p>
+                                    <ul>
+                                        <li>Poseer una marca o reconocida y fuerte en el mercado, o un prestigio como empresa seria y de calidad.</li>
+                                        <li>Contar con un producto o un servicio de calidad y que los clientes lo reconozcan así.</li>
+                                        <li>Poseer tecnología avanzada que le permita a la empresa innovar constantemente.</li>
+                                        <li>Tener talento humano capacitado y muy comprometido con la empresa.</li>
+                                        <li>Disponer de una red de distribución eficiente, bien organizada y que opere a bajo costo.</li>
+                                        <li>Contar con recursos financieros sólidos y una situación financiera saludable que permite inversiones y expansión.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Contar con algún mecanismo que segure la propiedad intelectual, como patentes, derechos de autor, secretos industriales y otros activos intangibles que otorguen ventajas exclusivas a la empresa.</li>
+                                        <li>Tener buenas alianzas con otras empresas o proveedores en el mercado que ofrezcan oportunidades únicas.</li>
+                                    </ul>
+                                    <p><strong>OPORTUNIDADES</strong>.Son aquellas situaciones, tendencias o condiciones en el entorno externo que la organización puede aprovechar de manera positiva para mejorar su desempeño. Estas oportunidades representan áreas en las que la empresa puede expandirse, innovar o aumentar sus ventajas con respecto a sus competidores.</p>
+                                    <p>Pueden surgir de diversos factores externos, como cambios en el mercado, avances tecnológicos, solicitudes o necesidades de los clientes, nuevas leyes que puedan ser favorables; son aspectos que pasan en el mercado que nos benefician. Por ejemplo:</p>
+                                    <ul>
+                                        <li>Que aparezcan nuevas tecnologías en el mercado que permitan desarrollar nuevos productos o mejorar la experiencia del cliente.</li>
+                                        <li>Que se pueda entrar a competir en nuevos mercados geográficos donde haya clientes insatisfechos o sin productos como el nuestro.</li>
+                                        <li>Que cambie el comportamiento de los clientes lo que podría traducirse en una posibilidad para desarrollar productos y servicios distintos.</li>
+                                        <li>Que haya pocos competidores en un mercado.</li>
+                                        <li>Que la economía empiece a crecer y eso permita que haya más clientes o que los clientes que tenemos quieran comprarnos más.</li>
+                                        <li>Que exista la posibilidad de beneficiarnos porque cada vez más, los clientes busquen productos y servicios sostenibles, ecológicos, orgánicos, etcétera.</li>
+                                        <li>Que exista posibilidad de crear productos o servicios nuevos que resuelvan problemas existentes de manera única.</li>
+                                    </ul>
+                                    <p><strong>DEBILIDADES</strong>.Son el contraste de las fortalezas, se refiere a los aspectos internos de la empresa que la colocan en una posición desventajosa en comparación con sus competidores. Es decir que son características, recursos o áreas de operación que limitan a la empresa. Reconocer nuestras debilidades ayuda a diseñar formas de resolverlas. Algunos ejemplos de debilidades podrían ser:</p>
+                                    <ul>
+                                        <li>Tener recursos limitados como poco capital, escaso personal, limitada tecnología u otros recursos necesarios para competir en el mercado.</li>
+                                        <li>No tener un producto o servicio que sea verdaderamente diferente a otros en el mercado, es decir que no tenga características distintivas que lo hagan diferente a otros productos o servicios de los competidores.</li>
+                                        <li>Tener productos con mala calidad, comparado con las expectativas del cliente.</li>
+                                        <li>No mantenernos al día con las últimas tecnologías y métodos, lo que disminuye nuestra capacidad de innovar.</li>
+                                        <li>No contar con el talento humano con las habilidades y experiencia necesarias para liderar y tomar decisiones estratégicas que nos ayuden a ser mejores en el mercado.</li>
+                                        <li>Tener procesos internos lentos, ineficientes o anticuados que afectan la productividad de la empresa y aumentan los costos.</li>
+                                        <li>Depender en gran medida de un solo proveedor o cliente, lo que puede aumentar el riesgo si se produce un cambio en esa relación.</li>
+                                        <li>Tener una imagen o reputación negativa en el mercado debido a problemas pasados o malas experiencias de los clientes.</li>
+                                        <li>No tener una estrategia clara para guiar el crecimiento y la dirección futura de la empresa.</li>
+                                    </ul>
+                                    <p><strong>AMENAZAS</strong>. Finalmente, las amenazas de una empresa son factores externos que pueden afectar negativamente su desempeño, competitividad y capacidad para alcanzar sus objetivos. Estas amenazas son situaciones o tendencias en el entorno o el mercado que pueden representar riesgos y desafíos para la empresa. Por ejemplo</p>
+                                    <ul>
+                                        <li>Que comience a haber cada vez más y más competencia, pues una creciente competencia en el mercado puede reducir la cuota de mercado y las utilidades.</li>
+                                        <li>Que las preferencias de los clientes cambien y que su interés esté en adquirir o requerir productos o servicios que la empresa no esté en condiciones de ofrecer.</li>
+                                        <li>Que aparezcan tecnologías muy nuevas y la empresa no tenga acceso a esas tecnologías. La llegada de nuevas tecnologías o modelos de negocio puede desplazar a empresas tradicionales.</li>
+                                        <li>Crisis económica, ya que una recesión económica puede reducir la demanda de productos y servicios, afectando los ingresos.</li>
+                                        <li>Que las leyes cambien y afecten de manera negativa a la empresa.</li>
+                                        <li>La falta de algún recurso, es decir que de pronto una materia prima que la empresa utiliza deje de estar disponible en el mercado.</li>
+                                        <li>La obsolescencia tecnológica puede hacer que los productos o servicios queden desactualizados.</li>
+                                        <li>Eventos políticos o conflictos internacionales pueden afectar el comercio y la estabilidad.</li>
+                                    </ul>
+                                </div>
+                                <p>Para llevar a cabo este análisis, sugerimos utilizar el Formato para FODA.docx que le permite identificar los principales elementos, con los que compite en el mercado.</p>
+                                <p>A partir de haber identificado sus Fortalezas, Oportunidades, Debilidades y Amenazas, podrás contar con información valiosa para el diseño de tu estrategia de mercado. Este ejercicio del análisis FODA es un insumo muy valioso que debe tener presente al momento de diseñar estrategias de mercado que es el tema siguiente en este apartado.</p>
+                                <p>Además del FODA, existen herramientas adicionales que buscan crear estrategias combinando los insumos propios del FODA, una de estas herramientas es la Matriz FODA. Sugerimos ver el siguiente video explicativo de cómo integrar la matriz <a href="https://www.youtube.com/watch?v=IZWUYayHLcI">https://www.youtube.com/watch?v=IZWUYayHLcI</a> </p>
+                            </mat-tab>
+                            <mat-tab label="Estrategias de marketing digital">
+                                <h3 class="mt-3"><i class="num">4</i> Estrategias de marketing digital</h3>
+                                <div class="texto-video">
+                                    <p>El marketing digital es un conjunto de técnicas y estrategias diseñadas y encaminadas a la promoción de productos o servicios de un negocio todo a través de Internet, como sitios web, buscadores, redes sociales, entre otros.</p>
+                                    <p>Así, una vez que se ha realizado el análisis del mercado, identificando, clientes, competidores, sustitutos y habiendo hecho el análisis FODA; debemos construir estrategias de mercado. Para elaborar estrategias de mercado Jerome McCarthy, uno de los más influyentes profesores de marketing en el mundo en 1960 diseñó una técnica muy sencilla basada en cuatro elementos clave: Precio, producto, plaza y promoción. Estos cuatro elementos fueron popularizados por Philip Kotler, considerado el padre del marketing moderno, quien introdujo estos conceptos en su libro “Administración de Marketing” publicado en 1967.</p>
+                                    <p>Identificar las 4P de nuestro producto o servicio son un buen punto de partida para elaborar estrategias de marketing digital. El precio, las características del producto, la promoción que se hace y la plaza, es decir cómo se comercializa. Veamos cada una de estas P, para que puedas diseñar tu estrategia.</p>
+                                </div>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Producto')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.1. Producto </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Producto">4.1. Producto </h4>
+                                        <div class="texto-video">
+                                            <p>La primera de las P se refiere al producto, o en algunos casos al servicio que ofreces. Cuando hablamos del producto o servicio, no solo hacemos referencia a tener claro el mismo y ya, sino a definir un conjunto de aspectos necesarios, que le dan forma al producto o servicio ante los ojos de nuestros clientes.</p>
+                                            <p>Por ejemplo, una persona que va a comprar una pizza, no solo se preocupa por la pizza y ya, los clientes suelen ver aspectos como la variedad de pizzas que un restaurante les ofrece, si hay de varios ingredientes, tipos de pan o masa que usan para hacer la pizza, además prestan atención a qué tan bien preparada está, a cómo viene envasada, si llega fría o aun llega a su casa caliente, otro aspecto importante es qué tan pronto llega la pizza, y también es muy relevante qué tan sencillo o complicado es hacer el pedido. Si cada vez que pides una pizza a domicilio se hace muy complicado el proceso, porque hay que llamar, esperar en el teléfono, tener que dar muchos datos, etcétera, entonces por muy deliciosa que esté la pizza, el cliente va a preferir comprar en otro restaurante en donde sea mucho más fácil, y si se puede hacer en internet y con pasos muy sencillos, eso influirá en que el cliente prefiera la pizza con menos sabor, pero con mayor facilidad de compra.</p>
+                                            <p>A eso se refiere la P de Producto, a diseñar un producto y servicio adecuado que cumpla con las necesidades y deseos del cliente. Un producto que le resuelva la vida y sea sencillo, rápido, fácil de usar, en fin, no solo hay que pensar en el producto, sino en todos los aspectos que hay en tono a él. O usando nuestro ejemplo, no solo hay que pensar en la pizza, sino que debemos pensar en todo lo demás como variedad de productos, calidad de las pizzas, envase en el que se entrega, servicio que acompaña al producto, etcétera.</p>
+                                        </div>
+                                        <p>La P de producto es aplicable a servicios. Imaginemos los servicios educativos de una escuela de nivel básico. No solo se trata de dar clases y que se cumpla con un plan de estudios y ya, sino que se deben definir aspectos tales como tipos de servicios, por ejemplo, si se darán alimentos o no a los alumnos, si hay clases adicionales por la tarde como karate, ballet o natación, si ofrece horarios distintos o un solo horario. Otras características de los servicios serían si los padres de familia pueden ver lo que hacen sus hijos a través de sus teléfonos celulares o a través de cámaras en la escuela, o si contarán con un portal en Internet para dar seguimiento a las calificaciones de sus hijos, y las tareas que le son asignadas cada día.</p>
+                                        <p>También se deberá definir la manera en la que las madres y los padres de familia pueden poner una queja en caso de no estar satisfechos con alguna parte del servicio. Todo ello define las características específicas del producto.</p>
+                                        <p>Estas características pueden ser diseñadas de manera general para todos los clientes, o bien para los segmentos de mercado que se definieron previamente ya que podemos tener clientes de características diferentes, y cada uno puede requerir condiciones distintas del servicio o productos diferentes.</p>
+                                        <p>En el ejemplo de la escuela podemos tener el servicio de horario ampliado para las madres y padres de familia que trabajan, y horario normal para quienes se dedican al trabajo en casa y no están interesados en que sus hijos estén más tiempo que el necesario en la escuela. Si prestas un poco de atención a este tipo de estrategias, lo que buscan de fondo es tratar de personalizar a el producto o servicio al cliente. Esta es una tendencia muy clara del marketing digital actual, la búsqueda de personalización del producto o servicio a las características específicas de cada cliente, o al menos de cada grupo de clientes. Por ejemplo, Coca cola no podría personalizar cada lata de soda para cada cliente, pero si puede hacer tipos de producto para segmentos de clientes, como Coca Cola Clásica, Coca Cola Zero azúcar, Coca Cola Light, y presentaciones diferenciadas para distintos clientes como familias y personas en lo individual, etc.</p>
+                                        <p>Para el caso de proyectos digitales, la P de producto debe estar pensada también en el segmento al que va dirigido el servicio digital. Si se está diseñando una aplicación, en realidad el producto no es la propia aplicación, ya que esta es más bien la vía a través de la cual se va a ofrecer un servicio. Por ejemplo, la aplicación de UBER o Cabify, no es el producto, la aplicación solamente es la vía a través de la cual se ofrece un servicio de transporte ágil. Así que se debe pensar en las características del servicio que se ofrece y la aplicación, entonces debe servir para dar el servicio tal y como se ha pensado y como lo necesita nuestro cliente.</p>
+                                        <p>Por el contrario, si tenemos una empresa que no es digital, pero queremos añadir un servicio acompañado de algún elemento digital, lo que debemos pensar es en el servicio que el cliente desea, y ya que se tiene claro el servicio entonces pensar ¿qué herramienta puede ayudarnos a agilizar ese servicio? Retomando el ejemplo de la escuela, el servicio incluye dar las calificaciones a los padres de familia y la información de las tareas, pero ese servicio ya se tiene sin que haya una oferta digital, entonces teniendo claro el servicio, el paso siguiente es ¿de qué manera las herramientas digitales pueden ayudarnos a darles calificaciones y la información de tareas a los padres y madres de familia? Así la herramienta se suma al servicio, y no al revés.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Precio')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.2. Precio </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Precio">4.2. Precio </h4>
+                                        <div class="texto-video">
+                                            <p>La siguiente P se refiere al precio que se asignará al producto o servicio que se ofrecerá. Pero igual que en la P de Producto, no solo se trata de definir un precio y ya. Más bien es importante definir cuál es el mejor precio para el segmento de mercado al que estoy dirigiendo mi servicio o mi producto.</p>
+                                        </div>
+                                        <p>Por ejemplo, si estamos vendiendo autos de lujo como un Lamborghini, dar un precio bajo sería en detrimento de nuestro producto, ya que el cliente lo que busca es un producto caro que le dé un estatus de privilegio comparativamente con otros clientes. Entonces debemos comprender bien qué precio es el que nuestro cliente espera para ofrecérselo. Tal vez el segmento al que nos dirigimos busque precios muy bajos, hay otros clientes que buscan precios altos, pero obtener descuentos, y hay otros clientes que buscan tener el precio más alto pues eso les brinda satisfacción de poder comprar productos o servicios costos.</p>
+                                        <p>Veamos un ejemplo que hoy en día es muy común, cuando un artista va a dar un concierto, las entradas están diferenciadas por precio. En un concierto masivo, hay precios bajos, en donde el conjunto de servicios vinculados a esa entrada corresponde a ese valor, son clientes que esperan un precio bajo y no buscan servicios añadidos, solo desean tener acceso al evento. Por otra parte, hay precios muy altos, en donde los clientes que pagan los boletos más costosos son aquellos que esperan un tratamiento diferenciado, es decir un servicio especializado, que les dé acceso ágil al concierto, que les incluya algún artículo de cortesía, que puedan tener contacto con el artista, etcétera.</p>
+                                        <div class="texto-video">
+                                            <p>Entonces el diseño de precios es muy importante, porque el precio les envía un mensaje a los consumidores, el precio les dice este producto o servicio que tú estás adquiriendo está adaptado a tus necesidades específicas.</p>
+                                            <p>Una estrategia de precio debe considerar las distintas tarifas para cada uno de los servicios que se ofrecen (lista de precios), los descuentos que se ofrecen a cada tipo de cliente o en su caso, sino se ofrecerán descuentos. La forma de pago que se acepta, si el cliente puede pagar a través de una aplicación, usando su tarjeta bancaria, en efectivo, o cualquier otra manera. El periodo de pago, es decir si debe pagar al momento de la compra o se puede pagar anticipadamente para reservar el producto o servicio e irlo pagando o, al contrario, se puede pagar posteriormente, primero se consume y luego se paga. También se deben definir las condiciones de crédito que se van a ofrecer a los clientes. En el caso concreto de las condiciones de crédito, también pueden diferenciarse por y tipo de cliente, habrá clientes a los que se les ofrezca crédito y ciertas condiciones, y a otros a los que tal vez no se les ofrezca. La decisión es parte de la estrategia, pero debe depender del tipo de cliente.</p>
+                                            <p>Finalmente, en el diseño del precio debes ver a tus competidores para tener el comparativo de qué precios están ofreciendo en el mercado otras empresas, y saber si tu empresa es la más cara, la más económica o se encuentra en el promedio del mercado. Recuerda que el precio manda mensajes al mercado, y no siempre ser el más barato es bueno, como tampoco puede ser necesariamente positivo ser el más económico. Cada decisión depende del mensaje que deseas enviar al mercado con el precio que establezcas. Tienes que analizar muy bien a tus clientes y a tus competidores para decidir el mejor precio. </p>
+                                            <p>En el caso de servicios digitales, un aspecto que debe tenerse presente al momento de diseñar la estrategia de precio es si el servicio digital tendrá un impacto directo en el precio o no. Hay muchos servicios en el mercado que se cobran a parte cuando se recibe un servicio digital. Por poner un ejemplo, las compras en línea, en ocasiones por el envío se debe pagar un precio adicional, y hay estrategias en las que el precio ya lo incluye, es importante señalar que incluye el precio que paga el cliente, no es que lo estén regalando, sino que en el precio ya se está considerando el costo del envío. También existen estrategias que buscan incentivar el uso digital, hay empresas que a sus clientes que compran a través de Internet, les ofrecen un descuento, pues lo que pretenden es promover que los clientes compren a través de canales digitales.</p>
+                                            <p>Cada empresa debe definir con claridad la estrategia que desea implementar, pero esa estrategia no puede ser una ocurrencia, más bien debe ser bien pensada en función del tipo de cliente y del producto o servicio que se ofrece en el mercado.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Plaza')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.3. Plaza </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Plaza">4.3. Plaza </h4>
+                                        <div class="texto-video">
+                                            <p>La P de Plaza, se refiere a los canales a través de los cuales llega el producto o servicio al cliente. Hoy en día existen pocas empresas que venden sus productos directamente a los usuarios finales; por el contrario, entre quien fabrica un producto y quien lo compra suele haber una serie de intermediarios que realizan diversas funciones. Estos intermediarios conforman los canales de venta y suelen participar en el proceso de poner a disposición de los consumidores un bien o un servicio para su uso (Kotler &amp; Keller, 2012).</p>
+                                            <p>Esto implica que tal vez para ofrecer tu producto o servicio al mercado necesites de uno o más intermediarios, y ello requiere también de una estrategia.</p>
+                                            <p>Llevar tu producto o servicio al cliente te obliga a considerar varios aspectos, al igual que las P de precio y producto, en el caso de la Plaza, cada cliente requiere que le acerquemos el producto de maneras distintas. Habrá clientes que deseen que el producto le llegue directamente a su casa, mientras que otros prefieran ir a un centro comercial a adquirirlo.</p>
+                                            <p>Hoy en día hay muchas maneras de llegar a los clientes, puede ser mediante ventas directas, a través de vendedores, puede ser por ventas en catálogo, vender a través de un sitio web de un tercero, o en un centro comercial, también puede ser por ventas telefónicas, o bien usando una aplicación de teléfono celular.</p>
+                                            <p>Pero ¿cuál es la más conveniente para tu producto o servicio? Pues eso depende del segmento de clientes a los que quieres llegar. </p>
+                                        </div>
+                                        <p>Veamos un ejemplo, imaginemos un médico que ofrece servicios de salud en su consultorio. El médico, además del consultorio, podría dar consultas a domicilio en las casas de sus pacientes, podría también dar consultas médicas usando plataformas de videoconferencias, para reunirse con sus pacientes en videollamadas, incluso podría diseñar una aplicación a través de la cual pueda dar seguimiento a las citas de sus pacientes; hacer llamadas o recibir consultas específicas en la aplicación y recetarles en línea. Pero ¿todos esos servicios serían bien recibidos por todos los pacientes? La respuesta es que seguramente no, ya que habrá clientes jóvenes que les guste más la idea de recibir consultas a través de una aplicación y estar chateando con el médico por ese medio, pero tal vez en un segmento de pacientes de la tercera edad, prefieran que el médico los visite en casa, mientras que tal vez adultos de entre 35 y 60 años, se sientan más cómodos visitándolo en el consultorio.</p>
+                                        <p>Así que cada medio de distribución debe ser pensado de manera cuidadosa en función del segmento de mercado al que se pretende llegar con el servicio o el producto. El producto no tendrá el mismo impacto si pretendes venderlo en un super mercado que si lo vendes a través de Amazon, y no se trata de que uno sea mejor o sea peor que el otro, más bien cada uno tiene condiciones distintas y es más adecuado para un segmento que el otro.</p>
+                                        <p>Los aspectos por considerar para el diseño de la estrategia de plaza son, la definición de los canales adecuados a cada cliente y la cobertura que esperas tener implica definir hasta qué lugar geográfico pretendes llegar con el producto, esto quiere decir que la estrategia no es igual si solo quieres vender en un barrio determinado o deseas llegar a todo el país. Tal vez estás pensando en ventas directas, es decir pretendes que tus clientes vengan a tu empresa y compren directamente, eso puede funcionar si tus clientes están cerca de donde te encuentras, pero si hay clientes un poco más alejados, esa alternativa puede no ser la más adecuada.</p>
+                                        <p>Entonces tal vez necesitas tener muchas ubicaciones, pero eso requiere que inviertas en tiendas propias, así que deberás evaluar qué es mejor, si abrir tiendas propias o mejor usar distribuidores que vendan tus productos o servicios, pero estos distribuidores tendrán un costo, parte de tu ganancia se va a ir en ellos.</p>
+                                        <p>Otro aspecto relevante es la regularidad con la que debes surtir el producto o brindar el servicio a tus clientes. Si en tu estrategia está llegar a muchos lugares geográficamente, considera que tal vez tengas que estar haciendo muchas entregas de manera regular en el tiempo, lo cual exigirá que tengas la capacidad para entregar a tiempo en todos los lugares, pues no hay nada peor para los clientes que un proveedor que se atrasa en la entrega.</p>
+                                        <p>Un punto más al que debes prestarle atención es al tipo de transporte para tu producto y cómo hacer para que llegue bien a tu cliente y sin dañarse. Seguramente te interesa que tu producto llegue bien, tal y como sería si lo compran directamente contigo, entonces tendrás que planificar bien, cuál es el mejor transporte para tu producto o servicio y cómo harás para que llegue en perfectas condiciones.</p>
+                                        <p>Hoy en día a través de los medios digitales, es muy común pensar en aplicaciones, o en sitios web de venta, sin embargo, debes preguntarte si los clientes a los que piensas llevar tus productos son los adecuados para el tipo de canal que pretendes usar.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Promocion')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.4. Promoción </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="Promocion">4.4. Promoción </h4>
+                                        <div class="texto-video">
+                                            <p>La última de las P es la de promoción. Esta se refiere a la manera en la que comunicarás a tus posibles clientes toda la información referente a tu producto. En este punto se incluye todo lo relacionado con la publicidad, pero también todo lo que tenga que ver con la comunicación con el cliente.</p>
+                                            <p>Las comunicaciones están íntimamente vinculadas a los medios por los cuales las empresas intentan informar, persuadir y recordar a los consumidores, de manera directa o indirecta, sobre los productos y marcas que venden. De cierta manera, las comunicaciones de marketing representan la voz de la empresa y sus marcas; son los medios por los cuales la empresa puede establecer un diálogo y construir relaciones duraderas con sus consumidores (Kotler &amp; Keller, 2012). </p>
+                                            <p>Al igual que las otras P, en el caso de la promoción, debemos tener presente el perfil del consumidor, ya que no es igual comunicarnos con un cliente de 20 años que con uno de 50 o uno de 80; tampoco es igual comunicarnos con una persona de la ciudad que una persona que se encuentra en un medio rural. Así la estrategia de publicidad y comunicación se debe adaptar muy bien a las características del cliente al que se desea llegar.</p>
+                                            <p>Además, hay que tener presente que la tecnología y otros factores han cambiado profundamente la manera en que los consumidores procesan las comunicaciones o inclusive si deciden procesarlas. La rápida difusión de los teléfonos inteligentes de usos múltiples, las conexiones inalámbricas y de banda ancha de Internet, y los servicios de streaming como Netflix en el caso del video o Spotify en el caso del audio, han eliminado la eficacia que otrora tuvieron los medios de comunicación masiva.</p>
+                                            <p>Hace apenas 20 años atrás, en la década de los años 2000, era todavía muy común ver anuncios masivos a través de televisión o la radio, sin embargo, hoy en día la comunicación y transmisión de mensajes publicitarios ha cambiado de forma contundente.</p>
+                                        </div>
+                                        <p>Actualmente, existen muy diversas formas de anunciarse, y muy diversos medios de comunicación, por lo que las estrategias de comunicación y publicidad deben diseñarse no con base en el medio, sino con base en el cliente al que deseamos llegar. Si deseas comunicar un mensaje que llegue a personas mayores de 60 años en una zona rural, probablemente el canal más indicado no sea utilizar envíos por correo electrónico. Mientras que, si deseas llegar a una audiencia de jóvenes entre 15 y 20 años de zonas urbanas, la mejor manera no es imprimir tu publicidad en papel y distribuirla en la calle, deberá ser difundida a través de medios electrónicos, particularmente redes sociales digitales, que son las que más frecuentemente consultan los jóvenes.</p>
+                                        <p>A continuación, se presenta un cuadro que muestra los distintos tipos de comunicación que hay (publicidad, promoción de ventas, eventos y experiencias, relaciones públicas, marketing directo, marketing de boca en boca y ventas personales) así como las distintas plataformas de comunicación o dicho de otra manera las distintas formas de hacer publicidad. Con este cuadro deberás reflexionar ¿cuál de todas estas formas de comunicación es la más adecuada para el segmento de clientes a los que deseas llegar?</p>
+                                        <p>Como se ha detallado, la promoción puede incluir diferentes tipos de acciones como la publicidad, las relaciones públicas, las ventas personales, el marketing, el patrocinio, por citar algunas, encaminadas a llegar al segmento de mercado al que se quiere convencer y hacer llegar el producto o servicio.</p>
+                                        <p>Existen diversidad de opciones para promover el producto o servicio, aquí un listado que puede ser útil para seleccionar la opción más viable:</p>
+                                        <div class="texto-infografia">
+                                            <p><em>Cuadro 2. Plataformas de comunicación más comunes</em></p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p><strong>Publicidad</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Promoción de ventas</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Eventos y experiencias</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Relaciones públicas</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Marketing directo e interactivo</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Marketing de boca a boca</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Ventas personales</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Anuncios impresos y transmitidos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Concursos, juegos, rifas y loterías</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Deportes</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Kits de prensa</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Catálogos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Persona a persona</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Presentaciones de ventas</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Empaque/ exterior</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Incentivos y obsequios</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Entretenimiento</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Discursos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Correo</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Grupos de chat (ejemplo grupos de whatsapp)</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Juntas de ventas</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Inserciones en el empaque</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Muestras gratis</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Festivales</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Seminarios</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Telemarketing</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Marketing a través de creadores de contenido (influencers)</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Programas de incentivos</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Cine</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Envíos sin costo</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Artes</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Informes anuales</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Compras electrónicas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Peer to Peer, o recomendación online entre personas </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Muestras</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Folletos y cuadernillos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Ofertas por tiempo limitado</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Causas sociales o comunitarias</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Donaciones a caridad</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Compras por televisión</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Reseñas y opiniones en línea</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Ferias y exposiciones comerciales</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Posters y volantes</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Demostraciones</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Visitas a las fábricas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Publicaciones</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Correo electrónico e-mailing</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Eventos o experiencias de marca que son compartidos por los asistentes</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Directorios</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Cupones y servicios añadidos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Museos de la empresa</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Relaciones con la comunidad</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Posicionamiento SEO en buscadores</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Publicidad SEM en buscadores</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Devoluciones de efectivo</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Actividades callejeras</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Cabildeo</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Blogs de la empresa</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Carteleras</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Financiamiento con intereses bajos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Exhibiciones, ferias y exposiciones</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Medios de identidad</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Sitios Web</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Anuncios de display</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Subvenciones por intercambios</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Webinar</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Revista de la empresa</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Marketing en redes sociales de manera dirigida</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Display en punto de venta</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Programas de fidelidad de cliente</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            <p>Sitio o perfil en redes sociales</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Marketing en redes sociales de manera masiva</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Crear comunidades o hacer que el cliente participe</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            <p>Chatbots (Inteligencia artificial)</p>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Fuente: adaptado de (Kotler &amp; Keller, 2012).</p>
+                                        </div>
+                                        <p>Es importante decir que incluso puedes hacer combinaciones de los distintos medios, es decir podrías combinar unos y otros, por ejemplo si deseas hacer publicidad para un restaurante exclusivo en una zona urbana, podrías hacer una estrategia que use Marketing en redes sociales de manera dirigida, algunas demostraciones en ferias y exposiciones, hacer seminarios sobre cocina especializada y tener el sitio web de tu empresa, además de hacer Marketing a través de creadores de contenido  o mejor conocidos hoy en día como influencers, que tengan el perfil del producto o servicio que a ti te interesa promover.</p>
+                                        <p>Cada una de estas plataformas tiene sus propias características, cada una funciona mejor para un tipo de cliente que otras, cada una de ellas tiene costos distintos, te recomendamos que antes de usar cualquiera de ellas te informes de manera detallada de las posibilidades que cada una puede ofrecer y desde luego, verificar qué plataformas son más cercanas al segmento de mercado al que se dirige tu producto o servicio.</p>
+                                        <p>Así, la P de promoción tiene que ver con las estrategias y tácticas que debes hacer para comunicar, persuadir y convencer a los consumidores sobre la adquisición de tus productos o servicios.</p>
+                                        <h5>Promoción</h5>
+                                        <p>Se trata de un recurso motivante (y detonante) dentro de una estrategia de marketing y de ventas, cuyo fin es generar una acción a corto plazo. El estímulo se vincula al producto o servicio específico de la estrategia y busca impulsar su venta o comercialización. (Moreno, 2023)</p>
+                                        <div class="texto-infografia">
+                                            <p>Si deseas profundizar en algunos de ellos te recomendamos las siguientes lecturas:</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p><strong>Nombre del sitio</strong></p>
+                                                        </td>
+                                                        <td>
+                                                            <p><strong>Dirección del sitio</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Los canales de comunicación más importantes para los clientes: ventajas y desventajas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>https://www.userlike.com/es/blog/canales-de-comunicacion</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Las Redes Sociales más utilizadas: cifras y estadísticas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>https://www.iebschool.com/blog/medios-sociales-mas-utilizadas-redes-sociales/</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Lista de todas las Redes Sociales digitales del Mundo en 2023</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>https://aulacm.com/redes-sociales-mas-importantes/</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Tipos de promociones para tu negocio en 2023 (con 20 ejemplos)</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>https://blog.hubspot.es/marketing/tipos-de-promocion</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Independientemente del medio que uses para comunicarte, deberás tener claro qué deseas comunicar, a quién y los objetivos de dicha comunicación, para ello te proponemos el siguiente proceso que de te servirá para diseñar la mejor manera de comunicación:</p>
+                                        <div class="texto-infografia">
+                                            <p><em>Ilustración 2. Proceso para diseñar una estrategia de publicidad y comunicación</em></p>
+                                            <p>Fuente: elaboración propia con base en (Kotler &amp; Keller, 2012)</p>
+                                        </div>
+                                        <p>Estos son los principales elementos que debe tener presentes en el diseño de una estrategia empresarial de mercadotecnia en la era digital. Para hacer más fácil el proceso te proponemos usar el formato 4Ps.docx el cual te irá guiando paso a paso en definir los elementos clave de tu estrategia empresarial de mercadotecnia en la era digital.</p>
+                                        <p>Finalmente vale la pena señalar que de manera más reciente han aparecido un sinnúmero de ideas y propuestas que señalan que existe muchas más P, o incluso quienes proponen que, ante la revolución digital, las P propuestas por McCarthy han cambiado a otras P. En realidad, casi todo lo que hoy en día se dice en torno a la idea de las 4 P, podrían entrar y encuadrarse en el concepto ideado para crear estrategias de mercado por McCarthy, sin embargo, hay un punto muy específico que no existía en los años 60, y que tal vez si vale la pena considerar porque tiene un elemento diferenciador, y es la propuesta de una P que se refiere a la Predicción.</p>
+                                        <p>En la época en la que McCarthy desarrolla el concepto de 4 P, no existía la inteligencia artificial, ni los algoritmos aplicados a analizar el comportamiento del consumidor, hoy en día eso ya se hace de manera natural en muchos sitios web, lo que permite predecir lo que los clientes requieren y desean comprar y hacer en el futuro, a través del análisis de los datos que los clientes van generando en sus consumos. Si hay una P que se podría agregar al concepto de las 4 P, este podría ser el de Predicción.</p>
+                                        <p>Para ejemplificar el potencial que se puede tener en cuanto a la predicción del consumo, te recomiendo ver el video <a href="https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared">https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared</a> que permite ver la manera en la que se puede llegar a identificar el consumo futuro, mediante el análisis de los datos que los consumidores generamos.</p>
+                                        <p>Finalmente, para reforzar el aprendizaje se recomienda ver los videoss <a href="https://www.youtube.com/watch?v=uhxViGl4tX0">https://www.youtube.com/watch?v=uhxViGl4tX0</a> que se refiere a las 4 P, y el video <a href="https://www.youtube.com/watch?v=2HuOar6VBUk">https://www.youtube.com/watch?v=2HuOar6VBUk</a> que se refiere al concepto de las 4 P en la era digital. Estos te servirán de repaso para algunos de los conceptos visto en este módulo.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('las4p')">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.5 Las 4 P adaptadas al marketing digital </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <h4 id="las4p">4.5 Las 4 P adaptadas al marketing digital </h4>
+                                        <p>La evolución del marketing digital ha generado una adaptación de las 4 P tradicionales, que se han venido señalando en este apartado para reflejar las nuevas realidades y oportunidades que ofrece el entorno digital.</p>
+                                        <div class="texto-infografia">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <p><strong>Las 4 P adaptadas al marketing digital</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Producto</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Precio</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Plaza</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Promoción</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Aquí no solo alude al objeto físico o servicio ofrecido, sino también a la experiencia del usuario
+                                                                digital. Esto incluye la interfaz de usuario, la experiencia, la adaptabilidad del producto a
+                                                                diferentes dispositivos y plataformas.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Fijar un precio en el entorno digital demanda mayor flexibilidad y opciones de modelado de precios
+                                                                como suscripciones, precios dinámicos, descuentos por compras en la aplicación o modelos freemium. 
+                                                            </p>
+                                                            <p>También exige ofrecer facilidad de cambio y personalización de precios en tiempo real, para adaptarse
+                                                                a las condiciones del mercado.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Este apartado que tiene que ver con la distribución elimina las barreras físicas, lo cual permite a
+                                                                las empresas alcanzar a un mercado global. Las estrategias de distribución incluyen al comercio
+                                                                electrónico, las plataformas de distribución digital (aplicaciones móviles o mercados en línea) y,
+                                                                el uso de canales digitales para facilitar la entrega de productos físicos.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Las tácticas de promoción digital se han venido diversificando y actualmente existen un sinnúmero de
+                                                                ellas.</p>
+                                                            <p>Hay estrategias SEO, de optimización de motores de búsqueda, publicidad en redes sociales, email
+                                                                marketing, marketing de contenidos, etc.</p>
+                                                            <p>Estas estrategias permiten segmentar el mercado y personalización más detallada, aprovechando los
+                                                                datos de los usuarios.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>El modelo de las 4 P adaptadas fue actualizado por Booms &amp; Bitner, quienes añadieron 3 nuevas P, adicionales para abordar necesidades únicas, establecidas en su libro Marketing Strategies and Organization Structures for Service Firms:</p>
+                                        <div class="texto-infografia">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="3">
+                                                            <p><strong>Las nuevas 3P del marketing digital</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Personas</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Procesos</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Prueba física</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Involucra al equipo de colaboradores de una empresa al ser parte esencial del proceso de ventas,
+                                                                incluso si no están en la primera línea de contacto con los clientes.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Implica el diseño e implementación de procesos de venta digitales claros en relación a la forma en
+                                                                que se entrega el producto o servicio.</p>
+                                                            <p>Trata de mejorar la experiencia del cliente y la eficiencia operativa.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>(Physical evidence). Aunque las interacciones pueden ser digitales, los clientes siempre buscan
+                                                                pruebas físicas de calidad a través de reseñas en línea, testimonios y la presentación del producto
+                                                                o servicio.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>La evolución del marketing digital cuya base es el Internet ha transformado el enfoque, anteriormente centrado en el Producto, ahora está centrado en el consumidor y en sus necesidades por ello se han establecido las 4 C que representan: Cliente, Costo, Conveniencia y Comunicación.</p>
+                                        <div class="texto-infografia">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <p><strong>Las 4 C del marketing digital</strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Cliente</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Costo</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Conveniencia</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Comunicación</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>El enfoque se desplaza hacia la satisfacción de las necesidades y deseos del cliente. Se trata de
+                                                                entender profundamente al consumidor para ofrecer soluciones, experiencias y productos que realmente
+                                                                quieran y necesiten, en lugar de centrarse en las características del producto.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Costo para el consumidor en lugar de precio. Aquí se amplía el concepto de precio para incluir el
+                                                                costo total de adquisición, posesión, uso y disposición del producto o servicio por parte del
+                                                                consumidor. Incluye factores como tiempo, esfuerzo y costos emocionales asociados a la compra y uso
+                                                                del producto o servicio.</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Conveniencia en lugar de plaza alude a la comodidad de comprar y recibir productos o servicios. Se
+                                                                refiere no solo a disponibilidad física o a la ubicación, sino también a la facilidad de acceso
+                                                                digital, experiencia de compra en línea y a las opciones de entrega y facilidad de uso en general.
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Comunicación en lugar de promoción, enfatiza la importancia de un diálogo bidireccional entre las
+                                                                marcas y los consumidores, en lugar del enfoque unilateral de la promoción.</p>
+                                                            <p>La comunicación incluye escuchar y responder comentarios de los clientes, participar en
+                                                                conversaciones en redes sociales y personalizar el marketing para hablar directamente con diferentes
+                                                                segmentos de audiencia.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Como se puede apreciar la evolución de las 4P a las 4C refleja un cambio sustancial en la estrategia del marketing, impulsado por la creciente incorporación y uso de las tecnologías digitales. El cambio enfatiza la importancia de centrarse en el cliente y proporcionarle valor; entender y reducir sus costos desde la perspectiva del consumidor, ofrecer conveniencia máxima en todos los puntos de contacto y mantener una comunicación abierta y bidireccional.</p>
+                                        <p>Al considerar estos elementos, tu negocio, producto o servicio estará en posibilidades de construir relaciones fuertes y duraderas con tus clientes, lo esencial en este entorno competitivo actual.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="Estrategias clave de publicidad en la era digital: SEO Marketing">
+                                <h3 class="mt-3"><i class="num">5</i> Estrategias clave de publicidad en la era digital: SEO Marketing</h3>
+                                <p>Como puedes ver, la publicidad en medios digitales es una estrategia más dentro de todas las opciones que existen para hacer publicidad, promoción y comunicación con los clientes, sin embargo, debido a la relevancia que hoy en día ha tomado este tipo de publicidad hablaremos de la importancia de contar con la optimización para motores de búsqueda conocida como SEO.</p>
+                                <p><em>Search Engine Optimization</em>, (SEO por sus siglas en inglés), se refiere a las prácticas y técnicas utilizadas para mejorar la visibilidad y el posicionamiento de un sitio web en los resultados de búsqueda orgánica de motores como Google, Bing y otros. A diferencia de la publicidad de pago (SEM), el SEO se centra en mejorar la posición de un sitio web de forma natural y no paga por clic.</p>
+                                <p>Debemos entender que los clientes cuando buscan un producto o servicio, hoy en día se meten a un buscador y ponen las palabras relacionadas con el producto o servicio que buscan, y van a elegir alguno de los primeros 10 resultados que aparecen en el buscador. Muy pocas personas seguirán buscando después de los 10 primeros resultados.</p>
+                                <p>Por ello es tan importante gestionar el SEO para que, en las búsquedas, tu sitio web aparezca en los primeros 10 resultados, cuando alguna persona busque en Internet tu producto o servicio. </p>
+                                <p>Para lograrlo hay que conocer la manera en la que funcionan los algoritmos de los principales buscadores, así que para ello te presentamos paso a paso cómo generar una estrategia SEO adecuada:</p>
+                                <ol>
+                                    <li>Realiza una investigación de palabras clave. Los clientes cuando buscan en internet entran a los buscadores y
+                                        escriben palabras que les ayudan a encontrar lo que están tratando de encontrar. A esas palabras se les conoce
+                                        como “palabras clave”. Deberás hacer una investigación entre tus clientes para identificar las palabras clave
+                                        relevantes para tu empresa, producto, servicio y segmento de mercado. Una vez identificadas elabora una lista
+                                        breve de ellas para tenerlas presentes.</li>
+                                    <li>Optimización de la página para marketing SEO. Todas las páginas web cuentan con elementos en su diseño como:
+                                        <ol type="a">
+                                            <li>Títulos,</li>
+                                            <li>Encabezados (H1, H2, etc.),</li>
+                                            <li>Metadescripciones (fragmentos cortos de texto que brindan una descripción concisa y resumida del
+                                                contenido) y</li>
+                                            <li>URL (que es la dirección completa del sitio web)</li>
+                                            <li>Descripción de imágenes ALT</li>
+                                        </ol>
+                                        En cada uno de estos elementos deben considerarse en las palabras clave, conversa esto con la persona que te ayuda a
+                                        elaborar tu sitio en internet y hazle saber la importancia de que incluya el listado de palabras clave que tú
+                                        identificaste, en cada uno de estos elementos.<br/>
+                                        Y bueno está de más decirlo, pero es importante que generes contenido de alta calidad, relevante y muy atractivo
+                                        alrededor de tus palabras clave objetivo.
+                                    </li>
+                                    <li>Optimización Técnica. Un aspecto que privilegian los algoritmos de los buscadores es si tu sitio web se puede
+                                        ver tanto en teléfonos celulares, en tabletas electrónicas, en computadoras, o en cualquier dispositivo de
+                                        cualquier tamaño, por ello es importante que te asegures que tu sitio web esté bien estructurado y tenga una
+                                        navegación fácil, que las imágenes que tiene sean ligeras y no muy pesadas. A esto se le llama un sitio
+                                        responsive design.</li>
+                                    <li>Promueve que otras páginas web tengan ligas hacia tu sitio. Los algoritmos identifican que, si otros sitios se
+                                        dirigen al tuyo, es porque tu sitio es relevante. Entonces promueve que otros sitios importantes y relevantes
+                                        pongan ligas a tu página. Utiliza tácticas éticas de construcción de enlaces, como colaboraciones, relaciones
+                                        públicas y contenido de invitado.</li>
+                                    <li>Recomendaciones extra: además de lo ya mencionado, hay algunas recomendaciones adicionales que vale la pena
+                                        indicar como:
+                                        <ul>
+                                            <li>Promueve tu contenido a través de las redes sociales y comunidades en línea.</li>
+                                            <li>Participa en foros relevantes y deja comentarios en blogs de tu nicho.</li>
+                                            <li>El SEO es un proceso continuo. Ajusta y mejora tu estrategia basándote en los resultados y los cambios
+                                                en el comportamiento del usuario y los algoritmos de búsqueda.</li>
+                                            <li>Mantén tu sitio web fresco y actualizado con contenido nuevo y relevante.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>Para reforzar este apartado te recomendamos ver el video: <a href="https://www.youtube.com/watch?v=_ewwO0Y1zb4">https://www.youtube.com/watch?v=_ewwO0Y1zb4</a> que se refiere a la técnica de posicionamiento web SEO.</p>
+                            </mat-tab>
+                            <mat-tab label="Comercio electrónico">
+                                <h3 class="mt-3"><i class="num">6</i> Comercio electrónico</h3>
+                                <p>Una de las estrategias de distribución que se pueden enmarcar en la P de plaza, es el comercio electrónico. Por la relevancia del tema, abordaremos en específico una estrategia concreta.</p>
+                                <p>El comercio electrónico es la venta de productos o servicios a través de medios electrónicos o digitales. El comercio electrónico es solo una estrategia más dentro de la P de plaza, lo cual significa que puede haber otras opciones de venta o comercialización de servicios, y también es importante analizar si esta alternativa es la más adecuada para el tipo de cliente al que se desea vender.</p>
+                                <p>Debes tener muy presente que la implementación exitosa de una estrategia de comercio electrónico está basada en tres grandes aspectos: una planificación cuidadosa, la selección de tecnologías adecuadas y un enfoque en brindar una experiencia positiva al cliente en todas las etapas del proceso de compra. En otras palabras, hay que tener muy claro el plan, elegir la tecnología adecuada y facilitarle la vida al cliente. Para impulsar una estrategia de comercio electrónico debes considerar los siguientes aspectos:</p>
+                                <div class="texto-infografia">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Planificación y alineación a la estrategia de la empresa</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>Hacer comercio electrónico no solo es poner una tienda en línea y ya. Si así fuera, todos lo harían y
+                                                        a todas las empresas les iría muy bien. Poner una tienda en internet o vender productos o servicios
+                                                        a través de alguna plataforma, requiere de un análisis a profundidad que permita saber que la
+                                                        estrategia de vender online es la adecuada a las necesidades de la empresa y las características de
+                                                        los clientes. Si la empresa no está lista o los clientes no están interesados en compras por
+                                                        Internet, lo más probable es que te vaya muy mal y solo gastes dinero sin éxito alguno.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Plataforma Tecnológica</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>El siguiente paso es elegir una plataforma de comercio electrónico adecuada para las necesidades de
+                                                        la empresa y las características de tu estrategia. Hay empresas que implementan su propia tienda en
+                                                        su página de internet, hay quienes prefieren usar plataformas ya existentes como Amazon o Mercado
+                                                        libre, o en el caso de la comida Uber eats, Yappi, Pedidos Ya o alguna otra. En cualquier caso,
+                                                        debes elegir la plataforma que mejor tenga sentido para tus clientes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Experiencia del Usuario</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>No hay nada peor para el comercio electrónico que hacer que los clientes tengan una mala experiencia
+                                                        en la compra. Hay quienes desean sentirse atendidos, que les sea fácil comprar, que no tengan
+                                                        riesgos, y si desean cancelar o pedir ayuda que la respuesta sea rápida y sin complicaciones. Al
+                                                        momento de diseñar una estrategia de comercio electrónico debes pensar siempre y ante todo en la
+                                                        experiencia de tus clientes. Debes diseñar mecanismos de contacto, y tener asegurada la capacidad de
+                                                        responderles en menos de una hora, independientemente de si el cliente te busca en domingo, día
+                                                        festivo o en la madrugada.</p>
+                                                    <p>En cuanto a la experiencia del usuario, debes considerar la manera en la que darás respuesta en tu
+                                                        tienda a las quejas, reclamos y solicitudes de devolución, de tal manera que sea muy sencillo, para
+                                                        que el cliente sienta confianza de volver a comprar en el futuro.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Seguridad y Privacidad</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>En un sitio web de compras deberás tener muy bien diseñada la política de seguridad para proteger la
+                                                        información de los clientes, como datos de tarjetas de crédito y datos personales. Esto además de
+                                                        generar confianza en los compradores es muy importante pues tu empresa es responsable del mal uso
+                                                        que se pueda dar a la información de tus clientes. Debes preguntar a los proveedores de tu sitio web
+                                                        o a los propietarios de la plataforma que utilices para el comercio electrónico, cuáles son los
+                                                        sistemas de seguridad que usan para manejar la información de tus clientes. Tanto la información
+                                                        bancaria como la de datos personales.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Logística y Envíos</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>Como ya se ha mencionado previamente, cuando se habla de comercio electrónico, una de las claves es
+                                                        el establecer un sistema muy eficiente para gestionar entregas. Para ello hay muchas herramientas en
+                                                        el mercado que se les llama “software para entregas de última milla”. Algunos de los proveedores más
+                                                        conocidos en el mercado son:</p>
+                                                    <p><a href="https://onfleet.com/">https://onfleet.com/</a></p>
+                                                    <p><a href="https://www.loginextsolutions.com/">https://www.loginextsolutions.com/</a></p>
+                                                    <p><a href="https://gsmtasks.com/">https://gsmtasks.com/</a></p>
+                                                    <p><a href="https://www.bringg.com/">https://www.bringg.com/</a></p>
+                                                    <p><a href="https://onro.io/">https://onro.io/</a></p>
+                                                    <p><a href="https://www.smartconsign.io/">https://www.smartconsign.io/</a></p>
+                                                    <p><a href="https://www.track-pod.com/">https://www.track-pod.com/</a></p>
+                                                    <p><a href="https://www.dispatchscience.com/">https://www.dispatchscience.com/</a></p>
+                                                    <p><a href="https://www.bringoz.com/">https://www.bringoz.com/</a></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Medios de Pago</strong></p>
+                                                </td>
+                                                <td>
+                                                    <p>Finalmente, un aspecto muy importante son los medios de pago que se utilizan en el comercio
+                                                        electrónico. Deberás configurar una variedad de opciones de pago seguras y convenientes para los
+                                                        clientes, como tarjetas de crédito, débito, PayPal, transferencias bancarias, etc. Cada una de estas
+                                                        herramientas tiene ventajas y desventajas, así que deberás analizar cada una y tomar la mejor
+                                                        decisión para tu empresa.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>También debes recordar que en esta plataforma de Economía del dato puedes encontrar información complementaria en la dimensión Comunicación y canales de venta donde hay apartados específicos de marketing digital, comercio electrónico, canales digitales de comunicación y gestión de clientes. Ello te permitirá enriquecer el conocimiento y diseñar estrategias mejor fundamentadas para tu negocio.</p>
+                            </mat-tab>
+                        </mat-tab-group>
                     </div>
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>Kotler, P., &amp; Keller, K. (2012). Dirección de Marketing. (A. Mues Z., &amp; M. Martínez G., Trads.) México: Pearson Educación. Recuperado de <a href="https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf">https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf</a></p>
+                        <p>Maslow, A. (1943). A Theory of Human Motivation. Psychological Review, 370-396.</p>
+                        <p>Maslow, A. (1954). Motivación y personalidad. Madrid: Ediciones Díaz de Santos, S. A. Recuperado de <a href="https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf">https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf</a></p>
+                        <p>Molina, J. A. (2023). ¿Fracaso o éxito? Las empresas se juegan la existencia en sus primeros 3 años de vida. El Economista. Recuperado de <a href="https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html">https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html</a></p>
+                        <p>Nordstrom, K., &amp; Ridderstrale, J. (2000). Funky Business. Madrid: Pearson Prentice Hall.</p>
+                        <p>Porras, J. A., Oliveras, G., &amp; Vigier, H. P. (2013). Probabilidades de éxito para la creación de empresas: Implicancias sobre la educación emprendedora. Faedpyme International Review, 2. doi:10.15558/fir.v2i4.45</p>
+                        <p>Shum, Y. (2020). Pirámide de Maslow ¿Qué es? necesidades de los usuarios. Recuperado de <a href="https://yiminshum.com/piramide-maslow-que-es/">https://yiminshum.com/piramide-maslow-que-es/</a></p>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
-                        
+                        <div class="texto-infografia">
+                            <p><strong>Beneficio 1. Conocer y adaptarse mejor al mercado. </strong>Quienes estén al frente de una pyme sabrán los elementos clave para analizar la competencia y el mercado en el que participan y con ello identificar los principales nichos y oportunidades de negocio en línea.</p>
+                            <p><strong>Beneficio 2. Diseño de estrategias. </strong>Con el estudio de este módulo, la persona emprendedora o empresaria contará con herramientas para diseñar estrategias de marketing digital, definir una propuesta de valor y crear una estrategia de contenido efectiva.</p>
+                            <p><strong>Beneficio 3. Comercio electrónico. </strong>A través de este módulo, quienes se encuentren al frente de una pyme, tendrán claros los aspectos más relevantes para llevar a cabo actividades de Comercio electrónico y venta en línea, alineados a su estrategia de empresa.</p>
+                            <p><strong>Beneficio 4. Mejorar la visibilidad y reconocimiento de marca.</strong> Al instrumentar estrategias SEO, la pyme mejorará la visibilidad de la marca, producto o servicio. Al aparecer en las primeras posiciones de resultados de búsqueda, contribuye a que las personas encuentren y reconozcan el negocio. </p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
-                        
+                        <div class="texto-infografia">
+                            <p>Elaborar estrategias para la economía digital, requiere en todo momento tener claro el mercado en el que se compite, y a partir de ello se debe elaborar un plan bien definido con acciones específicas que vayan acordes con la estrategia diseñada. A continuación, se presentan las fases del proceso en la creación de estrategias de negocio en la era digital:</p>
+                            <p><em>Figura 1. Procesos en el diseño de estrategias.</em></p>
+                            <p>Fuente: Elaboración propia</p>
+                        </div>
                     </div>
                 </section>
 
