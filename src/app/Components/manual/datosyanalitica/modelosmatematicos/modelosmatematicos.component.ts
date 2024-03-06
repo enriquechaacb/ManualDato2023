@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { sectionsAnimation } from '../../../../Services/animations.service';
 import { GlobalService } from '../../../../Services/global.service';
+import { NavSections, Glossary, Experts, Institutions, Books, Websites } from '../../../../Models/sitedata';
 
 @Component({
     selector: 'app-modelosmatematicos',
@@ -15,29 +16,37 @@ export class ModelosmatematicosComponent {
     public Seccion: string;
     public Secciones: Array<any>;
     public Tools: any = tools;
-    public Experts: any = experts;
-    public Institutions: any = institutions;
-    public Words: any = words;
-    public Books: any = books;
-    public Websites: any = websites;
+    public Experts: any;
+    public Institutions: any;
+    public Words: any;
+    public Books: any;
+    public Websites: any;
     public Breadcrumbs: any = breadcrumbs;
 
     constructor(
         public _thisroute: ActivatedRoute,
         public _globalService: GlobalService
     ) {
-        this.Secciones = this._globalService.Secciones;
         this.Seccion = "Introduccion";
+        this.Secciones = NavSections;
+        this.setCatalogs();
     }
     ngOnInit(): void {
         this._thisroute.params.subscribe((params: Params) => {
-            console.log(params)
             this.Seccion = params['section'];
         });
     }
-    downloadEbook(url: string){
-        const d = '../../../assets/downloads/'+url+'.pdf';
-        window.open(d,'_blank');
+    setCatalogs(){
+        const palabras = [68,69,70];
+        const expertos = [4,7];
+        const instituciones = [8,5,2,11];
+        const literatura = [28,29,30,31,32];
+        const websites = [20,21];
+        this.Words = Glossary.filter((x: any) => palabras.includes(x.IdPalabra));
+        this.Experts = Experts.filter((x: any) => expertos.includes(x.IdExperto));
+        this.Institutions = Institutions.filter((x: any) => instituciones.includes(x.IdInstitucion));
+        this.Books = Books.filter((x: any) => literatura.includes(x.IdLiteratura));
+        this.Websites = Websites.filter((x: any) => websites.includes(x.IdSitio));
     }
 }
 
@@ -56,34 +65,4 @@ const tools = [
     {Tema:"Modelos de optimización",Recurso:"Video que describe la aplicación de modelos de optimización con ejemplos.",Url:"https://www.youtube.com/watch?v=lxln4J-GIGY",Observaciones:"Da una introducción general al tema y resuelve algunos ejemplos de aplicación."},
     {Tema:"Modelos de Redes y Grafos",Recurso:"Artículo introductorio a la teoría de grafos.",Url:"https://redined.educacion.gob.es/xmlui/bitstream/handle/11162/13526/011-026.pdf?sequence=1",Observaciones:"Describe la aplicación de la teoría de grafos en problemas de redes de comunicación y transporte."},
     {Tema:"Modelos de Redes y Grafos",Recurso:"Video introducción a Teoría de grafos como aplicación de problemas tales como redes sociales.",Url:"https://www.youtube.com/watch?v=F5Xjpg0-NhM",Observaciones:"Aborda los conceptos teóricos de la teoría de grafos explicados de manera accesible a todo público."}
-]
-const words = [
-    {Palabra:"Grafos", Significado:"En matemáticas y ciencias de la computación, un grafo es un conjunto de objetos llamados vértices o nodos unidos por enlaces llamados aristas o arcos, que permiten representar relaciones binarias entre elementos de un conjunto.", Fuente:"(Gross & Yellen, 2003)"},
-    {Palabra:"Modelo matemático", Significado:"Un modelo matemático describe teóricamente un objeto que existe fuera del campo de las matemáticas. Las previsiones del tiempo y los pronósticos económicos, por ejemplo, están basados en modelos matemáticos. Su éxito o fracaso depende de la precisión con la que se construya esta representación numérica, la fidelidad con la que se concreticen hechos y situaciones naturales en forma de variables relacionadas entre sí.", Fuente:"(Pérez G.,2008)"},
-    {Palabra:"Predicción matemática", Significado:"El modelado predictivo utiliza métodos matemáticos y de cálculo para predecir un evento o un resultado. Los pronósticos o predicciones son una herramienta que permite a la gerencia tener una mejor base para planificar, al tomar en cuenta datos pasados y presentes para predecir eventos futuros que afectarán a la organización.", Fuente:"(Predicción o pronósticos en la administración de empresas, 2017)"}
-]
-
-const experts = [
-    {Nombre:"ABPMP (Asociación de Profesionales de Procesos de Negocio",Contacto:"",Url:"http://abpmp.org.mx/",Descripcion:"Es una organización que busca promover y desarrollar la disciplina de gestión de procesos de negocio en América Latina."},
-    {Nombre:"Universidad Panamericana",Contacto:"Antonieta Martínez-Velasco",Url:"mailto:amarvel.am@gmail.com",Descripcion:"Profesora investigadora"}
-]
-
-const institutions = [
-    {Nombre:"Consejo Nacional de Política Económica y Social, CONPES",Url:"https://2022.dnp.gov.co/CONPES"},
-    {Nombre:"Ministerio de Tecnologías de la Información y las Comunicaciones de Colombia",Url:"https://www.mintic.gov.co/portal/inicio/"},
-    {Nombre:"Ministerio de Economía de El Salvador",Url:"https://www.economia.gob.sv/"},
-    {Nombre:"ANDE - Agencia Nacional de Desarrollo",Url:"https://www.ande.org.uy"},
-]
-
-const books = [
-    {Autor:"González V., María G., Torres-Ovalle, S., Moreno H, V. y Hernández J., E. (2018).",Titulo:"Modelación matemática para la gestión de pymes. Compendio de Investigación Academia Journals Chetumal, Quintana Roo, México.",Subtitulo:"Recuperado de ",Url:"https://static1.squarespace.com/static/55564587e4b0d1d3fb1eda6b/t/6009dd45775971664c31f52b/1611259227313/Compendio+de+Investigación+Academia+Journals+Chetumal+2018+-+Tomo+17.pdf"},
-    {Autor:"López, R. F., Alonso, J. A. V., Silverio, A. Q., & González, L. D. (2018).",Titulo:"La demanda turística en una cadena hotelera. series temporales para un modelo de predicción.",Subtitulo:"Visión de Futuro, 25(1), 109–134.",Url:"https://visiondefuturo.fce.unam.edu.ar/index.php/visiondefuturo/index"},
-    {Autor:"Marulanda, C., López, M., & Mejía, M. (2017).",Titulo:"Minería de datos en gestión del conocimiento de pymes de Colombia.",Subtitulo:"Revista Virtual Universidad Católica Del Norte, 50, 224-237.",Url:"https://revistavirtual.ucn.edu.co/index.php/RevistaUCN/article/view/821/1339"},
-    {Autor:"Quiroga Parra, D. (2003).",Titulo:"Modelo matemático para determinar la competitividad de las pyme’s.",Subtitulo:"Revista Docencia Universitaria, 4(1). Recuperado de",Url:"https://revistas.uis.edu.co/index.php/revistadocencia/article/view/1364"},
-    {Autor:"Predicción o pronósticos en la administración de empresas. (2017).",Titulo:"Deguate.com",Subtitulo:"",Url:"https://www.deguate.com/gestion-administracion/prediccion-pronosticos-administracion-empresas.shtml"}
-]
-
-const websites = [
-    {Nombre:"Danalytics",Url:"https://www.danalyticspro.co"},
-    {Nombre:"BMN Funciones elementales para construir modelos matemáticos",Url:"http://www.bnm.me.gov.ar/giga1/documentos/EL001843.pdf"}
 ]
