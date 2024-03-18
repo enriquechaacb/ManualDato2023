@@ -1,32 +1,41 @@
-.container {
+.container-fluid {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .img-logo {
         max-width: 100%;
-        margin: -18vw 0 -25vw;;
-        background-color: var(--blanco75);
+        margin: -20vw 0 0;
+        background-color: var(--blanco);
+        -webkit-mask-image: url(../../../assets/images/circulo.svg);
+        mask-image: url(../../../assets/images/circulo.svg);
+        background-size: cover;
         border-radius: 50px;
     }
+
     .dimensiones {
         position: relative;
         z-index: 1;
         width: 100%;
         padding: 2em 0 4em;
         overflow: auto;
+
         .dimension {
             display: block;
             position: relative;
-            &:hover{
-                z-index:99;
+
+            &:hover {
+                z-index: 99;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
                 .icon {
                     position: relative;
                     max-width: 80px;
@@ -35,7 +44,8 @@
                     border-radius: 50%;
                     background-color: var(--blanco75);
                 }
-                span{
+
+                span {
                     position: relative;
                     color: var(--blanco);
                     padding: 5px;
@@ -44,77 +54,60 @@
                     flex: 1 1 auto;
                 }
             }
-                     
-            &.organizacion{
-                span{
+
+            &.organizacion {
+                span {
                     background-color: var(--organizacion);
                 }
             }
-            &.estrategia{
-                span{
+
+            &.estrategia {
+                span {
                     background-color: var(--estrategia);
                 }
             }
-            &.datos{
-                span{
+
+            &.datos {
+                span {
                     background-color: var(--datos);
                 }
             }
-            &.tecnologias{
-                span{
+
+            &.tecnologias {
+                span {
                     background-color: var(--tecnologias);
                 }
             }
-            &.comunicacion{
-                span{
+
+            &.comunicacion {
+                span {
                     background-color: var(--comunicacion);
                 }
             }
-            &.procesos{
-                span{
+
+            &.procesos {
+                span {
                     background-color: var(--procesos);
                 }
             }
         }
     }
-    // &::before{
-    //     content: "";
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width:100%;
-    //     height: 100%;
-    //     filter: opacity(0.5);
-    // }
-    // &.organizacion{
-    //     &::before{background-color: var(--organizacion);}
-    // }
-    // &.estrategia{
-    //     &::before{background-color: var(--estrategia);}
-    // }
-    // &.datos{
-    //     &::before{background-color: var(--datos);}
-    // }
-    // &.tecnologias{
-    //     &::before{background-color: var(--tecnologias);}
-    // }
-    // &.comunicacion{
-    //     &::before{background-color: var(--comunicacion);}
-    // }
-    // &.procesos{
-    //     &::before{background-color: var(--procesos);}
-    // }
+}
+
+#video {
+    position: fixed;
+    margin-top: -100px;
 }
 
 
-
-@media (min-width: 768px){
-    .container {
+@media (min-width: 768px) {
+    .container-fluid {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         .img-logo {
             width: 400px;
             min-height: 400px;
@@ -124,18 +117,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--blanco);
-            -webkit-mask-image: url(../../../assets/images/circulo.svg);
-            mask-image: url(../../../assets/images/circulo.svg);
-            background-size: cover;
             padding: 40px;
             color: var(--datos);
         }
+
         .dimensiones {
             position: absolute;
             height: 100%;
             padding: 0;
             overflow: hidden;
+
             .dimension {
                 display: block;
                 width: 120px;
@@ -145,116 +136,209 @@
                 top: 50%;
                 margin-left: -60px;
                 margin-top: -60px;
-                &:hover{
-                    z-index:99;
+                filter: saturate(0.5);
+
+                &:hover {
+                    z-index: 99;
+                    filter: saturate(1);
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     display: block;
+
                     .icon {
                         max-width: 100%;
-                        margin: 0;
+                        margin: -114px 0 0 20px;
+                        filter: opacity(0);
+                        transition: all 600ms cubic-bezier(.47, 1.64, .41, .8) !important;
                     }
-                    span{
+
+                    span {
                         display: flex;
                         text-align: center;
                         width: 160px;
                         height: 90px;
                         align-items: center;
                         justify-content: center;
-                        margin-left: -20px;
-                        margin-top: -160px;
-                        transform: rotateX(90deg);
-                        transition: all 400ms cubic-bezier(.47,1.64,.41,.8) !important;
+                        // margin-left: -20px;
+                        // margin-top: -100px;
+                        // transform: rotateX(90deg);
+                        // transition: all 400ms cubic-bezier(.47,1.64,.41,.8) !important;
                     }
-                    &:hover{
-                            .icon{
-                                margin-top:-50px;
-                                filter: drop-shadow(0 2px 6px var(--negro50));
-                                transform: scale(1.2) rotate(359deg);
+
+                    &:hover {
+                        .icon {
+                            margin-top: -50px;
+                            filter: opacity(1);
+                            transform: scale(2) rotate(359deg);
+                            z-index: 1;
+                        }
+
+                        span {
+                            //margin-top: 0px;
+                            transform: rotateX(0deg);
+                            z-index: -2;
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+                }
+
+                &.organizacion {
+                    transform: translate(-320px, 0px);
+
+                    &:hover {
+                        transform: translate(-320px, 10px) scale(1.5);
+                    }
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: 192px -45px;
                             }
-                            span{
-                                margin-top: 0px;
-                                transform: rotateX(0deg);
-                                z-index: -2;
-                                position: relative;
+                        }
+                    }
+                }
+
+                &.estrategia {
+                    transform: translate(-150px, -170px);
+
+                    &:hover {
+                        transform: translate(-150px, -180px) scale(1.5);
+                    }
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: 80px 81px;
                             }
-                    }
-                    
-                }             
-                &.organizacion{
-                    transform: translate(-300px, 0px);
-                    &:hover{
-                        transform: translate(-300px, 0px) scale(1.5);
+                        }
                     }
                 }
-                &.estrategia{
-                    transform: translate(-130px, -170px);
-                    &:hover{
-                        transform: translate(-130px, -100px) scale(1.5);
+
+                &.datos {
+                    transform: translate(110px, -170px);
+
+                    &:hover {
+                        transform: translate(110px, -180px) scale(1.5);
+                    }
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: -93px 81px;
+                            }
+                        }
                     }
                 }
-                &.datos{
-                    transform: translate(130px, -170px);
-                    &:hover{
-                        transform: translate(130px, -100px) scale(1.5);
+
+                &.tecnologias {
+                    transform: translate(280px, 0px);
+
+                    &:hover {
+                        transform: translate(260px, 10px) scale(1.5);
+                    }
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: -193px -45px;
+                            }
+                        }
                     }
                 }
-                &.tecnologias{
-                    transform: translate(300px, 0px);
-                    &:hover{
-                        transform: translate(300px, 0px) scale(1.5);
+
+                &.comunicacion {
+                    transform: translate(110px, 190px);
+
+                    &:hover {
+                        transform: translate(110px, 180px) scale(1.5);
+                    }
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: -93px -159px;
+                            }
+                        }
                     }
                 }
-                &.comunicacion{
-                    transform: translate(130px, 170px);
-                    &:hover{
-                        transform: translate(130px, 100px) scale(1.5);
+
+                &.procesos {
+                    transform: translate(-150px, 190px);
+
+                    &:hover {
+                        transform: translate(-150px, 180px) scale(1.5);
                     }
-                }
-                &.procesos{
-                    transform: translate(-130px, 170px);
-                    &:hover{
-                        transform: translate(-130px, 100px) scale(1.5);
+
+                    a {
+                        &:hover {
+                            .icon {
+                                translate: 80px -159px;
+                            }
+                        }
                     }
                 }
             }
         }
-        &::before{
+
+        &::before {
             content: "";
             position: fixed;
             top: 0;
             left: 0;
-            width:100%;
+            width: 100%;
             height: 100%;
             filter: opacity(0.5);
         }
-        &.organizacion{
-            &::before{background-color: var(--organizacion);}
+
+        &.organizacion {
+            &::before {
+                background-color: var(--organizacion);
+            }
         }
-        &.estrategia{
-            &::before{background-color: var(--estrategia);}
+
+        &.estrategia {
+            &::before {
+                background-color: var(--estrategia);
+            }
         }
-        &.datos{
-            &::before{background-color: var(--datos);}
+
+        &.datos {
+            &::before {
+                background-color: var(--datos);
+            }
         }
-        &.tecnologias{
-            &::before{background-color: var(--tecnologias);}
+
+        &.tecnologias {
+            &::before {
+                background-color: var(--tecnologias);
+            }
         }
-        &.comunicacion{
-            &::before{background-color: var(--comunicacion);}
+
+        &.comunicacion {
+            &::before {
+                background-color: var(--comunicacion);
+            }
         }
-        &.procesos{
-            &::before{background-color: var(--procesos);}
+
+        &.procesos {
+            &::before {
+                background-color: var(--procesos);
+            }
         }
     }
-    #video{
+
+    #video {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        &::after{
+        margin-top: 0;
+
+        &::after {
             content: "";
             position: fixed;
             z-index: -1;
@@ -265,6 +349,7 @@
             top: 0;
             left: 0;
         }
+
         .bgr-video {
             position: fixed;
             top: 0;
@@ -276,4 +361,3 @@
         }
     }
 }
-

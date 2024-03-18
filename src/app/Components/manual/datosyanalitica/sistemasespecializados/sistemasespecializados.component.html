@@ -22,7 +22,7 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
             <div class="col col-sm-9 col-xl-10">
@@ -68,10 +68,10 @@
                         <separator></separator>
                         <h3>Sistemas especializados de uso generalizado</h3>
                         <p>Las clasificaciones son sólo una forma de agrupar los sistemas especializados con el fin de describirlos. La elección del sistema especializado adecuado para una organización dependerá de sus necesidades y objetivos. De esta manera, es necesario describir los de uso más generalizado entre las pymes.</p>
-                        <div class="row sistemas">
-                            <div class="col col-md-6 sistema" *ngFor="let item of Sistemas">
+                        <div class="row beneficios">
+                            <div class="col col-md-6 beneficio Sistemas" *ngFor="let item of Sistemas">
                                 <h5>{{item.titulo}}</h5>
-                                <div class="texto">{{item.texto}}</div>
+                                <div class="texto filled">{{item.texto}}</div>
                             </div>
                         </div>
                         <h4>Sistemas de automatización de procesos de uso más común</h4>
@@ -100,7 +100,7 @@
                     <div class="container">
                         <h2><mat-icon>loyalty</mat-icon> <span>Beneficios potenciales de los sistemas especializados</span></h2>
                         <div class="row beneficios">
-                            <div class="col col-md-6 beneficio" *ngFor="let item of Beneficios">
+                            <div class="col col-md-6 beneficio Beneficios" *ngFor="let item of Beneficios">
                                 <h5>{{item.titulo}}</h5>
                                 <div class="texto">{{item.texto}}</div>
                             </div>

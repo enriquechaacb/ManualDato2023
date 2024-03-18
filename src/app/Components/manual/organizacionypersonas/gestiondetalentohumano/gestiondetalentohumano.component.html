@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -63,6 +63,8 @@
                                             <p>Las empresas funcionan gracias a las personas que en ellas colaboran, pero no por el esfuerzo físico que puedan realizar, como por ejemplo, martillar, apretar tornillos y tuercas o limpiar un espacio. En el pasado, las personas eran muy importantes en las empresas porque podían realizar estas tareas físicas. Antes, en una fábrica donde el trabajo se hacía en serie y manualmente, muchas personas realizaban tareas de manera repetida para obtener productos iguales, todos estandarizados. Por ejemplo, en el pasado se construían autos de forma manual y cada persona tenía una labor específica (poner las llantas, asegurarse de colocar los asientos, fijar las puertas) que realizaba de forma organizada y bien estructurada. Actualmente el trabajo manual está siendo reemplazado por máquinas y robots; de hecho, el número de unidades de robots instalados en el mundo para automatizar procesos industriales va en claro ascenso.</p>
                                             <p>Las personas en las organizaciones siguen siendo indispensables, pero ya no para realizar trabajo manual sino de otro tipo; se necesitan personas con habilidades distintas a las que se solían requerir en el pasado. Algunas de las habilidades que hoy se identifican como indispensables son: creatividad, pensamiento crítico, resolución de problemas, cooperación, negociación, toma de decisiones, manejo de sí mismo, resiliencia, comunicación, respeto por la diversidad, empatía y participación (UNICEF, 2020).</p>
                                         </div>
+                                        <img src="../../../../../assets/images/dimensions/personas/3_Instalacion_anual_robots_industriales.webp" class="img-fluid" />
+                                        <separator></separator>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('talento')">
                                         <mat-expansion-panel-header>
@@ -84,15 +86,19 @@
                                         <p>En resumen, la visión de la administración de recursos humanos se basa en asumir que las personas son entes pasivos, es decir, recursos que se pueden administrar como si fueran dinero o máquinas, y eso se debe a que se esperaba que hicieran un trabajo que es fácilmente reemplazable por otro “recurso” igual. En tanto, la visión de gestionar el talento humano asume que las personas aportan talento, ideas, pensamientos, formas de actuar, diferentes, por lo que cada persona es distinta y se tienen que crear las condiciones adecuadas para que aporte su talento al equipo.</p>
                                         <p>Ejercicio de reflexión: observar los dos vídeos cuyos enlaces se consignan abajo (es suficiente ver 3 o 4 minutos de cada uno).</p>
                                         <p>Vídeo 1: <a href="https://youtu.be/c7XBh6uuiD4">https://youtu.be/c7XBh6uuiD4</a></p>
-                                        <p>Vídeo 2: <a href="https://youtu.be/myaCbs2ScLw">https://youtu.be/myaCbs2ScLw</a> </p>
-                                        <p>Reflexiona en torno a las siguientes preguntas:</p>
-                                        <ol>
-                                        <li>Evidentemente entre ambos vídeos hay diferencias muy relevantes ¿cómo se gestionaba el talento humano en las empresas del primer vídeo?</li>
-                                        <li>En el segundo vídeo, aunque no se ven, hay personas que trabajan en las empresas ¿cuál es el trabajo que realizan las personas?</li>
-                                        <li>¿Cuáles serían los objetivos de cada grupo de trabajo de las empresas del vídeo? ¿Serían los mismos objetivos?</li>
-                                        <li>En caso de ser el director de talento humano de la empresa del primer vídeo ¿qué reglas se les pondría a los empleados para que sean eficientes en su trabajo? Escribir 5 reglas al respecto.</li>
-                                        <li>En cuanto a la empresa del segundo vídeo ¿qué reglas se establecerían para el equipo de trabajo a fin de que sea eficiente en su trabajo? Escribir 5 reglas.</li>
-                                        </ol>
+                                        <p>Vídeo 2: <a href="https://youtu.be/myaCbs2ScLw">https://youtu.be/myaCbs2ScLw</a></p>
+                                        <div class="hint">
+                                            <div>
+                                                <h6>Reflexiona en torno a las siguientes preguntas:</h6>
+                                                <ol>
+                                                    <li>Evidentemente entre ambos vídeos hay diferencias muy relevantes ¿cómo se gestionaba el talento humano en las empresas del primer vídeo?</li>
+                                                    <li>En el segundo vídeo, aunque no se ven, hay personas que trabajan en las empresas ¿cuál es el trabajo que realizan las personas?</li>
+                                                    <li>¿Cuáles serían los objetivos de cada grupo de trabajo de las empresas del vídeo? ¿Serían los mismos objetivos?</li>
+                                                    <li>En caso de ser el director de talento humano de la empresa del primer vídeo ¿qué reglas se les pondría a los empleados para que sean eficientes en su trabajo? Escribir 5 reglas al respecto.</li>
+                                                    <li>En cuanto a la empresa del segundo vídeo ¿qué reglas se establecerían para el equipo de trabajo a fin de que sea eficiente en su trabajo? Escribir 5 reglas.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -148,6 +154,8 @@
                                     <p>Tradicionalmente la gestión del talento la realizaba el área de recursos humanos, que se debía encargar de ver que todas las personas en la empresa estuvieran satisfechas y cumplieran con los lineamientos establecidos; sin embargo, las nuevas tendencias en la gestión del talento implican que cada jefe o supervisor debe involucrarse en la gestión de su equipo de trabajo y conocer a detalle los elementos que implican gestionar el talento.</p>
                                     <p>De acuerdo con (Chiavenato, 2009), la gestión del talento humano es un conjunto integrado de procesos dinámicos e interactivos que deben ser gestionados a lo largo y ancho de la empresa, en todos los niveles, esto es, que no dependen solamente del área de talento humano.</p>
                                 </div>
+                                <img src="../../../../../assets/images/dimensions/personas/7_Procesos_administracion_talento_humano.webp" class="img-fluid" />
+                                <separator></separator>
                                 <mat-accordion>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('integrar')">
                                         <mat-expansion-panel-header>
@@ -184,18 +192,16 @@
                                         </mat-expansion-panel-header>
                                         <h4 id="recompensar">Procesos para recompensar personas </h4>
                                         <h5>Son los procesos para incentivar a las personas y para satisfacer sus necesidades individuales más elevadas. Incluyen recompensas, remuneración, prestaciones y servicios sociales.</h5>
-                                        <p>Este proceso constituye los elementos fundamentales para incentivar y motivar a los trabajadores de la organización, siempre que los objetivos organizacionales sean alcanzados y los objetivos individuales sean satisfechos (Chiavenato, 2009). </p>
+                                        <p>Este proceso constituye los elementos fundamentales para incentivar y motivar a los trabajadores de la organización, siempre que los objetivos organizacionales sean alcanzados y los objetivos individuales sean satisfechos (Chiavenato, 2009).</p>
                                         <p>Las personas trabajan por una remuneración, eso es lo justo. Hoy en día, por pequeño que sea el trabajo desempeñado, se debe recibir una remuneración. La remuneración de las personas se integra por tres elementos (Chiavenato, 2009):</p>
-                                        <img src="../../../../../assets/images/dimensions/personas/7_Procesos_administracion_talento_humano.webp" class="img-fluid" />
+                                        <img src="../../../../../assets/images/dimensions/personas/8_Elementos_remuneracion.webp" class="img-fluid" />
                                         <separator></separator>
                                         <p>Sin embargo, hay otro tipo de remuneraciones no necesariamente financieras, es decir, a veces los empleados no solo esperan beneficios económicos sino también contar con oportunidades de desarrollo en el puesto de trabajo; ser reconocidos por los compañeros y por el jefe; sentir seguridad en el empleo, libertad y autonomía en el trabajo; poder contar con algunas oportunidades para atender aspectos personales, y, más recientemente después de la pandemia, poder contar con la posibilidad de realizar parte del trabajo de manera remota (Chiavenato, 2009).</p>
                                         <p>En todo caso la remuneración que reciba cada colaborador debe ser justa y equitativa con relación al puesto que desempeña y su nivel de responsabilidad. Todos en una empresa se enteran, tarde o temprano, lo que el resto del equipo percibe por ingreso; por tanto, se deben manejar salarios adecuados para cada puesto de trabajo en función de lo que cada uno de los colaboradores aporta, de otra manera se generará un desincentivo para el equipo, ya que puede haber personas que perciban que se les paga menos, comparativamente con el resto de los colaboradores.</p>
                                         <p>Una práctica común en distintas empresas es definir niveles de puesto: por ejemplo, nivel de línea operativa, de jefes, de gerentes y de dirección. A cada uno de estos puestos se les asignan rangos salariales, inferiores y superiores, y los salarios de cada persona se asignarán dependiendo el rango salarial del nivel en el que está, sus capacidades personales y desempeño en el trabajo. En el cuadro 1, a manera de ejemplo,  se muestran niveles inferiores y superiores y el criterio a seguir para asignar el salario en cada rango. Una recomendación a los directivos y dueños de pequeñas empresas es que traten de que todos sus colaboradores entren en estos rangos, sin importar relaciones de amistad o familiar. También los dueños o directivos deben incluirse en la misma tabla, a fin de demostrar en su equipo que son uno más del grupo.</p>
-                                        <img src="../../../../../assets/images/dimensions/personas/8_Elementos_remuneracion.webp" class="img-fluid" />
-                                        <separator></separator>
-                                        <p>Al cuadro anterior, se le podría agregar una columna relacionada con los incentivos y las prestaciones, a fin de poder determinar cada uno de ellos en función del nivel de puesto. Finalmente, una práctica que debe evitarse es pagar salarios inferiores a las mujeres; de acuerdo con estudios bien documentados, el salario requerido por las mujeres es 16.4% menor al de los hombres para los mismos puestos de trabajo (Bumeran, 2022), (OIT, 2020) y (CEPAL, 2020); por tanto, es importante que en las pequeñas y medianas empresas se concientice la importancia de remunerar adecuadamente el trabajo de todos y todas las colaboradoras.</p>
                                         <img src="../../../../../assets/images/dimensions/personas/9_Ejemplo_rangos_salariales.webp" class="img-fluid" />
                                         <separator></separator>
+                                        <p>Al cuadro anterior, se le podría agregar una columna relacionada con los incentivos y las prestaciones, a fin de poder determinar cada uno de ellos en función del nivel de puesto. Finalmente, una práctica que debe evitarse es pagar salarios inferiores a las mujeres; de acuerdo con estudios bien documentados, el salario requerido por las mujeres es 16.4% menor al de los hombres para los mismos puestos de trabajo (Bumeran, 2022), (OIT, 2020) y (CEPAL, 2020); por tanto, es importante que en las pequeñas y medianas empresas se concientice la importancia de remunerar adecuadamente el trabajo de todos y todas las colaboradoras.</p>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('desarrollar')">
                                         <mat-expansion-panel-header>

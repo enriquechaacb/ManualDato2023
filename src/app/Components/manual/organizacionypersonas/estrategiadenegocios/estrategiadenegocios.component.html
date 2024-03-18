@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -376,102 +376,74 @@
                                 <p>Una de las estrategias de distribución que se pueden enmarcar en la P de plaza, es el comercio electrónico. Por la relevancia del tema, abordaremos en específico una estrategia concreta.</p>
                                 <p>El comercio electrónico es la venta de productos o servicios a través de medios electrónicos o digitales. El comercio electrónico es solo una estrategia más dentro de la P de plaza, lo cual significa que puede haber otras opciones de venta o comercialización de servicios, y también es importante analizar si esta alternativa es la más adecuada para el tipo de cliente al que se desea vender.</p>
                                 <p>Debes tener muy presente que la implementación exitosa de una estrategia de comercio electrónico está basada en tres grandes aspectos: una planificación cuidadosa, la selección de tecnologías adecuadas y un enfoque en brindar una experiencia positiva al cliente en todas las etapas del proceso de compra. En otras palabras, hay que tener muy claro el plan, elegir la tecnología adecuada y facilitarle la vida al cliente. Para impulsar una estrategia de comercio electrónico debes considerar los siguientes aspectos:</p>
-                                <img src="../../../../../assets/images/dimensions/personas/11_Estrategia_comercio_electronico.webp" class="img-fluid" />
-                                <separator></separator>
-                                <!-- <div class="texto-infografia">
-                                    <table class="table">
+                                <!-- <img src="../../../../../assets/images/dimensions/personas/11_Estrategia_comercio_electronico.webp" class="img-fluid" />
+                                <separator></separator> -->
+                             
+                                    <table class="table align-middle table-striped table-sm">
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Planificación y alineación a la estrategia de la empresa</strong></p>
+                                                    <mat-card class="bgr-warn p-3"><strong class="text-white">Planificación y alineación a la estrategia de la empresa</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>Hacer comercio electrónico no solo es poner una tienda en línea y ya. Si así fuera, todos lo harían y
-                                                        a todas las empresas les iría muy bien. Poner una tienda en internet o vender productos o servicios
-                                                        a través de alguna plataforma, requiere de un análisis a profundidad que permita saber que la
-                                                        estrategia de vender online es la adecuada a las necesidades de la empresa y las características de
-                                                        los clientes. Si la empresa no está lista o los clientes no están interesados en compras por
-                                                        Internet, lo más probable es que te vaya muy mal y solo gastes dinero sin éxito alguno.</p>
+                                                    <p>Hacer comercio electrónico no solo es poner una tienda en línea y ya. Si así fuera, todos lo harían y a todas las empresas les iría muy bien. Poner una tienda en internet o vender productos o servicios a través de alguna plataforma, requiere de un análisis a profundidad que permita saber que la estrategia de vender online es la adecuada a las necesidades de la empresa y las características de los clientes. Si la empresa no está lista o los clientes no están interesados en compras por Internet, lo más probable es que te vaya muy mal y solo gastes dinero sin éxito alguno.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Plataforma Tecnológica</strong></p>
+                                                    <mat-card class="bgr-primary p-3"><strong class="text-white">Plataforma Tecnológica</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>El siguiente paso es elegir una plataforma de comercio electrónico adecuada para las necesidades de
-                                                        la empresa y las características de tu estrategia. Hay empresas que implementan su propia tienda en
-                                                        su página de internet, hay quienes prefieren usar plataformas ya existentes como Amazon o Mercado
-                                                        libre, o en el caso de la comida Uber eats, Yappi, Pedidos Ya o alguna otra. En cualquier caso,
-                                                        debes elegir la plataforma que mejor tenga sentido para tus clientes.</p>
+                                                    <p>El siguiente paso es elegir una plataforma de comercio electrónico adecuada para las necesidades de la empresa y las características de tu estrategia. Hay empresas que implementan su propia tienda en su página de internet, hay quienes prefieren usar plataformas ya existentes como Amazon o Mercado libre, o en el caso de la comida Uber eats, Yappi, Pedidos Ya o alguna otra. En cualquier caso, debes elegir la plataforma que mejor tenga sentido para tus clientes.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Experiencia del Usuario</strong></p>
+                                                    <mat-card class="bgr-accent p-3"><strong>Experiencia del Usuario</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>No hay nada peor para el comercio electrónico que hacer que los clientes tengan una mala experiencia
-                                                        en la compra. Hay quienes desean sentirse atendidos, que les sea fácil comprar, que no tengan
-                                                        riesgos, y si desean cancelar o pedir ayuda que la respuesta sea rápida y sin complicaciones. Al
-                                                        momento de diseñar una estrategia de comercio electrónico debes pensar siempre y ante todo en la
-                                                        experiencia de tus clientes. Debes diseñar mecanismos de contacto, y tener asegurada la capacidad de
-                                                        responderles en menos de una hora, independientemente de si el cliente te busca en domingo, día
-                                                        festivo o en la madrugada.</p>
-                                                    <p>En cuanto a la experiencia del usuario, debes considerar la manera en la que darás respuesta en tu
-                                                        tienda a las quejas, reclamos y solicitudes de devolución, de tal manera que sea muy sencillo, para
-                                                        que el cliente sienta confianza de volver a comprar en el futuro.</p>
+                                                    <p>No hay nada peor para el comercio electrónico que hacer que los clientes tengan una mala experiencia en la compra. Hay quienes desean sentirse atendidos, que les sea fácil comprar, que no tengan riesgos, y si desean cancelar o pedir ayuda que la respuesta sea rápida y sin complicaciones. Al momento de diseñar una estrategia de comercio electrónico debes pensar siempre y ante todo en la experiencia de tus clientes. Debes diseñar mecanismos de contacto, y tener asegurada la capacidad de responderles en menos de una hora, independientemente de si el cliente te busca en domingo, día festivo o en la madrugada. </p>
+                                                    <p>En cuanto a la experiencia del usuario, debes considerar la manera en la que darás respuesta en tu tienda a las quejas, reclamos y solicitudes de devolución, de tal manera que sea muy sencillo, para que el cliente sienta confianza de volver a comprar en el futuro.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Seguridad y Privacidad</strong></p>
+                                                    <mat-card class="bgr-green p-3"><strong class="text-white">Seguridad y Privacidad</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>En un sitio web de compras deberás tener muy bien diseñada la política de seguridad para proteger la
-                                                        información de los clientes, como datos de tarjetas de crédito y datos personales. Esto además de
-                                                        generar confianza en los compradores es muy importante pues tu empresa es responsable del mal uso
-                                                        que se pueda dar a la información de tus clientes. Debes preguntar a los proveedores de tu sitio web
-                                                        o a los propietarios de la plataforma que utilices para el comercio electrónico, cuáles son los
-                                                        sistemas de seguridad que usan para manejar la información de tus clientes. Tanto la información
-                                                        bancaria como la de datos personales.</p>
+                                                    <p>En un sitio web de compras deberás tener muy bien diseñada la política de seguridad para proteger la información de los clientes, como datos de tarjetas de crédito y datos personales. Esto además de generar confianza en los compradores es muy importante pues tu empresa es responsable del mal uso que se pueda dar a la información de tus clientes. Debes preguntar a los proveedores de tu sitio web o a los propietarios de la plataforma que utilices para el comercio electrónico, cuáles son los sistemas de seguridad que usan para manejar la información de tus clientes. Tanto la información bancaria como la de datos personales.</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Logística y Envíos</strong></p>
+                                                    <mat-card class="bgr-warn p-3"><strong class="text-white">Logística y Envíos</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>Como ya se ha mencionado previamente, cuando se habla de comercio electrónico, una de las claves es
-                                                        el establecer un sistema muy eficiente para gestionar entregas. Para ello hay muchas herramientas en
-                                                        el mercado que se les llama “software para entregas de última milla”. Algunos de los proveedores más
-                                                        conocidos en el mercado son:</p>
-                                                    <p><a href="https://onfleet.com/">https://onfleet.com/</a></p>
-                                                    <p><a href="https://www.loginextsolutions.com/">https://www.loginextsolutions.com/</a></p>
-                                                    <p><a href="https://gsmtasks.com/">https://gsmtasks.com/</a></p>
-                                                    <p><a href="https://www.bringg.com/">https://www.bringg.com/</a></p>
-                                                    <p><a href="https://onro.io/">https://onro.io/</a></p>
-                                                    <p><a href="https://www.smartconsign.io/">https://www.smartconsign.io/</a></p>
-                                                    <p><a href="https://www.track-pod.com/">https://www.track-pod.com/</a></p>
-                                                    <p><a href="https://www.dispatchscience.com/">https://www.dispatchscience.com/</a></p>
-                                                    <p><a href="https://www.bringoz.com/">https://www.bringoz.com/</a></p>
+                                                    <p>Como ya se ha mencionado previamente, cuando se habla de comercio electrónico, una de las claves es el establecer un sistema muy eficiente para gestionar entregas. Para ello hay muchas herramientas en el mercado que se les llama “software para entregas de última milla”. Algunos de los proveedores más conocidos en el mercado son:</p>
+                                                    <ul>
+                                                        <li><a href="https://onfleet.com/" target="_blank">https://onfleet.com/</a></li>
+                                                        <li><a href="https://www.loginextsolutions.com/" target="_blank">https://www.loginextsolutions.com/</a></li>
+                                                        <li><a href="https://gsmtasks.com/" target="_blank">https://gsmtasks.com/</a></li>
+                                                        <li><a href="https://www.bringg.com/" target="_blank">https://www.bringg.com/</a></li>
+                                                        <li><a href="https://onro.io/" target="_blank">https://onro.io/</a></li>
+                                                        <li><a href="https://www.smartconsign.io/" target="_blank">https://www.smartconsign.io/</a></li>
+                                                        <li><a href="https://www.track-pod.com/" target="_blank">https://www.track-pod.com/</a></li>
+                                                        <li><a href="https://www.dispatchscience.com/" target="_blank">https://www.dispatchscience.com/</a></li>
+                                                        <li><a href="https://www.bringoz.com/" target="_blank">https://www.bringoz.com/</a></li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p><strong>Medios de Pago</strong></p>
+                                                    <mat-card class="bgr-accent p-3"><strong>Medios de Pago</strong></mat-card>
                                                 </td>
                                                 <td>
-                                                    <p>Finalmente, un aspecto muy importante son los medios de pago que se utilizan en el comercio
-                                                        electrónico. Deberás configurar una variedad de opciones de pago seguras y convenientes para los
-                                                        clientes, como tarjetas de crédito, débito, PayPal, transferencias bancarias, etc. Cada una de estas
-                                                        herramientas tiene ventajas y desventajas, así que deberás analizar cada una y tomar la mejor
-                                                        decisión para tu empresa.</p>
+                                                    <p>Finalmente, un aspecto muy importante son los medios de pago que se utilizan en el comercio electrónico. Deberás configurar una variedad de opciones de pago seguras y convenientes para los clientes, como tarjetas de crédito, débito, PayPal, transferencias bancarias, etc. Cada una de estas herramientas tiene ventajas y desventajas, así que deberás analizar cada una y tomar la mejor decisión para tu empresa.</p>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div> -->
+                           
                                 <p>También debes recordar que en esta plataforma de Economía del dato puedes encontrar información complementaria en la dimensión Comunicación y canales de venta donde hay apartados específicos de marketing digital, comercio electrónico, canales digitales de comunicación y gestión de clientes. Ello te permitirá enriquecer el conocimiento y diseñar estrategias mejor fundamentadas para tu negocio.</p>
                             </mat-tab>
                         </mat-tab-group>

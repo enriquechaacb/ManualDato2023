@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -65,6 +65,8 @@
                             <mat-tab label="Tipos de indicadores">
                                 <h3 class="mt-3"><i class="num">3</i> Tipos de indicadores</h3>
                                 <img src="../../../../../assets/images/dimensions/personas/5_Tipos_indicadores.webp" class="img-fluid" />
+                                <separator></separator>
+                                <img src="../../../../../assets/images/dimensions/personas/5.2_Tipos_indicadores.webp" class="img-fluid" />
                                 <separator></separator>
                                 
                             </mat-tab>

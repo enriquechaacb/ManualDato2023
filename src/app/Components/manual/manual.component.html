@@ -5,13 +5,13 @@
         <source src="../../../assets/video/video_home.mp4" type="video/mp4" />
     </video> -->
 </section>
-<div class="container {{bgrColor}}" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
+<div class="container-fluid {{bgrColor}}" [ngStyle]="{'min-height': _globalService.ScreenHeight()}">
     <img src="../../../assets/images/Logo_Manual.webp" class="img-logo" alt="Inteligencia de Datos para pymes">
     <div class="dimensiones">
         <div *ngFor="let item of dimensiones" class="dimension {{item.Clase}}" (mouseenter)="setColorBgr(true,item.Clase)" (mouseleave)="setColorBgr(false,item.Clase)">
             <a routerLink="{{item.Url}}">
-                <img src="../../../assets/images/icons/{{item.Icono}}.webp" class="icon" alt="{{item.Nombre}}" />
                 <span>{{item.Nombre}}</span>
+                <img src="../../../assets/images/icons/{{item.Icono}}.webp" class="icon" alt="{{item.Nombre}}" />
             </a>
         </div>
     </div>

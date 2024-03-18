@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -48,7 +48,7 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los arquetipos de clientes?</span></h2>
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="definición">
+                            <mat-tab label="Definición">
                                 <h3 class="mt-3"><i class="num">1</i> Definición</h3>
                                 <p>Los arquetipos de clientes son descripciones generales de personas que representan segmentos típicos de clientes (actuales o potenciales) dentro de un mercado. Pueden incluir características psicográficas y demográficas generales y se basa en patrones de comportamiento comunes y así como de <em>insights</em> sobre motivaciones profundas y puntos de dolor de los clientes. Los arquetipos son útiles para entender las necesidades y comportamientos de grupos más grandes de clientes.</p>
                                 <p>A diferencia de los segmentos de mercado tradicionales que pueden basarse principalmente en datos demográficos y observaciones superficiales, los arquetipos de clientes buscan capturar la esencia de diferentes tipos de usuarios o consumidores en términos de personalidad, valores, actitudes y de cómo estos aspectos influyen en su interacción con los productos y servicios.</p>
@@ -115,6 +115,9 @@
                                 </div>
                                 <img src="../../../../../assets/images/dimensions/canales/6_Factores_segmentacion_mercados.webp" class="img-fluid" />
                                 <separator></separator>
+                                <p>La elaboración de los perfiles demográficos, geográficos, comportamiento y psicográficos permiten la elaboración del segmento de mercado de una empresa. Es importante decir que hay empresas que tienen más de un mercado, sin embargo, al inicio del proyecto se recomienda enfocarse sólo en uno.</p>
+                                <img src="../../../../../assets/images/dimensions/canales/7_Ejemplo_segmentacion.webp" class="img-fluid" />
+                                <separator></separator>
                             </mat-tab>
                             <mat-tab label="Determinación de arquetipos de clientes">
                                 <h3 class="mt-3"><i class="num">4</i> Determinación de arquetipos de clientes</h3>
@@ -132,7 +135,7 @@
                                 <p>También es buena idea analizar redes sociales como X, antes Twitter o Meta, antes Facebook o Instagram para buscar información. Los usuarios, a menudo, comparten sus gustos, sus quejas o sus intereses en sus perfiles. Otra alternativa es solicitar a expertos y personas influyentes que recomienden a alguien a quien entrevistar. Esto es especialmente útil si queremos introducirnos en nuevos mercados de los que no tenemos bases de datos.</p>
                                 <h5>Etapa 3. Realizar la investigación recopilando información y respuestas</h5>
                                 <p>Cuando hemos definido los métodos de investigación es momento de recopilar la información para la elaboración del arquetipo. Para que sea sencillo hacer el análisis posterior, se sugiere que la información se concentre en un solo lugar para detectar patrones dentro de las respuestas. </p>
-                                <p><em>Etapa 4. Utilizar una hoja de desarrollo de arquetipo para cada perfil encontrado</em></p>
+                                <h5>Etapa 4. Utilizar una hoja de desarrollo de arquetipo para cada perfil encontrado</h5>
                                 <p>La finalidad de estas hojas es establecer la base del perfil. Si la información no se encuentra en un mismo lugar será difícil utilizarla para realizar el arquetipo del cliente. Las secciones más comunes que tiene una hoja de desarrollo son: </p>
                                 <ul>
                                     <li>Información demográfica</li>
@@ -150,6 +153,10 @@
                                 <h5>Ejemplos</h5>
                                 <p>Para ilustrar mejor los conceptos citados conceptos, a continuación, se presenta un ejemplo en el contexto de una empresa que vende bicicletas eléctricas, ofreciendo un ejemplo de arquetipo de cliente, público objetivo y buyer persona.</p>
                                 <img src="../../../../../assets/images/dimensions/canales/8_Ejemplo_Arquetipo_cliente.webp" class="img-fluid" />
+                                <separator></separator>
+                                <img src="../../../../../assets/images/dimensions/canales/9_Ejemplo_Publico_objetivo.webp" class="img-fluid" />
+                                <separator></separator>
+                                <img src="../../../../../assets/images/dimensions/canales/10_Ejemplo_Buyer_persona.webp" class="img-fluid" />
                                 <separator></separator>
                                 <p>Estos ejemplos muestran cómo el arquetipo de cliente ofrece una vista general de un tipo de cliente basado en motivaciones y valores, el público objetivo define un grupo demográfico más amplio con necesidades comunes, y el “buyer persona” detalla un perfil específico que representa a un cliente ideal, detalla sus necesidades personales, desafíos y motivaciones para comprar.</p>
                             </mat-tab>

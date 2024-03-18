@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -543,20 +543,23 @@
                             <mat-tab label="Diseño de Soluciones Digitales">
                                 <article>
                                     <h3 class="mt-3"><i class="num">5</i> Diseño de Soluciones Digitales</h3>
-                                    <h4>5.1 Desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio</h4>
-                                    <p>El desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio es un proceso que implica identificar los desafíos y oportunidades específicas de una empresa y, diseñar soluciones tecnológicas personalizadas para abordarlos. Para ello, a continuación, encontrarás los pasos a seguir para abordar este proceso:</p>
-                                    <ol>
-                                    <li><strong>Entender las necesidades del negocio:</strong> Comience por reunirse con los líderes y <em>stakeholders</em> (partes interesadas del negocio) de su empresa para comprender a fondo sus necesidades y desafíos. Escuche sus objetivos comerciales, las áreas que necesitan mejoras y cualquier obstáculo que estén enfrentando.</li>
-                                    <li><strong>Realizar un análisis de brechas:</strong> Compare las necesidades y desafíos identificados con los recursos y capacidades actuales de su empresa. Identifique las brechas entre lo que se necesita y lo que se tiene.</li>
-                                    <li><strong>Investigar soluciones existentes:</strong> Antes de desarrollar nuevas soluciones, investigue si existen herramientas o plataformas ya disponibles en el mercado que puedan abordar las necesidades del negocio. Esto puede incluir software empresarial, aplicaciones móviles, sistemas de análisis de datos, entre otros.</li>
-                                    <li><strong>Desarrollar un plan de solución digital:</strong> Basado en el análisis realizado, diseñe un plan para desarrollar soluciones digitales personalizadas. Esto puede implicar el desarrollo de nuevas aplicaciones, la integración de sistemas existentes, la implementación de tecnologías emergentes como la inteligencia artificial o el Internet de las cosas (IoT), entre otros.</li>
-                                    <li><strong>Considerar la escalabilidad y la flexibilidad:</strong> Asegúrese de que las soluciones digitales propuestas sean escalables y flexibles para adaptarse al crecimiento y los cambios futuros en la organización.</li>
-                                    <li><strong>Evaluar el presupuesto y los recursos:</strong> Determine el presupuesto y los recursos necesarios para desarrollar e implementar las soluciones digitales propuestas. Esto incluye costos de desarrollo, hardware, software y capacitación del personal.</li>
-                                    <li><strong>Desarrollar un cronograma:</strong> Establezca un cronograma realista para el desarrollo e implementación de las soluciones digitales. Tenga en cuenta los plazos y las prioridades comerciales.</li>
-                                    <li><strong>Prototipado y pruebas:</strong> Antes de implementar completamente las soluciones digitales, realice prototipos y pruebas para asegurarse de que funcionen de acuerdo con las expectativas y necesidades del negocio.</li>
-                                    <li><strong>Implementación y capacitación:</strong> Lleve a cabo la implementación de las soluciones digitales y brinde capacitación a los empleados para asegurarse de que puedan utilizar eficazmente las nuevas herramientas.</li>
-                                    <li><strong>Monitoreo y mejora continua:</strong> Después de la implementación, monitoree el rendimiento de las soluciones digitales y realice mejoras según sea necesario. La mejora continua es esencial para mantenerse alineado con las necesidades cambiantes del negocio.</li>
-                                    </ol>
+                                    <div class="d-md-none">
+                                        <h4>5.1 Desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio</h4>
+                                        <p>El desarrollo de propuestas de soluciones digitales a medida de las necesidades del negocio es un proceso que implica identificar los desafíos y oportunidades específicas de una empresa y, diseñar soluciones tecnológicas personalizadas para abordarlos. Para ello, a continuación, encontrarás los pasos a seguir para abordar este proceso:</p>
+                                        <ol>
+                                        <li><strong>Entender las necesidades del negocio:</strong> Comience por reunirse con los líderes y <em>stakeholders</em> (partes interesadas del negocio) de su empresa para comprender a fondo sus necesidades y desafíos. Escuche sus objetivos comerciales, las áreas que necesitan mejoras y cualquier obstáculo que estén enfrentando.</li>
+                                        <li><strong>Realizar un análisis de brechas:</strong> Compare las necesidades y desafíos identificados con los recursos y capacidades actuales de su empresa. Identifique las brechas entre lo que se necesita y lo que se tiene.</li>
+                                        <li><strong>Investigar soluciones existentes:</strong> Antes de desarrollar nuevas soluciones, investigue si existen herramientas o plataformas ya disponibles en el mercado que puedan abordar las necesidades del negocio. Esto puede incluir software empresarial, aplicaciones móviles, sistemas de análisis de datos, entre otros.</li>
+                                        <li><strong>Desarrollar un plan de solución digital:</strong> Basado en el análisis realizado, diseñe un plan para desarrollar soluciones digitales personalizadas. Esto puede implicar el desarrollo de nuevas aplicaciones, la integración de sistemas existentes, la implementación de tecnologías emergentes como la inteligencia artificial o el Internet de las cosas (IoT), entre otros.</li>
+                                        <li><strong>Considerar la escalabilidad y la flexibilidad:</strong> Asegúrese de que las soluciones digitales propuestas sean escalables y flexibles para adaptarse al crecimiento y los cambios futuros en la organización.</li>
+                                        <li><strong>Evaluar el presupuesto y los recursos:</strong> Determine el presupuesto y los recursos necesarios para desarrollar e implementar las soluciones digitales propuestas. Esto incluye costos de desarrollo, hardware, software y capacitación del personal.</li>
+                                        <li><strong>Desarrollar un cronograma:</strong> Establezca un cronograma realista para el desarrollo e implementación de las soluciones digitales. Tenga en cuenta los plazos y las prioridades comerciales.</li>
+                                        <li><strong>Prototipado y pruebas:</strong> Antes de implementar completamente las soluciones digitales, realice prototipos y pruebas para asegurarse de que funcionen de acuerdo con las expectativas y necesidades del negocio.</li>
+                                        <li><strong>Implementación y capacitación:</strong> Lleve a cabo la implementación de las soluciones digitales y brinde capacitación a los empleados para asegurarse de que puedan utilizar eficazmente las nuevas herramientas.</li>
+                                        <li><strong>Monitoreo y mejora continua:</strong> Después de la implementación, monitoree el rendimiento de las soluciones digitales y realice mejoras según sea necesario. La mejora continua es esencial para mantenerse alineado con las necesidades cambiantes del negocio.</li>
+                                        </ol>
+                                    </div>
+                                    <img src="../../../../../assets/images/dimensions/procesos/7_Diseno_Soluciones_Digitales.webp" class="img-fluid d-none d-md-block" />
                                     <div class="hint">
                                         <div>
                                             <h5>Preguntas abiertas para reflexionar:</h5>

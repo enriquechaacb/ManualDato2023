@@ -24,10 +24,10 @@
 <div class="contenedor">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
                 <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
             </div>
-            <div class="col">
+            <div class="col col-md-9 col-xl-10">
                 <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
@@ -181,7 +181,7 @@
                                                 <li><strong>Experiencia del cliente:</strong> Una logística eficiente contribuye a una experiencia de cliente positiva. La entrega puntual, el seguimiento del pedido y la resolución de problemas de manera rápida y efectiva son aspectos cruciales para generar confianza y fidelidad en el cliente.</li>
                                             </ul>
                                         </div>
-                                        <p><strong>Ejemplo de caso de éxito:</strong></p>
+                                        <h5>Ejemplo de caso de éxito:</h5>
                                         <p>Un caso de éxito en la aplicación de la logística en el comercio electrónico es el de la empresa estadounidense <a href="https://www.amazon.com">Amazon</a>. La compañía ha invertido en tecnologías y sistemas logísticos avanzados que le permiten entregar productos en tiempos récord. Su estrategia de almacenamiento y distribución en centros logísticos permite que los productos estén más cerca de los clientes, agilizando las entregas y mejorando la satisfacción del cliente.</p>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('desafios')">
@@ -303,11 +303,93 @@
                                         <h5>Ejemplo de caso de éxito:</h5>
                                         <p>Un caso exitoso de la aplicación de un sistema de gestión de almacenes es el de la empresa de comercio electrónico eBay. Al implementar un WMS en sus almacenes, eBay pudo mejorar la precisión del inventario, acelerar la preparación de pedidos y optimizar sus operaciones de logística, lo que resultó en entregas más rápidas y una mejor experiencia para sus clientes.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('ata')">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.2 Automatización y tecnologías aplicadas en la gestión de almacenes</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="">5.2 Automatización y tecnologías aplicadas en la gestión de almacenes</h4>
+                                        <h4 id="ata">5.2 Automatización y tecnologías aplicadas en la gestión de almacenes</h4>
+                                        <div class="row traslucido">
+                                            <div class="col-12 col-md-3 d-flex flex-column justify-content-center">
+                                                <img src="../../../../../assets/images/dimensions/procesos/img-0001.webp" class="img-fluid" />
+                                            </div>
+                                            <div class="col">
+                                                <p>La automatización y las tecnologías no solo impulsan <strong>la eficiencia, precisión y velocidad en las operaciones de almacenamiento y distribución de productos</strong>, sino que también ofrecen beneficios significativos para el comercio en línea. A continuación, detallaremos las tecnologías clave que están transformando el panorama.</p>
+                                            </div>
+                                        </div>
+                                        <p>Sugerimos ver el siguiente video <a href="https://www.youtube.com/watch?v=yn0xcXWomR0">https://www.youtube.com/watch?v=yn0xcXWomR0</a></p>
+                                        
+                                        <div class="row beneficios">
+                                            <div class="col col-md-6 beneficio Sistemas">
+                                                <div class="texto">
+                                                    <h5>RFID, identificación por radiofrecuencia</h5>
+                                                    <p>Utiliza las ondas de radio para capturar la información de las etiquetas permitiendo la identificación de objetos. Facilita la identificación de cientos de objetos a la vez, su aplicación en la gestión de almacenes ha evolucionado y <strong>empresas como Walmart y Zara han implementado estos sistemas para optimizar la gestión de inventarios y mejorar la visibilidad de sus productos.</strong></p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-6 beneficio Sistemas">
+                                                <div class="texto">
+                                                    <h5>ERP, Planificación de Recursos Empresariales</h5>
+                                                    <p>Alude a un software de gestión empresarial que integra un conjunto de aplicaciones útiles a las pymes. El concepto de ERP se originó en la década de 1960. En la actualidad, <strong>empresas como SAP, Oracle y Microsoft ofrecen soluciones de ERP</strong>. La colaboración entre sistemas ERP y SGA es esencial para la logística eficiente. Ejemplos notables de implementación incluyen a Amazon y Procter &amp; Gamble.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>En el siguiente video se puede apreciar cómo funciona la tecnología RFID: <a href="https://www.youtube.com/watch?v=eisKP_CRI1c" target="_blank">https://www.youtube.com/watch?v=eisKP_CRI1c</a></p>
+                                        <p>Para profundizar en la herramienta ERP, sugerimos ver el siguiente video: <a href="https://www.youtube.com/watch?v=7_r7rGHmh1c" target="_blank">https://www.youtube.com/watch?v=7_r7rGHmh1c</a></p>
+                                        <separator></separator>
+                                        <div class="row">
+                                            <div class="col-12 col-md-3 d-flex flex-column justify-content-center">
+                                                <img src="../../../../../assets/images/dimensions/procesos/img-0003.webp" class="img-fluid" />
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-accent">Tecnología y picking</h5>
+                                                <p>El picking también denominado pick and pack, es un término relacionado con la gestión logística y tiene que ver con el proceso de preparación de pedidos optimizando los pasos a seguir. Las soluciones de Picking, como Pick to Light, Put to Light y Pick by Voice, han ido evolucionando desde la década de 1980. Empresas como Amazon, DHL y UPS han adoptado estas tecnologías para mejorar la eficiencia en la preparación de pedidos.</p>
+                                            </div>
+                                        </div>
+                                        <p>Sugerimos ver el siguiente video <a href="https://www.youtube.com/watch?v=-PKWyQ2DNbk">https://www.youtube.com/watch?v=-PKWyQ2DNbk</a></p>
+                                        <separator></separator>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="text-warn">Picking visual con realidad aumentada</h5>
+                                                <p>El picking visual se refiere a <strong>utilizar señales visuales o indicadores</strong> que permitan guiar el proceso de recopilación e identificación de productos en un almacén. Los productos deben contar con <strong>etiquetas visuales, códigos de colores o señalizaciones</strong> para facilitar la identificación y recogida de los productos de una manera rápida y eficiente.</p>
+                                                <p>La<strong> realidad aumentada (RA)</strong> es una tecnología que suporpone información digital, como gráficos o datos, sobre la vista del mundo real, esto ayuda a los trabajadores a ubicar los productos de una manera más precisa, <strong>tienen información en tiempo real</strong> respecto a la ubicación de los productos. Para implementar el picking visual se debe diseñar un sistema de etiquetado claro y visible en tanto, que en la realidad aumentada, se debe contar con el apoyo de <strong>dispositivos como Smart glasses o aplicaciones móviles</strong> que suporpongan información digital en tiempo real sobre el entorno físico del almacen. Empresas como DHL y Boeing han explorado y aplicado esta tecnología para optimizar procesos de picking y embalaje.</p>
+                                            </div>
+                                            <div class="col-12 col-md-3 d-flex flex-column justify-content-center">
+                                                <img src="../../../../../assets/images/dimensions/procesos/img-0002.webp" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <p>Sugerimos ver el siguiente video <a href="https://www.youtube.com/watch?v=I8vYrAUb0BQ">https://www.youtube.com/watch?v=I8vYrAUb0BQ</a></p>
+                                        <separator></separator>
+                                        <div class="row">
+                                            <div class="col-12 col-md-3 d-flex flex-column justify-content-center">
+                                                <img src="../../../../../assets/images/dimensions/procesos/img-0003.webp" class="img-fluid" />
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-primary">Sistemas de visión artificial</h5>
+                                                <p>Los sistemas de visión artificial utilizan <strong>tecnología avanzada para procesar información visual</strong> y permiten la toma de decisiones automatizadas en entornos logísticos. Estos sistemas pueden incluir <strong>cámaras, sensores y software especializado</strong> para realizar diversas tareas, como el control de inventario, el seguimiento de productos, la clasificación y la supervisión de la calidad. Inspección de productos: Identificar defectos o anomalías en los productos mediante el análisis visual, asegurando la calidad del inventario.</p>
+                                                <p>Empresas como Amazon y Alibaba implementan sistemas de visión artificial para mejorar la precisión en el control de calidad y en los procesos de picking.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row beneficios">
+                                            <div class="col col-md-4 beneficio">
+                                                <div class="texto">
+                                                    <h5>Seguimiento y localización</h5>
+                                                    <p>Utilizar cámaras para rastrear la ubicación de productos en tiempo real, mejorando la eficiencia en la gestión de inventario.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-4 beneficio">
+                                                <div class="texto">
+                                                    <h5>Picking automatizado</h5>
+                                                    <p>Guiar robots o sistemas automatizados en el proceso de recogida de productos utilizando información visual para identificar y seleccionar artículos.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-4 beneficio">
+                                                <div class="texto">
+                                                    <h5>Optimización de rutas</h5>
+                                                    <p>Analizar visualmente el diseño del almacén para mejorar la eficiencia en la distribución y el movimiento de productos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Sugerimos ver el siguiente video <a href="https://www.youtube.com/watch?v=r6BvTweiyDI">https://www.youtube.com/watch?v=r6BvTweiyDI</a></p>
+                                        <separator></separator>
                                         <img src="../../../../../assets/images/dimensions/procesos/15.4_Automatizacion_robotica_almacen.webp" class="img-fluid" />
                                         <separator></separator>
                                         <h5>Ejemplo de caso de éxito:</h5>
@@ -368,10 +450,13 @@
                                         <p>Fuente: Lifeder. Recuperado 2023 de <a href="https://www.lifeder.com/punto-reorden/">https://www.lifeder.com/punto-reorden/</a></p>
                                         <p>El punto de reorden, conocido como ROP, por sus siglas en inglés, es un concepto importante para la optimización de los inventarios, es relativamente fácil de calcular, especialmente bajo condiciones de certidumbre; un punto de reorden es igual a la demanda diaria (DD) media en unidades por la duración del ciclo de reposición (RC), (Murphy, Jr., et al., 2015).</p>
                                         <p class="text-center h3">ROP = DD x RC</p>
-                                        <p>Por ejemplo, si la demanda diaria media es de 40 unidades y el ciclo de reposición es de 4 días, el punto de reorden es 40 × 4, o 160 unidades; en otras palabras, cuando el nivel del inventario llega a 160 unidades, se realiza un nuevo pedido. Bajo condiciones de incertidumbre, el punto de reorden puede calcularse de manera similar; la única modificación consiste en que se incluye un factor para el inventario de seguridad (SS):</p>
+                                        <p>Por ejemplo, si la demanda diaria media es de 40 unidades y el ciclo de reposición es de 4 días, el punto de reorden es 40 x 4, o 160 unidades; en otras palabras, cuando el nivel del inventario llega a 160 unidades, se realiza un nuevo pedido. Bajo condiciones de incertidumbre, el punto de reorden puede calcularse de manera similar; la única modificación consiste en que se incluye un factor para el inventario de seguridad (SS):</p>
                                         <p class="text-center h3">ROP = (DD x RC) + SS</p>
                                         <h5>Una herramienta práctica ¿Cuánto pedir?</h5>
                                         <p>Un tema que ha sido una inquietud constante en la gestión de inventarios es determinar cuánto inventario se debe pedir en un momento dado. El concepto clave aquí es la Cantidad Económica de Pedido (EOQ, por sus siglas en inglés), que se trata de calcular la cantidad adecuada de pedido considerando dos costos: el costo de mantener el inventario y el costo de hacer el pedido.</p>
+                                        
+                                        <img src="../../../../../assets/images/dimensions/procesos/20_Idea_basica_EOQ.webp" class="img-fluid" />
+                                        <separator></separator>
                                         <img src="../../../../../assets/images/dimensions/procesos/18_Esquema_EOQ.webp" class="img-fluid" />
                                         <separator></separator>
                                         <p>Matemáticamente, la EOQ se puede calcular; una presenta la respuesta en dinero y la otra en unidades. En términos monetarios, podemos suponer que se usan $1000 de un artículo en particular cada año, los costos del pedido son de $25 por pedido enviado y los costos de mantenimiento de inventario son de 20 por ciento (Murphy, Jr., et al., 2015).</p>
@@ -505,18 +590,11 @@
                             <mat-tab label="Herramientas de logística y envío en el comercio electrónico">
                                 <h3 class="mt-3"><i class="num">9</i> Herramientas de logística y envío en el comercio electrónico</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('')">
-                                        <mat-expansion-panel-header>
-                                            <mat-panel-title>9.1 </mat-panel-title>
-                                        </mat-expansion-panel-header>
-                                        <h4 id="">9.1 </h4>
-                                        
-                                    </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('comparativa')">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>9.2 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</mat-panel-title>
+                                            <mat-panel-title>9.1 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="comparativa">9.2 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</h4>
+                                        <h4 id="comparativa">9.1 Descripción y comparativa de las herramientas Sendcloud, Easy Envío, Shipit y Paack</h4>
                                         <p>Las herramientas Sendcloud, Easy Envío, Shipit y Paack son soluciones de logística y envío que se utilizan en el comercio electrónico para gestionar pedidos, inventarios, empaque, envío de productos a los clientes, seguimiento y atención postventa. A continuación, te proporciono una descripción de cada una de ellas y una comparativa para que puedas evaluar cuál se adapta mejor a tus necesidades de negocio:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/24.2_Herramientas_logistica_envio.webp" class="img-fluid" />
                                         <separator></separator>
