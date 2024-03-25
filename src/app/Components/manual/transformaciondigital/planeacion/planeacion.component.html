@@ -45,17 +45,18 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es la planeación y estrategia digital?</span></h2>
                         <h3 class="mt-3"><i class="num">1</i> Planeación y Estrategia digital</h3>
-                        <p>En la era digital, la planeación y la estrategia digital deben estar debidamente articuladas para mejorar la competitividad del negocio, la eficiencia y la productividad, así como optimizar la experiencia del cliente. </p>
-                        <p>Planear es proyectar un futuro deseado y los medios efectivos para conseguirlo” (Russel Ackoff).</p>
-                        <p>De acuerdo con esta premisa, la planeación es un proceso sistemático y fundamental para lograr el éxito del negocio. Tiene como base la definición de objetivos y requiere, precisar las acciones y estrategias para alcanzarlos, así como asignar los recursos para conseguirlos. </p>
+                        <div class="definition">
+                            <p>Planear es proyectar un futuro deseado y los medios efectivos para conseguirlo” (Russel Ackoff).</p>
+                            <p>De acuerdo con esta premisa, la planeación es un proceso sistemático y fundamental para lograr el éxito del negocio. Tiene como base la definición de objetivos y requiere, precisar las acciones y estrategias para alcanzarlos, así como asignar los recursos para conseguirlos. </p>
+                        </div>
+                        <p>En la era digital, la planeación y la estrategia digital deben estar debidamente articuladas para mejorar la competitividad del negocio, la eficiencia y la productividad, así como optimizar la experiencia del cliente.</p>
                         <p>La estrategia digital tiene que ver con un plan de acción específico que se enfoca en el uso de la tecnología y medios digitales para crear valor para la empresa.</p>
                         <p>Por tanto, la planeación y la estrategia digital se convierten en los puntos medulares para lograr el éxito de cualquier negocio.</p>
                         <mat-accordion>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Alineacion')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Alineacion')" id="Alineacion">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.1. Alineación entre la estrategia de negocio y la estrategia digital</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Alineacion">1.1. Alineación entre la estrategia de negocio y la estrategia digital</h4>
                                 <div class="texto-video">
                                     <p>De acuerdo con Héctor Pérez (2021), una estrategia digital es el uso de las tecnologías, a las que tiene acceso una empresa para el comercio, la publicidad, la promoción de productos o servicios, así como la comunicación y gestión de clientes y prospectos, automatización de procesos, y la explotación de datos a través de la implementación y gestión de herramientas digitales.</p>
                                     <p>La estrategia digital utiliza la tecnología y los medios digitales para generar valor dentro de las empresas, se enfocan en maximizar los beneficios comerciales, a través del análisis de los datos que reciben y generan en su operación utilizando la tecnología que tienen disponible.</p>
@@ -83,11 +84,10 @@
                                 <p>Para poder crear <em>insights</em>, es necesario observar el comportamiento de las personas ante ciertas situaciones relacionadas con el negocio; por ejemplo, una empresa de <em>streaming</em> podría llevar el registro de cada cuánto tiempo los usuarios detienen la reproducción de los contenidos, lo que podría traducirse en identificar un patrón de comportamiento para colocar los anuncios previo a que se den los cortes promedio y, de esta forma, garantizar a los anunciantes una mayor audiencia, que permita cierto nivel de precio de los espacios publicitarios.</p>
                                 <p>Conforme es posible explotar mayor cantidad de datos y correlacionarlos, es más sencillo encontrar patrones de conducta de los diferentes actores para facilitar la toma de decisiones en beneficio de la empresa.</p>
                             </mat-expansion-panel>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacionan')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacionan')" id="relacionan">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.2. Cómo se relacionan los objetivos y los datos</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="relacionan">1.2. Cómo se relacionan los objetivos y los datos</h4>
                                 <p>Se entiende como dato a la representación simbólica de los hechos que están ocurriendo en el mundo; estos hechos individuales pueden ser agregados, para su análisis y utilización para la toma de decisiones estratégicas, tanto por las empresas como por los gobiernos. (DAMA International, 2020). En la actualidad, la mayoría de los datos se recolectan y almacenan electrónicamente, por lo que contar con herramientas que permitan su adecuada explotación se está convirtiendo, cada vez más, en una necesidad para las empresas de cualquier tamaño.</p>
                                 <p>En la actualidad, los datos están considerados como un activo de las organizaciones, cuya correcta explotación y transformación permite a las pymes competir contra empresas de mayor tamaño de forma más equitativa. Por ello se considera relevante que las empresas incorporen la cultura del uso de los datos de manera paulatina, hasta convertirse en empresas <em>data-driven</em>, es decir guiadas por los resultados de la explotación de los datos.</p>
                                 <img src="../../../../../assets/images/dimensions/transformacion/5_Estrategia_explotacion_datos.webp" class="img-fluid" />
@@ -102,19 +102,17 @@
                                     <li>Regresar al paso 1 conforme se avanza en la estrategia digital de la pyme.</li>
                                 </ol>
                             </mat-expansion-panel>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('medirnos')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('medirnos')" id="medirnos">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.3. Vamos a medirnos</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="medirnos">1.3. Vamos a medirnos</h4>
                                 <p>Lo que no se mide no puede mejorar o corregir, es por eso que una parte importante para todas las empresas es establecer indicadores e identificar métricas, las métricas son los valores numéricos que se desprenden de la operación del negocio, por ejemplo el costo de los insumos, el costo por <em>click</em> cuando se hace publicidad en medios digitales, saber cuántas personas visitan las redes sociales del negocio, qué contenidos, cuantas de ellas compran, cuánto cuesta traer un nuevo cliente, por mencionar algunos. </p>
                                 <p>Los indicadores más comúnmente usados por las empresas son los conocidos como Indicadores clave de desempeño mejor conocidos como KPI (<em>Key Performance Indicator</em>, por sus siglas en inglés). Los indicadores permiten identificar el avance o desviación respecto de los objetivos de la empresa y el correcto funcionamiento de la organización, de acuerdo con su estrategia, a fin de que se puedan hacer ajustes de forma ágil y oportuna. Algunos ejemplos de indicadores son: retorno sobre la inversión (ROI), tasa de ganancia, tasa de <em>clicks</em> (CTR) que es la cantidad de <em>clicks</em> que un anuncio recibe dividida entre la cantidad de veces que se muestra. Los indicadores dependen de qué se haya trazado como objetivo.</p>
                             </mat-expansion-panel>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('datos')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('datos')" id="datos">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.4. Características de los datos</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="datos">1.4. Características de los datos</h4>
                                 <img src="../../../../../assets/images/dimensions/transformacion/6_Tipos_datos.webp" class="img-fluid" />
                                 <separator></separator>
                                 <p>En el caso de los datos biométricos y personales, estos deben de ser salvaguardados y protegidos conforme las normativas aplicables en cada país, para lo cual las empresas deben generar políticas de acceso y consulta a los datos personales, que impidan vulnerar la intimidad de las personas o el mal uso de la información, ya que, en caso contrario, podrían constituir violaciones consideradas como delito.</p>
@@ -140,19 +138,17 @@
                                     <li>Valor de los datos: El resultado final de la transformación de los datos en información, permite a la empresa tomar decisiones estratégicas.</li>
                                 </ul>
                             </mat-expansion-panel>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Procesar')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Procesar')" id="Procesar">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.5. Procesar y entender los datos</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Procesar">1.5. Procesar y entender los datos</h4>
                                 <img src="../../../../../assets/images/dimensions/transformacion/7_Procesar_entender_datos.webp" class="img-fluid" />
                                 <separator></separator>
                             </mat-expansion-panel>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Modelos')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Modelos')" id="Modelos">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.6. Modelos de procesamiento de datos</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Modelos">1.6. Modelos de procesamiento de datos</h4>
                                 <p>Los modelos de datos son recursos que le permiten a una compañía identificar y documentar los datos que posee, describir la forma en estos se emplean, sus características para poder ordenarlos, analizarlos, explotarlos y transformarlos en información útil.</p>
                                 <p>Los modelos de datos se clasifican como:</p>
                                 <h5>Modelos conceptuales</h5>
@@ -170,14 +166,14 @@
                         <p>Aguilar, L. J. (2019). La inteligencia de negocio y analíticia de datos. (págs. 20-22). Alfaomega Gurpo Editor México.</p>
                         <p>DAMA International. (2020). La guía del conocimiento para la gestión de datos (DAMA-DMBOK2). Technics Publications.</p>
                         <p>Emilio Ontiveros, V. G. (2017). Economía de los datos Riqueza 4.0. Madrid: Ariel.</p>
-                        <p>RAE (2023). Diccionario. Recuperado  de <a href="https://dle.rae.es/algoritmo">https://dle.rae.es/algoritmo</a></p>
-                        <p>IBM. (2023).  ¿Qué es machine learning? Recuperado de <a href="https://www.ibm.com/mx-es/analytics/machine-learning">https://www.ibm.com/mx-es/analytics/machine-learning</a></p>
-                        <p>Joyanes A., L. (2015). Sistemas de información en la empresa. Editorial AlfaOmega (págs. 189-209), 590 p. </p>
+                        <p>RAE (2023). Diccionario. Recuperado de <a href="https://dle.rae.es/algoritmo" target="_blank">https://dle.rae.es/algoritmo</a></p>
+                        <p>IBM. (2023). ¿Qué es machine learning? Recuperado de <a href="https://www.ibm.com/mx-es/analytics/machine-learning" target="_blank">https://www.ibm.com/mx-es/analytics/machine-learning</a></p>
+                        <p>Joyanes A., L. (2015). Sistemas de información en la empresa. Editorial AlfaOmega (págs. 189-209), 590 p.</p>
                         <p>Marqués, F. (2018). Selección, Exploración, Limpieza y Transformación en Minería de Datos a Través de IBM SPSS Statistics. Independently Published.</p>
-                        <p>Perez, H. (2021). ¿Cómo construir una estrategia digital para tu empresa? Recuperado de LinkedIn. Recuperado de <a href="https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es">https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es</a></p>
+                        <p>Perez, H. (2021). ¿Cómo construir una estrategia digital para tu empresa? Recuperado de LinkedIn. Recuperado de <a href="https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es" target="_blank">https://www.linkedin.com/pulse/c%C3%B3mo-construir-una-estrategia-digital-para-tu-empresa-perez/?originalSubdomain=es</a></p>
                         <p>Steenbeek, I. (2018). DATA MANAGEMENT. Data Crossroads.</p>
-                        <p>Westreicher. (2021). <em>Economipedia</em>. Definiciones Recuperado de <a href="https://economipedia.com/definiciones/estrategia.html">https://economipedia.com/definiciones/estrategia.html</a></p>
-                        <p>Colaboradores de Wikipedia. (2023). Definiciones. <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">https://es.wikipedia.org/wiki/Wikipedia:Portada</a></p>
+                        <p>Westreicher. (2021). <em>Economipedia</em>. Definiciones Recuperado de <a href="https://economipedia.com/definiciones/estrategia.html" target="_blank">https://economipedia.com/definiciones/estrategia.html</a></p>
+                        <p>Colaboradores de Wikipedia. (2023). Definiciones. <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">https://es.wikipedia.org/wiki/Wikipedia:Portada</a></p>
                     </div>
                 </section>
 

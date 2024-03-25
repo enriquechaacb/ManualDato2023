@@ -12,7 +12,7 @@ export const NavSections: navSecc[] = [
     { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
     { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
     { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
-    { Nombre: "E-book", Valor: "", Activo: true, EsExterno: true }
+    { Nombre: "E-book", Valor: "", Activo: false, EsExterno: true }
 ];
 
 

@@ -48,13 +48,14 @@
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es el modelo de negocio?</span></h2>
                         <h3 class="mt-3"><i class="num">1</i> Definición </h3>
                         <mat-accordion>
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')" id="definicion">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.1. Definición de modelo de negocio</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="definicion">1.1. Definición de modelo de negocio</h4>
-                                <div class="texto-video">
+                                <div class="definition">
                                     <p>Un modelo de negocio es la forma en que una empresa crea, entrega y captura valor para sus clientes, socios y accionistas. Es la lógica que sigue una empresa para conseguir ingresos y beneficios. Un modelo de negocio bien diseñado puede ser la clave para el éxito de una pyme, ya que le permite diferenciarse de la competencia, satisfacer las necesidades de los consumidores y generar valor para todos los involucrados.</p>
+                                </div>
+                                <div class="texto-video">
                                     <p>En los años recientes, el término modelo de negocios se ha “puesto de moda”, en todos los programas de creación, apoyo y fomento a las empresas se suele hablar de la relevancia del modelo de negocio, sin embargo, este concepto no es nuevo, pues ha existido desde el mismo momento en el que aparecieron las empresas en el mundo, la diferencia es que hoy en día se ha logrado tener claridad de lo que el modelo de negocio representa y con ello se ha podido innovar en él.</p>
                                 </div>
                                 <p>Un ejemplo, la venta de alimentos. Esta actividad ha existido por muchos años, alguien elabora comida, la ofrece y alguien más paga por ella. Este modelo de negocio es muy sencillo, y es el modelo básico y elemental, sin embargo, a partir de él, se han generado innovaciones, no tanto en la comida, sino en cuanto a la manera en la que se acerca la comida a los clientes.</p>
@@ -67,14 +68,13 @@
                                     <p>En última instancia, la innovación en modelos de negocio consiste en crear valor para las empresas, los clientes y la sociedad sustituyendo los modelos obsoletos, para responder a las nuevas necesidades de los usuarios.</p>
                                     <p>La innovación en pequeñas empresas tiene una ventaja ya que la experimentación de productos o servicios nuevos a pequeña escala se consiguen mejor en grupos flexibles, donde los individuos y los equipos de pequeño tamaño gozan de mayor autonomía. En otras palabras, las pequeñas empresas pueden diseñar y experimentar modelos de negocio que sean novedosos y rompan las reglas tradicionales en el mercado, entre algunos de sus clientes, al final con esos resultados se pueden tomar decisiones, si funciona bien se pueden ampliar, si no funciona, se desecha o se ajusta, de acuerdo con la evaluación.</p>
                                 </div>
-                                <p>Sugerimos ver el video <a href="https://www.youtube.com/watch?v=sdnin-z_Rdg">https://www.youtube.com/watch?v=sdnin-z_Rdg</a></p>
+                                <p>Sugerimos ver el video <a href="https://www.youtube.com/watch?v=sdnin-z_Rdg" target="_blank">https://www.youtube.com/watch?v=sdnin-z_Rdg</a></p>
                             </mat-expansion-panel>
 
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Necesidades')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Necesidades')" id="Necesidades">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.2. Necesidades de los consumidores</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Necesidades">1.2. Necesidades de los consumidores</h4>
                                 <p>En el año 1943 el psicólogo estadounidense Abraham Maslow escribió el artículo “A Theory of Human Motivation” (Maslow, 1943) el cual después enriqueció con la publicación del libro (Maslow, Motiación y personalidad, 1954). Maslow describe que los seres humanos nos comportamos de acuerdo con una serie de necesidades que él establece como si fueran una pirámide, señalando que en la base de la pirámide se encuentran las necesidades básicas y elementales como la alimentación, el sueño o las necesidades fisiológicas, que mientras no estén resueltas, el ser humano no puede pensar o preocuparse por otras necesidades más arriba de la pirámide hasta que las primeras no estén resueltas.</p>
                                 <img src="../../../../../assets/images/dimensions/transformacion/3_Piramide_Maslow.webp" class="img-fluid">
                                 <separator></separator>
@@ -95,14 +95,13 @@
                                 <p>Así que, las empresas pueden tener un mismo tipo de producto servicio, como en el caso de Natura, que ofrece productos cosméticos, pero si identifican que tienen consumidores distintos, entonces pueden diseñar estrategias diferentes para cada grupo de consumidores. Además, cada grupo de consumidores puede tener necesidades diferentes que atender de acuerdo con la pirámide de Maslow.</p>
                                 <img src="../../../../../assets/images/dimensions/transformacion/5_Necesidades_cliente_acuerdo_Piramide_Maslow.webp" class="img-fluid">
                                 <separator></separator>
-                                <p>Para concluir esta sección, te invitamos a ver el vídeo:  <a href="https://www.youtube.com/watch?v=BgiRwlyXnxQ">https://www.youtube.com/watch?v=BgiRwlyXnxQ</a></p>
+                                <p>Para concluir esta sección, te invitamos a ver el vídeo:  <a href="https://www.youtube.com/watch?v=BgiRwlyXnxQ" target="_blank">https://www.youtube.com/watch?v=BgiRwlyXnxQ</a></p>
                             </mat-expansion-panel>
 
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('diseno')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('diseno')" id="diseno">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.3. Diseño de una propuesta de valor</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="diseno">1.3. Diseño de una propuesta de valor</h4>
                                 <div class="texto-video">
                                     <p>Una propuesta de valor es una declaración clara de los beneficios que el consumidor final obtiene de utilizar los productos o servicios que la empresa ofrece. La propuesta de valor captura las relaciones entre lo que la empresa le ofrece y las necesidades inmediatas del cliente (Von Hippel, 1986).</p>
                                     <p>La propuesta de valor se refiere a la forma en que un producto o servicio satisface las necesidades y deseos de los clientes de una manera única y diferenciada. Es lo que hace que un producto o servicio sea atractivo y valioso para los consumidores.</p>
@@ -155,14 +154,13 @@
                                 <p>Adicionalmente, la empresa al buscar ofrecer una ganancia extra al cliente podría pensar en fabricar una lavadora que se controle a través de teléfono celular para que el cliente pueda manipularla aun estando fuera de casa, en la oficina, por ejemplo. Esto es un elemento diferenciador a los demás productos existentes en el mercado hoy en día, ya que es una prestación que tal vez el usuario no esperaba, pero que, si la lavadora tiene, puede ser el detonante de compra ya que le puede generar una alegría.</p>
                                 <p>Finalmente, es importante recordar que la propuesta de valor no es algo estático. Puede evolucionar con el tiempo a medida que cambian las necesidades y preferencias de los clientes, así como las condiciones del mercado. Es fundamental realizar un seguimiento continuo de la retroalimentación de los clientes y realizar ajustes en la propuesta de valor según sea necesario.</p>
                                 <p>En resumen, la propuesta de valor es el conjunto único de beneficios y ventajas que ofrece un producto o servicio a los clientes. Diseñar una propuesta de valor efectiva implica comprender las necesidades de los clientes, diferenciarse de la competencia y comunicar claramente el valor ofrecido. Es un proceso continuo que requiere investigación, análisis y adaptación para mantenerse relevante en un mercado en constante cambio.</p>
-                                <p>Te invitamos a ver el video: <a href="https://www.youtube.com/watch?v=ZCJC1hI6qWQ">https://www.youtube.com/watch?v=ZCJC1hI6qWQ</a>  y a partir del mismo reflexiona e integra el Formato para identificar propuesta de valor.</p>
+                                <p>Te invitamos a ver el video: <a href="https://www.youtube.com/watch?v=ZCJC1hI6qWQ" target="_blank">https://www.youtube.com/watch?v=ZCJC1hI6qWQ</a>  y a partir del mismo reflexiona e integra el Formato para identificar propuesta de valor.</p>
                             </mat-expansion-panel>
 
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Elementos')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Elementos')" id="Elementos">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.4. Elementos de un modelo de negocio </mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Elementos">1.4. Elementos de un modelo de negocio </h4>
                                 <div class="texto-video">
                                     <p>El éxito de cualquier empresa, incluyendo las pequeñas, depende de la claridad y eficacia de su modelo de negocio, el cual se ha definido que es una descripción detallada de cómo una empresa crea, entrega y captura valor (Osterwalder &amp; Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010).</p>
                                     <p>Definir un modelo de negocio ayuda a una empresa a contar con una visión estratégica y estructural de cómo operará la empresa y cómo generará ingresos y para responder estos planteamientos existe una herramienta ampliamente conocida como metodología Canvas. </p>
@@ -189,7 +187,7 @@
                                 <p>Finalmente, en la parte inferior del lienzo encontramos del lado izquierdo los costos que en los que se incurre para crear la propuesta de valor, y del lado derecho los ingresos que se espera generar al llevar la propuesta de valor al mercado.</p>
                                 <img src="../../../../../assets/images/dimensions/transformacion/9_Diagrama_propuesta_valor.webp" class="img-fluid">
                                 <separator></separator>
-                                <p>Este esquema pretende, de manera sencilla guiar en la elaboración del modelo de negocio de la empresa, además gráficamente puede verse con claridad la manera en la que la propuesta de valor se articula con todas las acciones que la empresa debe realizar. Ya en fases previas se abordó el diseño de la propuesta de valor, pero ahora debemos utilizar este elemento para articularlo con el modelo de negocio. Para facilitar la comprensión de este punto, se propone ver el video <a href="https://www.youtube.com/watch?v=1TGDFWptFM0">https://www.youtube.com/watch?v=1TGDFWptFM0</a> antes de continuar con esta lectura.</p>
+                                <p>Este esquema pretende, de manera sencilla guiar en la elaboración del modelo de negocio de la empresa, además gráficamente puede verse con claridad la manera en la que la propuesta de valor se articula con todas las acciones que la empresa debe realizar. Ya en fases previas se abordó el diseño de la propuesta de valor, pero ahora debemos utilizar este elemento para articularlo con el modelo de negocio. Para facilitar la comprensión de este punto, se propone ver el video <a href="https://www.youtube.com/watch?v=1TGDFWptFM0" target="_blank">https://www.youtube.com/watch?v=1TGDFWptFM0</a> antes de continuar con esta lectura.</p>
                                 <p>Para tener un entendimiento más ágil y sencillo, veamos un ejemplo del uso del modelo Canvas. Pensemos en el modelo tradicional de una compañía disquera, este tipo de empresas habitualmente se dedicaban a fabricar y vender discos, negociando con los cantantes o intérpretes de música el pago de regalías por su música, así como con los compositores. El negocio siempre fue vender discos, o bien otros formatos como los casetes o posteriormente los discos compactos (CD). Veamos como solía ser el modelo de negocio de las disqueras tradicionales.</p>
                                 <img src="../../../../../assets/images/dimensions/transformacion/10_Ejemplo_modelo_negocio.webp" class="img-fluid">
                                 <separator></separator>
@@ -200,15 +198,14 @@
                                 <p>Este ejemplo nos permite ver la diferencia entre un modelo y otro, pues mientras el primero generaba ingresos por la venta de discos, todas las acciones, alianzas y recursos giraban en torno a crear esa propuesta de valor y llevarla al cliente, en el segundo ejemplo la propuesta de valor cambia, pues ya no se venden discos sino que se vende un sentido de pertenencia de las personas (que es un escalón más en la pirámide de Maslow) lo que lleva a que no solo se venden discos sino que se vende una experiencia amplia de música, conciertos, mercancía, pertenencia a club de fans, etc.</p>
                                 <p>Como se observa, el modelo de negocio es muy importante, ya que al tener clara la propuesta de valor y el tipo de cliente al que se pretende llegar y cuál será la fuente de ingresos monetarios, entonces el resto del lienzo Canvas, puede ser completado con mejor claridad.</p>
                                 <p>Pero y ¿para qué sirve diseñar el modelo de negocio? La respuesta es simple, para tener claridad y saber con toda certeza tanto la estrategia a seguir, así como la prioridad de las acciones que la empresa debe llevar a cabo. En otras palabras, de no tener un modelo de negocios definido en la empresa se pueden estar realizando acciones que no aportan valor al cliente y en consecuencia no generan ingresos o beneficios.</p>
-                                <p>Sugerimos ver el siguiente video: <a href="https://www.youtube.com/watch?v=OnvW8vbM02U">https://www.youtube.com/watch?v=OnvW8vbM02U</a></p>
+                                <p>Sugerimos ver el siguiente video: <a href="https://www.youtube.com/watch?v=OnvW8vbM02U" target="_blank">https://www.youtube.com/watch?v=OnvW8vbM02U</a></p>
 
                             </mat-expansion-panel>
 
-                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Tipos')">
+                            <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Tipos')" id="Tipos">
                                 <mat-expansion-panel-header>
                                     <mat-panel-title>1.5. Tipos de modelos de negocio</mat-panel-title>
                                 </mat-expansion-panel-header>
-                                <h4 id="Tipos">1.5. Tipos de modelos de negocio</h4>
                                 <div class="texto-video">
                                     <p>Hasta este punto se ha abordado qué es un modelo de negocio, qué papel juega en el modelo de negocio una propuesta de valor y se ha presentado la metodología más utilizada para el diseño de un modelo de negocio. Sin embargo, vale la pena analizar los modelos que hoy en día existen y que son más utilizados. </p>
                                     <p>Ahora bien, es importante señalar que, si bien se presentarán distintos modelos de negocio, estos no son permanentes o únicos ya que si algo define a la economía hoy en día es su necesidad de búsqueda y de innovación en modelos de negocio para ir encontrando la mejor manera de conseguir los objetivos y la competitividad en el mercado. Además, no todos los modelos de negocio son exactamente iguales o se pueden encasillar, en la mayoría de los casos que se mostrarán se presentarán modelos de negocio mixtos, es decir, fruto de la conjunción de varios de ellos que en ocasiones hacen difícil encuadrar de manera estricta en uno u otro (Dosdoce.com, 2014).</p>

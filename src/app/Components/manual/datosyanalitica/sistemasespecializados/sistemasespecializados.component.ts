@@ -58,10 +58,10 @@ const breadcrumbs = [
     {Nombre:"Sistemas especializados",Url:"../Introduccion"}
 ]
 const tools = [
-    {Tema:"Technology Evaluation Center",Recurso:"",Url:"https://landing.technologyevaluation.com/sistemas-erp/?TecReferer=ppc_google_latam_search_erp-general_erp-caracteristicas_v7a&gad=1&gclid=CjwKCAjwu4WoBhBkEiwAojNdXpwP4px7dRMU-lRSGQqDvREEspbeKD4UpS3ZV61joYElcaYf4xuVtBoCg74QAvD_BwE",Descripcion:"Permite comparar diversos proveedores de sistemas ERP",Observaciones:"Ofrece un informe gratuito sobre diversas soluciones ERP disponibles en el mercado"},
+    {Tema:"Technology Evaluation Center",Recurso:"",Url:"https://landing.technologyevaluation.com/sistemas-erp/",Descripcion:"Permite comparar diversos proveedores de sistemas ERP",Observaciones:"Ofrece un informe gratuito sobre diversas soluciones ERP disponibles en el mercado"},
     {Tema:"Sistema de gestión empresarial (ERP)",Recurso:"",Url:"https://www.ticportal.es/temas/enterprise-resource-planning/que-es-sistema-erp",Descripcion:"Artículo descriptivo acerca de los ERP",Observaciones:"El artículo agrega programas de ERP y un video explicativo"},
     {Tema:"Customer Relationship Management (CRM)",Recurso:"",Url:"https://www.salesforce.com/mx/crm/",Descripcion:"Artículo sobre los CRM",Observaciones:"El artículo está enfocado a pymes"},
-    {Tema:"Top10.com",Recurso:"",Url:"https://www.top10.com/crm/sp-comparison?utm_source=google&kw=crm%20gratuito&c=572827443537&t=search&p=&m=b&adpos=&dev=c&devmod=&mobval=0&network=g&campaignid=15778536479&groupid=135447135767&targetid=kwd-315582950&interest=&physical=9047091&feedid=&a=151115&ts=&topic=&clicktype=&camtype=&gclid=CjwKCAjwu4WoBhBkEiwAojNdXtMWH72LdbLJ8lsEfXnUNIQ65DSCycbgI8v5RYodwmiqnNUfFrzZRRoCHZ8QAvD_BwE",Descripcion:"Analiza los mejores recursos CRM disponibles de forma gratuita",Observaciones:"Incluye reseñas de usuarios"},
+    {Tema:"Top10.com",Recurso:"",Url:"https://www.top10.com/crm/sp-comparison",Descripcion:"Analiza los mejores recursos CRM disponibles de forma gratuita",Observaciones:"Incluye reseñas de usuarios"},
     {Tema:"Slack",Recurso:"",Url:"https://www.youtube.com/watch?v=wtrajB1mBPk",Descripcion:"Video guía para aprender a usar Slack",Observaciones:"Plataforma de comunicación empresarial y colaboración en equipo"},
     {Tema:"Sistema de punto de venta (POS)",Recurso:"",Url:"https://squareup.com/us/es/townsquare/what-pos-system",Descripcion:"Artículo sobre los POS",Observaciones:"El artículo está enfocado a pymes"},
     {Tema:"Alegra",Recurso:"",Url:"https://escuela-emprendedores.alegra.com/contabilidad-facil/sistema-pos/",Descripcion:"Ofrece una explicación clara de su sistema de punto de venta",Observaciones:""},
@@ -71,7 +71,7 @@ const tools = [
     {Tema:"Shopify",Recurso:"",Url:"https://www.youtube.com/watch?v=ty1tGghxqjk ",Descripcion:"Curso para crear una tienda en Shopify",Observaciones:"Ofrece un centro de comercio completo"},
     {Tema:"Wix",Recurso:"",Url:"https://www.youtube.com/watch?v=4q97uMfhAbk ",Descripcion:"Curso para crear una página web en Wix",Observaciones:"Es ideal para personas que no tienen experiencia en el diseño web "},
     {Tema:"Sistema de gestión de recursos humanos (HRM)",Recurso:"",Url:"https://www.docusign.mx/blog/HRMS ",Descripcion:"Artículo sobre los HRM",Observaciones:"El artículo está enfocado a pymes"},
-    {Tema:"Plataforma de gestión de contenido (CMS)",Recurso:"",Url:"https://www.oracle.com/mx/content-management/what-is-cms/#:~:text=¿Qué%20es%20un%20sistema%20de,editar%2C%20organizar%20y%20publicar%20contenidos",Descripcion:"Artículo sobre los CMS",Observaciones:"El artículo está enfocado a pymes"}
+    {Tema:"Plataforma de gestión de contenido (CMS)",Recurso:"",Url:"https://www.oracle.com/mx/content-management/what-is-cms/",Descripcion:"Artículo sobre los CMS",Observaciones:"El artículo está enfocado a pymes"}
 ]
 const beneficios = [
     {titulo:'Beneficio 1', texto:'La empresa mejorará la eficiencia operativa al optimizar sus recursos y procesos, aumentar la productividad y reducir costos.'},

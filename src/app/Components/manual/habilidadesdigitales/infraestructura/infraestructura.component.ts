@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { sectionsAnimation } from '../../../../Services/animations.service';
-import { GlobalService } from '../../../../Services/global.service';
+import { GlobalService, VariablesService } from '../../../../Services/global.service';
 import { NavSections, Glossary, Experts, Institutions, Books, Websites } from '../../../../Models/sitedata';
 
 @Component({
@@ -29,7 +29,8 @@ export class InfraestructuraComponent {
 
     constructor(
         public _thisroute: ActivatedRoute,
-        public _globalService: GlobalService
+        public _globalService: GlobalService,
+        private _vardata: VariablesService
     ) {
         this.Seccion = "Introduccion";
         this.Secciones = NavSections;
@@ -39,6 +40,8 @@ export class InfraestructuraComponent {
         this._thisroute.params.subscribe((params: Params) => {
             this.Seccion = params['section'];
         });
+        //this.Seccion = this._variablesService.url;
+        //this._vardata.url.subscribe(x => this.Seccion=x);
     }
     setCatalogs() {
         const palabras = [99];

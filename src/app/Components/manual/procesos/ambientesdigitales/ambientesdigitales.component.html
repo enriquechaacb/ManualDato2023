@@ -57,15 +57,17 @@
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es el desarrollo de ambientes digitales?</span></h2>
+                        <div class="definition">
+                            
+                        </div>
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="Introducción a la Transformación Digital">
+                            <mat-tab label="1. Introducción a la Transformación Digital">
                                 <h3 class="mt-3"><i class="num">1</i> Introducción a la Transformación Digital</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')" id="conceptos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.1 Conceptos básicos: Transformación digital, ambientes digitales, eficiencia y automatización de procesos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="conceptos">1.1 Conceptos básicos: Transformación digital, ambientes digitales, eficiencia y automatización de procesos</h4>
                                         <p>La transformación digital es un proceso en el que las empresas adoptan tecnologías digitales para mejorar sus operaciones y procesos, optimizando su rendimiento y adaptándose a los cambios del entorno empresarial actual. En este contexto, los ambientes digitales juegan un papel fundamental, proporcionando herramientas y plataformas para facilitar la gestión de datos y la automatización de tareas, lo que conduce a una mayor eficiencia en las operaciones.</p>
                                         <h5>Conceptos clave:</h5>
                                         <div class="conceptoclave">
@@ -90,15 +92,14 @@
                                         </div>
                                         <p>Te recomendamos ver el siguiente enlace para profundizar en el tema:</p>
                                         <p>Transformación Digital en la Empresa: Ventajas y Desafíos:</p>
-                                        <p><a href="https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html">https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html</a></p>
+                                        <p><a href="https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html" target="_blank">https://kpmg.com/mx/es/home/campaigns/2021/07/transformacion-digital-en-la-empresa.html</a></p>
                                         
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('beneficios')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('beneficios')" id="beneficios">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.2. Beneficios y desafíos de la implementación de ambientes digitales en los negocios</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="beneficios">1.2. Beneficios y desafíos de la implementación de ambientes digitales en los negocios</h4>
                                         <p>Los ambientes digitales son entornos en línea donde las empresas pueden llevar a cabo diversas operaciones y transacciones utilizando tecnologías digitales. Estos ambientes han cobrado una importancia significativa en el mundo empresarial moderno, ya que permiten mejorar la eficiencia, aumentar la productividad y ofrecer una experiencia más satisfactoria a los clientes.</p>
                                         <h5>Beneficios de la implementación de ambientes digitales:</h5>
                                         <p>La implementación de ambientes digitales ofrece una serie de beneficios significativos que pueden transformar la forma en que se realizan tareas, se comunican y se gestionan operaciones en nuestras pymes. Veamos algunos beneficios clave de la implementación de ambientes digitales:</p>
@@ -138,74 +139,72 @@
                                         </div>
                                         <p>Para profundizar, aquí un enlace de interés:</p>
                                         <p>Ventajas y desventajas de los ambientes digitales en los negocios</p>
-                                        <p><a href="https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html">https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html</a></p>
+                                        <p><a href="https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html" target="_blank">https://www.baenegocios.com/negocios/Era-digital-ventajas-y-desventajas-para-los-negocios-20230116-0007.html</a></p>
                                     </mat-expansion-panel>
                                     
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tendencias')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tendencias')" id="tendencias">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.3 Tendencias actuales en el ámbito digital y su impacto en las organizaciones</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="tendencias">1.3 Tendencias actuales en el ámbito digital y su impacto en las organizaciones</h4>
-                                    <p>En el mundo empresarial actual, la tecnología y el entorno digital están experimentando un rápido avance que impacta significativamente en las organizaciones. Estas tendencias digitales están transformando la forma en que las empresas operan, interactúan con los clientes y gestionan sus procesos internos. A continuación, exploraremos algunas de las tendencias más relevantes y su impacto en las pymes:</p>
-                                    <div class="conceptoclave">
-                                        <h6>Transformación digital</h6>
-                                        <p>La transformación digital se refiere a la integración de tecnologías digitales en todos los aspectos de una organización, desde la estrategia hasta las operaciones. Esta tendencia busca mejorar la eficiencia, aumentar la productividad y ofrecer una experiencia excepcional al cliente.</p>
-                                        <p class="ejemplo">Ejemplo: Una empresa minorista implementa un sistema de ventas en línea, optimiza sus procesos de logística y utiliza analítica de datos para personalizar las ofertas a sus clientes.</p>
-                                    </div>
-                                    <div class="conceptoclave">
-                                        <h6>Inteligencia artificial (IA) y automatización</h6>
-                                        <p>La IA y la automatización están revolucionando la forma en que las empresas realizan tareas y toman decisiones. Estas tecnologías permiten el procesamiento rápido de grandes cantidades de datos y la automatización de procesos repetitivos.</p>
-                                        <p class="ejemplo">Ejemplo: Un centro de atención al cliente utiliza chatbots basados en IA para resolver consultas de manera instantánea y reducir la carga de trabajo del personal humano.</p>
-                                    </div>
-                                    <div class="conceptoclave">
-                                        <h6>Internet de las cosas (IoT)</h6>
-                                        <p>El IoT conecta objetos cotidianos a internet, permitiéndoles recopilar y compartir datos. Esto abre la puerta a nuevas oportunidades para mejorar la eficiencia y crear productos y servicios más inteligentes y conectados.</p>
-                                        <p class="ejemplo">Ejemplo: Una empresa de fabricación utiliza sensores IoT en su maquinaria para monitorear el rendimiento y predecir posibles fallas antes de que ocurran.</p>
-                                    </div>
-                                    <div class="conceptoclave">
-                                        <h6>Big data y análisis de datos</h6>
-                                        <p>El Big Data se refiere al procesamiento y análisis de grandes volúmenes de datos para obtener información valiosa y patrones ocultos. Esto permite a las organizaciones tomar decisiones más informadas y estratégicas.</p>
-                                        <p class="ejemplo">Ejemplo: Una empresa de comercio electrónico analiza los datos de compra de sus clientes para ofrecer recomendaciones de productos personalizadas.</p>
-                                    </div>
-                                    <div class="conceptoclave">
-                                        <h6>Realidad aumentada (RA) y Realidad virtual (RV)</h6>
-                                        <p>La AR y la VR están transformando la forma en que las empresas interactúan con sus clientes y empleados. Estas tecnologías ofrecen experiencias inmersivas y enriquecidas. La realidad aumentada es una tecnología que superpone información digital al mundo real, regularmente a través de gafas, teléfonos inteligentes o tabletas. En tanto, la realidad virtual es una tecnología que permite crear mundos virtuales completamente inmersivos. La VR regularmente se utiliza para crear experiencias de juego y entretenimiento.</p>
-                                        <p class="ejemplo">Ejemplo: Una empresa de muebles utiliza la AR para permitir a los clientes visualizar cómo quedaría un mueble en su hogar antes de comprarlo. Una tienda de ropa podría utilizarla para que los clientes puedan probarse ropa virtualmente para ver cómo se ven o cómo les queda.</p>
-                                    </div>
-                                    <h5>1.3.1 Impacto en las organizaciones:</h5>
-                                    <p>Estas tendencias digitales están impactando en las pymes de diversas formas, veamos algunas de las más importantes:</p>
-                                    <ul>
-                                        <li>Mejora de la eficiencia operativa y reducción de costos.</li>
-                                        <li>Mayor personalización y satisfacción del cliente.</li>
-                                        <li>Mayor agilidad y capacidad de adaptación al cambio.</li>
-                                        <li>Desarrollo de nuevos modelos de negocio y oportunidades de crecimiento.</li>
-                                        <li>Mejora de la toma de decisiones basada en datos y análisis.</li>
-                                    </ul>
-                                    <h6>Enlaces para profundizar:</h6>
-                                    <p>Forbes - 10 Tendencias tecnológicas que transformarán las empresas:</p>
-                                    <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
-                                    <div class="hint">
-                                        <div>
-                                            <h5>Preguntas abiertas para reflexionar:</h5>
-                                            <ol>
-                                                <li>¿Cómo puede tu pyme prepararse para abrazar la transformación digital y aprovechar sus beneficios?</li>
-                                                <li>¿Cuál es el impacto de la inteligencia artificial en la toma de decisiones en tu organización?</li>
-                                                <li>¿Qué ventajas ofrece el Internet de las cosas en la optimización de procesos y la mejora de la experiencia de tus clientes?</li>
-                                            </ol>
+                                        <p>En el mundo empresarial actual, la tecnología y el entorno digital están experimentando un rápido avance que impacta significativamente en las organizaciones. Estas tendencias digitales están transformando la forma en que las empresas operan, interactúan con los clientes y gestionan sus procesos internos. A continuación, exploraremos algunas de las tendencias más relevantes y su impacto en las pymes:</p>
+                                        <div class="conceptoclave">
+                                            <h6>Transformación digital</h6>
+                                            <p>La transformación digital se refiere a la integración de tecnologías digitales en todos los aspectos de una organización, desde la estrategia hasta las operaciones. Esta tendencia busca mejorar la eficiencia, aumentar la productividad y ofrecer una experiencia excepcional al cliente.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa minorista implementa un sistema de ventas en línea, optimiza sus procesos de logística y utiliza analítica de datos para personalizar las ofertas a sus clientes.</p>
                                         </div>
-                                    </div>
+                                        <div class="conceptoclave">
+                                            <h6>Inteligencia artificial (IA) y automatización</h6>
+                                            <p>La IA y la automatización están revolucionando la forma en que las empresas realizan tareas y toman decisiones. Estas tecnologías permiten el procesamiento rápido de grandes cantidades de datos y la automatización de procesos repetitivos.</p>
+                                            <p class="ejemplo">Ejemplo: Un centro de atención al cliente utiliza chatbots basados en IA para resolver consultas de manera instantánea y reducir la carga de trabajo del personal humano.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Internet de las cosas (IoT)</h6>
+                                            <p>El IoT conecta objetos cotidianos a internet, permitiéndoles recopilar y compartir datos. Esto abre la puerta a nuevas oportunidades para mejorar la eficiencia y crear productos y servicios más inteligentes y conectados.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de fabricación utiliza sensores IoT en su maquinaria para monitorear el rendimiento y predecir posibles fallas antes de que ocurran.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Big data y análisis de datos</h6>
+                                            <p>El Big Data se refiere al procesamiento y análisis de grandes volúmenes de datos para obtener información valiosa y patrones ocultos. Esto permite a las organizaciones tomar decisiones más informadas y estratégicas.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de comercio electrónico analiza los datos de compra de sus clientes para ofrecer recomendaciones de productos personalizadas.</p>
+                                        </div>
+                                        <div class="conceptoclave">
+                                            <h6>Realidad aumentada (RA) y Realidad virtual (RV)</h6>
+                                            <p>La AR y la VR están transformando la forma en que las empresas interactúan con sus clientes y empleados. Estas tecnologías ofrecen experiencias inmersivas y enriquecidas. La realidad aumentada es una tecnología que superpone información digital al mundo real, regularmente a través de gafas, teléfonos inteligentes o tabletas. En tanto, la realidad virtual es una tecnología que permite crear mundos virtuales completamente inmersivos. La VR regularmente se utiliza para crear experiencias de juego y entretenimiento.</p>
+                                            <p class="ejemplo">Ejemplo: Una empresa de muebles utiliza la AR para permitir a los clientes visualizar cómo quedaría un mueble en su hogar antes de comprarlo. Una tienda de ropa podría utilizarla para que los clientes puedan probarse ropa virtualmente para ver cómo se ven o cómo les queda.</p>
+                                        </div>
+                                        <h5>1.3.1 Impacto en las organizaciones:</h5>
+                                        <p>Estas tendencias digitales están impactando en las pymes de diversas formas, veamos algunas de las más importantes:</p>
+                                        <ul>
+                                            <li>Mejora de la eficiencia operativa y reducción de costos.</li>
+                                            <li>Mayor personalización y satisfacción del cliente.</li>
+                                            <li>Mayor agilidad y capacidad de adaptación al cambio.</li>
+                                            <li>Desarrollo de nuevos modelos de negocio y oportunidades de crecimiento.</li>
+                                            <li>Mejora de la toma de decisiones basada en datos y análisis.</li>
+                                        </ul>
+                                        <h6>Enlaces para profundizar:</h6>
+                                        <p>Forbes - 10 Tendencias tecnológicas que transformarán las empresas:</p>
+                                        <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/" target="_blank">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
+                                        <div class="hint">
+                                            <div>
+                                                <h5>Preguntas abiertas para reflexionar:</h5>
+                                                <ol>
+                                                    <li>¿Cómo puede tu pyme prepararse para abrazar la transformación digital y aprovechar sus beneficios?</li>
+                                                    <li>¿Cuál es el impacto de la inteligencia artificial en la toma de decisiones en tu organización?</li>
+                                                    <li>¿Qué ventajas ofrece el Internet de las cosas en la optimización de procesos y la mejora de la experiencia de tus clientes?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
 
-                            <mat-tab label="Análisis de Necesidades y Objetivos">
+                            <mat-tab label="2. Análisis de Necesidades y Objetivos">
                                 <h3 class="mt-3"><i class="num">2</i> Análisis de Necesidades y Objetivos</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')" id="identificacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.1. Identificación y comprensión de las necesidades del negocio para el diseño de soluciones adecuadas</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="identificacion">2.1. Identificación y comprensión de las necesidades del negocio para el diseño de soluciones adecuadas</h4>
                                         <p>La identificación y comprensión de las necesidades del negocio es un proceso esencial para el diseño e implementación de soluciones efectivas que impulsen el éxito y crecimiento de una empresa. Esto implica analizar y entender las demandas y desafíos específicos que enfrenta la organización, así como las metas y objetivos que busca alcanzar. A continuación, exploraremos ampliamente este tema:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/3_Metodologia_FODA.webp" class="img-fluid">
                                         <p>Figura 1. Matriz FODA. (Rosas, R., 2023).</p>
@@ -238,7 +237,7 @@
 
                                         <p>En conclusión: El análisis FODA se utiliza para evaluar la posición actual de la empresa y tomar decisiones estratégicas informadas. Al identificar las fortalezas y debilidades internas, la empresa puede enfocar sus esfuerzos en mejorar áreas clave. Al mismo tiempo, al identificar oportunidades y amenazas externas, la pyme puede adaptar su enfoque para capitalizar oportunidades o mitigar posibles riesgos.</p>
                                         <h6>Enlaces para profundizar:</h6>
-                                        <p><a href="https://asana.com/es/resources/swot-analysis">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
+                                        <p><a href="https://asana.com/es/resources/swot-analysis" target="_blank">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
                                         
                                         <h5>2.1.2 Comunicación con las Partes Interesadas</h5>
                                         <p>Es crucial involucrar a todas las partes interesadas en el proceso de identificación de necesidades. Esto incluye a los líderes y empleados de la empresa, así como a los clientes y proveedores. Escuchar sus opiniones y retroalimentación ayuda a obtener una visión completa y precisa de las necesidades del negocio.</p>
@@ -277,11 +276,11 @@
                                             <p><strong>Scrum</strong>: es uno de los marcos de trabajo ágiles más populares. Se basa en ciclos de trabajo llamados "sprints" que generalmente tienen una duración de 2 a 4 semanas. Durante cada sprint, el equipo se enfoca en entregar un conjunto de funcionalidades específicas. Al final de cada sprint, se realiza una revisión para demostrar los resultados y una retrospectiva para mejorar continuamente el proceso.</p>
                                             <p><small>Fuente: Scrum ORG, 2023</small></p>
                                             <h6>Enlaces para profundizar:</h6>
-                                            <p><a href="https://youtu.be/a33xOe9d_Dk">https://youtu.be/a33xOe9d_Dk</a></p>
-                                            <p><a href="https://www.scrum.org/">https://www.scrum.org/</a></p>
+                                            <p><a href="https://youtu.be/a33xOe9d_Dk" target="_blank">https://youtu.be/a33xOe9d_Dk</a></p>
+                                            <p><a href="https://www.scrum.org/" target="_blank">https://www.scrum.org/</a></p>
                                             <ol>
                                                 <li><strong>Kanban: </strong>es una técnica que utiliza tableros visuales para representar el flujo detrabajo y las tareas pendientes, en progreso y completadas. Es especialmente útil para proyectos con múltiples flujos de trabajo y prioridades cambiantes. El equipo puede ajustar la cantidad de trabajo en curso según la capacidad disponible y las prioridades cambiantes.</li>
-                                                <li><strong>Historias de usuario: </strong>son descripciones breves de funcionalidades desde la perspectiva del usuario. Se utilizan para comunicar y comprender los requisitos del proyecto. Cada historia de usuario tiene una prioridad y un valor de negocio asociados, lo que permite al equipo enfocarse en las tareas más valiosas para el cliente. Para ver un ejemplo, revisa el artículo: <a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
+                                                <li><strong>Historias de usuario: </strong>son descripciones breves de funcionalidades desde la perspectiva del usuario. Se utilizan para comunicar y comprender los requisitos del proyecto. Cada historia de usuario tiene una prioridad y un valor de negocio asociados, lo que permite al equipo enfocarse en las tareas más valiosas para el cliente. Para ver un ejemplo, revisa el artículo: <a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos" target="_blank">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
                                                 <li><strong>Daily Stand-up (reunión diaria): </strong>Esta reunión corta y diaria es una práctica común en Scrum. El equipo se reúne para sincronizar el progreso, compartir actualizaciones y discutir posibles bloqueos. Esto ayuda a identificar problemas rápidamente y mantener a todos alineados con los objetivos del proyecto.</li>
                                                 <li><strong>Burn-down charts (gráficos de avance):</strong> Estos gráficos muestran la cantidad de trabajo restante frente al tiempo. Son útiles para visualizar el progreso del proyecto y detectar desviaciones tempranas.</li>
                                                 <li><strong>Retrospectivas: </strong>Al final de cada iteración o sprint, el equipo se reúne para realizar una retrospectiva. En esta sesión, se analiza lo que funcionó bien, qué se puede mejorar y se proponen acciones para la siguiente iteración.</li>
@@ -290,7 +289,7 @@
                                             <ul>
                                                 <li>Harvard Business Review - The Art of Framing Problems</li>
                                                 <li>MIT Sloan Management Review - Closing the Gap Between Strategy and Execution</li>
-                                                <li><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
+                                                <li><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos" target="_blank">Metodologías ágiles enfocadas al modelado de requerimientos</a></li>
                                             </ul>
                                         </div>
 
@@ -306,11 +305,10 @@
                                         </div>
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('alinear')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('alinear')" id="alinear">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.2 Cómo alinear los procesos digitales con los objetivos estratégicos de la organización</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h3 id="alinear">2.2 Cómo alinear los procesos digitales con los objetivos estratégicos de la organización</h3>
                                     <img src="../../../../../assets/images/dimensions/procesos/5_Procesos_digitales_objetivos_estrategicos.webp" class="img-fluid">
                                     <separator></separator>
                                     <!-- <p>Para alinear los procesos digitales con los objetivos estratégicos de la organización, es necesario seguir un enfoque sistemático que garantice la integración efectiva de la tecnología en todas las áreas y niveles de la empresa. Aquí hay una guía para lograrlo:</p>
@@ -342,7 +340,7 @@
                                     <li><strong>Monitorear y ajustar:</strong> Monitorear de cerca la implementación de los procesos digitales y realizar ajustes según sea necesario. La transformación digital es un proceso continuo y requiere flexibilidad para adaptarse a cambios en el entorno empresarial.</li>
                                     </ul> -->
                                     <h6>Enlaces para profundizar:</h6>
-                                    <p><a href="https://asana.com/es/resources/gap-analysis">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
+                                    <p><a href="https://asana.com/es/resources/gap-analysis" target="_blank">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
                                     <div class="hint">
                                         <div>
                                             <h5>Preguntas abiertas para reflexionar:</h5>
@@ -357,15 +355,13 @@
                                 </mat-accordion>
                             </mat-tab>
 
-                            <mat-tab label="Tecnologías y Herramientas Digitales">
+                            <mat-tab label="3. Tecnologías y Herramientas Digitales">
                                 <h3 class="mt-3"><i class="num">3</i> Tecnologías y Herramientas Digitales</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('exploracion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('exploracion')" id="exploracion">
                                             <mat-expansion-panel-header>
                                                 <mat-panel-title>3.1 Exploración y selección de tecnologías digitales adecuadas para cada tipo de negocio.</mat-panel-title>
                                             </mat-expansion-panel-header>
-                                            <h4 id="exploracion">3.1 Exploración y selección de tecnologías digitales adecuadas para cada tipo de negocio.</h4>
-                                                
                                                 <div class="texto-video">
                                                     <p>Las tecnologías digitales adecuadas para cada tipo de negocio dependerán de sus necesidades específicas y su modelo de operación. A continuación, mencionaremos algunas tecnologías digitales comunes y, ejemplos de cómo se aplican en diferentes tipos de negocios:</p>
                                                     <div class="conceptoclave">
@@ -410,8 +406,8 @@
                                                 <p>Aquí lo importante es conocer las tecnologías y sus características, definir las áreas de atención, estructurar un plan, se puede iniciar con un proyecto piloto para probar cómo va funcionando y luego, quizá de algunos ajustes, escalar poco a poco, según sea necesario. </p>
                                                 <h6>Enlaces para profundizar:</h6>
                                                 <ul>
-                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">The Next Normal: Business Trends for 2021 | McKinsey</a> </li>
-                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></li>
+                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond" target="_blank">The Next Normal: Business Trends for 2021 | McKinsey</a> </li>
+                                                    <li><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond" target="_blank">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></li>
                                                 </ul>
                                                 <div class="hint">
                                                     <div>
@@ -425,11 +421,10 @@
                                                 </div>
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('evaluacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('evaluacion')" id="evaluacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.2 Evaluación de herramientas de automatización y eficiencia de procesos.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="evaluacion">3.2 Evaluación de herramientas de automatización y eficiencia de procesos.</h4>
                                         <div class="texto-video">
                                             <p>La evaluación de herramientas de automatización y eficiencia de procesos es crucial para asegurarse de que las soluciones implementadas realmente cumplan con los objetivos de mejorar la productividad y reducir los costos en una organización. Veamos un enfoque para llevar a cabo esta evaluación:</p>
                                             <ul>
@@ -474,14 +469,13 @@
                                 </mat-accordion>
                             </mat-tab>
 
-                            <mat-tab label="Identificación de Áreas y Procesos Digitales">
+                            <mat-tab label="4. Identificación de Áreas y Procesos Digitales">
                                 <h3 class="mt-3"><i class="num">4</i> Identificación de Áreas y Procesos Digitales</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('metodos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('metodos')" id="metodos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.1 Métodos para identificar qué áreas del negocio podrían beneficiarse de la digitalización</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="metodos">4.1 Métodos para identificar qué áreas del negocio podrían beneficiarse de la digitalización</h4>
                                         <div class="texto-video">
                                             <p>Identificar qué áreas del negocio podrían beneficiarse de la digitalización es fundamental para aprovechar al máximo las oportunidades que brindan las tecnologías digitales. Dentro de los métodos para llevar a cabo esta identificación están:</p>
                                             <ol>
@@ -507,11 +501,10 @@
                                         </div>
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('analisis')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('analisis')" id="analisis">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.2 Análisis de los procesos de negocio actuales y su potencial para ser digitalizados</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="analisis">4.2 Análisis de los procesos de negocio actuales y su potencial para ser digitalizados</h4>
                                         <p>El análisis de los procesos de negocio actuales y su potencial para ser digitalizados es un paso crucial en el proceso de transformación digital de una pyme. Para generar competencias y conocimiento que te apoyen en esta visualización de tu negocio, detallaremos los pasos para llevar a cabo este análisis: </p>
                                         <img src="../../../../../assets/images/dimensions/procesos/6_Pasos_analisis_procesos_negocio.webp" class="img-fluid">
                                         <separator></separator>
@@ -540,7 +533,7 @@
                                 </mat-accordion>
                             </mat-tab>
 
-                            <mat-tab label="Diseño de Soluciones Digitales">
+                            <mat-tab label="5. Diseño de Soluciones Digitales">
                                 <article>
                                     <h3 class="mt-3"><i class="num">5</i> Diseño de Soluciones Digitales</h3>
                                     <div class="d-md-none">
@@ -573,14 +566,14 @@
                                 </article>
                             </mat-tab>
 
-                            <mat-tab label="Implementación y Gestión del Cambio">
+                            <mat-tab label="6. Implementación y Gestión del Cambio">
                                 <article>
                                     <h3 class="mt-3"><i class="num">6</i> Implementación y Gestión del Cambio</h3>
                                     <h4>6.1 Gestión del cambio y capacitación de los colaboradores en la adopción de las nuevas soluciones</h4>
                                     <p>En el tema de gestión del cambio la lectura del libro <em>La Meta</em> de Eliyahu M. Goldratt es un clásico indiscutible, cuya síntesis presentamos a continuación, para adentrarnos en el tema.</p>
                                     <p><em>La Meta</em> sigue la historia de Alex Rogo, un gerente de una fábrica que se enfrenta a una crisis inminente debido a la baja eficiencia y la inminente amenaza de cierre. A través de encuentros con un antiguo profesor y mentor llamado Jonah, Alex descubre la Teoría de Restricciones (TOC), un enfoque de gestión que identifica y aborda los cuellos de botella que limitan la productividad y el rendimiento.</p>
                                     <p>La historia se centra en cómo Alex aplica gradualmente la TOC en su fábrica, aprendiendo a identificar las restricciones y a gestionarlas de manera efectiva. A medida que implementa las ideas de Jonah, enfrenta desafíos personales y profesionales que amenazan su éxito. A través de sus luchas y aprendizajes, se revelan valiosas lecciones sobre la gestión eficiente de las operaciones y la importancia de centrarse en lo que realmente importa para alcanzar los objetivos organizacionales.</p>
-                                    <p><em>La Meta</em> va más allá de ser un libro sobre gestión, es una narrativa convincente que desafía las convenciones y fomenta un pensamiento más profundo sobre la mejora continua y la <em>superación de</em><em>obstáculos</em>. La Teoría de Restricciones se presenta de una manera accesible, mostrando cómo puede aplicarse no solo a la producción industrial sino también a situaciones más amplias en la vida personal y profesional. Te sugerimos ver este video que habla sobre los obstáculos de hacer cambios en las personas:<a href="https://youtu.be/x0iRj8_9KhA">https://youtu.be/x0iRj8_9KhA</a>. </p>
+                                    <p><em>La Meta</em> va más allá de ser un libro sobre gestión, es una narrativa convincente que desafía las convenciones y fomenta un pensamiento más profundo sobre la mejora continua y la <em>superación de</em><em>obstáculos</em>. La Teoría de Restricciones se presenta de una manera accesible, mostrando cómo puede aplicarse no solo a la producción industrial sino también a situaciones más amplias en la vida personal y profesional. Te sugerimos ver este video que habla sobre los obstáculos de hacer cambios en las personas:<a href="https://youtu.be/x0iRj8_9KhA" target="_blank">https://youtu.be/x0iRj8_9KhA</a>. </p>
                                     <p>Es así como después de leer esta perspectiva desde el fascinante libro de Goldratt, podemos comentar que la gestión del cambio y la capacitación de los colaboradores son aspectos fundamentales para asegurar una exitosa adopción de las nuevas soluciones digitales en una empresa. </p>
                                     <div class="texto-video">
                                         <p>Veamos algunas consideraciones y pasos clave para tomar decisiones dentro de una empresa y cómo abordar este proceso:</p>
@@ -613,16 +606,16 @@
                     
                     <div class="references">
                         <h5>Referencias</h5>
-                        <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
-                        <p><a href="https://asana.com/es/resources/swot-analysis">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
-                        <p><a href="https://youtu.be/a33xOe9d_Dk">https://youtu.be/a33xOe9d_Dk</a></p>
-                        <p><a href="https://www.scrum.org/">https://www.scrum.org/</a></p>
+                        <p><a href="https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/" target="_blank">https://forbes.es/actualidad/159499/las-diez-principales-tendencias-tecnologicas-de-2022-para-las-que-debes-estar-preparado/</a></p>
+                        <p><a href="https://asana.com/es/resources/swot-analysis" target="_blank">Análisis FODA: qué es y cómo usarlo, con ejemplos [2021] • Asana</a></p>
+                        <p><a href="https://youtu.be/a33xOe9d_Dk" target="_blank">https://youtu.be/a33xOe9d_Dk</a></p>
+                        <p><a href="https://www.scrum.org/" target="_blank">https://www.scrum.org/</a></p>
                         <p>Harvard Business Review - The Art of Framing Problems</p>
                         <p>MIT Sloan Management Review - Closing the Gap Between Strategy and Execution</p>
-                        <p><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos">Metodologías ágiles enfocadas al modelado de requerimientos</a></p>
-                        <p><a href="https://asana.com/es/resources/gap-analysis">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
-                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">The Next Normal: Business Trends for 2021 | McKinsey</a></p>
-                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></p>
+                        <p><a href="https://www.researchgate.net/publication/326948456_Metodologias_agiles_enfocadas_al_modelado_de_requerimientos" target="_blank">Metodologías ágiles enfocadas al modelado de requerimientos</a></p>
+                        <p><a href="https://asana.com/es/resources/gap-analysis" target="_blank">Cómo implementar el análisis de brechas para alcanzar los objetivos de negocios [2022] • Asana</a></p>
+                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond" target="_blank">The Next Normal: Business Trends for 2021 | McKinsey</a></p>
+                        <p><a href="https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond" target="_blank">https://www.mckinsey.com/featured-insights/leadership/the-next-normal-arrives-trends-that-will-define-2021-and-beyond</a></p>
 
                     </div>
                 </section>

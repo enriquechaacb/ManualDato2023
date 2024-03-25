@@ -48,17 +48,19 @@
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los canales digitales de comunicación?</span></h2>
                         
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="Definición de canales digitales de comunicación">
+                            <mat-tab label="1. Definición de canales digitales de comunicación">
                                 <h3 class="mt-3"><i class="num">1</i> Definición de canales digitales de comunicación</h3>
+                                <div class="definition">
+                                    <p>Los canales digitales de comunicación hacen referencia a plataformas y medios en línea que las empresas utilizan para interactuar con su audiencia, promocionar sus productos o servicios y, construir relaciones activas con los clientes.</p>
+                                </div>
                                 <div class="texto-video">
-                                    <p>Los canales digitales de comunicación hacen referencia a plataformas y medios en línea que las empresas utilizan para interactuar con su audiencia, promocionar sus productos o servicios y, construir relaciones activas con los clientes. </p>
                                     <p>Es importante reforzar que los canales digitales de comunicación no son los mismos que los canales tradicionales, considerando que ambos poseen tiempos de respuesta y distribución diferentes. </p>
                                     <p>Los canales tradicionales son aquellos que han utilizado los negocios a partir del siglo XX, como periódicos impresos, carteles, radio y televisión. Los canales digitales son aquellos que se utilizan principalmente a través de Internet éstos incluyen sitios web, redes sociales, correo electrónico, aplicaciones móviles y blogs, entre otros.</p>
                                 </div>
                                 <p>Da Silva (2021) define los medios digitales como “herramientas de visibilidad y posicionamiento en línea, con las que puedes optimizar tus relaciones con tus clientes actuales y potenciales, comunicándote con ellos a través del canal más efectivo”.</p>
                                 <p>Por su parte, Hotmart (2023) define los medios digitales como “cualquier comunicación realizada a través de internet. Algunos ejemplos de ello son las publicaciones en Instagram o Meta, antes Facebook, los banners en sitios webs, los ebooks, los videos, etc.”.</p>
                             </mat-tab>
-                            <mat-tab label="Tipos de canales digitales">
+                            <mat-tab label="2. Tipos de canales digitales">
                                 <h3 class="mt-3"><i class="num">2</i> Tipos de canales digitales </h3>
                                 <div class="texto-video">
                                     <p>Por su alcance, los canales digitales se pueden dividir en categorías, los propios, los externos o de paga y los ganados. </p>
@@ -75,23 +77,21 @@
                                 <img src="../../../../../assets/images/dimensions/canales/3_Características_ventajas_ejemplos_medios.webp" class="img-fluid" />
                                 <separator></separator>
                             </mat-tab>
-                            <mat-tab label="Canales digitales de comunicación">
+                            <mat-tab label="3. Canales digitales de comunicación">
                                 <h3 class="mt-3"><i class="num">3</i> Canales digitales de comunicación </h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('hosting')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('hosting')" id="hosting">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.1. Sitio web administrador de contenidos hosting</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="hosting">3.1. Sitio web administrador de contenidos hosting</h4>
                                         <p>En los inicios de Internet crear un sitio web suponía realizar tareas complicadas que pocas personas podían llevar a cabo. Con el tiempo, han surgido opciones más sencillas que prácticamente todo el mundo puede realizar. </p>
                                         <p>De acuerdo con De Souza (2022), “un sitio web es el conjunto de páginas ordenadas en un servidor de Internet al que se accede desde un dominio”.</p>
                                         <p>Para contar con un sitio web es necesario entender que éste se compone de un dominio para asignar su dirección web, un servidor para almacenar los archivos y la información que se presenta y, un sistema de gestión de contenidos (CMS por sus siglas en inglés) para administrar la producción de contenidos (De Souza, 2022).</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Proceso')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Proceso')" id="Proceso">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.2. Proceso de creación de un sitio web</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Proceso">3.2. Proceso de creación de un sitio web</h4>
                                         <p>El proceso de creación de un sitio web lo podemos dividir en varias etapas:</p>
                                         <h5>Etapa 1. Planeación de una idea para un sitio web</h5>
                                         <p>Un sitio web puede tener diferentes funciones como informar, vender, ganar presencia en Internet o brindar atención a clientes. </p>
@@ -149,11 +149,10 @@
                                         <separator></separator>
                                         <p>Una vez completada la revisión y verificar que todo funcione correctamente, es momento de publicar el sitio web.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Blogs')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Blogs')" id="Blogs">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.3. Blogs</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Blogs">3.3. Blogs</h4>
                                         <p><strong>3.3.1. Definición de blogs</strong></p>
                                         <div class="texto-video">
                                             <p>Un blog brinda la oportunidad de presentar a una empresa como un referente en su sector y así ganar la confianza de las personas, además de que es una fuente de tráfico hasta que genera oportunidades de negocio de manera efectiva.</p>
@@ -205,11 +204,10 @@
                                         </ul>
                                         <p>En la sección de Caja de herramientas se presenta una plantilla útil para aplicarla al blog del negocio o empresa.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Redes')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Redes')" id="Redes">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.4. Redes sociales</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Redes">3.4. Redes sociales</h4>
                                         <p><strong>3.4.1. Definición de redes sociales</strong></p>
                                         <div class="texto-video">
                                             <p>Las redes sociales digitales son plataformas en línea que permiten a las personas y a las organizaciones crear perfiles, compartir contenido, interactuar y conectarse con otros usuarios en la red.</p>
@@ -313,7 +311,7 @@
                                         <li>Calendario editorial: se puede colocar en el calendario la próxima publicación o bien publicarla directamente en la red social.</li>
                                         </ul>
                                         <p>Ejemplo: En este video se muestra la creación de contenido para redes sociales.</p>
-                                        <p><a href="https://www.youtube.com/watch?v=T1zvo2q3igo">7 consejos para crear contenidos para redes sociales</a></p>
+                                        <p><a href="https://www.youtube.com/watch?v=T1zvo2q3igo" target="_blank">7 consejos para crear contenidos para redes sociales</a></p>
                                         <h5>Etapa 8. Análisis de resultados</h5>
                                         <img src="../../../../../assets/images/dimensions/canales/15_Analisis_resultados.webp" class="img-fluid" />
                                         <separator></separator>
@@ -321,14 +319,13 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Mensajería instantánea y chatbots">
+                            <mat-tab label="4. Mensajería instantánea y chatbots">
                                 <h3 class="mt-3"><i class="num">4</i> Mensajería instantánea y chatbots </h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('definicion')" id="definicion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.1. Definición de mensajería instantánea y chatbots </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="definicion">4.1. Definición de mensajería instantánea y chatbots </h4>
                                         <div class="texto-video">
                                             <p>Según la empresa de atención al cliente Zendesk, el 32% de las organizaciones latinoamericanas utilizan la mensajería instantánea como parte de su estrategia de comunicación. Esto es debido a que el tiempo de resolución es más rápido y tiene la posibilidad de brindar soporte las 24 horas del día y los siete días de la semana. </p>
                                             <p>La mensajería instantánea se define como una forma de comunicación en tiempo real entre dos o más personas. Ésta se hace a través de dispositivos conectados a una red como Internet o datos móviles sin importar la distancia que exista entre los participantes (Da Silva, 2022). </p>
@@ -337,22 +334,20 @@
                                             <p>Hoy en día, ambos son indispensables para comunicarse con los clientes y prospectos con mayor rapidez. De acuerdo con Maram (2019) el 38% de las personas, tras escribir a las marcas, esperan respuesta en el intervalo de una hora.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')" id="Diferencia">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.2. Diferencia entre mensajería instantánea y chatbots</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Diferencia">4.2. Diferencia entre mensajería instantánea y chatbots</h4>
                                         <div class="texto-video">
                                             <p>La diferencia sustancial entre la mensajería instantánea y los chatbots es quién contesta durante la conversación. Para el primer caso, principalmente es una persona la que brinda la respuesta al usuario o cliente, y en el segundo, se debe contemplar que es una aplicación que ofrece respuestas programadas y predeterminadas. </p>
                                             <p>Es esencial identificar cuándo utilizar cada una de estas opciones. En el caso de la mensajería instantánea, todas las redes sociales tienen una integración que permite la comunicación entre la empresa y las personas. Es de utilidad en momentos particulares en los que se desea resolver diversas consultas y que no sean repetitivas.  </p>
                                             <p>Por otro lado, se sugiere que se utilicen los chatbots cuando se tiene poca capacidad de gestionar y dar seguimiento a un alto nivel de mensajes. Las consultas suelen repetirse y pueden resolverse con respuestas estandarizadas. </p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Tipos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Tipos')" id="Tipos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.3. Tipos de mensajería instantánea.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Tipos">4.3. Tipos de mensajería instantánea.</h4>
                                         <p>De acuerdo con Statista (2023) las principales mensajerías instantáneas que se utilizan a nivel global son: WhatsApp, WeChat, Facebook Messenger y Telegram, por orden de importancia. Sin embargo, en Latinoamérica la principal mensajería instantánea es WhatsApp (Da Silva, 2022). </p>
                                         
                                         <img src="../../../../../assets/images/dimensions/canales/16_Mensajerias_instantaneas_utilizadas_mundial.webp" class="img-fluid" />
@@ -363,11 +358,10 @@
                                         <img src="../../../../../assets/images/dimensions/canales/17_Caracteristicas_WhatsApp_Business.webp" class="img-fluid" />
                                         <separator></separator>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Implementacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Implementacion')" id="Implementacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.4. Implementación de chatbots en empresas</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Implementacion">4.4. Implementación de chatbots en empresas</h4>
                                         <p>Si la empresa ha detectado que tiene la capacidad de implementar un chatbot, además de que encontró preguntas o consultas comunes que la aplicación informática puede responder, se sugiere seguir el siguiente proceso de implementación: </p>
                                         <p><strong>4.4.1. Determinar el propósito del chatbot</strong></p>
                                         <p>El objetivo principal de diseñar el uso de un chatbot es brindar un servicio que las personas puedan utilizar en repetidas ocasiones. Si bien el chatbot no lo puede resolver todo, lo ideal es tener claro para qué se usará. Por ejemplo, el chatbot de una empresa que vende a través de una tienda en línea puede responder preguntas frecuentes, como métodos de pago, rastreo de pedidos y devoluciones, entre otros.</p>
@@ -386,7 +380,7 @@
                                                             <p>Manychat</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://manychat.com/es">https://manychat.com/es</a></p>
+                                                            <p><a href="https://manychat.com/es" target="_blank">https://manychat.com/es</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -397,7 +391,7 @@
                                                             <p>Hubspot</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.hubspot.es/">https://www.hubspot.es/</a></p>
+                                                            <p><a href="https://www.hubspot.es/" target="_blank">https://www.hubspot.es/</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -408,7 +402,7 @@
                                                             <p>Chatfuel</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://chatfuel.com/es">https://chatfuel.com/es</a></p>
+                                                            <p><a href="https://chatfuel.com/es" target="_blank">https://chatfuel.com/es</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -419,7 +413,7 @@
                                                             <p>Tidio</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.tidio.com/es-mx/">https://www.tidio.com/es-mx/</a></p>
+                                                            <p><a href="https://www.tidio.com/es-mx/" target="_blank">https://www.tidio.com/es-mx/</a></p>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -433,35 +427,32 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Optimización para motores de búsqueda (SEO)">
+                            <mat-tab label="5. Optimización para motores de búsqueda (SEO)">
                                 <h3 class="mt-3"><i class="num">5</i> Optimización para motores de búsqueda (SEO) </h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('SEO')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('DefinicionSeo')" id="DefinicionSeo">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.1. Definición de SEO </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="SEO">5.1. Definición de SEO </h4>
                                         <div class="texto-video">
                                             <p>Search Engine Optimization (SEO por sus siglas en inglés) significa optimización para motores de búsqueda y es la práctica recomendada y utilizada para posicionar la marca, un producto o servicio, o la empresa misma, de manera que aparezca en las primeras posiciones de búsqueda y Google, Yahoo o Bing, por citar algunos.</p>
                                             <p>El SEO se reconoce como un posicionamiento orgánico y tiene que ver con todas las acciones que ejecutan en un sitio web y que están encaminadas a optimizar el posicionamiento en los buscadores de una forma orgánica, es decir, no pagadas.</p>
                                             <p>Las búsquedas relacionadas con el sitio lo irán colocando entre los primeros resultados. Para ello, esta práctica emplea diversas estrategias, las cuales requieren de la atención del administrador del sitio web, ya que están basadas en la constancia, es decir, el sitio debe estar en revisión y mantenimiento constante del contenido y elementos que lo componen.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Diferencia')" id="Diferencia">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.2. Diferencia entre SEO y Marketing en Buscadores (SEM). </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Diferencia">5.2. Diferencia entre SEO y Marketing en Buscadores (SEM). </h4>
                                         <div class="texto-video">
                                             <p>Para las estrategias SEO, se requiere un trabajo permanente de mucho tiempo y esfuerzo por parte de las personas involucradas en el sitio web. No obstante, a veces el tiempo no está a favor de la empresa hay momentos en los que la empresa desea posicionar rápidamente el sitio web para realizar ventas de productos o servicios, o dar a conocer información y ganar audiencia.</p>
                                             <p>Para cuando esto ocurre, existe el SEM (Search Engine Marketing), que es también un conjunto de estrategias y buenas prácticas de posicionamiento web, pero a diferencia de las estrategias SEO, se tiene que invertir dinero. Y cuanto más dinero se invierta, se obtendrán mejores resultados.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('SEO')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('SEO')" id="SEO">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.3. Definición de SEO </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="SEO">5.3. Definición de SEO </h4>
                                         <p>Esta estrategia SEM comprende desde el análisis de los clientes para generar una correcta segmentación hasta la
                                             contratación de anuncios en sitios como Google Ads o en redes sociales como Meta, que comprende Facebook, Instagram
                                             y WhatsApp.</p>
@@ -545,11 +536,10 @@
                                             nuestro sitio sea referencia en otros sitios o redes sociales creando contenido de relevancia o interés.</p>
                                         <p>El sitio web puede ganar relevancia adicional si el contenido que hay en él se comparte desde sitios que ya estén clasificados como relevantes para los buscadores.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('como')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('como')" id="como">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.3. Cómo funciona el SEO </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="como">5.3. Cómo funciona el SEO </h4>
                                         <div class="texto-video">
                                             <p>Rakt (2022) explica que los motores de búsqueda “leen” el contenido del sitio web a nivel de archivos y a nivel de contenido de archivos. En el caso particular de Google, se sabe que el motor de búsqueda realiza una copia del sitio web en sus servidores para realizar un índice (a esto se le conoce como indexación) para comparar los criterios de búsqueda del usuario con estos sitios.</p>
                                             <p>Durante la indexación, los buscadores web evalúan cada aspecto del sitio web, parte de la estrategia SEO mencionada con anterioridad, y otorgan una clasificación. Dependiendo de esta clasificación será la relevancia que tenga durante las búsquedas de los usuarios (Rakt, 2022).</p>
@@ -558,11 +548,10 @@
                                         </div>
                                         <p>Cabe destacar que el algoritmo implementado por los buscadores web recibe actualizaciones constantemente, por lo que se debe estar siempre actualizado en las estrategias SEO y estar al día en los nuevos criterios que consideren los buscadores.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('impl')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('impl')" id="impl">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.6. Implementación de SEO en negocios </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="impl">5.6. Implementación de SEO en negocios </h4>
                                         <p>La implementación de una estrategia SEO se debe definir dentro de una empresa que busca enfocarse en el cliente para mejorar la visibilidad y el posicionamiento del sitio web en los motores de búsqueda. Consta de las siguientes etapas:</p>
                                         <h5>Etapa 1. Definición</h5>
                                         <p>Se debe comprender el negocio, su segmentación de mercados y los objetivos específicos que se desean lograr con el SEO. </p>
@@ -579,35 +568,31 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Email marketing">
+                            <mat-tab label="6. Email marketing">
                                 <h3 class="mt-3"><i class="num">6</i> Email marketing </h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emkt')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emkt')" id="emkt">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>6.1. Definición de email marketing </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="emkt">6.1. Definición de email marketing </h4>
                                         <p>De acuerdo con la empresa Inbound marketing, el email marketing es el envío de correos electrónicos a una base de datos de clientes y contactos con un objetivo de fidelización y promoción de productos.</p>
                                         <p>El comportamiento de las personas es revisar con cuidado sus correos todos los días. Si las personas han aceptado recibir el contenido de la empresa y saben que será relevante para sí mismo, hay una alta probabilidad de que ese correo sea abierto y leído.</p>
                                         <p>Por esta razón, usar correctamente el email marketing es un arma muy eficiente para mantener una relación con las personas, sean clientes actuales o interesados potencialmente.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('temkt')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('temkt')" id="temkt">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>6.2. Tipos de email marketing </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="temkt">6.2. Tipos de email marketing </h4>
                                         <p>El email marketing es un canal de comunicación y de marketing que ofrece diversas opciones de estrategias con la posibilidad de utilizar diferentes formatos de comunicación.</p>
                                         <p>Los formatos deben ser utilizados para diferentes ocasiones en función de los objetivos de la empresa. Algunos de éstos están orientados a las ventas, a notificaciones sobre contenidos, a promociones de ventas y a contenidos de descargas gratuitas, entre otros.</p>
                                         
                                         <img src="../../../../../assets/images/dimensions/canales/19_Tipos_emailmarketing.webp" class="img-fluid" />
                                         <separator></separator>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emmkt')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('emmkt')" id="emmkt">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>6.3. Campañas de email marketing para empresas</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="emmkt">6.3. Campañas de email marketing para empresas </h4>
-
                                         <p>Diseñar y enviar una campaña de email marketing a una gran cantidad de suscriptores es muy rentable. A continuación, se describe cómo crear una campaña: </p>
                                         <h5>Etapa 1. Definir objetivos</h5>
                                         <p>La clave para establecer objetivos correctos es alinearlos con los objetivos comerciales de la empresa. Entender qué es lo que se está buscando, como se ha mencionado anteriormente. Es importante que estos objetivos sean medibles para posteriormente hacer un análisis sobre su desempeño.</p>
@@ -644,7 +629,7 @@
                                                             <p>ActiveCampaign</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.activecampaign.com/es">https://www.activecampaign.com/es</a></p>
+                                                            <p><a href="https://www.activecampaign.com/es" target="_blank">https://www.activecampaign.com/es</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -655,7 +640,7 @@
                                                             <p>Mailchimp</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://mailchimp.com/es/">https://mailchimp.com/es/</a></p>
+                                                            <p><a href="https://mailchimp.com/es/" target="_blank">https://mailchimp.com/es/</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -666,7 +651,7 @@
                                                             <p>Aweber</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.aweber.com/">https://www.aweber.com/</a></p>
+                                                            <p><a href="https://www.aweber.com/" target="_blank">https://www.aweber.com/</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -677,7 +662,7 @@
                                                             <p>Marketing Hub by HubSpot</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.hubspot.es/products/marketing">https://www.hubspot.es/products/marketing</a></p>
+                                                            <p><a href="https://www.hubspot.es/products/marketing" target="_blank">https://www.hubspot.es/products/marketing</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -688,7 +673,7 @@
                                                             <p>MailerLite</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.mailerlite.com/es">https://www.mailerlite.com/es</a></p>
+                                                            <p><a href="https://www.mailerlite.com/es" target="_blank">https://www.mailerlite.com/es</a></p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -699,7 +684,7 @@
                                                             <p>Doppler</p>
                                                         </td>
                                                         <td>
-                                                            <p><a href="https://www.fromdoppler.com/es/">https://www.fromdoppler.com/es/</a></p>
+                                                            <p><a href="https://www.fromdoppler.com/es/" target="_blank">https://www.fromdoppler.com/es/</a></p>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -736,62 +721,61 @@
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        <p>Amazon. (s. f.). Qué es el almacenamiento en caché y cómo funciona | AWS. Amazon Web Services, Inc. <a href="https://aws.amazon.com/es/caching/">https://aws.amazon.com/es/caching/</a></p>
-                        <p>Blanco, E. (2023a,). Qué son las métricas de marketing y cuáles miden el éxito. Blog de Inbound Marketing y Ventas | RD Station. <a href="https://www.rdstation.com/blog/es/metricas-de-marketing/">https://www.rdstation.com/blog/es/metricas-de-marketing/</a></p>
-                        <p>Belcic, I. (2023). Qué es el spam: guía esencial para detectar y prevenir el spam. <a href="https://www.avast.com/es-es/c-spam">https://www.avast.com/es-es/c-spam</a></p>
+                        <p>Amazon. (s. f.). Qué es el almacenamiento en caché y cómo funciona | AWS. Amazon Web Services, Inc. <a href="https://aws.amazon.com/es/caching/" target="_blank">https://aws.amazon.com/es/caching/</a></p>
+                        <p>Blanco, E. (2023a,). Qué son las métricas de marketing y cuáles miden el éxito. Blog de Inbound Marketing y Ventas | RD Station. <a href="https://www.rdstation.com/blog/es/metricas-de-marketing/" target="_blank">https://www.rdstation.com/blog/es/metricas-de-marketing/</a></p>
+                        <p>Belcic, I. (2023). Qué es el spam: guía esencial para detectar y prevenir el spam. <a href="https://www.avast.com/es-es/c-spam" target="_blank">https://www.avast.com/es-es/c-spam</a></p>
                         <p>Botey, P. (2022). ¿Qué es la indexación web o indexar un contenido y cómo hacerlo? Inboundcycle. Recuperado de</p>
-                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido">https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido</a></p>
+                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido" target="_blank">https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-la-indexacion-o-indexar-un-contenido</a></p>
                         <p>Cardona, L. (2021). Motores de búsqueda: qué son, cómo funcionan y cuáles son los principales. Cyberclick. Recuperado de</p>
-                        <p><a href="https://www.cyberclick.es/que-es/motores-de-busqueda">https://www.cyberclick.es/que-es/motores-de-busqueda</a></p>
-                        <p>Alójate Com (2017). Cómo hacer una estrategia de email marketing efectiva. Medium. <a href="https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d">https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d</a></p>
-                        <p>Cultura SEO. (2020). Enlace: Qué es y cuántos tipos existen • Cultura SEO. <a href="https://culturaseo.com/jergario/enlace/">https://culturaseo.com/jergario/enlace/</a></p>
-                        <p>Da Silva, D. (2022). Mensajería instantánea para empresas: 3 usos prácticos. Zendesk MX. <a href="https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/">https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/</a></p>
-                        <p>Da Silva, F. G. (2021). Medios digitales: Descubre qué son y cómo gestionarlos para generar resultados en una estrategia de mercadotecnia. Rock Content. <a href="https://rockcontent.com/es/blog/medios-digitales/">https://rockcontent.com/es/blog/medios-digitales/</a></p>
+                        <p><a href="https://www.cyberclick.es/que-es/motores-de-busqueda" target="_blank">https://www.cyberclick.es/que-es/motores-de-busqueda</a></p>
+                        <p>Alójate Com (2017). Cómo hacer una estrategia de email marketing efectiva. Medium. <a href="https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d" target="_blank">https://medium.com/@alojate/c%C3%B3mo-hacer-una-estrategia-de-email-marketing-efectiva-4fd5330bda3d</a></p>
+                        <p>Cultura SEO. (2020). Enlace: Qué es y cuántos tipos existen • Cultura SEO. <a href="https://culturaseo.com/jergario/enlace/" target="_blank">https://culturaseo.com/jergario/enlace/</a></p>
+                        <p>Da Silva, D. (2022). Mensajería instantánea para empresas: 3 usos prácticos. Zendesk MX. <a href="https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/" target="_blank">https://www.zendesk.com.mx/blog/sistema-mensajeria-instantanea/</a></p>
+                        <p>Da Silva, F. G. (2021). Medios digitales: Descubre qué son y cómo gestionarlos para generar resultados en una estrategia de mercadotecnia. Rock Content. <a href="https://rockcontent.com/es/blog/medios-digitales/" target="_blank">https://rockcontent.com/es/blog/medios-digitales/</a></p>
                         <p>DesarrolloWeb.com. (s. f.). Qué es HTML</p>
-                        <p><a href="https://desarrolloweb.com/articulos/que-es-html.html">https://desarrolloweb.com/articulos/que-es-html.html</a></p>
+                        <p><a href="https://desarrolloweb.com/articulos/que-es-html.html" target="_blank">https://desarrolloweb.com/articulos/que-es-html.html</a></p>
                         <p>De Souza, I. (2022). Cómo crear un sitio web: Echa un vistazo al paso a paso para hacer el tuyo desde cero. Rock Content.</p>
-                        <p><a href="https://rockcontent.com/es/blog/como-crear-un-sitio-web/">https://rockcontent.com/es/blog/como-crear-un-sitio-web/</a></p>
-                        <p>De Souza, I. (2022a). Aprende a abrir el código fuente de una página web y comprende su importancia para el SEO. Rock Content. <a href="https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/">https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/</a></p>
-                        <p>Del Pino, C. Y. (2016). ¿Qué es y cómo funciona la compresión GZip? Experto SEO. <a href="https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/">https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/</a></p>
+                        <p><a href="https://rockcontent.com/es/blog/como-crear-un-sitio-web/" target="_blank">https://rockcontent.com/es/blog/como-crear-un-sitio-web/</a></p>
+                        <p>De Souza, I. (2022a). Aprende a abrir el código fuente de una página web y comprende su importancia para el SEO. Rock Content. <a href="https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/" target="_blank">https://rockcontent.com/es/blog/codigo-fuente-de-una-pagina-web/</a></p>
+                        <p>Del Pino, C. Y. (2016). ¿Qué es y cómo funciona la compresión GZip? Experto SEO. <a href="https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/" target="_blank">https://www.expertoseo.com/que-es/compresion-gzip-pagina-web/</a></p>
                         <p>Educaweb. (s. f.). Administrador de sitios web. educaweb.com.</p>
-                        <p><a href="https://www.educaweb.com/profesion/administrador-sitios-web-122/">https://www.educaweb.com/profesion/administrador-sitios-web-122/</a></p>
+                        <p><a href="https://www.educaweb.com/profesion/administrador-sitios-web-122/" target="_blank">https://www.educaweb.com/profesion/administrador-sitios-web-122/</a></p>
                         <p>Google for Developers. (s. f.). Descripción general de los rastreadores de Google (user-agents) | Centro de la búsqueda de Google.</p>
-                        <p><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=">https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=</a></p>
-                        <p>Harsel, L. (2023). ¿Qué son las palabras clave?: guía completa. Semrush Blog. <a href="https://es.semrush.com/blog/que-son-las-palabras-clave/">https://es.semrush.com/blog/que-son-las-palabras-clave/</a></p>
-                        <p>Hootsuite. (2023). Global Digital Report 2023. En We are social. <a href="https://wearesocial.com/es/blog/2023/01/digital-2023/">https://wearesocial.com/es/blog/2023/01/digital-2023/</a></p>
+                        <p><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=" target="_blank">https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=es#:~:text=</a></p>
+                        <p>Harsel, L. (2023). ¿Qué son las palabras clave?: guía completa. Semrush Blog. <a href="https://es.semrush.com/blog/que-son-las-palabras-clave/" target="_blank">https://es.semrush.com/blog/que-son-las-palabras-clave/</a></p>
+                        <p>Hootsuite. (2023). Global Digital Report 2023. En We are social. <a href="https://wearesocial.com/es/blog/2023/01/digital-2023/" target="_blank">https://wearesocial.com/es/blog/2023/01/digital-2023/</a></p>
                         <p>Hootsuite. (2023a). Crear contenido de redes sociales atractivo y eficaz. Hootsuite.</p>
-                        <p><a href="https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0">https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0</a></p>
-                        <p>Hotmart. (2023). Medios digitales: qué son, principales tipos y cómo usarlos. Blog Hotmart. <a href="https://hotmart.com/es/blog/medio-digital">https://hotmart.com/es/blog/medio-digital</a></p>
+                        <p><a href="https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0" target="_blank">https://help.hootsuite.com/hc/es-es/articles/4403597090459-Creaci%C3%B3n-de-contenido-de-redes-sociales-atractivo-y-eficaz#conoce-la-anatom-a-de-tu-publicaci-nes-0-0</a></p>
+                        <p>Hotmart. (2023). Medios digitales: qué son, principales tipos y cómo usarlos. Blog Hotmart. <a href="https://hotmart.com/es/blog/medio-digital" target="_blank">https://hotmart.com/es/blog/medio-digital</a></p>
                         <p>Islas, D. S. (2023,). Cómo crear una página web: guía paso a paso. Blog de Wix | Diseño Web, Fotografía y Tips de Negocios.</p>
-                        <p><a href="https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju">https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju</a></p>
+                        <p><a href="https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju" target="_blank">https://es.wix.com/blog/2019/04/guia-para-crear-paginas-web/#viewer-e4sju</a></p>
                         <p>Llamas, J. (2022). Algoritmo. Economipedia.</p>
-                        <p><a href="https://economipedia.com/definiciones/algoritmo.html">https://economipedia.com/definiciones/algoritmo.html</a></p>
-                        <p>Londoño, P. (2023). Qué es un blog: Para qué sirve y herramientas útiles para crearlo. Hubspot. <a href="https://blog.hubspot.es/website/que-es-un-blog">https://blog.hubspot.es/website/que-es-un-blog</a></p>
-                        <p>Londoño, P. (2023a). 19 plataformas para crear un blog en 2023 (y cómo elegir). Hubspot. <a href="https://blog.hubspot.es/website/paginas-para-crear-un-blog">https://blog.hubspot.es/website/paginas-para-crear-un-blog</a></p>
-                        <p>Maram, L. (2019). Qué tan rápido debes responder en redes sociales para ser una marca amada. Luis Maram. <a href="https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/">https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/</a></p>
+                        <p><a href="https://economipedia.com/definiciones/algoritmo.html" target="_blank">https://economipedia.com/definiciones/algoritmo.html</a></p>
+                        <p>Londoño, P. (2023). Qué es un blog: Para qué sirve y herramientas útiles para crearlo. Hubspot. <a href="https://blog.hubspot.es/website/que-es-un-blog" target="_blank">https://blog.hubspot.es/website/que-es-un-blog</a></p>
+                        <p>Londoño, P. (2023a). 19 plataformas para crear un blog en 2023 (y cómo elegir). Hubspot. <a href="https://blog.hubspot.es/website/paginas-para-crear-un-blog" target="_blank">https://blog.hubspot.es/website/paginas-para-crear-un-blog</a></p>
+                        <p>Maram, L. (2019). Qué tan rápido debes responder en redes sociales para ser una marca amada. Luis Maram. <a href="https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/" target="_blank">https://www.luismaram.com/que-tan-rapido-debes-responder-en-redes-sociales/</a></p>
                         <p>MarketingDirecto. (2022). Audiencia - marketing directo.</p>
-                        <p><a href="https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2">https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2</a></p>
+                        <p><a href="https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2" target="_blank">https://www.marketingdirecto.com/diccionario-marketing-publicidad-comunicacion-nuevas-tecnologias/audiencia-2</a></p>
                         <p>Marieke van de Rakt, (2022), SEO Basics Yoast. </p>
-                        <p><a href="https://yoast.com/tag/seo-basics/">https://yoast.com/tag/seo-basics/</a></p>
+                        <p><a href="https://yoast.com/tag/seo-basics/" target="_blank">https://yoast.com/tag/seo-basics/</a></p>
                         <p>Meijomil, S. (2017).  Webinar · Qué es y cómo utilizarlo en tu estrategia de contenidos - InboundCycle.</p>
-                        <p><a href="https://www.inboundcycle.com/diccionario-marketing-online/webinar">https://www.inboundcycle.com/diccionario-marketing-online/webinar</a></p>
+                        <p><a href="https://www.inboundcycle.com/diccionario-marketing-online/webinar" target="_blank">https://www.inboundcycle.com/diccionario-marketing-online/webinar</a></p>
                         <p>Muxach, C. (2022). Cómo crear una estrategia de marketing en redes sociales en 7 pasos. </p>
-                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales">https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales</a></p>
-                        <p>Newberry, C. (2023). 16 métricas de redes sociales que realmente importan y cómo darles seguimiento. Social Media Marketing &amp; Management Dashboard. <a href="https://blog.hootsuite.com/es/metricas-de-redes-sociales/">https://blog.hootsuite.com/es/metricas-de-redes-sociales/</a></p>
+                        <p><a href="https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales" target="_blank">https://www.inboundcycle.com/blog-de-inbound-marketing/como-crear-estrategia-de-marketing-en-redes-sociales</a></p>
+                        <p>Newberry, C. (2023). 16 métricas de redes sociales que realmente importan y cómo darles seguimiento. Social Media Marketing &amp; Management Dashboard. <a href="https://blog.hootsuite.com/es/metricas-de-redes-sociales/" target="_blank">https://blog.hootsuite.com/es/metricas-de-redes-sociales/</a></p>
                         <p>Núñez, V. (2018). Cómo crear una estrategia en redes sociales efectivamente. Vilma Núñez - Consultora Estratégica de Marketing.</p>
-                        <p><a href="https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/">https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/</a></p>
-                        <p>Quiroa, M. (2022b). Tipos de demanda en marketing. Economipedia. <a href="https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html">https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html</a></p>
-                        <p>RAE. (s. f.). Emoji | Diccionario de la Lengua Española. «Diccionario de la lengua española» - Edición del Tricentenario. <a href="https://dle.rae.es/emoji">https://dle.rae.es/emoji</a></p>
-                        <p>RD Station. (s. f.). Email Marketing: la guía completa para campañas de email exitosas. <a href="https://www.rdstation.com/mx/email-marketing/#topic0">https://www.rdstation.com/mx/email-marketing/#topic0</a></p>
+                        <p><a href="https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/" target="_blank">https://vilmanunez.com/como-crear-una-estrategia-en-redes-sociales/</a></p>
+                        <p>Quiroa, M. (2022b). Tipos de demanda en marketing. Economipedia. <a href="https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html" target="_blank">https://economipedia.com/definiciones/tipos-de-demanda-en-marketing.html</a></p>
+                        <p>RAE. (s. f.). Emoji | Diccionario de la Lengua Española. «Diccionario de la lengua española» - Edición del Tricentenario. <a href="https://dle.rae.es/emoji" target="_blank">https://dle.rae.es/emoji</a></p>
+                        <p>RD Station. (s. f.). Email Marketing: la guía completa para campañas de email exitosas. <a href="https://www.rdstation.com/mx/email-marketing/#topic0" target="_blank">https://www.rdstation.com/mx/email-marketing/#topic0</a></p>
                         <p>Rock Content. (2019). Redes sociales: qué son, cómo funcionan, qué tipos existen y cómo influyen en las estrategias de marketing. Rock Content.</p>
-                        <p><a href="https://rockcontent.com/es/blog/que-son-las-redes-sociales/">https://rockcontent.com/es/blog/que-son-las-redes-sociales/</a></p>
+                        <p><a href="https://rockcontent.com/es/blog/que-son-las-redes-sociales/" target="_blank">https://rockcontent.com/es/blog/que-son-las-redes-sociales/</a></p>
                         <p>Sarmiento, A. (2022). Así se prevé que crecerán los usuarios de redes sociales en Latinoamérica. Business Insider México | Noticias pensadas para ti.</p>
-                        <p><a href="https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/">https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/</a></p>
+                        <p><a href="https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/" target="_blank">https://businessinsider.mx/crecimiento-usuarios-redes-sociales-latinoamerica-2022-emarketer_tecnologia/</a></p>
                         <p>Santos, D. (2023). Qué es un chatbot: Para qué sirve y cómo usarlo para atraer clientes. Hubspot. </p>
-                        <p><a href="https://blog.hubspot.es/marketing/chatbot">https://blog.hubspot.es/marketing/chatbot</a></p>
-                        <p>Edwin Toonen, (2023), What is on-page SEO? Yoast. <a href="https://yoast.com/what-is-onpage-seo/">https://yoast.com/what-is-onpage-seo/</a></p>
-                        <p>Statista (2023). Aplicaciones de mensajería: ranking según usuarios mensuales activos 2023 | Recuperado de</p>
-                        <p><a href="https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/">https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/</a></p>
+                        <p><a href="https://blog.hubspot.es/marketing/chatbot" target="_blank">https://blog.hubspot.es/marketing/chatbot</a></p>
+                        <p>Edwin Toonen, (2023), What is on-page SEO? Yoast. <a href="https://yoast.com/what-is-onpage-seo/" target="_blank">https://yoast.com/what-is-onpage-seo/</a></p>
+                        <p>Statista (2023). Aplicaciones de mensajería: ranking según usuarios mensuales activos 2023 | Recuperado de <a href="https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/" target="_blank">https://es.statista.com/estadisticas/599043/aplicaciones-de-mensajeria-mas-populares-a-nivel-mundial-de/</a></p>
                     </div>
                 </section>
 

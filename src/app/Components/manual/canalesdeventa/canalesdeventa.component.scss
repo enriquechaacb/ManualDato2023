@@ -33,29 +33,6 @@
             }
         }
         color:var(--comunicacion);
-        .hint{
-            background-color: var(--grey);
-            padding: 30px;
-            margin: 2em;
-            border-radius: 15px;
-            border: solid 1px var(--negro25);
-            filter: drop-shadow(0px 4px 6px var(--negro25));
-            display: flex;
-            &::before{
-                content: "\e90f";
-                font-family: 'Material Icons';
-                font-size: 3em;
-                color: var(--blanco);
-                background-color: var(--accent);
-                height: 60px;
-                margin-right: 15px;
-                width: 60px;
-                border-radius: 30px;
-                text-align: center;
-                line-height: 1.3em;
-                flex: 0 0 60px;
-            }
-        }
         .tool{
             padding: 15px;
             border-radius: 15px;

@@ -46,13 +46,15 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es el comercio electrónico?</span></h2>
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="Definición de comercio electrónico">
+                            <mat-tab label="1. Definición de comercio electrónico">
                                 <h3 class="mt-3"><i class="num">1</i> Definición de comercio electrónico</h3>
-                                <p>De acuerdo con la Organización para la Cooperación y el Desarrollo Económico (OCDE) el comercio electrónico también conocido como<em> e-commerce</em> se refiere a los actos comerciales realizados a través de medios electrónicos (Internet). Alude a las transacciones de venta o compra de bienes o servicios realizados en redes computacionales a través de métodos específicamente designados para el propósito de recibir o generar órdenes de compra o venta. </p>
+                                <div class="definition">
+                                    <p>De acuerdo con la Organización para la Cooperación y el Desarrollo Económico (OCDE) el comercio electrónico también conocido como<em> e-commerce</em> se refiere a los actos comerciales realizados a través de medios electrónicos (Internet). Alude a las transacciones de venta o compra de bienes o servicios realizados en redes computacionales a través de métodos específicamente designados para el propósito de recibir o generar órdenes de compra o venta.</p>
+                                </div>
                                 <p>La Organización Mundial de Comercio (OMC), define como “La producción, publicidad, venta y distribución, comercialización, venta o entrega de bienes y servicios por medios electrónicos” algunos ejemplos pueden ser los pagos móviles y en línea y la compra de productos tangibles e intangibles, vía Internet. </p>
                                 <p>Una transacción de comercio electrónico se puede dar entre empresas, hogares, individuos, gobiernos y otras organizaciones públicas o privadas, realizadas a través de Internet.</p>
                             </mat-tab>
-                            <mat-tab label="Características del comercio electrónico">
+                            <mat-tab label="2. Características del comercio electrónico">
                                 <h3 class="mt-3"><i class="num">2</i> Características del comercio electrónico</h3>
                                 <p>En el contexto del comercio electrónico hay varios actores y procesos involucrados, como la gestión de pagos, logística, atención postventa, infraestructura tanto de hardware como de software necesaria para operar eficientemente en el ámbito digital. Además, el comercio electrónico ofrece beneficios tanto para empresas como para los consumidores, como el acceso a mercados más amplios, reducción de barreras de entrada y costos operativos, y una mayor diversidad en la oferta de bienes y servicio</p>
                                 <p>El comercio electrónico o digital presenta una serie de características que lo definen y que lo diferencian del comercio tradicional, a continuación, el detalle de las más reconocidas:</p>
@@ -74,14 +76,13 @@
                                 <img src="../../../../../assets/images/dimensions/canales/5_Modelos_negocio_ecomercio.webp" class="img-fluid" />
                                 <separator></separator>
                             </mat-tab>
-                            <mat-tab label="Implementación de comercio electrónico">
+                            <mat-tab label="3. Implementación de comercio electrónico">
                                 <h3 class="mt-3"><i class="num">3</i> Implementación de comercio electrónico</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Identificacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Identificacion')" id="Identificacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.1. Identificación de la idea de negocio</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Identificacion">3.1. Identificación de la idea de negocio</h4>
                                         <div class="texto-video">
                                             <p>Las empresas comprenden que su crecimiento está en continuo desarrollo y lanzan productos nuevos y mejores. La renovación continua parece ser la única manera de impedir que la empresa se vuelva obsoleta. </p>
                                             <p>Por otro lado, hay emprendedores que no tienen una empresa para desarrollar productos, pero sí tienen una idea de negocio que les gustaría lanzar al mercado.</p>
@@ -90,20 +91,18 @@
                                         <img src="../../../../../assets/images/dimensions/canales/6_Etapas_idea_negocio.webp" class="img-fluid" />
                                         <separator></separator>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('segmento')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('segmento')" id="segmento">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.2. Definición de segmento de mercado</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="segmento">3.2. Definición de segmento de mercado</h4>
                                         <p>La segmentación de mercados es una etapa crucial en la implementación del comercio electrónico para una empresa. Implica dividir el mercado en grupos más pequeños y homogéneos con características y comportamientos similares.</p>
                                         <p>Al realizar este proceso se podrá entender mejor quiénes son los clientes potenciales, qué buscan, cuáles son sus intereses y cómo prefieren interactuar con la marca en el mundo digital.</p>
                                         <p>Para profundizar en este tema y aprender cómo desarrollar una segmentación de mercados efectiva, consulta el eje temático de arquetipos de clientes en esta plataforma de Economía del Dato, ahí se encuentra una guía detallada y ejemplos para identificar y definir el segmento de mercado.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('plataforma')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('plataforma')" id="plataforma">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.3. Selección de plataforma para sitio web</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="plataforma">3.3. Selección de plataforma para sitio web</h4>
                                         <div class="texto-video">
                                             <p>Una tienda en línea es el canal de comunicación entre la empresa y los potenciales clientes. En ella se podrá tener una bitácora de ventas, un inventario, catálogos y hasta brindar una mejor experiencia de usuario al permitir que éstos dejen comentarios y emitan calificativos sobre los productos o servicios.</p>
                                             <p>Existen diversas formas de construir una tienda en línea, tales como contratar a un programador o diseñador web; hacerlo a través de un sistema de gestión de contenidos (CMS) dedicado al comercio electrónico, o bien utilizar un Marketplace como Mercado libre o Amazon. Para efectos de esta sección se clasificará de acuerdo con el orden de mención como experto, CMS y Marketplace para compartir sus características particulares.</p>
@@ -124,14 +123,14 @@
                                             <p>Una vez que se tiene un panorama más amplio sobre las diversas opciones, a continuación, se indican los administradores de contenido y Marketplace más populares, que también se abordan en el eje de Medios de pago que se encuentra en la Dimensión Estrategia y transformación digital de esta plataforma de Economía del dato. </p>
                                             <p><strong>Administradores de contenidos </strong></p>
                                             <ul>
-                                                <li><a href="https://www.shopify.com/mx">Shopify</a></li>
+                                                <li><a href="https://www.shopify.com/mx" target="_blank">Shopify</a></li>
                                                 <li>WordPress con programa WooCommerce</li>
-                                                <li>Wix </li>
-                                                <li>Prestashops </li>
-                                                <li>Adobe Commerce </li>
-                                                <li>Marketplace </li>
+                                                <li>Wix</li>
+                                                <li>Prestashops</li>
+                                                <li>Adobe Commerce</li>
+                                                <li>Marketplace</li>
                                                 <li>Mercado Libre</li>
-                                                <li>Amazon </li>
+                                                <li>Amazon</li>
                                             </ul>
                                             <p>Para profundizar la información te recomendamos visitar la sección de canales de ventas y medios de pago en el eje del mismo nombre de esta Dimensión de Comunicación y canales de venta.</p>
                                             <p><strong>3.3.1 Pasarelas de pago</strong></p>
@@ -158,11 +157,10 @@
                                             <p>Al escoger una pasarela de pago se sugiere revisar qué comisiones cobran y cuáles se ajustan al presupuesto de la empresa, observar qué métodos de pago admiten ya que en ocasiones no siempre aceptan todas las tarjetas de crédito o débito, y cuáles de ellas terminan la transacción dentro del sitio web, pues si envían al cliente a otro sitio diferente puede provocar desconfianza. Para profundizar en las pasarelas de pago, sugerimos consultar el eje de Medios de pago digital que se encuentra en la Dimensión Estrategia y transformación digital de esta misma plataforma de Economía del Dato.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('canal')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('canal')" id="canal">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.4. Diseño del canal de suministro y logístico. </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="canal">3.4. Diseño del canal de suministro y logístico. </h4>
                                         <div class="texto-video">
                                             <p>Un comercio electrónico tiene dos momentos claves para su elaboración que son el diseño de la cadena de suministro y la logística. En ocasiones se consideran dos temas por separado pero la realidad es que uno depende del otro. Es importante conocer la diferencia para aplicarlo dentro de la empresa.</p>
                                             <p>Según Romero (2022), la logística “es un conjunto de procedimientos que facilitan la coordinación de un producto desde su fabricación hasta el cliente final”. <br />Por otro lado, para Quintal (2022), una cadena de suministro se relaciona con “todas las actividades para el comercio de un producto, desde que se obtienen las materias primas, durante la producción, el almacenamiento y distribución hasta el consumidor final”.</p>
@@ -179,11 +177,10 @@
                                         <img src="../../../../../assets/images/dimensions/canales/9_Ejemplo_cadena_suministro_comercio_electronico.webp" class="img-fluid" />
                                         <separator></separator>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Plan')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Plan')" id="Plan">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.5. Plan de comunicación</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Plan">3.5. Plan de comunicación</h4>
                                         <div class="texto-video">
                                             <p>Una vez seleccionado el segmento de mercado, elaborado el producto o servicio, planeadas la cadena de suministro y logística y creada una tienda en línea en la plataforma más conveniente, la etapa final es la elaboración de un programa de comunicación para dar a conocer a la empresa. </p>
                                             <p>La comunicación de la marca del negocio es un elemento crítico para el éxito de un negocio digital. Hacerlo de manera efectiva permite conectar con los clientes, establecer una relación de confianza y mantener a la audiencia informada y comprometida. </p>
@@ -198,16 +195,16 @@
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        <p>Cárdenas, J. (2021). Guía de cómo elaborar la política de privacidad de tu empresa según los parámetros legales. Rock Content - ES. <a href="https://rockcontent.com/es/blog/politica-de-privacidad/">https://rockcontent.com/es/blog/politica-de-privacidad/</a></p>
+                        <p>Cárdenas, J. (2021). Guía de cómo elaborar la política de privacidad de tu empresa según los parámetros legales. Rock Content - ES. <a href="https://rockcontent.com/es/blog/politica-de-privacidad/" target="_blank">https://rockcontent.com/es/blog/politica-de-privacidad/</a></p>
                         <p>Fischer, L., &amp; Espejo, J. (2011). Mercadotecnia (4.a ed.). McGraw-Hill/Interamericana Editores, S.A. de C.V.</p>
-                        <p>Galán, J. S. (2022a). Costos operativos. Economipedia. <a href="https://economipedia.com/definiciones/costos-operativos.html">https://economipedia.com/definiciones/costos-operativos.html</a></p>
-                        <p>IBM. (2023). ¿Qué es la gestión de la cadena de suministro? <a href="https://www.ibm.com/mx-es/topics/supply-chain-management">https://www.ibm.com/mx-es/topics/supply-chain-management</a></p>
-                        <p>Mailchimp. (s.f.). ¿Qué es un certificado SSL? | Mailchimp. <a href="https://mailchimp.com/es/resources/what-is-ssl-certificate/">https://mailchimp.com/es/resources/what-is-ssl-certificate/</a></p>
+                        <p>Galán, J. S. (2022a). Costos operativos. Economipedia. <a href="https://economipedia.com/definiciones/costos-operativos.html" target="_blank">https://economipedia.com/definiciones/costos-operativos.html</a></p>
+                        <p>IBM. (2023). ¿Qué es la gestión de la cadena de suministro? <a href="https://www.ibm.com/mx-es/topics/supply-chain-management" target="_blank">https://www.ibm.com/mx-es/topics/supply-chain-management</a></p>
+                        <p>Mailchimp. (s.f.). ¿Qué es un certificado SSL? | Mailchimp. <a href="https://mailchimp.com/es/resources/what-is-ssl-certificate/" target="_blank">https://mailchimp.com/es/resources/what-is-ssl-certificate/</a></p>
                         <p>Laudon, K. C., &amp; Traver, C. G. (2014). E-commerce 2013: negocios, tecnología, sociedad.</p>
-                        <p>Licari, S. (2023). ¿Qué es una lluvia de ideas? Ejemplos y técnicas eficaces. Hubspot. <a href="https://blog.hubspot.es/marketing/tecnicas-lluvia-de-ideas-creativas">https://blog.hubspot.es/marketing/tecnicas-lluvia-de-ideas-creativas</a></p>
-                        <p>Quintal, P. (2022). Cadena de suministro: ¿Qué es y cuál es su importancia? Blog del E-commerce. <a href="https://www.tiendanube.com/mx/blog/cadena-de-suministro/">https://www.tiendanube.com/mx/blog/cadena-de-suministro/</a></p>
-                        <p>Romero, C. (2022). ¿Cuál es la diferencia entre logística y cadena de suministro? -. Blog del E-commerce. </p>
-                        <p><a href="https://www.tiendanube.com/mx/blog/diferencia-entre-logistica-y-cadena-de-suministro/">https://www.tiendanube.com/mx/blog/diferencia-entre-logistica-y-cadena-de-suministro/</a></p>
+                        <p>Licari, S. (2023). ¿Qué es una lluvia de ideas? Ejemplos y técnicas eficaces. Hubspot. <a href="https://blog.hubspot.es/marketing/tecnicas-lluvia-de-ideas-creativas" target="_blank">https://blog.hubspot.es/marketing/tecnicas-lluvia-de-ideas-creativas</a></p>
+                        <p>Quintal, P. (2022). Cadena de suministro: ¿Qué es y cuál es su importancia? Blog del E-commerce. <a href="https://www.tiendanube.com/mx/blog/cadena-de-suministro/" target="_blank">https://www.tiendanube.com/mx/blog/cadena-de-suministro/</a></p>
+                        <p>Romero, C. (2022). ¿Cuál es la diferencia entre logística y cadena de suministro? -. Blog del E-commerce.</p>
+                        <p><a href="https://www.tiendanube.com/mx/blog/diferencia-entre-logistica-y-cadena-de-suministro/" target="_blank">https://www.tiendanube.com/mx/blog/diferencia-entre-logistica-y-cadena-de-suministro/</a></p>
                     </div>
                 </section>
 

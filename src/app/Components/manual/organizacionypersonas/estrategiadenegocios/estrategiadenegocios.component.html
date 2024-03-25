@@ -47,11 +47,13 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es estrategia de negocios en la era digital?</span></h2>
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="Definición">
+                            <mat-tab label="1. Definición">
                                 <h3 class="mt-3"><i class="num">1</i> Definición</h3>
-                                <p>Estrategia de negocios en la era digital alude al diseño de un plan que define cómo una pyme aprovecha las oportunidades y resuelve los desafíos que se le presentan en el entorno digital, todo ello dirigido al logro de sus objetivos de crecimiento, competitividad y rentabilidad.</p>
+                                <div class="definition">
+                                    <p>Estrategia de negocios en la era digital alude al diseño de un plan que define cómo una pyme aprovecha las oportunidades y resuelve los desafíos que se le presentan en el entorno digital, todo ello dirigido al logro de sus objetivos de crecimiento, competitividad y rentabilidad.</p>
+                                </div>
                             </mat-tab>
-                            <mat-tab label="Análisis e investigación de mercado">
+                            <mat-tab label="2. Análisis e investigación de mercado">
                                 <h3 class="mt-3"><i class="num">2</i> Análisis e investigación de mercado</h3>
                                 <div class="texto-video">
                                     <p>Para poder llevar a cabo el diseño de estrategias de negocio en el ámbito digital, es necesario conocer muy bien el mercado en el que se está participando. No basta con tener buenas ideas, si estas no son coherentes y no están alineadas a una estrategia integral.</p>
@@ -62,11 +64,10 @@
                                     <p>Para facilitar la comprensión del mercado, aquí encontrarás tres elementos indispensables para profundizar en él, nos centraremos en los clientes, competidores y sustitutos.</p>
                                 </div>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Clientes')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Clientes')" id="Clientes">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.1. Clientes </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Clientes">2.1. Clientes </h4>
                                         <p>Comencemos por entender y analizar a los clientes. En el año 1943 y luego en 1954 el psicólogo estadounidense Abraham Maslow escribió un artículo y un libro en el que señala que los seres humanos nos comportamos con base en distintas necesidades. Él hablaba de:</p>
                                         <ul>
                                             <li><strong>Necesidades fisiológicas,</strong> como comer, respirar o tomar agua.</li>
@@ -82,7 +83,7 @@
                                         <p>Ahora bien, analizar a los clientes uno por uno puede ser muy difícil. Cuando nuestra empresa es pequeña, podríamos darnos el lujo de analizar cliente por cliente, sin embargo, conforme van aumentando los clientes y creciendo la empresa, eso puede resultar prácticamente imposible, para ello se recomienda analizar a los clientes por grupos. </p>
                                         <p>Un médico que pone un consultorio y tiene un número limitado de clientes, podría analizar sus necesidades uno por uno, pero un hospital que tiene cientos o miles de clientes no podría hacer eso, así que la manera de entender las necesidades de los clientes es agrupándolos por características similares entre ellos.</p>
                                         <p>A los clientes se les puede agrupar por edad, por nivel socioeconómico, por gustos y preferencias que puede tener etcétera. A estos grupos se les conoce como “Nicho de mercado”. Un nicho de mercado es un grupo de clientes que comparten características comunes y que podemos decir que tienen gustos similares y en consecuencia tendrán necesidades similares por satisfacer.</p>
-                                        <p>Recomendamos ver el video <a href="https://www.youtube.com/watch?v=kZPPoPMwrIE">https://www.youtube.com/watch?v=kZPPoPMwrIE</a> permite comprender de manera más ágil, lo que es un nicho de mercado.</p>
+                                        <p>Recomendamos ver el video <a href="https://www.youtube.com/watch?v=kZPPoPMwrIE" target="_blank">https://www.youtube.com/watch?v=kZPPoPMwrIE</a> permite comprender de manera más ágil, lo que es un nicho de mercado.</p>
                                         <p>Para definir un nicho de mercado necesitamos identificar a un grupo de personas que tengan necesidades similares y potencial de compra, es decir que tengan dinero. Para identificar el nicho de mercado se debe segmentar el mercado, es decir hacer pequeños grupos de clientes con características comunes, como por ejemplo por rangos de edad, y ubicadas en una zona geográfica común, y que tengan gustos y preferencias comunes. Por ejemplo, un segmento de mercado puede ser jóvenes de 18 a 25 años en la ciudad de Bogotá. Incluso se puede segmentar por los gustos o preferencias de las personas. </p>
                                         <p>¿Para qué sirve segmentar? porque no a todos los clientes les interesa lo mismo. Por ejemplo, imagina que vendes hamburguesas, tú podrías decir que los clientes son todas las personas desde los 5 años hasta 99 años. Y si bien todos ellos pueden ir y comprar una hamburguesa, tú tienes que diseñar una estrategia para dirigirte a uno o varios grupos específicos de personas que te van a comprar con mayor probabilidad. Por ejemplo, jóvenes de 18 a 25 años, de la ciudad de Bogotá que sean de un nivel socioeconómico medio alto, y que estén estudiando la universidad o sean recién egresados.</p>
                                         <p>Identificar este segmento tan específico te va a permitir hacer estrategias precisas, por ejemplo, si estos son tus clientes entonces deberías anunciarte en Tiktok, porque es la red más indicada para este segmento. Pero si tu segmento al que vas a vender está en un rango de edad de entre 45 y 60 años, de la Ciudad de Bogotá, de nivel socioeconómico medio, entonces deberías anunciarte en Facebook o utilizando afiches o anuncios de papel en la zona cercana a donde venderás las hamburguesas, ya que podría ser la forma más indicada de llegar al segmento de clientes que tienes.</p>
@@ -92,7 +93,7 @@
                                         <separator></separator>
                                         <p>En la Ilustración 1. Podemos ver gráficamente nuestro ejemplo de las hamburguesas. Tenemos todo el mercado que es la gente de Bogotá, pero el nicho de mercado al que deseamos llegar con esas hamburguesas está compuesto por dos segmentos, uno el de jóvenes de 18 a 25 años de nivel socioeconómico medio alto y otro de personas de 45 a 60 años de nivel socioeconómico medio. Identificarlos es muy importante porque a la hora de hacer estrategias de mercadotecnia para esos segmentos, será más fácil. </p>
                                         <p>Para profundizar en el tema de segmento de mercado, es bueno ver el siguiente video</p>
-                                        <p><a href="https://www.youtube.com/watch?v=MAbo2baFGhs">https://www.youtube.com/watch?v=MAbo2baFGhs</a> </p>
+                                        <p><a href="https://www.youtube.com/watch?v=MAbo2baFGhs" target="_blank">https://www.youtube.com/watch?v=MAbo2baFGhs</a> </p>
                                         <p>Entonces, varios segmentos de mercado juntos integran el nicho de mercado, es decir dos o tres segmentos puede que sean tu nicho, en otras palabras, esos grupos de personas que comparten necesidades e interés por tu producto o servicio son tu nicho de mercado.</p>
                                         <p>Así que es importante conocer bien ¿qué tipo de clientes son tus consumidores? Y ¿cuáles son sus características comunes? En la medida en la que se haga una segmentación más específica, más asertiva será la estrategia. </p>
                                         <p>Un error muy común es hacer segmentos muy amplios, diciendo, “es que todos me comprarían, todos podrían ser mis clientes”, y si bien eso podría ser verdad, la realidad es que los segmentos se hacen para que se puedan diseñar estrategias adecuadas. Regresando al ejemplo de las hamburguesas, cualquiera entre 5 años y 99 puede comer hamburguesas, pero tenemos que hacer un segmento de 18 a 25 años para diseñar una estrategia específica a ese grupo, que no tiene nada en común con el grupo de 45 a 60 años. Entonces a cada grupo le haremos su estrategia.</p>
@@ -111,11 +112,10 @@
                                             <p>Finalmente, ya que hemos segmentado el mercado, tendremos mucho más claras cuáles son las necesidades que debemos resolver en nuestro cliente y entonces con ello podremos diseñar de mejor manera la estrategia. Para segmentar el mercado te proponemos usar el formato para definir segmento y nicho de mercado, así como escuchar el podcast acerca de un caso de definición de nicho de mercado.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('sustitutos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('sustitutos')" id="sustitutos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.2. Competidores y sustitutos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="sustitutos">2.2. Competidores y sustitutos </h4>
                                         <p>Otro de los elementos que debemos conocer en el mercado, además de los clientes, es a nuestros competidores y los productos sustitutos. Lo primero que haremos es definir un competidor y un producto sustituto.</p>
                                         <div class="texto-video">
                                             <p>Un competidor es aquel negocio o persona que participa en el mismo mercado ofreciendo similares productos o servicios al mismo segmento de mercado. Reconocer a estos actores y comprender sus estrategias es esencial para el éxito sostenible de nuestro negocio. Ahora bien, identificar a los competidores no solo implica conocer sus nombres y en dónde están, por el contrario, es indispensable tener muy claro todo acerca de ellos, su modelo de negocio, sus estrategias, sus fortalezas y sus debilidades. </p>
@@ -150,7 +150,7 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Análisis de la situación de la empresa, análisis FODA">
+                            <mat-tab label="3. Análisis de la situación de la empresa, análisis FODA">
                                 <h3 class="mt-3"><i class="num">3</i> Análisis de la situación de la empresa, análisis FODA</h3>
                                 <p>Una vez que se cuenta con información detallada de los clientes y los competidores, viene el momento de realizar un proceso de reflexión para identificar cómo se encuentra la empresa en términos generales. Para ello existe una herramienta muy conocida que se llama Análisis FODA. La palabra FODA es el acrónimo de Fortalezas, Oportunidades, Debilidades y Amenazas. También lo encontrarás en inglés como análisis SWOT.</p>
                                 <p>Esta herramienta lo que busca es ayudar al empresario o emprendedor a comprender de manera sencilla cuál es la condición que guarda una empresa respecto al mercado en el que se participa. El análisis FODA permite realizar una reflexión en torno a las ventajas que la empresa tiene para competir y las desventajas que debe afrontar. Veamos cada uno de los elementos que componen el análisis FODA:</p>
@@ -158,9 +158,9 @@
                                 <separator></separator>
                                 <p>Para llevar a cabo este análisis, sugerimos utilizar el Formato para FODA.docx que le permite identificar los principales elementos, con los que compite en el mercado.</p>
                                 <p>A partir de haber identificado sus Fortalezas, Oportunidades, Debilidades y Amenazas, podrás contar con información valiosa para el diseño de tu estrategia de mercado. Este ejercicio del análisis FODA es un insumo muy valioso que debe tener presente al momento de diseñar estrategias de mercado que es el tema siguiente en este apartado.</p>
-                                <p>Además del FODA, existen herramientas adicionales que buscan crear estrategias combinando los insumos propios del FODA, una de estas herramientas es la Matriz FODA. Sugerimos ver el siguiente video explicativo de cómo integrar la matriz <a href="https://www.youtube.com/watch?v=IZWUYayHLcI">https://www.youtube.com/watch?v=IZWUYayHLcI</a> </p>
+                                <p>Además del FODA, existen herramientas adicionales que buscan crear estrategias combinando los insumos propios del FODA, una de estas herramientas es la Matriz FODA. Sugerimos ver el siguiente video explicativo de cómo integrar la matriz <a href="https://www.youtube.com/watch?v=IZWUYayHLcI" target="_blank">https://www.youtube.com/watch?v=IZWUYayHLcI</a> </p>
                             </mat-tab>
-                            <mat-tab label="Estrategias de marketing digital">
+                            <mat-tab label="4. Estrategias de marketing digital">
                                 <h3 class="mt-3"><i class="num">4</i> Estrategias de marketing digital</h3>
                                 <div class="texto-video">
                                     <p>El marketing digital es un conjunto de técnicas y estrategias diseñadas y encaminadas a la promoción de productos o servicios de un negocio todo a través de Internet, como sitios web, buscadores, redes sociales, entre otros.</p>
@@ -168,11 +168,10 @@
                                     <p>Identificar las 4P de nuestro producto o servicio son un buen punto de partida para elaborar estrategias de marketing digital. El precio, las características del producto, la promoción que se hace y la plaza, es decir cómo se comercializa. Veamos cada una de estas P, para que puedas diseñar tu estrategia.</p>
                                 </div>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Producto')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Producto')" id="Producto">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.1. Producto </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Producto">4.1. Producto </h4>
                                         <div class="texto-video">
                                             <p>La primera de las P se refiere al producto, o en algunos casos al servicio que ofreces. Cuando hablamos del producto o servicio, no solo hacemos referencia a tener claro el mismo y ya, sino a definir un conjunto de aspectos necesarios, que le dan forma al producto o servicio ante los ojos de nuestros clientes.</p>
                                             <p>Por ejemplo, una persona que va a comprar una pizza, no solo se preocupa por la pizza y ya, los clientes suelen ver aspectos como la variedad de pizzas que un restaurante les ofrece, si hay de varios ingredientes, tipos de pan o masa que usan para hacer la pizza, además prestan atención a qué tan bien preparada está, a cómo viene envasada, si llega fría o aun llega a su casa caliente, otro aspecto importante es qué tan pronto llega la pizza, y también es muy relevante qué tan sencillo o complicado es hacer el pedido. Si cada vez que pides una pizza a domicilio se hace muy complicado el proceso, porque hay que llamar, esperar en el teléfono, tener que dar muchos datos, etcétera, entonces por muy deliciosa que esté la pizza, el cliente va a preferir comprar en otro restaurante en donde sea mucho más fácil, y si se puede hacer en internet y con pasos muy sencillos, eso influirá en que el cliente prefiera la pizza con menos sabor, pero con mayor facilidad de compra.</p>
@@ -185,11 +184,10 @@
                                         <p>Para el caso de proyectos digitales, la P de producto debe estar pensada también en el segmento al que va dirigido el servicio digital. Si se está diseñando una aplicación, en realidad el producto no es la propia aplicación, ya que esta es más bien la vía a través de la cual se va a ofrecer un servicio. Por ejemplo, la aplicación de UBER o Cabify, no es el producto, la aplicación solamente es la vía a través de la cual se ofrece un servicio de transporte ágil. Así que se debe pensar en las características del servicio que se ofrece y la aplicación, entonces debe servir para dar el servicio tal y como se ha pensado y como lo necesita nuestro cliente.</p>
                                         <p>Por el contrario, si tenemos una empresa que no es digital, pero queremos añadir un servicio acompañado de algún elemento digital, lo que debemos pensar es en el servicio que el cliente desea, y ya que se tiene claro el servicio entonces pensar ¿qué herramienta puede ayudarnos a agilizar ese servicio? Retomando el ejemplo de la escuela, el servicio incluye dar las calificaciones a los padres de familia y la información de las tareas, pero ese servicio ya se tiene sin que haya una oferta digital, entonces teniendo claro el servicio, el paso siguiente es ¿de qué manera las herramientas digitales pueden ayudarnos a darles calificaciones y la información de tareas a los padres y madres de familia? Así la herramienta se suma al servicio, y no al revés.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Precio')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Precio')" id="Precio">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.2. Precio </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Precio">4.2. Precio </h4>
                                         <div class="texto-video">
                                             <p>La siguiente P se refiere al precio que se asignará al producto o servicio que se ofrecerá. Pero igual que en la P de Producto, no solo se trata de definir un precio y ya. Más bien es importante definir cuál es el mejor precio para el segmento de mercado al que estoy dirigiendo mi servicio o mi producto.</p>
                                         </div>
@@ -203,11 +201,10 @@
                                             <p>Cada empresa debe definir con claridad la estrategia que desea implementar, pero esa estrategia no puede ser una ocurrencia, más bien debe ser bien pensada en función del tipo de cliente y del producto o servicio que se ofrece en el mercado.</p>
                                         </div>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Plaza')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Plaza')" id="Plaza">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.3. Plaza </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Plaza">4.3. Plaza </h4>
                                         <div class="texto-video">
                                             <p>La P de Plaza, se refiere a los canales a través de los cuales llega el producto o servicio al cliente. Hoy en día existen pocas empresas que venden sus productos directamente a los usuarios finales; por el contrario, entre quien fabrica un producto y quien lo compra suele haber una serie de intermediarios que realizan diversas funciones. Estos intermediarios conforman los canales de venta y suelen participar en el proceso de poner a disposición de los consumidores un bien o un servicio para su uso (Kotler &amp; Keller, 2012).</p>
                                             <p>Esto implica que tal vez para ofrecer tu producto o servicio al mercado necesites de uno o más intermediarios, y ello requiere también de una estrategia.</p>
@@ -223,11 +220,10 @@
                                         <p>Un punto más al que debes prestarle atención es al tipo de transporte para tu producto y cómo hacer para que llegue bien a tu cliente y sin dañarse. Seguramente te interesa que tu producto llegue bien, tal y como sería si lo compran directamente contigo, entonces tendrás que planificar bien, cuál es el mejor transporte para tu producto o servicio y cómo harás para que llegue en perfectas condiciones.</p>
                                         <p>Hoy en día a través de los medios digitales, es muy común pensar en aplicaciones, o en sitios web de venta, sin embargo, debes preguntarte si los clientes a los que piensas llevar tus productos son los adecuados para el tipo de canal que pretendes usar.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Promocion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Promocion')" id="Promocion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.4. Promoción </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="Promocion">4.4. Promoción </h4>
                                         <div class="texto-video">
                                             <p>La última de las P es la de promoción. Esta se refiere a la manera en la que comunicarás a tus posibles clientes toda la información referente a tu producto. En este punto se incluye todo lo relacionado con la publicidad, pero también todo lo que tenga que ver con la comunicación con el cliente.</p>
                                             <p>Las comunicaciones están íntimamente vinculadas a los medios por los cuales las empresas intentan informar, persuadir y recordar a los consumidores, de manera directa o indirecta, sobre los productos y marcas que venden. De cierta manera, las comunicaciones de marketing representan la voz de la empresa y sus marcas; son los medios por los cuales la empresa puede establecer un diálogo y construir relaciones duraderas con sus consumidores (Kotler &amp; Keller, 2012). </p>
@@ -299,14 +295,13 @@
                                         <p>Estos son los principales elementos que debe tener presentes en el diseño de una estrategia empresarial de mercadotecnia en la era digital. Para hacer más fácil el proceso te proponemos usar el formato 4Ps.docx el cual te irá guiando paso a paso en definir los elementos clave de tu estrategia empresarial de mercadotecnia en la era digital.</p>
                                         <p>Finalmente vale la pena señalar que de manera más reciente han aparecido un sinnúmero de ideas y propuestas que señalan que existe muchas más P, o incluso quienes proponen que, ante la revolución digital, las P propuestas por McCarthy han cambiado a otras P. En realidad, casi todo lo que hoy en día se dice en torno a la idea de las 4 P, podrían entrar y encuadrarse en el concepto ideado para crear estrategias de mercado por McCarthy, sin embargo, hay un punto muy específico que no existía en los años 60, y que tal vez si vale la pena considerar porque tiene un elemento diferenciador, y es la propuesta de una P que se refiere a la Predicción.</p>
                                         <p>En la época en la que McCarthy desarrolla el concepto de 4 P, no existía la inteligencia artificial, ni los algoritmos aplicados a analizar el comportamiento del consumidor, hoy en día eso ya se hace de manera natural en muchos sitios web, lo que permite predecir lo que los clientes requieren y desean comprar y hacer en el futuro, a través del análisis de los datos que los clientes van generando en sus consumos. Si hay una P que se podría agregar al concepto de las 4 P, este podría ser el de Predicción.</p>
-                                        <p>Para ejemplificar el potencial que se puede tener en cuanto a la predicción del consumo, te recomiendo ver el video <a href="https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared">https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared</a> que permite ver la manera en la que se puede llegar a identificar el consumo futuro, mediante el análisis de los datos que los consumidores generamos.</p>
-                                        <p>Finalmente, para reforzar el aprendizaje se recomienda ver los videoss <a href="https://www.youtube.com/watch?v=uhxViGl4tX0">https://www.youtube.com/watch?v=uhxViGl4tX0</a> que se refiere a las 4 P, y el video <a href="https://www.youtube.com/watch?v=2HuOar6VBUk">https://www.youtube.com/watch?v=2HuOar6VBUk</a> que se refiere al concepto de las 4 P en la era digital. Estos te servirán de repaso para algunos de los conceptos visto en este módulo.</p>
+                                        <p>Para ejemplificar el potencial que se puede tener en cuanto a la predicción del consumo, te recomiendo ver el video <a href="https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared" target="_blank">https://youtube.com/clip/UgkxyZBacnbLA-c8IpIIEVIADsbC7dmICVBS?feature=shared</a> que permite ver la manera en la que se puede llegar a identificar el consumo futuro, mediante el análisis de los datos que los consumidores generamos.</p>
+                                        <p>Finalmente, para reforzar el aprendizaje se recomienda ver los videoss <a href="https://www.youtube.com/watch?v=uhxViGl4tX0" target="_blank">https://www.youtube.com/watch?v=uhxViGl4tX0</a> que se refiere a las 4 P, y el video <a href="https://www.youtube.com/watch?v=2HuOar6VBUk" target="_blank">https://www.youtube.com/watch?v=2HuOar6VBUk</a> que se refiere al concepto de las 4 P en la era digital. Estos te servirán de repaso para algunos de los conceptos visto en este módulo.</p>
                                     </mat-expansion-panel>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('las4p')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('las4p')" id="las4p">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.5 Las 4 P adaptadas al marketing digital </mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="las4p">4.5 Las 4 P adaptadas al marketing digital </h4>
                                         <p>La evolución del marketing digital ha generado una adaptación de las 4 P tradicionales, que se han venido señalando en este apartado para reflejar las nuevas realidades y oportunidades que ofrece el entorno digital.</p>
                                         <img src="../../../../../assets/images/dimensions/personas/8_Las_4P_adaptadas_marketingdigital.webp" class="img-fluid" />
                                         <separator></separator>
@@ -321,7 +316,7 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Estrategias clave de publicidad en la era digital: SEO Marketing">
+                            <mat-tab label="5. Estrategias clave de publicidad en la era digital: SEO Marketing">
                                 <h3 class="mt-3"><i class="num">5</i> Estrategias clave de publicidad en la era digital: SEO Marketing</h3>
                                 <p>Como puedes ver, la publicidad en medios digitales es una estrategia más dentro de todas las opciones que existen para hacer publicidad, promoción y comunicación con los clientes, sin embargo, debido a la relevancia que hoy en día ha tomado este tipo de publicidad hablaremos de la importancia de contar con la optimización para motores de búsqueda conocida como SEO.</p>
                                 <p><em>Search Engine Optimization</em>, (SEO por sus siglas en inglés), se refiere a las prácticas y técnicas utilizadas para mejorar la visibilidad y el posicionamiento de un sitio web en los resultados de búsqueda orgánica de motores como Google, Bing y otros. A diferencia de la publicidad de pago (SEM), el SEO se centra en mejorar la posición de un sitio web de forma natural y no paga por clic.</p>
@@ -369,9 +364,9 @@
                                         </ul>
                                     </li>
                                 </ol>
-                                <p>Para reforzar este apartado te recomendamos ver el video: <a href="https://www.youtube.com/watch?v=_ewwO0Y1zb4">https://www.youtube.com/watch?v=_ewwO0Y1zb4</a> que se refiere a la técnica de posicionamiento web SEO.</p>
+                                <p>Para reforzar este apartado te recomendamos ver el video: <a href="https://www.youtube.com/watch?v=_ewwO0Y1zb4" target="_blank">https://www.youtube.com/watch?v=_ewwO0Y1zb4</a> que se refiere a la técnica de posicionamiento web SEO.</p>
                             </mat-tab>
-                            <mat-tab label="Comercio electrónico">
+                            <mat-tab label="6. Comercio electrónico">
                                 <h3 class="mt-3"><i class="num">6</i> Comercio electrónico</h3>
                                 <p>Una de las estrategias de distribución que se pueden enmarcar en la P de plaza, es el comercio electrónico. Por la relevancia del tema, abordaremos en específico una estrategia concreta.</p>
                                 <p>El comercio electrónico es la venta de productos o servicios a través de medios electrónicos o digitales. El comercio electrónico es solo una estrategia más dentro de la P de plaza, lo cual significa que puede haber otras opciones de venta o comercialización de servicios, y también es importante analizar si esta alternativa es la más adecuada para el tipo de cliente al que se desea vender.</p>
@@ -451,13 +446,13 @@
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        <p>Kotler, P., &amp; Keller, K. (2012). Dirección de Marketing. (A. Mues Z., &amp; M. Martínez G., Trads.) México: Pearson Educación. Recuperado de <a href="https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf">https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf</a></p>
+                        <p>Kotler, P., &amp; Keller, K. (2012). Dirección de Marketing. (A. Mues Z., &amp; M. Martínez G., Trads.) México: Pearson Educación. Recuperado de <a href="https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf" target="_blank">https://www.montartuempresa.com/wp-content/uploads/2016/01/direccion-de-marketing-14edi-kotler1.pdf</a></p>
                         <p>Maslow, A. (1943). A Theory of Human Motivation. Psychological Review, 370-396.</p>
-                        <p>Maslow, A. (1954). Motivación y personalidad. Madrid: Ediciones Díaz de Santos, S. A. Recuperado de <a href="https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf">https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf</a></p>
-                        <p>Molina, J. A. (2023). ¿Fracaso o éxito? Las empresas se juegan la existencia en sus primeros 3 años de vida. El Economista. Recuperado de <a href="https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html">https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html</a></p>
+                        <p>Maslow, A. (1954). Motivación y personalidad. Madrid: Ediciones Díaz de Santos, S. A. Recuperado de <a href="https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf" target="_blank">https://batalloso.com/wp-content/uploads/2021/09/Maslow-Abraham-Motivacion-Y-Personalidad.pdf</a></p>
+                        <p>Molina, J. A. (2023). ¿Fracaso o éxito? Las empresas se juegan la existencia en sus primeros 3 años de vida. El Economista. Recuperado de <a href="https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html" target="_blank">https://www.eleconomista.com.mx/el-empresario/Fracaso-o-exito-Las-empresas-se-juegan-la-existencia-en-sus-primeros-3-anos-de-vida-20230803-0003.html</a></p>
                         <p>Nordstrom, K., &amp; Ridderstrale, J. (2000). Funky Business. Madrid: Pearson Prentice Hall.</p>
                         <p>Porras, J. A., Oliveras, G., &amp; Vigier, H. P. (2013). Probabilidades de éxito para la creación de empresas: Implicancias sobre la educación emprendedora. Faedpyme International Review, 2. doi:10.15558/fir.v2i4.45</p>
-                        <p>Shum, Y. (2020). Pirámide de Maslow ¿Qué es? necesidades de los usuarios. Recuperado de <a href="https://yiminshum.com/piramide-maslow-que-es/">https://yiminshum.com/piramide-maslow-que-es/</a></p>
+                        <p>Shum, Y. (2020). Pirámide de Maslow ¿Qué es? necesidades de los usuarios. Recuperado de <a href="https://yiminshum.com/piramide-maslow-que-es/" target="_blank">https://yiminshum.com/piramide-maslow-que-es/</a></p>
                     </div>
                 </section>
 

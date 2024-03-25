@@ -1,10 +1,10 @@
 import { HostListener, Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class GlobalService {
-    public Secciones: any = sections;
     constructor(
         private _dialog: MatDialog
     ){}
@@ -27,14 +27,16 @@ export class GlobalService {
     public scrollToTop(id?:string) {
         var currentScroll = document.documentElement.scrollTop;
         if(currentScroll > 0){
-            // var n = 0;
-            // if(px && px > 0){n = px}
             if(id){
-                let el = document.getElementById(id);
-                console.log(`scrolling to ${id}`);
-                if(el){
-                    el.scrollIntoView()
-                }
+                var w = window.innerWidth;
+                var element = document.getElementById(id);
+                var headerOffset = w < 768 ? 0 : 110;
+                var elementPosition = element ? element.getBoundingClientRect().top : 0;
+                var offsetPosition = elementPosition + window.scrollY - headerOffset;
+                window.scrollTo({
+                     top: offsetPosition,
+                     behavior: "smooth"
+                });
             }else{
                 window.scrollTo(0, 0);
             }
@@ -42,17 +44,17 @@ export class GlobalService {
 	}
 }
 
-const sections = [
-    { Nombre: "Introducción", Valor: "Introduccion", Activo: true },
-    { Nombre: "¿Qué es?", Valor: "Definicion", Activo: true },
-    { Nombre: "Beneficios", Valor: "Beneficios", Activo: true },
-    { Nombre: "Proceso", Valor: "Proceso", Activo: true },
-    { Nombre: "Herramientas", Valor: "Herramientas", Activo: true },
-    { Nombre: "Glosario", Valor: "Glosario", Activo: true },
-    { Nombre: "Directorio de expertos", Valor: "Expertos", Activo: true },
-    { Nombre: "Instituciones clave", Valor: "Instituciones", Activo: true },
-    { Nombre: "Literatura sugerida y sitios web", Valor: "Literatura", Activo: true },
-    { Nombre: "Sitios web", Valor: "WebSites", Activo: false },
-    { Nombre: "Casos de éxito", Valor: "Casos", Activo: false },
-    { Nombre: "E-book", Valor: "analitica_de_datos", Activo: true, EsExterno: true }
-]
+
+@Injectable({
+    providedIn: 'root'
+})
+export class VariablesService {
+    private PageTitle = new BehaviorSubject<string>('');
+    private Url = new BehaviorSubject<string>('');
+
+    public pageTitle = this.PageTitle.asObservable();
+    public url = this.Url.asObservable();
+
+    public setPageTitle(x: any) { this.PageTitle.next(x); }
+    public setUrl(x: any) { this.Url.next(x); }
+}

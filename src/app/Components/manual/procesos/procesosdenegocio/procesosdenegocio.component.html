@@ -50,15 +50,17 @@
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los procesos de negocio?</span></h2>
+                        <div class="definition">
+                            
+                        </div>
                         <mat-tab-group class="vertical-tab-group">
-                            <mat-tab label="Introducción a los Procesos de Negocio">
+                            <mat-tab label="1. Introducción a los Procesos de Negocio">
                                 <h3 class="mt-3"><i class="num">1</i> Introducción a los Procesos de Negocio</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')" id="conceptos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.1 Qué son los procesos de negocio y su importancia en las organizaciones.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="conceptos">1.1 Qué son los procesos de negocio y su importancia en las organizaciones.</h4>
                                         <p>Los procesos de negocio son una serie de pasos que seguimos para hacer las cosas de manera organizada en una empresa y que, permiten transformar los insumos en resultados valiosos para una empresa. Son como recetas que nos guían para lograr nuestros objetivos de manera eficiente. Imagina que tienes una panadería. Para hacer pan, necesitas seguir ciertos pasos:</p>
                                         <ol>
                                             <li>Mezclar los ingredientes.</li>
@@ -107,11 +109,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementos')" id="elementos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.2 Elementos y características de los procesos de negocio.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="elementos">1.2 Elementos y características de los procesos de negocio.</h4>
                                         <p>Los procesos de negocio son como recetas para hacer las cosas en una empresa. Imagina que tienes un negocio de cupcakes. Para hacer tus deliciosos cupcakes, necesitas seguir ciertos pasos organizados. Cada uno de esos pasos, es un elemento del proceso de negocio y los veremos a continuación:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/4_Elementos_caracteristicas_procesos_negocio.webp" class="img-fluid" />
                                         <separator></separator>
@@ -152,11 +153,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tipos')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tipos')" id="tipos">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>1.3 Tipos de procesos de negocio: operativos, de soporte y de gestión.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="tipos">1.3 Tipos de procesos de negocio: operativos, de soporte y de gestión.</h4>
                                         <p>Los procesos de negocio son como las piezas de un rompecabezas. Cada pieza tiene su lugar y función específica, y al unirse adecuadamente, forman una imagen completa y funcional. Así pues, para que seamos actores más informados y eficaces en el funcionamiento y el éxito de nuestra pyme, debemos conocer qué tipos de procesos podría llegar a tener en mi organización:</p>
                                         <ol>
                                         <li><strong>Procesos Operativos:</strong> son las actividades esenciales que una empresa realiza día a día para producir bienes o brindar servicios. Estas piezas son como los colores y formas que forman las partes principales del rompecabezas. Son esenciales para la creación y entrega de los productos o servicios de la empresa. Ejemplo: En un restaurante, el proceso de preparar y servir los platillos es un proceso operativo clave.</li>
@@ -177,14 +177,13 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Identificación y Mapeo de Procesos">
+                            <mat-tab label="2. Identificación y Mapeo de Procesos">
                                 <h3 class="mt-3"><i class="num">2</i> Identificación y Mapeo de Procesos</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tecnicas')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tecnicas')" id="tecnicas">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.1. Técnicas para identificar y definir los procesos de negocio en una empresa</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="tecnicas">2.1. Técnicas para identificar y definir los procesos de negocio en una empresa</h4>
                                         <div class="texto-video">
                                             <p>En una empresa, los procesos de negocio son como las rutas que guían el funcionamiento eficiente y ordenado de todas las actividades. Identificar y definir estos procesos es fundamental para entender cómo se llevan a cabo las tareas y cómo se logran los resultados deseados. A continuación, te presento algunas técnicas sencillas para realizar esta tarea: </p>
                                             <ol>
@@ -211,18 +210,17 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('mapeo')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('mapeo')" id="mapeo">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.2. Mapeo y documentación de los procesos: diagramas de flujo y SIPOC</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="mapeo">2.2. Mapeo y documentación de los procesos: diagramas de flujo y SIPOC</h4>
                                         <div class="texto-video">
                                             <p>El mapeo y documentación de los procesos de negocio, es como crear un mapa detallado que muestra todas las etapas y pasos necesarios, para llevar a cabo una actividad en una empresa. Esto es esencial para entender cómo funcionan los procesos y comunicarlos de manera clara a todos los involucrados. Dos técnicas comunes para realizar este proceso son los diagramas de flujo y la SIPOC.</p>
                                             <ol>
                                             <li><strong>Diagramas de Flujo:</strong> Los diagramas de flujo son como guías visuales que representan gráficamente los pasos secuenciales de un proceso. Utilizan símbolos simples, como flechas y cajas, para mostrar las acciones y decisiones que se toman en cada etapa.</li>
                                             </ol>
                                             <p>Ejemplo: Imagina que estás documentando el proceso de compra en una tienda en línea. Un diagrama de flujo podría mostrar las siguientes etapas: el cliente selecciona un producto, agrega el artículo al carrito, realiza el pago y recibe una confirmación de la compra.</p>
-                                            <p>Lectura: <a href="https://asana.com/es/resources/what-is-a-flowchart">¿Qué es un diagrama de flujo y cómo hacerlo? [2022] • Asana</a></p>
+                                            <p>Lectura: <a href="https://asana.com/es/resources/what-is-a-flowchart" target="_blank">¿Qué es un diagrama de flujo y cómo hacerlo? [2022] • Asana</a></p>
                                             <ol start="2">
                                             <li><strong>Diagrama SIPOC:</strong> Los diagramas SIPOC o PEPSU son como mapas que nos muestran de manera sencilla cómo funcionan los procesos en una empresa. Son muy útiles para entender lo que se hace, cómo se hace y quién se beneficia. SIPOC (Supplier, Input, Process, Output, Client, por sus siglas en inglés) o PEPSU (Proveedores, Entradas, Procesos, Salidas y Usuarios, por sus siglas en español). En estos diagramas, de manera regular se incluyen:</li>
                                             </ol>
@@ -238,14 +236,13 @@
                                         <img src="../../../../../assets/images/dimensions/procesos/5_Ejemplo_SIPOC.webp" class="img-fluid" />
                                         <separator></separator>
                                         <p>Fuente: Gómez, J.C. P. Administración de procesos. Guía para el aprendizaje. Pearson Hispano América.</p>
-                                        <p><a href="https://asana.com/es/resources/sipoc-diagram">¿Qué es un diagrama SIPOC? 7 pasos para trazar los procesos de negocios [2022] • Asana</a></p>
+                                        <p><a href="https://asana.com/es/resources/sipoc-diagram" target="_blank">¿Qué es un diagrama SIPOC? 7 pasos para trazar los procesos de negocios [2022] • Asana</a></p>
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')" id="identificacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.3. Identificación de Ineficiencias y Oportunidades de Mejora en los Procesos Existentes</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="identificacion">2.3. Identificación de Ineficiencias y Oportunidades de Mejora en los Procesos Existentes</h4>
                                         <div class="texto-video">
                                             <p>Identificar ineficiencias y oportunidades de mejora en los procesos existentes es como encontrar "piedras en el camino" que afectan el rendimiento de una empresa. Es como buscar formas de hacer las cosas mejor, más rápido y con menos recursos. Veamos cómo podemos llevar a cabo este proceso a través de:</p>
                                             <p><strong>Observación y análisis detallado</strong>: Una forma de identificar ineficiencias es observar y analizar cómo se realizan las tareas en cada etapa del proceso. Prestar atención a los cuellos de botella, retrasos o pasos innecesarios puede revelar áreas que necesitan mejoras.</p>
@@ -264,14 +261,13 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Diseño y optimización de procesos">
+                            <mat-tab label="3. Diseño y optimización de procesos">
                                 <h3 class="mt-3"><i class="num">3</i> Diseño y optimización de procesos</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('buenaspracticas')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('buenaspracticas')" id="buenaspracticas">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.1 Buenas prácticas para el diseño de procesos eficientes y efectivos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="buenaspracticas">3.1 Buenas prácticas para el diseño de procesos eficientes y efectivos</h4>
                                         <p>Diseñar procesos eficientes y efectivos es como construir una máquina bien aceitada que funciona sin problemas y produce resultados excepcionales. Aquí te presento algunas buenas prácticas para lograrlo:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/6_Buenas_practicas_diseno_procesos.webp" class="img-fluid" />
                                         <separator></separator>
@@ -292,11 +288,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('estrategias')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('estrategias')" id="estrategias">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.2. Estrategias para optimizar los procesos y reducir tiempos y costos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="estrategias">3.2. Estrategias para optimizar los procesos y reducir tiempos y costos</h4>
                                         <p>Optimizar los procesos es como ajustar un reloj para que funcione con precisión y ahorre tiempo y dinero. Aquí te presento algunas estrategias efectivas para lograrlo:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/7_Estrategias_optimizar_procesos.webp" class="img-fluid" />
                                         <separator></separator>
@@ -319,7 +314,7 @@
                                             <li>Supongamos que el tiempo total registrado fue de 100 minutos para las 20 observaciones, entonces el tiempo estándar para ensamblar un teléfono móvil sería 100 minutos / 20 observaciones = 5 minutos por teléfono.</li>
                                         </ol>
                                         <p>Este tiempo estándar de 5 minutos indica que, en condiciones normales y con un desempeño óptimo, un trabajador podría ensamblar un teléfono móvil en aproximadamente 5 minutos. Es importante destacar que el tiempo estándar debe revisarse periódicamente y, ajustarse según las condiciones cambiantes de producción o factores externos que puedan afectar el proceso. </p>
-                                        <p>Para más detalles ver el siguiente video <a href="https://youtu.be/d-d19ze6V-E">https://youtu.be/d-d19ze6V-E</a></p>
+                                        <p>Para más detalles ver el siguiente video <a href="https://youtu.be/d-d19ze6V-E" target="_blank">https://youtu.be/d-d19ze6V-E</a></p>
                                         <!-- <p>Reflexión. Preguntas Abiertas:</p>
                                         <ol>
                                         <li>¿Por qué es importante realizar un análisis de procesos antes de intentar optimizarlos?</li>
@@ -329,11 +324,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('automatizacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('automatizacion')"id="automatizacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.3. Automatización y digitalización de procesos para mejorar la productividad</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="automatizacion">3.3. Automatización y digitalización de procesos para mejorar la productividad</h4>
                                         <div class="texto-video">
                                             <p>Imagina que los procesos de una empresa son como los engranajes de una máquina. Cuando automatizamos y digitalizamos estos engranajes, hacemos que todo funcione de manera más rápida, eficiente y precisa. Aquí te explico, cómo la automatización y la digitalización pueden mejorar la productividad de tu pyme:</p>
                                             <p><strong>Ahorro de tiempo y recursos:</strong> Automatizar tareas repetitivas y tediosas libera tiempo para que los empleados se enfoquen en actividades más estratégicas y creativas.</p>
@@ -356,14 +350,14 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Gestión y Control de Procesos">
+                            <mat-tab label="4. Gestión y Control de Procesos">
                                 <h3 class="mt-3"><i class="num">4</i> Gestión y Control de Procesos</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementosclave')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementosclave')" id="elementosclave">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc.</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="elementosclave">4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc.</h4>
+                                        <h4>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc.</h4>
                                         <div class="texto-video">
                                             <p>La gestión de procesos es como dirigir una orquesta para lograr una armonía perfecta en el funcionamiento de una empresa. Para lograrlo, existen elementos clave que nos ayudan a medir y controlar el desempeño de los procesos. Aquí te presento algunos de ellos:</p>
                                             <p><strong>Indicadores de rendimiento (<em>Kpis</em>):</strong> Los KPIs son como indicadores luminosos que nos muestran si un proceso está funcionando bien o necesita ajustes. Son medidas que reflejan el éxito o el desempeño de un proceso.</p>
@@ -381,11 +375,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('implementacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('implementacion')" id="implementacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.2. Implementación de un sistema de gestión de procesos (bpm) en la empresa</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="implementacion">4.2. Implementación de un sistema de gestión de procesos (bpm) en la empresa</h4>
                                         <div class="texto-video">
                                             <p>Implementar un Sistema de gestión de procesos (BPM) en una pyme es como instalar un centro de control que supervisa y mejora todos los engranajes de la organización. El BPM es una herramienta que ayuda a gestionar los procesos de manera eficiente y efectiva. Aquí te explico cómo funciona y cómo puede beneficiar a la empresa:</p>
                                             <p><strong>Mapeo y documentación de procesos:</strong> El BPM comienza con el mapeo y documentación detallada de todos los procesos de la empresa. Esto significa crear mapas que muestren todos los pasos y decisiones en cada proceso.</p>
@@ -395,7 +388,7 @@
                                             <p><strong>Medición y mejora continua:</strong> El BPM también incluye la medición del desempeño de los procesos mediante indicadores clave (<em>KPIs</em>). Esto permite identificar áreas de mejora y optimización.</p>
                                             <p>Ejemplo: Mediante el BPM, se puede medir el tiempo promedio de respuesta en el servicio al cliente y buscar formas de reducirlo.</p>
                                         </div>
-                                        <p>Sugerimos ver el siguiente video para mayor detalle: <a href="https://youtu.be/0fTWBDyZ4fI">https://youtu.be/0fTWBDyZ4fI</a></p>
+                                        <p>Sugerimos ver el siguiente video para mayor detalle: <a href="https://youtu.be/0fTWBDyZ4fI" target="_blank">https://youtu.be/0fTWBDyZ4fI</a></p>
                                         <!-- <p>Reflexión. Preguntas Abiertas:</p>
                                         <ol>
                                             <li>¿Qué es un Sistema de Gestión de Procesos (BPM) y cuál es su función principal en una empresa?</li>
@@ -404,11 +397,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('monitoreo')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('monitoreo')" id="monitoreo">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.3. Monitoreo y mejora continua de los procesos para garantizar su eficacia</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="monitoreo">4.3. Monitoreo y mejora continua de los procesos para garantizar su eficacia</h4>
                                         <div class="texto-video">
                                             <p>El monitoreo y mejora continua de los procesos es como tener un radar que nos permite detectar obstáculos y ajustar el rumbo para alcanzar nuestros objetivos de manera más eficiente. Aquí te explico cómo funciona y por qué es tan importante:</p>
                                             <p><strong>Monitoreo de Procesos:</strong> El monitoreo implica supervisar constantemente cómo se desarrollan los procesos en tiempo real. Se utilizan indicadores de rendimiento (<em>KPIs</em>) para medir el desempeño de los procesos.</p>
@@ -427,14 +419,13 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Procesos de negocio y transformación digital">
+                            <mat-tab label="5. Procesos de negocio y transformación digital">
                                 <h3 class="mt-3"><i class="num">5</i> Procesos de negocio y transformación digital</h3>
                                 <mat-accordion>
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacion')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('relacion')" id="relacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.1 Relación entre procesos de negocio y la transformación digital</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="relacion">5.1 Relación entre procesos de negocio y la transformación digital</h4>
                                         <div class="texto-video">
                                             <p>En la era digital, las pymes se enfrentan a un entorno altamente competitivo y en constante cambio. La transformación digital se ha convertido en una necesidad para mantenerse relevantes y adaptarse a las demandas del mercado. En este contexto, los procesos de negocio juegan un papel fundamental en la estrategia de transformación digital de una empresa.</p>
                                             <p><strong>Automatización y mejora de procesos:</strong> La transformación digital implica la automatización de tareas y flujos de trabajo en los procesos de negocio mediante tecnologías como la inteligencia artificial, el internet de las cosas (IoT) y la automatización robótica de procesos (RPA). Esto permite agilizar las operaciones y reducir los tiempos de ejecución, lo que se traduce en una mejora significativa de la eficiencia y productividad.</p>
@@ -452,11 +443,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('aprovechar')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('aprovechar')" id="aprovechar">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.2 Cómo aprovechar las tecnologías digitales para innovar y optimizar los procesos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="aprovechar">5.2 Cómo aprovechar las tecnologías digitales para innovar y optimizar los procesos</h4>
                                         <p>En el mundo actual, la tecnología digital ha revolucionado la forma en que las empresas operan y gestionan sus procesos. </p>
                                         <div class="texto-video">
                                             <p>La adopción de tecnologías digitales ofrece a las organizaciones una oportunidad única para innovar y optimizar sus procesos, lo que puede conducir a una mayor eficiencia, reducción de costos y mejora de la calidad de los productos y servicios. Veamos cómo podemos aprovechar estas tecnologías para impulsar la innovación y la optimización en los procesos empresariales.</p>
@@ -471,7 +461,7 @@
                                             <p><strong>Realidad virtual y aumentada:</strong> La realidad virtual y aumentada tienen aplicaciones en la formación y entrenamiento de empleados, así como en la simulación de procesos complejos.</p>
                                             <p>Por ejemplo, en la industria de la aviación, los técnicos pueden utilizar gafas de realidad aumentada para acceder a manuales y guías de reparación mientras trabajan en una aeronave, mejorando la precisión y eficiencia en las tareas de mantenimiento.</p>
                                         </div>
-                                        <p>Para mayor detalle, es recomendable ver este video: <a href="https://youtu.be/PLpDCK3Zy7Q">https://youtu.be/PLpDCK3Zy7Q</a></p>
+                                        <p>Para mayor detalle, es recomendable ver este video: <a href="https://youtu.be/PLpDCK3Zy7Q" target="_blank">https://youtu.be/PLpDCK3Zy7Q</a></p>
                                         <!-- <p>Reflexión. Preguntas Abiertas:</p>
                                         <ol>
                                             <li>¿Qué otras tecnologías digitales crees que podrían ser útiles para innovar y optimizar los procesos en tu negocio?</li>
@@ -480,11 +470,10 @@
                                         </ol> -->
                                     </mat-expansion-panel>
 
-                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('estudio')">
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('estudio')" id="estudio">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.3 Estudio de casos: empresas que han logrado una transformación exitosa</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <h4 id="estudio">5.3 Estudio de casos: empresas que han logrado una transformación exitosa</h4>
                                         <p>La transformación digital ha sido una prioridad para muchas empresas en la última década, y algunas han logrado transformaciones exitosas que han impulsado su crecimiento y éxito en el mercado. Veamos algunos casos de estudio de empresas que han llevado a cabo transformaciones exitosas:</p>
                                         <ol>
                                             <li><strong>Netflix:</strong> Esta empresa, ha sido un ejemplo destacado de transformación digital en la industria del entretenimiento. La empresa pasó de ser un servicio de alquiler de DVD por correo a un gigante del streaming (transmisión en tiempo real de contenido multimedia, como videos, música o eventos, a través de Internet) en línea. Netflix invirtió en tecnología para mejorar la personalización de contenidos y recomendaciones, lo que permitió a los usuarios disfrutar de una experiencia de entretenimiento altamente personalizada. Esta transformación ha llevado a Netflix a convertirse en uno de los principales proveedores de contenido en línea a nivel mundial.</li>
@@ -502,7 +491,7 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="Futuras tendencias en procesos de negocio">
+                            <mat-tab label="6. Futuras tendencias en procesos de negocio">
                                 <h3 class="mt-3"><i class="num">6</i> Futuras tendencias en procesos de negocio</h3>
                                 <h4>6.1 Exploración de tendencias emergentes en procesos de negocio</h4>
                                 <p>En el mundo empresarial en constante evolución, las tendencias emergentes en los procesos de negocio juegan un papel crucial para mantener la competitividad y la eficiencia. A continuación, exploraremos algunas de las tendencias más importantes de manera sencilla:</p>

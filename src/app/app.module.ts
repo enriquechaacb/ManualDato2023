@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './Modules/app-routing.module';
 import { AppMaterialModule } from './Modules/app-material.module';
 
-import { GlobalService } from './Services/global.service';
+import { GlobalService, VariablesService } from './Services/global.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/home/home.component';
@@ -100,7 +100,7 @@ import { PrivacidadComponent } from './Components/privacidad/privacidad.componen
     AppMaterialModule
   ],
   providers: [
-    GlobalService,
+    GlobalService, VariablesService,
     [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   ],
   bootstrap: [AppComponent]
