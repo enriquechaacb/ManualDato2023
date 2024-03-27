@@ -32,17 +32,11 @@
                 <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
-                        <div class="texto-video">
-                            <h3>¿Estás listo para desbloquear el máximo potencial de tu pyme a través del desarrollo de competencias en procesos?</h3>
-                            <p>Exploremos juntos las competencias esenciales para el éxito y crecimiento sostenible de tu negocio ¡Bienvenido!</p>
-                            <p>Este eje temático está diseñado especialmente para pequeñas y medianas empresas y busca que puedas adquirir habilidades, capacidades, destrezas y conocimiento, a través de una serie de herramientas y estrategias que te permitirán simplificar flujos de trabajo y elevar la productividad de tu negocio.</p>
-                            <p>En este eje encontrarás una combinación de módulos interactivos, podrás profundizar en la comprensión de los procesos de negocio y fortalecerás la capacidad del uso efectivo de la tecnología y los datos, para la solución de problemas y la toma de decisiones en diversos ámbitos organizacionales.</p>
-                            <p class="h1">¡Iniciamos!</p>
-                            <p>Empecemos por abordar qué son exactamente los procesos de negocio. Básicamente son una serie de pasos que se siguen para llevar a cabo una actividad o tarea en una organización. Piénsalo como una receta de cocina: tiene una lista de ingredientes y un conjunto de instrucciones que deben seguirse para obtener el plato deseado. En el mundo de los negocios, los procesos son como recetas de cocina, tienen que seguirse las indicaciones.</p>
-                            <p>Ahora, ¿por qué es tan importante tener los procesos de negocio bien definidos? La respuesta es simple: eficiencia y consistencia. Cuando tienes procesos claros y bien estructurados, todos en la empresa saben qué hacer, cuándo hacerlo y cómo hacerlo ¡Una receta segura! Esto evita confusiones y malentendidos, lo que a su vez reduce los errores y los retrabajos. Además, los procesos definidos permiten ahorrar tiempo y recursos, ya que se eliminan los supuestos y se establecen las mejores prácticas para cada tarea.</p>
-                            <p>Si alguna vez has querido implementar nuevas tecnologías en tu empresa, por ejemplo: una plataforma en línea, tener procesos claros es el primer paso. Imagínate que quieren automatizar el proceso de pedidos en su empresa usando un sitio web o una aplicación móvil para teléfonos. Si no tienen claro cómo se manejan los pedidos actualmente, será difícil diseñar un sistema que se ajuste a sus necesidades, pero, si tienen procesos bien definidos, podrán identificar los puntos de mejora y adaptar el sistema de manera efectiva y mucho más rápida.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/_UZlkffiF7I?rel=0" title="Bienvenida" allowfullscreen></iframe>
                         </div>
-                        <p>Además, los procesos de negocio bien definidos son esenciales para la digitalización. En un mundo cada vez más conectado y tecnológico, es importante adaptarse y aprovechar las ventajas que ofrecen las herramientas digitales. Al definir y documentar sus procesos, están sentando las bases para una transición más suave hacia la digitalización. Esto permite aprovechar las ventajas de la automatización, los análisis de datos, la inteligencia artificial y otras tecnologías innovadoras que pueden impulsar tu negocio hacia adelante.</p>
+                        <separator></separator>
+                        <p>Los procesos de negocio bien definidos son esenciales para la digitalización. En un mundo cada vez más conectado y tecnológico, es importante adaptarse y aprovechar las ventajas que ofrecen las herramientas digitales. Al definir y documentar sus procesos, están sentando las bases para una transición más suave hacia la digitalización. Esto permite aprovechar las ventajas de la automatización, los análisis de datos, la inteligencia artificial y otras tecnologías innovadoras que pueden impulsar tu negocio hacia adelante.</p>
                         <p>En resumen, los procesos de negocio bien definidos son la base para el éxito de cualquier empresa. Nos ayudan a ser más eficientes, consistentes y nos preparan para la automatización y la digitalización. Entonces, si tienes que mejorar tu negocio, recuerda comenzar por los procesos. ¡Es como tener una guía clara de lo que te llevará hacia el éxito, vamos por ello!</p>
                     </div>
                 </section>
@@ -51,7 +45,12 @@
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué son los procesos de negocio?</span></h2>
                         <div class="definition">
-                            
+                            <p>Los procesos de negocio hacen referencia al conjunto de acciones estructuradas e
+                                interrelacionadas que sigue una pyme para alcanzar sus objetivos y generar valor
+                                para sus clientes. Estos procesos pueden ser simples o complejos e involucrar a
+                                diferentes áreas de la pyme como producción, ventas, marketing, atención al
+                                cliente y administración. Una buena gestión de los procesos permite maximizar la
+                                eficiencia, mejorar la productividad y tomar decisiones informadas.</p>
                         </div>
                         <mat-tab-group class="vertical-tab-group">
                             <mat-tab label="1. Introducción a los Procesos de Negocio">
@@ -59,26 +58,16 @@
                                 <mat-accordion>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('conceptos')" id="conceptos">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.1 Qué son los procesos de negocio y su importancia en las organizaciones.</mat-panel-title>
+                                            <mat-panel-title>1.1 Qué son los procesos de negocio y su importancia en las organizaciones</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <p>Los procesos de negocio son una serie de pasos que seguimos para hacer las cosas de manera organizada en una empresa y que, permiten transformar los insumos en resultados valiosos para una empresa. Son como recetas que nos guían para lograr nuestros objetivos de manera eficiente. Imagina que tienes una panadería. Para hacer pan, necesitas seguir ciertos pasos:</p>
-                                        <ol>
-                                            <li>Mezclar los ingredientes.</li>
-                                            <li>Amasar la masa.</li>
-                                            <li>Dejarla reposar.</li>
-                                            <li>Hornear el pan.</li>
-                                            <li>Enfriarlo y listo, tienes pan fresco.</li>
-                                        </ol>
-                                        <p>Cada uno de estos pasos, hacen parte del proceso de negocio de la panadería. Ahora, ¿por qué son importantes los procesos de negocio en las empresas? Veámoslo:</p>
+
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/afZFx59vwio?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                                        </div>
+                                        <separator></separator>
+                                        
                                         <img src="../../../../../assets/images/dimensions/procesos/3_Importancia_procesos_negocio.webp" class="img-fluid" />
                                         <separator></separator>
-                                        <!-- <ul>
-                                            <li>Eficiencia: Los procesos bien definidos ayudan a hacer las cosas más rápido y con menos errores, lo que ahorra tiempo y dinero.</li>
-                                            <li>Calidad: Cuando se siguen procesos, los productos y servicios suelen ser más consistentes y de mejor calidad, lo que satisface a los clientes.</li>
-                                            <li>Organización: Los procesos mantienen a todos en la misma página y evitan el caos.</li>
-                                            <li>Innovación: Al entender los procesos actuales, es más fácil encontrar formas de mejorarlos e innovar.</li>
-                                            <li>Flexibilidad: Los procesos permiten adaptarse a cambios en el negocio o en el mercado más rápidamente.</li>
-                                        </ul> -->
                                         <p>Veamos algunos casos-ejemplos:</p>
                                         <div class="hint">
                                             <div>
@@ -111,7 +100,7 @@
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementos')" id="elementos">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.2 Elementos y características de los procesos de negocio.</mat-panel-title>
+                                            <mat-panel-title>1.2 Elementos y características de los procesos de negocio</mat-panel-title>
                                         </mat-expansion-panel-header>
                                         <p>Los procesos de negocio son como recetas para hacer las cosas en una empresa. Imagina que tienes un negocio de cupcakes. Para hacer tus deliciosos cupcakes, necesitas seguir ciertos pasos organizados. Cada uno de esos pasos, es un elemento del proceso de negocio y los veremos a continuación:</p>
                                         <img src="../../../../../assets/images/dimensions/procesos/4_Elementos_caracteristicas_procesos_negocio.webp" class="img-fluid" />
@@ -155,25 +144,24 @@
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('tipos')" id="tipos">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>1.3 Tipos de procesos de negocio: operativos, de soporte y de gestión.</mat-panel-title>
+                                            <mat-panel-title>1.3 Tipos de procesos de negocio: operativos, de soporte y de gestión</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <p>Los procesos de negocio son como las piezas de un rompecabezas. Cada pieza tiene su lugar y función específica, y al unirse adecuadamente, forman una imagen completa y funcional. Así pues, para que seamos actores más informados y eficaces en el funcionamiento y el éxito de nuestra pyme, debemos conocer qué tipos de procesos podría llegar a tener en mi organización:</p>
-                                        <ol>
-                                        <li><strong>Procesos Operativos:</strong> son las actividades esenciales que una empresa realiza día a día para producir bienes o brindar servicios. Estas piezas son como los colores y formas que forman las partes principales del rompecabezas. Son esenciales para la creación y entrega de los productos o servicios de la empresa. Ejemplo: En un restaurante, el proceso de preparar y servir los platillos es un proceso operativo clave.</li>
-                                        </ol>
-                                        <ol start="2">
-                                        <li><strong>Procesos de Soporte:</strong> Estos procesos brindan el respaldo necesario para que los procesos operativos funcionen correctamente. Son como las piezas del borde que rodean y dan soporte a la imagen completa del rompecabezas. Ejemplo: El departamento de atención al cliente es un proceso de soporte que brinda asistencia y soluciona problemas para los clientes.</li>
-                                        </ol>
-                                        <ol start="3">
-                                        <li><strong>Procesos de Gestión:</strong> Estos procesos guían y supervisan el funcionamiento general de la empresa. Representan las piezas que unen y coordinan todas las demás, asegurando que el rompecabezas se mantenga unido y se complete exitosamente. Ejemplo: El proceso de planificación es un proceso de gestión que establece la dirección y metas a largo plazo de la empresa.</li>
-                                        </ol>
-                                        <p>El ensamblaje adecuado de todas estas piezas es fundamental para que el rompecabezas (es decir, la empresa) funcione eficientemente y alcance sus objetivos.</p>
-                                        <p>Reflexión. Preguntas abiertas:</p>
-                                        <ol>
-                                        <li>¿Por qué crees que los procesos operativos son como las piezas principales de un rompecabezas para una empresa? Identifica los procesos operativos de tu empresa.</li>
-                                        <li>¿Puedes mencionar un ejemplo de un proceso de soporte en tu pyme, que haya sido clave para tu éxito? ¿Cómo lo podrías mejorar con el uso de tecnologías digitales?</li>
-                                        <li>¿Cómo pueden los procesos de gestión asegurarse de que todas las piezas del rompecabezas se unan adecuadamente para lograr los objetivos de la empresa?</li>
-                                        </ol>
+
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/aUarTyxsDwg?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                                        </div>
+                                        <separator></separator>
+                                        <div class="quest">
+                                            <div>
+                                                <h5>Reflexión. Preguntas abiertas:</h5>
+                                                <ol>
+                                                    <li>¿Por qué crees que los procesos operativos son como las piezas principales de un rompecabezas para una empresa? Identifica los procesos operativos de tu empresa.</li>
+                                                    <li>¿Puedes mencionar un ejemplo de un proceso de soporte en tu pyme, que haya sido clave para tu éxito? ¿Cómo lo podrías mejorar con el uso de tecnologías digitales?</li>
+                                                    <li>¿Cómo pueden los procesos de gestión asegurarse de que todas las piezas del rompecabezas se unan adecuadamente para lograr los objetivos de la empresa?</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -184,80 +172,41 @@
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.1. Técnicas para identificar y definir los procesos de negocio en una empresa</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>En una empresa, los procesos de negocio son como las rutas que guían el funcionamiento eficiente y ordenado de todas las actividades. Identificar y definir estos procesos es fundamental para entender cómo se llevan a cabo las tareas y cómo se logran los resultados deseados. A continuación, te presento algunas técnicas sencillas para realizar esta tarea: </p>
-                                            <ol>
-                                            <li><strong>Entrevistas y Encuestas:</strong></li>
-                                            </ol>
-                                            <p>Hablar con los empleados y colaboradores clave de la empresa puede proporcionar una visión real de cómo funcionan los procesos en la práctica. Las entrevistas y encuestas permiten recopilar información valiosa sobre las actividades que se realizan, las responsabilidades de cada persona y los desafíos que enfrentan.</p>
-                                            <p>Ejemplo: Entrevistar al departamento de ventas para conocer cómo gestionan los pedidos de los clientes, desde la recepción hasta la entrega del producto.</p>
-                                            <ol start="2">
-                                            <li><strong>Observación Directa:</strong></li>
-                                            </ol>
-                                            <p>Observar directamente el flujo de trabajo y las acciones que se llevan a cabo en diferentes departamentos ayuda a identificar los pasos involucrados en un proceso. Esta técnica brinda una perspectiva real y concreta de cómo se desarrollan las actividades en el día a día.</p>
-                                            <p>Ejemplo: Observar cómo se procesan los pagos en el departamento financiero, desde la recepción de facturas hasta la emisión de los pagos correspondientes.</p>
-                                            <ol start="3">
-                                            <li><strong>Análisis Documental:</strong></li>
-                                            </ol>
-                                            <p>Revisar los documentos y registros existentes, como manuales de procedimientos, informes y formularios, proporciona información valiosa sobre cómo se organizan y ejecutan los procesos en la empresa.</p>
-                                            <p>Ejemplo: Analizar el manual de recursos humanos para entender el proceso de reclutamiento y selección de nuevos empleados.</p>
+
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/1PyO-AyNSLk?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Cuál es la técnica que consideras más viable para obtener información sobre cómo se llevan a cabo los procesos de negocio en tu empresa?</li>
-                                            <li>¿Por qué es importante identificar y definir los procesos de negocio en una organización?</li>
-                                            <li>¿Puedes mencionar un ejemplo específico de cómo se podrían utilizar entrevistas o encuestas para identificar un proceso de negocio en tu empresa?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('mapeo')" id="mapeo">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.2. Mapeo y documentación de los procesos: diagramas de flujo y SIPOC</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>El mapeo y documentación de los procesos de negocio, es como crear un mapa detallado que muestra todas las etapas y pasos necesarios, para llevar a cabo una actividad en una empresa. Esto es esencial para entender cómo funcionan los procesos y comunicarlos de manera clara a todos los involucrados. Dos técnicas comunes para realizar este proceso son los diagramas de flujo y la SIPOC.</p>
-                                            <ol>
-                                            <li><strong>Diagramas de Flujo:</strong> Los diagramas de flujo son como guías visuales que representan gráficamente los pasos secuenciales de un proceso. Utilizan símbolos simples, como flechas y cajas, para mostrar las acciones y decisiones que se toman en cada etapa.</li>
-                                            </ol>
-                                            <p>Ejemplo: Imagina que estás documentando el proceso de compra en una tienda en línea. Un diagrama de flujo podría mostrar las siguientes etapas: el cliente selecciona un producto, agrega el artículo al carrito, realiza el pago y recibe una confirmación de la compra.</p>
-                                            <p>Lectura: <a href="https://asana.com/es/resources/what-is-a-flowchart" target="_blank">¿Qué es un diagrama de flujo y cómo hacerlo? [2022] • Asana</a></p>
-                                            <ol start="2">
-                                            <li><strong>Diagrama SIPOC:</strong> Los diagramas SIPOC o PEPSU son como mapas que nos muestran de manera sencilla cómo funcionan los procesos en una empresa. Son muy útiles para entender lo que se hace, cómo se hace y quién se beneficia. SIPOC (Supplier, Input, Process, Output, Client, por sus siglas en inglés) o PEPSU (Proveedores, Entradas, Procesos, Salidas y Usuarios, por sus siglas en español). En estos diagramas, de manera regular se incluyen:</li>
-                                            </ol>
-                                            <ul>
-                                            <li>Proveedores: Son quienes nos dan lo que necesitamos para trabajar, como materiales o información.</li>
-                                            <li>Entradas: Son los recursos o información que necesitamos para hacer nuestro trabajo.</li>
-                                            <li>Procesos: Son las acciones que realizamos para transformar las entradas en resultados o productos.</li>
-                                            <li>Salidas: Son los resultados o productos finales que obtenemos después de hacer el trabajo.</li>
-                                            <li>Clientes: Son las personas o entidades que reciben lo que producimos y se benefician de ello.</li>
-                                            </ul>
-                                            <p>Al utilizar estos diagramas, podemos ver de manera clara cómo funciona cada proceso y cómo está relacionado con otras partes de la empresa. Esto nos ayuda a encontrar formas de mejorar y tomar decisiones más acertadas para lograr buenos resultados.</p>
+
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/V-2MN2Vb3ns?rel=0" title="Bienvenida" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="hint">
+                                            <p>Lectura:<br/>
+                                            <a href="https://asana.com/es/resources/what-is-a-flowchart" target="_blank">¿Qué es un diagrama de flujo y cómo hacerlo? [2022] • Asana</a></p>
                                         </div>
                                         <img src="../../../../../assets/images/dimensions/procesos/5_Ejemplo_SIPOC.webp" class="img-fluid" />
+                                        <div class="hint">
+                                            <p>Video:<br/>
+                                            <a href="https://asana.com/es/resources/sipoc-diagram" target="_blank">¿Qué es un diagrama SIPOC? 7 pasos para trazar los procesos de negocios [2022] • Asana</a></p>
+                                        </div>
                                         <separator></separator>
-                                        <p>Fuente: Gómez, J.C. P. Administración de procesos. Guía para el aprendizaje. Pearson Hispano América.</p>
-                                        <p><a href="https://asana.com/es/resources/sipoc-diagram" target="_blank">¿Qué es un diagrama SIPOC? 7 pasos para trazar los procesos de negocios [2022] • Asana</a></p>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('identificacion')" id="identificacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>2.3. Identificación de Ineficiencias y Oportunidades de Mejora en los Procesos Existentes</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>Identificar ineficiencias y oportunidades de mejora en los procesos existentes es como encontrar "piedras en el camino" que afectan el rendimiento de una empresa. Es como buscar formas de hacer las cosas mejor, más rápido y con menos recursos. Veamos cómo podemos llevar a cabo este proceso a través de:</p>
-                                            <p><strong>Observación y análisis detallado</strong>: Una forma de identificar ineficiencias es observar y analizar cómo se realizan las tareas en cada etapa del proceso. Prestar atención a los cuellos de botella, retrasos o pasos innecesarios puede revelar áreas que necesitan mejoras.</p>
-                                            <p>Ejemplo: Si en un proceso de producción se observa que hay mucho tiempo de espera entre una etapa y otra, se podría sugerir una reorganización de las actividades para reducir los tiempos muertos.</p>
-                                            <p><strong>Recopilación de datos y métricas:</strong> Medir el rendimiento del proceso utilizando datos y métricas clave permite identificar áreas donde los resultados no cumplen con los objetivos establecidos.</p>
-                                            <p>Ejemplo: En el proceso de entrega de pedidos, se podría medir el tiempo promedio de entrega y compararlo con el tiempo esperado. Si hay una diferencia significativa, se podría investigar la causa y tomar acciones correctivas.</p>
-                                            <p><strong>Retroalimentación de los empleados:</strong> Los trabajadores que están directamente involucrados en los procesos a menudo tienen ideas valiosas para mejorarlos. Escuchar sus opiniones y sugerencias puede revelar oportunidades de optimización.</p>
-                                            <p>Ejemplo: En un proceso de atención al cliente, los empleados pueden señalar que ciertos formularios son complicados de llenar, lo que retrasa la resolución de problemas. Simplificar el formulario podría ser una mejora significativa.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/zAWpSmgL70s?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                        <li>¿Por qué es importante identificar ineficiencias en los procesos de tu pyme?</li>
-                                        <li>¿Cuál es una técnica efectiva para recopilar datos y métricas que ayuden a identificar áreas de mejora?</li>
-                                        <li>¿Cómo puede la retroalimentación de los empleados contribuir a la identificación de oportunidades de mejora en los procesos?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -314,8 +263,10 @@
                                             <li>Supongamos que el tiempo total registrado fue de 100 minutos para las 20 observaciones, entonces el tiempo estándar para ensamblar un teléfono móvil sería 100 minutos / 20 observaciones = 5 minutos por teléfono.</li>
                                         </ol>
                                         <p>Este tiempo estándar de 5 minutos indica que, en condiciones normales y con un desempeño óptimo, un trabajador podría ensamblar un teléfono móvil en aproximadamente 5 minutos. Es importante destacar que el tiempo estándar debe revisarse periódicamente y, ajustarse según las condiciones cambiantes de producción o factores externos que puedan afectar el proceso. </p>
-                                        <p>Para más detalles ver el siguiente video <a href="https://youtu.be/d-d19ze6V-E" target="_blank">https://youtu.be/d-d19ze6V-E</a></p>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
+                                        <div class="hint">
+                                            <p>Para más detalles ver el siguiente video<br/>
+                                            <a href="https://youtu.be/d-d19ze6V-E" target="_blank">https://youtu.be/d-d19ze6V-E</a></p>
+                                        </div> <!-- <p>Reflexión. Preguntas Abiertas:</p>
                                         <ol>
                                         <li>¿Por qué es importante realizar un análisis de procesos antes de intentar optimizarlos?</li>
                                         <li>¿Cuál es el beneficio de eliminar pasos innecesarios en tus procesos empresariales?</li>
@@ -328,25 +279,10 @@
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>3.3. Automatización y digitalización de procesos para mejorar la productividad</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>Imagina que los procesos de una empresa son como los engranajes de una máquina. Cuando automatizamos y digitalizamos estos engranajes, hacemos que todo funcione de manera más rápida, eficiente y precisa. Aquí te explico, cómo la automatización y la digitalización pueden mejorar la productividad de tu pyme:</p>
-                                            <p><strong>Ahorro de tiempo y recursos:</strong> Automatizar tareas repetitivas y tediosas libera tiempo para que los empleados se enfoquen en actividades más estratégicas y creativas.</p>
-                                            <p>Ejemplo: Un software de gestión de proyectos puede automatizar el seguimiento de tareas y plazos, lo que ahorra tiempo y evita errores en la planificación.</p>
-                                            <p><strong>Reducción de errores y mejora de la precisión:</strong> Al usar tecnología, disminuimos el riesgo de cometer errores humanos y logramos una mayor precisión en los resultados.</p>
-                                            <p>Ejemplo: La digitalización de informes financieros puede reducir los errores de cálculo y asegurar que los datos estén siempre actualizados.</p>
-                                            <p><strong>Acceso y colaboración remota:</strong> La digitalización permite acceder a información y colaborar desde cualquier lugar, lo que facilita el trabajo en equipo y la comunicación.</p>
-                                            <p>Ejemplo: Con herramientas de colaboración en línea, los equipos pueden trabajar juntos en un proyecto sin importar su ubicación geográfica.</p>
-                                            <p><strong>Mejora de la eficiencia global: </strong>La automatización y digitalización permiten una ejecución más rápida de los procesos, lo que se traduce en una mejora general de la eficiencia.</p>
-                                            <p>Ejemplo: Un sistema de gestión de inventario automatizado puede optimizar los niveles de stock y evitar excesos o faltantes, mejorando la eficiencia logística.</p>
-                                            <p>En reflexión, la automatización y digitalización de procesos en pymes, así como la gestión óptima del dato, permite a tu pyme mejorar la productividad al agilizar tareas, reducir errores y permitir enfoque en actividades estratégicas, impulsando la eficiencia y crecimiento competitivo.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/2ZNX48f1_b8?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Cómo puede la automatización liberar tiempo para que los empleados se enfoquen en tareas más importantes?</li>
-                                            <li>¿Por qué la digitalización puede ayudar a reducir errores en los procesos empresariales de tu pyme?</li>
-                                            <li>¿Qué beneficios puede proporcionar el acceso y colaboración remota a través de la digitalización de procesos?</li>
-                                            <li>Identifica ¿qué procesos podrían ser digitalizados en tu pyme? ¿De qué manera se puede lograr ese objetivo?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -355,67 +291,37 @@
                                 <mat-accordion>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('elementosclave')" id="elementosclave">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc.</mat-panel-title>
+                                            <mat-panel-title>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc</mat-panel-title>
                                         </mat-expansion-panel-header>
                                         <h4>4.1. Elementos clave de la gestión de procesos: indicadores de rendimiento (Kpis), SLAs, etc.</h4>
-                                        <div class="texto-video">
-                                            <p>La gestión de procesos es como dirigir una orquesta para lograr una armonía perfecta en el funcionamiento de una empresa. Para lograrlo, existen elementos clave que nos ayudan a medir y controlar el desempeño de los procesos. Aquí te presento algunos de ellos:</p>
-                                            <p><strong>Indicadores de rendimiento (<em>Kpis</em>):</strong> Los KPIs son como indicadores luminosos que nos muestran si un proceso está funcionando bien o necesita ajustes. Son medidas que reflejan el éxito o el desempeño de un proceso.</p>
-                                            <p>Ejemplo: En el proceso de ventas, un KPI puede ser la tasa de conversión, que indica cuántos prospectos se convierten en clientes.</p>
-                                            <p><strong>SLAs (<em>Service level agreements</em>):</strong> Los SLAs son como acuerdos de nivel de servicio que establecen expectativas claras entre proveedores y clientes internos o externos sobre la calidad y el tiempo de respuesta de un proceso.</p>
-                                            <p>Ejemplo: Un SLA en el proceso de soporte técnico podría especificar que el equipo debe responder a los <em>tickets</em> (número de reporte) dentro de las 24 horas siguientes a su recepción.</p>
-                                            <p><strong>Mapas de flujo de valor:</strong> Los mapas de flujo de valor son como mapas detallados que muestran todos los pasos de un proceso, identificando dónde hay desperdicios y oportunidades de mejora.</p>
-                                            <p>Ejemplo: En el proceso de fabricación de un producto, un mapa de flujo de valor puede mostrar cómo se utiliza el tiempo y los recursos en cada etapa del proceso.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/QOtMapE5CqA?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Por qué son importantes los KPIs en la gestión de procesos y qué información nos proporcionan?</li>
-                                            <li>¿Cómo pueden los SLAs beneficiar la relación entre proveedores y clientes en los procesos empresariales de tu pyme?</li>
-                                            <li>¿Cuál es el propósito de utilizar mapas de flujo de valor en la gestión de procesos y cómo pueden ayudar a identificar oportunidades de mejora?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('implementacion')" id="implementacion">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.2. Implementación de un sistema de gestión de procesos (bpm) en la empresa</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>Implementar un Sistema de gestión de procesos (BPM) en una pyme es como instalar un centro de control que supervisa y mejora todos los engranajes de la organización. El BPM es una herramienta que ayuda a gestionar los procesos de manera eficiente y efectiva. Aquí te explico cómo funciona y cómo puede beneficiar a la empresa:</p>
-                                            <p><strong>Mapeo y documentación de procesos:</strong> El BPM comienza con el mapeo y documentación detallada de todos los procesos de la empresa. Esto significa crear mapas que muestren todos los pasos y decisiones en cada proceso.</p>
-                                            <p>Ejemplo: En un proceso de reclutamiento, el BPM puede mostrar cómo se recibe la solicitud de empleo, cómo se selecciona al candidato y cómo se realiza la contratación.</p>
-                                            <p><strong>Automatización de procesos:</strong> Una vez que los procesos están mapeados, el BPM permite automatizar tareas y flujos de trabajo, lo que ahorra tiempo y reduce errores.</p>
-                                            <p>Ejemplo: En el proceso de aprobación de gastos, el BPM puede automatizar las notificaciones a los gerentes y la revisión de los informes de gastos.</p>
-                                            <p><strong>Medición y mejora continua:</strong> El BPM también incluye la medición del desempeño de los procesos mediante indicadores clave (<em>KPIs</em>). Esto permite identificar áreas de mejora y optimización.</p>
-                                            <p>Ejemplo: Mediante el BPM, se puede medir el tiempo promedio de respuesta en el servicio al cliente y buscar formas de reducirlo.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/pC5AiDNf-Q8?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <p>Sugerimos ver el siguiente video para mayor detalle: <a href="https://youtu.be/0fTWBDyZ4fI" target="_blank">https://youtu.be/0fTWBDyZ4fI</a></p>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Qué es un Sistema de Gestión de Procesos (BPM) y cuál es su función principal en una empresa?</li>
-                                            <li>¿Por qué es importante mapear y documentar los procesos antes de implementar el BPM?</li>
-                                            <li>¿Cuáles son los beneficios de automatizar procesos mediante el BPM y cómo puede mejorar la eficiencia de una empresa?</li>
-                                        </ol> -->
+                                        <separator></separator>
+                                        <div class="hint">
+                                            <p>Sugerimos ver el siguiente video para mayor detalle:<br/>
+                                            <a href="https://youtu.be/0fTWBDyZ4fI" target="_blank">https://youtu.be/0fTWBDyZ4fI</a></p>
+                                        </div>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('monitoreo')" id="monitoreo">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>4.3. Monitoreo y mejora continua de los procesos para garantizar su eficacia</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>El monitoreo y mejora continua de los procesos es como tener un radar que nos permite detectar obstáculos y ajustar el rumbo para alcanzar nuestros objetivos de manera más eficiente. Aquí te explico cómo funciona y por qué es tan importante:</p>
-                                            <p><strong>Monitoreo de Procesos:</strong> El monitoreo implica supervisar constantemente cómo se desarrollan los procesos en tiempo real. Se utilizan indicadores de rendimiento (<em>KPIs</em>) para medir el desempeño de los procesos.</p>
-                                            <p>Ejemplo: En el proceso de atención al cliente, se puede monitorear el tiempo de respuesta promedio y la satisfacción del cliente como KPIs.</p>
-                                            <p><strong>Identificación de desviaciones:</strong> El monitoreo nos ayuda a identificar desviaciones o variaciones no deseadas en el rendimiento de los procesos.</p>
-                                            <p>Ejemplo: Si un proceso de producción tiene un aumento en los tiempos de producción, esto podría indicar un problema que requiere atención.</p>
-                                            <p><strong>Mejora continua:</strong> Una vez que se identifican las desviaciones, se pueden implementar acciones correctivas para mejorar los procesos de manera constante.</p>
-                                            <p>Ejemplo: Si el tiempo de entrega en un proceso logístico es más largo de lo esperado, se puede mejorar la planificación de rutas para acelerar la entrega.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/6_Fc9ztbR0I?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Por qué es importante monitorear constantemente los procesos en tu pyme?</li>
-                                            <li>¿Cuál es la importancia de utilizar indicadores de rendimiento (KPIs) en el monitoreo de procesos?</li>
-                                            <li>¿Por qué se considera que la mejora continua es esencial para el éxito de una empresa?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
@@ -426,48 +332,25 @@
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.1 Relación entre procesos de negocio y la transformación digital</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <div class="texto-video">
-                                            <p>En la era digital, las pymes se enfrentan a un entorno altamente competitivo y en constante cambio. La transformación digital se ha convertido en una necesidad para mantenerse relevantes y adaptarse a las demandas del mercado. En este contexto, los procesos de negocio juegan un papel fundamental en la estrategia de transformación digital de una empresa.</p>
-                                            <p><strong>Automatización y mejora de procesos:</strong> La transformación digital implica la automatización de tareas y flujos de trabajo en los procesos de negocio mediante tecnologías como la inteligencia artificial, el internet de las cosas (IoT) y la automatización robótica de procesos (RPA). Esto permite agilizar las operaciones y reducir los tiempos de ejecución, lo que se traduce en una mejora significativa de la eficiencia y productividad.</p>
-                                            <p>Ejemplo: En una empresa de servicios financieros, la adopción de un chatbot para atender consultas de clientes puede agilizar el proceso de atención al cliente y liberar al personal para tareas más estratégicas. Al mismo tiempo, un sistema automatizado de análisis de datos puede detectar patrones de comportamiento de los clientes y ofrecer recomendaciones de productos personalizadas.</p>
-                                            <p><strong>Acceso y colaboración remota:</strong> La transformación digital también facilita el acceso a información y la colaboración entre equipos de trabajo, independientemente de su ubicación geográfica. Plataformas en línea, herramientas de gestión de proyectos y sistemas de comunicación en tiempo real permiten a los equipos trabajar de forma más colaborativa y ágil.</p>
-                                            <p>Ejemplo: Un equipo de desarrollo de software, con miembros en diferentes países, puede utilizar herramientas en la nube para compartir código, documentación y realizar reuniones virtuales de manera eficiente. Esto permite una colaboración más fluida y una toma de decisiones más rápida.</p>
-                                            <p><strong>Análisis de datos para la toma de decisiones:</strong> La transformación digital ofrece una amplia gama de herramientas para recopilar, almacenar y analizar datos en tiempo real. Estos análisis de datos permiten a las empresas tomar decisiones más informadas, identificar patrones y tendencias, y mejorar su capacidad de prever cambios en el mercado.</p>
-                                            <p>Ejemplo: Una empresa de comercio electrónico puede utilizar análisis de datos para entender el comportamiento de compra de sus clientes, identificar productos más vendidos y personalizar las recomendaciones de productos. Esto mejora la capacidad de la empresa para adaptarse rápidamente a las preferencias cambiantes de los clientes.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/d0o1bZdZI5o?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <!-- <h4>Reflexión. Preguntas Abiertas:</h4>
-                                        <ol>
-                                            <li>¿Cómo crees que la transformación digital puede ayudar a tu empresa a mantenerse competitiva en el mercado actual?</li>
-                                            <li>¿Qué beneficios específicos podría obtener tu negocio al automatizar sus procesos de negocio y utilizar análisis de datos en su estrategia?</li>
-                                            <li>¿Cuáles son los desafíos que podrías enfrentar al implementar la transformación digital en tus procesos de negocio y cómo podrían superarse?</li>
-                                        </ol> -->
+                                        <separator></separator>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('aprovechar')" id="aprovechar">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>5.2 Cómo aprovechar las tecnologías digitales para innovar y optimizar los procesos</mat-panel-title>
                                         </mat-expansion-panel-header>
-                                        <p>En el mundo actual, la tecnología digital ha revolucionado la forma en que las empresas operan y gestionan sus procesos. </p>
-                                        <div class="texto-video">
-                                            <p>La adopción de tecnologías digitales ofrece a las organizaciones una oportunidad única para innovar y optimizar sus procesos, lo que puede conducir a una mayor eficiencia, reducción de costos y mejora de la calidad de los productos y servicios. Veamos cómo podemos aprovechar estas tecnologías para impulsar la innovación y la optimización en los procesos empresariales.</p>
-                                            <p><strong>Automatización de Procesos:</strong> La automatización es una de las formas más efectivas de optimizar los procesos. Mediante el uso de tecnologías como la inteligencia artificial y la automatización robótica de procesos (RPA), las tareas manuales y repetitivas pueden ser realizadas por sistemas automatizados, liberando tiempo y recursos para tareas más estratégicas. </p>
-                                            <p>Por ejemplo, un sistema de chatbot puede atender consultas de clientes de manera instantánea y precisa, mejorando la satisfacción del cliente y reduciendo la carga de trabajo del personal.</p>
-                                            <p><strong>Análisis de datos y Big data:</strong> El análisis de datos es una herramienta poderosa para la toma de decisiones informadas. Al recopilar y analizar grandes cantidades de datos, las empresas pueden identificar patrones, tendencias y oportunidades de mejora en sus procesos. </p>
-                                            <p>Por ejemplo, una cadena de supermercados puede utilizar análisis de datos para optimizar su inventario, asegurándose de tener suficientes existencias para satisfacer la demanda sin incurrir en exceso de inventario.</p>
-                                            <p><strong>Internet de las cosas (<em>IoT</em>)</strong>: El término <em>IoT</em> (por sus siglas en inglés) refiere a una red colectiva de dispositivos conectados, que gracias al Internet se logran interconectar aparatos como aspiradoras, coches, interruptores de luz. El uso de IoT permite a las empresas conectar dispositivos y objetos físicos a internet, lo que brinda una mayor visibilidad y control sobre los procesos. </p>
-                                            <p>Por ejemplo, en el sector manufacturero, sensores conectados pueden monitorear el rendimiento de las máquinas en tiempo real, detectar fallos potenciales y facilitar un mantenimiento predictivo, evitando costosos tiempos de inactividad.</p>
-                                            <p><strong>Plataformas de colaboración:</strong> Las plataformas de colaboración en línea permiten una comunicación más fluida y una colaboración efectiva entre equipos de trabajo, incluso si están distribuidos geográficamente. Esto agiliza la toma de decisiones y la resolución de problemas, mejorando la eficiencia en los procesos. </p>
-                                            <p>Por ejemplo, un equipo de desarrollo de software puede utilizar herramientas de colaboración para trabajar en un proyecto de manera conjunta, compartiendo ideas y conocimientos en tiempo real.</p>
-                                            <p><strong>Realidad virtual y aumentada:</strong> La realidad virtual y aumentada tienen aplicaciones en la formación y entrenamiento de empleados, así como en la simulación de procesos complejos.</p>
-                                            <p>Por ejemplo, en la industria de la aviación, los técnicos pueden utilizar gafas de realidad aumentada para acceder a manuales y guías de reparación mientras trabajan en una aeronave, mejorando la precisión y eficiencia en las tareas de mantenimiento.</p>
+                                        <p>En el mundo actual, la tecnología digital ha revolucionado la forma en que las empresas operan y gestionan sus procesos.</p>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/x-u9ZeEOxng?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
-                                        <p>Para mayor detalle, es recomendable ver este video: <a href="https://youtu.be/PLpDCK3Zy7Q" target="_blank">https://youtu.be/PLpDCK3Zy7Q</a></p>
-                                        <!-- <p>Reflexión. Preguntas Abiertas:</p>
-                                        <ol>
-                                            <li>¿Qué otras tecnologías digitales crees que podrían ser útiles para innovar y optimizar los procesos en tu negocio?</li>
-                                            <li>¿Cómo podría tu pyme evaluar qué tecnologías digitales son las más adecuadas para sus procesos específicos?</li>
-                                            <li>¿Cuáles consideras que son los principales desafíos para la implementación exitosa de tecnologías digitales en tu empresa y cómo se podrían superar?<strong> </strong></li>
-                                        </ol> -->
+                                        <separator></separator>
+                                        <div class="hint">
+                                            <p>Para mayor detalle, es recomendable ver este video:<br/>
+                                            <a href="https://youtu.be/PLpDCK3Zy7Q" target="_blank">https://youtu.be/PLpDCK3Zy7Q</a></p>
+                                        </div>
                                     </mat-expansion-panel>
 
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('estudio')" id="estudio">
@@ -518,7 +401,9 @@
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        
+                        <p>Ramirez Leobardo (2019), Curso de ingeniería de Métodos, Moodle Universidad Panamericana</p>
+                        <p>Ramirez Leobardo (2023), Gestión de la Calidad, Moodle Universidad Panamericana</p>
+                        <p>Ramirez Leobardo (2018), Dirección de Empresas, Moodle Universidad Panamericana</p>
                     </div>
                 </section>
 
