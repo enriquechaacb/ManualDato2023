@@ -1,0 +1,438 @@
+<section class="title">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center d-sm-none">
+                
+                <mat-drawer-container autosize hasBackdrop="true" class="inner">
+                    <mat-drawer #drawer position="end" mode="over">
+                        <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'top'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+                    </mat-drawer>
+                  
+                    <div>
+                        <button type="button" mat-icon-button (click)="drawer.toggle()"><mat-icon class="text-white">menu</mat-icon></button>
+                    </div>
+                  
+                  </mat-drawer-container>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contenedor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-3 col-xl-2 d-none d-sm-block">
+                <axis-menu [Secciones]="Secciones" [Seccion]="Seccion" [location]="'side'" [class]="'datos'" (drawer)="drawer.close()"></axis-menu>
+            </div>
+            <div class="col col-md-9 col-xl-10">
+                <app-breadcrumb [ruta]="Breadcrumbs"></app-breadcrumb>
+                <section class="seccion" *ngIf="Seccion==='Introduccion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>build</mat-icon> <span>Introducción</span></h2>
+                        <div class="texto-video">
+                            <p>Las pequeñas y medianas empresas (pymes) constituyen casi el 90% del entramado empresarial, jugando un papel crucial en la economía a nivel mundial. Su significativa contribución destaca por la importancia de proteger y cuidar estos negocios para el bienestar global.</p>
+                            <p>Un aspecto fundamental para el éxito de las pymes es su infraestructura y ciberseguridad. La infraestructura comprende tanto los elementos físicos, como instalaciones y equipos, incluyendo computadoras, dispositivos móviles, y sistemas de almacenamiento, como también componentes digitales como el <em>software</em> de operaciones y seguridad. La combinación adecuada de estos elementos es vital para mantener la productividad y promover el crecimiento de la empresa.</p>
+                            <p>En este contexto, la transformación digital emerge como un requisito indispensable. Requiere de las pymes una revisión y actualización de su infraestructura física y digital para aprovechar las tecnologías emergentes. Esta integración tecnológica busca optimizar la eficiencia operativa, la competitividad y la satisfacción del cliente, abarcando un cambio profundo que no solo involucra la adopción de nuevas herramientas, sino también un cambio cultural y organizacional significativo.</p>
+                            <p>La transformación digital no consiste simplemente en incorporar tecnología en diferentes áreas de la empresa. Es, fundamentalmente, un proceso que realinea la organización hacia la explotación estratégica de tecnologías emergentes, promoviendo un cambio cultural y organizativo que beneficie al conjunto de la empresa.</p>
+                            <p>En la era actual, las pymes que ignoran la necesidad de adaptarse digitalmente se enfrentan al riesgo de quedarse rezagadas. La adopción de tecnologías digitales no es solo una cuestión de supervivencia, sino un medio para competir eficazmente en el mercado global, mejorar la productividad y asegurar un crecimiento sostenido.</p>
+                            <p>Por tal motivo este apartado centra su atención en los temas de infraestructura y ciberseguridad, como un binomio indisoluble que debe cuidarse y mantenerse al día con la clara convicción de su importancia crítica para la transformación digital de la pyme, que le permita asegurar su productividad y su crecimiento.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es infraestructura y ciberseguridad?</span></h2>
+                        <div class="definition">
+                            <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
+                        </div>
+                        <div class="definition">
+                            <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p>
+                        </div>
+                        <mat-tab-group class="vertical-tab-group">
+                            <mat-tab label="1. Definición">
+                                <h3 class="mt-3"><i class="num">1</i> Definición</h3>
+                                <p>La infraestructura y la ciberseguridad están <strong>estrechamente relacionadas</strong>. La infraestructura es la base sobre la que se implementa la ciberseguridad. Sin una infraestructura sólida, es imposible tener una buena ciberseguridad.</p>
+                                <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
+                                <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p>
+                                <p>La ciberseguridad ha sido definida por la Unión Internacional de Telecomunicaciones como “el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciber entorno” (UIT, 2010:20).</p>
+                            </mat-tab>
+                            <mat-tab label="2. Infraestructura para la transformación digital">
+                                <h3 class="mt-3"><i class="num">2</i> Infraestructura para la transformación digital</h3>
+                                <p>La infraestructura para la transformación digital de una pyme se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes. </p>
+                                <p>La base sobre la que se sustenta la seguridad informática de cualquier organización está precisamente en la infraestructura tecnológica que integra un conjunto de herramientas, tecnologías y recursos que permiten a las empresas:</p>
+                                <ul>
+                                    <li>Capturar, almacenar y procesar datos.</li>
+                                    <li>Comunicarse y colaborar con clientes, proveedores y socios.</li>
+                                    <li>Desarrollar y ofrecer productos y servicios digitales.</li>
+                                    <li>Automatizar tareas y procesos.</li>
+                                    <li>Analizar datos para tomar decisiones con mejores bases de información.</li>
+                                </ul>
+                                <p>La infraestructura para la transformación digital en pymes incluye:</p>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Hardware')" id="Hardware">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.1. Hardware </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/3_Hardware.webp" class="img-fluid" alt="Hardware" />
+                                        <separator></separator>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Software')" id="Software">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.2. Software </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>Existen numerosos tipos de <em>software</em> que pueden ser útiles para la transformación digital de las pymes, dependiendo de las necesidades específicas de cada empresa. Aquí hay una lista de algunos tipos de <em>software</em> comunes que pueden contribuir a este proceso:</p>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/4_Software.webp" class="img-fluid" alt="Software" />
+                                        <separator></separator>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Herramientas')" id="Herramientas">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.3. Herramientas para la administración de datos </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <div class="texto-video">
+                                            <p>La administración de datos en las pymes implica una serie de procesos y prácticas diseñadas para capturar, almacenar, organizar, proteger y utilizar los datos de manera efectiva. Esto incluye la implementación de sistemas de gestión de bases de datos, la adopción de políticas de seguridad de la información, la realización de copias de seguridad regulares y la aplicación de técnicas de análisis de datos para obtener información útil.</p>
+                                            <p>La elección de la herramienta adecuada dependerá de las necesidades específicas de la pyme, como:</p>
+                                            <ul>
+                                                <li>Tamaño de la empresa.</li>
+                                                <li>Industria.</li>
+                                                <li>Presupuesto.</li>
+                                                <li>Necesidades de almacenamiento.</li>
+                                                <li>Necesidades de análisis.</li>
+                                            </ul>
+                                            <p>Algunas de las herramientas de administración de datos más populares para pymes son:</p>
+                                            <ul>
+                                                <li>Microsoft Excel: Es una herramienta básica de hoja de cálculo que puede ser utilizada para almacenar y organizar datos.</li>
+                                                <li>Google Sheets: Es una herramienta gratuita de hoja de cálculo basada en la nube que ofrece muchas de las mismas funciones que Excel.</li>
+                                                <li>Zoho CRM: Es una herramienta de gestión de relaciones con los clientes (CRM) que ayuda a las pymes a organizar y gestionar la información de sus clientes.</li>
+                                                <li>Salesforce: Es una herramienta CRM más completa que Zoho CRM, pero también es más costosa.</li>
+                                                <li>Tableau: Es una herramienta de análisis de datos que ayuda a las pymes a visualizar y comprender sus datos.</li>
+                                                <li>Power BI: Es una herramienta de análisis de datos de Microsoft que ofrece muchas de las mismas funciones que Tableau.</li>
+                                            </ul>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('telecomunicaciones')" id="telecomunicaciones">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.4. Servicios de telecomunicaciones para pyme </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>Los servicios de telecomunicaciones son fundamentales para las pymes, pues les permiten comunicarse con sus clientes, proveedores y socios; acceder de forma confiable a internet y a las aplicaciones en la nube; procesar pagos, facturas y asuntos contables; realizar marketing digital; y hacer actividades desde casa (home office). Por eso, la elección de los servicios de telecomunicaciones debe hacerse con cuidado, tomando en cuenta los siguientes criterios:</p>
+                                        <ul>
+                                            <li>Presupuesto.</li>
+                                            <li>Necesidades de conectividad.</li>
+                                            <li>Necesidades de voz y datos.</li>
+                                            <li>Necesidades de seguridad.</li>
+                                            <li>Nivel de servicio al cliente.</li>
+                                        </ul>
+                                        <p>Existen diversos proveedores de servicios de telecomunicaciones que ofrecen soluciones especialmente diseñadas para pymes.</p>
+                                        <p>Estos proveedores ofrecen una amplia gama de servicios, como:</p>
+                                        <ul>
+                                            <li>Internet de banda ancha.</li>
+                                            <li>Telefonía fija y móvil.</li>
+                                            <li>Cloud computing.</li>
+                                            <li>Soluciones de seguridad.</li>
+                                            <li>Soluciones de marketing digital.</li>
+                                            <li>Sevicios de computación en la nube.</li>
+                                        </ul>
+                                        <h6>2.4.1 Computación en la nube - Cloud Computing</h6>
+                                        <p>La computación en la nube, también conocida como <em>Cloud Computing</em>, se refiere a la entrega de servicios informáticos a través de internet. En lugar de alojar datos, aplicaciones y recursos en servidores locales o en dispositivos físicos propios, la computación en la nube permite acceder a estos recursos de forma remota a través de internet, bajo demanda y según sea necesario. En la computación en la nube, los proveedores de estos servicios mantienen y gestionan la infraestructura de <em>hardware</em> y <em>software</em> necesaria para ejecutar aplicaciones y almacenar datos. Los servicios de computación en la nube ofrecen acceso a una serie de funcionalidades útiles para la empresa que le reducirán costos:</p>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/5_Cloud_Computing.webp" class="img-fluid" alt="Cloud Computing" />
+                                        <separator></separator>
+                                        <p>En la actualidad, los servicios de <em>Cloud Computing</em> más comunes en empresas son:</p>
+                                        <ul>
+                                            <li>CRM y ERPs</li>
+                                            <li>Bases de datos</li>
+                                            <li>Almacenaje y transferencia de archivos</li>
+                                            <li>Servicios de correo y calendario</li>
+                                            <li>Suite de ofimática (Word, Powerpoint, Excel)</li>
+                                            <li>Escritorios virtuales</li>
+                                            <li>Copias de seguridad</li>
+                                            <li>Servicios de hospedaje</li>
+                                            <li>Centro de Procesamiento de Datos</li>
+                                        </ul>
+                                        <h6>2.4.2. Servicios de Red Privada Virtual (VPN)</h6>
+                                        <p>Las VPN son herramientas importantes para garantizar la seguridad y la privacidad de las comunicaciones empresariales. Los proveedores de servicios de telecomunicaciones ofrecen soluciones de VPN que permiten a las pymes crear redes seguras y cifradas para acceder a recursos empresariales de forma remota, protegiendo así los datos confidenciales y facilitando el trabajo remoto de manera segura.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Clientes')" id="Clientes">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>2.5. Clientes </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>Para cuidar y proteger la infraestructura tecnológica de tu pyme es importante cuidar lo siguiente:</p>
+                                        <h5>Seguridad física</h5>
+                                        <p><strong>Restringir el o los accesos físicos a los equipos.</strong> Hay que instrumentar una política de accesos donde solo el personal autorizado pueda tener acceso a la sala de servidores y a los equipos informáticos.</p>
+                                        <p><strong>Utilizar dispositivos de seguridad:</strong> Es indispensable implementar medidas de seguridad como cerraduras, cámaras de vigilancia y alarmas para proteger los equipos contra robos y daños físicos.</p>
+                                        <p><strong>Cuidar y controlar las condiciones ambientales.</strong> Proteger los equipos es una condición indispensable, ubicarlos en lugares donde se pueda mantener y controlar la temperatura, la humedad y la limpieza adecuadas, permitirá un correcto funcionamiento de los equipos.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="3. Ciberseguridad para pyme">
+                                <h3 class="mt-3"><i class="num">3</i> Ciberseguridad para pyme</h3>
+                                <p>En el panorama empresarial actual, donde la tecnología digital juega un papel fundamental en todas las facetas de las operaciones comerciales, la ciberseguridad se ha convertido en una preocupación crítica para las pymes. Estas empresas, a menudo con recursos limitados y equipos reducidos, son cada vez más el blanco de ciberataques debido a su percepción como objetivos más fáciles en comparación con las grandes corporaciones. Por lo tanto, la implementación de medidas efectivas de ciberseguridad es esencial para proteger los activos digitales y garantizar la continuidad del negocio en el entorno digital de hoy en día.</p>
+                                <p>La creciente amenaza cibernética presenta riesgos significativos para las pymes en términos de pérdida de datos, interrupción del negocio, daño a la reputación y, en última instancia, pérdidas financieras. Los ataques pueden variar desde el <em>malware</em> común hasta el phishing sofisticado, el ransomware y las vulnerabilidades de seguridad en los sistemas informáticos. La falta de medidas de seguridad adecuadas puede dejar a las pymes vulnerables a estos ataques y sus consecuencias devastadoras.</p>
+                                <img src="../../../../../assets/images/dimensions/habilidadesdigitales/6_Principales_preocupaciones_directivos_empresas.webp" class="img-fluid" alt="Principales preocupaciones de directivos de empresas" />
+                                <separator></separator>
+                                <div class="texto-video">
+                                    <p>La ciberseguridad ha sido definida por la Unión Internacional de Telecomunicaciones como “el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciberentorno” (UIT, 2010:20)</p>
+                                    <p>Como puede observarse, la ciberseguridad no se refiere exclusivamente a la protección de la información de la empresa, sino también su infraestructura de gestión de datos y automatización de operaciones. La ciberseguridad incluye los siguientes elementos:</p>
+                                    <ul>
+                                        <li>Seguridad de red: proteger una red informática de intrusos.</li>
+                                        <li>Seguridad de las aplicaciones: mantener el <em>software</em> y los dispositivos libres de amenazas. </li>
+                                        <li>Seguridad de la información: protege la integridad y la privacidad de los datos</li>
+                                        <li>Seguridad operativa: procesos y decisiones para manejar y proteger los recursos de datos (permisos de usuarios para acceder a una red; procedimientos para almacenar o compartir los datos).</li>
+                                        <li>Seguridad del usuario: identificación personal de los usuarios (nombres, direcciones, números de identificación, etc.) y la información para fines económicos (tarjeta de crédito).</li>
+                                        <li>Recuperación ante desastres y la continuidad del negocio: forma en que una organización responde a un incidente de ciberseguridad que cause que detenga sus operaciones o se pierdan datos. </li>
+                                        <li>Seguridad móvil: se refiere a las estrategias, infraestructuras y <em>software</em> que se utilizan para proteger cualquier dispositivo móvil. Implica la protección de datos en el dispositivo local, en los endpoints conectados al dispositivo y en los equipos de redes. </li>
+                                        <li>Seguridad de <em>hardware</em>: se dirige a garantizar la protección del dispositivo fìsico, el contenido que éste almacena y la forma en que la información transcurre a través de sus diferentes componentes.</li>
+                                    </ul>
+                                </div>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('ciberataques')" id="ciberataques">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.1. Principales ciberataques</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/7_Principales_ciberataques.webp" class="img-fluid" alt="Principales ciberataques" />
+                                        <separator></separator>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('DDoS')" id="DDoS">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.2. Ataques de Denegación de Servicio (DDoS)</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>Buscan inundar un servidor o red con una gran cantidad de tráfico malicioso, lo que resulta en la interrupción del servicio y la no disponibilidad de recursos para usuarios legítimos. Esto ocasiona que el sistema sea inutilizable e impide que una organización realice funciones vitales. Estos ataques pueden afectar a empresas, instituciones gubernamentales y proveedores de servicios en línea, causando pérdidas financieras y daño a la reputación.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Vulnerabilidades')" id="Vulnerabilidades">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.3. Explotación de Vulnerabilidades de Software</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <div class="texto-video">
+                                            <p>Los ciberataques que aprovechan las vulnerabilidades de <em>software</em> explotan debilidades en aplicaciones, sistemas operativos o dispositivos para infiltrarse en sistemas y redes. Estos ataques pueden llevar a la ejecución de código malicioso, el robo de datos o el compromiso de la integridad y disponibilidad de los sistemas afectados.</p>
+                                            <p><strong><em>Credential Stuffing</em></strong><strong>/compromised credential. </strong>Usa las interfaces digitales y los flujos de trabajo, como los formularios de inicio de sesión, para obtener acceso no autorizado a las cuentas de los clientes. El <em>Credential Stuffing</em> comienza con la automatización, la extracción de las credenciales y, finalmente, el robo de cuentas y fraudes.</p>
+                                            <p><strong><em>Ingeniería Social. </em></strong>Este tipo de ciberataque implica la manipulación psicológica de individuos para obtener información confidencial o acceder a sistemas y redes. Los atacantes pueden utilizar técnicas de ingeniería social, como el engaño, la persuasión y la intimidación, para engañar a las víctimas y obtener acceso no autorizado a datos y sistemas.</p>
+                                            <p><strong>Amenazas persistentes avanzadas (APT). </strong>Un intruso se infiltra en un sistema y permanece sin ser detectado durante un periodo prolongado con el objetivo de espiar la actividad comercial o robar datos confidenciales.</p>
+                                            <p><strong>Inyección de código SQL (</strong><strong><em>Structured Query Language</em></strong><strong>).  </strong>Ciberataque en el que se aprovechan las vulnerabilidades de las aplicaciones basadas en datos para insertar código malicioso (mediante instrucción SQL) en una base de datos con el objetivo de tomar el control y robar información.</p>
+                                            <p><strong>Ataque de tipo “</strong><strong><em>Man-in-the-middle</em></strong><strong>”. </strong>Ciber amenaza en la que se intercepta la comunicación entre dos individuos para robar datos. Por ejemplo, en una red Wi-Fi no segura.</p>
+                                        </div>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Costos')" id="Costos">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>3.4. Costos directos de los ciberataques</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>¿Por qué la ciberseguridad debería preocupar y ocupar a los directivos de la pyme? Fundamentalmente, hay que considerar que le genera costos, entre los que destacan:</p>
+                                        <p><strong>Reparación de daños:</strong> reparar los sistemas dañados, restaurar datos perdidos y recuperar el funcionamiento normal de la empresa después de un ataque.</p>
+                                        <p><strong>Pérdida de ingresos:</strong> interrumpción de las operaciones comerciales y pérdida de ingresos durante el tiempo que dure.</p>
+                                        <p><strong>Reducción de la productividad: </strong>reconstruir las bases de datos tomará tiempo y esto minará la eficiencia de las operaciones de la empresa.</p>
+                                        <p><strong>Robo de datos:</strong> El robo de información confidencial, como datos de clientes o propiedad intelectual, puede tener un impacto significativo en la reputación y el valor de la empresa.</p>
+                                        <p><strong>Multas y sanciones:</strong> Las empresas que sufren un ciberataque pueden ser multadas por no proteger adecuadamente los datos de sus clientes o por no cumplir con las regulaciones de seguridad.</p>
+                                        <p>A estos costos hay que agregar algunos <strong>indirectos</strong> como el daño a la reputación; un   ciberataque puede dañar la reputación de la empresa y la confianza de sus clientes, lo que puede afectar negativamente las ventas y la rentabilidad. Asimismo, hay que considerar los costos legales asociados con la investigación y el enjuiciamiento de un ciberataque, los cueles pueden ser significativos. Finalmente, está la pérdida de oportunidades pues la empresa puede fallar en su capacidad de respuesta para su integración a cadenas de valor</p>
+                                        <h5>La estrategia de ciberseguridad en las pymes</h5>
+                                        <p>Entonces, ¿cómo pueden las pymes abordar eficazmente el desafío de la ciberseguridad? En primer lugar, es crucial aumentar la conciencia sobre la importancia de la ciberseguridad en todos los niveles de la organización. Desde los empleados de nivel de entrada hasta la alta dirección, todos deben comprender los riesgos cibernéticos y las mejores prácticas para mitigarlos. La educación y la formación en ciberseguridad son fundamentales para capacitar al personal en la identificación de amenazas y la adopción de medidas proactivas para proteger los activos digitales de la empresa.</p>
+                                        <p>Además, las pymes deben implementar una estrategia integral de ciberseguridad que incluya medidas técnicas, procesos robustos y políticas claras. Esto puede implicar la instalación de <em>software</em> antivirus y firewalls, la implementación de autenticación de dos factores, el cifrado de datos sensibles, la realización de copias de seguridad regulares y la actualización continua de sistemas y aplicaciones para abordar las vulnerabilidades de seguridad conocidas.</p>
+                                        <p>Asimismo, es esencial establecer políticas de acceso y uso de datos que regulen quién tiene acceso a la información confidencial y cómo se utiliza y comparte esa información. La segmentación de redes y la limitación de los privilegios de acceso también pueden ayudar a reducir el riesgo de violaciones de seguridad y el movimiento lateral de los atacantes dentro de los sistemas de la empresa.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="4. La ciberseguridad mediante el enfoque de capas de protección">
+                                <h3 class="mt-3"><i class="num">4</i> La ciberseguridad mediante el enfoque de capas de protección</h3>
+                                <p>Un enfoque profundo e integral de defensa implica la implementación de múltiples capas de seguridad, que son fundamentales para fortalecer la protección contra las amenazas cibernéticas.</p>
+                                <p>Las capas de ciberseguridad se pueden dividir en las siguientes categorías:</p>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('fisica')" id="fisica">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.1. Capa física</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Seguridad perimetral:</strong> Protege el acceso físico a los equipos y dispositivos.</p>
+                                        <p><strong>Control de acceso:</strong> Restringe el acceso a los sistemas y datos a usuarios autorizados.</p>
+                                        <p><strong>Videovigilancia:</strong> Monitorea las instalaciones para detectar intrusiones.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('red')" id="red">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.2. Capa de red</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Firewalls:</strong> Estos sistemas de seguridad controlan el tráfico de red y bloquean el acceso no autorizado a la red.</p>
+                                        <p><strong>Sistemas de detección de intrusiones (IDS)</strong>: Estos sistemas monitorean la red y los dispositivos conectados para detectar actividades sospechosas en la red. Hay tres tipos de IDS:</p>
+                                        <ol>
+                                            <li>IDS basados en red. Monitorean el tráfico de red en busca de actividades sospechosas.</li>
+                                            <li>IDS basados en host: Monitorean los eventos del sistema en busca de actividades sospechosas.</li>
+                                            <li>IDS basados en la nube: Monitorean el tráfico de red y los eventos del sistema en la nube.</li>
+                                        </ol>
+                                        <p>Es importante contemplar que los IDS no son perfectos, puede que no detecten todo tipo de ataques; también pueden generar alertas falsas, además de ser muy costosos. Estos sistemas son herramientas valiosas para la seguridad de la red, pero deben complementarse con otras medidas de seguridad.</p>
+                                        <p><strong>Sistemas de prevención de intrusiones (IPS):</strong> Previenen intrusiones en la red. Puede ser un dispositivo o software que monitorea la red y los dispositivos conectados a ella para detectar y prevenir actividades sospechosas.</p>
+                                        <p>Funcionan de manera similar a los IDS, pero además de la detección de las actividades sospechosas, también pueden prevenir, entre ellas están: bloquear el tráfico malicioso; desviar el tráfico sospechoso a un dispositivo de análisis para su inspección y también puede deshabilitar las cuentas de usuario comprometidas.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('pf')" id="pf">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.3. Capa de punto final</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Antivirus y antimalware:</strong> Protegen los dispositivos contra <em>software</em> malicioso.</p>
+                                        <p><strong>Control de aplicaciones:</strong> Restringe la instalación y ejecución de aplicaciones no autorizadas.</p>
+                                        <p><strong>Cifrado de dispositivos:</strong> Protege los datos en caso de robo o pérdida del dispositivo.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('aplicaciones')" id="aplicaciones">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.4. Capa de aplicaciones</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Firewalls de aplicaciones web (WAF):</strong> Protegen las aplicaciones web contra ataques.</p>
+                                        <p><strong>Pruebas de penetración:</strong> Identifican vulnerabilidades en las aplicaciones.</p>
+                                        <p><strong>Control de cambios:</strong> Monitorea y controla los cambios en las aplicaciones.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('datos')" id="datos">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.5. Capa de datos</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Respaldo y recuperación de datos: </strong>Protege los datos contra pérdida o corrupción.</p>
+                                        <p><strong>Control de acceso a datos:</strong> Restringe el acceso a los datos a usuarios autorizados.</p>
+                                        <p><strong>Cifrado de datos: </strong>Protege los datos en caso de robo o acceso no autorizado.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('gestion')" id="gestion">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.6. Capa de gestión</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p><strong>Concientización sobre seguridad:</strong> Busca capacitar a los empleados sobre las mejores prácticas de seguridad y ciberseguridad.</p>
+                                        <p><strong>Gestión de riesgos:</strong> Identifica, evalúa y mitiga los riesgos de seguridad.</p>
+                                        <p><strong>Respuesta a incidentes:</strong> Define un plan para responder a los incidentes de seguridad.</p>
+                                        <p>Es importante implementar las capas de ciberseguridad de forma adecuada y coordinada para crear un sistema de defensa integral. Por ello, las empresas deben evaluar sus necesidades y riesgos específicos para determinar qué capas de seguridad son más importantes para ellas, sin perder de vista el enfoque integral.</p>
+                                        <p>Además de las capas de seguridad mencionadas anteriormente, existen otras medidas que las empresas pueden tomar para mejorar su ciberseguridad, como:</p>
+                                        <ul>
+                                            <li>Mantener el <em>software</em> actualizado.</li>
+                                            <li>Utilizar contraseñas seguras.</li>
+                                            <li>Realizar copias de seguridad regulares.</li>
+                                            <li>Estar al tanto de las últimas amenazas cibernéticas.</li>
+                                        </ul>
+                                    </mat-expansion-panel>
+                                    <!-- <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('ciberataques')" id="ciberataques">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>4.7. </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                    
+                                    </mat-expansion-panel> -->
+                                </mat-accordion>
+                                <img src="../../../../../assets/images/dimensions/habilidadesdigitales/8_7Capas_Ciberseguridad.webp" class="img-fluid" alt="7 capas de seguridad" />
+                                <separator></separator>
+                                <img src="../../../../../assets/images/dimensions/habilidadesdigitales/8.2_Tipos_incidentes_seguridad_internos.webp" class="img-fluid" alt="Tipos de incidentes de seguridad internos" />
+                                <separator></separator>
+
+                            </mat-tab>
+                            <mat-tab label="5. Seguridad de la información: las normas ISO 27000">
+                                <h3 class="mt-3"><i class="num">5</i> Seguridad de la información: las normas ISO 27000</h3>
+                                <p>La serie de normas ISO 27000 es un conjunto de estándares internacionales relacionados con la gestión de la seguridad de la información. Estos estándares están diseñados para ayudar a las organizaciones a establecer, implementar, mantener y mejorar un sistema de gestión de seguridad de la información (SGSI). La serie ISO 27000 incluye varias normas, siendo la norma principal la ISO 27001.</p>
+                                <p>La norma ISO 27001 establece los requisitos para establecer, implementar, mantener y mejorar continuamente un SGSI dentro de una organización. Proporciona un enfoque basado en el riesgo para la gestión de la seguridad de la información, lo que significa que las organizaciones deben identificar y evaluar los riesgos de seguridad de la información y tomar medidas para tratarlos de manera adecuada.</p>
+                                <p>Además de la ISO 27001, otras normas importantes en la serie ISO 27000 incluyen la ISO 27002, que proporciona directrices detalladas para la implementación de controles de seguridad de la información, y la ISO 27005, que ofrece pautas para la gestión de riesgos de seguridad de la información.</p>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('27001')" id="27001">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.1. Norma ISO 27001</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>La ISO 27001 se centra especialmente en la gestión de riesgos, es decir, en identificar las amenazas para la seguridad de la información de una empresa, analizarlos, y crear medidas y mecanismos cuyo objetivo sea reducir la posibilidad de su materialización y, en caso de que ocurran, minimizar su impacto para la organización.</p>
+                                        <p>Se trata de adoptar medidas de seguridad como, por ejemplo, reforzar la seguridad del <em>hardware</em> o <em>software</em> que usa la empresa, implementando soluciones como el sistema SIEM (Security Information and Event Management, Seguridad de la Información y Gestión de Eventos), o creando protocolos y políticas de seguridad que garanticen que las medidas con las que se cuenta son empleadas de manera confiable y efectiva.</p>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('27002')" id="27002">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>5.2. Norma ISO 27002</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <p>Por su parte, el principal objetivo de la ISO 27002 es establecer directrices y principios generales para iniciar, implementar, mantener y mejorar la gestión de la seguridad de la información en una organización. Esto también incluye la selección, implementación y administración de controles, teniendo en cuenta los entornos de riesgo.</p>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/9_Norma_ISOIEC_270022022.webp" class="img-fluid" alt="Norma ISO 27002" />
+                                        <separator></separator>
+                                        <p>En conjunto, la serie ISO 27000 proporciona un marco sólido y reconocido internacionalmente para la gestión de la seguridad de la información, ayudando a las organizaciones a proteger sus activos de información, gestionar los riesgos de seguridad y cumplir con los requisitos legales y regulatorios pertinentes.</p>
+                                        <p>Las empresas u organismos pueden certificarse con el estándar ISO 27001 tras pasar una rigurosa auditoría basada en:</p>
+                                        <p><strong>Examinar</strong> de forma sistemática los riesgos de la organización, analizando amenazas, vulnerabilidades e impactos.</p>
+                                        <p><strong>Diseñar e implementar</strong> un conjunto coherente de controles de ciberseguridad, así como diversas formas de gestión del riesgo para prevenir y solucionar riesgos no aceptables.</p>
+                                        <p><strong>Adoptar</strong> un proceso supra-departamental que asegure que los mecanismos de seguridad sigan cumpliendo los estándares requeridos, periódicamente.</p>
+                                        <p>El sistema se fortalece mediante la ética del personal de la organización, pues ésta permitirá aumentar el nivel de confidencialidad de los datos en todos los ámbitos dentro de una compañía, reduciendo el posible riesgo de fraude y/o la pérdida de información.</p>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                            <mat-tab label="6. Protección de datos personales">
+                                <h3 class="mt-3"><i class="num">6</i> Protección de datos personales</h3>
+                                <p>Los datos personales se refieren a aquella información de una persona identificada o que la hace identificable; asimismo, <strong>son parte nuclear de la identidad de un individuo</strong>, puesto que estos permiten hacer una referencia exacta y objetiva para particularizar a una persona (Fiscalía General de la República, 2019).</p>
+                                <img src="../../../../../assets/images/dimensions/habilidadesdigitales/10_Derecho_proteccion_datos_personales.webp" class="img-fluid" alt="Protección de datos personales" />
+                                <separator></separator>
+                                <p>De los 35 países en el continente americano, 26 de ellos cuentan con legislación en protección de datos, cuatro ya están en desarrollo de proyectos de ley y sólo cinco, no cuentan con legislación. En la tabla siguiente se muestran las legislaciones para algunos países del continente americano.</p>
+                                <mat-accordion>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Legislaciones')" id="Legislaciones">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.1. Legislaciones para algunos países de América</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/11_Legislaciones_paises_America.webp" class="img-fluid" alt="Legislaciones para algunos países de América" />
+                                        <separator></separator>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('obligaciones')" id="obligaciones">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.2. ¿Qué obligaciones tienen las pymes con respecto a los datos personales?</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <ul>
+                                            <li>Obtener el consentimiento de las personas antes de recopilar sus datos personales.</li>
+                                            <li>Informar a las personas sobre cómo se utilizarán sus datos personales.</li>
+                                            <li>Utilizar los datos personales de manera lícita y responsable.</li>
+                                            <li>Proteger los datos personales contra accesos no autorizados, robo o pérdida.</li>
+                                            <li>Eliminar los datos personales cuando ya no sean necesarios.</li>
+                                        </ul>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('medidas')" id="medidas">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>6.3. ¿Qué medidas pueden tomar las pymes para proteger los datos personales?</mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <ul>
+                                            <li>Implementar una política de privacidad.</li>
+                                            <li>Capacitar al personal sobre la importancia de la protección de datos personales y sobre las medidas de resguardo y protección de esos datos.</li>
+                                            <li>Utilizar medidas de seguridad para proteger los datos personales.</li>
+                                            <li>Realizar auditorías para verificar el cumplimiento de las leyes y regulaciones de protección de datos.</li>
+                                            <li>La protección de datos personales no es solo una obligación legal, sino también una responsabilidad ética. Además, las pymes que protegen los datos personales de sus clientes, empleados y proveedores estarán mejor posicionadas para generar confianza y construir relaciones duraderas.</li>
+                                        </ul>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    
+                    <div class="references">
+                        <h4>Referencias</h4>
+                        <p>Aguilar, J. F. (2023). Red Forbes. Recuperado de www.forbes.com.mx: <a href="https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/" target="_blank">https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/</a></p>
+                        <p>Enríquez, L. (2021). Universidad Andina Simón Bolívar. Recuperado de Observatorio de Ciberderechos y Tecnosociedad: <a href="https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/" target="_blank">https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/</a></p>
+                        <p>ESET Latinoamérica. (2023). www.eset.com. Recuperado de ESET Security Report 2023: <a href="https://www.eset.com/ve/security-report/" target="_blank">https://www.eset.com/ve/security-report/</a></p>
+                        <p>Fiscalía General de la República. (2019). Recuperado de <a href="https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416" target="_blank">https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416</a></p>
+                        <p>KPMG (2023) Cloud Computing para pymes, <a href="https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/" target="_blank">https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/</a></p>
+                        <p>Lv, C. (2022). The Dilemma and Countermeasures of Personal Privacy Protection in the Era of Big Data. 3rd International Conference on Electronic Communication and Artificial Intelligence (IWECAI).</p>
+                        <p>Sánchez Pérez, G., &amp; Rojas González, I. (s.f.). Leyes de protección de datos personales en el mundo y la protección de datos biométricos - Parte I. Seguridad (UNAM)(13). Recuperado de <a href="https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93" target="_blank">https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93</a></p>
+                        <p>UNCTAD. (2021). Data Protection and Privacy Legislation Worldwide. Recuperado de <a href="https://unctad.org/page/data-protection-and-privacy-legislation-worldwide" target="_blank">https://unctad.org/page/data-protection-and-privacy-legislation-worldwide</a></p>
+                        <p>KPMG (2023) <em>Cloud Computing</em> para pymes, <a href="https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/" target="_blank">https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/</a></p>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Beneficios'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>loyalty</mat-icon> <span>Beneficios</span></h2>
+                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/1_Beneficios_infraestructura_adoptar_medidas_ciberseguridad.webp" class="img-fluid" alt="Beneficios de cuidar la infraestructura y adoptar medidas de ciberseguridad" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <section class="seccion" *ngIf="Seccion==='Proceso'" @changeSection>
+                    <div class="container">
+                        <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
+                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/2_Proceso_infraestructura_digital_medidas_ciberseguridad.webp" class="img-fluid" alt="Proceso para cuidar la infraestructura digital y adoptar medidas de ciberseguridad" />
+                        <separator></separator>
+                    </div>
+                </section>
+
+                <app-tools *ngIf="Seccion==='Herramientas'" [Title]="Seccion" [Tools]="Tools" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Glosario'" [Title]="Seccion" [Tools]="Words" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Expertos'" [Title]="Seccion" [Tools]="Experts" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Instituciones'" [Title]="Seccion" [Tools]="Institutions" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Literatura sugerida'" [Tools]="Books" @changeSection>
+                </app-tools> 
+
+                <app-tools *ngIf="Seccion==='Literatura'" [Title]="'Sitios web'" [Tools]="Websites" @changeSection>
+                </app-tools> 
+
+            </div>
+        </div>
+    </div>
+</div>

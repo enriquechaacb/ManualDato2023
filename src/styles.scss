@@ -212,6 +212,15 @@ li {
     font-weight: 400;
 }
 
+ol{
+    li{
+        &::marker{
+            font-weight: 900;
+            filter: opacity(0.5);
+        }
+    }
+}
+
 .mat-expansion-panel {
     color: var(--primary);
 }
@@ -766,12 +775,14 @@ section {
     padding: 25px;
     margin-bottom: 2em;
     border-radius: 25px;
+    margin-bottom: 2em;
 }
 
 .texto-infografia {
     padding: 25px;
     border: solid var(--negro25) 2px;
     border-radius: 25px;
+    margin-bottom: 2em;
 }
 
 

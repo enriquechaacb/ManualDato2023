@@ -38,8 +38,7 @@ import { CanalesdigitalesComponent } from './Components/manual/canalesdeventa/ca
 import { ComercioelectronicoComponent } from './Components/manual/canalesdeventa/comercioelectronico/comercioelectronico.component';
 import { MarketingdigitalComponent } from './Components/manual/canalesdeventa/marketingdigital/marketingdigital.component';
 import { GestiondeclientesComponent } from './Components/manual/canalesdeventa/gestiondeclientes/gestiondeclientes.component';
-import { InfraestructuraComponent } from './Components/manual/habilidadesdigitales/infraestructura/infraestructura.component';
-import { CiberseguridadComponent } from './Components/manual/habilidadesdigitales/ciberseguridad/ciberseguridad.component';
+import { InfraestructuraComponent } from './Components/manual/habilidadesdigitales/infraestructurayciberseguridad/infraestructurayciberseguridad.component';
 import { CompetenciasComponent } from './Components/manual/habilidadesdigitales/competencias/competencias.component';
 import { HerramientasComponent } from './Components/manual/habilidadesdigitales/herramientas/herramientas.component';
 import { TecnologiasComponent } from './Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
@@ -83,7 +82,6 @@ import { PrivacidadComponent } from './Components/privacidad/privacidad.componen
     MarketingdigitalComponent,
     GestiondeclientesComponent,
     InfraestructuraComponent,
-    CiberseguridadComponent,
     CompetenciasComponent,
     HerramientasComponent,
     TecnologiasComponent,

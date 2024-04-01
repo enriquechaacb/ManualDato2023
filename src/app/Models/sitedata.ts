@@ -165,7 +165,7 @@ export const Glossary: words[] = [
     { IdPalabra: 146, Palabra: "Código Abierto", Significado: "Es un modelo de desarrollo de software basado en la colaboración abierta. Se enfoca en los beneficios prácticos (acceso al código fuente) y en cuestiones éticas o de libertad que tanto se destacan en el software libre.", Fuente: "" },
     { IdPalabra: 147, Palabra: "Software libre", Significado: "Es un software cuyo código fuente puede ser estudiado, modificado, y utilizado libremente con cualquier finalidad y redistribuido con cambios o mejoras sobre él.", Fuente: "" },
     { IdPalabra: 148, Palabra: "Usabilidad", Significado: "Se refiere a la facilidad con que las personas pueden utilizar una herramienta particular o cualquier otro objeto fabricado por humanos con el fin de alcanzar un objetivo concreto. ", Fuente: "" },
-    { IdPalabra: 149, Palabra: "Ciberseguridad", Significado: "La ciberseguridad es la práctica de proteger equipos, redes, aplicaciones de software, sistemas críticos y datos de posibles amenazas digitales. Las organizaciones tienen la responsabilidad de proteger los datos para mantener la confianza del cliente y cumplir la normativa. Utilizan medidas y herramientas de ciberseguridad para proteger los datos confidenciales del acceso no autorizado, así como para evitar interrupciones en las operaciones empresariales debido a una actividad de red no deseada. Las organizaciones implementan la ciberseguridad al optimizar la defensa digital entre las personas, los procesos y las tecnologías.", Fuente: "(AWS, 2023)." },
+    { IdPalabra: 149, Palabra: "Ciberseguridad", Significado: "La ciberseguridad es la práctica de proteger equipos, redes, aplicaciones de software, sistemas críticos y datos de posibles amenazas digitales. Las organizaciones tienen la responsabilidad de proteger los datos para mantener la confianza del cliente y cumplir la normativa. Utilizan medidas y herramientas de ciberseguridad para proteger los datos confidenciales del acceso no autorizado, así como para evitar interrupciones en las operaciones empresariales debido a una actividad de red no deseada. Las organizaciones implementan la ciberseguridad al optimizar la defensa digital entre las personas, los procesos y las tecnologías. Definida por la Unión Internacional de Telecomunicaciones es “el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciberentorno.", Fuente: "(AWS, 2023)." },
     { IdPalabra: 150, Palabra: "eCommerce", Significado: "Un método de compraventa que utiliza internet como medio para realizar transacciones y contactar con sus consumidores. No sólo mediante una página web, sino también a través de las redes sociales.", Fuente: "(Bello, 2022)" },
     { IdPalabra: 151, Palabra: "Propuesta de valor", Significado: "Factor que hace que un cliente se decante por una u otra empresa; su finalidad es solucionar un problema o satisfacer una necesidad del cliente. Las propuestas de valor son un conjunto de productos o servicios que satisfacen los requisitos de un segmento de mercado determinado.", Fuente: "(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010)." },
     { IdPalabra: 152, Palabra: "Segmento de mercado", Significado: "Es el grupo de personas o entidades a los que se dirigen los esfuerzos comerciales o de negocio de una empresa", Fuente: "(Osterwalder & Pigneur, Generación de modelos de negocio: Un manual para visionarios, revolucionarios y retadores, 2010)." },
@@ -176,9 +176,25 @@ export const Glossary: words[] = [
     { IdPalabra: 157, Palabra: "Estrategia", Significado: "Es un procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario. Esto, buscando alcanzar uno o varios objetivos previamente definidos.", Fuente: "(Westreicher, 2021)" },
     { IdPalabra: 158, Palabra: "Gestión", Significado: "La gestión es un conjunto de procedimientos y acciones que se llevan a cabo para lograr un determinado objetivo.", Fuente: "(Westreicher G. , 2020)" },
     { IdPalabra: 159, Palabra: "Información", Significado: "Es el nombre por el que se conoce un conjunto organizado de datos procesados que constituyen un mensaje que cambia el estado de conocimiento del sujeto o sistema que recibe dicho mensaje.", Fuente: "(Wikipeida, 2023)" },
-    { IdPalabra: 160, Palabra: "Machine Learning", Significado: "Es una forma de la IA que permite a un sistema aprender de los datos en lugar de aprender mediante la programación explícita. Conforme el algoritmo recibe datos de entrenamiento, es posible producir modelos más precisos basados en datos. Un modelo de machine learning es la salida de información que se genera cuando entrena su algoritmo de machine learning con datos.", Fuente: "(IBM, 2023)" }
-
-
+    { IdPalabra: 160, Palabra: "Machine Learning", Significado: "Es una forma de la IA que permite a un sistema aprender de los datos en lugar de aprender mediante la programación explícita. Conforme el algoritmo recibe datos de entrenamiento, es posible producir modelos más precisos basados en datos. Un modelo de machine learning es la salida de información que se genera cuando entrena su algoritmo de machine learning con datos.", Fuente: "(IBM, 2023)" },
+    { IdPalabra: 161, Palabra: "Adware", Significado: "software que muestra publicidad no deseada que puede utilizarse para difundir malware.", Fuente: "" },
+    { IdPalabra: 162, Palabra: "Análisis de riesgos", Significado: "Proceso que comprende la identificación de activos de información, sus vulnerabilidades y las amenazas a los que se encuentran expuestos, así como la probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuaos para tratar el riesgo.", Fuente: "(INCIBE, s/f)." }, 
+    { IdPalabra: 163, Palabra: "Antivirus", Significado: "oftware de protección para evitar que se ejecute algún tipo de software malicioso en nuestro equipo que infecte a dicho equipo. ", Fuente: "" },
+    { IdPalabra: 164, Palabra: "Botnets:", Significado: "Red o redes de dispositivos infectados con malware que se controlan en forma remota por un atacante. Las redes de computadoras con infección de malware son utilizadas por los cibercriminales quienes realizan tareas en línea sin el permiso del usuario." },
+    { IdPalabra: 165, Palabra: "Infraestructura digital", Significado: "Comprende tanto los elementos físicos, como instalaciones y equipos, incluyendo computadoras, dispositivos móviles, y sistemas de almacenamiento, como también componentes digitales como el software de operaciones y seguridad. ", Fuente: "" },
+    { IdPalabra: 166, Palabra: "Malware", Significado: "Es un software malicioso diseñado para dañar o inhabilitar un sistema informático. Estos ciberataques pueden causar daños significativos al infectar sistemas, robar información confidencial, cifrar archivos o interrumpir las operaciones comerciales. ", Fuente: "" },
+    { IdPalabra: 167, Palabra: "Phishing", Significado: "En este caso, los ataques implican el uso de correos electrónicos, mensajes de texto u otros medios de comunicación falsificados para engañar a los usuarios y obtener información confidencial, como nombres de usuario, contraseñas o detalles de tarjetas de crédito. Este tipo de ciberataque puede conducir al robo de identidad, fraude financiero y compromiso de cuentas en línea.", Fuente: "" },
+    { IdPalabra: 168, Palabra: "Ransomware", Significado: "Secuestro de datos. Malware que bloquea el acceso a archivos, datos o sistemas, y amenaza con borrar, destruir o publicar los datos confidenciales o privados, a menos que se pague un rescate. ", Fuente: "" },
+    { IdPalabra: 169, Palabra: "Spyware", Significado: "Es un programa malicioso diseñado para recopilar información sobre una persona u organización; registra en secreto lo que hace un usuario para que los cibercriminales puedan utilizar esta información. Por ejemplo, el spyware puede capturar los detalles de las tarjetas de crédito; hábitos de navegación, datos financieros e incluso, conversaciones personales. ", Fuente: "" },
+    { IdPalabra: 170, Palabra: "Troyanos", Significado: "Tipo de malware que se disfraza como software legítimo para engañar a usuarios e instalarse en los equipos causando daños o para recopilar datos.", Fuente: "" },
+    { IdPalabra: 171, Palabra: "Virus", Significado: "Es un tipo de malware que se replica a sí mismo y se propagada de un dispositivo a otro. Ese programa es capaz de reproducirse que se incrusta un archivo limpio y se extiende por todo el sistema informático e infecta a los archivos con código malicioso.", Fuente: "" },
+    { IdPalabra: 172, Palabra: "Alfabetización digital", Significado: "Capacidad que tiene una persona para buscar, analizar, organizar, evaluar, interpretar y compartir información a través de las tecnologías digitales.", Fuente: "" }, 
+    { IdPalabra: 173, Palabra: "Competencias y habilidades digitales", Significado: "En el contexto de las pequeñas y medianas empresas (pymes) las competencias y habilidades digitales se refieren al conjunto de conocimientos, capacidades, habilidades y actitudes que permiten a los trabajadores y empresarios, utilizar eficazmente las tecnologías de información y comunicación (TIC).", Fuente: "" },
+    { IdPalabra: 174, Palabra: "Competencias digitales", Significado: "Aluden a las capacidades que permiten a los individuos entender y utilizar las tecnologías digitales de manera efectiva y segura.", Fuente: "" },
+    { IdPalabra: 175, Palabra: "Data Driven", Significado: "Implica que todas las decisiones empresariales tienen como base el uso de datos analizados y verificables.", Fuente: "" },
+    { IdPalabra: 176, Palabra: "Data Literacy", Significado: "Capacidad de leer, comprender, analizar y comunicar datos de manera efectiva.", Fuente: "" },
+    { IdPalabra: 177, Palabra: "Habilidades digitales", Significado: "Se refieren a las habilidades técnicas específicas requeridas para operar herramientas y plataformas digitales.", Fuente: "" },
+    { IdPalabra: 178, Palabra: "Tecnologías de la información y comunicación (TIC)", Significado: "Son todos aquellos recursos, herramientas y programas que se utilizan para procesar, administrar y compartir la información mediante diversos soportes tecnológicos, tales como: computadoras, teléfonos móviles, televisores, reproductores portátiles de audio y video o consolas de juego. Actualmente el papel de las TIC en la sociedad es muy importante porque ofrecen muchos servicios como: correo electrónico, búsqueda de información, banca online, descarga de música y cine, comercio electrónico, entre otros.", Fuente: "" },
 ]
 
 export const Experts: experts[] = [
@@ -222,7 +238,14 @@ export const Experts: experts[] = [
     { IdExperto: 38, Nombre: "Fundación Da Vinci Uruguay", Contacto: "", Url: "https://davinci.lat/", Descripcion: "Esta incubadora está dirigida a emprendimientos en etapas tempranas de desarrollo con soluciones validadas y que cuenten o con mérito innovador o valor diferencial." },
     { IdExperto: 39, Nombre: "Modo digital", Contacto: "", Url: "https://mododigital.uy", Descripcion: "Una plataforma apoyada por el BID que integra recursos y herramientas útiles para la transformación digital de las pymes. " },
     { IdExperto: 45, Nombre: "Cámara de Comercio de Cali", Contacto: "", Url: "https://www.ccc.org.co", Descripcion: "Instancia que trabaja en una visión ecosistémica que apoya y orienta al empresario y a las empresas en favor de su desarrollo" },
-   
+    { IdExperto: 46, Nombre: "Directorio de empresas de ciberseguridad en Uruguay", Contacto: "", Url: "https://ciberseguridad.com/empresas/uruguay/", Descripcion: "" },
+    { IdExperto: 47, Nombre: "Empresas de ciberseguridad en Colombia", Contacto: "", Url: "https://revistaseguridad360.com/destacados/empresas-de-ciberseguridad-en-colombia/", Descripcion: "" },
+    { IdExperto: 48, Nombre: "SEIDOR El Salvador ", Contacto: "", Url: "https://www.seidor.com/es-sv/servicios/cybersecurity", Descripcion: "" },
+    { IdExperto: 49, Nombre: "Soluciones Seguras El Salvador ", Contacto: "", Url: "https://www.solucionesseguras.com/", Descripcion: "" },
+    { IdExperto: 50, Nombre: "ESET El Salvador", Contacto: "Benjamín Carpio, Country Manager", Url: "mailto:benjamincarpio@eset.com.sv", Descripcion: "" },
+    { IdExperto: 51, Nombre: "Catálogo de empresas y soluciones de ciberseguridad", Contacto: "INCIBE", Url: "https://www.incibe.es/sites/default/files/contenidos/guias/doc/catalogo_ciberseguridad.pdf", Descripcion: "" },
+
+    
 ]
 
 export const Institutions: institutions[] = [
@@ -254,7 +277,11 @@ export const Institutions: institutions[] = [
     { IdInstitucion: 26, Nombre: "Ministerio de Economía y Finanzas de la República Oriental del Uruguay. Secretaría de estado encargada de la administración y fortalecimiento del comercio del Uruguay.", Url: "https://www.gub.uy/ministerio-economia-finanzas/" },
     { IdInstitucion: 27, Nombre: "Cámara de Comercio de Cali, en Colombia ", Url: "https://www.ccc.org.co" },
     { IdInstitucion: 28, Nombre: "SNBX. Primer Hub de Innovación de El Salvador ", Url: "https://snbx.sv" },
-    { IdInstitucion: 29, Nombre: "Modo Digital, programa de impulso a las pymes en Uruguay", Url: "https://mododigital.uy" }
+    { IdInstitucion: 29, Nombre: "Modo Digital, programa de impulso a las pymes en Uruguay", Url: "https://mododigital.uy" },
+    { IdInstitucion: 30, Nombre: "OEA. Programa de Ciberseguridad del CICTE es el líder regional la provisión de ayuda a los Estados miembros de la Organización de los Estados Americanos (OEA)", Url: "https://www.oas.org/ext/es/seguridad/prog-ciber" },
+    { IdInstitucion: 31, Nombre: "ITU. Unión Internacional de Telecomunicaciones", Url: "https://www.itu.int/es/mediacentre/Pages/pr06-2021-global-cybersecurity-index-fourth-edition.aspx" },
+    { IdInstitucion: 32, Nombre: "INCIBE. Instituto Nacional de Ciberseguridad", Url: "https://www.incibe.es" },
+    { IdInstitucion: 33, Nombre: "ENISA. Agencia de la Unión Europea para la Ciberseguridad", Url: "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies/european-union-agency-cybersecurity-enisa_es" },
 
 ]
 
@@ -360,7 +387,10 @@ export const Books: books[] = [
     { IdLiteratura: 99, Autor: "Gómez-Zorrilla, J., Sánchez-Piña, D. (2022).", Titulo: "Guía práctica de analítica digital: ROI, KPI y métricas. Cómo medir y optimizar tu estrategia digital para potenciar tu negocio.", Subtitulo: "LID Editorial. España. 196 p.", Url: "" },
     { IdLiteratura: 100, Autor: "Perdigones L, R. (2020).", Titulo: "Cómo gané a Zara en estrategia digital: La historia real de un comercio de barrio que se hizo con el Premio de Estrategia Digital frente a Gigantes de Internet.", Subtitulo: "Publicación Independiente. 66 p.", Url: "" },
     { IdLiteratura: 101, Autor: "Pera, L. (2020).", Titulo: "Manual para Digitalizar una Pyme.", Subtitulo: "Publicación independiente.", Url: "" },
-    { IdLiteratura: 102, Autor: "Steebeek, I. (2018).", Titulo: "The Data Management Cookbook.", Subtitulo: "Data Crossroads.", Url: "https://datacrossroads.nl/wp-content/uploads/woocommerce_uploads/2019/11/The-DM-Cookbook-FULL.pdf" }
+    { IdLiteratura: 102, Autor: "Steebeek, I. (2018).", Titulo: "The Data Management Cookbook.", Subtitulo: "Data Crossroads.", Url: "https://datacrossroads.nl/wp-content/uploads/woocommerce_uploads/2019/11/The-DM-Cookbook-FULL.pdf" },
+    { IdLiteratura: 103, Autor: "Sánchez Pérez, G., & Rojas González, I. (s.f.).", Titulo: "Leyes de protección de datos personales en el mundo y la protección de datos biométricos - Parte I.", Subtitulo: "Seguridad (UNAM)(13).", Url: "https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93" },
+    { IdLiteratura: 104, Autor: "UNCTAD. (2021).", Titulo: "Data Protection and Privacy Legislation Worldwide.", Subtitulo: "", Url: "https://unctad.org/page/data-protection-and-privacy-legislation-worldwide" },
+    { IdLiteratura: 105, Autor: "Quijano, C. (2022).", Titulo: "Derecho a la privacidad en Internet.", Subtitulo: "Tirant lo Blanch, Ciudad de México 2022", Url: "" } 
 
 ]
 
@@ -434,8 +464,13 @@ export const Websites: websites[] = [
     { IdSitio: 67, Nombre: "Saez H., J. (2021). ¿Cuáles son los modelos de negocios digitales más utilizados? Obtenido de IEBS Business School", Url: "https://www.iebschool.com/blog/modelos-negocios-digitales-mas-utilizados-digital-business/" },
     { IdSitio: 68, Nombre: "Acelera pyme (2023). Estrategia orientada al dato para tu pyme", Url: "https://www.acelerapyme.gob.es/recursos/monografico/estrategia-orientada-al-dato-para-tu-pyme" },
     { IdSitio: 69, Nombre: "HubSpot (2024). Blog que presenta diversidad de temas y sugerencias para planeación, administración, marketing, comunicación, entre otros.", Url: "https://blog.hubspot.es" },
-    { IdSitio: 70, Nombre: "Cyberclick (2022). 7 ejemplos reales y casos de éxito de Big Data", Url: "https://www.youtube.com/watch?v=59b0rINnBuU" }
-
+    { IdSitio: 70, Nombre: "Cyberclick (2022). 7 ejemplos reales y casos de éxito de Big Data", Url: "https://www.youtube.com/watch?v=59b0rINnBuU" },
+    { IdSitio: 71, Nombre: "ISACA. Asociación de Auditoría y Control de Sistemas de Información.", Url: "https://www.isaca.org/" },
+    { IdSitio: 72, Nombre: "SANS. Institución que ayuda a las organizaciones a mitigar el riesgo cibernético. ", Url: "https://www.sans.org/" },
+    { IdSitio: 73, Nombre: "Academia BID. Es una plataforma que ofrece diversidad de cursos y recursos útiles para el desarrollo de competencias pymes.", Url: "https://cursos.iadb.org/es" },
+    { IdSitio: 74, Nombre: "Cegos Beyond Knowledge. Es una plataforma de formación y desarrollo que cuenta con un blog con contenidos útiles y además, tiene una oferta de capacitación dirigida al desarrollo de competencias.", Url: "https://www.cegoslatam.com/actualidades/desarrollo-de-competencias" },
+    { IdSitio: 75, Nombre: "IEBS Digital School, el canal de Youtube de esta institución educativa ofrece una serie de videos de diversidad de temas, muchos de ellos relacionados con la formación de competencias y habilidades digitales.", Url: "https://www.youtube.com/@iebschool" },
+    
 
 ]
 

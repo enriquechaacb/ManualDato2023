@@ -23,8 +23,7 @@ import { PresentacionesComponent } from '../Components/manual/datosyanalitica/pr
 import { ModelosmatematicosComponent } from '../Components/manual/datosyanalitica/modelosmatematicos/modelosmatematicos.component';
 
 import { HabilidadesdigitalesComponent } from '../Components/manual/habilidadesdigitales/habilidadesdigitales.component';
-import { InfraestructuraComponent } from '../Components/manual/habilidadesdigitales/infraestructura/infraestructura.component';
-import { CiberseguridadComponent } from '../Components/manual/habilidadesdigitales/ciberseguridad/ciberseguridad.component';
+import { InfraestructuraComponent } from '../Components/manual/habilidadesdigitales/infraestructurayciberseguridad/infraestructurayciberseguridad.component';
 import { CompetenciasComponent } from '../Components/manual/habilidadesdigitales/competencias/competencias.component';
 import { HerramientasComponent } from '../Components/manual/habilidadesdigitales/herramientas/herramientas.component';
 import { TecnologiasComponent } from '../Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
@@ -70,10 +69,9 @@ const routes: Routes = [
     { path: 'bibliosmart/datosyanalitica/modelosmatematicos/:section', component: ModelosmatematicosComponent, data: {animation:'mm'}},
     
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales', component: HabilidadesdigitalesComponent, data: {animation:'hd'}},
-    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/ciberseguridad/:section', component: CiberseguridadComponent, data: {animation:'cs'}},
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/competenciasyhabilidadesdigitales/:section', component: CompetenciasComponent, data: {animation:'cc'}},
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/herramientas/:section', component: HerramientasComponent, data: {animation:'ch'}},
-    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/infraestructura/:section', component: InfraestructuraComponent, data: {animation:'ic'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/infraestructurayciberseguridad/:section', component: InfraestructuraComponent, data: {animation:'ic'}},
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/tecnologiashabilitantes/:section', component: TecnologiasComponent, data: {animation:'tc'}},
 
     { path: 'bibliosmart/organizacionypersonas', component: OrganizacionypersonasComponent, data: {animation:'op'}},
