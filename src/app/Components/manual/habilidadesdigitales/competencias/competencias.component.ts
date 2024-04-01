@@ -41,7 +41,7 @@ export class CompetenciasComponent {
         });
     }
     setCatalogs() {
-        const palabras = [172,173,174,175,176,177,178];
+        const palabras = [172,173,174,175,176,177,54];
         const expertos = [21,45];
         const instituciones = [30,31,32,33];
         const literatura = [103,104,105];

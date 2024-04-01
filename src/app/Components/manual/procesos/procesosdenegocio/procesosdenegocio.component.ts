@@ -41,7 +41,7 @@ export class ProcesosdenegocioComponent {
         });
     }
     setCatalogs() {
-        const palabras = [134,135,136,137,138,139];
+        const palabras = [134,135,136,113,138,139];
         const expertos = [4,25,20];
         const instituciones = [22];
         const literatura = [70,71,72];

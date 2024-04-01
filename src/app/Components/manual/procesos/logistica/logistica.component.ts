@@ -41,7 +41,7 @@ export class LogisticaComponent {
         });
     }
     setCatalogs() {
-        const palabras = [115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133];
+        const palabras = [115,116,117,118,113,120,121,122,123,124,125,126,127,128,129,130,131,132,133];
         const expertos = [23,24,20];
         const instituciones = [20,21,22,16,13,9,10];
         const literatura = [64,65,66,67,68,69];
