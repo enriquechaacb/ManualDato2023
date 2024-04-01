@@ -5,15 +5,15 @@ import { GlobalService } from '../../../../Services/global.service';
 import { NavSections, Glossary, Experts, Institutions, Books, Websites } from '../../../../Models/sitedata';
 
 @Component({
-    selector: 'app-herramientas',
-    templateUrl: './herramientas.component.html',
-    styleUrls: ['../habilidadesdigitales.component.scss'],
-    animations: [sectionsAnimation]
+  selector: 'app-tecnologias',
+  templateUrl: './tecnologiasyherramientas.component.html',
+  styleUrls: ['../habilidadesdigitales.component.scss'],
+  animations: [sectionsAnimation]
 })
-export class HerramientasComponent {
-    public title: string = 'Herramientas';
-    public subtitle: string = 'Tecnologías y habilidades digitales';
-    public Seccion: string;
+export class TecnologiasComponent {
+  public title: string = 'Tecnologías digitales y herramientas habilitadoras';
+  public subtitle: string = 'Tecnologías y habilidades digitales';
+  public Seccion: string;
     public Secciones: Array<any>;
     public Tools: any = tools;
     public Experts: any;

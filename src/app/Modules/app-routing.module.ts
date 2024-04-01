@@ -25,8 +25,7 @@ import { ModelosmatematicosComponent } from '../Components/manual/datosyanalitic
 import { HabilidadesdigitalesComponent } from '../Components/manual/habilidadesdigitales/habilidadesdigitales.component';
 import { InfraestructuraComponent } from '../Components/manual/habilidadesdigitales/infraestructurayciberseguridad/infraestructurayciberseguridad.component';
 import { CompetenciasComponent } from '../Components/manual/habilidadesdigitales/competencias/competencias.component';
-import { HerramientasComponent } from '../Components/manual/habilidadesdigitales/herramientas/herramientas.component';
-import { TecnologiasComponent } from '../Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
+import { TecnologiasComponent } from '../Components/manual/habilidadesdigitales/tecnologiasyherramientas/tecnologiasyherramientas.component';
 
 import { OrganizacionypersonasComponent } from '../Components/manual/organizacionypersonas/organizacionypersonas.component';
 import { CulturaorganizacionalComponent } from '../Components/manual/organizacionypersonas/culturaorganizacional/culturaorganizacional.component';
@@ -70,9 +69,8 @@ const routes: Routes = [
     
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales', component: HabilidadesdigitalesComponent, data: {animation:'hd'}},
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/competenciasyhabilidadesdigitales/:section', component: CompetenciasComponent, data: {animation:'cc'}},
-    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/herramientas/:section', component: HerramientasComponent, data: {animation:'ch'}},
     { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/infraestructurayciberseguridad/:section', component: InfraestructuraComponent, data: {animation:'ic'}},
-    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/tecnologiashabilitantes/:section', component: TecnologiasComponent, data: {animation:'tc'}},
+    { path: 'bibliosmart/tecnologiasyhabilidadesdigitales/tecnologiasyherramientashabilitadoras/:section', component: TecnologiasComponent, data: {animation:'tc'}},
 
     { path: 'bibliosmart/organizacionypersonas', component: OrganizacionypersonasComponent, data: {animation:'op'}},
     { path: 'bibliosmart/organizacionypersonas/culturaorganizacional/:section', component: CulturaorganizacionalComponent, data: {animation:'co'}},

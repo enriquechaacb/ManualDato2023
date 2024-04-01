@@ -40,8 +40,7 @@ import { MarketingdigitalComponent } from './Components/manual/canalesdeventa/ma
 import { GestiondeclientesComponent } from './Components/manual/canalesdeventa/gestiondeclientes/gestiondeclientes.component';
 import { InfraestructuraComponent } from './Components/manual/habilidadesdigitales/infraestructurayciberseguridad/infraestructurayciberseguridad.component';
 import { CompetenciasComponent } from './Components/manual/habilidadesdigitales/competencias/competencias.component';
-import { HerramientasComponent } from './Components/manual/habilidadesdigitales/herramientas/herramientas.component';
-import { TecnologiasComponent } from './Components/manual/habilidadesdigitales/tecnologias/tecnologias.component';
+import { TecnologiasComponent } from './Components/manual/habilidadesdigitales/tecnologiasyherramientas/tecnologiasyherramientas.component';
 import { GestiondetalentohumanoComponent } from './Components/manual/organizacionypersonas/gestiondetalentohumano/gestiondetalentohumano.component';
 import { IndicadoresComponent } from './Components/manual/organizacionypersonas/indicadores/indicadores.component';
 import { EstrategiadenegociosComponent } from './Components/manual/organizacionypersonas/estrategiadenegocios/estrategiadenegocios.component';
@@ -83,7 +82,6 @@ import { PrivacidadComponent } from './Components/privacidad/privacidad.componen
     GestiondeclientesComponent,
     InfraestructuraComponent,
     CompetenciasComponent,
-    HerramientasComponent,
     TecnologiasComponent,
     GestiondetalentohumanoComponent,
     IndicadoresComponent,
