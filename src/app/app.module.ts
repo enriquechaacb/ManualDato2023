@@ -46,6 +46,7 @@ import { IndicadoresComponent } from './Components/manual/organizacionypersonas/
 import { EstrategiadenegociosComponent } from './Components/manual/organizacionypersonas/estrategiadenegocios/estrategiadenegocios.component';
 import { TerminosComponent } from './Components/terminos/terminos.component';
 import { PrivacidadComponent } from './Components/privacidad/privacidad.component';
+import { CreditosComponent } from './Components/creditos/creditos.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { PrivacidadComponent } from './Components/privacidad/privacidad.componen
     IndicadoresComponent,
     EstrategiadenegociosComponent,
     TerminosComponent,
-    PrivacidadComponent
+    PrivacidadComponent,
+    CreditosComponent
   ],
   imports: [
     BrowserModule,

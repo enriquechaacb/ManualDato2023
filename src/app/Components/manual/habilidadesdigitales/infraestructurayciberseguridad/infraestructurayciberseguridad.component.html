@@ -46,18 +46,19 @@
                 <section class="seccion" *ngIf="Seccion==='Definicion'" @changeSection>
                     <div class="container">
                         <h2><mat-icon>troubleshoot</mat-icon> <span>¿Qué es infraestructura y ciberseguridad?</span></h2>
-                        <div class="definition">
-                            <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
-                        </div>
-                        <div class="definition">
-                            <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p>
-                        </div>
+                        
                         <mat-tab-group class="vertical-tab-group">
                             <mat-tab label="1. Definición">
                                 <h3 class="mt-3"><i class="num">1</i> Definición</h3>
                                 <p>La infraestructura y la ciberseguridad están <strong>estrechamente relacionadas</strong>. La infraestructura es la base sobre la que se implementa la ciberseguridad. Sin una infraestructura sólida, es imposible tener una buena ciberseguridad.</p>
-                                <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
-                                <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p>
+                                <!-- <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
+                                <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p> -->
+                                <div class="definition">
+                                    <p>En el contexto de una pyme la infraestructura se refiere a los cimientos tecnológicos sobre los que se construye y opera la empresa. Abarca <em>hardware</em>, <em>software</em> y redes.</p>
+                                </div>
+                                <div class="definition">
+                                    <p>La ciberseguridad es una práctica encaminada a proteger sistemas informáticos, redes y datos de una empresa contra ataques cibernéticos. Los ataques pueden ser realizados por piratas informáticos, ciberdelincuentes o incluso, empleados descontentos.</p>
+                                </div>
                                 <p>La ciberseguridad ha sido definida por la Unión Internacional de Telecomunicaciones como “el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciber entorno” (UIT, 2010:20).</p>
                             </mat-tab>
                             <mat-tab label="2. Infraestructura para la transformación digital">
@@ -166,11 +167,12 @@
                                     </mat-expansion-panel>
                                 </mat-accordion>
                             </mat-tab>
-                            <mat-tab label="3. Ciberseguridad para pyme">
-                                <h3 class="mt-3"><i class="num">3</i> Ciberseguridad para pyme</h3>
+                            <mat-tab label="3. Ciberseguridad para una pyme">
+                                <h3 class="mt-3"><i class="num">3</i> Ciberseguridad para una pyme</h3>
                                 <p>En el panorama empresarial actual, donde la tecnología digital juega un papel fundamental en todas las facetas de las operaciones comerciales, la ciberseguridad se ha convertido en una preocupación crítica para las pymes. Estas empresas, a menudo con recursos limitados y equipos reducidos, son cada vez más el blanco de ciberataques debido a su percepción como objetivos más fáciles en comparación con las grandes corporaciones. Por lo tanto, la implementación de medidas efectivas de ciberseguridad es esencial para proteger los activos digitales y garantizar la continuidad del negocio en el entorno digital de hoy en día.</p>
                                 <p>La creciente amenaza cibernética presenta riesgos significativos para las pymes en términos de pérdida de datos, interrupción del negocio, daño a la reputación y, en última instancia, pérdidas financieras. Los ataques pueden variar desde el <em>malware</em> común hasta el phishing sofisticado, el ransomware y las vulnerabilidades de seguridad en los sistemas informáticos. La falta de medidas de seguridad adecuadas puede dejar a las pymes vulnerables a estos ataques y sus consecuencias devastadoras.</p>
                                 <img src="../../../../../assets/images/dimensions/habilidadesdigitales/6_Principales_preocupaciones_directivos_empresas.webp" class="img-fluid" alt="Principales preocupaciones de directivos de empresas" />
+                                <caption>Fuente: Elaboración con datos de (ESET Latinoamérica, 2023).</caption>
                                 <separator></separator>
                                 <div class="texto-video">
                                     <p>La ciberseguridad ha sido definida por la Unión Internacional de Telecomunicaciones como “el conjunto de herramientas, políticas, conceptos de seguridad, salvaguardas de seguridad, directrices, métodos de gestión de riesgos, acciones, formación, prácticas idóneas, seguros y tecnologías que pueden utilizarse para proteger los activos de la organización y los usuarios en el ciberentorno” (UIT, 2010:20)</p>
@@ -196,13 +198,13 @@
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('DDoS')" id="DDoS">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>3.2. Ataques de Denegación de Servicio (DDoS)</mat-panel-title>
+                                            <mat-panel-title>3.2. Ataques de denegación de servicio (DDoS)</mat-panel-title>
                                         </mat-expansion-panel-header>
                                         <p>Buscan inundar un servidor o red con una gran cantidad de tráfico malicioso, lo que resulta en la interrupción del servicio y la no disponibilidad de recursos para usuarios legítimos. Esto ocasiona que el sistema sea inutilizable e impide que una organización realice funciones vitales. Estos ataques pueden afectar a empresas, instituciones gubernamentales y proveedores de servicios en línea, causando pérdidas financieras y daño a la reputación.</p>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Vulnerabilidades')" id="Vulnerabilidades">
                                         <mat-expansion-panel-header>
-                                            <mat-panel-title>3.3. Explotación de Vulnerabilidades de Software</mat-panel-title>
+                                            <mat-panel-title>3.3. Explotación de vulnerabilidades de software</mat-panel-title>
                                         </mat-expansion-panel-header>
                                         <div class="texto-video">
                                             <p>Los ciberataques que aprovechan las vulnerabilidades de <em>software</em> explotan debilidades en aplicaciones, sistemas operativos o dispositivos para infiltrarse en sistemas y redes. Estos ataques pueden llevar a la ejecución de código malicioso, el robo de datos o el compromiso de la integridad y disponibilidad de los sistemas afectados.</p>
@@ -344,15 +346,38 @@
                             <mat-tab label="6. Protección de datos personales">
                                 <h3 class="mt-3"><i class="num">6</i> Protección de datos personales</h3>
                                 <p>Los datos personales se refieren a aquella información de una persona identificada o que la hace identificable; asimismo, <strong>son parte nuclear de la identidad de un individuo</strong>, puesto que estos permiten hacer una referencia exacta y objetiva para particularizar a una persona (Fiscalía General de la República, 2019).</p>
+                                <div class="hint">
+                                    <div>
+                                        <h5>Ejemplos de datos personales:</h5>
+                                        <ul>
+                                            <li>Nombre y apellidos,</li>
+                                            <li>Domicilio,</li>
+                                            <li>Dirección de correo electrónico, del tipo <a href="mailto:nombre.apellido@empresa.com">nombre.apellido@empresa.com</a>,</li>
+                                            <li>Número de documento nacional de identidad,</li>
+                                            <li>Datos de localización (como la función de los datos de localización de un teléfono móvil) (*),</li>
+                                            <li>Dirección de protocolo de internet (IP),</li>
+                                            <li>El identificador de una <em>cookie</em> (*),</li>
+                                            <li>El identificador de la publicidad del teléfono,</li>
+                                            <li>Los datos en poder de un hospital o médico, que podrían ser un símbolo que identificara de forma única a una persona.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <img src="../../../../../assets/images/dimensions/habilidadesdigitales/10_Derecho_proteccion_datos_personales.webp" class="img-fluid" alt="Protección de datos personales" />
                                 <separator></separator>
-                                <p>De los 35 países en el continente americano, 26 de ellos cuentan con legislación en protección de datos, cuatro ya están en desarrollo de proyectos de ley y sólo cinco, no cuentan con legislación. En la tabla siguiente se muestran las legislaciones para algunos países del continente americano.</p>
                                 <mat-accordion>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('Legislaciones')" id="Legislaciones">
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>6.1. Legislaciones para algunos países de América</mat-panel-title>
                                         </mat-expansion-panel-header>
+                                        <p>De los 35 países en el continente americano, 26 de ellos cuentan con legislación en protección de datos, cuatro ya están en desarrollo de proyectos de ley y sólo cinco, no cuentan con legislación. En la tabla siguiente se muestran las legislaciones para algunos países del continente americano.</p>
                                         <img src="../../../../../assets/images/dimensions/habilidadesdigitales/11_Legislaciones_paises_America.webp" class="img-fluid" alt="Legislaciones para algunos países de América" />
+                                        <caption>Fuente: (UNCTAD, 2021).</caption>
+                                        <separator></separator>
+                                        <p>A pesar de todos los avances legislativos a nivel mundial, <strong>es necesario mejorar activamente las leyes y regulaciones relevantes y mejorar las tecnologías clave para la protección de la privacidad de datos</strong>, ya que las filtraciones de información relacionada con la privacidad personal ocurren con regularidad y, en algunos casos, afectan la vida diaria de las personas y la seguridad de su información. Algunas violaciones importantes de la seguridad de la información se resumen en la Tabla siguiente.</p>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/12_Violaciones_Seguridad_Informacion.webp" class="img-fluid" alt="Legislaciones para algunos países de América" />
+                                        <caption>Fuente: elaboración propia</caption>
+                                        <separator></separator>
+                                        <img src="../../../../../assets/images/dimensions/habilidadesdigitales/13_Derechos_ARCO.webp" class="img-fluid" alt="Legislaciones para algunos países de América" />
                                         <separator></separator>
                                     </mat-expansion-panel>
                                     <mat-expansion-panel (afterExpand)="_globalService.scrollToTop('obligaciones')" id="obligaciones">
@@ -386,15 +411,15 @@
                     
                     <div class="references">
                         <h4>Referencias</h4>
-                        <p>Aguilar, J. F. (2023). Red Forbes. Recuperado de www.forbes.com.mx: <a href="https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/" target="_blank">https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/</a></p>
-                        <p>Enríquez, L. (2021). Universidad Andina Simón Bolívar. Recuperado de Observatorio de Ciberderechos y Tecnosociedad: <a href="https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/" target="_blank">https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/</a></p>
-                        <p>ESET Latinoamérica. (2023). www.eset.com. Recuperado de ESET Security Report 2023: <a href="https://www.eset.com/ve/security-report/" target="_blank">https://www.eset.com/ve/security-report/</a></p>
-                        <p>Fiscalía General de la República. (2019). Recuperado de <a href="https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416" target="_blank">https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416</a></p>
-                        <p>KPMG (2023) Cloud Computing para pymes, <a href="https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/" target="_blank">https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/</a></p>
-                        <p>Lv, C. (2022). The Dilemma and Countermeasures of Personal Privacy Protection in the Era of Big Data. 3rd International Conference on Electronic Communication and Artificial Intelligence (IWECAI).</p>
-                        <p>Sánchez Pérez, G., &amp; Rojas González, I. (s.f.). Leyes de protección de datos personales en el mundo y la protección de datos biométricos - Parte I. Seguridad (UNAM)(13). Recuperado de <a href="https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93" target="_blank">https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93</a></p>
+                        <p>Aguilar, J. F. (2023). Ciberresiliencia: un factor clave para el nearshoring en México. Red Forbes. Recuperado de <a href="https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/" target="_blank">https://www.forbes.com.mx/ciberresiliencia-un-factor-clave-para-el-nearshoring-en-mexico/</a></p>
+                        <p>C. Ly. (2022). The Dilemma and Countermeasures of Personal Privacy Protection in the Era of Big Data. 3rd International Conference on Electronic Communication and Artificial Intelligence (IWECAI). Zhuhai, China, 2022, págs. 335-338, Recuperado de DOI: 10.1109 /IWECAI55315.2022.00071.</p>
+                        <p>Comisión Europea (s/f). ¿Qué son los datos personales? Unión Europea. Recuperado de <a href="https://commission.europa.eu/law/law-topic/data-protection/reform/what-personal-data_es" target="_blank">https://commission.europa.eu/law/law-topic/data-protection/reform/what-personal-data_es</a></p>
+                        <p>Enríquez, L. (2021). La protección de datos en América latina: influencia del RGPD. Universidad Andina Simón Bolívar. Recuperado de Observatorio de Ciberderechos y Tecnosociedad. Recuperado de <a href="https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/" target="_blank">https://www.uasb.edu.ec/ciberderechos/2021/06/15/la-proteccion-de-datos-en-america-latina-influencia-del-rgpd/</a></p>
+                        <p>ESET Latinoamérica. (2023). ESET Security Report 2023. Recuperado de <a href="https://www.eset.com/ve/security-report/" target="_blank">https://www.eset.com/ve/security-report/</a></p>
+                        <p>Fiscalía General de la República. (2019). Protección de Datos Personales, Fiscalía General de la República, México. Recuperado de <a href="https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416" target="_blank">https://www.gob.mx/fgr/acciones-y-programas/proteccion-de-datos-personales-28416</a></p>
+                        <p>KPMG (2023) Cloud computing: así puede cambiar el paradigma para las pymes.  KPMG Tendencias, España. Recuperado de <a href="https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/" target="_blank">https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/</a></p>
+                        <p>Sánchez Pérez, G., &amp; Rojas González, I. (s.f.). Leyes de protección de datos personales en el mundo y la protección de datos biométricos - Parte I. Seguridad (UNAM) (13). Recuperado de <a href="https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93" target="_blank">https://revista.seguridad.unam.mx/numero-13/leyes-de-protecci%C3%B3n-de-datos-personales-en-el-mundo-y-la-protecci%C3%B3n-de-datos-biom%C3%A9tricos-%E2%80%93</a></p>
                         <p>UNCTAD. (2021). Data Protection and Privacy Legislation Worldwide. Recuperado de <a href="https://unctad.org/page/data-protection-and-privacy-legislation-worldwide" target="_blank">https://unctad.org/page/data-protection-and-privacy-legislation-worldwide</a></p>
-                        <p>KPMG (2023) <em>Cloud Computing</em> para pymes, <a href="https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/" target="_blank">https://www.tendencias.kpmg.es/2023/03/cloud-computing-paradigma-pymes/</a></p>
                     </div>
                 </section>
 
@@ -411,6 +436,52 @@
                         <h2><mat-icon>account_tree</mat-icon> <span>Proceso</span></h2>
                         <img src="../../../../../assets/images/dimensions/habilidadesdigitales/2_Proceso_infraestructura_digital_medidas_ciberseguridad.webp" class="img-fluid" alt="Proceso para cuidar la infraestructura digital y adoptar medidas de ciberseguridad" />
                         <separator></separator>
+                        <h3>Evaluación de riesgos</h3>
+                        <ul>
+                            <li>Evaluar las necesidades actuales de la empresa en materia de infraestructura y ciberseguridad.</li>
+                            <li>Analizar el tamaño, el sector y el nivel de madurez tecnológica de la empresa.</li>
+                            <li>Identificar los activos de información más importantes de la empresa y los activos digitales como equipos informáticos, software, datos y sistemas.</li>
+                            <li>Evaluar las amenazas y vulnerabilidades a las que está expuesta la empresa como <em>malware, </em><em>phishing, ransomware</em> y ataques a la red.</li>
+                        </ul>
+                        <h3>Planificación</h3>
+                        <ul>
+                            <li>Desarrollar un plan de acción para realizar los ajustes necesarios en la infraestructura y la ciberseguridad.</li>
+                            <li>Establecer objetivos específicos y medibles.</li>
+                            <li>Definir las tareas y actividades a realizar.</li>
+                            <li>Asignar responsabilidades y plazos.</li>
+                            <li>Establecer un presupuesto.</li>
+                        </ul>
+                        <h3>Implementación</h3>
+                        <ul>
+                            <li>Implementar el plan de acción.</li>
+                            <li>Realizar las inversiones necesarias en hardware, software y redes.</li>
+                            <li>Implementar medidas de seguridad básicas como firewalls, antivirus, contraseñas seguras, controles de acceso, monitoreo de red, así como sistemas de detección de intrusiones.</li>
+                            <li>Capacitar al personal en materia de seguridad informática.</li>
+                        </ul>
+                        <h3>Herramientas y recursos</h3>
+                        <p>Existen diversas herramientas y recursos disponibles para ayudar a las pymes a realizar ajustes en su infraestructura y ciberseguridad. Se sugiere consultar lo siguiente:</p>
+                        <ul>
+                            <li>Guías y tutoriales: INCIBE<a href="https://www.incibe.es/" target="_blank">https://www.incibe.es/</a></li>
+                            <li>ISACA <a href="https://www.isaca.org/" target="_blank">https://www.isaca.org/</a></li>
+                            <li>Herramientas de evaluación: Nessus, OpenVAS</li>
+                            <li>Proveedores de servicios de seguridad: <a href="https://latam.kaspersky.com" target="_blank">Kaspersky</a>, <a href="https://www.eset.com/mx/" target="_blank">ESET</a>, <a href="https://www.pandasecurity.com/es/" target="_blank">Panda Security</a></li>
+                        </ul>
+                        <h3>Monitoreo y revisión</h3>
+                        <ul>
+                            <li>Monitorear y revisar continuamente la infraestructura y la ciberseguridad de la empresa.</li>
+                            <li>Realizar pruebas de penetración para identificar vulnerabilidades.</li>
+                            <li>Actualizar las medidas de seguridad de forma regular.</li>
+                            <li>Mantener el software actualizado.</li>
+                            <li>Realizar copias de seguridad de forma regular.</li>
+                            <li>Contar con un plan de respuesta a incidentes.</li>
+                            <li>Mantenerse informado sobre las últimas amenazas y tendencias en materia de ciberseguridad para ajustar los planes de seguridad.</li>
+                        </ul>
+                        <h3>Cultura y capacitación</h3>
+                        <p>Tras implementar el plan de acción, es importante que las pymes difundan ampliamente las medidas de protección entre el personal, para ello se requiere fortalecer la comunicación interna y también instrumentar planes y programas de capacitación y actualización del personal para concientizarlos sobre la importancia de la ciberseguridad.</p>
+                        <p>Es recomendable buscar la asesoría de un profesional en seguridad informática para realizar los ajustes necesarios en la infraestructura y la ciberseguridad.</p>
+                        <p>También es importante que las pymes se mantengan informadas sobre las últimas amenazas y tendencias en materia de ciberseguridad</p>
+                        <h3>Revisión cíclica</h3>
+                        <p>La ciberseguridad es un proceso continuo que requiere atención constante. Es recomendable hacer revisiones periódicas para la mejora continua, actualizar los sistemas de ciberseguridad y modificar los planes de acción relacionados con el cuidado de la infraestructura digital.</p>
                     </div>
                 </section>
 

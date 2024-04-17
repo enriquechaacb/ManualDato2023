@@ -221,6 +221,11 @@ ol{
     }
 }
 
+caption {
+    display: block;
+    font-size: 0.75rem;
+} 
+
 .mat-expansion-panel {
     color: var(--primary);
 }

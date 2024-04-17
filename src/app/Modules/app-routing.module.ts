@@ -6,6 +6,7 @@ import { HomeComponent } from '../Components/home/home.component';
 import { TerminosComponent } from '../Components/terminos/terminos.component';
 import { PrivacidadComponent } from '../Components/privacidad/privacidad.component';
 import { ManualComponent } from '../Components/manual/manual.component';
+import { CreditosComponent } from '../Components/creditos/creditos.component';
 
 import { ComunicacionycanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa.component';
 import { CanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa/canalesdeventa.component';
@@ -48,6 +49,7 @@ import { PlaneacionComponent } from '../Components/manual/transformaciondigital/
 
 const routes: Routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
+    { path: 'creditos', component: CreditosComponent, data: {animation:'creditos'}},
     { path: 'terminos', component: TerminosComponent, data: {animation:'terminos'}},
     { path: 'privacidad', component: PrivacidadComponent, data: {animation:'privacidad'}},
     { path: 'bibliosmart', component: ManualComponent, data: {animation:'bibliosmart'}},

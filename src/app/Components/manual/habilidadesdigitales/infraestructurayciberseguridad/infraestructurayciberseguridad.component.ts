@@ -48,7 +48,7 @@ export class InfraestructuraComponent {
         const expertos = [46,47,48,49,50,51];
         const instituciones = [30,31,32,33];
         const literatura = [103,104,105];
-        const websites = [71,72];
+        const websites = [71,72,77,78,79];
         this.Words = Glossary.filter((x: any) => palabras.includes(x.IdPalabra));
         this.Experts = Experts.filter((x: any) => expertos.includes(x.IdExperto));
         this.Institutions = Institutions.filter((x: any) => instituciones.includes(x.IdInstitucion));
@@ -67,11 +67,15 @@ const tools = [
     { Tema: "Video", Recurso: "Ciberseguridad en la pyme, ¿por dónde empiezo?", Url: "https://www.youtube.com/watch?v=ee-GeNbo0ns&t=2s", Descripcion: "El video presentado por Telefónica Empresas aborda el tema de la ciberseguridad en una pyme. Ofrece una explicación de puntos clave para proteger el negocio. " },
     { Tema: "Glosario de ciberseguridad", Recurso: "Glosario de términos de ciberseguridad. Una guía de aproximación para el empresario.", Url: "https://www.incibe.es/sites/default/files/contenidos/guias/doc/guia_glosario_ciberseguridad_2021.pdf", Descripcion: "El Instituto Nacional de Ciberseguridad es una institución española reconocida en el campo de la ciberseguridad, ha diseñado un glosario de este tema, ampliamente recomendado." },
     { Tema: "Glosario de transformación digital", Recurso: "Glosario de transformación digital_ de la A a la VR ", Url: "https://blog.talentgarden.com/es/blog/business-innovation/glosario-transformacion-digital-vr", Descripcion: "El glosario a cargo de Talent Garden presenta términos relacionados con la transformación digital, de útil consulta para las pymes" },
-    { Tema: "Libros gratuitos del tema de ciberseguridad", Recurso: "Seguridad por Niveles", Url: "https://darfe.es/es/", Descripcion: "Cuatro libros gratuitos" },
-    { Tema: "Libros gratuitos del tema de ciberseguridad", Recurso: "Seguridad en Redes", Url: "https://darfe.es/es/", Descripcion: "Cuatro libros gratuitos" },
-    { Tema: "Libros gratuitos del tema de ciberseguridad", Recurso: "Ciberseguridad Una estrategia Informático/Militar ", Url: "https://darfe.es/es/", Descripcion: "Cuatro libros gratuitos" },
-    { Tema: "Libros gratuitos del tema de ciberseguridad", Recurso: "Manual de la Resiliencia (Una guía práctica de Ciberresiliencia en Redes y Sistemas de TI)", Url: "https://darfe.es/es/", Descripcion: "Cuatro libros gratuitos" }
+    { Tema: "Libro de DarFe Learning & Consulting S.L", Recurso: "Seguridad por Niveles", Url: "https://darfe.es/es/descarga-nuestros-libros/seguridad-por-niveles", Descripcion: "Cuatro libros gratuitos" },
+    { Tema: "Libro de DarFe Learning & Consulting S.L", Recurso: "Seguridad en Redes", Url: "https://darfe.es/es/descarga-nuestros-libros/seguridad-en-redes", Descripcion: "Cuatro libros gratuitos" },
+    { Tema: "Libro de DarFe Learning & Consulting S.L", Recurso: "Ciberseguridad", Url: "https://darfe.es/es/descarga-nuestros-libros/ciberseguridad", Descripcion: "Cuatro libros gratuitos" },
+    { Tema: "Libro de DarFe Learning & Consulting S.L", Recurso: "Manual de la Resiliencia", Url: "https://darfe.es/es/descarga-nuestros-libros/prueba1", Descripcion: "Cuatro libros gratuitos" },
+    { Tema: "Guía de Ciberseguridad para Pequeñas y Medianas Empresas", Recurso: "Guía publicada por la Agencia de Desarrollo Internacional de los Estados Unidos (USAID, por sus siglas en inglés)", Url: "https://pdf.usaid.gov/pdf_docs/PA00ZKCQ.pdf", Descripcion: "" },
+    { Tema: "Guía para la Ciberseguridad en las PYMES", Recurso: "Guía de ciberseguridad auspiciada por Huawei", Url: "https://www.huawei.com/-/media/corporate/local-site/es/pdf/guia-de-ciberseguridad-para-pymes-huawei.pdf?la=es", Descripcion: "" },
+    { Tema: "SAFE presenta el documento de buenas prácticas para la ciberseguridad empresarial - CCIT - Cámara Colombiana de Informática y Telecomunicaciones", Recurso: "Documento de buenas prácticas de ciberseguridad, presentada por SAFE", Url: "https://www.ccit.org.co/estudios/safe-presenta-el-documento-de-buenas-practicas-para-la-ciberseguridad-empresarial/", Descripcion: "" }
 ]
+
 
 
 

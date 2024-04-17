@@ -1,0 +1,63 @@
+section{
+    background-color: var(--blanco);
+    &.titlecont{
+        background-color: var(--primary);
+        padding-top: 4em;
+        .title-container{
+            padding-bottom: 3em;
+            .title{
+                position: relative;
+                font-size: 38px;
+                color: var(--blanco);
+                line-height: 32px;
+                z-index: 2;
+                margin-bottom: 0 !important;
+                &.privacidad{
+                    &::before{content:"CRÉDITOS";}
+                }
+                &::before{
+                    position: absolute;
+                    color: var(--blanco90);
+                    display: block;
+                    font-size: 1.75em;
+                    font-weight: 900;
+                    filter: opacity(0.2) blur(1px);
+                    line-height: 0;
+                    font-family: Arial black, 'sans-serif';
+                }
+            }
+        }
+    }
+    .logos-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin:5px 8px;
+            img{
+                width:100%;
+                height:auto;
+                display: block;
+            }
+            &:hover{transform: scale(1.05);}
+            &.logo_bid{max-width: 124px;}
+            &.logo_bid_lab{max-width: 200px;}
+            &.logo_cambiotec{max-width: 113px;}
+            &.logo_idom{max-width: 130px;}
+            &.logo_ccc{max-width: 113px;}
+            &.logo_ande{max-width: 200px;}
+            &.logo_snbx{max-width: 53px;}
+        }
+    }
+    .creditos{
+        h2,h3,h4,p{
+            text-align: center;
+        }
+    }
+}

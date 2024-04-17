@@ -37,7 +37,7 @@ export class PresentacionesComponent {
         });
     }
     setCatalogs(){
-        const palabras = [71,72,73,74,75];
+        const palabras = [71,72,73,74,75,76];
         const expertos = [4,5,6,7];
         const instituciones = [8,5,2,11];
         const literatura = [33,34,35,36,37];

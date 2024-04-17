@@ -175,9 +175,9 @@ export const Glossary: words[] = [
     { IdPalabra: 158, Palabra: "Gestión", Significado: "La gestión es un conjunto de procedimientos y acciones que se llevan a cabo para lograr un determinado objetivo.", Fuente: "(Westreicher G. , 2020)" },
     { IdPalabra: 159, Palabra: "Información", Significado: "Es el nombre por el que se conoce un conjunto organizado de datos procesados que constituyen un mensaje que cambia el estado de conocimiento del sujeto o sistema que recibe dicho mensaje.", Fuente: "(Wikipeida, 2023)" },
     { IdPalabra: 160, Palabra: "Machine Learning", Significado: "Es una forma de la IA que permite a un sistema aprender de los datos en lugar de aprender mediante la programación explícita. Conforme el algoritmo recibe datos de entrenamiento, es posible producir modelos más precisos basados en datos. Un modelo de machine learning es la salida de información que se genera cuando entrena su algoritmo de machine learning con datos.", Fuente: "(IBM, 2023)" },
-    { IdPalabra: 161, Palabra: "Adware", Significado: "software que muestra publicidad no deseada que puede utilizarse para difundir malware.", Fuente: "" },
+    { IdPalabra: 161, Palabra: "Adware", Significado: "Software que muestra publicidad no deseada que puede utilizarse para difundir malware.", Fuente: "" },
     { IdPalabra: 162, Palabra: "Análisis de riesgos", Significado: "Proceso que comprende la identificación de activos de información, sus vulnerabilidades y las amenazas a los que se encuentran expuestos, así como la probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuaos para tratar el riesgo.", Fuente: "(INCIBE, s/f)." }, 
-    { IdPalabra: 163, Palabra: "Antivirus", Significado: "oftware de protección para evitar que se ejecute algún tipo de software malicioso en nuestro equipo que infecte a dicho equipo. ", Fuente: "" },
+    { IdPalabra: 163, Palabra: "Antivirus", Significado: "Software de protección para evitar que se ejecute algún tipo de software malicioso en nuestro equipo que infecte a dicho equipo. ", Fuente: "" },
     { IdPalabra: 164, Palabra: "Botnets:", Significado: "Red o redes de dispositivos infectados con malware que se controlan en forma remota por un atacante. Las redes de computadoras con infección de malware son utilizadas por los cibercriminales quienes realizan tareas en línea sin el permiso del usuario." },
     { IdPalabra: 165, Palabra: "Infraestructura digital", Significado: "Comprende tanto los elementos físicos, como instalaciones y equipos, incluyendo computadoras, dispositivos móviles, y sistemas de almacenamiento, como también componentes digitales como el software de operaciones y seguridad. ", Fuente: "" },
     { IdPalabra: 166, Palabra: "Malware", Significado: "Es un software malicioso diseñado para dañar o inhabilitar un sistema informático. Estos ciberataques pueden causar daños significativos al infectar sistemas, robar información confidencial, cifrar archivos o interrumpir las operaciones comerciales. ", Fuente: "" },
@@ -473,9 +473,10 @@ export const Websites: websites[] = [
     { IdSitio: 73, Nombre: "Academia BID. Es una plataforma que ofrece diversidad de cursos y recursos útiles para el desarrollo de competencias pymes.", Url: "https://cursos.iadb.org/es" },
     { IdSitio: 74, Nombre: "Cegos Beyond Knowledge. Es una plataforma de formación y desarrollo que cuenta con un blog con contenidos útiles y además, tiene una oferta de capacitación dirigida al desarrollo de competencias.", Url: "https://www.cegoslatam.com/actualidades/desarrollo-de-competencias" },
     { IdSitio: 75, Nombre: "IEBS Digital School, el canal de Youtube de esta institución educativa ofrece una serie de videos de diversidad de temas, muchos de ellos relacionados con la formación de competencias y habilidades digitales.", Url: "https://www.youtube.com/@iebschool" },
-    { IdSitio: 75, Nombre: "Academia de comercio de las pymes es la plataforma de aprendizaje en línea del Centro de Comercio Internacional, organismo conjunto de las Naciones Unidas y de la Organización Mundial del Comercio.", Url: "https://learning.intracen.org/" },
-
-
+    { IdSitio: 76, Nombre: "Academia de comercio de las pymes es la plataforma de aprendizaje en línea del Centro de Comercio Internacional, organismo conjunto de las Naciones Unidas y de la Organización Mundial del Comercio.", Url: "https://learning.intracen.org/" },
+    { IdSitio: 77, Nombre: "Cámara Colombiana de Informática y Telecomunicaciones", Url: "https://www.ccit.org.co/" },    
+    { IdSitio: 78, Nombre: "Blog para empresas | ESET", Url: "https://www.eset.com/latam/empresas/blog/" },
+    { IdSitio: 79, Nombre: "Biblioteca digital de la Cámara de Comercio de Bogotá", Url: "https://bibliotecadigital.ccb.org.co/home" }
 ]
 
 
