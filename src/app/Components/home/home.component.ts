@@ -2,6 +2,7 @@ import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { GlobalService } from '../../Services/global.service';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
 import { sectionsAnimation } from '../../Services/animations.service';
+import { siteContent } from '../../Models/sitecontent';
 
 @Component({
     selector: 'app-home',
@@ -12,6 +13,7 @@ import { sectionsAnimation } from '../../Services/animations.service';
 export class HomeComponent implements OnInit {
     public Activeurl: string = "";
     public Subtitle: string = "";
+    public content:any;
     constructor(
         public _globalService: GlobalService,
         public _thisroute: Router
@@ -31,9 +33,16 @@ export class HomeComponent implements OnInit {
     }
     setSubtitle(u:string){
         switch(u){
-            case "presentacion": this.Subtitle="Presentación"; break;
-            case "bienvenida": this.Subtitle="Bienvenida"; break;
-            case "objetivos": this.Subtitle="Objetivos"; break;
+            case "presentacion": 
+                this.Subtitle="Presentación";
+            break;
+            case "bienvenida":
+                this.Subtitle="Bienvenida";
+            break;
+            case "objetivos":
+                this.Subtitle="Objetivos";
+            break;
         }
+        this.content = siteContent.find((x:any)=>x.Url===u)?.Contenido;
     }
 }

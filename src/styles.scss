@@ -716,6 +716,52 @@ section {
     }
 }
 
+
+.logos-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    a{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:5px 8px;
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        &:hover{transform: scale(1.05);}
+        &.logo_bid{max-width: 124px;}
+        &.logo_bid_lab{max-width: 200px;}
+        &.logo_cambiotec{max-width: 113px;}
+        &.logo_idom{max-width: 130px;}
+        &.logo_ccc{max-width: 113px;}
+        &.logo_ande{max-width: 200px;}
+        &.logo_snbx{max-width: 53px;}
+    }
+}
+.creditos{
+    border-radius: 15px;
+    border: solid 1px var(--negro10);
+    padding: 1.5em;
+    filter: drop-shadow(0px 5px 10px var(--negro25));
+    background: var(--blanco);
+    h2,h3,h4,p{
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
     main {
         padding-top: 100px;

@@ -1,9 +1,6 @@
 <section id="video" *ngIf="Activeurl===''">
     <video class="bgr-video" role="presentation" crossorigin="anonymous" playsinline autoplay muted loop preload="auto" tabindex="-1" src="../../../assets/video/bgr_video_home.mp4">
     </video>
-    <!-- <video class="bgr-video" autoplay loop muted poster="../../../assets/images/bgr_manual.webp">
-        <source src="../../../assets/video/video_home.mp4" type="video/mp4" />
-    </video> -->
 </section>
 <section id="home" class="container" *ngIf="Activeurl===''" @changeSection>
     <div class="row">
@@ -29,16 +26,7 @@
             <iframe src="https://www.youtube.com/embed/3cA4V8HWemA?rel=0" title="Presentación" allowfullscreen></iframe>
         </div>
         <separator></separator>
-        <p>El acelerado avance tecnológico ha detonado cambios significativos en diversos sectores de la economía a nivel mundial.</p>
-            <p>Las empresas, independientemente de su tamaño, tienen que adaptarse a las nuevas condiciones que demanda un mercado más exigente, complejo y diverso. Los datos se han convertido en un insumo estratégico para cualquier tipo de negocios y, aprender a gestionarlos es prácticamente una actividad obligada para toda empresa.</p>
-            <p>En este contexto, es claro que las pequeñas y medianas empresas presentan niveles de desarrollo muy diferentes en cuanto al uso de datos y es evidente la necesidad de orientar, acelerar y fortalecer sus procesos vinculados a la gestión de datos.</p>
-            <p>Para impulsar a las pymes y contribuir a detonar su crecimiento, es necesario aprovechar las oportunidades que ofrece la economía del dato, en este sentido, el Banco Interamericano de Desarrollo impulsa una serie de actividades enmarcadas en la Cooperación Técnica “Economía del Dato justa e inclusiva en ALC”.</p>
-            <p><strong>Economía del Dato para pymes</strong> de América Latina y el Caribe forma parte de estas acciones promovidas y auspiciadas por el BID. Es una plataforma diseñada por un equipo de expertos que tiene el propósito de brindar un soporte útil a la gestión productiva del dato y, contribuir al desarrollo de competencias y a la mejora de los procesos, productos y servicios de las pymes.</p>
-            <p>Es una plataforma de acceso libre en la que encontrarán una serie de recursos de una amplia variedad de temas, necesarios para aprovechar los datos de manera estratégica, apoyándose en las dimensiones y ejes temáticos establecidos en la herramienta de autodiagnóstico Chequeo Digital del BID.</p>
-            <p>Los temas que aquí se presentan contemplan desde la identificación, recuperación, procesamiento y análisis de los datos hasta la transformación digital, enriquecidos con herramientas de tecnologías de información y elementos de ciberseguridad.</p>
-            <p>Además, contempla aspectos clave de los negocios como la gestión del talento y los recursos, la planeación, tecnologías digitales, así como estrategias y herramientas de comunicación y canales de venta digitales.</p>
-            <p>Sabemos que cada pyme es única y tiene desafíos específicos. La plataforma que aquí presentamos ha sido diseñada para ser una herramienta flexible y adaptable a las necesidades específicas de cada pyme.</p>
-            <p>Esperamos que <strong>Economía del Dato para pymes</strong>, se convierta en un aliado estratégico para su transformación digital y repercuta en la generación de valor para su pyme.</p>
+        <div [innerHTML]="content"></div>
     </div>
 </section>
 
@@ -48,36 +36,12 @@
             <iframe src="https://www.youtube.com/embed/KqvDrAZSuek?rel=0" title="Bienvenida" allowfullscreen></iframe>
         </div>
         <separator></separator>
-        <p>Nos complace darles la más cordial bienvenida a esta plataforma impulsada y auspiciada por el Banco Interamericano de Desarrollo a través de BID LAB.</p>
-        <p>Es un espacio diseñado especialmente para acompañarlos en el emocionante viaje de la transformación digital en el marco del proyecto Economía del Dato justa e inclusiva.</p>
-        <p>Vivimos inmersos en un contexto de constante cambio y los datos se han convertido en el activo más valioso; reconocemos el reto de las pymes para mantenerse competitivas y puedan responder con eficiencia y oportunidad a las necesidades de este mundo tan cambiante. La misión de esta plataforma es brindarles las herramientas necesarias para abrazar este nuevo reto y prosperar en la economía del dato.</p>
-        <p>Esta plataforma no solo es un recurso didáctico, es un aliado estratégico para impulsar el crecimiento y la innovación de las pymes de América Latina y el Caribe.</p>
-        <p>A través de una variedad de contenidos temáticos diseñados por expertos en tecnología y negocios pyme, tendrán a la mano una herramienta útil para adquirir y fortalecer habilidades esenciales encaminadas a aprovechar el máximo potencial de los datos.</p>
-        <p>A medida que exploren esta plataforma, encontrarán recursos, herramientas interactivas, videos, infografías, formatos, ejemplos y casos de éxito que les inspirarán a innovar y crecer en un mundo cada vez más conectado.</p>
-        <p>Estamos seguros de que su búsqueda de conocimiento y su disposición por transformarse siempre será la clave del éxito. Nos emociona contribuir al desarrollo y crecimiento de las pymes de la región y ver cómo las empresas prosperan y generan valor.</p>
-        <p>Bienvenidos a esta plataforma encaminada a la transformación digital diseñada de cara al futuro de los negocios en América Latina y el Caribe.</p>
+        <div [innerHTML]="content"></div>
     </div>
 </section>
 
 <section id="objetivos" *ngIf="Activeurl==='objetivos'" class="seccion bgr-blanco" @changeSection>
     <div class="container">
-        <p>Contribuir a la mejora de los procesos de gestión productiva del dato de las pymes de Colombia, El
-            Salvador y Uruguay, a través del diseño y habilitación de una plataforma multimedia, de acceso libre,
-            para la difusión, descripción temática, procesos y herramientas necesarios para aprovechar los datos con
-            base en las dimensiones y ejes temáticos establecidos en la herramienta de autodiagnóstico Chequeo
-            digital.</p>
-        <h3>Objetivos particulares:</h3>
-        <ul>
-            <li>Propiciar procesos de reflexión interna encaminados a la transformación digital, a partir de la
-                explotación productiva y segura de los datos</li>
-            <li>Contribuir al desarrollo de capacidades y competencias en el tema de explotación productiva del dato
-            </li>
-            <li>Complementar los esfuerzos formativos ofreciendo material de consulta, casos ilustrativos y
-                herramientas prácticas</li>
-            <li>Habilitar un espacio virtual que permita el acceso a contenidos, herramientas, diagramas y
-                tutoriales, que contribuyan a la gestión productiva del dato</li>
-            <li>Brindar elementos de análisis encaminados al diseño de estrategias de manejo de datos en las pymes
-            </li>
-        </ul>
+        <div [innerHTML]="content"></div>
     </div>
 </section>

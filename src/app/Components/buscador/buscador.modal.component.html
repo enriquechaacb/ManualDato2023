@@ -1,0 +1,14 @@
+<div mat-dialog-title>
+    <mat-form-field class="d-block" appearance="outline" color="accent">
+        <mat-label>Buscar</mat-label>
+        <input matInput [(ngModel)]="Buscar" (keydown.enter)="Search()">
+        <button mat-icon-button (click)="Search()" matSuffix [disabled]="Buscar.length < 5"><mat-icon>search</mat-icon></button>
+    </mat-form-field>
+</div>
+<mat-dialog-content>
+    <mat-card *ngFor="let item of results" class="result">
+        <h3 routerLink="{{item.Url}}" (click)="close()">{{item.Titulo}}</h3>
+        <div [innerHTML]="item.Contenido"></div>
+    </mat-card>
+    <h3 *ngIf="noResults">{{noResults}}</h3>
+</mat-dialog-content>

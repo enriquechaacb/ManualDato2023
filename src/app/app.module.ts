@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './Modules/app-routing.module';
 import { AppMaterialModule } from './Modules/app-material.module';
 
-import { GlobalService, VariablesService } from './Services/global.service';
+import { GlobalService, VariablesService, SearchService } from './Services/global.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/home/home.component';
@@ -47,6 +47,7 @@ import { EstrategiadenegociosComponent } from './Components/manual/organizaciony
 import { TerminosComponent } from './Components/terminos/terminos.component';
 import { PrivacidadComponent } from './Components/privacidad/privacidad.component';
 import { CreditosComponent } from './Components/creditos/creditos.component';
+import { BuscadorComponent, BuscadorModalComponent } from './Components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { CreditosComponent } from './Components/creditos/creditos.component';
     EstrategiadenegociosComponent,
     TerminosComponent,
     PrivacidadComponent,
-    CreditosComponent
+    CreditosComponent,
+    BuscadorComponent, BuscadorModalComponent
   ],
   imports: [
     BrowserModule,
@@ -98,7 +100,7 @@ import { CreditosComponent } from './Components/creditos/creditos.component';
     AppMaterialModule
   ],
   providers: [
-    GlobalService, VariablesService,
+    GlobalService, VariablesService, SearchService,
     [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   ],
   bootstrap: [AppComponent]

@@ -41,3 +41,9 @@ export interface websites{
     Nombre: string,
     Url: string
 }
+
+export interface htmlDocContent{
+    Titulo: string,
+    Contenido: string,
+    Url: string
+}
