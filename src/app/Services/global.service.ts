@@ -77,7 +77,7 @@ export class SearchService {
           if (startIndex !== -1) {
             // Determinar el contexto alrededor del texto buscado
             const contextLength = 150; // Longitud del contexto (puedes ajustar esto según tus necesidades)
-            const contextStartIndex = Math.max(0, startIndex) //- contextLength);
+            const contextStartIndex = Math.max(0, startIndex - contextLength + 100);
             const contextEndIndex = Math.min(lowerCaseContent.length, startIndex + lowerCaseQuery.length + contextLength);
     
             // Extraer el fragmento del contenido con el contexto
@@ -86,7 +86,7 @@ export class SearchService {
             // Crear un nuevo resultado con el título, el fragmento del contenido y la URL
             const result: htmlDocContent = {
               Titulo: item.Titulo,
-              Contenido: context + '...',
+              Contenido: '...' + context + '...',
               Url: item.Url
             };
     
