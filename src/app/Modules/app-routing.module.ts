@@ -7,6 +7,7 @@ import { TerminosComponent } from '../Components/terminos/terminos.component';
 import { PrivacidadComponent } from '../Components/privacidad/privacidad.component';
 import { ManualComponent } from '../Components/manual/manual.component';
 import { CreditosComponent } from '../Components/creditos/creditos.component';
+import { SitemapComponent } from '../Components/sitemap/sitemap.component';
 
 import { ComunicacionycanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa.component';
 import { CanalesdeventaComponent } from '../Components/manual/canalesdeventa/canalesdeventa/canalesdeventa.component';
@@ -52,6 +53,7 @@ const routes: Routes = [
     { path: 'creditos', component: CreditosComponent, data: {animation:'creditos'}},
     { path: 'terminos', component: TerminosComponent, data: {animation:'terminos'}},
     { path: 'privacidad', component: PrivacidadComponent, data: {animation:'privacidad'}},
+    { path: 'sitemap', component: SitemapComponent, data: {animation:'sitemap'}},
     { path: 'bibliosmart', component: ManualComponent, data: {animation:'bibliosmart'}},
 
     { path: 'bibliosmart/comunicacionycanalesdeventa', component: ComunicacionycanalesdeventaComponent, data: {animation:'ccv'}},

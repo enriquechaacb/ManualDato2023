@@ -1,0 +1,67 @@
+section{
+    background-color: var(--blanco);
+    &.titlecont{
+        background-color: var(--primary);
+        padding-top: 4em;
+        .title-container{
+            padding-bottom: 3em;
+            .title{
+                position: relative;
+                font-size: 38px;
+                color: var(--blanco);
+                line-height: 32px;
+                z-index: 2;
+                margin-bottom: 0 !important;
+                &.sitemap{
+                    &::before{content:"MAPA DE SITIO";}
+                }
+                &::before{
+                    position: absolute;
+                    color: var(--blanco90);
+                    display: block;
+                    font-size: 1.75em;
+                    font-weight: 900;
+                    filter: opacity(0.2) blur(1px);
+                    line-height: 0.6em;
+                    margin-top: -0.2em;
+                    font-family: Arial black, 'sans-serif';
+                }
+            }
+        }
+    }
+    .sitemap{
+        li{
+            list-style: none;
+            position: relative;
+            span{
+                display: block;
+                cursor: pointer;
+                padding: 5px;
+                border-radius: 0 40px 40px 0;
+                position: relative;
+                &.bold{
+                    font-weight: 700;
+                }
+                &::before{
+                    position: absolute;
+                    content: "\e5c8";
+                    font-family: 'Material Icons';
+                    font-size: 24px;
+                    left: -28px;
+                    color: var(--primary);
+                    filter: opacity(0.1);
+                    transition: all .25s ease-in-out !important;
+                }
+                &:hover{
+                    padding-left: 20px;
+                    background-color: var(--primary);
+                    color: var(--blanco);
+                    &::before{
+                        left: -23px;
+                        filter: opacity(1);
+                    }
+                }
+            }
+        }
+    }
+}

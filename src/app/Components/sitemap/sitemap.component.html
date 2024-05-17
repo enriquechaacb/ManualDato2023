@@ -1,0 +1,33 @@
+<section class="titlecont" @changeSection>
+    <div class="container">
+        <div class="title-container">
+            <h2 class="title sitemap">Mapa de sitio</h2>
+        </div>
+    </div>
+</section>
+
+<section class="seccion" @changeSection>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 offset-lg-3">
+                <mat-card class="p-5">
+                    <ul class="sitemap">
+                        <li *ngFor="let a of links">
+                            <span [routerLink]="a.Url" routerLinkActive="router-link-active" [ngClass]="{'bold': a.Secciones}">{{a.Nombre}}</span>
+                            <ul *ngIf="a.Secciones">
+                                <li *ngFor="let b of a.Secciones">
+                                    <span [routerLink]="b.Url" routerLinkActive="router-link-active" [ngClass]="{'bold': b.Secciones}">{{b.Nombre}}</span>
+                                    <ul *ngIf="b.Secciones">
+                                        <li *ngFor="let c of b.Secciones">
+                                            <span [routerLink]="c.Url" routerLinkActive="router-link-active">{{c.Nombre}}</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

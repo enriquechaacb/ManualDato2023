@@ -48,6 +48,7 @@ import { TerminosComponent } from './Components/terminos/terminos.component';
 import { PrivacidadComponent } from './Components/privacidad/privacidad.component';
 import { CreditosComponent } from './Components/creditos/creditos.component';
 import { BuscadorComponent, BuscadorModalComponent } from './Components/buscador/buscador.component';
+import { SitemapComponent } from './Components/sitemap/sitemap.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,7 @@ import { BuscadorComponent, BuscadorModalComponent } from './Components/buscador
     TerminosComponent,
     PrivacidadComponent,
     CreditosComponent,
-    BuscadorComponent, BuscadorModalComponent
+    BuscadorComponent, BuscadorModalComponent, SitemapComponent
   ],
   imports: [
     BrowserModule,
