@@ -3,6 +3,7 @@ import { Component, HostListener, Inject, OnInit, Renderer2 } from '@angular/cor
 import { GlobalService } from './Services/global.service';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
 import { pagesAnimation } from './Services/animations.service';
+import { TutorialComponent } from './Components/tutorial/tutorial.component';
 
 @Component({
     selector: 'app-root',
@@ -61,4 +62,8 @@ export class AppComponent implements OnInit {
             this.navIsFixed = false; 
         }
 	}
+
+    openTutorial(){
+        this._globalService.openModal(TutorialComponent,0,'1200px','',0);
+    }
 }

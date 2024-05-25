@@ -1,0 +1,35 @@
+h2,h3,strong{
+    color: var(--primary);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.dimensiones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .dimension{
+        border: solid 3px;
+        margin: 10px;
+        flex: 1 1 calc(50% - 20px);
+        border-radius: 15px;
+        padding: 25px;
+        list-style: none;
+        ul{color:var(--mdc-dialog-supporting-text-color, rgba(0, 0, 0, 0.6))}
+        &:nth-child(4n) {
+            color: var(--warn);
+        }
+
+        &:nth-child(4n + 1) {
+            color: var(--accent);
+        }
+
+        &:nth-child(4n + 2) {
+            color: var(--green);
+        }
+
+        &:nth-child(4n + 3) {
+            color: var(--primary);
+        }
+    }
+}
