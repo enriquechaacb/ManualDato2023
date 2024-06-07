@@ -49,7 +49,7 @@ import { PrivacidadComponent } from './Components/privacidad/privacidad.componen
 import { CreditosComponent } from './Components/creditos/creditos.component';
 import { BuscadorComponent, BuscadorModalComponent } from './Components/buscador/buscador.component';
 import { SitemapComponent } from './Components/sitemap/sitemap.component';
-import { TutorialComponent } from './Components/tutorial/tutorial.component';
+import { TutorialComponent, TutorialModalComponent } from './Components/tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +93,7 @@ import { TutorialComponent } from './Components/tutorial/tutorial.component';
     TerminosComponent,
     PrivacidadComponent,
     CreditosComponent,
-    BuscadorComponent, BuscadorModalComponent, SitemapComponent, TutorialComponent
+    BuscadorComponent, BuscadorModalComponent, SitemapComponent, TutorialComponent, TutorialModalComponent
   ],
   imports: [
     BrowserModule,

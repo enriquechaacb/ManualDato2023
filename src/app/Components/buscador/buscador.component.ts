@@ -4,7 +4,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-buscador',
-    templateUrl: './buscador.component.html',
+    template: '<button mat-icon-button type="button" matTooltip="buscar" color="warn" (click)="openSearchfield()"><mat-icon>search</mat-icon></button>',
     styleUrls: ['./buscador.component.scss']
 })
 export class BuscadorComponent {
