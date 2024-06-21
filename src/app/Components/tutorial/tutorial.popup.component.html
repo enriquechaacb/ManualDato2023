@@ -1,5 +1,8 @@
 <div mat-dialog-title class="py-2 d-flex justify-content-between">
     <h3 class="m-0 w-100 d-flex text-start align-items-center">Cómo usar esta plataforma</h3>
+    <button mat-icon-button color="primary" matTooltip="Descargar versión para imprimir" matTooltipPosition="before" (click)="downloadPDF()">
+        <mat-icon>download</mat-icon>
+    </button>
     <button mat-icon-button color="primary" [mat-dialog-close]="" cdkFocusInitial>
         <mat-icon>close</mat-icon>
     </button>

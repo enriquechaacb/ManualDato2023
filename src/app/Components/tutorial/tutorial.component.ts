@@ -22,4 +22,5 @@ export class TutorialComponent {
 })
 export class TutorialModalComponent {
     constructor() { }
+    downloadPDF(){ window.open('../../../../../assets/downloads/TutorialBiblioSmart.pdf','_blank') }
 }
