@@ -230,6 +230,14 @@ caption {
     color: var(--primary);
 }
 
+.mat-button-toggle-group{
+    &.align-left{
+        .mat-button-toggle-label-content {
+            display: block;
+            text-align: left;
+        }
+    }
+}
 section {
     position: relative;
 

@@ -40,7 +40,7 @@ export class PresentacionesComponent {
         const palabras = [71,72,73,74,75,76];
         const expertos = [4,5,6,7];
         const instituciones = [8,5,2,11];
-        const literatura = [33,34,35,36,37];
+        const literatura = [23,34,25,36,37];
         const websites = [3,12,13,14,15,16,17,18,19];
         this.Words = Glossary.filter((x: any) => palabras.includes(x.IdPalabra));
         this.Experts = Experts.filter((x: any) => expertos.includes(x.IdExperto));

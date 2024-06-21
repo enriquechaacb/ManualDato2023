@@ -53,17 +53,17 @@
 
                         <div class="modelos">
                             <div class="row">
-                                <div class="col col-12 col-lg-5 col-xl-3 mb-3 d-flex flex-column">
-                                    <mat-button-toggle-group class="flex-column" name="Selector" aria-label="Selector"  #Selector="matButtonToggleGroup">
-                                        <mat-button-toggle value="1">Modelos Matemáticos</mat-button-toggle>
-                                        <mat-button-toggle value="2">Modelos para evaluar escenarios</mat-button-toggle>
-                                        <mat-button-toggle value="3">Modelos de Simulación</mat-button-toggle>
-                                        <mat-button-toggle value="4">Modelos de Proyección</mat-button-toggle>
-                                        <mat-button-toggle value="5">Modelos de Optimización</mat-button-toggle>
-                                        <mat-button-toggle value="6">Modelos de Redes y Grafos</mat-button-toggle>
+                                <div class="col col-12 col-lg-5 col-xl-4 mb-3 d-flex flex-column">
+                                    <mat-button-toggle-group class="flex-column align-left" name="Selector" aria-label="Selector"  #Selector="matButtonToggleGroup">
+                                        <mat-button-toggle value="1">1. Modelos Matemáticos</mat-button-toggle>
+                                        <mat-button-toggle value="2">2. Modelos para evaluar escenarios</mat-button-toggle>
+                                        <mat-button-toggle value="3">3. Modelos de Simulación</mat-button-toggle>
+                                        <mat-button-toggle value="4">4. Modelos de Proyección</mat-button-toggle>
+                                        <mat-button-toggle value="5">5. Modelos de Optimización</mat-button-toggle>
+                                        <mat-button-toggle value="6">6. Modelos de Redes y Grafos</mat-button-toggle>
                                     </mat-button-toggle-group>
                                 </div>
-                                <div class="col col-12 col-lg-7 col-xl-9">
+                                <div class="col col-12 col-lg-7 col-xl-8">
                                     <mat-card class="p-3" *ngIf="Selector.value == 1">
                                         <h3>Modelos Matemáticos</h3>
                                         <div class="ratio ratio-16x9">
@@ -83,8 +83,8 @@
                                             <iframe src="https://www.youtube.com/embed/8SlHDz-NeXQ?rel=0" title="Bienvenida" allowfullscreen></iframe>
                                         </div>
                                         <div class="hint">
-                                            <p>Para profundizar en los modelos de simulación recomendamos visitar la siguiente página de ANIA que muestra una aplicación en la industria alimenticia, replicable a diversos sectores.
-                                            <br/><a href="https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas/#:~:text=La%20simulaci%C3%B3n%20de%20procesos%20con,un%20procedimiento%20%C3%BAtil%20y%20econ%C3%B3mico" target="_blank">https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas/#:~:text=La%20simulación%20de%20procesos%20con,un%20procedimiento%20útil%20y%20económico</a></p>
+                                            <p class="w-100">Para profundizar en los modelos de simulación recomendamos visitar la siguiente página de ANIA que muestra una aplicación en la industria alimenticia, replicable a diversos sectores.
+                                            <br/><a href="https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas/#:~:text=La%20simulaci%C3%B3n%20de%20procesos%20con,un%20procedimiento%20%C3%BAtil%20y%20econ%C3%B3mico" target="_blank">https://www.ainia.es/ainia-news/simulacion-procesos-modelos-matematicos-utilizas</a></p>
                                         </div>
                                         <separator></separator>
                                     </mat-card>

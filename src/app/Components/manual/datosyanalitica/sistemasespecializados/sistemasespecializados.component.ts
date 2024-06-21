@@ -39,7 +39,7 @@ export class SistemasespecializadosComponent {
         });
     }
     setCatalogs(){
-        const palabras = [76,77,78,79,80,81];
+        const palabras = [76,77,78,80,81];
         const expertos = [4,5,6,7];
         const instituciones = [8,5,2,11];
         const literatura = [38,39,40,41,42,43,44,45,46];

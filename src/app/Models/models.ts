@@ -22,12 +22,13 @@ export interface experts{
     Nombre: string,
     Contacto: string,
     Url: string,
-    Descripcion: string
+    Descripcion?: string
 }
 export interface institutions{
     IdInstitucion: number,
     Nombre: string,
-    Url: string
+    Url: string,
+    Descripcion?: string
 }
 export interface books{
     IdLiteratura: number,
@@ -39,7 +40,8 @@ export interface books{
 export interface websites{
     IdSitio: number,
     Nombre: string,
-    Url: string
+    Url: string,
+    Descripcion?: string
 }
 
 export interface htmlDocContent{
