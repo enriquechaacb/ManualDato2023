@@ -3,6 +3,7 @@ import { Component, HostListener, Inject, OnInit, Renderer2 } from '@angular/cor
 import { GlobalService } from './Services/global.service';
 import { NavigationEnd, Router, Event, RouterEvent } from '@angular/router';
 import { pagesAnimation } from './Services/animations.service';
+declare var gtag: Function;
 
 @Component({
     selector: 'app-root',
@@ -18,7 +19,15 @@ export class AppComponent implements OnInit {
         @Inject(DOCUMENT) private _document: Document,
         private _renderer: Renderer2,
         private _thisroute: Router
-    ) { }
+    ) {
+        this._thisroute.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+              gtag('config', 'G-D7KJ2GY9JE', {
+                'page_path': event.urlAfterRedirects
+              });
+            }
+          });
+    }
     ngOnInit(): void {
         this._thisroute.events.subscribe((event: Event|RouterEvent) => {
             if (event instanceof NavigationEnd) {
